@@ -1,0 +1,2669 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>THINK Level 4 · Unit 10: The media (LexiBlock + Wordwall 新闻编辑部极限极速侦查)</title>
+  <style>
+
+    :root {
+      --duo-green: #58CC02;
+      --duo-green-shadow: #46A302;
+      --duo-green-hover: #61E002;
+      --duo-blue: #1CB0F6;
+      --duo-blue-shadow: #1899D6;
+      --duo-gold: #FFC800;
+      --duo-gold-shadow: #E5A800;
+      --duo-coral: #FF7675;
+      --duo-coral-shadow: #D63031;
+      --duo-ocean: #0984E3;
+      --duo-ocean-shadow: #074B83;
+      --bg-light: #F7F7F9;
+      --bg-card: #FFFFFF;
+      --text-main: #1D1D1F;
+      --text-body: #4B4B4B;
+      --text-muted: #777777;
+      --text-sub: #AFAFAF;
+      --border-light: #E5E5E5;
+      --border-tile: #CECECE;
+      --radius-sm: 12px;
+      --radius-md: 16px;
+      --radius-lg: 24px;
+      --radius-pill: 999px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      user-select: none;
+      -webkit-tap-highlight-color: transparent;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", "Segoe UI", Roboto, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-light);
+      color: var(--text-body);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      transition: background-color 0.3s ease;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body.game-mode {
+      background-color: #081524;
+      color: #FFFFFF;
+    }
+
+    #app {
+      width: 100%;
+      max-width: 500px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 16px;
+      position: relative;
+    }
+
+    .duo-btn {
+      position: relative;
+      border-radius: 18px;
+      font-weight: 900;
+      cursor: pointer;
+      transition: all 0.08s ease;
+      text-align: center;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      user-select: none;
+      border: none;
+    }
+    .duo-btn:active {
+      transform: translateY(3px);
+      border-bottom-width: 2px !important;
+    }
+
+    .duo-btn-green {
+      background: var(--duo-green);
+      color: #FFFFFF;
+      border-bottom: 5px solid var(--duo-green-shadow);
+    }
+    .duo-btn-green:hover { background: var(--duo-green-hover); }
+
+    .duo-btn-ocean {
+      background: var(--duo-ocean);
+      color: #FFFFFF;
+      border-bottom: 5px solid var(--duo-ocean-shadow);
+    }
+
+    .duo-btn-gold {
+      background: var(--duo-gold);
+      color: #7A5200;
+      border-bottom: 5px solid var(--duo-gold-shadow);
+    }
+
+    .duo-btn-dark {
+      background: #102138;
+      color: #FFFFFF;
+      border: 2px solid #1E3B61;
+      border-bottom: 5px solid #0A1626;
+    }
+    .duo-btn-dark:hover { background: #172D4D; }
+
+    .duo-tile {
+      background-color: #FFFFFF;
+      color: var(--text-body);
+      border: 2px solid var(--border-light);
+      border-bottom: 4px solid var(--border-tile);
+      border-radius: 16px;
+      font-size: 20px;
+      font-weight: 900;
+      padding: 12px 18px;
+      cursor: pointer;
+      transition: all 0.08s ease-in-out;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      user-select: none;
+    }
+    .duo-tile:hover { background-color: #F8F8F8; }
+    .duo-tile:active {
+      transform: translateY(2px);
+      border-bottom-width: 2px;
+    }
+
+    .duo-tile-success {
+      background-color: var(--duo-green) !important;
+      color: #FFFFFF !important;
+      border-color: var(--duo-green) !important;
+      border-bottom-color: var(--duo-green-shadow) !important;
+      transform: scale(1.04);
+    }
+
+    .learn-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 12px;
+      gap: 12px;
+    }
+    .unit-tag {
+      background: #E3F2FD;
+      color: #1565C0;
+      font-size: 11px;
+      font-weight: 900;
+      padding: 4px 10px;
+      border-radius: 999px;
+      letter-spacing: 0.5px;
+      white-space: nowrap;
+    }
+    .progress-track {
+      flex: 1;
+      height: 14px;
+      background: #E5E5E5;
+      border-radius: var(--radius-pill);
+      overflow: hidden;
+      position: relative;
+    }
+    .progress-fill {
+      height: 100%;
+      background: var(--duo-green);
+      border-radius: var(--radius-pill);
+      transition: width 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+    .mode-switch-btn {
+      background: #FFF;
+      border: 2px solid #E5E5E5;
+      border-radius: var(--radius-pill);
+      padding: 6px 12px;
+      font-size: 12px;
+      font-weight: 800;
+      color: #777;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      transition: all 0.15s ease;
+      white-space: nowrap;
+    }
+    .mode-switch-btn:hover {
+      border-color: var(--duo-ocean);
+      color: var(--duo-ocean);
+    }
+
+    .word-header {
+      text-align: center;
+      margin-bottom: 16px;
+    }
+    .word-meaning {
+      font-size: 26px;
+      font-weight: 900;
+      color: var(--text-main);
+      margin-bottom: 6px;
+      letter-spacing: -0.5px;
+    }
+    .word-type-tag {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 800;
+      padding: 2px 8px;
+      border-radius: 6px;
+      margin-left: 6px;
+      vertical-align: middle;
+    }
+    .tag-adj { background: #EDE7F6; color: #512DA8; }
+    .tag-trip { background: #E1F5FE; color: #0288D1; }
+
+    .word-ipa-btn {
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      font-size: 15px;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      cursor: pointer;
+      padding: 4px 10px;
+      border-radius: var(--radius-pill);
+      transition: background 0.15s ease;
+    }
+    .word-ipa-btn:hover { background: #EDEDED; }
+
+    .slots-container {
+      min-height: 64px;
+      border-bottom: 2px dashed var(--border-tile);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 10px 0;
+      margin-bottom: 20px;
+    }
+    .tray-container {
+      min-height: 80px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    .empty-tip {
+      color: var(--text-sub);
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .kron-spark-card {
+      background: linear-gradient(135deg, #FFF9DB 0%, #FFF3BF 100%);
+      border: 2px solid #FFE066;
+      border-radius: 18px;
+      padding: 14px 16px;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      box-shadow: 0 4px 12px rgba(245, 159, 0, 0.08);
+    }
+    .kron-avatar {
+      font-size: 28px;
+      line-height: 1;
+      filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+    }
+    .kron-spark-content {
+      flex: 1;
+    }
+    .kron-spark-title {
+      font-size: 12px;
+      font-weight: 900;
+      color: #D9480F;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .kron-spark-text {
+      font-size: 14px;
+      color: #495057;
+      font-weight: 700;
+      line-height: 1.45;
+    }
+
+    .transfer-panel {
+      background: var(--bg-card);
+      border: 2px solid var(--border-light);
+      border-radius: 20px;
+      padding: 14px;
+      margin-top: 10px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.04);
+    }
+    .rule-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      margin-bottom: 12px;
+      line-height: 1.4;
+    }
+    .rule-badge {
+      background: #E8F5E9;
+      color: #2E7D32;
+      font-size: 11px;
+      font-weight: 900;
+      padding: 3px 8px;
+      border-radius: 6px;
+      white-space: nowrap;
+    }
+    .rule-desc {
+      font-size: 12px;
+      font-weight: 700;
+      color: #555;
+    }
+    .transfer-title {
+      font-size: 11px;
+      font-weight: 900;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 8px;
+    }
+    .transfer-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+    .transfer-tile {
+      background: #FAFAFA;
+      border: 1.5px solid var(--border-light);
+      border-radius: 12px;
+      padding: 8px 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+      transition: all 0.1s ease;
+    }
+    .transfer-tile:hover {
+      background: #F0FDF4;
+      border-color: var(--duo-green);
+    }
+    .transfer-word {
+      font-weight: 900;
+      font-size: 14px;
+      color: var(--text-main);
+    }
+    .transfer-cn {
+      font-size: 11px;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+    .hl-green {
+      color: var(--duo-green);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    @keyframes popIn {
+      0% { opacity: 0; transform: scale(0.92) translateY(8px); }
+      100% { opacity: 1; transform: scale(1) translateY(0); }
+    }
+    .animate-pop-in {
+      animation: popIn 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+    }
+
+    @keyframes shake {
+      0%, 100% { transform: translateX(0); }
+      20%, 60% { transform: translateX(-8px); }
+      40%, 80% { transform: translateX(8px); }
+    }
+    .animate-shake {
+      animation: shake 0.4s ease-in-out;
+    }
+
+    /* ================= Gimkit 海岛探险大富翁独立游戏 ================= */
+    
+.game-top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+    .timer-pill {
+      background: #20172B;
+      border: 2px solid #362847;
+      border-radius: var(--radius-pill);
+      padding: 6px 14px;
+      font-size: 14px;
+      font-weight: 900;
+      color: #AF52DE;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .alchemy-stats-row {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+    .alchemy-stat-card {
+      flex: 1;
+      background: #191222;
+      border: 1px solid #2B1E38;
+      border-radius: 16px;
+      padding: 10px 12px;
+      text-align: center;
+    }
+    .stat-label {
+      font-size: 11px;
+      color: #8C9BAE;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+    .stat-val {
+      font-size: 20px;
+      font-weight: 900;
+      color: #AF52DE;
+    }
+
+    .alchemy-stage {
+      background: #160F20;
+      border: 2px solid #2F1E40;
+      border-radius: 24px;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 14px;
+      min-height: 290px;
+      justify-content: center;
+    }
+
+    .alchemy-bubble {
+      background: #231733;
+      border: 2px solid #3F2B5A;
+      border-radius: 18px;
+      padding: 10px 16px;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      max-width: 90%;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+    }
+    .alchemy-tag {
+      font-size: 18px;
+      font-weight: 900;
+      color: #AF52DE;
+    }
+    .alchemy-avatar-box {
+      position: relative;
+      margin-bottom: 8px;
+    }
+    .alchemy-emoji {
+      font-size: 64px;
+      filter: drop-shadow(0 4px 8px rgba(0,0,0,0.4));
+      display: inline-block;
+      animation: rotateFlask 2s ease-in-out infinite alternate;
+    }
+    @keyframes rotateFlask {
+      0% { transform: rotate(-8deg) scale(1); }
+      100% { transform: rotate(8deg) scale(1.06); }
+    }
+    .alchemy-heat-bar {
+      width: 130px;
+      height: 8px;
+      background: #2F1E40;
+      border-radius: 999px;
+      overflow: hidden;
+      margin: 0 auto;
+    }
+    .alchemy-heat-fill {
+      height: 100%;
+      background: #AF52DE;
+      border-radius: 999px;
+      transition: width 0.1s linear, background-color 0.3s ease;
+    }
+
+    .game-opt-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      width: 100%;
+    }
+    .game-opt-btn {
+      padding: 14px 10px;
+      font-size: 15px;
+      line-height: 1.3;
+      border-radius: 16px;
+    }
+
+    .ticker-bar {
+      background: #191222;
+      border: 1px solid #2B1E38;
+      border-radius: var(--radius-pill);
+      padding: 6px 14px;
+      font-size: 12px;
+      color: #8DA1BA;
+      font-weight: 700;
+      margin-bottom: 12px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .leaderboard-mini {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 6px;
+      margin-bottom: 12px;
+    }
+    .lb-card {
+      background: #160F20;
+      border: 1px solid #2F1E40;
+      border-radius: 12px;
+      padding: 8px 6px;
+      text-align: center;
+      transition: all 0.2s ease;
+    }
+    .lb-card.is-me {
+      border-color: #AF52DE;
+      background: #231733;
+    }
+    .lb-name {
+      font-size: 11px;
+      color: #8C9BAE;
+      font-weight: 800;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .lb-gold {
+      font-size: 13px;
+      font-weight: 900;
+      color: #FFFFFF;
+    }
+
+    .market-drawer {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.75);
+      backdrop-filter: blur(8px);
+      z-index: 100;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .market-modal {
+      background: #130D1A;
+      border: 2px solid #AF52DE;
+      border-radius: 28px;
+      width: 100%;
+      max-width: 420px;
+      padding: 22px;
+      box-shadow: 0 20px 50px rgba(175,82,222,0.25);
+    }
+    .market-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #1F152A;
+      border: 1px solid #332344;
+      border-radius: 16px;
+      padding: 12px;
+      margin-bottom: 10px;
+    }
+
+    #confettiCanvas {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 999;
+    }
+  </style>
+</head>
+<body>
+
+  <canvas id="confettiCanvas"></canvas>
+
+  <div id="app">
+    
+    <!-- ==================== 视图 1：多邻国积木背单词 + Kron 脑洞场景 ==================== -->
+    <div id="learnView" style="display: flex; flex-direction: column; justify-content: space-between; min-height: calc(100vh - 32px);">
+      <header class="learn-header">
+        <span class="unit-tag">TH4 · UNIT 10</span>
+        <div class="progress-track">
+          <div class="progress-fill" id="progressBar" style="width: 0%;"></div>
+        </div>
+        <button class="mode-switch-btn" id="lockStatusBtn" onclick="trySwitchToGame()">
+          🔒 新闻编辑部极限极速侦查 (需全通)
+        </button>
+      </header>
+      <!-- Aha! 生词本双向打通同步横幅 -->
+      <div id="ahaSyncBanner" style="display:none; align-items: center; justify-content: space-between; background: linear-gradient(135deg, rgba(88,204,2,0.12), rgba(28,176,246,0.12)); border: 1.5px solid #58CC02; border-radius: 14px; padding: 8px 12px; margin-bottom: 12px; font-size: 11px; font-weight: 800; color: #1D1D1F;">
+        <div style="display: flex; align-items: center; gap: 6px;">
+          <span>⚡</span>
+          <span>已成功打通并同步来自 <strong>Aha! 生词本</strong> 的 <span id="ahaSyncCount" style="color: #46A302; font-size: 13px;">0</span> 个重点词汇</span>
+        </div>
+        <button onclick="document.getElementById('ahaSyncBanner').style.display='none'" style="background:none; border:none; color:#888; cursor:pointer; font-size:12px; font-weight:bold;">✕</button>
+      </div>
+
+      <div style="margin: auto 0; padding: 12px 0;">
+        <div class="word-header">
+          <div class="word-meaning">
+            <span id="wordMeaning">...</span>
+            <span class="word-type-tag" id="wordTypeTag">Word</span>
+          </div>
+          <button class="word-ipa-btn" onclick="playCurrentWordAudio()">
+            <span id="wordIPA">...</span>
+            <span>🔊</span>
+          </button>
+        </div>
+
+        <div class="slots-container" id="slotsContainer"></div>
+        <div class="tray-container" id="trayContainer"></div>
+
+        <div id="successPanel" style="display: none;" class="animate-pop-in">
+          <div class="kron-spark-card">
+            <div class="kron-avatar">👨🏻‍🏫</div>
+            <div class="kron-spark-content">
+              <div class="kron-spark-title">⚡️ Kron 老师脑洞发问</div>
+              <div class="kron-spark-text" id="kronMindSpark">...</div>
+            </div>
+          </div>
+
+          <div class="transfer-panel">
+            <div class="rule-row">
+              <span class="rule-badge" id="ruleBadge">...</span>
+              <span class="rule-desc" id="ruleDesc">...</span>
+            </div>
+            <div class="transfer-title">举一反三单词积木（点击听纯正发音）</div>
+            <div class="transfer-grid" id="transferGrid"></div>
+          </div>
+        </div>
+      </div>
+
+      <div style="padding-top: 14px;">
+        <button class="duo-btn duo-btn-green" id="nextBtn" style="width: 100%; padding: 16px; font-size: 18px; display: none;" onclick="goNextWord()">
+          继续下一个单词 ➔
+        </button>
+        <div id="footerPlaceholder" style="text-align: center; color: #AFAFAF; font-size: 13px; font-weight: 700; height: 55px; line-height: 55px;">
+          点击下方发音积木完成拼装
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== 视图 2：新闻编辑部极限极速侦查独立游戏 ==================== -->
+    <div id="gameView" style="display: none; flex-direction: column; justify-content: space-between; min-height: calc(100vh - 32px);">
+      <div>
+        <div class="game-top-bar">
+          <div class="timer-pill" id="timerDisplay">
+            <span>⚗️</span>
+            <span id="timeText">03:00</span>
+          </div>
+          <div style="display: flex; gap: 8px;">
+            <button class="duo-btn duo-btn-purple" style="padding: 6px 12px; font-size: 12px;" onclick="openMarket()">
+              🔮 探案档案
+            </button>
+            <button class="duo-btn duo-btn-dark" style="padding: 6px 12px; font-size: 12px;" onclick="switchToLearn()">
+              📖 返回复习
+            </button>
+          </div>
+        </div>
+
+        <div class="alchemy-stats-row">
+          <div class="alchemy-stat-card">
+            <div class="stat-label">贤者之石 (金币)</div>
+            <div class="stat-val" id="playerGoldText">🔮 0</div>
+          </div>
+          <div class="alchemy-stat-card">
+            <div class="stat-label">提纯素材</div>
+            <div class="stat-val" id="servedCountText">✨ 0</div>
+          </div>
+          <div class="alchemy-stat-card">
+            <div class="stat-label">连击倍率</div>
+            <div class="stat-val" id="comboText" style="color: #AF52DE;">⚡ x1</div>
+          </div>
+        </div>
+
+        <div class="ticker-bar" id="tickerMsg">
+          📰 编辑部截稿倒计时！迅速辨析新闻转述与传媒词汇，抢发头条！
+        </div>
+
+        <div class="leaderboard-mini" id="leaderboardGrid"></div>
+      </div>
+
+      <div class="alchemy-stage" id="alchemyStage">
+        
+        <div id="gameStartScreen" style="text-align: center; padding: 10px;">
+          <div style="font-size: 54px; margin-bottom: 8px;">🧪</div>
+          <h1 style="font-size: 22px; font-weight: 900; margin-bottom: 6px; color: #AF52DE;">
+            WORDWALL · 新闻编辑部极限极速侦查
+          </h1>
+          <p style="font-size: 13px; color: #8C9BAE; line-height: 1.5; margin-bottom: 20px;">
+            已吃透 23 个消息传递、引述转述与新闻追踪核心词汇！<br/>高能挑战正源源不断袭来！<br/>看准题干秒速判定，斩获全场最高荣誉！
+          </p>
+          <button class="duo-btn duo-btn-purple" style="width: 100%; padding: 15px; font-size: 16px;" onclick="startBattle()">
+            开启炼金熔炉 ➔
+          </button>
+        </div>
+
+        <div id="gameOrderScreen" style="display: none; width: 100%; text-align: center;">
+          <div class="alchemy-avatar-box">
+            <div class="alchemy-emoji" id="custEmoji">🔮</div>
+          </div>
+          
+          <div class="alchemy-bubble" style="margin: 0 auto 12px auto;">
+            <span style="font-size: 18px;">💡</span>
+            <div style="text-align: left;">
+              <div style="font-size: 11px; color: #8DA1BA; font-weight: 800;" id="custName">炼金配方</div>
+              <div class="alchemy-tag" id="custOrderSpeech">“急需材质：「羊毛」！”</div>
+            </div>
+          </div>
+
+          <div style="margin-bottom: 12px;">
+            <div class="alchemy-heat-bar">
+              <div class="alchemy-heat-fill" id="patienceBar" style="width: 100%;"></div>
+            </div>
+          </div>
+
+          <div style="font-size: 13px; font-weight: 900; color: #E5E5E5; margin-bottom: 14px;" id="gameQuestionPrompt">
+            极速反应：选择正确的对应英文单词：
+          </div>
+
+          <div class="game-opt-grid" id="gameOptionGrid"></div>
+        </div>
+
+        <div id="gameDishDoneScreen" style="display: none; text-align: center;" class="animate-pop-in">
+          <div id="dishDoneIcon" style="font-size: 60px; margin-bottom: 8px;">✨🧪💎✨</div>
+          <h3 id="dishDoneTitle" style="font-size: 22px; font-weight: 900; color: #AF52DE; margin-bottom: 6px;">
+            合成成功！+340 🔮
+          </h3>
+          <p id="dishDoneDesc" style="font-size: 13px; color: #8DA1BA; margin-bottom: 18px;">
+            完美提纯！稀有材质凝结成闪烁光芒的晶体！
+          </p>
+          <button class="duo-btn duo-btn-purple" style="width: 100%; padding: 14px; font-size: 16px;" onclick="nextCustomer()">
+            提纯下一份配方 ➔
+          </button>
+        </div>
+
+        <div id="gameOverScreen" style="display: none; text-align: center; width: 100%;" class="animate-pop-in">
+          <div style="font-size: 56px; margin-bottom: 8px;" id="finalTrophy">👑</div>
+          <h2 style="font-size: 24px; font-weight: 900; color: #FFC800;" id="finalRankTitle">传奇大炼金术士！</h2>
+          <p style="font-size: 12px; color: #8C9BAE; margin-bottom: 16px;" id="finalRankDesc">贤者之石储备冠绝群伦！</p>
+          <div style="background: #1F152A; border-radius: 20px; padding: 14px; margin-bottom: 18px;" id="finalPodium"></div>
+          <button class="duo-btn duo-btn-purple" style="width: 100%; padding: 14px; font-size: 16px;" onclick="startBattle()">
+            再开一炉 🔄
+          </button>
+        </div>
+
+      </div>
+
+      <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 10px; font-size: 11px; font-weight: 800; color: #5B6F8E;">
+        <span>WORDWALL ALCHEMY · KRON 独家定制版</span>
+        <span id="playerBuffs">🔮 催化矩阵: 0级 | 🧪 提纯釜: 基础</span>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="market-drawer" id="marketDrawer">
+    <div class="market-modal">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+        <h3 style="font-size: 18px; font-weight: 900; color: #AF52DE;">🔮 赛博炼金升级矩阵</h3>
+        <button style="background: none; border: none; color: #8C9BAE; font-size: 22px; cursor: pointer;" onclick="closeMarket()">✕</button>
+      </div>
+
+      <div class="market-item">
+        <div>
+          <div style="font-weight: 900; font-size: 14px; color: #FFF;">⚡ 超导重离子催化剂</div>
+          <div style="font-size: 11px; color: #8C9BAE;">单次合成收益永久提升 50%</div>
+        </div>
+        <button class="duo-btn duo-btn-purple" style="padding: 8px 12px; font-size: 12px;" onclick="buyUpgrade('knife', 400)">
+          400 🔮
+        </button>
+      </div>
+
+      <div class="market-item">
+        <div>
+          <div style="font-weight: 900; font-size: 14px; color: #FFF;">🤖 自动分子提纯臂</div>
+          <div style="font-size: 11px; color: #8C9BAE;">每 3 秒自动入账 60 点贤者能量</div>
+        </div>
+        <button class="duo-btn duo-btn-purple" style="padding: 8px 12px; font-size: 12px;" onclick="buyUpgrade('autoCook', 600)">
+          600 🔮
+        </button>
+      </div>
+
+      <div class="market-item">
+        <div>
+          <div style="font-weight: 900; font-size: 14px; color: #FFF;">⏳ 时间膨胀沙漏</div>
+          <div style="font-size: 11px; color: #8C9BAE;">熔炉过热降温速度减缓 40%</div>
+        </div>
+        <button class="duo-btn duo-btn-purple" style="padding: 8px 12px; font-size: 12px;" onclick="buyUpgrade('bell', 350)">
+          350 🔮
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    /* ================= Unit 10: 23 词全量数据库 (消息传递、引述转述与新闻追踪) ================= */
+    const VOCABULARY = [
+      {
+            "word": "let someone know",
+            "meaning": "告知某人 / 让某人知悉",
+            "IPA": "/ˌlet sʌm.wʌn ˈnəʊ/",
+            "type": "phrase",
+            "blocks": [
+                  "l",
+                  "et",
+                  "s",
+                  "om",
+                  "eo",
+                  "ne",
+                  "kn",
+                  "ow"
+            ],
+            "mindSpark": "音节划分：let some·one know\n词理分析：let（让）+ know（知道）。把消息传递给对方，让对方知晓，即告知。",
+            "rule": "使役动词 let + 宾语 + 动词原形",
+            "ruleDesc": "日常口语最高频沟通表达，让对方及时知晓最新进展。",
+            "transfers": [
+                  {
+                        "word": "let me see",
+                        "hl": "l",
+                        "cn": "让我看看"
+                  },
+                  {
+                        "word": "leg",
+                        "hl": "l",
+                        "cn": "腿"
+                  },
+                  {
+                        "word": "lion",
+                        "hl": "l",
+                        "cn": "狮子"
+                  },
+                  {
+                        "word": "lemon",
+                        "hl": "l",
+                        "cn": "柠檬"
+                  }
+            ]
+      },
+      {
+            "word": "pass on the message",
+            "meaning": "转达转告口信",
+            "IPA": "/ˌpɑːs ɒn ðə ˈmes.ɪdʒ/",
+            "type": "phrase",
+            "blocks": [
+                  "p",
+                  "a",
+                  "ss",
+                  "on",
+                  "th",
+                  "e",
+                  "m",
+                  "es",
+                  "s",
+                  "a",
+                  "ge"
+            ],
+            "mindSpark": "音节划分：pass on the mes·sage\n词理分析：pass on（传递下去）+ message（信息）。把从别人那里听到的话或通知递交给下一个人，即转告消息。",
+            "rule": "pass on 传递棒接力棒",
+            "ruleDesc": "如同接力赛一样，把别人托付的话原原本本交接给第三方接收人。",
+            "transfers": [
+                  {
+                        "word": "convey",
+                        "hl": "on",
+                        "cn": "传达传递"
+                  },
+                  {
+                        "word": "deliver",
+                        "hl": "e",
+                        "cn": "投递传送"
+                  },
+                  {
+                        "word": "pet",
+                        "hl": "p",
+                        "cn": "宠物"
+                  },
+                  {
+                        "word": "pen",
+                        "hl": "p",
+                        "cn": "钢笔"
+                  }
+            ]
+      },
+      {
+            "word": "get in touch",
+            "meaning": "与某人取得联系（开启交流）",
+            "IPA": "/ˌget ɪn ˈtʌtʃ/",
+            "type": "phrase",
+            "blocks": [
+                  "g",
+                  "et",
+                  "in",
+                  "to",
+                  "u",
+                  "ch"
+            ],
+            "mindSpark": "音节划分：get in touch (单音节)\n词理分析：get（获得）+ in touch（处于接触的状态）。同某人建立起联系渠道，即联系。",
+            "rule": "touch 触碰通信线路的瞬间",
+            "ruleDesc": "get 表动作发生，拨通号码或发邮件成功建立初次沟通连接。",
+            "transfers": [
+                  {
+                        "word": "reach out to",
+                        "hl": "to",
+                        "cn": "主动联络"
+                  },
+                  {
+                        "word": "keep in touch",
+                        "hl": "in",
+                        "cn": "保持长久联系"
+                  },
+                  {
+                        "word": "touch base",
+                        "hl": "to",
+                        "cn": "碰个头沟通"
+                  },
+                  {
+                        "word": "girl",
+                        "hl": "g",
+                        "cn": "女孩"
+                  }
+            ]
+      },
+      {
+            "word": "keep in touch",
+            "meaning": "保持长久联系（维系沟通）",
+            "IPA": "/ˌkiːp ɪn ˈtʌtʃ/",
+            "type": "phrase",
+            "blocks": [
+                  "k",
+                  "e",
+                  "ep",
+                  "in",
+                  "to",
+                  "u",
+                  "ch"
+            ],
+            "mindSpark": "音节划分：keep in touch (单音节)\n词理分析：keep（保持）+ in touch（处于接触状态）。不中断已经建立起来的联系，即保持联系。",
+            "rule": "keep 表长久维持状态",
+            "ruleDesc": "即使毕业分道扬镳，依然通过写信、电话或微信不间断交流。",
+            "transfers": [
+                  {
+                        "word": "stay in touch",
+                        "hl": "in",
+                        "cn": "保持联系"
+                  },
+                  {
+                        "word": "lose touch",
+                        "hl": "to",
+                        "cn": "失去联系(反义)"
+                  },
+                  {
+                        "word": "keep track of",
+                        "hl": "k",
+                        "cn": "时刻追踪掌握"
+                  },
+                  {
+                        "word": "keep up",
+                        "hl": "k",
+                        "cn": "跟上节奏"
+                  }
+            ]
+      },
+      {
+            "word": "break the news",
+            "meaning": "（率先）透露重大消息 / 宣布坏消息",
+            "IPA": "/ˌbreɪk ðə ˈnjuːz/",
+            "type": "phrase",
+            "blocks": [
+                  "br",
+                  "e",
+                  "ak",
+                  "th",
+                  "e",
+                  "n",
+                  "e",
+                  "ws"
+            ],
+            "mindSpark": "音节划分：break the news (单音节)\n词理分析：break（打破、透露）+ news（新闻、消息）。把一直隐瞒着的或突发性的消息（通常是坏消息）透露出去，打破平静。",
+            "rule": "打破宁静打破沉默的引申",
+            "ruleDesc": "像打破寂静的湖面一样，将外界还不知道的突发重大或令人震惊的消息公开公布。",
+            "transfers": [
+                  {
+                        "word": "breaking news",
+                        "hl": "br",
+                        "cn": "突发新闻快讯"
+                  },
+                  {
+                        "word": "announce",
+                        "hl": "e",
+                        "cn": "正式宣告"
+                  },
+                  {
+                        "word": "reveal",
+                        "hl": "e",
+                        "cn": "揭晓披露"
+                  },
+                  {
+                        "word": "break the silence",
+                        "hl": "br",
+                        "cn": "打破沉默"
+                  }
+            ]
+      },
+      {
+            "word": "retweet",
+            "meaning": "转发推文 / 转发动态",
+            "IPA": "/ˌriːˈtwiːt/",
+            "type": "verb",
+            "blocks": [
+                  "re",
+                  "tweet"
+            ],
+            "mindSpark": "音节划分：re·tweet\n词理分析：前缀 re-（再次）+ tweet（推特推文，本意为鸟叫声的拟声词）。把别人发出的推文在自己的账号上再次转发，即转推。",
+            "rule": "前缀 re- (再次/转发) + tweet (鸟鸣/推特推文)",
+            "ruleDesc": "在社交网络上将别人的短文一键转发分享给自己的关注者粉丝。",
+            "transfers": [
+                  {
+                        "word": "tweet",
+                        "hl": "tweet",
+                        "cn": "发推文/鸟叫声"
+                  },
+                  {
+                        "word": "repost",
+                        "hl": "re",
+                        "cn": "转发帖子"
+                  },
+                  {
+                        "word": "share",
+                        "hl": "re",
+                        "cn": "分享"
+                  },
+                  {
+                        "word": "recycle",
+                        "hl": "re",
+                        "cn": "回收"
+                  }
+            ]
+      },
+      {
+            "word": "drop someone a line",
+            "meaning": "给某人写封便信 / 留几句简讯",
+            "IPA": "/ˌdrɒp ə ˈlaɪn/",
+            "type": "phrase",
+            "blocks": [
+                  "dr",
+                  "op",
+                  "s",
+                  "om",
+                  "eo",
+                  "ne",
+                  "a",
+                  "l",
+                  "i",
+                  "ne"
+            ],
+            "mindSpark": "音节划分：drop some·one a line (单音节)\n词理分析：drop（丢下、送去）+ a line（一行字）。给某人寄去寥寥数行的简短字句，引申为写信或写便条联系。",
+            "rule": "line 代表信纸上的一两行短字",
+            "ruleDesc": "drop (轻轻投递) + a line (寥寥数行字) = 随手给好朋友留个简短字条或短息。",
+            "transfers": [
+                  {
+                        "word": "write a note",
+                        "hl": "a",
+                        "cn": "留个便条"
+                  },
+                  {
+                        "word": "drop by",
+                        "hl": "dr",
+                        "cn": "顺道拜访"
+                  },
+                  {
+                        "word": "drop a message",
+                        "hl": "dr",
+                        "cn": "留言"
+                  },
+                  {
+                        "word": "send a postcard",
+                        "hl": "a",
+                        "cn": "寄明信片"
+                  }
+            ]
+      },
+      {
+            "word": "give someone a call",
+            "meaning": "给某人打个电话",
+            "IPA": "/ˌgɪv sʌm.wʌn ə ˈkɔːl/",
+            "type": "phrase",
+            "blocks": [
+                  "g",
+                  "i",
+                  "ve",
+                  "s",
+                  "om",
+                  "eo",
+                  "ne",
+                  "a",
+                  "c",
+                  "a",
+                  "ll"
+            ],
+            "mindSpark": "音节划分：give some·one a call (单音节)\n词理分析：give（给予）+ call（电话、呼唤）。给某人拨打一通电话。",
+            "rule": "give + 动名词组合表达",
+            "ruleDesc": "日常交流中最自然、随和的打电话口语表达方式（= phone someone）。",
+            "transfers": [
+                  {
+                        "word": "give a ring",
+                        "hl": "g",
+                        "cn": "打电话(英式口语)"
+                  },
+                  {
+                        "word": "call up",
+                        "hl": "a",
+                        "cn": "致电呼叫"
+                  },
+                  {
+                        "word": "dial",
+                        "hl": "a",
+                        "cn": "拨打电话"
+                  },
+                  {
+                        "word": "hang up",
+                        "hl": "g",
+                        "cn": "挂断电话"
+                  }
+            ]
+      },
+      {
+            "word": "accuse",
+            "meaning": "指控 / 指责某人有罪过",
+            "IPA": "/əˈkjuːz/",
+            "type": "verb",
+            "blocks": [
+                  "ac",
+                  "cuse"
+            ],
+            "mindSpark": "音节划分：ac·cuse\n词理分析：前缀 ad-（去，同化为 ac-）+ cause（诉讼、原因）。把某人带到法庭或审判席前陈述原因，引申为指控、谴责。",
+            "rule": "前缀 ad- (朝向) + 词根 caus (诉讼事由/原因)",
+            "ruleDesc": "严肃地把原因事实摆在台面上，指认某人应当对违法违纪行为承担责任。",
+            "transfers": [
+                  {
+                        "word": "accusation",
+                        "hl": "cuse",
+                        "cn": "控告指责(名词)"
+                  },
+                  {
+                        "word": "the accused",
+                        "hl": "cuse",
+                        "cn": "被告人"
+                  },
+                  {
+                        "word": "excuse",
+                        "hl": "cuse",
+                        "cn": "原谅/借口"
+                  }
+            ]
+      },
+      {
+            "word": "admit",
+            "meaning": "（不情愿地）承认事实",
+            "IPA": "/ədˈmɪt/",
+            "type": "verb",
+            "blocks": [
+                  "ad",
+                  "mit"
+            ],
+            "mindSpark": "音节划分：ad·mit\n词理分析：前缀 ad-（去、向）+ mit（发送、允许，来自拉丁语 mittere）。允许某人或某种事实进入（心门），引申为承认。",
+            "rule": "前缀 ad- (去/向) + 词根 mit (发送/允许进入)",
+            "ruleDesc": "允许某种不情愿的事实进入心灵大门，被迫点头承认。",
+            "transfers": [
+                  {
+                        "word": "admission",
+                        "hl": "ad",
+                        "cn": "准许进入/招认"
+                  },
+                  {
+                        "word": "permit",
+                        "hl": "mit",
+                        "cn": "允许执照"
+                  },
+                  {
+                        "word": "submit",
+                        "hl": "mit",
+                        "cn": "呈递服从"
+                  },
+                  {
+                        "word": "transmit",
+                        "hl": "mit",
+                        "cn": "传输播发"
+                  }
+            ]
+      },
+      {
+            "word": "agree",
+            "meaning": "同意赞同 / 答应答应",
+            "IPA": "/əˈgriː/",
+            "type": "verb",
+            "blocks": [
+                  "a",
+                  "gree"
+            ],
+            "mindSpark": "音节划分：a·gree\n词理分析：前缀 ad-（去，同化为 a-）+ gree（取悦、令人满意，来自拉丁语 gratus）。字面意思是“使对方满意/达到一致”，即同意。",
+            "rule": "源自古法语 agréer (使高兴/情投意合)",
+            "ruleDesc": "双方观点合拍、彼此满意，达成高度共识。",
+            "transfers": [
+                  {
+                        "word": "agreement",
+                        "hl": "a",
+                        "cn": "协议一致"
+                  },
+                  {
+                        "word": "disagree",
+                        "hl": "a",
+                        "cn": "不同意反对"
+                  },
+                  {
+                        "word": "agreeable",
+                        "hl": "a",
+                        "cn": "令人愉悦的"
+                  }
+            ]
+      },
+      {
+            "word": "apologise",
+            "meaning": "郑重道歉 / 表达歉意",
+            "IPA": "/əˈpɒl.ə.dʒaɪz/",
+            "type": "verb",
+            "blocks": [
+                  "a",
+                  "pol",
+                  "o",
+                  "gise"
+            ],
+            "mindSpark": "音节划分：a·pol·o·gise\n词理分析：前缀 apo-（离开、免除）+ log（言语、说理，来自希腊语 logos）+ -ise（动词后缀）。字面意思是“用言语进行自我辩白以求免责”，后演变为表示歉意、道歉。",
+            "rule": "前缀 apo- (离开) + 词根 log (说话/言论) + -ise",
+            "ruleDesc": "把说错的话、做错的事通过正式的言辞交代清楚并真诚请求原谅。",
+            "transfers": [
+                  {
+                        "word": "apology",
+                        "hl": "a",
+                        "cn": "歉意道歉(名词)"
+                  },
+                  {
+                        "word": "apologetic",
+                        "hl": "a",
+                        "cn": "抱歉愧疚的"
+                  },
+                  {
+                        "word": "dialogue",
+                        "hl": "a",
+                        "cn": "对话"
+                  },
+                  {
+                        "word": "prologue",
+                        "hl": "o",
+                        "cn": "序言前言"
+                  }
+            ]
+      },
+      {
+            "word": "argue",
+            "meaning": "提出论据辩驳 / 争辩阐明",
+            "IPA": "/ˈɑːɡju/",
+            "type": "verb",
+            "blocks": [
+                  "ar",
+                  "gue"
+            ],
+            "mindSpark": "音节划分：ar·gue\n词理分析：来自拉丁语 arguere“证明、使清晰”。通过罗列证据和理由让自己的观点清晰起来，引申为辩论、争辩。",
+            "rule": "词根 arg (明亮/澄清)",
+            "ruleDesc": "源自拉丁语 arguere (照亮阐明)，在辩论中摆事实讲道理，证明自己的观点颠扑不破。",
+            "transfers": [
+                  {
+                        "word": "argument",
+                        "hl": "ar",
+                        "cn": "论点争论(名词)"
+                  },
+                  {
+                        "word": "arguable",
+                        "hl": "ar",
+                        "cn": "可辩论探讨的"
+                  }
+            ]
+      },
+      {
+            "word": "criticise",
+            "meaning": "批评挑剔 / 指责缺陷",
+            "IPA": "/ˈkrɪt.ɪ.saɪz/",
+            "type": "verb",
+            "blocks": [
+                  "crit",
+                  "i",
+                  "cise"
+            ],
+            "mindSpark": "音节划分：crit·i·cise\n词理分析：词根 crit（判断、审判，来自希腊语 krinein）+ -ise（动词后缀）。对某人或某事进行审视、指出缺点，即批评。",
+            "rule": "词根 crit (判断/审断) + -ise 动词后缀",
+            "ruleDesc": "如同严格的法官辨析漏洞与缺陷，直截了当地指出缺点不足。",
+            "transfers": [
+                  {
+                        "word": "criticism",
+                        "hl": "crit",
+                        "cn": "批评意见"
+                  },
+                  {
+                        "word": "critic",
+                        "hl": "crit",
+                        "cn": "评论家/批评者"
+                  },
+                  {
+                        "word": "critical",
+                        "hl": "crit",
+                        "cn": "批判性的/关键的"
+                  },
+                  {
+                        "word": "criterion",
+                        "hl": "crit",
+                        "cn": "评估准则"
+                  }
+            ]
+      },
+      {
+            "word": "deny",
+            "meaning": "否认 / 矢口否认 / 拒绝承认",
+            "IPA": "/dɪˈnaɪ/",
+            "type": "verb",
+            "blocks": [
+                  "de",
+                  "ny"
+            ],
+            "mindSpark": "音节划分：de·ny\n词理分析：前缀 de-（向下、完全否定）+ ny（否定，来自拉丁语 negare）。彻底否定某事的真实性，即否认。",
+            "rule": "词根 neg/ny (不/拒绝)",
+            "ruleDesc": "de- (完全) + negare (说不) = 斩钉截铁声称某事完全不符合事实。",
+            "transfers": [
+                  {
+                        "word": "denial",
+                        "hl": "de",
+                        "cn": "否认拒绝(名词)"
+                  },
+                  {
+                        "word": "undeniable",
+                        "hl": "de",
+                        "cn": "不可否认确凿的"
+                  }
+            ]
+      },
+      {
+            "word": "regret",
+            "meaning": "懊悔遗憾 / 后悔莫及",
+            "IPA": "/rɪˈgret/",
+            "type": "verb",
+            "blocks": [
+                  "re",
+                  "gret"
+            ],
+            "mindSpark": "音节划分：re·gret\n词理分析：前缀 re-（回）+ gret（哭泣、哀悼，来自古诺斯语 grata）。对已经发生的事情回头哭泣叹息，引申为后悔、遗憾。",
+            "rule": "re- (后退) + gret (哭泣流泪与 greet 嚎哭同源)",
+            "ruleDesc": "回过头看着过去的错误流下懊恼的泪水，恨不得时间能够倒流重新来过。",
+            "transfers": [
+                  {
+                        "word": "regretful",
+                        "hl": "gret",
+                        "cn": "懊恼悔恨的"
+                  },
+                  {
+                        "word": "regrettable",
+                        "hl": "gret",
+                        "cn": "令人遗憾可惜的"
+                  },
+                  {
+                        "word": "remorse",
+                        "hl": "re",
+                        "cn": "自责悔恨"
+                  },
+                  {
+                        "word": "repent",
+                        "hl": "re",
+                        "cn": "忏悔悔改"
+                  }
+            ]
+      },
+      {
+            "word": "warn",
+            "meaning": "预警告诫 / 郑重提醒注意危险",
+            "IPA": "/wɔːn/",
+            "type": "verb",
+            "blocks": [
+                  "w",
+                  "arn"
+            ],
+            "mindSpark": "音节划分：warn (单音节)\n词理分析：来自古英语 warian“警惕”，与 ward, aware 同源。提醒别人注意潜在的危险，即警告。",
+            "rule": "古英语 warnian (留心防范与 ware/aware 同源)",
+            "ruleDesc": "提前敲响警钟，让对方保持警觉，防范即将到来的潜在危险。",
+            "transfers": [
+                  {
+                        "word": "warning",
+                        "hl": "w",
+                        "cn": "警告警报"
+                  },
+                  {
+                        "word": "aware",
+                        "hl": "w",
+                        "cn": "意识到的"
+                  },
+                  {
+                        "word": "beware",
+                        "hl": "w",
+                        "cn": "小心当心"
+                  },
+                  {
+                        "word": "water",
+                        "hl": "w",
+                        "cn": "水"
+                  }
+            ]
+      },
+      {
+            "word": "in a way",
+            "meaning": "在某种程度上 / 从某个角度来说",
+            "IPA": "/ɪn ə ˈweɪ/",
+            "type": "phrase",
+            "blocks": [
+                  "in",
+                  "a",
+                  "w",
+                  "ay"
+            ],
+            "mindSpark": "音节划分：in a way (单音节)\n词理分析：in（在…中）+ way（角度、方面）。从某一个特定的角度或方式来看，即在某种程度上。",
+            "rule": "委婉修饰限定短语",
+            "ruleDesc": "不把话说得太绝，从某个切入点来审视，其实有一定道理。",
+            "transfers": [
+                  {
+                        "word": "in a sense",
+                        "hl": "in",
+                        "cn": "在某种意义上"
+                  },
+                  {
+                        "word": "partly",
+                        "hl": "a",
+                        "cn": "部分地"
+                  },
+                  {
+                        "word": "inside",
+                        "hl": "in",
+                        "cn": "在里面"
+                  },
+                  {
+                        "word": "invite",
+                        "hl": "in",
+                        "cn": "邀请"
+                  }
+            ]
+      },
+      {
+            "word": "have it both ways",
+            "meaning": "兼得鱼和熊掌 / 两头讨好",
+            "IPA": "/hæv ɪt ˈbəʊθ ˌweɪz/",
+            "type": "phrase",
+            "blocks": [
+                  "h",
+                  "a",
+                  "ve",
+                  "it",
+                  "b",
+                  "o",
+                  "th",
+                  "w",
+                  "a",
+                  "ys"
+            ],
+            "mindSpark": "音节划分：have it both ways (单音节)\n词理分析：have（拥有）+ both ways（两个完全对立的方向/选择）。两头的好处都要占，指“两头占便宜、双管齐下”。",
+            "rule": "常用于否定句：You can't have it both ways",
+            "ruleDesc": "两件截然对立的好事想要通通占尽，但现实法则往往要求人做出取舍。",
+            "transfers": [
+                  {
+                        "word": "have one's cake and eat it",
+                        "hl": "h",
+                        "cn": "鱼与熊掌兼得"
+                  },
+                  {
+                        "word": "hat",
+                        "hl": "h",
+                        "cn": "帽子"
+                  },
+                  {
+                        "word": "hand",
+                        "hl": "h",
+                        "cn": "手"
+                  },
+                  {
+                        "word": "house",
+                        "hl": "h",
+                        "cn": "房子"
+                  }
+            ]
+      },
+      {
+            "word": "one way or another",
+            "meaning": "不管怎样 / 无论如何 / 总而言之",
+            "IPA": "/ˈwʌn ˌweɪ ɔːr əˌnʌð.c/",
+            "type": "phrase",
+            "blocks": [
+                  "o",
+                  "ne",
+                  "w",
+                  "ay",
+                  "or",
+                  "an",
+                  "o",
+                  "th",
+                  "er"
+            ],
+            "mindSpark": "音节划分：one way or an·oth·er\n词理分析：one way（一种方式）+ or another（或者另一种方式）。不管通过什么途径，总之要办成，意为不管怎样。",
+            "rule": "肯定决心的全能短语",
+            "ruleDesc": "无论采取哪种途径、排除万难，最终都一定会将目标达成。",
+            "transfers": [
+                  {
+                        "word": "somehow",
+                        "hl": "o",
+                        "cn": "设法以某种方式"
+                  },
+                  {
+                        "word": "by all means",
+                        "hl": "an",
+                        "cn": "想方设法必定"
+                  },
+                  {
+                        "word": "come what may",
+                        "hl": "o",
+                        "cn": "无论发生什么"
+                  },
+                  {
+                        "word": "in the end",
+                        "hl": "th",
+                        "cn": "归根结底"
+                  }
+            ]
+      },
+      {
+            "word": "no way",
+            "meaning": "绝不可能 / 没门儿！",
+            "IPA": "/ˌnəʊ ˈweɪ/",
+            "type": "phrase",
+            "blocks": [
+                  "no",
+                  "w",
+                  "ay"
+            ],
+            "mindSpark": "音节划分：no way (单音节)\n词理分析：no（没有）+ way（路、方法）。根本没有任何路可走，引申为“没门、绝对不可能”。",
+            "rule": "最干脆利落的口语拒绝",
+            "ruleDesc": "在空间上毫无道路可行，在逻辑上毫无商量余地。",
+            "transfers": [
+                  {
+                        "word": "not on your life",
+                        "hl": "no",
+                        "cn": "门儿都没有"
+                  },
+                  {
+                        "word": "absolutely not",
+                        "hl": "no",
+                        "cn": "绝对不行"
+                  },
+                  {
+                        "word": "water",
+                        "hl": "w",
+                        "cn": "水"
+                  },
+                  {
+                        "word": "wind",
+                        "hl": "w",
+                        "cn": "风"
+                  }
+            ]
+      },
+      {
+            "word": "all the way",
+            "meaning": "一路到底 / 全程完完全全",
+            "IPA": "/ˌɔːl ðə ˈweɪ/",
+            "type": "phrase",
+            "blocks": [
+                  "a",
+                  "ll",
+                  "th",
+                  "e",
+                  "w",
+                  "ay"
+            ],
+            "mindSpark": "音节划分：all the way (单音节)\n词理分析：all（全部的）+ way（道路）。在整条道路上一直走到底，引申为“一路上、完全地”。",
+            "rule": "距离和程度的完整覆盖",
+            "ruleDesc": "从起点一直坚持到终点，毫无保留、彻头彻尾。",
+            "transfers": [
+                  {
+                        "word": "completely",
+                        "hl": "e",
+                        "cn": "完全地"
+                  },
+                  {
+                        "word": "the whole distance",
+                        "hl": "a",
+                        "cn": "全程所有距离"
+                  },
+                  {
+                        "word": "all the way home",
+                        "hl": "a",
+                        "cn": "一路回到家"
+                  },
+                  {
+                        "word": "back all the way",
+                        "hl": "a",
+                        "cn": "全力支持到底"
+                  }
+            ]
+      },
+      {
+            "word": "way too",
+            "meaning": "实在太… / 远过于（极度过分）",
+            "IPA": "/ˈweɪ ˌtuː/",
+            "type": "phrase",
+            "blocks": [
+                  "w",
+                  "ay",
+                  "t",
+                  "oo"
+            ],
+            "mindSpark": "音节划分：way too (单音节)\n词理分析：way（在很大程度上）+ too（太）。用 way 来极大地加强语气，表示“远远超过、太…”。",
+            "rule": "way 作程度副词修饰 too",
+            "ruleDesc": "远超正常的边界尺度，口语中用于极度强调超标严重。",
+            "transfers": [
+                  {
+                        "word": "much too",
+                        "hl": "t",
+                        "cn": "实在太…"
+                  },
+                  {
+                        "word": "far too",
+                        "hl": "t",
+                        "cn": "过于太甚"
+                  },
+                  {
+                        "word": "water",
+                        "hl": "w",
+                        "cn": "水"
+                  },
+                  {
+                        "word": "wind",
+                        "hl": "w",
+                        "cn": "风"
+                  }
+            ]
+      }
+];
+
+    /* ================= 纯原生 Web Audio 触感音效引擎 (全功能版) ================= */
+    const audio = {
+      synth: window.speechSynthesis,
+      ctx: null,
+      getCtx() {
+        try {
+          if (!this.ctx) {
+            const Cls = window.AudioContext || window.webkitAudioContext;
+            if (Cls) this.ctx = new Cls();
+          }
+          if (this.ctx && this.ctx.state === "suspended") {
+            this.ctx.resume();
+          }
+          return this.ctx;
+        } catch (e) {
+          return null;
+        }
+      },
+      speak(text) {
+        try {
+          if (this.synth) {
+            this.synth.cancel();
+            const u = new SpeechSynthesisUtterance(text);
+            u.lang = "en-US";
+            u.rate = 0.9;
+            this.synth.speak(u);
+          }
+        } catch (e) {}
+      },
+      tap() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          const osc = c.createOscillator();
+          const gain = c.createGain();
+          osc.frequency.setValueAtTime(450, now);
+          osc.frequency.exponentialRampToValueAtTime(750, now + 0.04);
+          gain.gain.setValueAtTime(0.1, now);
+          gain.gain.exponentialRampToValueAtTime(0.001, now + 0.05);
+          osc.connect(gain);
+          gain.connect(c.destination);
+          osc.start(now);
+          osc.stop(now + 0.05);
+        } catch (e) {}
+      },
+      correct() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          [523.25, 659.25].forEach((f, i) => {
+            const osc = c.createOscillator();
+            const gain = c.createGain();
+            osc.frequency.setValueAtTime(f, now + i * 0.06);
+            gain.gain.setValueAtTime(0.1, now + i * 0.06);
+            gain.gain.exponentialRampToValueAtTime(0.001, now + i * 0.06 + 0.15);
+            osc.connect(gain);
+            gain.connect(c.destination);
+            osc.start(now + i * 0.06);
+            osc.stop(now + i * 0.06 + 0.16);
+          });
+        } catch (e) {}
+      },
+      bingo() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          [523.25, 659.25, 783.99, 1046.5].forEach((f, i) => {
+            const osc = c.createOscillator();
+            const gain = c.createGain();
+            osc.type = "triangle";
+            osc.frequency.setValueAtTime(f, now + i * 0.05);
+            gain.gain.setValueAtTime(0.12, now + i * 0.05);
+            gain.gain.exponentialRampToValueAtTime(0.001, now + i * 0.05 + 0.25);
+            osc.connect(gain);
+            gain.connect(c.destination);
+            osc.start(now + i * 0.05);
+            osc.stop(now + i * 0.05 + 0.28);
+          });
+        } catch (e) {}
+      },
+      wrong() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          const osc = c.createOscillator();
+          const gain = c.createGain();
+          osc.type = "sawtooth";
+          osc.frequency.setValueAtTime(140, now);
+          osc.frequency.linearRampToValueAtTime(80, now + 0.16);
+          gain.gain.setValueAtTime(0.15, now);
+          gain.gain.linearRampToValueAtTime(0.001, now + 0.16);
+          osc.connect(gain);
+          gain.connect(c.destination);
+          osc.start(now);
+          osc.stop(now + 0.18);
+        } catch (e) {}
+      },
+      chestOpen() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          [300, 450, 600, 900].forEach((f, i) => {
+            const osc = c.createOscillator();
+            const gain = c.createGain();
+            osc.frequency.setValueAtTime(f, now + i * 0.04);
+            gain.gain.setValueAtTime(0.09, now + i * 0.04);
+            gain.gain.exponentialRampToValueAtTime(0.001, now + i * 0.04 + 0.15);
+            osc.connect(gain);
+            gain.connect(c.destination);
+            osc.start(now + i * 0.04);
+            osc.stop(now + i * 0.04 + 0.16);
+          });
+        } catch (e) {}
+      },
+      steal() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          const osc = c.createOscillator();
+          const gain = c.createGain();
+          osc.type = "sine";
+          osc.frequency.setValueAtTime(800, now);
+          osc.frequency.linearRampToValueAtTime(300, now + 0.2);
+          gain.gain.setValueAtTime(0.15, now);
+          gain.gain.exponentialRampToValueAtTime(0.001, now + 0.22);
+          osc.connect(gain);
+          gain.connect(c.destination);
+          osc.start(now);
+          osc.stop(now + 0.22);
+        } catch (e) {}
+      },
+      bomb() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          const osc = c.createOscillator();
+          const gain = c.createGain();
+          osc.type = "sawtooth";
+          osc.frequency.setValueAtTime(90, now);
+          osc.frequency.linearRampToValueAtTime(40, now + 0.3);
+          gain.gain.setValueAtTime(0.2, now);
+          gain.gain.exponentialRampToValueAtTime(0.001, now + 0.32);
+          osc.connect(gain);
+          gain.connect(c.destination);
+          osc.start(now);
+          osc.stop(now + 0.32);
+        } catch (e) {}
+      },
+      swap() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          [350, 700, 500, 1000].forEach((f, i) => {
+            const osc = c.createOscillator();
+            const gain = c.createGain();
+            osc.frequency.setValueAtTime(f, now + i * 0.05);
+            gain.gain.setValueAtTime(0.1, now + i * 0.05);
+            gain.gain.exponentialRampToValueAtTime(0.001, now + i * 0.05 + 0.18);
+            osc.connect(gain);
+            gain.connect(c.destination);
+            osc.start(now + i * 0.05);
+            osc.stop(now + i * 0.05 + 0.2);
+          });
+        } catch (e) {}
+      },
+      cash() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          [987.77, 1318.51].forEach((f, i) => {
+            const osc = c.createOscillator();
+            const gain = c.createGain();
+            osc.frequency.setValueAtTime(f, now + i * 0.07);
+            gain.gain.setValueAtTime(0.12, now + i * 0.07);
+            gain.gain.exponentialRampToValueAtTime(0.001, now + i * 0.07 + 0.25);
+            osc.connect(gain);
+            gain.connect(c.destination);
+            osc.start(now + i * 0.07);
+            osc.stop(now + i * 0.07 + 0.28);
+          });
+        } catch (e) {}
+      },
+      sizzle() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          const osc = c.createOscillator();
+          const gain = c.createGain();
+          osc.type = "square";
+          osc.frequency.setValueAtTime(180, now);
+          osc.frequency.exponentialRampToValueAtTime(260, now + 0.15);
+          gain.gain.setValueAtTime(0.08, now);
+          gain.gain.exponentialRampToValueAtTime(0.001, now + 0.16);
+          osc.connect(gain);
+          gain.connect(c.destination);
+          osc.start(now);
+          osc.stop(now + 0.16);
+        } catch (e) {}
+      },
+      heal() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          [587.33, 880, 1174.66, 1760].forEach((f, i) => {
+            const osc = c.createOscillator();
+            const gain = c.createGain();
+            osc.frequency.setValueAtTime(f, now + i * 0.06);
+            gain.gain.setValueAtTime(0.12, now + i * 0.06);
+            gain.gain.exponentialRampToValueAtTime(0.001, now + i * 0.06 + 0.25);
+            osc.connect(gain);
+            gain.connect(c.destination);
+            osc.start(now + i * 0.06);
+            osc.stop(now + i * 0.06 + 0.28);
+          });
+        } catch (e) {}
+      },
+      laser() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          const osc = c.createOscillator();
+          const gain = c.createGain();
+          osc.frequency.setValueAtTime(900, now);
+          osc.frequency.exponentialRampToValueAtTime(150, now + 0.12);
+          gain.gain.setValueAtTime(0.12, now);
+          gain.gain.exponentialRampToValueAtTime(0.001, now + 0.12);
+          osc.connect(gain);
+          gain.connect(c.destination);
+          osc.start(now);
+          osc.stop(now + 0.13);
+        } catch (e) {}
+      },
+      sparkle() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          [784, 988, 1175, 1568].forEach((f, i) => {
+            const osc = c.createOscillator();
+            const gain = c.createGain();
+            osc.type = "sine";
+            osc.frequency.setValueAtTime(f, now + i * 0.04);
+            gain.gain.setValueAtTime(0.1, now + i * 0.04);
+            gain.gain.exponentialRampToValueAtTime(0.001, now + i * 0.04 + 0.2);
+            osc.connect(gain);
+            gain.connect(c.destination);
+            osc.start(now + i * 0.04);
+            osc.stop(now + i * 0.04 + 0.22);
+          });
+        } catch (e) {}
+      },
+      hack() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          [350, 700, 1050, 1400].forEach((f, i) => {
+            const osc = c.createOscillator();
+            const gain = c.createGain();
+            osc.type = "triangle";
+            osc.frequency.setValueAtTime(f, now + i * 0.03);
+            gain.gain.setValueAtTime(0.1, now + i * 0.03);
+            gain.gain.exponentialRampToValueAtTime(0.001, now + i * 0.03 + 0.12);
+            osc.connect(gain);
+            gain.connect(c.destination);
+            osc.start(now + i * 0.03);
+            osc.stop(now + i * 0.03 + 0.14);
+          });
+        } catch (e) {}
+      },
+      cheer() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          [523, 659, 784, 1046, 1318].forEach((f, i) => {
+            const osc = c.createOscillator();
+            const gain = c.createGain();
+            osc.type = "triangle";
+            osc.frequency.setValueAtTime(f, now + i * 0.05);
+            gain.gain.setValueAtTime(0.12, now + i * 0.05);
+            gain.gain.exponentialRampToValueAtTime(0.001, now + i * 0.05 + 0.25);
+            osc.connect(gain);
+            gain.connect(c.destination);
+            osc.start(now + i * 0.05);
+            osc.stop(now + i * 0.05 + 0.28);
+          });
+        } catch (e) {}
+      },
+      honk() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          const osc1 = c.createOscillator();
+          const osc2 = c.createOscillator();
+          const gain = c.createGain();
+          osc1.frequency.setValueAtTime(420, now);
+          osc2.frequency.setValueAtTime(530, now);
+          gain.gain.setValueAtTime(0.15, now);
+          gain.gain.exponentialRampToValueAtTime(0.001, now + 0.18);
+          osc1.connect(gain);
+          osc2.connect(gain);
+          gain.connect(c.destination);
+          osc1.start(now);
+          osc2.start(now);
+          osc1.stop(now + 0.2);
+          osc2.stop(now + 0.2);
+        } catch (e) {}
+      },
+      ocean() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          [440, 554, 659, 880, 1108].forEach((f, i) => {
+            const osc = c.createOscillator();
+            const gain = c.createGain();
+            osc.type = "triangle";
+            osc.frequency.setValueAtTime(f, now + i * 0.05);
+            gain.gain.setValueAtTime(0.12, now + i * 0.05);
+            gain.gain.exponentialRampToValueAtTime(0.001, now + i * 0.05 + 0.25);
+            osc.connect(gain);
+            gain.connect(c.destination);
+            osc.start(now + i * 0.05);
+            osc.stop(now + i * 0.05 + 0.28);
+          });
+        } catch (e) {}
+      }
+    };
+
+
+    /* ================= 核心学习模式逻辑 ================= */
+    let currentIndex = 0;
+    let availableBlocks = [];
+    let selectedBlocks = [];
+    let isSuccess = false;
+    let hasCompletedAllWords = false;
+
+    
+    function syncFromAha() {
+      try {
+        const raw = localStorage.getItem('kron_word_current_unit_payload') || localStorage.getItem('kron_saved_words') || localStorage.getItem('kron:word:shared_vocab');
+        if (!raw) return;
+        const data = JSON.parse(raw);
+        const words = Array.isArray(data) ? data : (data.words || []);
+        if (!words || words.length === 0) return;
+
+        const savedMap = new Map();
+        words.forEach(w => {
+          if (w.word) savedMap.set(w.word.toLowerCase().trim(), w);
+        });
+
+        let matched = 0;
+        VOCABULARY.forEach(item => {
+          const wClean = item.word.toLowerCase().trim();
+          const hasDirect = savedMap.has(wClean);
+          const hasContained = Array.from(savedMap.keys()).some(k => k && (wClean.includes(k) || k.includes(wClean)));
+          if (hasDirect || hasContained) {
+            item.isAhaSaved = true;
+            matched++;
+          }
+        });
+
+        words.forEach(w => {
+          const wClean = (w.word || '').toLowerCase().trim();
+          const exists = VOCABULARY.some(v => {
+            const vClean = v.word.toLowerCase().trim();
+            return vClean === wClean || vClean.includes(wClean);
+          });
+          if (!exists && wClean) {
+            let blocks = [w.word];
+            if (wClean === 'instrument') {
+              blocks = ['in', 'stru', 'ment'];
+            } else if (wClean === 'play') {
+              blocks = ['pl', 'ay'];
+            } else if (wClean === 'play an instrument') {
+              blocks = ['pl', 'ay', 'an', 'in', 'stru', 'ment'];
+            } else {
+              const rawParts = w.word.split(/\s+/).filter(Boolean);
+              blocks = rawParts.length > 1 ? rawParts : [w.word];
+            }
+            VOCABULARY.push({
+              word: w.word,
+              meaning: w.translation || 'Aha! 重点词汇',
+              IPA: w.phonetic || `/${wClean}/`,
+              type: w.partOfSpeech || 'saved',
+              blocks,
+              mindSpark: '你在 Kron English Aha! 学习中亲手收藏的重点单词，快来拼出它吧！',
+              rule: 'Aha! 生词本同步词汇',
+              ruleDesc: '来自课堂实战提问与高频语境，属于你的专属记忆！',
+              transfers: [],
+              isAhaSaved: true
+            });
+            matched++;
+          }
+        });
+
+        const banner = document.getElementById('ahaSyncBanner');
+        const countEl = document.getElementById('ahaSyncCount');
+        if (banner && countEl && words.length > 0) {
+          countEl.innerText = words.length;
+          banner.style.display = 'flex';
+        }
+      } catch (e) {
+        console.warn('Aha sync notice:', e);
+      }
+    }
+
+    function initWord() {
+      isSuccess = false;
+      const item = VOCABULARY[currentIndex];
+
+      document.getElementById("wordMeaning").innerText = item.meaning;
+      document.getElementById("wordIPA").innerText = item.IPA;
+      
+      const tagEl = document.getElementById("wordTypeTag");
+      if (tagEl) {
+        tagEl.innerText = item.type ? item.type.toUpperCase() : "WORD";
+        tagEl.className = "word-type-tag " + (item.type ? `tag-${item.type}` : "tag-word");
+      }
+
+      document.getElementById("successPanel").style.display = "none";
+      document.getElementById("nextBtn").style.display = "none";
+      document.getElementById("footerPlaceholder").style.display = "block";
+
+      const pct = ((currentIndex + 1) / VOCABULARY.length) * 100;
+      document.getElementById("progressBar").style.width = `${pct}%`;
+
+      availableBlocks = item.blocks.map((text, idx) => ({
+        id: `${text}-${idx}-${Math.random()}`,
+        text
+      })).sort(() => Math.random() - 0.5);
+      selectedBlocks = [];
+
+      renderBlocks();
+    }
+
+    function renderBlocks() {
+      const slots = document.getElementById("slotsContainer");
+      const tray = document.getElementById("trayContainer");
+      slots.innerHTML = "";
+      tray.innerHTML = "";
+
+      if (selectedBlocks.length === 0) {
+        slots.innerHTML = '<span class="empty-tip">点击下方发音积木</span>';
+      } else {
+        selectedBlocks.forEach(b => {
+          const btn = document.createElement("button");
+          btn.className = `duo-tile ${isSuccess ? "duo-tile-success" : ""}`;
+          btn.innerText = b.text;
+          btn.onclick = () => {
+            if (isSuccess) return;
+            audio.tap();
+            selectedBlocks = selectedBlocks.filter(x => x.id !== b.id);
+            availableBlocks.push(b);
+            renderBlocks();
+          };
+          slots.appendChild(btn);
+        });
+      }
+
+      availableBlocks.forEach(b => {
+        const btn = document.createElement("button");
+        btn.className = "duo-tile";
+        btn.innerText = b.text;
+        btn.onclick = () => handlePickBlock(b);
+        tray.appendChild(btn);
+      });
+    }
+
+    function handlePickBlock(b) {
+      if (isSuccess) return;
+      audio.tap();
+      audio.speak(b.text);
+
+      selectedBlocks.push(b);
+      availableBlocks = availableBlocks.filter(x => x.id !== b.id);
+      renderBlocks();
+
+      if (availableBlocks.length === 0) {
+        const userStr = selectedBlocks.map(x => x.text).join("");
+        const realStr = VOCABULARY[currentIndex].blocks.join("");
+
+        if (userStr === realStr) {
+          isSuccess = true;
+          audio.bingo();
+          renderBlocks();
+          showWordKnowledge();
+        } else {
+          audio.wrong();
+          const slots = document.getElementById("slotsContainer");
+          slots.classList.add("animate-shake");
+          setTimeout(() => {
+            slots.classList.remove("animate-shake");
+            availableBlocks = VOCABULARY[currentIndex].blocks.map((text, idx) => ({ id: `${text}-${idx}-${Math.random()}`, text })).sort(() => Math.random() - 0.5);
+            selectedBlocks = [];
+            renderBlocks();
+          }, 450);
+        }
+      }
+    }
+
+    function showWordKnowledge() {
+      const item = VOCABULARY[currentIndex];
+      
+      document.getElementById("kronMindSpark").innerText = item.mindSpark;
+      document.getElementById("ruleBadge").innerText = `规律：${item.rule}`;
+      document.getElementById("ruleDesc").innerText = item.ruleDesc;
+
+      const grid = document.getElementById("transferGrid");
+      grid.innerHTML = "";
+      item.transfers.forEach(t => {
+        const tile = document.createElement("div");
+        tile.className = "transfer-tile";
+        tile.innerHTML = `
+          <div>
+            <div class="transfer-word">${renderHighlight(t.word, t.hl)}</div>
+            <div class="transfer-cn">${t.cn}</div>
+          </div>
+          <span style="font-size: 13px; color: #CECECE;">🔊</span>
+        `;
+        tile.onclick = () => {
+          audio.tap();
+          audio.speak(t.word);
+        };
+        grid.appendChild(tile);
+      });
+
+      document.getElementById("successPanel").style.display = "block";
+      document.getElementById("nextBtn").style.display = "block";
+      
+      const isLast = currentIndex === VOCABULARY.length - 1;
+      document.getElementById("nextBtn").innerText = isLast ? "🎓 本单元全部达成！解锁新闻编辑部极限极速侦查 ➔" : "继续下一个单词 ➔";
+      document.getElementById("footerPlaceholder").style.display = "none";
+
+      if (isLast) {
+        hasCompletedAllWords = true;
+        const lockBtn = document.getElementById("lockStatusBtn");
+        lockBtn.innerText = "🎁 新闻编辑部极限极速侦查 (已解锁)";
+        lockBtn.style.borderColor = "#0984E3";
+        lockBtn.style.color = "#0984E3";
+        triggerConfetti();
+        audio.bingo();
+      }
+    }
+
+    function renderHighlight(word, hl) {
+      if (!hl || !word.toLowerCase().includes(hl.toLowerCase())) return word;
+      const reg = new RegExp(`(${hl})`, "i");
+      return word.replace(reg, `<span class="hl-green">$1</span>`);
+    }
+
+    function playCurrentWordAudio() {
+      audio.speak(VOCABULARY[currentIndex].word);
+    }
+
+    function goNextWord() {
+      if (currentIndex < VOCABULARY.length - 1) {
+        currentIndex++;
+        syncFromAha();
+    initWord();
+      } else {
+        switchToGame();
+      }
+    }
+
+    function trySwitchToGame() {
+      if (!hasCompletedAllWords) {
+        alert("🔒 Kron 老师提醒：必须把本单元全部 " + VOCABULARY.length + " 个消息传递、引述转述与新闻追踪核心词汇拼完才能解锁新闻编辑部极限极速侦查！");
+        return;
+      }
+      switchToGame();
+    }
+
+    window.addEventListener("keydown", (e) => {
+      const isLearnVisible = document.getElementById("learnView").style.display !== "none";
+      if (isSuccess && isLearnVisible && (e.key === "Enter" || e.key === " ")) {
+        e.preventDefault();
+        goNextWord();
+      }
+    });
+
+/* ================= 模块二：Wordwall 赛博炼金工坊游戏逻辑 ================= */
+    let timerSec = 180;
+    let timerInterval = null;
+    let botInterval = null;
+    let autoCookInterval = null;
+    let patienceInterval = null;
+
+    let playerGold = 0;
+    let servedCount = 0;
+    let combo = 1;
+    let currentCustomer = null;
+    let currentPatience = 100;
+
+    let upgrades = {
+      knifeLevel: 0,
+      autoCookLevel: 0,
+      bellLevel: 0
+    };
+
+    let cafePlayers = [
+      {
+            "id": "me",
+            "name": "你 (王牌首席调查记者)",
+            "gold": 0,
+            "isBot": false
+      },
+      {
+            "id": "cat",
+            "name": "🐱 柴犬探案馆",
+            "gold": 270,
+            "isBot": true
+      },
+      {
+            "id": "duo",
+            "name": "🦉 多邻国密室解谜",
+            "gold": 410,
+            "isBot": true
+      },
+      {
+            "id": "kron",
+            "name": "⚡️ Kron 贝克街传奇",
+            "gold": 570,
+            "isBot": true
+      }
+];
+
+    const RECIPE_ITEMS = [
+      {
+            "name": "头条突发快讯电报",
+            "emoji": "📰",
+            "tipBonus": 1.2
+      },
+      {
+            "name": "前线记者调查手稿",
+            "emoji": "🎙️",
+            "tipBonus": 1.3
+      },
+      {
+            "name": "深度事实核查档案",
+            "emoji": "🔎",
+            "tipBonus": 1.4
+      },
+      {
+            "name": "独家采访录音磁带",
+            "emoji": "📼",
+            "tipBonus": 1.1
+      },
+      {
+            "name": "全球社媒热搜情报",
+            "emoji": "📡",
+            "tipBonus": 1.0
+      }
+];
+
+    function switchToGame() {
+      document.getElementById("learnView").style.display = "none";
+      document.getElementById("gameView").style.display = "flex";
+      document.body.classList.add("game-mode");
+      startBattle();
+    }
+
+    function switchToLearn() {
+      clearInterval(timerInterval);
+      clearInterval(botInterval);
+      clearInterval(autoCookInterval);
+      clearInterval(patienceInterval);
+      document.getElementById("gameView").style.display = "none";
+      document.getElementById("learnView").style.display = "flex";
+      document.body.classList.remove("game-mode");
+    }
+
+    function startBattle() {
+      audio.bingo();
+      playerGold = 0;
+      servedCount = 0;
+      combo = 1;
+      timerSec = 180;
+
+      cafePlayers.forEach(p => {
+        if (p.isBot) p.gold = Math.floor(Math.random() * 260 + 220);
+        else p.gold = 0;
+      });
+
+      updateStatsUI();
+      updateLeaderboard();
+
+      document.getElementById("gameStartScreen").style.display = "none";
+      document.getElementById("gameOverScreen").style.display = "none";
+      document.getElementById("gameDishDoneScreen").style.display = "none";
+
+      clearInterval(timerInterval);
+      clearInterval(botInterval);
+      clearInterval(autoCookInterval);
+
+      timerInterval = setInterval(() => {
+        timerSec--;
+        const m = String(Math.floor(timerSec / 60)).padStart(2, '0');
+        const s = String(timerSec % 60).padStart(2, '0');
+        document.getElementById("timeText").innerText = `${m}:${s}`;
+
+        if (timerSec <= 0) {
+          endGame();
+        }
+      }, 1000);
+
+      botInterval = setInterval(() => {
+        cafePlayers.forEach(p => {
+          if (p.isBot) {
+            const add = Math.floor(Math.random() * 80 + 30);
+            p.gold += add;
+          }
+        });
+        updateLeaderboard();
+      }, 2500);
+
+      nextCustomer();
+    }
+
+    function updateStatsUI() {
+      document.getElementById("playerGoldText").innerText = `🔮 ${playerGold}`;
+      document.getElementById("servedCountText").innerText = `✨ ${servedCount}`;
+      document.getElementById("comboText").innerText = `⚡ x${combo}`;
+      const me = cafePlayers.find(p => p.id === 'me');
+      if (me) me.gold = playerGold;
+      updateLeaderboard();
+    }
+
+    function nextCustomer() {
+      clearInterval(patienceInterval);
+      document.getElementById("gameDishDoneScreen").style.display = "none";
+      document.getElementById("gameOrderScreen").style.display = "block";
+
+      const pool = RECIPE_ITEMS;
+      const quest = pool[Math.floor(Math.random() * pool.length)];
+      const item = VOCABULARY[Math.floor(Math.random() * VOCABULARY.length)];
+
+      const orderSpeech = `“线索指引：当前挑战目标是「${item.meaning}」！”`;
+      const qPrompt = `极速反应：选择正确的对应英文单词：`;
+      const correctAns = item.word;
+
+      const otherWords = VOCABULARY.filter(w => w.word !== item.word).map(w => w.word).sort(() => Math.random() - 0.5);
+      const distractors = otherWords.slice(0, 3);
+
+      currentCustomer = {
+        name: quest.name,
+        emoji: quest.emoji,
+        tipBonus: quest.tipBonus,
+        targetWord: item,
+        ans: correctAns
+      };
+
+      const custEmojiEl = document.getElementById("custEmoji");
+      if (custEmojiEl) custEmojiEl.innerText = currentCustomer.emoji;
+      const custNameEl = document.getElementById("custName");
+      if (custNameEl) custNameEl.innerText = currentCustomer.name;
+      const custSpeechEl = document.getElementById("custOrderSpeech");
+      if (custSpeechEl) custSpeechEl.innerText = orderSpeech;
+      const qPromptEl = document.getElementById("gameQuestionPrompt");
+      if (qPromptEl) qPromptEl.innerText = qPrompt;
+
+      const opts = [correctAns, ...distractors].sort(() => Math.random() - 0.5);
+      const optGrid = document.getElementById("gameOptionGrid");
+      optGrid.innerHTML = "";
+
+      opts.forEach(opt => {
+        const btn = document.createElement("button");
+        btn.className = "duo-btn duo-btn-dark game-opt-btn";
+        btn.innerText = opt;
+        btn.onclick = () => handleOrderAnswer(opt);
+        optGrid.appendChild(btn);
+      });
+
+      currentPatience = 100;
+      const patienceSpeed = upgrades.bellLevel > 0 ? 0.9 : 1.5;
+      patienceInterval = setInterval(() => {
+        currentPatience -= patienceSpeed;
+        const pFill = document.getElementById("patienceBar");
+        if (pFill) {
+          pFill.style.width = `${Math.max(0, currentPatience)}%`;
+          if (currentPatience > 50) pFill.style.backgroundColor = "#58CC02";
+          else if (currentPatience > 25) pFill.style.backgroundColor = "#FF9600";
+          else pFill.style.backgroundColor = "#FF4B4B";
+        }
+
+        if (currentPatience <= 0) {
+          clearInterval(patienceInterval);
+          handleCustomerLeave();
+        }
+      }, 100);
+    }
+
+    function handleOrderAnswer(chosen) {
+      if (chosen === currentCustomer.ans) {
+        clearInterval(patienceInterval);
+        audio.sparkle();
+        servedCount++;
+        combo++;
+
+        let baseTip = Math.floor(190 * currentCustomer.tipBonus);
+        if (upgrades.knifeLevel > 0) baseTip = Math.floor(baseTip * 1.5);
+        const comboBonus = Math.floor(combo * 22);
+        const totalTip = baseTip + comboBonus;
+        playerGold += totalTip;
+
+        updateStatsUI();
+
+        document.getElementById("gameOrderScreen").style.display = "none";
+        document.getElementById("gameDishDoneScreen").style.display = "block";
+        document.getElementById("dishDoneIcon").innerText = `✨💎${currentCustomer.emoji}✨`;
+        document.getElementById("dishDoneTitle").innerText = `炼金大成！+${totalTip} 🔮`;
+        document.getElementById("dishDoneDesc").innerText = `${currentCustomer.name} 绽放出绝美流光！收获海量贤者能量（连击加成 +${comboBonus}）！`;
+
+        setTicker(`💎 奇迹！成功提纯 ${currentCustomer.name}，能量暴涨 +${totalTip} 点！`);
+      } else {
+        audio.wrong();
+        combo = 1;
+        updateStatsUI();
+        setTicker(`❌ 元素失衡！炼金熔炉冒出黑烟，连击重置！`);
+      }
+    }
+
+    function handleCustomerLeave() {
+      audio.wrong();
+      combo = 1;
+      updateStatsUI();
+      setTicker(`💨 熔炉冷却！${currentCustomer.name} 分子离散化，合成失败！`);
+      nextCustomer();
+    }
+
+    function setTicker(msg) {
+      document.getElementById("tickerMsg").innerText = msg;
+    }
+
+    function updateLeaderboard() {
+      const sorted = [...cafePlayers].sort((a, b) => b.gold - a.gold);
+      const grid = document.getElementById("leaderboardGrid");
+      grid.innerHTML = "";
+      sorted.forEach((p, idx) => {
+        const medal = idx === 0 ? "🥇 " : idx === 1 ? "🥈 " : idx === 2 ? "🥉 " : "#4 ";
+        const card = document.createElement("div");
+        card.className = `lb-card ${p.id === 'me' ? 'is-me' : ''}`;
+        card.innerHTML = `
+          <div class="lb-name">${medal}${p.name}</div>
+          <div class="lb-gold">${p.gold} 🔮</div>
+        `;
+        grid.appendChild(card);
+      });
+    }
+
+    function openMarket() {
+      document.getElementById("marketDrawer").style.display = "flex";
+    }
+    function closeMarket() {
+      document.getElementById("marketDrawer").style.display = "none";
+    }
+
+    function buyUpgrade(type, cost) {
+      if (playerGold < cost) {
+        alert("🔮 贤者之石不足，快去多提纯几份材质吧！");
+        return;
+      }
+      playerGold -= cost;
+      audio.sparkle();
+
+      if (type === 'knife') {
+        upgrades.knifeLevel++;
+        alert("⚡ 离子催化剂升级完成！单次合成收益提升 50%！");
+      } else if (type === 'autoCook') {
+        upgrades.autoCookLevel++;
+        if (!autoCookInterval) {
+          autoCookInterval = setInterval(() => {
+            playerGold += 60 * upgrades.autoCookLevel;
+            updateStatsUI();
+          }, 3000);
+        }
+        alert("🤖 自动分子提纯臂启动！每 3 秒自动产出贤者能量！");
+      } else if (type === 'bell') {
+        upgrades.bellLevel++;
+        alert("⏳ 时间膨胀沙漏开启！熔炉降温速度大幅减缓！");
+      }
+
+      updateStatsUI();
+      document.getElementById("playerBuffs").innerText = 
+        `🔮 催化矩阵: ${upgrades.autoCookLevel}级 | 🧪 提纯釜: +${upgrades.knifeLevel * 50}%`;
+      closeMarket();
+    }
+
+    function endGame() {
+      clearInterval(timerInterval);
+      clearInterval(botInterval);
+      clearInterval(autoCookInterval);
+      clearInterval(patienceInterval);
+
+      document.getElementById("gameOrderScreen").style.display = "none";
+      document.getElementById("gameDishDoneScreen").style.display = "none";
+      document.getElementById("gameOverScreen").style.display = "block";
+
+      const sorted = [...cafePlayers].sort((a, b) => b.gold - a.gold);
+      const myRank = sorted.findIndex(p => p.id === 'me') + 1;
+
+      if (myRank === 1) {
+        document.getElementById("finalTrophy").innerText = "👑";
+        document.getElementById("finalRankTitle").innerText = "赛博传奇大炼金术士！";
+        document.getElementById("finalRankDesc").innerText = `贤者之石高达 ${playerGold} 🔮！万物皆可由你炼化！`;
+        triggerConfetti();
+      } else {
+        document.getElementById("finalTrophy").innerText = "🥈";
+        document.getElementById("finalRankTitle").innerText = `荣获全城第 ${myRank} 名！`;
+        document.getElementById("finalRankDesc").innerText = `能量储备 ${playerGold} 🔮，距离至尊贤者仅一步之遥！`;
+      }
+
+      const podium = document.getElementById("finalPodium");
+      podium.innerHTML = "";
+      sorted.forEach((p, idx) => {
+        const row = document.createElement("div");
+        row.style.cssText = "display: flex; justify-content: space-between; padding: 6px 0; font-size: 13px; font-weight: 800;";
+        row.innerHTML = `
+          <span style="color: ${p.id === 'me' ? '#AF52DE' : '#FFF'};">${idx + 1}. ${p.name}</span>
+          <span style="color: #FFC800;">${p.gold} 🔮</span>
+        `;
+        podium.appendChild(row);
+      });
+    }
+
+function triggerConfetti() {
+      const canvas = document.getElementById("confettiCanvas");
+      const ctx = canvas.getContext("2d");
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+
+      const particles = [];
+      const colors = ["#0984E3", "#58CC02", "#FFC800", "#FF4757", "#AF52DE"];
+
+      for (let i = 0; i < 90; i++) {
+        particles.push({
+          x: canvas.width / 2,
+          y: canvas.height / 2,
+          vx: (Math.random() - 0.5) * 16,
+          vy: (Math.random() - 0.7) * 18,
+          size: Math.random() * 9 + 4,
+          color: colors[Math.floor(Math.random() * colors.length)],
+          rotation: Math.random() * 360,
+          vRot: (Math.random() - 0.5) * 12,
+          opacity: 1
+        });
+      }
+
+      let frames = 0;
+      function render() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        particles.forEach(p => {
+          p.x += p.vx;
+          p.y += p.vy;
+          p.vy += 0.35;
+          p.rotation += p.vRot;
+          p.opacity -= 0.01;
+
+          ctx.save();
+          ctx.translate(p.x, p.y);
+          ctx.rotate((p.rotation * Math.PI) / 180);
+          ctx.fillStyle = p.color;
+          ctx.globalAlpha = Math.max(0, p.opacity);
+          ctx.fillRect(-p.size / 2, -p.size / 2, p.size, p.size);
+          ctx.restore();
+        });
+
+        frames++;
+        if (frames < 100) {
+          requestAnimationFrame(render);
+        } else {
+          ctx.clearRect(0, 0, canvas.width, canvas.height);
+        }
+      }
+      render();
+    }
+    function fireConfetti() { triggerConfetti(); }
+
+    syncFromAha();
+    initWord();
+  </script>
+</body>
+</html>

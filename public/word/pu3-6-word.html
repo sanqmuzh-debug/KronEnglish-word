@@ -1,0 +1,2257 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Power Up 3 · Unit 6: 校园学科与数字极客 (LexiBlock + Gimkit 赛博黑客数据战)</title>
+  <style>
+    :root {
+      --duo-green: #58CC02;
+      --duo-green-shadow: #46A302;
+      --duo-green-hover: #61E002;
+      --duo-blue: #1CB0F6;
+      --duo-blue-shadow: #1899D6;
+      --duo-gold: #FFC800;
+      --duo-gold-shadow: #E5A800;
+      --duo-emerald: #00B894;
+      --duo-emerald-shadow: #008A6F;
+      --duo-red: #FF4B4B;
+      --duo-red-shadow: #EA2B2B;
+      --bg-light: #F7F7F9;
+      --bg-card: #FFFFFF;
+      --text-main: #1D1D1F;
+      --text-body: #4B4B4B;
+      --text-muted: #777777;
+      --text-sub: #AFAFAF;
+      --border-light: #E5E5E5;
+      --border-tile: #CECECE;
+      --radius-sm: 12px;
+      --radius-md: 16px;
+      --radius-lg: 24px;
+      --radius-pill: 999px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      user-select: none;
+      -webkit-tap-highlight-color: transparent;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", "Segoe UI", Roboto, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-light);
+      color: var(--text-body);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      transition: background-color 0.3s ease;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body.game-mode {
+      background-color: #06110D;
+      color: #FFFFFF;
+    }
+
+    #app {
+      width: 100%;
+      max-width: 500px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 16px;
+      position: relative;
+    }
+
+    .duo-btn {
+      position: relative;
+      border-radius: 18px;
+      font-weight: 900;
+      cursor: pointer;
+      transition: all 0.08s ease;
+      text-align: center;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      user-select: none;
+      border: none;
+    }
+    .duo-btn:active {
+      transform: translateY(3px);
+      border-bottom-width: 2px !important;
+    }
+
+    .duo-btn-green {
+      background: var(--duo-green);
+      color: #FFFFFF;
+      border-bottom: 5px solid var(--duo-green-shadow);
+    }
+    .duo-btn-green:hover { background: var(--duo-green-hover); }
+
+    .duo-btn-emerald {
+      background: var(--duo-emerald);
+      color: #022F26;
+      border-bottom: 5px solid var(--duo-emerald-shadow);
+    }
+
+    .duo-btn-gold {
+      background: var(--duo-gold);
+      color: #7A5200;
+      border-bottom: 5px solid var(--duo-gold-shadow);
+    }
+
+    .duo-btn-dark {
+      background: #0E221A;
+      color: #FFFFFF;
+      border: 2px solid #1A3D2E;
+      border-bottom: 5px solid #081711;
+    }
+    .duo-btn-dark:hover { background: #153327; }
+
+    .duo-tile {
+      background-color: #FFFFFF;
+      color: var(--text-body);
+      border: 2px solid var(--border-light);
+      border-bottom: 4px solid var(--border-tile);
+      border-radius: 16px;
+      font-size: 20px;
+      font-weight: 900;
+      padding: 12px 18px;
+      cursor: pointer;
+      transition: all 0.08s ease-in-out;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      user-select: none;
+    }
+    .duo-tile:hover { background-color: #F8F8F8; }
+    .duo-tile:active {
+      transform: translateY(2px);
+      border-bottom-width: 2px;
+    }
+
+    .duo-tile-success {
+      background-color: var(--duo-green) !important;
+      color: #FFFFFF !important;
+      border-color: var(--duo-green) !important;
+      border-bottom-color: var(--duo-green-shadow) !important;
+      transform: scale(1.04);
+    }
+
+    .learn-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 12px;
+      gap: 12px;
+    }
+    .unit-tag {
+      background: #E8F5E9;
+      color: #1B5E20;
+      font-size: 11px;
+      font-weight: 900;
+      padding: 4px 10px;
+      border-radius: 999px;
+      letter-spacing: 0.5px;
+      white-space: nowrap;
+    }
+    .progress-track {
+      flex: 1;
+      height: 14px;
+      background: #E5E5E5;
+      border-radius: var(--radius-pill);
+      overflow: hidden;
+      position: relative;
+    }
+    .progress-fill {
+      height: 100%;
+      background: var(--duo-green);
+      border-radius: var(--radius-pill);
+      transition: width 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+    .mode-switch-btn {
+      background: #FFF;
+      border: 2px solid #E5E5E5;
+      border-radius: var(--radius-pill);
+      padding: 6px 12px;
+      font-size: 12px;
+      font-weight: 800;
+      color: #777;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      transition: all 0.15s ease;
+      white-space: nowrap;
+    }
+    .mode-switch-btn:hover {
+      border-color: var(--duo-emerald);
+      color: var(--duo-emerald);
+    }
+
+    .word-header {
+      text-align: center;
+      margin-bottom: 16px;
+    }
+    .word-meaning {
+      font-size: 26px;
+      font-weight: 900;
+      color: var(--text-main);
+      margin-bottom: 6px;
+      letter-spacing: -0.5px;
+    }
+    .word-type-tag {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 800;
+      padding: 2px 8px;
+      border-radius: 6px;
+      margin-left: 6px;
+      vertical-align: middle;
+    }
+    .tag-subject { background: #E8F5E9; color: #2E7D32; }
+    .tag-tool { background: #E0F2F1; color: #00695C; }
+
+    .word-ipa-btn {
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      font-size: 15px;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      cursor: pointer;
+      padding: 4px 10px;
+      border-radius: var(--radius-pill);
+      transition: background 0.15s ease;
+    }
+    .word-ipa-btn:hover { background: #EDEDED; }
+
+    .slots-container {
+      min-height: 64px;
+      border-bottom: 2px dashed var(--border-tile);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 10px 0;
+      margin-bottom: 20px;
+    }
+    .tray-container {
+      min-height: 80px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    .empty-tip {
+      color: var(--text-sub);
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .kron-spark-card {
+      background: linear-gradient(135deg, #FFF9DB 0%, #FFF3BF 100%);
+      border: 2px solid #FFE066;
+      border-radius: 18px;
+      padding: 14px 16px;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      box-shadow: 0 4px 12px rgba(245, 159, 0, 0.08);
+    }
+    .kron-avatar {
+      font-size: 28px;
+      line-height: 1;
+      filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+    }
+    .kron-spark-content {
+      flex: 1;
+    }
+    .kron-spark-title {
+      font-size: 12px;
+      font-weight: 900;
+      color: #D9480F;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .kron-spark-text {
+      font-size: 14px;
+      color: #495057;
+      font-weight: 700;
+      line-height: 1.45;
+    }
+
+    .transfer-panel {
+      background: var(--bg-card);
+      border: 2px solid var(--border-light);
+      border-radius: 20px;
+      padding: 14px;
+      margin-top: 10px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.04);
+    }
+    .rule-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      margin-bottom: 12px;
+      line-height: 1.4;
+    }
+    .rule-badge {
+      background: #E8F5E9;
+      color: #2E7D32;
+      font-size: 11px;
+      font-weight: 900;
+      padding: 3px 8px;
+      border-radius: 6px;
+      white-space: nowrap;
+    }
+    .rule-desc {
+      font-size: 12px;
+      font-weight: 700;
+      color: #555;
+    }
+    .transfer-title {
+      font-size: 11px;
+      font-weight: 900;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 8px;
+    }
+    .transfer-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+    .transfer-tile {
+      background: #FAFAFA;
+      border: 1.5px solid var(--border-light);
+      border-radius: 12px;
+      padding: 8px 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+      transition: all 0.1s ease;
+    }
+    .transfer-tile:hover {
+      background: #F0FDF4;
+      border-color: var(--duo-green);
+    }
+    .transfer-word {
+      font-weight: 900;
+      font-size: 14px;
+      color: var(--text-main);
+    }
+    .transfer-cn {
+      font-size: 11px;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+    .hl-green {
+      color: var(--duo-green);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    @keyframes popIn {
+      0% { opacity: 0; transform: scale(0.92) translateY(8px); }
+      100% { opacity: 1; transform: scale(1) translateY(0); }
+    }
+    .animate-pop-in {
+      animation: popIn 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+    }
+
+    @keyframes shake {
+      0%, 100% { transform: translateX(0); }
+      20%, 60% { transform: translateX(-8px); }
+      40%, 80% { transform: translateX(8px); }
+    }
+    .animate-shake {
+      animation: shake 0.4s ease-in-out;
+    }
+
+    /* ================= Gimkit 赛博黑客数据入侵独立游戏 ================= */
+    .game-top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+    .timer-pill {
+      background: #0E221A;
+      border: 2px solid #1A3D2E;
+      border-radius: var(--radius-pill);
+      padding: 6px 14px;
+      font-size: 14px;
+      font-weight: 900;
+      color: #00B894;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .hacker-stats-row {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+    .hacker-stat-card {
+      flex: 1;
+      background: #091913;
+      border: 1px solid #163628;
+      border-radius: 16px;
+      padding: 10px 12px;
+      text-align: center;
+    }
+    .stat-label {
+      font-size: 11px;
+      color: #8C9BAE;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+    .stat-val {
+      font-size: 20px;
+      font-weight: 900;
+      color: #00B894;
+    }
+
+    .hacker-stage {
+      background: #081611;
+      border: 2px solid #18382A;
+      border-radius: 24px;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 14px;
+      min-height: 290px;
+      justify-content: center;
+    }
+
+    .terminal-bubble {
+      background: #10261D;
+      border: 2px solid #1E4D37;
+      border-radius: 18px;
+      padding: 10px 16px;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      max-width: 90%;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+    }
+    .terminal-tag {
+      font-size: 18px;
+      font-weight: 900;
+      color: #00B894;
+    }
+    .terminal-avatar-box {
+      position: relative;
+      margin-bottom: 8px;
+    }
+    .terminal-emoji {
+      font-size: 64px;
+      filter: drop-shadow(0 4px 8px rgba(0,0,0,0.4));
+      display: inline-block;
+      animation: matrixPulse 1.8s ease-in-out infinite alternate;
+    }
+    @keyframes matrixPulse {
+      0% { transform: scale(1); filter: drop-shadow(0 0 6px #00B894); }
+      100% { transform: scale(1.08); filter: drop-shadow(0 0 16px #00B894); }
+    }
+    .terminal-firewall-bar {
+      width: 130px;
+      height: 8px;
+      background: #18382A;
+      border-radius: 999px;
+      overflow: hidden;
+      margin: 0 auto;
+    }
+    .terminal-firewall-fill {
+      height: 100%;
+      background: #00B894;
+      border-radius: 999px;
+      transition: width 0.1s linear, background-color 0.3s ease;
+    }
+
+    .game-opt-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      width: 100%;
+    }
+    .game-opt-btn {
+      padding: 14px 10px;
+      font-size: 15px;
+      line-height: 1.3;
+      border-radius: 16px;
+    }
+
+    .ticker-bar {
+      background: #091913;
+      border: 1px solid #163628;
+      border-radius: var(--radius-pill);
+      padding: 6px 14px;
+      font-size: 12px;
+      color: #8DA1BA;
+      font-weight: 700;
+      margin-bottom: 12px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .leaderboard-mini {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 6px;
+      margin-bottom: 12px;
+    }
+    .lb-card {
+      background: #081611;
+      border: 1px solid #18382A;
+      border-radius: 12px;
+      padding: 8px 6px;
+      text-align: center;
+      transition: all 0.2s ease;
+    }
+    .lb-card.is-me {
+      border-color: #00B894;
+      background: #10261D;
+    }
+    .lb-name {
+      font-size: 11px;
+      color: #8C9BAE;
+      font-weight: 800;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .lb-gold {
+      font-size: 13px;
+      font-weight: 900;
+      color: #FFFFFF;
+    }
+
+    .market-drawer {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.75);
+      backdrop-filter: blur(8px);
+      z-index: 100;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .market-modal {
+      background: #061510;
+      border: 2px solid #00B894;
+      border-radius: 28px;
+      width: 100%;
+      max-width: 420px;
+      padding: 22px;
+      box-shadow: 0 20px 50px rgba(0,184,148,0.25);
+    }
+    .market-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #0E251C;
+      border: 1px solid #1B4433;
+      border-radius: 16px;
+      padding: 12px;
+      margin-bottom: 10px;
+    }
+
+    #confettiCanvas {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 999;
+    }
+  </style>
+</head>
+<body>
+
+  <canvas id="confettiCanvas"></canvas>
+
+  <div id="app">
+    
+    <!-- ==================== 视图 1：多邻国积木背单词 + Kron 脑洞场景 ==================== -->
+    <div id="learnView" style="display: flex; flex-direction: column; justify-content: space-between; min-height: calc(100vh - 32px);">
+      <header class="learn-header">
+        <span class="unit-tag">PU3 · UNIT 6</span>
+        <div class="progress-track">
+          <div class="progress-fill" id="progressBar" style="width: 0%;"></div>
+        </div>
+        <button class="mode-switch-btn" id="lockStatusBtn" onclick="trySwitchToGame()">
+          🔒 数据入侵 (需全通)
+        </button>
+      </header>
+      <!-- Aha! 生词本双向打通同步横幅 -->
+      <div id="ahaSyncBanner" style="display:none; align-items: center; justify-content: space-between; background: linear-gradient(135deg, rgba(88,204,2,0.12), rgba(28,176,246,0.12)); border: 1.5px solid #58CC02; border-radius: 14px; padding: 8px 12px; margin-bottom: 12px; font-size: 11px; font-weight: 800; color: #1D1D1F;">
+        <div style="display: flex; align-items: center; gap: 6px;">
+          <span>⚡</span>
+          <span>已成功打通并同步来自 <strong>Aha! 生词本</strong> 的 <span id="ahaSyncCount" style="color: #46A302; font-size: 13px;">0</span> 个重点词汇</span>
+        </div>
+        <button onclick="document.getElementById('ahaSyncBanner').style.display='none'" style="background:none; border:none; color:#888; cursor:pointer; font-size:12px; font-weight:bold;">✕</button>
+      </div>
+
+      <div style="margin: auto 0; padding: 12px 0;">
+        <div class="word-header">
+          <div class="word-meaning">
+            <span id="wordMeaning">...</span>
+            <span class="word-type-tag" id="wordTypeTag">Subject</span>
+          </div>
+          <button class="word-ipa-btn" onclick="playCurrentWordAudio()">
+            <span id="wordIPA">...</span>
+            <span>🔊</span>
+          </button>
+        </div>
+
+        <div class="slots-container" id="slotsContainer"></div>
+        <div class="tray-container" id="trayContainer"></div>
+
+        <div id="successPanel" style="display: none;" class="animate-pop-in">
+          <div class="kron-spark-card">
+            <div class="kron-avatar">👨🏻‍🏫</div>
+            <div class="kron-spark-content">
+              <div class="kron-spark-title">⚡️ Kron 老师脑洞发问</div>
+              <div class="kron-spark-text" id="kronMindSpark">...</div>
+            </div>
+          </div>
+
+          <div class="transfer-panel">
+            <div class="rule-row">
+              <span class="rule-badge" id="ruleBadge">...</span>
+              <span class="rule-desc" id="ruleDesc">...</span>
+            </div>
+            <div class="transfer-title">举一反三单词积木（点击听纯正发音）</div>
+            <div class="transfer-grid" id="transferGrid"></div>
+          </div>
+        </div>
+      </div>
+
+      <div style="padding-top: 14px;">
+        <button class="duo-btn duo-btn-green" id="nextBtn" style="width: 100%; padding: 16px; font-size: 18px; display: none;" onclick="goNextWord()">
+          继续
+        </button>
+        <div id="footerPlaceholder" style="text-align: center; color: #AFAFAF; font-size: 13px; font-weight: 700; height: 55px; line-height: 55px;">
+          点击下方发音积木完成拼装
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== 视图 2：Gimkit 赛博黑客数据入侵独立游戏 ==================== -->
+    <div id="gameView" style="display: none; flex-direction: column; justify-content: space-between; min-height: calc(100vh - 32px);">
+      <div>
+        <div class="game-top-bar">
+          <div class="timer-pill" id="timerDisplay">
+            <span>💻</span>
+            <span id="timeText">03:00</span>
+          </div>
+          <div style="display: flex; gap: 8px;">
+            <button class="duo-btn duo-btn-emerald" style="padding: 6px 12px; font-size: 12px;" onclick="openMarket()">
+              💾 极客军火库
+            </button>
+            <button class="duo-btn duo-btn-dark" style="padding: 6px 12px; font-size: 12px;" onclick="switchToLearn()">
+              📖 返回复习
+            </button>
+          </div>
+        </div>
+
+        <div class="hacker-stats-row">
+          <div class="hacker-stat-card">
+            <div class="stat-label">算力筹码</div>
+            <div class="stat-val" id="playerGoldText">⚡ 0</div>
+          </div>
+          <div class="hacker-stat-card">
+            <div class="stat-label">攻破主机</div>
+            <div class="stat-val" id="servedCountText">🔓 0</div>
+          </div>
+          <div class="hacker-stat-card">
+            <div class="stat-label">渗透加成</div>
+            <div class="stat-val" id="comboText" style="color: #00B894;">🔥 x1</div>
+          </div>
+        </div>
+
+        <div class="ticker-bar" id="tickerMsg">
+          🛰️ 终端自检完成！全网防火墙正在巡逻，答题破解学科核心服务器！
+        </div>
+
+        <div class="leaderboard-mini" id="leaderboardGrid"></div>
+      </div>
+
+      <div class="hacker-stage" id="hackerStage">
+        
+        <div id="gameStartScreen" style="text-align: center; padding: 10px;">
+          <div style="font-size: 54px; margin-bottom: 8px;">💻</div>
+          <h1 style="font-size: 22px; font-weight: 900; margin-bottom: 6px; color: #00B894;">
+            GIMKIT · 校园黑客空间入侵
+          </h1>
+          <p style="font-size: 13px; color: #8C9BAE; line-height: 1.5; margin-bottom: 20px;">
+            已吃透 21 个学科知识与科技工具词汇！<br/>神秘服务器集群已在线待命！<br/>答对题目注入木马密钥，破解全校终极期末排课表！
+          </p>
+          <button class="duo-btn duo-btn-emerald" style="width: 100%; padding: 15px; font-size: 16px;" onclick="startBattle()">
+            启动渗透黑客终端 ➔
+          </button>
+        </div>
+
+        <div id="gameOrderScreen" style="display: none; width: 100%; text-align: center;">
+          <div class="terminal-avatar-box">
+            <div class="terminal-emoji" id="custEmoji">👾</div>
+          </div>
+          
+          <div class="terminal-bubble" style="margin: 0 auto 12px auto;">
+            <span style="font-size: 18px;">🔑</span>
+            <div style="text-align: left;">
+              <div style="font-size: 11px; color: #8DA1BA; font-weight: 800;" id="custName">加密学科主机</div>
+              <div class="terminal-tag" id="custOrderSpeech">“目标访问：「科学」！”</div>
+            </div>
+          </div>
+
+          <div style="margin-bottom: 12px;">
+            <div class="terminal-firewall-bar">
+              <div class="terminal-firewall-fill" id="patienceBar" style="width: 100%;"></div>
+            </div>
+          </div>
+
+          <div style="font-size: 13px; font-weight: 900; color: #E5E5E5; margin-bottom: 14px;" id="gameQuestionPrompt">
+            破解密钥：匹配对应的学科或数字工具单词：
+          </div>
+
+          <div class="game-opt-grid" id="gameOptionGrid"></div>
+        </div>
+
+        <div id="gameDishDoneScreen" style="display: none; text-align: center;" class="animate-pop-in">
+          <div id="dishDoneIcon" style="font-size: 60px; margin-bottom: 8px;">✨💻🔓✨</div>
+          <h3 id="dishDoneTitle" style="font-size: 22px; font-weight: 900; color: #00B894; margin-bottom: 6px;">
+            渗透成功！+350 ⚡
+          </h3>
+          <p id="dishDoneDesc" style="font-size: 13px; color: #8DA1BA; margin-bottom: 18px;">
+            防火墙被瞬间瓦解！海量算力数据包下载完成！
+          </p>
+          <button class="duo-btn duo-btn-emerald" style="width: 100%; padding: 14px; font-size: 16px;" onclick="nextCustomer()">
+            入侵下一个主机 ➔
+          </button>
+        </div>
+
+        <div id="gameOverScreen" style="display: none; text-align: center; width: 100%;" class="animate-pop-in">
+          <div style="font-size: 56px; margin-bottom: 8px;" id="finalTrophy">👑</div>
+          <h2 style="font-size: 24px; font-weight: 900; color: #FFC800;" id="finalRankTitle">全球首席白帽极客！</h2>
+          <p style="font-size: 12px; color: #8C9BAE; margin-bottom: 16px;" id="finalRankDesc">算力高达 ${playerGold} ⚡！全网任你畅游！</p>
+          <div style="background: #0E251C; border-radius: 20px; padding: 14px; margin-bottom: 18px;" id="finalPodium"></div>
+          <button class="duo-btn duo-btn-emerald" style="width: 100%; padding: 14px; font-size: 16px;" onclick="startBattle()">
+            再黑一次 🔄
+          </button>
+        </div>
+
+      </div>
+
+      <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 10px; font-size: 11px; font-weight: 800; color: #5B6F8E;">
+        <span>GIMKIT CYBER · KRON 独家定制版</span>
+        <span id="playerBuffs">💻 木马注入: 0级 | 🛡️ 防火墙: 基础</span>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="market-drawer" id="marketDrawer">
+    <div class="market-modal">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+        <h3 style="font-size: 18px; font-weight: 900; color: #00B894;">💾 极客军火暗网</h3>
+        <button style="background: none; border: none; color: #8C9BAE; font-size: 22px; cursor: pointer;" onclick="closeMarket()">✕</button>
+      </div>
+
+      <div class="market-item">
+        <div>
+          <div style="font-weight: 900; font-size: 14px; color: #FFF;">⚡ 量子超频处理器</div>
+          <div style="font-size: 11px; color: #8C9BAE;">单次入侵破解算力永久提升 50%</div>
+        </div>
+        <button class="duo-btn duo-btn-emerald" style="padding: 8px 12px; font-size: 12px;" onclick="buyUpgrade('knife', 400)">
+          400 ⚡
+        </button>
+      </div>
+
+      <div class="market-item">
+        <div>
+          <div style="font-weight: 900; font-size: 14px; color: #FFF;">🤖 分布式挖矿木马</div>
+          <div style="font-size: 11px; color: #8C9BAE;">每 3 秒自动产出 60 点算力代币</div>
+        </div>
+        <button class="duo-btn duo-btn-emerald" style="padding: 8px 12px; font-size: 12px;" onclick="buyUpgrade('autoCook', 600)">
+          600 ⚡
+        </button>
+      </div>
+
+      <div class="market-item">
+        <div>
+          <div style="font-weight: 900; font-size: 14px; color: #FFF;">🛡️ 反追踪代理跳板</div>
+          <div style="font-size: 11px; color: #8C9BAE;">防火墙排查被踢时间减缓 40%</div>
+        </div>
+        <button class="duo-btn duo-btn-emerald" style="padding: 8px 12px; font-size: 12px;" onclick="buyUpgrade('bell', 350)">
+          350 ⚡
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    /* ================= Unit 6: 21 词全量数据库 (学科知识与科技工具) ================= */
+    const VOCABULARY = [
+      {
+            "word": "art",
+            "meaning": "美术 / 艺术",
+            "IPA": "/ɑːt/",
+            "type": "subject",
+            "blocks": [
+                  "a",
+                  "rt"
+            ],
+            "mindSpark": "在美术课上给名画蒙娜丽莎画上一副墨镜，你的 art 老师会夸你有创意吗？",
+            "rule": "ar 组合发开阔长音 /ɑː/",
+            "ruleDesc": "美术、艺术，开阔浑厚的 /ɑː/。",
+            "transfers": [
+                  {
+                        "word": "artist",
+                        "hl": "a",
+                        "cn": "艺术家"
+                  },
+                  {
+                        "word": "smart",
+                        "hl": "a",
+                        "cn": "聪明的"
+                  },
+                  {
+                        "word": "cart",
+                        "hl": "a",
+                        "cn": "手推车"
+                  },
+                  {
+                        "word": "heart",
+                        "hl": "a",
+                        "cn": "心脏/爱心"
+                  }
+            ]
+      },
+      {
+            "word": "break",
+            "meaning": "课间休息 / 休息时间",
+            "IPA": "/breɪk/",
+            "type": "subject",
+            "blocks": [
+                  "br",
+                  "eak"
+            ],
+            "mindSpark": "下课铃一响全班瞬间复活！课间十分钟 break 你是冲小卖部还是去操场玩球？",
+            "rule": "ea 变异发双元音 /eɪ/",
+            "ruleDesc": "课间休息、打破！发音刺客：ea 没读 /iː/，而是变音读 /eɪ/。",
+            "transfers": [
+                  {
+                        "word": "steak",
+                        "hl": "eak",
+                        "cn": "牛排"
+                  },
+                  {
+                        "word": "daybreak",
+                        "hl": "br",
+                        "cn": "破晓/黎明"
+                  },
+                  {
+                        "word": "breakfast",
+                        "hl": "br",
+                        "cn": "早餐"
+                  },
+                  {
+                        "word": "brave",
+                        "hl": "br",
+                        "cn": "勇敢的"
+                  }
+            ]
+      },
+      {
+            "word": "geography",
+            "meaning": "地理 / 地理学",
+            "IPA": "/dʒiˈɒɡ.rə.fi/",
+            "type": "subject",
+            "blocks": [
+                  "ge",
+                  "og",
+                  "ra",
+                  "phy"
+            ],
+            "mindSpark": "地理课上转动地球仪，闭上眼手指戳中哪里就去哪，你最想戳中哪个洲？",
+            "rule": "g 遇 e 发 /dʒ/ + ph 发 /f/",
+            "ruleDesc": "四大音节轻松拆：ge-og-ra-phy，地理学！",
+            "transfers": [
+                  {
+                        "word": "photograph",
+                        "hl": "og",
+                        "cn": "照片"
+                  },
+                  {
+                        "word": "philosophy",
+                        "hl": "phy",
+                        "cn": "哲学"
+                  },
+                  {
+                        "word": "geometry",
+                        "hl": "ge",
+                        "cn": "几何学"
+                  },
+                  {
+                        "word": "biography",
+                        "hl": "og",
+                        "cn": "传记"
+                  }
+            ]
+      },
+      {
+            "word": "history",
+            "meaning": "历史 / 历史学",
+            "IPA": "/ˈhɪs.tər.i/",
+            "type": "subject",
+            "blocks": [
+                  "his",
+                  "to",
+                  "ry"
+            ],
+            "mindSpark": "如果能坐时光机穿越回古代 history，你最想跟秦始皇还是拿破仑合影？",
+            "rule": "his + to + ry 三音节拆分",
+            "ruleDesc": "历史。常被调侃为'his story'(他的故事)，中间 o 弱化。",
+            "transfers": [
+                  {
+                        "word": "story",
+                        "hl": "to",
+                        "cn": "故事"
+                  },
+                  {
+                        "word": "historic",
+                        "hl": "his",
+                        "cn": "有历史意义的"
+                  },
+                  {
+                        "word": "factory",
+                        "hl": "to",
+                        "cn": "工厂"
+                  },
+                  {
+                        "word": "memory",
+                        "hl": "ry",
+                        "cn": "记忆"
+                  }
+            ]
+      },
+      {
+            "word": "IT",
+            "meaning": "信息技术 / 电脑课",
+            "IPA": "/ˌaɪˈtiː/",
+            "type": "subject",
+            "blocks": [
+                  "I",
+                  "T"
+            ],
+            "mindSpark": "微机课上大家假装认真敲键盘，其实都在偷偷玩小游戏，你被抓包过吗？",
+            "rule": "缩写词：Information Technology",
+            "ruleDesc": "信息技术（微机课/电脑课），两个字母都要大声念出大写字母名！",
+            "transfers": [
+                  {
+                        "word": "AI",
+                        "hl": "I",
+                        "cn": "人工智能"
+                  },
+                  {
+                        "word": "technology",
+                        "hl": "T",
+                        "cn": "科技"
+                  },
+                  {
+                        "word": "time",
+                        "hl": "T",
+                        "cn": "时间"
+                  },
+                  {
+                        "word": "tea",
+                        "hl": "T",
+                        "cn": "茶"
+                  }
+            ]
+      },
+      {
+            "word": "language",
+            "meaning": "语言 / 外语",
+            "IPA": "/ˈlæŋ.ɡwɪdʒ/",
+            "type": "subject",
+            "blocks": [
+                  "lan",
+                  "guage"
+            ],
+            "mindSpark": "学会了 English，全世界一半的人都能跟你聊天，出国旅游再也不怕被坑！",
+            "rule": "gu 发 /ɡw/ + -age 发 /ɪdʒ/",
+            "ruleDesc": "语言、外语。舌尖发后鼻音 /ŋ/，接着滑出 /ɡw/。",
+            "transfers": [
+                  {
+                        "word": "plane",
+                        "hl": "lan",
+                        "cn": "飞机"
+                  },
+                  {
+                        "word": "slang",
+                        "hl": "lan",
+                        "cn": "俚语 / 街头非正式黑话"
+                  },
+                  {
+                        "word": "island",
+                        "hl": "lan",
+                        "cn": "海中岛屿 / 孤岛"
+                  },
+                  {
+                        "word": "clans",
+                        "hl": "lan",
+                        "cn": "氏族 / 宗族大部落"
+                  }
+            ]
+      },
+      {
+            "word": "maths",
+            "meaning": "数学",
+            "IPA": "/mæθs/",
+            "type": "subject",
+            "blocks": [
+                  "ma",
+                  "ths"
+            ],
+            "mindSpark": "小明买了 50 个西瓜吃掉了 30 个，你是不是也纳闷小明怎么能吃得下？",
+            "rule": "th 咬舌清音 + s 清辅音",
+            "ruleDesc": "数学。美式写作 math，英式习惯加 s 写作 maths。",
+            "transfers": [
+                  {
+                        "word": "cloths",
+                        "hl": "ths",
+                        "cn": "抹布"
+                  },
+                  {
+                        "word": "matt",
+                        "hl": "ma",
+                        "cn": "马特 (男孩名)"
+                  },
+                  {
+                        "word": "man",
+                        "hl": "ma",
+                        "cn": "男人 / 成年男子"
+                  },
+                  {
+                        "word": "woman",
+                        "hl": "ma",
+                        "cn": "女人 / 成年女子"
+                  }
+            ]
+      },
+      {
+            "word": "music",
+            "meaning": "音乐 / 乐理",
+            "IPA": "/ˈmjuː.zɪk/",
+            "type": "subject",
+            "blocks": [
+                  "mu",
+                  "sic"
+            ],
+            "mindSpark": "戴上降噪耳机打开音乐 music，全世界的烦恼都与你无关！",
+            "rule": "u 发字母名 /juː/ + s 浊化 /z/",
+            "ruleDesc": "音乐。两个元音中间的 s 震颤发浊辅音 /z/。",
+            "transfers": [
+                  {
+                        "word": "musician",
+                        "hl": "mu",
+                        "cn": "音乐家"
+                  },
+                  {
+                        "word": "musical",
+                        "hl": "mu",
+                        "cn": "音乐剧"
+                  },
+                  {
+                        "word": "basic",
+                        "hl": "sic",
+                        "cn": "基础的"
+                  }
+            ]
+      },
+      {
+            "word": "science",
+            "meaning": "科学 / 自然科学",
+            "IPA": "/ˈsaɪ.əns/",
+            "type": "subject",
+            "blocks": [
+                  "sci",
+                  "ence"
+            ],
+            "mindSpark": "在实验室里混合试剂冒出浓烟，瞬间化身疯狂科学怪人，你做过最酷的实验是什么？",
+            "rule": "sc 连缀发清音 /s/，c 闭麦",
+            "ruleDesc": "科学、自然科学。开头 sc 里的 c 闭麦，只发 /s/。",
+            "transfers": [
+                  {
+                        "word": "scientist",
+                        "hl": "sci",
+                        "cn": "科学家"
+                  },
+                  {
+                        "word": "scientific",
+                        "hl": "sci",
+                        "cn": "科学的"
+                  },
+                  {
+                        "word": "scissors",
+                        "hl": "sci",
+                        "cn": "剪刀"
+                  }
+            ]
+      },
+      {
+            "word": "sport",
+            "meaning": "体育 / 运动",
+            "IPA": "/spɔːt/",
+            "type": "subject",
+            "blocks": [
+                  "sp",
+                  "ort"
+            ],
+            "mindSpark": "体育课自由活动！是抱着篮球直奔球场，还是躲在树荫下吹风发呆？",
+            "rule": "or 发圆唇长音 /ɔː/",
+            "ruleDesc": "体育运动。英式常用单数 sport，美式喜欢用复数 sports。",
+            "transfers": [
+                  {
+                        "word": "port",
+                        "hl": "ort",
+                        "cn": "港口"
+                  },
+                  {
+                        "word": "short",
+                        "hl": "ort",
+                        "cn": "短的"
+                  },
+                  {
+                        "word": "sort",
+                        "hl": "ort",
+                        "cn": "分类"
+                  },
+                  {
+                        "word": "airport",
+                        "hl": "ort",
+                        "cn": "机场"
+                  }
+            ]
+      },
+      {
+            "word": "timetable",
+            "meaning": "课程表 / 时间表",
+            "IPA": "/ˈtaɪmˌteɪ.bəl/",
+            "type": "subject",
+            "blocks": [
+                  "t",
+                  "ime",
+                  "ta",
+                  "ble"
+            ],
+            "mindSpark": "周五最后一节课铃声响起的一刹那，看一眼 timetable，神仙周末开启！",
+            "rule": "合成词：time (时间) + table (表格)",
+            "ruleDesc": "课程表、时刻表。每周一最期待看哪节课？",
+            "transfers": [
+                  {
+                        "word": "vegetable",
+                        "hl": "t",
+                        "cn": "蔬菜"
+                  },
+                  {
+                        "word": "stable",
+                        "hl": "t",
+                        "cn": "稳定的"
+                  },
+                  {
+                        "word": "table",
+                        "hl": "t",
+                        "cn": "桌子"
+                  },
+                  {
+                        "word": "timely",
+                        "hl": "t",
+                        "cn": "及时的"
+                  }
+            ]
+      },
+      {
+            "word": "app",
+            "meaning": "手机软件 / 应用程序",
+            "IPA": "/æp/",
+            "type": "tool",
+            "blocks": [
+                  "a",
+                  "pp"
+            ],
+            "mindSpark": "手机里如果只能保留一个 app，你选微信、B站还是多邻国？",
+            "rule": "application 的简写，短元音 /æ/",
+            "ruleDesc": "手机应用程序、软件。嘴巴张大发干脆的 /æp/。",
+            "transfers": [
+                  {
+                        "word": "apple",
+                        "hl": "a",
+                        "cn": "苹果"
+                  },
+                  {
+                        "word": "happy",
+                        "hl": "a",
+                        "cn": "快乐"
+                  },
+                  {
+                        "word": "apply",
+                        "hl": "a",
+                        "cn": "申请"
+                  },
+                  {
+                        "word": "application",
+                        "hl": "a",
+                        "cn": "应用软件"
+                  }
+            ]
+      },
+      {
+            "word": "bin",
+            "meaning": "垃圾桶 / 储藏箱",
+            "IPA": "/bɪn/",
+            "type": "tool",
+            "blocks": [
+                  "b",
+                  "in"
+            ],
+            "mindSpark": "投篮式扔纸团进垃圾桶 bin，命中三分球的一瞬间，全班都为你欢呼！",
+            "rule": "CVC 闭音节短元音 /ɪ/",
+            "ruleDesc": "垃圾桶、储物箱。英式 rubbish bin = 美式 trash can。",
+            "transfers": [
+                  {
+                        "word": "pin",
+                        "hl": "in",
+                        "cn": "大头针"
+                  },
+                  {
+                        "word": "tin",
+                        "hl": "in",
+                        "cn": "易拉罐"
+                  },
+                  {
+                        "word": "win",
+                        "hl": "in",
+                        "cn": "获胜"
+                  },
+                  {
+                        "word": "dustbin",
+                        "hl": "b",
+                        "cn": "垃圾箱"
+                  }
+            ]
+      },
+      {
+            "word": "dictionary",
+            "meaning": "字典 / 词典",
+            "IPA": "/ˈdɪk.ʃən.ər.i/",
+            "type": "tool",
+            "blocks": [
+                  "dic",
+                  "tion",
+                  "ary"
+            ],
+            "mindSpark": "厚得像砖头一样的字典，拿来压泡面堪称神器，你用过电子词典吗？",
+            "rule": "-tion 发 /ʃən/ + -ary 后缀",
+            "ruleDesc": "字典、词典。厚厚的大词典，查生词的元老级神器！",
+            "transfers": [
+                  {
+                        "word": "action",
+                        "hl": "tion",
+                        "cn": "行动"
+                  },
+                  {
+                        "word": "station",
+                        "hl": "tion",
+                        "cn": "车站"
+                  },
+                  {
+                        "word": "vocabulary",
+                        "hl": "ary",
+                        "cn": "词汇"
+                  },
+                  {
+                        "word": "library",
+                        "hl": "ary",
+                        "cn": "图书馆"
+                  }
+            ]
+      },
+      {
+            "word": "e-book",
+            "meaning": "电子书",
+            "IPA": "/ˈiː.bʊk/",
+            "type": "tool",
+            "blocks": [
+                  "e",
+                  "book"
+            ],
+            "mindSpark": "墨水屏 e-book 装下一万本书，再也不用背十斤重的书包去上学啦！",
+            "rule": "electronic book 电子书",
+            "ruleDesc": "前缀 e- 表示电子化的，book 中 oo 发短促的 /ʊ/。",
+            "transfers": [
+                  {
+                        "word": "book",
+                        "hl": "book",
+                        "cn": "书本"
+                  },
+                  {
+                        "word": "email",
+                        "hl": "e",
+                        "cn": "电子邮件"
+                  },
+                  {
+                        "word": "notebook",
+                        "hl": "book",
+                        "cn": "笔记本"
+                  }
+            ]
+      },
+      {
+            "word": "glue",
+            "meaning": "胶水 / 胶棒",
+            "IPA": "/ɡluː/",
+            "type": "tool",
+            "blocks": [
+                  "gl",
+                  "ue"
+            ],
+            "mindSpark": "做手工把手涂满胶水，等它风干后像撕蛇皮一样撕下来，这解压体验你试过没？",
+            "rule": "ue 结尾发长音 /uː/",
+            "ruleDesc": "胶水、黏贴。手工课的灵魂！手指黏上胶水撕下来的快感谁懂？",
+            "transfers": [
+                  {
+                        "word": "blue",
+                        "hl": "ue",
+                        "cn": "蓝色"
+                  },
+                  {
+                        "word": "clue",
+                        "hl": "ue",
+                        "cn": "线索"
+                  },
+                  {
+                        "word": "true",
+                        "hl": "ue",
+                        "cn": "真实的"
+                  },
+                  {
+                        "word": "glue stick",
+                        "hl": "gl",
+                        "cn": "固体胶"
+                  }
+            ]
+      },
+      {
+            "word": "Internet",
+            "meaning": "互联网 / 因特网",
+            "IPA": "/ˈɪn.tə.net/",
+            "type": "tool",
+            "blocks": [
+                  "In",
+                  "ter",
+                  "net"
+            ],
+            "mindSpark": "如果突然断网 Internet 24 小时，世界会不会陷入恐慌？你会干什么？",
+            "rule": "inter- (互相) + net (网络)",
+            "ruleDesc": "因特网、互联网。专有名词首字母通常大写！",
+            "transfers": [
+                  {
+                        "word": "net",
+                        "hl": "net",
+                        "cn": "网"
+                  },
+                  {
+                        "word": "network",
+                        "hl": "net",
+                        "cn": "网络"
+                  },
+                  {
+                        "word": "international",
+                        "hl": "In",
+                        "cn": "国际的"
+                  },
+                  {
+                        "word": "interview",
+                        "hl": "In",
+                        "cn": "面试/采访"
+                  }
+            ]
+      },
+      {
+            "word": "laptop",
+            "meaning": "笔记本电脑",
+            "IPA": "/ˈlæp.tɒp/",
+            "type": "tool",
+            "blocks": [
+                  "lap",
+                  "top"
+            ],
+            "mindSpark": "抱着轻薄的 laptop 去咖啡馆敲代码，瞬间感觉自己是个科技大佬！",
+            "rule": "合成词：lap (大腿) + top (上面)",
+            "ruleDesc": "笔记本电脑（能放在大腿/膝盖上操作的电脑）。",
+            "transfers": [
+                  {
+                        "word": "desktop",
+                        "hl": "top",
+                        "cn": "台式电脑/桌面"
+                  },
+                  {
+                        "word": "top",
+                        "hl": "top",
+                        "cn": "顶端"
+                  },
+                  {
+                        "word": "rooftop",
+                        "hl": "top",
+                        "cn": "屋顶"
+                  },
+                  {
+                        "word": "clap",
+                        "hl": "lap",
+                        "cn": "鼓掌"
+                  }
+            ]
+      },
+      {
+            "word": "rucksack",
+            "meaning": "双肩背包 / 旅行包",
+            "IPA": "/ˈrʌk.sæk/",
+            "type": "tool",
+            "blocks": [
+                  "ruck",
+                  "sack"
+            ],
+            "mindSpark": "大书包 rucksack 塞满了零食和漫画，春游的日子永远是童年最快乐的回忆！",
+            "rule": "ruck (后背) + sack (布袋)",
+            "ruleDesc": "旅行双肩包、大背包。双 ck 结尾均发清脆 /k/。",
+            "transfers": [
+                  {
+                        "word": "sack",
+                        "hl": "sack",
+                        "cn": "大口袋"
+                  }
+            ]
+      },
+      {
+            "word": "scissors",
+            "meaning": "剪刀",
+            "IPA": "/ˈsɪz.əz/",
+            "type": "tool",
+            "blocks": [
+                  "sci",
+                  "ssors"
+            ],
+            "mindSpark": "美术课上拿小剪刀 scissors 剪窗花，一不小心剪断了对称轴，瞬间重开！",
+            "rule": "sc 连缀 c 闭麦 + 双写 ss 浊化 /z/",
+            "ruleDesc": "剪刀。永远用复数加 s！一把剪刀有两片对称刀刃。",
+            "transfers": [
+                  {
+                        "word": "science",
+                        "hl": "sci",
+                        "cn": "科学"
+                  },
+                  {
+                        "word": "fascination",
+                        "hl": "sci",
+                        "cn": "极度着迷 / 强烈的吸引力"
+                  },
+                  {
+                        "word": "scientist",
+                        "hl": "sci",
+                        "cn": "科学家"
+                  },
+                  {
+                        "word": "fascinating",
+                        "hl": "sci",
+                        "cn": "极其引人入胜的 / 迷人的"
+                  }
+            ]
+      },
+      {
+            "word": "website",
+            "meaning": "网站 / 网页",
+            "IPA": "/ˈweb.saɪt/",
+            "type": "tool",
+            "blocks": [
+                  "web",
+                  "site"
+            ],
+            "mindSpark": "你现在玩的这个背单词网站 website，就是 Kron 老师精心为你打造的！",
+            "rule": "合成词：web (蛛网) + site (地点)",
+            "ruleDesc": "网站、网页。magic e 让 site 发字母本音 /saɪt/。",
+            "transfers": [
+                  {
+                        "word": "site",
+                        "hl": "site",
+                        "cn": "地点/遗址"
+                  },
+                  {
+                        "word": "spiderweb",
+                        "hl": "web",
+                        "cn": "蜘蛛网"
+                  },
+                  {
+                        "word": "webpage",
+                        "hl": "web",
+                        "cn": "网页"
+                  },
+                  {
+                        "word": "webcam",
+                        "hl": "web",
+                        "cn": "网络摄像头"
+                  }
+            ]
+      }
+];
+
+    /* ================= 纯原生 Web Audio 触感音效引擎 ================= */
+    const audio = {
+      synth: window.speechSynthesis,
+      ctx: null,
+      getCtx() {
+        try {
+          if (!this.ctx) {
+            const Cls = window.AudioContext || window.webkitAudioContext;
+            if (Cls) this.ctx = new Cls();
+          }
+          if (this.ctx && this.ctx.state === "suspended") {
+            this.ctx.resume();
+          }
+          return this.ctx;
+        } catch (e) {
+          return null;
+        }
+      },
+      speak(text) {
+        try {
+          if (this.synth) {
+            this.synth.cancel();
+            const u = new SpeechSynthesisUtterance(text);
+            u.lang = "en-US";
+            u.rate = 0.9;
+            this.synth.speak(u);
+          }
+        } catch (e) {}
+      },
+      tap() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          const osc = c.createOscillator();
+          const gain = c.createGain();
+          osc.frequency.setValueAtTime(450, now);
+          osc.frequency.exponentialRampToValueAtTime(750, now + 0.04);
+          gain.gain.setValueAtTime(0.1, now);
+          gain.gain.exponentialRampToValueAtTime(0.001, now + 0.05);
+          osc.connect(gain);
+          gain.connect(c.destination);
+          osc.start(now);
+          osc.stop(now + 0.05);
+        } catch (e) {}
+      },
+      bingo() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          [523.25, 659.25, 783.99, 1046.5].forEach((f, i) => {
+            const osc = c.createOscillator();
+            const gain = c.createGain();
+            osc.type = "triangle";
+            osc.frequency.setValueAtTime(f, now + i * 0.05);
+            gain.gain.setValueAtTime(0.12, now + i * 0.05);
+            gain.gain.exponentialRampToValueAtTime(0.001, now + i * 0.05 + 0.25);
+            osc.connect(gain);
+            gain.connect(c.destination);
+            osc.start(now + i * 0.05);
+            osc.stop(now + i * 0.05 + 0.28);
+          });
+        } catch (e) {}
+      },
+      wrong() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          const osc = c.createOscillator();
+          const gain = c.createGain();
+          osc.type = "sawtooth";
+          osc.frequency.setValueAtTime(140, now);
+          osc.frequency.linearRampToValueAtTime(80, now + 0.16);
+          gain.gain.setValueAtTime(0.15, now);
+          gain.gain.linearRampToValueAtTime(0.001, now + 0.16);
+          osc.connect(gain);
+          gain.connect(c.destination);
+          osc.start(now);
+          osc.stop(now + 0.18);
+        } catch (e) {}
+      },
+      hack() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          [350, 700, 1050, 1400].forEach((f, i) => {
+            const osc = c.createOscillator();
+            const gain = c.createGain();
+            osc.type = "square";
+            osc.frequency.setValueAtTime(f, now + i * 0.04);
+            gain.gain.setValueAtTime(0.1, now + i * 0.04);
+            gain.gain.exponentialRampToValueAtTime(0.001, now + i * 0.04 + 0.14);
+            osc.connect(gain);
+            gain.connect(c.destination);
+            osc.start(now + i * 0.04);
+            osc.stop(now + i * 0.04 + 0.16);
+          });
+        } catch (e) {}
+      }
+    };
+
+    /* ================= 模块一：多邻国积木背单词交互逻辑 ================= */
+    let currentIndex = 0;
+    let selectedBlocks = [];
+    let availableBlocks = [];
+    let isSuccess = false;
+    let hasCompletedAllWords = false;
+
+    
+    function syncFromAha() {
+      try {
+        const raw = localStorage.getItem('kron_word_current_unit_payload') || localStorage.getItem('kron_saved_words') || localStorage.getItem('kron:word:shared_vocab');
+        if (!raw) return;
+        const data = JSON.parse(raw);
+        const words = Array.isArray(data) ? data : (data.words || []);
+        if (!words || words.length === 0) return;
+
+        const savedMap = new Map();
+        words.forEach(w => {
+          if (w.word) savedMap.set(w.word.toLowerCase().trim(), w);
+        });
+
+        let matched = 0;
+        VOCABULARY.forEach(item => {
+          const wClean = item.word.toLowerCase().trim();
+          const hasDirect = savedMap.has(wClean);
+          const hasContained = Array.from(savedMap.keys()).some(k => k && (wClean.includes(k) || k.includes(wClean)));
+          if (hasDirect || hasContained) {
+            item.isAhaSaved = true;
+            matched++;
+          }
+        });
+
+        words.forEach(w => {
+          const wClean = (w.word || '').toLowerCase().trim();
+          const exists = VOCABULARY.some(v => {
+            const vClean = v.word.toLowerCase().trim();
+            return vClean === wClean || vClean.includes(wClean);
+          });
+          if (!exists && wClean) {
+            let blocks = [w.word];
+            if (wClean === 'instrument') {
+              blocks = ['in', 'stru', 'ment'];
+            } else if (wClean === 'play') {
+              blocks = ['pl', 'ay'];
+            } else if (wClean === 'play an instrument') {
+              blocks = ['pl', 'ay', 'an', 'in', 'stru', 'ment'];
+            } else {
+              const rawParts = w.word.split(/\s+/).filter(Boolean);
+              blocks = rawParts.length > 1 ? rawParts : [w.word];
+            }
+            VOCABULARY.push({
+              word: w.word,
+              meaning: w.translation || 'Aha! 重点词汇',
+              IPA: w.phonetic || `/${wClean}/`,
+              type: w.partOfSpeech || 'saved',
+              blocks,
+              mindSpark: '你在 Kron English Aha! 学习中亲手收藏的重点单词，快来拼出它吧！',
+              rule: 'Aha! 生词本同步词汇',
+              ruleDesc: '来自课堂实战提问与高频语境，属于你的专属记忆！',
+              transfers: [],
+              isAhaSaved: true
+            });
+            matched++;
+          }
+        });
+
+        const banner = document.getElementById('ahaSyncBanner');
+        const countEl = document.getElementById('ahaSyncCount');
+        if (banner && countEl && words.length > 0) {
+          countEl.innerText = words.length;
+          banner.style.display = 'flex';
+        }
+      } catch (e) {
+        console.warn('Aha sync notice:', e);
+      }
+    }
+
+    function initWord() {
+      const item = VOCABULARY[currentIndex];
+      selectedBlocks = [];
+      availableBlocks = item.blocks.map((text, idx) => ({ id: `${text}-${idx}-${Math.random()}`, text }));
+      availableBlocks.sort(() => Math.random() - 0.5);
+      isSuccess = false;
+
+      const pct = ((currentIndex + 1) / VOCABULARY.length) * 100;
+      document.getElementById("progressBar").style.width = `${pct}%`;
+      document.getElementById("wordMeaning").innerText = item.meaning;
+      document.getElementById("wordIPA").innerText = item.IPA;
+      
+      const tagEl = document.getElementById("wordTypeTag");
+      if (item.type === "subject") {
+        tagEl.className = "word-type-tag tag-subject";
+        tagEl.innerText = "📚 学科课程";
+      } else {
+        tagEl.className = "word-type-tag tag-tool";
+        tagEl.innerText = "💻 极客工具";
+      }
+
+      document.getElementById("successPanel").style.display = "none";
+      document.getElementById("nextBtn").style.display = "none";
+      document.getElementById("footerPlaceholder").style.display = "block";
+
+      renderBlocks();
+    }
+
+    function renderBlocks() {
+      const slots = document.getElementById("slotsContainer");
+      const tray = document.getElementById("trayContainer");
+      slots.innerHTML = "";
+      tray.innerHTML = "";
+
+      if (selectedBlocks.length === 0 && !isSuccess) {
+        slots.innerHTML = `<span class="empty-tip">点击下方发音积木完成拼装</span>`;
+      }
+
+      selectedBlocks.forEach(b => {
+        const btn = document.createElement("button");
+        btn.className = `duo-tile ${isSuccess ? "duo-tile-success" : ""}`;
+        btn.innerText = b.text;
+        btn.onclick = () => {
+          if (isSuccess) return;
+          audio.tap();
+          selectedBlocks = selectedBlocks.filter(x => x.id !== b.id);
+          availableBlocks.push(b);
+          renderBlocks();
+        };
+        slots.appendChild(btn);
+      });
+
+      if (!isSuccess) {
+        availableBlocks.forEach(b => {
+          const btn = document.createElement("button");
+          btn.className = "duo-tile";
+          btn.innerText = b.text;
+          btn.onclick = () => handlePickBlock(b);
+          tray.appendChild(btn);
+        });
+      }
+    }
+
+    function handlePickBlock(b) {
+      if (isSuccess) return;
+      audio.tap();
+      audio.speak(b.text);
+
+      selectedBlocks.push(b);
+      availableBlocks = availableBlocks.filter(x => x.id !== b.id);
+      renderBlocks();
+
+      if (availableBlocks.length === 0) {
+        const userStr = selectedBlocks.map(x => x.text).join("");
+        const realStr = VOCABULARY[currentIndex].blocks.join("");
+
+        if (userStr === realStr) {
+          isSuccess = true;
+          audio.bingo();
+          renderBlocks();
+
+          setTimeout(() => {
+            audio.speak(VOCABULARY[currentIndex].word);
+          }, 250);
+
+          showWordKnowledge();
+        } else {
+          audio.wrong();
+          const slots = document.getElementById("slotsContainer");
+          slots.classList.add("animate-shake");
+          setTimeout(() => {
+            slots.classList.remove("animate-shake");
+            availableBlocks = VOCABULARY[currentIndex].blocks.map((text, idx) => ({ id: `${text}-${idx}-${Math.random()}`, text })).sort(() => Math.random() - 0.5);
+            selectedBlocks = [];
+            renderBlocks();
+          }, 450);
+        }
+      }
+    }
+
+    function showWordKnowledge() {
+      const item = VOCABULARY[currentIndex];
+      
+      document.getElementById("kronMindSpark").innerText = item.mindSpark;
+      document.getElementById("ruleBadge").innerText = `规律：${item.rule}`;
+      document.getElementById("ruleDesc").innerText = item.ruleDesc;
+
+      const grid = document.getElementById("transferGrid");
+      grid.innerHTML = "";
+      item.transfers.forEach(t => {
+        const tile = document.createElement("div");
+        tile.className = "transfer-tile";
+        tile.innerHTML = `
+          <div>
+            <div class="transfer-word">${renderHighlight(t.word, t.hl)}</div>
+            <div class="transfer-cn">${t.cn}</div>
+          </div>
+          <span style="font-size: 13px; color: #CECECE;">🔊</span>
+        `;
+        tile.onclick = () => {
+          audio.tap();
+          audio.speak(t.word);
+        };
+        grid.appendChild(tile);
+      });
+
+      document.getElementById("successPanel").style.display = "block";
+      document.getElementById("nextBtn").style.display = "block";
+      
+      const isLast = currentIndex === VOCABULARY.length - 1;
+      document.getElementById("nextBtn").innerText = isLast ? "🎉 21 词全通关！解锁数据入侵 💻" : "继续下一个单词 ➔";
+      document.getElementById("footerPlaceholder").style.display = "none";
+
+      if (isLast) {
+        hasCompletedAllWords = true;
+        const lockBtn = document.getElementById("lockStatusBtn");
+        lockBtn.innerText = "💻 数据入侵 (已解锁)";
+        lockBtn.style.borderColor = "#00B894";
+        lockBtn.style.color = "#00B894";
+        triggerConfetti();
+      }
+    }
+
+    function renderHighlight(word, hl) {
+      if (!hl || !word.toLowerCase().includes(hl.toLowerCase())) return word;
+      const reg = new RegExp(`(${hl})`, "i");
+      return word.replace(reg, `<span class="hl-green">$1</span>`);
+    }
+
+    function playCurrentWordAudio() {
+      audio.speak(VOCABULARY[currentIndex].word);
+    }
+
+    function goNextWord() {
+      if (currentIndex < VOCABULARY.length - 1) {
+        currentIndex++;
+        syncFromAha();
+    initWord();
+      } else {
+        switchToGame();
+      }
+    }
+
+    function trySwitchToGame() {
+      if (!hasCompletedAllWords) {
+        alert("🔒 Kron 老师提醒：必须把本单元全部 21 个学科与数字工具词汇拼完才能解锁黑客空间！");
+        return;
+      }
+      switchToGame();
+    }
+
+    window.addEventListener("keydown", (e) => {
+      const isLearnVisible = document.getElementById("learnView").style.display !== "none";
+      if (isSuccess && isLearnVisible && (e.key === "Enter" || e.key === " ")) {
+        e.preventDefault();
+        goNextWord();
+      }
+    });
+
+    /* ================= 模块二：Gimkit 赛博黑客数据入侵独立游戏逻辑 ================= */
+    let timerSec = 180;
+    let timerInterval = null;
+    let botInterval = null;
+    let autoCookInterval = null;
+    let patienceInterval = null;
+
+    let playerGold = 0;
+    let servedCount = 0;
+    let combo = 1;
+    let currentCustomer = null;
+    let currentPatience = 100;
+
+    let upgrades = {
+      knifeLevel: 0,
+      autoCookLevel: 0,
+      bellLevel: 0
+    };
+
+    let cafePlayers = [
+      { id: "me", name: "你 (首席黑客)", gold: 0, isBot: false },
+      { id: "cat", name: "🐱 柴犬数据站", gold: 280, isBot: true },
+      { id: "duo", name: "🦉 多邻国防火墙", gold: 430, isBot: true },
+      { id: "kron", name: "⚡️ Kron 量子云端", gold: 590, isBot: true }
+    ];
+
+    const TARGET_HOSTS = [
+      { name: "数学超算云", emoji: "🧮", tipBonus: 1.2 },
+      { name: "历史时光库", emoji: "🏛️", tipBonus: 1.3 },
+      { name: "科学实验室中心", emoji: "🔬", tipBonus: 1.4 },
+      { name: "音乐音频发射台", emoji: "🎵", tipBonus: 1.1 },
+      { name: "全球语言网络", emoji: "🌐", tipBonus: 1.0 }
+    ];
+
+    function switchToGame() {
+      document.getElementById("learnView").style.display = "none";
+      document.getElementById("gameView").style.display = "flex";
+      document.body.classList.add("game-mode");
+      startBattle();
+    }
+
+    function switchToLearn() {
+      clearInterval(timerInterval);
+      clearInterval(botInterval);
+      clearInterval(autoCookInterval);
+      clearInterval(patienceInterval);
+      document.getElementById("gameView").style.display = "none";
+      document.getElementById("learnView").style.display = "flex";
+      document.body.classList.remove("game-mode");
+    }
+
+    function startBattle() {
+      audio.bingo();
+      playerGold = 0;
+      servedCount = 0;
+      combo = 1;
+      timerSec = 180;
+
+      cafePlayers.forEach(p => {
+        if (p.isBot) p.gold = Math.floor(Math.random() * 280 + 220);
+        else p.gold = 0;
+      });
+
+      updateStatsUI();
+      updateLeaderboard();
+
+      document.getElementById("gameStartScreen").style.display = "none";
+      document.getElementById("gameOverScreen").style.display = "none";
+      document.getElementById("gameDishDoneScreen").style.display = "none";
+
+      clearInterval(timerInterval);
+      clearInterval(botInterval);
+      clearInterval(autoCookInterval);
+
+      timerInterval = setInterval(() => {
+        timerSec--;
+        const m = String(Math.floor(timerSec / 60)).padStart(2, '0');
+        const s = String(timerSec % 60).padStart(2, '0');
+        document.getElementById("timeText").innerText = `${m}:${s}`;
+
+        if (timerSec <= 0) {
+          endGame();
+        }
+      }, 1000);
+
+      botInterval = setInterval(() => {
+        cafePlayers.forEach(p => {
+          if (p.isBot) {
+            const add = Math.floor(Math.random() * 85 + 25);
+            p.gold += add;
+          }
+        });
+        updateLeaderboard();
+      }, 2500);
+
+      nextCustomer();
+    }
+
+    function updateStatsUI() {
+      document.getElementById("playerGoldText").innerText = `⚡ ${playerGold}`;
+      document.getElementById("servedCountText").innerText = `🔓 ${servedCount}`;
+      document.getElementById("comboText").innerText = `🔥 x${combo}`;
+      const me = cafePlayers.find(p => p.id === 'me');
+      if (me) me.gold = playerGold;
+      updateLeaderboard();
+    }
+
+    function nextCustomer() {
+      clearInterval(patienceInterval);
+      document.getElementById("gameDishDoneScreen").style.display = "none";
+      document.getElementById("gameOrderScreen").style.display = "block";
+
+      const host = TARGET_HOSTS[Math.floor(Math.random() * TARGET_HOSTS.length)];
+      const item = VOCABULARY[Math.floor(Math.random() * VOCABULARY.length)];
+
+      let orderSpeech = "";
+      let qPrompt = "";
+      let correctAns = "";
+      let distractors = [];
+
+      if (item.type === "subject") {
+        orderSpeech = `“防火墙挑战：破解学科「${item.meaning}」！”`;
+        qPrompt = `学科识别：选择正确的学科英语单词：`;
+        correctAns = item.word;
+        distractors = VOCABULARY.filter(w => w.type === "subject" && w.word !== item.word).map(w => w.word).slice(0, 3);
+      } else {
+        orderSpeech = `“设备校验：调用数字工具「${item.meaning}」！”`;
+        qPrompt = `极客终端：选择对应的学习或数字工具：`;
+        correctAns = item.word;
+        distractors = VOCABULARY.filter(w => w.type === "tool" && w.word !== item.word).map(w => w.word).slice(0, 3);
+      }
+
+      currentCustomer = {
+        name: host.name,
+        emoji: host.emoji,
+        tipBonus: host.tipBonus,
+        targetWord: item,
+        ans: correctAns
+      };
+
+      document.getElementById("custEmoji").innerText = currentCustomer.emoji;
+      document.getElementById("custName").innerText = currentCustomer.name;
+      document.getElementById("custOrderSpeech").innerText = orderSpeech;
+      document.getElementById("gameQuestionPrompt").innerText = qPrompt;
+
+      const opts = [correctAns, ...distractors].sort(() => Math.random() - 0.5);
+      const optGrid = document.getElementById("gameOptionGrid");
+      optGrid.innerHTML = "";
+
+      opts.forEach(opt => {
+        const btn = document.createElement("button");
+        btn.className = "duo-btn duo-btn-dark game-opt-btn";
+        btn.innerText = opt;
+        btn.onclick = () => handleOrderAnswer(opt);
+        optGrid.appendChild(btn);
+      });
+
+      currentPatience = 100;
+      const patienceSpeed = upgrades.bellLevel > 0 ? 1.0 : 1.6;
+      patienceInterval = setInterval(() => {
+        currentPatience -= patienceSpeed;
+        const pFill = document.getElementById("patienceBar");
+        pFill.style.width = `${Math.max(0, currentPatience)}%`;
+        if (currentPatience > 50) pFill.style.backgroundColor = "#00B894";
+        else if (currentPatience > 25) pFill.style.backgroundColor = "#FF9600";
+        else pFill.style.backgroundColor = "#FF4B4B";
+
+        if (currentPatience <= 0) {
+          clearInterval(patienceInterval);
+          handleCustomerLeave();
+        }
+      }, 100);
+    }
+
+    function handleOrderAnswer(chosen) {
+      if (chosen === currentCustomer.ans) {
+        clearInterval(patienceInterval);
+        audio.hack();
+        servedCount++;
+        combo++;
+
+        let baseTip = Math.floor(200 * currentCustomer.tipBonus);
+        if (upgrades.knifeLevel > 0) baseTip = Math.floor(baseTip * 1.5);
+        const comboBonus = Math.floor(combo * 25);
+        const totalTip = baseTip + comboBonus;
+        playerGold += totalTip;
+
+        updateStatsUI();
+
+        document.getElementById("gameOrderScreen").style.display = "none";
+        document.getElementById("gameDishDoneScreen").style.display = "block";
+        document.getElementById("dishDoneIcon").innerText = `✨🔓${currentCustomer.emoji}✨`;
+        document.getElementById("dishDoneTitle").innerText = `渗透成功！+${totalTip} ⚡`;
+        document.getElementById("dishDoneDesc").innerText = `${currentCustomer.name} 防火墙被瞬间瓦解！海量算力代币下载完成（连击加成 +${comboBonus}）！`;
+
+        setTicker(`🔓 攻破！成功接入 ${currentCustomer.name}，算力暴增 +${totalTip} 筹码！`);
+      } else {
+        audio.wrong();
+        combo = 1;
+        updateStatsUI();
+        setTicker(`❌ 语法密钥错误！被安全系统阻断，连击重置！`);
+      }
+    }
+
+    function handleCustomerLeave() {
+      audio.wrong();
+      combo = 1;
+      updateStatsUI();
+      setTicker(`💨 终端超时！${currentCustomer.name} 重置了访问密钥，入侵失败！`);
+      nextCustomer();
+    }
+
+    function setTicker(msg) {
+      document.getElementById("tickerMsg").innerText = msg;
+    }
+
+    function updateLeaderboard() {
+      const sorted = [...cafePlayers].sort((a, b) => b.gold - a.gold);
+      const grid = document.getElementById("leaderboardGrid");
+      grid.innerHTML = "";
+      sorted.forEach((p, idx) => {
+        const medal = idx === 0 ? "🥇 " : idx === 1 ? "🥈 " : idx === 2 ? "🥉 " : "#4 ";
+        const card = document.createElement("div");
+        card.className = `lb-card ${p.id === 'me' ? 'is-me' : ''}`;
+        card.innerHTML = `
+          <div class="lb-name">${medal}${p.name}</div>
+          <div class="lb-gold">${p.gold} ⚡</div>
+        `;
+        grid.appendChild(card);
+      });
+    }
+
+    function openMarket() {
+      document.getElementById("marketDrawer").style.display = "flex";
+    }
+    function closeMarket() {
+      document.getElementById("marketDrawer").style.display = "none";
+    }
+
+    function buyUpgrade(type, cost) {
+      if (playerGold < cost) {
+        alert("⚡ 算力筹码不足，快去多攻破几个主机吧！");
+        return;
+      }
+      playerGold -= cost;
+      audio.hack();
+
+      if (type === 'knife') {
+        upgrades.knifeLevel++;
+        alert("⚡ 量子超频处理器升级完成！单次入侵收益提升 50%！");
+      } else if (type === 'autoCook') {
+        upgrades.autoCookLevel++;
+        if (!autoCookInterval) {
+          autoCookInterval = setInterval(() => {
+            playerGold += 60 * upgrades.autoCookLevel;
+            updateStatsUI();
+          }, 3000);
+        }
+        alert("🤖 分布式挖矿木马部署完毕！每 3 秒自动产出算力！");
+      } else if (type === 'bell') {
+        upgrades.bellLevel++;
+        alert("🛡️ 反追踪代理跳板已开启！主机检测倒计时极大延长！");
+      }
+
+      updateStatsUI();
+      document.getElementById("playerBuffs").innerText = 
+        `💻 木马注入: ${upgrades.autoCookLevel}级 | 🛡️ 防火墙: +${upgrades.knifeLevel * 50}%`;
+      closeMarket();
+    }
+
+    function endGame() {
+      clearInterval(timerInterval);
+      clearInterval(botInterval);
+      clearInterval(autoCookInterval);
+      clearInterval(patienceInterval);
+
+      document.getElementById("gameOrderScreen").style.display = "none";
+      document.getElementById("gameDishDoneScreen").style.display = "none";
+      document.getElementById("gameOverScreen").style.display = "block";
+
+      const sorted = [...cafePlayers].sort((a, b) => b.gold - a.gold);
+      const myRank = sorted.findIndex(p => p.id === 'me') + 1;
+
+      if (myRank === 1) {
+        document.getElementById("finalTrophy").innerText = "👑";
+        document.getElementById("finalRankTitle").innerText = "全球首席黑客霸主！";
+        document.getElementById("finalRankDesc").innerText = `算力筹码高达 ${playerGold} ⚡！全网数据任你调遣！`;
+        triggerConfetti();
+      } else {
+        document.getElementById("finalTrophy").innerText = "🥈";
+        document.getElementById("finalRankTitle").innerText = `荣获全网第 ${myRank} 名！`;
+        document.getElementById("finalRankDesc").innerText = `算力储备 ${playerGold} ⚡，距离顶级黑客仅差一步！`;
+      }
+
+      const podium = document.getElementById("finalPodium");
+      podium.innerHTML = "";
+      sorted.forEach((p, idx) => {
+        const row = document.createElement("div");
+        row.style.cssText = "display: flex; justify-content: space-between; padding: 6px 0; font-size: 13px; font-weight: 800;";
+        row.innerHTML = `
+          <span style="color: ${p.id === 'me' ? '#00B894' : '#FFF'};">${idx + 1}. ${p.name}</span>
+          <span style="color: #FFC800;">${p.gold} ⚡</span>
+        `;
+        podium.appendChild(row);
+      });
+    }
+
+    function triggerConfetti() {
+      const canvas = document.getElementById("confettiCanvas");
+      const ctx = canvas.getContext("2d");
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+
+      const particles = [];
+      const colors = ["#00B894", "#1CB0F6", "#58CC02", "#FFC800", "#CE82FF"];
+
+      for (let i = 0; i < 70; i++) {
+        particles.push({
+          x: canvas.width / 2,
+          y: canvas.height / 2,
+          vx: (Math.random() - 0.5) * 14,
+          vy: (Math.random() - 0.7) * 16,
+          size: Math.random() * 8 + 4,
+          color: colors[Math.floor(Math.random() * colors.length)],
+          rotation: Math.random() * 360,
+          vRot: (Math.random() - 0.5) * 10,
+          opacity: 1
+        });
+      }
+
+      let frames = 0;
+      function render() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        particles.forEach(p => {
+          p.x += p.vx;
+          p.y += p.vy;
+          p.vy += 0.35;
+          p.rotation += p.vRot;
+          p.opacity -= 0.012;
+
+          ctx.save();
+          ctx.translate(p.x, p.y);
+          ctx.rotate((p.rotation * Math.PI) / 180);
+          ctx.fillStyle = p.color;
+          ctx.globalAlpha = Math.max(0, p.opacity);
+          ctx.fillRect(-p.size / 2, -p.size / 2, p.size, p.size);
+          ctx.restore();
+        });
+
+        frames++;
+        if (frames < 90) {
+          requestAnimationFrame(render);
+        } else {
+          ctx.clearRect(0, 0, canvas.width, canvas.height);
+        }
+      }
+      render();
+    }
+
+    syncFromAha();
+    initWord();
+  </script>
+</body>
+</html>

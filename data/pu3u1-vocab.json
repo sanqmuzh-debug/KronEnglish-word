@@ -1,0 +1,594 @@
+[
+  {
+    "id": "midday",
+    "unit": 0,
+    "unitTitle": "Unit 1 · 时间与前缀",
+    "word": "midday",
+    "phonetic": "/ˌmɪdˈdeɪ/",
+    "meaning": "正午 / 中午 12:00",
+    "type": "compound",
+    "motion": "clock_12",
+    "kronTip": "前缀 mid- 就是 middle（中间）！把一天从正中间劈开，就是 12 点干饭时间！",
+    "xrayInfo": "【前缀造词法】：掌握 mid-，就能瞬间批量迁移生成一整串中间词汇！",
+    "boxes": [
+      {
+        "text": "mid",
+        "label": "前缀: middle",
+        "class": "bg-blue-100 text-blue-800 border-blue-300",
+        "silent": false
+      },
+      {
+        "text": "day",
+        "label": "基词: 白天",
+        "class": "bg-amber-100 text-amber-800 border-amber-300",
+        "silent": false
+      }
+    ],
+    "transfer": {
+      "q": "根据前缀 mid-（中间）的造词规则，猜猜 'midterm' 是什么？",
+      "options": [
+        "期中考试 / 学期中",
+        "暑假大狂欢",
+        "终点起跑线",
+        "夜间自习"
+      ],
+      "correct": 0,
+      "exp": "Bingo！mid- (中间) + term (学期) = midterm (期中)！这就是结构化造词法！"
+    }
+  },
+  {
+    "id": "midnight",
+    "unit": 0,
+    "unitTitle": "Unit 1 · 时间与前缀",
+    "word": "midnight",
+    "phonetic": "/ˈmɪdnaɪt/",
+    "meaning": "午夜 / 凌晨 12:00",
+    "type": "compound_phonics",
+    "motion": "clock_0",
+    "kronTip": "不仅含有前缀 mid-，还有经典尾韵组合 -ight！gh 在这里甘当绿叶不出声，让 i 发出大名 /aɪ/！",
+    "xrayInfo": "【-ight 组合规则】：gh 完全静音！night, light, right, fight 发音模版完全相同！",
+    "boxes": [
+      {
+        "text": "mid",
+        "label": "前缀: middle",
+        "class": "bg-blue-100 text-blue-800 border-blue-300",
+        "silent": false
+      },
+      {
+        "text": "n",
+        "label": "/n/",
+        "class": "bg-purple-100 text-purple-800 border-purple-300",
+        "silent": false
+      },
+      {
+        "text": "igh",
+        "label": "/aɪ/ (gh静音)",
+        "class": "bg-emerald-100 text-emerald-800 border-emerald-300",
+        "silent": false,
+        "highlight": true
+      },
+      {
+        "text": "t",
+        "label": "/t/",
+        "class": "bg-purple-100 text-purple-800 border-purple-300",
+        "silent": false
+      }
+    ],
+    "transfer": {
+      "q": "-ight 组合发 /aɪt/。在前面加上字母 L 变成 'light'，它的发音和规律是？",
+      "options": [
+        "/laɪt/ (光/轻)，规律一致",
+        "/lɪt/ (短元音)",
+        "/leɪt/ (迟到)",
+        "/liːt/ (长元音)"
+      ],
+      "correct": 0,
+      "exp": "太棒了！L + ight = light！同理：f + ight = fight，r + ight = right！"
+    }
+  },
+  {
+    "id": "six_oclock",
+    "unit": 0,
+    "unitTitle": "Unit 1 · 时间与前缀",
+    "word": "six o'clock",
+    "phonetic": "/sɪks əˈklɒk/",
+    "meaning": "六点整",
+    "type": "syntax",
+    "motion": "clock_6",
+    "kronTip": "小撇号 ' 是缩写符号！它是古代英语 of the clock 的合体压缩包！只有整点才能用 o'clock！",
+    "xrayInfo": "【整点专用】：只有 1:00, 6:00 等整点加 o'clock；有分钟时绝对不能加！",
+    "boxes": [
+      {
+        "text": "six",
+        "label": "数字: 6",
+        "class": "bg-emerald-100 text-emerald-800 border-emerald-300",
+        "silent": false
+      },
+      {
+        "text": "o'",
+        "label": "of the 缩写",
+        "class": "bg-rose-100 text-rose-800 border-rose-300",
+        "silent": false,
+        "highlight": true
+      },
+      {
+        "text": "clock",
+        "label": "时钟",
+        "class": "bg-blue-100 text-blue-800 border-blue-300",
+        "silent": false
+      }
+    ],
+    "transfer": {
+      "q": "闹钟现在刚好指在上午 9:00 整，根据整点公式应该说？",
+      "options": [
+        "nine o'clock",
+        "nine clock",
+        "nine of time",
+        "nine past clock"
+      ],
+      "correct": 0,
+      "exp": "整点标准公式：[基数词] + o'clock！如 nine o'clock, ten o'clock！"
+    }
+  },
+  {
+    "id": "half_past_three",
+    "unit": 0,
+    "unitTitle": "Unit 1 · 时间与前缀",
+    "word": "half past three",
+    "phonetic": "/hɑːf pɑːst θriː/",
+    "meaning": "三点半 (3:30)",
+    "type": "syntax_silent",
+    "motion": "clock_330",
+    "kronTip": "逆读法公式：[分钟] + past + [小时]！且 half 里的字母 l 在装深沉，坚决不发音！",
+    "xrayInfo": "【哑巴 l 家族】：half 中的 l 静音！就像 talk, walk, chalk 中的 l 一样不出声！",
+    "boxes": [
+      {
+        "text": "ha",
+        "label": "发 /hɑː/",
+        "class": "bg-amber-100 text-amber-800 border-amber-300",
+        "silent": false
+      },
+      {
+        "text": "l",
+        "label": "小哑巴 (静音)",
+        "class": "bg-slate-200 text-slate-500 border-slate-300",
+        "silent": true,
+        "highlight": true
+      },
+      {
+        "text": "f",
+        "label": "发 /f/",
+        "class": "bg-amber-100 text-amber-800 border-amber-300",
+        "silent": false
+      },
+      {
+        "text": "past",
+        "label": "过了",
+        "class": "bg-blue-100 text-blue-800 border-blue-300",
+        "silent": false
+      },
+      {
+        "text": "three",
+        "label": "3点",
+        "class": "bg-emerald-100 text-emerald-800 border-emerald-300",
+        "silent": false
+      }
+    ],
+    "transfer": {
+      "q": "既然 half past three 是 3:30，那 5:30（五点半）套用公式应该是？",
+      "options": [
+        "half past five",
+        "five half past",
+        "half to five",
+        "past five half"
+      ],
+      "correct": 0,
+      "exp": "漂亮！公式迁移：half past + [点钟] ➔ half past five！"
+    }
+  },
+  {
+    "id": "hop",
+    "unit": 1,
+    "unitTitle": "Unit 2 · 动能三部曲与具身动作",
+    "word": "hop",
+    "phonetic": "/hɒp/",
+    "meaning": "单脚跳 / (动物)轻蹦",
+    "type": "cvc_motion",
+    "motion": "hop",
+    "kronTip": "辅-元-辅（CVC）短元音顿音！特点是单脚小弹跳，像小麻雀或小兔子轻点地面！",
+    "xrayInfo": "【CVC双写尾字母】：因为是短元音+单辅音，进行时要双写 p ➔ hopping！",
+    "boxes": [
+      {
+        "text": "h",
+        "label": "/h/",
+        "class": "bg-purple-100 text-purple-800 border-purple-300",
+        "silent": false
+      },
+      {
+        "text": "o",
+        "label": "短元音 /ɒ/",
+        "class": "bg-red-100 text-red-800 border-red-300",
+        "silent": false
+      },
+      {
+        "text": "p",
+        "label": "/p/",
+        "class": "bg-purple-100 text-purple-800 border-purple-300",
+        "silent": false
+      }
+    ],
+    "transfer": {
+      "q": "小兔正在连续单脚跳（现在进行时），根据 CVC 双写规则，应该写成？",
+      "options": [
+        "hopping (双写p)",
+        "hoping (单个p)",
+        "hoppeding",
+        "hopin"
+      ],
+      "correct": 0,
+      "exp": "太严谨了！CVC 短元音必须双写：hop ➔ hopping！（单个 p 的 hoping 是 hope 希望的进行时）"
+    }
+  },
+  {
+    "id": "jump",
+    "unit": 1,
+    "unitTitle": "Unit 2 · 动能三部曲与具身动作",
+    "word": "jump",
+    "phonetic": "/dʒʌmp/",
+    "meaning": "双脚大跳 / 飞跃",
+    "type": "motion",
+    "motion": "jump",
+    "kronTip": "双脚蓄力、强力离地！幅度大、高度高的飞跃统统叫 jump！尾巴已有双辅音 mp！",
+    "xrayInfo": "【对比无需双写】：jump 结尾已有两个辅音字母 mp，加 ing 直接写 jumping，无需双写！",
+    "boxes": [
+      {
+        "text": "j",
+        "label": "/dʒ/",
+        "class": "bg-purple-100 text-purple-800 border-purple-300",
+        "silent": false
+      },
+      {
+        "text": "u",
+        "label": "短元音 /ʌ/",
+        "class": "bg-red-100 text-red-800 border-red-300",
+        "silent": false
+      },
+      {
+        "text": "mp",
+        "label": "辅音丛 /mp/",
+        "class": "bg-purple-100 text-purple-800 border-purple-300",
+        "silent": false
+      }
+    ],
+    "transfer": {
+      "q": "跳高运动员从地面双脚奋力跃过横杆，这个大幅度动作最精准是？",
+      "options": [
+        "jump",
+        "hop",
+        "skip",
+        "climb"
+      ],
+      "correct": 0,
+      "exp": "正解！大幅度双脚腾空必须用 jump！hop 是单脚轻蹦。"
+    }
+  },
+  {
+    "id": "skip",
+    "unit": 1,
+    "unitTitle": "Unit 2 · 动能三部曲与具身动作",
+    "word": "skip",
+    "phonetic": "/skɪp/",
+    "meaning": "交替蹦跳 / 跳过(步骤/广告)",
+    "type": "cvc_motion",
+    "motion": "skip",
+    "kronTip": "左右脚一步一换的欢快蹦跳（如跳绳 skip rope），引申为‘不着地直接跨过去’➔ 跳过广告！",
+    "xrayInfo": "【引申场景迁移】：看视频时那个‘Skip Ad’按钮，就是借用了它跳过不踩的含义！",
+    "boxes": [
+      {
+        "text": "sk",
+        "label": "辅音连缀 /sk/",
+        "class": "bg-indigo-100 text-indigo-800 border-indigo-300",
+        "silent": false
+      },
+      {
+        "text": "i",
+        "label": "短元音 /ɪ/",
+        "class": "bg-red-100 text-red-800 border-red-300",
+        "silent": false
+      },
+      {
+        "text": "p",
+        "label": "/p/",
+        "class": "bg-purple-100 text-purple-800 border-purple-300",
+        "silent": false
+      }
+    ],
+    "transfer": {
+      "q": "看网课视频不想看片头广告时，按下的 'Skip' 利用了它的什么含义？",
+      "options": [
+        "跳过 / 略过",
+        "单脚落地",
+        "向上攀爬",
+        "大声喧叫"
+      ],
+      "correct": 0,
+      "exp": "完全正确！skip 既指轻快蹦跳，也指‘跳过步骤/跳过广告’！"
+    }
+  },
+  {
+    "id": "dance",
+    "unit": 1,
+    "unitTitle": "Unit 2 · 动能三部曲与具身动作",
+    "word": "dance",
+    "phonetic": "/dɑːns/",
+    "meaning": "跳舞 / 舞蹈",
+    "type": "soft_c",
+    "motion": "dance",
+    "kronTip": "软音 C 铁律：字母 c 只要遇到 e, i, y，发音立刻软化念 /s/！词尾 e 不出声！",
+    "xrayInfo": "【软音 C 家族】：dance 中的 -ce 发 /s/，就像 bounce, chance, face, ice 一模一样！",
+    "boxes": [
+      {
+        "text": "d",
+        "label": "/d/",
+        "class": "bg-purple-100 text-purple-800 border-purple-300",
+        "silent": false
+      },
+      {
+        "text": "an",
+        "label": "核心元辅",
+        "class": "bg-red-100 text-red-800 border-red-300",
+        "silent": false
+      },
+      {
+        "text": "ce",
+        "label": "软音 C: /s/",
+        "class": "bg-amber-100 text-amber-800 border-amber-300",
+        "silent": false,
+        "highlight": true
+      }
+    ],
+    "transfer": {
+      "q": "根据软音 C 规则（c+e/i/y 读 /s/），下面哪个词的 c 也读清脆的 /s/？",
+      "options": [
+        "bounce (弹跳)",
+        "cake (蛋糕)",
+        "cold (寒冷)",
+        "cup (杯子)"
+      ],
+      "correct": 0,
+      "exp": "厉害！bounce 也是 -ce 结构，读 /baʊns/！其他词遇到 a, o, u 只能发硬音 /k/。"
+    }
+  },
+  {
+    "id": "climb",
+    "unit": 1,
+    "unitTitle": "Unit 2 · 动能三部曲与具身动作",
+    "word": "climb",
+    "phonetic": "/klaɪm/",
+    "meaning": "攀爬 / 爬山",
+    "type": "silent_b",
+    "motion": "climb",
+    "kronTip": "全国考生最爱错的发音陷阱！词尾的 -mb 是闭嘴组合，字母 b 绝对不出声！",
+    "xrayInfo": "【哑巴 b 家族】：词尾 -mb 的 b 全都不发音！如 lamb (小羊), comb (梳子), thumb (大拇指)！",
+    "boxes": [
+      {
+        "text": "cl",
+        "label": "连缀 /kl/",
+        "class": "bg-indigo-100 text-indigo-800 border-indigo-300",
+        "silent": false
+      },
+      {
+        "text": "i",
+        "label": "长元音 /aɪ/",
+        "class": "bg-red-100 text-red-800 border-red-300",
+        "silent": false
+      },
+      {
+        "text": "m",
+        "label": "/m/",
+        "class": "bg-purple-100 text-purple-800 border-purple-300",
+        "silent": false
+      },
+      {
+        "text": "b",
+        "label": "小哑巴 (静音)",
+        "class": "bg-slate-200 text-slate-500 border-slate-300",
+        "silent": true,
+        "highlight": true
+      }
+    ],
+    "transfer": {
+      "q": "既然 climb 的 b 不发音，那么小羊羔 'lamb' 应该怎么读？",
+      "options": [
+        "/læm/ (b不发音)",
+        "/læmb/ (读出b)",
+        "/lɒmbi/ (多读音节)",
+        "/leɪmb/ (长元音)"
+      ],
+      "correct": 0,
+      "exp": "满分！-mb 家族法则：climb, lamb, thumb, comb 结尾的 b 统统保持沉默！"
+    }
+  },
+  {
+    "id": "catch",
+    "unit": 2,
+    "unitTitle": "Unit 3 · 拼读解码与发声表达",
+    "word": "catch",
+    "phonetic": "/kætʃ/",
+    "meaning": "接住 / 抓取",
+    "type": "tch_rule",
+    "motion": "catch",
+    "kronTip": "三字母单音 -tch 铁律：在单个短元音后表达 /tʃ/，必须派 tch 出战！绝不能写成 cach！",
+    "xrayInfo": "【-tch 拼写规则】：短元音后用 tch（catch, watch, match）；辅音后用 ch（bench）！",
+    "boxes": [
+      {
+        "text": "c",
+        "label": "硬音 /k/",
+        "class": "bg-purple-100 text-purple-800 border-purple-300",
+        "silent": false
+      },
+      {
+        "text": "a",
+        "label": "短元音 /æ/",
+        "class": "bg-red-100 text-red-800 border-red-300",
+        "silent": false
+      },
+      {
+        "text": "tch",
+        "label": "三字母单音 /tʃ/",
+        "class": "bg-amber-100 text-amber-800 border-amber-300",
+        "silent": false,
+        "highlight": true
+      }
+    ],
+    "transfer": {
+      "q": "手表/观看 'watch' 同样是短元音后发 /tʃ/，根据规则它该怎么拼？",
+      "options": [
+        "watch (用tch)",
+        "wach (只用ch)",
+        "watsh (用tsh)",
+        "wache"
+      ],
+      "correct": 0,
+      "exp": "太精准了！短元音后锁定 -tch：catch, watch, match, pitch！"
+    }
+  },
+  {
+    "id": "laugh",
+    "unit": 2,
+    "unitTitle": "Unit 3 · 拼读解码与发声表达",
+    "word": "laugh",
+    "phonetic": "/lɑːf/",
+    "meaning": "大笑 / 嘲笑",
+    "type": "gh_f",
+    "motion": "laugh",
+    "kronTip": "拼读最大卧底！拼写明明是 gh，嘴巴却要咬下唇发出 /f/！看到搞笑事情笑出声：laugh！",
+    "xrayInfo": "【gh=/f/ 异化化石】：laugh, cough (咳嗽), enough (足够), tough (坚韧) 里的 gh 全都发 /f/！",
+    "boxes": [
+      {
+        "text": "l",
+        "label": "/l/",
+        "class": "bg-purple-100 text-purple-800 border-purple-300",
+        "silent": false
+      },
+      {
+        "text": "au",
+        "label": "元音核心",
+        "class": "bg-red-100 text-red-800 border-red-300",
+        "silent": false
+      },
+      {
+        "text": "gh",
+        "label": "变音卧底: /f/",
+        "class": "bg-rose-100 text-rose-800 border-rose-300",
+        "silent": false,
+        "highlight": true
+      }
+    ],
+    "transfer": {
+      "q": "感冒‘咳嗽’的单词是 cough，根据 laugh 的 gh=/f/ 规律，cough 应该读？",
+      "options": [
+        "/kɒf/ (末尾咬唇发f)",
+        "/kəʊg/ (末尾发g)",
+        "/kɒtʃ/ (发ch)",
+        "/kɒp/ (发p)"
+      ],
+      "correct": 0,
+      "exp": "完全正确！laugh (/lɑːf/) 和 cough (/kɒf/)，还有 enough (/ɪˈnʌf/)，末尾全是 gh 发 /f/！"
+    }
+  },
+  {
+    "id": "shout",
+    "unit": 2,
+    "unitTitle": "Unit 3 · 拼读解码与发声表达",
+    "word": "shout",
+    "phonetic": "/ʃaʊt/",
+    "meaning": "呼喊 / 大叫",
+    "type": "diphthong",
+    "motion": "shout",
+    "kronTip": "双辅音 sh (嘘) + 双元音 ou (像被踩了脚喊嗷 /aʊ/) + 结尾 t = 拼在一起破音大叫 shout！",
+    "xrayInfo": "【ou=/aʊ/ 家族】：ou 在中间是高频双元音：out (出), loud (大声), cloud (云), house (房)！",
+    "boxes": [
+      {
+        "text": "sh",
+        "label": "/ʃ/",
+        "class": "bg-indigo-100 text-indigo-800 border-indigo-300",
+        "silent": false
+      },
+      {
+        "text": "ou",
+        "label": "双元音 /aʊ/",
+        "class": "bg-amber-100 text-amber-800 border-amber-300",
+        "silent": false,
+        "highlight": true
+      },
+      {
+        "text": "t",
+        "label": "/t/",
+        "class": "bg-purple-100 text-purple-800 border-purple-300",
+        "silent": false
+      }
+    ],
+    "transfer": {
+      "q": "形容声音非常嘈杂大声叫 'loud'。它里面的 'ou' 发音与 shout 相比：",
+      "options": [
+        "完全一样，都发 /aʊ/",
+        "不一样，读 /uː/",
+        "不发音",
+        "读短音 /ʌ/"
+      ],
+      "correct": 0,
+      "exp": "同一声调！sh-ou-t ➔ l-ou-d ➔ cl-ou-d，都是经典口型从大到小的 /aʊ/！"
+    }
+  },
+  {
+    "id": "dress_up",
+    "unit": 2,
+    "unitTitle": "Unit 3 · 拼读解码与发声表达",
+    "word": "dress up",
+    "phonetic": "/dres ʌp/",
+    "meaning": "盛装打扮 / 装扮",
+    "type": "phrasal",
+    "motion": "dress_up",
+    "kronTip": "dress 是穿衣，加个 up 表示格调‘拉满/彻底装扮’！短元音后双写 ss 也是拼写铁律！",
+    "xrayInfo": "【动词小品词 up 规则】：up 常表彻底完成！如 clean up (打扫干净), eat up (吃光)！",
+    "boxes": [
+      {
+        "text": "dr",
+        "label": "连缀 /dr/",
+        "class": "bg-indigo-100 text-indigo-800 border-indigo-300",
+        "silent": false
+      },
+      {
+        "text": "e",
+        "label": "短元音 /e/",
+        "class": "bg-red-100 text-red-800 border-red-300",
+        "silent": false
+      },
+      {
+        "text": "ss",
+        "label": "双写 /s/",
+        "class": "bg-purple-100 text-purple-800 border-purple-300",
+        "silent": false
+      },
+      {
+        "text": "up",
+        "label": "彻底/拉满",
+        "class": "bg-emerald-100 text-emerald-800 border-emerald-300",
+        "silent": false,
+        "highlight": true
+      }
+    ],
+    "transfer": {
+      "q": "副词 'up' 能让动词含义程度拉满。那么 'clean up' 的意思通常是？",
+      "options": [
+        "彻底打扫收拾干净",
+        "向上抬高",
+        "换上新衣服",
+        "大声呼喊"
+      ],
+      "correct": 0,
+      "exp": "精准理解！up 表拉满与完结：clean up (打扫干净), grow up (长大), dress up (盛装)！"
+    }
+  }
+]

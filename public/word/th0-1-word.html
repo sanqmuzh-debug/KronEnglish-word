@@ -1,0 +1,2665 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>THINK TH0 · 1: All together (大家在一起) (LexiBlock 3D)</title>
+  <style>
+
+    :root {
+      --duo-green: #58CC02;
+      --duo-green-shadow: #46A302;
+      --duo-green-hover: #61E002;
+      --duo-blue: #1CB0F6;
+      --duo-blue-shadow: #1899D6;
+      --duo-gold: #FFC800;
+      --duo-gold-shadow: #E5A800;
+      --duo-coral: #FF7675;
+      --duo-coral-shadow: #D63031;
+      --duo-ocean: #0984E3;
+      --duo-ocean-shadow: #074B83;
+      --bg-light: #F7F7F9;
+      --bg-card: #FFFFFF;
+      --text-main: #1D1D1F;
+      --text-body: #4B4B4B;
+      --text-muted: #777777;
+      --text-sub: #AFAFAF;
+      --border-light: #E5E5E5;
+      --border-tile: #CECECE;
+      --radius-sm: 12px;
+      --radius-md: 16px;
+      --radius-lg: 24px;
+      --radius-pill: 999px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      user-select: none;
+      -webkit-tap-highlight-color: transparent;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", "Segoe UI", Roboto, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-light);
+      color: var(--text-body);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      transition: background-color 0.3s ease;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body.game-mode {
+      background-color: #081524;
+      color: #FFFFFF;
+    }
+
+    #app {
+      width: 100%;
+      max-width: 500px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 16px;
+      position: relative;
+    }
+
+    .duo-btn {
+      position: relative;
+      border-radius: 18px;
+      font-weight: 900;
+      cursor: pointer;
+      transition: all 0.08s ease;
+      text-align: center;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      user-select: none;
+      border: none;
+    }
+    .duo-btn:active {
+      transform: translateY(3px);
+      border-bottom-width: 2px !important;
+    }
+
+    .duo-btn-green {
+      background: var(--duo-green);
+      color: #FFFFFF;
+      border-bottom: 5px solid var(--duo-green-shadow);
+    }
+    .duo-btn-green:hover { background: var(--duo-green-hover); }
+
+    .duo-btn-ocean {
+      background: var(--duo-ocean);
+      color: #FFFFFF;
+      border-bottom: 5px solid var(--duo-ocean-shadow);
+    }
+
+    .duo-btn-gold {
+      background: var(--duo-gold);
+      color: #7A5200;
+      border-bottom: 5px solid var(--duo-gold-shadow);
+    }
+
+    .duo-btn-dark {
+      background: #102138;
+      color: #FFFFFF;
+      border: 2px solid #1E3B61;
+      border-bottom: 5px solid #0A1626;
+    }
+    .duo-btn-dark:hover { background: #172D4D; }
+
+    .duo-tile {
+      background-color: #FFFFFF;
+      color: var(--text-body);
+      border: 2px solid var(--border-light);
+      border-bottom: 4px solid var(--border-tile);
+      border-radius: 16px;
+      font-size: 20px;
+      font-weight: 900;
+      padding: 12px 18px;
+      cursor: pointer;
+      transition: all 0.08s ease-in-out;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      user-select: none;
+    }
+    .duo-tile:hover { background-color: #F8F8F8; }
+    .duo-tile:active {
+      transform: translateY(2px);
+      border-bottom-width: 2px;
+    }
+
+    .duo-tile-success {
+      background-color: var(--duo-green) !important;
+      color: #FFFFFF !important;
+      border-color: var(--duo-green) !important;
+      border-bottom-color: var(--duo-green-shadow) !important;
+      transform: scale(1.04);
+    }
+
+    .learn-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 12px;
+      gap: 12px;
+    }
+    .unit-tag {
+      background: #E3F2FD;
+      color: #1565C0;
+      font-size: 11px;
+      font-weight: 900;
+      padding: 4px 10px;
+      border-radius: 999px;
+      letter-spacing: 0.5px;
+      white-space: nowrap;
+    }
+    .progress-track {
+      flex: 1;
+      height: 14px;
+      background: #E5E5E5;
+      border-radius: var(--radius-pill);
+      overflow: hidden;
+      position: relative;
+    }
+    .progress-fill {
+      height: 100%;
+      background: var(--duo-green);
+      border-radius: var(--radius-pill);
+      transition: width 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+    .mode-switch-btn {
+      background: #FFF;
+      border: 2px solid #E5E5E5;
+      border-radius: var(--radius-pill);
+      padding: 6px 12px;
+      font-size: 12px;
+      font-weight: 800;
+      color: #777;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      transition: all 0.15s ease;
+      white-space: nowrap;
+    }
+    .mode-switch-btn:hover {
+      border-color: var(--duo-ocean);
+      color: var(--duo-ocean);
+    }
+
+    .word-header {
+      text-align: center;
+      margin-bottom: 16px;
+    }
+    .word-meaning {
+      font-size: 26px;
+      font-weight: 900;
+      color: var(--text-main);
+      margin-bottom: 6px;
+      letter-spacing: -0.5px;
+    }
+    .word-type-tag {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 800;
+      padding: 2px 8px;
+      border-radius: 6px;
+      margin-left: 6px;
+      vertical-align: middle;
+    }
+    .tag-adj { background: #EDE7F6; color: #512DA8; }
+    .tag-trip { background: #E1F5FE; color: #0288D1; }
+
+    .word-ipa-btn {
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      font-size: 15px;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      cursor: pointer;
+      padding: 4px 10px;
+      border-radius: var(--radius-pill);
+      transition: background 0.15s ease;
+    }
+    .word-ipa-btn:hover { background: #EDEDED; }
+
+    .slots-container {
+      min-height: 64px;
+      border-bottom: 2px dashed var(--border-tile);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 10px 0;
+      margin-bottom: 20px;
+    }
+    .tray-container {
+      min-height: 80px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    .empty-tip {
+      color: var(--text-sub);
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .kron-spark-card {
+      background: linear-gradient(135deg, #FFF9DB 0%, #FFF3BF 100%);
+      border: 2px solid #FFE066;
+      border-radius: 18px;
+      padding: 14px 16px;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      box-shadow: 0 4px 12px rgba(245, 159, 0, 0.08);
+    }
+    .kron-avatar {
+      font-size: 28px;
+      line-height: 1;
+      filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+    }
+    .kron-spark-content {
+      flex: 1;
+    }
+    .kron-spark-title {
+      font-size: 12px;
+      font-weight: 900;
+      color: #D9480F;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .kron-spark-text {
+      font-size: 14px;
+      color: #495057;
+      font-weight: 700;
+      line-height: 1.45;
+    }
+
+    .transfer-panel {
+      background: var(--bg-card);
+      border: 2px solid var(--border-light);
+      border-radius: 20px;
+      padding: 14px;
+      margin-top: 10px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.04);
+    }
+    .rule-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      margin-bottom: 12px;
+      line-height: 1.4;
+    }
+    .rule-badge {
+      background: #E8F5E9;
+      color: #2E7D32;
+      font-size: 11px;
+      font-weight: 900;
+      padding: 3px 8px;
+      border-radius: 6px;
+      white-space: nowrap;
+    }
+    .rule-desc {
+      font-size: 12px;
+      font-weight: 700;
+      color: #555;
+    }
+    .transfer-title {
+      font-size: 11px;
+      font-weight: 900;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 8px;
+    }
+    .transfer-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+    .transfer-tile {
+      background: #FAFAFA;
+      border: 1.5px solid var(--border-light);
+      border-radius: 12px;
+      padding: 8px 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+      transition: all 0.1s ease;
+    }
+    .transfer-tile:hover {
+      background: #F0FDF4;
+      border-color: var(--duo-green);
+    }
+    .transfer-word {
+      font-weight: 900;
+      font-size: 14px;
+      color: var(--text-main);
+    }
+    .transfer-cn {
+      font-size: 11px;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+    .hl-green {
+      color: var(--duo-green);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    @keyframes popIn {
+      0% { opacity: 0; transform: scale(0.92) translateY(8px); }
+      100% { opacity: 1; transform: scale(1) translateY(0); }
+    }
+    .animate-pop-in {
+      animation: popIn 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+    }
+
+    @keyframes shake {
+      0%, 100% { transform: translateX(0); }
+      20%, 60% { transform: translateX(-8px); }
+      40%, 80% { transform: translateX(8px); }
+    }
+    .animate-shake {
+      animation: shake 0.4s ease-in-out;
+    }
+
+    /* ================= Gimkit 海岛探险大富翁独立游戏 ================= */
+    
+.game-top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+    .timer-pill {
+      background: #20172B;
+      border: 2px solid #362847;
+      border-radius: var(--radius-pill);
+      padding: 6px 14px;
+      font-size: 14px;
+      font-weight: 900;
+      color: #AF52DE;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .alchemy-stats-row {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+    .alchemy-stat-card {
+      flex: 1;
+      background: #191222;
+      border: 1px solid #2B1E38;
+      border-radius: 16px;
+      padding: 10px 12px;
+      text-align: center;
+    }
+    .stat-label {
+      font-size: 11px;
+      color: #8C9BAE;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+    .stat-val {
+      font-size: 20px;
+      font-weight: 900;
+      color: #AF52DE;
+    }
+
+    .alchemy-stage {
+      background: #160F20;
+      border: 2px solid #2F1E40;
+      border-radius: 24px;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 14px;
+      min-height: 290px;
+      justify-content: center;
+    }
+
+    .alchemy-bubble {
+      background: #231733;
+      border: 2px solid #3F2B5A;
+      border-radius: 18px;
+      padding: 10px 16px;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      max-width: 90%;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+    }
+    .alchemy-tag {
+      font-size: 18px;
+      font-weight: 900;
+      color: #AF52DE;
+    }
+    .alchemy-avatar-box {
+      position: relative;
+      margin-bottom: 8px;
+    }
+    .alchemy-emoji {
+      font-size: 64px;
+      filter: drop-shadow(0 4px 8px rgba(0,0,0,0.4));
+      display: inline-block;
+      animation: rotateFlask 2s ease-in-out infinite alternate;
+    }
+    @keyframes rotateFlask {
+      0% { transform: rotate(-8deg) scale(1); }
+      100% { transform: rotate(8deg) scale(1.06); }
+    }
+    .alchemy-heat-bar {
+      width: 130px;
+      height: 8px;
+      background: #2F1E40;
+      border-radius: 999px;
+      overflow: hidden;
+      margin: 0 auto;
+    }
+    .alchemy-heat-fill {
+      height: 100%;
+      background: #AF52DE;
+      border-radius: 999px;
+      transition: width 0.1s linear, background-color 0.3s ease;
+    }
+
+    .game-opt-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      width: 100%;
+    }
+    .game-opt-btn {
+      padding: 14px 10px;
+      font-size: 15px;
+      line-height: 1.3;
+      border-radius: 16px;
+    }
+
+    .ticker-bar {
+      background: #191222;
+      border: 1px solid #2B1E38;
+      border-radius: var(--radius-pill);
+      padding: 6px 14px;
+      font-size: 12px;
+      color: #8DA1BA;
+      font-weight: 700;
+      margin-bottom: 12px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .leaderboard-mini {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 6px;
+      margin-bottom: 12px;
+    }
+    .lb-card {
+      background: #160F20;
+      border: 1px solid #2F1E40;
+      border-radius: 12px;
+      padding: 8px 6px;
+      text-align: center;
+      transition: all 0.2s ease;
+    }
+    .lb-card.is-me {
+      border-color: #AF52DE;
+      background: #231733;
+    }
+    .lb-name {
+      font-size: 11px;
+      color: #8C9BAE;
+      font-weight: 800;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .lb-gold {
+      font-size: 13px;
+      font-weight: 900;
+      color: #FFFFFF;
+    }
+
+    .market-drawer {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.75);
+      backdrop-filter: blur(8px);
+      z-index: 100;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .market-modal {
+      background: #130D1A;
+      border: 2px solid #AF52DE;
+      border-radius: 28px;
+      width: 100%;
+      max-width: 420px;
+      padding: 22px;
+      box-shadow: 0 20px 50px rgba(175,82,222,0.25);
+    }
+    .market-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #1F152A;
+      border: 1px solid #332344;
+      border-radius: 16px;
+      padding: 12px;
+      margin-bottom: 10px;
+    }
+
+    #confettiCanvas {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 999;
+    }
+  </style>
+</head>
+<body>
+
+  <canvas id="confettiCanvas"></canvas>
+
+  <div id="app">
+    
+    <!-- ==================== 视图 1：多邻国积木背单词 + Kron 脑洞场景 ==================== -->
+    <div id="learnView" style="display: flex; flex-direction: column; justify-content: space-between; min-height: calc(100vh - 32px);">
+      <header class="learn-header">
+        <span class="unit-tag">TH0 · 1</span>
+        <div class="progress-track">
+          <div class="progress-fill" id="progressBar" style="width: 0%;"></div>
+        </div>
+        <button class="mode-switch-btn" id="lockStatusBtn" onclick="trySwitchToGame()">
+          🔒 家族大侦探 (需全通)
+        </button>
+      </header>
+      <!-- Aha! 生词本双向打通同步横幅 -->
+      <div id="ahaSyncBanner" style="display:none; align-items: center; justify-content: space-between; background: linear-gradient(135deg, rgba(88,204,2,0.12), rgba(28,176,246,0.12)); border: 1.5px solid #58CC02; border-radius: 14px; padding: 8px 12px; margin-bottom: 12px; font-size: 11px; font-weight: 800; color: #1D1D1F;">
+        <div style="display: flex; align-items: center; gap: 6px;">
+          <span>⚡</span>
+          <span>已成功打通并同步来自 <strong>Aha! 生词本</strong> 的 <span id="ahaSyncCount" style="color: #46A302; font-size: 13px;">0</span> 个重点词汇</span>
+        </div>
+        <button onclick="document.getElementById('ahaSyncBanner').style.display='none'" style="background:none; border:none; color:#888; cursor:pointer; font-size:12px; font-weight:bold;">✕</button>
+      </div>
+
+      <div style="margin: auto 0; padding: 12px 0;">
+        <div class="word-header">
+          <div class="word-meaning">
+            <span id="wordMeaning">...</span>
+            <span class="word-type-tag" id="wordTypeTag">Word</span>
+          </div>
+          <button class="word-ipa-btn" onclick="playCurrentWordAudio()">
+            <span id="wordIPA">...</span>
+            <span>🔊</span>
+          </button>
+        </div>
+
+        <div class="slots-container" id="slotsContainer"></div>
+        <div class="tray-container" id="trayContainer"></div>
+
+        <div id="successPanel" style="display: none;" class="animate-pop-in">
+          <div class="kron-spark-card">
+            <div class="kron-avatar">👨🏻‍🏫</div>
+            <div class="kron-spark-content">
+              <div class="kron-spark-title">⚡️ Kron 老师脑洞发问</div>
+              <div class="kron-spark-text" id="kronMindSpark">...</div>
+            </div>
+          </div>
+
+          <div class="transfer-panel">
+            <div class="rule-row">
+              <span class="rule-badge" id="ruleBadge">...</span>
+              <span class="rule-desc" id="ruleDesc">...</span>
+            </div>
+            <div class="transfer-title">举一反三单词积木（点击听纯正发音）</div>
+            <div class="transfer-grid" id="transferGrid"></div>
+          </div>
+        </div>
+      </div>
+
+      <div style="padding-top: 14px;">
+        <button class="duo-btn duo-btn-green" id="nextBtn" style="width: 100%; padding: 16px; font-size: 18px; display: none;" onclick="goNextWord()">
+          继续下一个单词 ➔
+        </button>
+        <div id="footerPlaceholder" style="text-align: center; color: #AFAFAF; font-size: 13px; font-weight: 700; height: 55px; line-height: 55px;">
+          点击下方发音积木完成拼装
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== 视图 2：家族大侦探独立游戏 ==================== -->
+    <div id="gameView" style="display: none; flex-direction: column; justify-content: space-between; min-height: calc(100vh - 32px);">
+      <div>
+        <div class="game-top-bar">
+          <div class="timer-pill" id="timerDisplay">
+            <span>⚗️</span>
+            <span id="timeText">03:00</span>
+          </div>
+          <div style="display: flex; gap: 8px;">
+            <button class="duo-btn duo-btn-purple" style="padding: 6px 12px; font-size: 12px;" onclick="openMarket()">
+              🔮 探案档案
+            </button>
+            <button class="duo-btn duo-btn-dark" style="padding: 6px 12px; font-size: 12px;" onclick="switchToLearn()">
+              📖 返回复习
+            </button>
+          </div>
+        </div>
+
+        <div class="alchemy-stats-row">
+          <div class="alchemy-stat-card">
+            <div class="stat-label">贤者之石 (金币)</div>
+            <div class="stat-val" id="playerGoldText">🔮 0</div>
+          </div>
+          <div class="alchemy-stat-card">
+            <div class="stat-label">提纯素材</div>
+            <div class="stat-val" id="servedCountText">✨ 0</div>
+          </div>
+          <div class="alchemy-stat-card">
+            <div class="stat-label">连击倍率</div>
+            <div class="stat-val" id="comboText" style="color: #AF52DE;">⚡ x1</div>
+          </div>
+        </div>
+
+        <div class="ticker-bar" id="tickerMsg">
+          ⚗️ 赛博炼金熔炉就绪！迅速识别材质属性，炼制终极神器！
+        </div>
+
+        <div class="leaderboard-mini" id="leaderboardGrid"></div>
+      </div>
+
+      <div class="alchemy-stage" id="alchemyStage">
+        
+        <div id="gameStartScreen" style="text-align: center; padding: 10px;">
+          <div style="font-size: 54px; margin-bottom: 8px;">🧪</div>
+          <h1 style="font-size: 22px; font-weight: 900; margin-bottom: 6px; color: #AF52DE;">
+            WORDWALL · 赛博家族大侦探
+          </h1>
+          <p style="font-size: 13px; color: #8C9BAE; line-height: 1.5; margin-bottom: 20px;">
+            已吃透 18 个视觉质感与核心材质词汇！<br/>高能原材料正源源不断滑入熔炉！<br/>看准配方秒速鉴定，合成全宇宙最稀有的贤者之石！
+          </p>
+          <button class="duo-btn duo-btn-purple" style="width: 100%; padding: 15px; font-size: 16px;" onclick="startBattle()">
+            开启炼金熔炉 ➔
+          </button>
+        </div>
+
+        <div id="gameOrderScreen" style="display: none; width: 100%; text-align: center;">
+          <div class="alchemy-avatar-box">
+            <div class="alchemy-emoji" id="custEmoji">🔮</div>
+          </div>
+          
+          <div class="alchemy-bubble" style="margin: 0 auto 12px auto;">
+            <span style="font-size: 18px;">💡</span>
+            <div style="text-align: left;">
+              <div style="font-size: 11px; color: #8DA1BA; font-weight: 800;" id="custName">炼金配方</div>
+              <div class="alchemy-tag" id="custOrderSpeech">“急需材质：「羊毛」！”</div>
+            </div>
+          </div>
+
+          <div style="margin-bottom: 12px;">
+            <div class="alchemy-heat-bar">
+              <div class="alchemy-heat-fill" id="patienceBar" style="width: 100%;"></div>
+            </div>
+          </div>
+
+          <div style="font-size: 13px; font-weight: 900; color: #E5E5E5; margin-bottom: 14px;" id="gameQuestionPrompt">
+            分子重构：选择匹配的质感或材质单词：
+          </div>
+
+          <div class="game-opt-grid" id="gameOptionGrid"></div>
+        </div>
+
+        <div id="gameDishDoneScreen" style="display: none; text-align: center;" class="animate-pop-in">
+          <div id="dishDoneIcon" style="font-size: 60px; margin-bottom: 8px;">✨🧪💎✨</div>
+          <h3 id="dishDoneTitle" style="font-size: 22px; font-weight: 900; color: #AF52DE; margin-bottom: 6px;">
+            合成成功！+340 🔮
+          </h3>
+          <p id="dishDoneDesc" style="font-size: 13px; color: #8DA1BA; margin-bottom: 18px;">
+            完美提纯！稀有材质凝结成闪烁光芒的晶体！
+          </p>
+          <button class="duo-btn duo-btn-purple" style="width: 100%; padding: 14px; font-size: 16px;" onclick="nextCustomer()">
+            提纯下一份配方 ➔
+          </button>
+        </div>
+
+        <div id="gameOverScreen" style="display: none; text-align: center; width: 100%;" class="animate-pop-in">
+          <div style="font-size: 56px; margin-bottom: 8px;" id="finalTrophy">👑</div>
+          <h2 style="font-size: 24px; font-weight: 900; color: #FFC800;" id="finalRankTitle">传奇大炼金术士！</h2>
+          <p style="font-size: 12px; color: #8C9BAE; margin-bottom: 16px;" id="finalRankDesc">贤者之石储备冠绝群伦！</p>
+          <div style="background: #1F152A; border-radius: 20px; padding: 14px; margin-bottom: 18px;" id="finalPodium"></div>
+          <button class="duo-btn duo-btn-purple" style="width: 100%; padding: 14px; font-size: 16px;" onclick="startBattle()">
+            再开一炉 🔄
+          </button>
+        </div>
+
+      </div>
+
+      <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 10px; font-size: 11px; font-weight: 800; color: #5B6F8E;">
+        <span>WORDWALL ALCHEMY · KRON 独家定制版</span>
+        <span id="playerBuffs">🔮 催化矩阵: 0级 | 🧪 提纯釜: 基础</span>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="market-drawer" id="marketDrawer">
+    <div class="market-modal">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+        <h3 style="font-size: 18px; font-weight: 900; color: #AF52DE;">🔮 赛博炼金升级矩阵</h3>
+        <button style="background: none; border: none; color: #8C9BAE; font-size: 22px; cursor: pointer;" onclick="closeMarket()">✕</button>
+      </div>
+
+      <div class="market-item">
+        <div>
+          <div style="font-weight: 900; font-size: 14px; color: #FFF;">⚡ 超导重离子催化剂</div>
+          <div style="font-size: 11px; color: #8C9BAE;">单次合成收益永久提升 50%</div>
+        </div>
+        <button class="duo-btn duo-btn-purple" style="padding: 8px 12px; font-size: 12px;" onclick="buyUpgrade('knife', 400)">
+          400 🔮
+        </button>
+      </div>
+
+      <div class="market-item">
+        <div>
+          <div style="font-weight: 900; font-size: 14px; color: #FFF;">🤖 自动分子提纯臂</div>
+          <div style="font-size: 11px; color: #8C9BAE;">每 3 秒自动入账 60 点贤者能量</div>
+        </div>
+        <button class="duo-btn duo-btn-purple" style="padding: 8px 12px; font-size: 12px;" onclick="buyUpgrade('autoCook', 600)">
+          600 🔮
+        </button>
+      </div>
+
+      <div class="market-item">
+        <div>
+          <div style="font-weight: 900; font-size: 14px; color: #FFF;">⏳ 时间膨胀沙漏</div>
+          <div style="font-size: 11px; color: #8C9BAE;">熔炉过热降温速度减缓 40%</div>
+        </div>
+        <button class="duo-btn duo-btn-purple" style="padding: 8px 12px; font-size: 12px;" onclick="buyUpgrade('bell', 350)">
+          350 🔮
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    /* ================= Unit 4: 24 词全量数据库 (家庭成员与性格情绪) ================= */
+    const VOCABULARY = [
+      {
+            "word": "Brazil",
+            "meaning": "巴西 (南美洲国家)",
+            "IPA": "/brə.ˈzɪl/",
+            "type": "noun",
+            "blocks": [
+                  "Br",
+                  "a",
+                  "z",
+                  "il"
+            ],
+            "mindSpark": "南美洲面积最大的国家；重音在第二音节 /zɪl/，词首大写！",
+            "rule": "自然拼读与音节拆解：-Br- + a + z + -il-",
+            "ruleDesc": "Br-(辅音连缀) + a(核心音节/韵尾) + z(声母辅音) 拼成「Brazil」。 南美洲面积最大的国家；重音在第二音节 /zɪl/，词首大写！",
+            "transfers": [
+                  {
+                        "word": "brave",
+                        "hl": "Br",
+                        "cn": "勇敢的"
+                  },
+                  {
+                        "word": "bread",
+                        "hl": "Br",
+                        "cn": "面包"
+                  },
+                  {
+                        "word": "brother",
+                        "hl": "Br",
+                        "cn": "兄弟"
+                  },
+                  {
+                        "word": "brown",
+                        "hl": "Br",
+                        "cn": "棕色"
+                  }
+            ]
+      },
+      {
+            "word": "Ecuador",
+            "meaning": "厄瓜多尔 (南美洲国家)",
+            "IPA": "/ˈek.wə.dɔː/",
+            "type": "noun",
+            "blocks": [
+                  "Ec",
+                  "ua",
+                  "d",
+                  "or"
+            ],
+            "mindSpark": "赤道横穿该国；国名正是源于西班牙语'赤道'(ecuador)！",
+            "rule": "自然拼读与音节拆解：-Ec- + -ua- + d + -or-",
+            "ruleDesc": "Ec(核心音节/韵尾) + ua(核心音节/韵尾) + d(声母辅音) 拼成「Ecuador」。 赤道横穿该国；国名正是源于西班牙语'赤道'(ecuador)！",
+            "transfers": [
+                  {
+                        "word": "insecure",
+                        "hl": "Ec",
+                        "cn": "缺乏安全感的 / 不自信的"
+                  },
+                  {
+                        "word": "respectful",
+                        "hl": "Ec",
+                        "cn": "恭敬的 / 充满敬意的"
+                  },
+                  {
+                        "word": "dialect",
+                        "hl": "Ec",
+                        "cn": "方言 / 地方土语"
+                  },
+                  {
+                        "word": "december",
+                        "hl": "Ec",
+                        "cn": "十二月"
+                  }
+            ]
+      },
+      {
+            "word": "Indonesia",
+            "meaning": "印度尼西亚 (东南亚群岛国)",
+            "IPA": "/ˌɪn.dəʊˈniː.ʒə/",
+            "type": "noun",
+            "blocks": [
+                  "In",
+                  "do",
+                  "ne",
+                  "s",
+                  "ia"
+            ],
+            "mindSpark": "千岛之国；次重音在 In-，主重音在 -ni- /niː/！",
+            "rule": "自然拼读与音节拆解：-In- + -do- + -ne- + s + -ia-",
+            "ruleDesc": "In-(常用前缀) + do(核心音节/韵尾) + ne(核心音节/韵尾) 拼成「Indonesia」。 千岛之国；次重音在 In-，主重音在 -ni- /niː/！",
+            "transfers": [
+                  {
+                        "word": "inside",
+                        "hl": "In",
+                        "cn": "在里面"
+                  },
+                  {
+                        "word": "invite",
+                        "hl": "In",
+                        "cn": "邀请"
+                  },
+                  {
+                        "word": "invent",
+                        "hl": "In",
+                        "cn": "发明"
+                  },
+                  {
+                        "word": "income",
+                        "hl": "In",
+                        "cn": "收入"
+                  }
+            ]
+      },
+      {
+            "word": "Japan",
+            "meaning": "日本 (亚洲东部岛国)",
+            "IPA": "/dʒəˈpæn/",
+            "type": "noun",
+            "blocks": [
+                  "Ja",
+                  "p",
+                  "an"
+            ],
+            "mindSpark": "重音在第二个音节 /pæn/，短元音 a 发大嘴巴音 /æ/！",
+            "rule": "自然拼读与音节拆解：-Ja- + p + -an-",
+            "ruleDesc": "Ja(核心音节/韵尾) + p(声母辅音) + an(核心音节/韵尾) 拼成「Japan」。 重音在第二个音节 /pæn/，短元音 a 发大嘴巴音 /æ/！",
+            "transfers": [
+                  {
+                        "word": "pet",
+                        "hl": "p",
+                        "cn": "宠物"
+                  },
+                  {
+                        "word": "pen",
+                        "hl": "p",
+                        "cn": "钢笔"
+                  },
+                  {
+                        "word": "park",
+                        "hl": "p",
+                        "cn": "公园"
+                  },
+                  {
+                        "word": "play",
+                        "hl": "p",
+                        "cn": "玩"
+                  }
+            ]
+      },
+      {
+            "word": "Mexico",
+            "meaning": "墨西哥 (北美洲国家)",
+            "IPA": "/ˈmek.sɪ.kəʊ/",
+            "type": "noun",
+            "blocks": [
+                  "M",
+                  "ex",
+                  "i",
+                  "co"
+            ],
+            "mindSpark": "重音在第一音节 Mex- /ˈmek/，x 发 /ks/！",
+            "rule": "自然拼读与音节拆解：M + -ex- + i + -co-",
+            "ruleDesc": "M(声母辅音) + ex-(常用前缀) + i(核心音节/韵尾) 拼成「Mexico」。 重音在第一音节 Mex- /ˈmek/，x 发 /ks/！",
+            "transfers": [
+                  {
+                        "word": "man",
+                        "hl": "M",
+                        "cn": "男人"
+                  },
+                  {
+                        "word": "moon",
+                        "hl": "M",
+                        "cn": "月亮"
+                  },
+                  {
+                        "word": "milk",
+                        "hl": "M",
+                        "cn": "牛奶"
+                  },
+                  {
+                        "word": "map",
+                        "hl": "M",
+                        "cn": "地图"
+                  }
+            ]
+      },
+      {
+            "word": "Russia",
+            "meaning": "俄罗斯 (横跨欧亚大国)",
+            "IPA": "/ˈrʌ.ʃə/",
+            "type": "noun",
+            "blocks": [
+                  "R",
+                  "us",
+                  "s",
+                  "ia"
+            ],
+            "mindSpark": "世界领土面积最大的国家；u 发 /ʌ/，ss 发咬嘴唇的 /ʃ/！",
+            "rule": "自然拼读与音节拆解：R + -us- + s + -ia-",
+            "ruleDesc": "R(声母辅音) + us(核心音节/韵尾) + s(声母辅音) 拼成「Russia」。 世界领土面积最大的国家；u 发 /ʌ/，ss 发咬嘴唇的 /ʃ/！",
+            "transfers": [
+                  {
+                        "word": "sun",
+                        "hl": "s",
+                        "cn": "太阳"
+                  },
+                  {
+                        "word": "star",
+                        "hl": "s",
+                        "cn": "星星"
+                  },
+                  {
+                        "word": "sea",
+                        "hl": "s",
+                        "cn": "大海"
+                  },
+                  {
+                        "word": "song",
+                        "hl": "s",
+                        "cn": "歌曲"
+                  }
+            ]
+      },
+      {
+            "word": "South Africa",
+            "meaning": "南非 (非洲南部国家)",
+            "IPA": "/ˌsaʊθ ˈæf.rɪ.kə/",
+            "type": "noun",
+            "blocks": [
+                  "So",
+                  "u",
+                  "th",
+                  "Af",
+                  "r",
+                  "i",
+                  "ca"
+            ],
+            "mindSpark": "South (南方) + Africa (非洲)；复合国名两词首字母均大写！",
+            "rule": "自然拼读与音节拆解：-So- + -uth- + -Af- + -rica-",
+            "ruleDesc": "So(核心音节/韵尾) + uth(核心音节/韵尾) + Af(核心音节/韵尾) 拼成「South Africa」。 South (南方) + Africa (非洲)；复合国名两词首字母均大写！",
+            "transfers": [
+                  {
+                        "word": "mouth",
+                        "hl": "u",
+                        "cn": "嘴巴"
+                  },
+                  {
+                        "word": "south",
+                        "hl": "So",
+                        "cn": "南 / 南方 / 南极"
+                  },
+                  {
+                        "word": "socks",
+                        "hl": "So",
+                        "cn": "袜子 (复数)"
+                  },
+                  {
+                        "word": "insomnia",
+                        "hl": "So",
+                        "cn": "失眠症"
+                  }
+            ]
+      },
+      {
+            "word": "Spain",
+            "meaning": "西班牙 (欧洲西南部国家)",
+            "IPA": "/speɪn/",
+            "type": "noun",
+            "blocks": [
+                  "Sp",
+                  "a",
+                  "in"
+            ],
+            "mindSpark": "ai 组合发清脆饱满的双元音 /eɪ/；首都马德里！",
+            "rule": "自然拼读与音节拆解：-Sp- + a + -in-",
+            "ruleDesc": "Sp-(辅音连缀) + a(核心音节/韵尾) + in-(常用前缀) 拼成「Spain」。 ai 组合发清脆饱满的双元音 /eɪ/；首都马德里！",
+            "transfers": [
+                  {
+                        "word": "inside",
+                        "hl": "in",
+                        "cn": "在里面"
+                  },
+                  {
+                        "word": "invite",
+                        "hl": "in",
+                        "cn": "邀请"
+                  },
+                  {
+                        "word": "invent",
+                        "hl": "in",
+                        "cn": "发明"
+                  },
+                  {
+                        "word": "income",
+                        "hl": "in",
+                        "cn": "收入"
+                  }
+            ]
+      },
+      {
+            "word": "Sudan",
+            "meaning": "苏丹 (非洲国家)",
+            "IPA": "/su.ːˈdɑːn/",
+            "type": "noun",
+            "blocks": [
+                  "Su",
+                  "d",
+                  "an"
+            ],
+            "mindSpark": "重音在第二音节 /dɑːn/，长元音 a 发 /ɑː/！",
+            "rule": "自然拼读与音节拆解：-Su- + d + -an-",
+            "ruleDesc": "Su(核心音节/韵尾) + d(声母辅音) + an(核心音节/韵尾) 拼成「Sudan」。 重音在第二音节 /dɑːn/，长元音 a 发 /ɑː/！",
+            "transfers": [
+                  {
+                        "word": "sun",
+                        "hl": "Su",
+                        "cn": "太阳"
+                  },
+                  {
+                        "word": "self-assured",
+                        "hl": "Su",
+                        "cn": "沉着自信的 / 底气十足的"
+                  },
+                  {
+                        "word": "supermarket",
+                        "hl": "Su",
+                        "cn": "超级市场 / 超市"
+                  },
+                  {
+                        "word": "summer",
+                        "hl": "Su",
+                        "cn": "夏季 / 夏天"
+                  }
+            ]
+      },
+      {
+            "word": "the UK",
+            "meaning": "英国 (联合王国)",
+            "IPA": "/ðəˌjuːˈkeɪ/",
+            "type": "noun",
+            "blocks": [
+                  "th",
+                  "e",
+                  "U",
+                  "K"
+            ],
+            "mindSpark": "the United Kingdom 缩写；特定政体缩写前面必须加定冠词 the！",
+            "rule": "自然拼读与音节拆解：-th- + e + U + K",
+            "ruleDesc": "th-(辅音连缀) + e(核心音节/韵尾) + U(核心音节/韵尾) 拼成「the UK」。 the United Kingdom 缩写；特定政体缩写前面必须加定冠词 the！",
+            "transfers": [
+                  {
+                        "word": "think",
+                        "hl": "th",
+                        "cn": "思考"
+                  },
+                  {
+                        "word": "three",
+                        "hl": "th",
+                        "cn": "三"
+                  },
+                  {
+                        "word": "thank",
+                        "hl": "th",
+                        "cn": "感谢"
+                  },
+                  {
+                        "word": "thin",
+                        "hl": "th",
+                        "cn": "瘦的/薄的"
+                  }
+            ]
+      },
+      {
+            "word": "the US",
+            "meaning": "美国 (美利坚合众国)",
+            "IPA": "/ðəˌjuːˈes/",
+            "type": "noun",
+            "blocks": [
+                  "th",
+                  "e",
+                  "U",
+                  "S"
+            ],
+            "mindSpark": "the United States 缩写；由多个州联合组成，前面必须加 the！",
+            "rule": "自然拼读与音节拆解：-th- + e + U + S",
+            "ruleDesc": "th-(辅音连缀) + e(核心音节/韵尾) + U(核心音节/韵尾) 拼成「the US」。 the United States 缩写；由多个州联合组成，前面必须加 the！",
+            "transfers": [
+                  {
+                        "word": "think",
+                        "hl": "th",
+                        "cn": "思考"
+                  },
+                  {
+                        "word": "three",
+                        "hl": "th",
+                        "cn": "三"
+                  },
+                  {
+                        "word": "thank",
+                        "hl": "th",
+                        "cn": "感谢"
+                  },
+                  {
+                        "word": "thin",
+                        "hl": "th",
+                        "cn": "瘦的/薄的"
+                  }
+            ]
+      },
+      {
+            "word": "Turkey",
+            "meaning": "土耳其 (跨欧亚国家)",
+            "IPA": "/ˈtɜː.ki/",
+            "type": "noun",
+            "blocks": [
+                  "T",
+                  "ur",
+                  "k",
+                  "ey"
+            ],
+            "mindSpark": "首字母大写 Turkey 指土耳其国家；小写 turkey 才是火鸡！",
+            "rule": "自然拼读与音节拆解：T + -ur- + k + -ey-",
+            "ruleDesc": "T(声母辅音) + ur(核心音节/韵尾) + k(声母辅音) 拼成「Turkey」。 首字母大写 Turkey 指土耳其国家；小写 turkey 才是火鸡！",
+            "transfers": [
+                  {
+                        "word": "time",
+                        "hl": "T",
+                        "cn": "时间"
+                  },
+                  {
+                        "word": "tea",
+                        "hl": "T",
+                        "cn": "茶"
+                  },
+                  {
+                        "word": "tall",
+                        "hl": "T",
+                        "cn": "高的"
+                  },
+                  {
+                        "word": "toy",
+                        "hl": "T",
+                        "cn": "玩具"
+                  }
+            ]
+      },
+      {
+            "word": "an expensive car",
+            "meaning": "一辆昂贵的汽车",
+            "IPA": "/ən ɪkˈspen.sɪv ˈkɑː/",
+            "type": "phrase",
+            "blocks": [
+                  "an",
+                  "ex",
+                  "p",
+                  "en",
+                  "s",
+                  "i",
+                  "ve",
+                  "c",
+                  "ar"
+            ],
+            "mindSpark": "expensive 以元音音素 /ɪ/ 开头，不定冠词必须用 an！",
+            "rule": "自然拼读与音节拆解：-an- + -ex- + -pen- + -sive- + c + -ar-",
+            "ruleDesc": "an(核心音节/韵尾) + ex-(常用前缀) + pen(核心音节/韵尾) 拼成「an expensive car」。 expensive 以元音音素 /ɪ/ 开头，不定冠词必须用 an！",
+            "transfers": [
+                  {
+                        "word": "cat",
+                        "hl": "c",
+                        "cn": "猫"
+                  },
+                  {
+                        "word": "car",
+                        "hl": "c",
+                        "cn": "汽车"
+                  },
+                  {
+                        "word": "cup",
+                        "hl": "c",
+                        "cn": "杯子"
+                  },
+                  {
+                        "word": "cool",
+                        "hl": "c",
+                        "cn": "酷"
+                  }
+            ]
+      },
+      {
+            "word": "a big hotel",
+            "meaning": "一家大型酒店",
+            "IPA": "/ə ˌbɪɡ həʊˈtel/",
+            "type": "phrase",
+            "blocks": [
+                  "a",
+                  "b",
+                  "ig",
+                  "h",
+                  "ot",
+                  "el"
+            ],
+            "mindSpark": "hotel 重音在第二个音节 /tel/，注意不要误读成第一音节！",
+            "rule": "自然拼读与音节拆解：a + b + -ig- + -hot- + -el-",
+            "ruleDesc": "a(核心音节/韵尾) + b(声母辅音) + ig(核心音节/韵尾) 拼成「a big hotel」。 hotel 重音在第二个音节 /tel/，注意不要误读成第一音节！",
+            "transfers": [
+                  {
+                        "word": "ball",
+                        "hl": "b",
+                        "cn": "球"
+                  },
+                  {
+                        "word": "boy",
+                        "hl": "b",
+                        "cn": "男孩"
+                  },
+                  {
+                        "word": "book",
+                        "hl": "b",
+                        "cn": "书"
+                  },
+                  {
+                        "word": "big",
+                        "hl": "b",
+                        "cn": "大的"
+                  }
+            ]
+      },
+      {
+            "word": "a fast train",
+            "meaning": "一列快速列车 / 高铁",
+            "IPA": "/ə ˌfɑːst ˈtreɪn/",
+            "type": "phrase",
+            "blocks": [
+                  "a",
+                  "f",
+                  "a",
+                  "st",
+                  "tr",
+                  "a",
+                  "in"
+            ],
+            "mindSpark": "fast 意为快速的，反义词是 slow；train 里的 ai 发 /eɪ/！",
+            "rule": "自然拼读与音节拆解：a + f + -ast- + -tr- + -ain-",
+            "ruleDesc": "a(核心音节/韵尾) + f(声母辅音) + ast(核心音节/韵尾) 拼成「a fast train」。 fast 意为快速的，反义词是 slow；train 里的 ai 发 /eɪ/！",
+            "transfers": [
+                  {
+                        "word": "fun",
+                        "hl": "f",
+                        "cn": "乐趣"
+                  },
+                  {
+                        "word": "fish",
+                        "hl": "f",
+                        "cn": "鱼"
+                  },
+                  {
+                        "word": "frog",
+                        "hl": "f",
+                        "cn": "青蛙"
+                  },
+                  {
+                        "word": "first",
+                        "hl": "f",
+                        "cn": "第一"
+                  }
+            ]
+      },
+      {
+            "word": "a new football",
+            "meaning": "一个新足球",
+            "IPA": "/ə ˌnjuː ˈfʊt.bɔːl/",
+            "type": "phrase",
+            "blocks": [
+                  "a",
+                  "n",
+                  "ew",
+                  "fo",
+                  "ot",
+                  "b",
+                  "all"
+            ],
+            "mindSpark": "foot (脚) + ball (球) = 复合词 football；new 表示全新的！",
+            "rule": "自然拼读与音节拆解：a + n + -ew- + -fo- + -otball-",
+            "ruleDesc": "a(核心音节/韵尾) + n(声母辅音) + ew(核心音节/韵尾) 拼成「a new football」。 foot (脚) + ball (球) = 复合词 football；new 表示全新的！",
+            "transfers": [
+                  {
+                        "word": "news",
+                        "hl": "ew",
+                        "cn": "新闻播报"
+                  },
+                  {
+                        "word": "jewels",
+                        "hl": "ew",
+                        "cn": "珠宝 / 珍宝"
+                  },
+                  {
+                        "word": "reward",
+                        "hl": "ew",
+                        "cn": "酬金 / 悬赏金"
+                  },
+                  {
+                        "word": "newspaper",
+                        "hl": "ew",
+                        "cn": "报纸"
+                  }
+            ]
+      },
+      {
+            "word": "a slow train",
+            "meaning": "一列慢速火车",
+            "IPA": "/ə ˌsləʊ ˈtreɪn/",
+            "type": "phrase",
+            "blocks": [
+                  "a",
+                  "sl",
+                  "ow",
+                  "tr",
+                  "a",
+                  "in"
+            ],
+            "mindSpark": "slow 中的 ow 发双元音 /əʊ/，与 fast 形成经典反义对！",
+            "rule": "自然拼读与音节拆解：a + -sl- + -ow- + -tr- + -ain-",
+            "ruleDesc": "a(核心音节/韵尾) + sl-(辅音连缀) + ow(核心音节/韵尾) 拼成「a slow train」。 slow 中的 ow 发双元音 /əʊ/，与 fast 形成经典反义对！",
+            "transfers": [
+                  {
+                        "word": "train",
+                        "hl": "a",
+                        "cn": "火车 / 玩具火车"
+                  },
+                  {
+                        "word": "spain",
+                        "hl": "a",
+                        "cn": "西班牙 (欧洲西南部国家)"
+                  },
+                  {
+                        "word": "fountain",
+                        "hl": "a",
+                        "cn": "喷泉"
+                  },
+                  {
+                        "word": "trainers",
+                        "hl": "a",
+                        "cn": "运动鞋 / 跑鞋"
+                  }
+            ]
+      },
+      {
+            "word": "a small hotel",
+            "meaning": "一家小型旅馆",
+            "IPA": "/ə ˌsmɔːl həʊˈtel/",
+            "type": "phrase",
+            "blocks": [
+                  "a",
+                  "sm",
+                  "a",
+                  "ll",
+                  "h",
+                  "ot",
+                  "el"
+            ],
+            "mindSpark": "small 中的 all 组合发长元音 /ɔːl/，反义词是 big！",
+            "rule": "自然拼读与音节拆解：a + -sm- + -all- + -hot- + -el-",
+            "ruleDesc": "a(核心音节/韵尾) + sm-(辅音连缀) + all(核心音节/韵尾) 拼成「a small hotel」。 small 中的 all 组合发长元音 /ɔːl/，反义词是 big！",
+            "transfers": [
+                  {
+                        "word": "ball",
+                        "hl": "a",
+                        "cn": "球"
+                  },
+                  {
+                        "word": "call",
+                        "hl": "a",
+                        "cn": "呼叫"
+                  },
+                  {
+                        "word": "hall",
+                        "hl": "a",
+                        "cn": "大厅"
+                  },
+                  {
+                        "word": "tall",
+                        "hl": "a",
+                        "cn": "高的"
+                  }
+            ]
+      },
+      {
+            "word": "a dirty T-shirt",
+            "meaning": "一件脏 T 恤",
+            "IPA": "/ə ˌdɜː.ti ˈtiː.ʃɜːt/",
+            "type": "phrase",
+            "blocks": [
+                  "a",
+                  "d",
+                  "ir",
+                  "ty",
+                  "T",
+                  "sh",
+                  "i",
+                  "rt"
+            ],
+            "mindSpark": "dirty 里的 ir 发长元音 /ɜː/；T-shirt 取形状如大写字母 T！",
+            "rule": "自然拼读与音节拆解：a + d + -ir- + -ty- + -Tsh- + -irt-",
+            "ruleDesc": "a(核心音节/韵尾) + d(声母辅音) + ir-(常用前缀) 拼成「a dirty T-shirt」。 dirty 里的 ir 发长元音 /ɜː/；T-shirt 取形状如大写字母 T！",
+            "transfers": [
+                  {
+                        "word": "t-shirt",
+                        "hl": "ir",
+                        "cn": "T恤衫"
+                  },
+                  {
+                        "word": "thirtieth",
+                        "hl": "ir",
+                        "cn": "第三十 (30th)"
+                  },
+                  {
+                        "word": "thirty-first",
+                        "hl": "ir",
+                        "cn": "第三十一 (31st)"
+                  },
+                  {
+                        "word": "thirteenth",
+                        "hl": "ir",
+                        "cn": "第十三 (13th)"
+                  }
+            ]
+      },
+      {
+            "word": "an old football",
+            "meaning": "一个旧足球",
+            "IPA": "/ən ˌəʊld ˈfʊt.bɔːl/",
+            "type": "phrase",
+            "blocks": [
+                  "an",
+                  "o",
+                  "ld",
+                  "fo",
+                  "ot",
+                  "b",
+                  "all"
+            ],
+            "mindSpark": "old 以元音音素 /əʊ/ 开头，前面冠词必须用 an！",
+            "rule": "自然拼读与音节拆解：-an- + o + -ld- + -fo- + -otball-",
+            "ruleDesc": "an(核心音节/韵尾) + o(核心音节/韵尾) + ld(声母辅音) 拼成「an old football」。 old 以元音音素 /əʊ/ 开头，前面冠词必须用 an！",
+            "transfers": [
+                  {
+                        "word": "orange",
+                        "hl": "an",
+                        "cn": "橙色 / 橙子"
+                  },
+                  {
+                        "word": "anna",
+                        "hl": "an",
+                        "cn": "安娜 (女孩名)"
+                  },
+                  {
+                        "word": "man",
+                        "hl": "an",
+                        "cn": "男人 / 成年男子"
+                  },
+                  {
+                        "word": "woman",
+                        "hl": "an",
+                        "cn": "女人 / 成年女子"
+                  }
+            ]
+      },
+      {
+            "word": "a cheap car",
+            "meaning": "一辆便宜的汽车",
+            "IPA": "/ə ˌtʃiːp ˈkɑː/",
+            "type": "phrase",
+            "blocks": [
+                  "a",
+                  "ch",
+                  "e",
+                  "ap",
+                  "c",
+                  "ar"
+            ],
+            "mindSpark": "cheap 里的 ea 发长元音 /iː/，反义词是 expensive！",
+            "rule": "自然拼读与音节拆解：a + -ch- + -eap- + c + -ar-",
+            "ruleDesc": "a(核心音节/韵尾) + ch-(辅音连缀) + eap(核心音节/韵尾) 拼成「a cheap car」。 cheap 里的 ea 发长元音 /iː/，反义词是 expensive！",
+            "transfers": [
+                  {
+                        "word": "chair",
+                        "hl": "ch",
+                        "cn": "椅子"
+                  },
+                  {
+                        "word": "chat",
+                        "hl": "ch",
+                        "cn": "聊天"
+                  },
+                  {
+                        "word": "child",
+                        "hl": "ch",
+                        "cn": "孩子"
+                  },
+                  {
+                        "word": "check",
+                        "hl": "ch",
+                        "cn": "检查"
+                  }
+            ]
+      },
+      {
+            "word": "clean trousers",
+            "meaning": "干净的长裤",
+            "IPA": "/ˌkliːn ˈtraʊ.zəz/",
+            "type": "phrase",
+            "blocks": [
+                  "cl",
+                  "e",
+                  "an",
+                  "tr",
+                  "ou",
+                  "s",
+                  "ers"
+            ],
+            "mindSpark": "trousers 有两条裤腿，英语中永远使用复数形式，不能加 a/an！",
+            "rule": "自然拼读与音节拆解：-cl- + -ean- + -tr- + -ousers-",
+            "ruleDesc": "cl-(辅音连缀) + ean(核心音节/韵尾) + tr-(辅音连缀) 拼成「clean trousers」。 trousers 有两条裤腿，英语中永远使用复数形式，不能加 a/an！",
+            "transfers": [
+                  {
+                        "word": "clock",
+                        "hl": "cl",
+                        "cn": "时钟"
+                  },
+                  {
+                        "word": "clean",
+                        "hl": "cl",
+                        "cn": "干净的"
+                  },
+                  {
+                        "word": "climb",
+                        "hl": "cl",
+                        "cn": "攀爬"
+                  },
+                  {
+                        "word": "cloud",
+                        "hl": "cl",
+                        "cn": "云朵"
+                  }
+            ]
+      }
+];
+
+    /* ================= 纯原生 Web Audio 触感音效引擎 (全功能版) ================= */
+    const audio = {
+      synth: window.speechSynthesis,
+      ctx: null,
+      getCtx() {
+        try {
+          if (!this.ctx) {
+            const Cls = window.AudioContext || window.webkitAudioContext;
+            if (Cls) this.ctx = new Cls();
+          }
+          if (this.ctx && this.ctx.state === "suspended") {
+            this.ctx.resume();
+          }
+          return this.ctx;
+        } catch (e) {
+          return null;
+        }
+      },
+      speak(text) {
+        try {
+          if (this.synth) {
+            this.synth.cancel();
+            const u = new SpeechSynthesisUtterance(text);
+            u.lang = "en-US";
+            u.rate = 0.9;
+            this.synth.speak(u);
+          }
+        } catch (e) {}
+      },
+      tap() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          const osc = c.createOscillator();
+          const gain = c.createGain();
+          osc.frequency.setValueAtTime(450, now);
+          osc.frequency.exponentialRampToValueAtTime(750, now + 0.04);
+          gain.gain.setValueAtTime(0.1, now);
+          gain.gain.exponentialRampToValueAtTime(0.001, now + 0.05);
+          osc.connect(gain);
+          gain.connect(c.destination);
+          osc.start(now);
+          osc.stop(now + 0.05);
+        } catch (e) {}
+      },
+      correct() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          [523.25, 659.25].forEach((f, i) => {
+            const osc = c.createOscillator();
+            const gain = c.createGain();
+            osc.frequency.setValueAtTime(f, now + i * 0.06);
+            gain.gain.setValueAtTime(0.1, now + i * 0.06);
+            gain.gain.exponentialRampToValueAtTime(0.001, now + i * 0.06 + 0.15);
+            osc.connect(gain);
+            gain.connect(c.destination);
+            osc.start(now + i * 0.06);
+            osc.stop(now + i * 0.06 + 0.16);
+          });
+        } catch (e) {}
+      },
+      bingo() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          [523.25, 659.25, 783.99, 1046.5].forEach((f, i) => {
+            const osc = c.createOscillator();
+            const gain = c.createGain();
+            osc.type = "triangle";
+            osc.frequency.setValueAtTime(f, now + i * 0.05);
+            gain.gain.setValueAtTime(0.12, now + i * 0.05);
+            gain.gain.exponentialRampToValueAtTime(0.001, now + i * 0.05 + 0.25);
+            osc.connect(gain);
+            gain.connect(c.destination);
+            osc.start(now + i * 0.05);
+            osc.stop(now + i * 0.05 + 0.28);
+          });
+        } catch (e) {}
+      },
+      wrong() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          const osc = c.createOscillator();
+          const gain = c.createGain();
+          osc.type = "sawtooth";
+          osc.frequency.setValueAtTime(140, now);
+          osc.frequency.linearRampToValueAtTime(80, now + 0.16);
+          gain.gain.setValueAtTime(0.15, now);
+          gain.gain.linearRampToValueAtTime(0.001, now + 0.16);
+          osc.connect(gain);
+          gain.connect(c.destination);
+          osc.start(now);
+          osc.stop(now + 0.18);
+        } catch (e) {}
+      },
+      chestOpen() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          [300, 450, 600, 900].forEach((f, i) => {
+            const osc = c.createOscillator();
+            const gain = c.createGain();
+            osc.frequency.setValueAtTime(f, now + i * 0.04);
+            gain.gain.setValueAtTime(0.09, now + i * 0.04);
+            gain.gain.exponentialRampToValueAtTime(0.001, now + i * 0.04 + 0.15);
+            osc.connect(gain);
+            gain.connect(c.destination);
+            osc.start(now + i * 0.04);
+            osc.stop(now + i * 0.04 + 0.16);
+          });
+        } catch (e) {}
+      },
+      steal() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          const osc = c.createOscillator();
+          const gain = c.createGain();
+          osc.type = "sine";
+          osc.frequency.setValueAtTime(800, now);
+          osc.frequency.linearRampToValueAtTime(300, now + 0.2);
+          gain.gain.setValueAtTime(0.15, now);
+          gain.gain.exponentialRampToValueAtTime(0.001, now + 0.22);
+          osc.connect(gain);
+          gain.connect(c.destination);
+          osc.start(now);
+          osc.stop(now + 0.22);
+        } catch (e) {}
+      },
+      bomb() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          const osc = c.createOscillator();
+          const gain = c.createGain();
+          osc.type = "sawtooth";
+          osc.frequency.setValueAtTime(90, now);
+          osc.frequency.linearRampToValueAtTime(40, now + 0.3);
+          gain.gain.setValueAtTime(0.2, now);
+          gain.gain.exponentialRampToValueAtTime(0.001, now + 0.32);
+          osc.connect(gain);
+          gain.connect(c.destination);
+          osc.start(now);
+          osc.stop(now + 0.32);
+        } catch (e) {}
+      },
+      swap() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          [350, 700, 500, 1000].forEach((f, i) => {
+            const osc = c.createOscillator();
+            const gain = c.createGain();
+            osc.frequency.setValueAtTime(f, now + i * 0.05);
+            gain.gain.setValueAtTime(0.1, now + i * 0.05);
+            gain.gain.exponentialRampToValueAtTime(0.001, now + i * 0.05 + 0.18);
+            osc.connect(gain);
+            gain.connect(c.destination);
+            osc.start(now + i * 0.05);
+            osc.stop(now + i * 0.05 + 0.2);
+          });
+        } catch (e) {}
+      },
+      cash() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          [987.77, 1318.51].forEach((f, i) => {
+            const osc = c.createOscillator();
+            const gain = c.createGain();
+            osc.frequency.setValueAtTime(f, now + i * 0.07);
+            gain.gain.setValueAtTime(0.12, now + i * 0.07);
+            gain.gain.exponentialRampToValueAtTime(0.001, now + i * 0.07 + 0.25);
+            osc.connect(gain);
+            gain.connect(c.destination);
+            osc.start(now + i * 0.07);
+            osc.stop(now + i * 0.07 + 0.28);
+          });
+        } catch (e) {}
+      },
+      sizzle() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          const osc = c.createOscillator();
+          const gain = c.createGain();
+          osc.type = "square";
+          osc.frequency.setValueAtTime(180, now);
+          osc.frequency.exponentialRampToValueAtTime(260, now + 0.15);
+          gain.gain.setValueAtTime(0.08, now);
+          gain.gain.exponentialRampToValueAtTime(0.001, now + 0.16);
+          osc.connect(gain);
+          gain.connect(c.destination);
+          osc.start(now);
+          osc.stop(now + 0.16);
+        } catch (e) {}
+      },
+      heal() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          [587.33, 880, 1174.66, 1760].forEach((f, i) => {
+            const osc = c.createOscillator();
+            const gain = c.createGain();
+            osc.frequency.setValueAtTime(f, now + i * 0.06);
+            gain.gain.setValueAtTime(0.12, now + i * 0.06);
+            gain.gain.exponentialRampToValueAtTime(0.001, now + i * 0.06 + 0.25);
+            osc.connect(gain);
+            gain.connect(c.destination);
+            osc.start(now + i * 0.06);
+            osc.stop(now + i * 0.06 + 0.28);
+          });
+        } catch (e) {}
+      },
+      laser() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          const osc = c.createOscillator();
+          const gain = c.createGain();
+          osc.frequency.setValueAtTime(900, now);
+          osc.frequency.exponentialRampToValueAtTime(150, now + 0.12);
+          gain.gain.setValueAtTime(0.12, now);
+          gain.gain.exponentialRampToValueAtTime(0.001, now + 0.12);
+          osc.connect(gain);
+          gain.connect(c.destination);
+          osc.start(now);
+          osc.stop(now + 0.13);
+        } catch (e) {}
+      },
+      sparkle() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          [784, 988, 1175, 1568].forEach((f, i) => {
+            const osc = c.createOscillator();
+            const gain = c.createGain();
+            osc.type = "sine";
+            osc.frequency.setValueAtTime(f, now + i * 0.04);
+            gain.gain.setValueAtTime(0.1, now + i * 0.04);
+            gain.gain.exponentialRampToValueAtTime(0.001, now + i * 0.04 + 0.2);
+            osc.connect(gain);
+            gain.connect(c.destination);
+            osc.start(now + i * 0.04);
+            osc.stop(now + i * 0.04 + 0.22);
+          });
+        } catch (e) {}
+      },
+      hack() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          [350, 700, 1050, 1400].forEach((f, i) => {
+            const osc = c.createOscillator();
+            const gain = c.createGain();
+            osc.type = "triangle";
+            osc.frequency.setValueAtTime(f, now + i * 0.03);
+            gain.gain.setValueAtTime(0.1, now + i * 0.03);
+            gain.gain.exponentialRampToValueAtTime(0.001, now + i * 0.03 + 0.12);
+            osc.connect(gain);
+            gain.connect(c.destination);
+            osc.start(now + i * 0.03);
+            osc.stop(now + i * 0.03 + 0.14);
+          });
+        } catch (e) {}
+      },
+      cheer() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          [523, 659, 784, 1046, 1318].forEach((f, i) => {
+            const osc = c.createOscillator();
+            const gain = c.createGain();
+            osc.type = "triangle";
+            osc.frequency.setValueAtTime(f, now + i * 0.05);
+            gain.gain.setValueAtTime(0.12, now + i * 0.05);
+            gain.gain.exponentialRampToValueAtTime(0.001, now + i * 0.05 + 0.25);
+            osc.connect(gain);
+            gain.connect(c.destination);
+            osc.start(now + i * 0.05);
+            osc.stop(now + i * 0.05 + 0.28);
+          });
+        } catch (e) {}
+      },
+      honk() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          const osc1 = c.createOscillator();
+          const osc2 = c.createOscillator();
+          const gain = c.createGain();
+          osc1.frequency.setValueAtTime(420, now);
+          osc2.frequency.setValueAtTime(530, now);
+          gain.gain.setValueAtTime(0.15, now);
+          gain.gain.exponentialRampToValueAtTime(0.001, now + 0.18);
+          osc1.connect(gain);
+          osc2.connect(gain);
+          gain.connect(c.destination);
+          osc1.start(now);
+          osc2.start(now);
+          osc1.stop(now + 0.2);
+          osc2.stop(now + 0.2);
+        } catch (e) {}
+      },
+      ocean() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          [440, 554, 659, 880, 1108].forEach((f, i) => {
+            const osc = c.createOscillator();
+            const gain = c.createGain();
+            osc.type = "triangle";
+            osc.frequency.setValueAtTime(f, now + i * 0.05);
+            gain.gain.setValueAtTime(0.12, now + i * 0.05);
+            gain.gain.exponentialRampToValueAtTime(0.001, now + i * 0.05 + 0.25);
+            osc.connect(gain);
+            gain.connect(c.destination);
+            osc.start(now + i * 0.05);
+            osc.stop(now + i * 0.05 + 0.28);
+          });
+        } catch (e) {}
+      }
+    };
+
+
+    /* ================= 核心学习模式逻辑 ================= */
+    let currentIndex = 0;
+    let availableBlocks = [];
+    let selectedBlocks = [];
+    let isSuccess = false;
+    let hasCompletedAllWords = false;
+
+    
+    function syncFromAha() {
+      try {
+        const raw = localStorage.getItem('kron_word_current_unit_payload') || localStorage.getItem('kron_saved_words') || localStorage.getItem('kron:word:shared_vocab');
+        if (!raw) return;
+        const data = JSON.parse(raw);
+        const words = Array.isArray(data) ? data : (data.words || []);
+        if (!words || words.length === 0) return;
+
+        const savedMap = new Map();
+        words.forEach(w => {
+          if (w.word) savedMap.set(w.word.toLowerCase().trim(), w);
+        });
+
+        let matched = 0;
+        VOCABULARY.forEach(item => {
+          const wClean = item.word.toLowerCase().trim();
+          const hasDirect = savedMap.has(wClean);
+          const hasContained = Array.from(savedMap.keys()).some(k => k && (wClean.includes(k) || k.includes(wClean)));
+          if (hasDirect || hasContained) {
+            item.isAhaSaved = true;
+            matched++;
+          }
+        });
+
+        words.forEach(w => {
+          const wClean = (w.word || '').toLowerCase().trim();
+          const exists = VOCABULARY.some(v => {
+            const vClean = v.word.toLowerCase().trim();
+            return vClean === wClean || vClean.includes(wClean);
+          });
+          if (!exists && wClean) {
+            let blocks = [w.word];
+            if (wClean === 'instrument') {
+              blocks = ['in', 'stru', 'ment'];
+            } else if (wClean === 'play') {
+              blocks = ['pl', 'ay'];
+            } else if (wClean === 'play an instrument') {
+              blocks = ['pl', 'ay', 'an', 'in', 'stru', 'ment'];
+            } else {
+              const rawParts = w.word.split(/\s+/).filter(Boolean);
+              blocks = rawParts.length > 1 ? rawParts : [w.word];
+            }
+            VOCABULARY.push({
+              word: w.word,
+              meaning: w.translation || 'Aha! 重点词汇',
+              IPA: w.phonetic || `/${wClean}/`,
+              type: w.partOfSpeech || 'saved',
+              blocks,
+              mindSpark: '你在 Kron English Aha! 学习中亲手收藏的重点单词，快来拼出它吧！',
+              rule: 'Aha! 生词本同步词汇',
+              ruleDesc: '来自课堂实战提问与高频语境，属于你的专属记忆！',
+              transfers: [],
+              isAhaSaved: true
+            });
+            matched++;
+          }
+        });
+
+        const banner = document.getElementById('ahaSyncBanner');
+        const countEl = document.getElementById('ahaSyncCount');
+        if (banner && countEl && words.length > 0) {
+          countEl.innerText = words.length;
+          banner.style.display = 'flex';
+        }
+      } catch (e) {
+        console.warn('Aha sync notice:', e);
+      }
+    }
+
+    function initWord() {
+      isSuccess = false;
+      const item = VOCABULARY[currentIndex];
+
+      document.getElementById("wordMeaning").innerText = item.meaning;
+      document.getElementById("wordIPA").innerText = item.IPA;
+      
+      const tagEl = document.getElementById("wordTypeTag");
+      if (tagEl) {
+        tagEl.innerText = item.type ? item.type.toUpperCase() : "WORD";
+        tagEl.className = "word-type-tag " + (item.type ? `tag-${item.type}` : "tag-word");
+      }
+
+      document.getElementById("successPanel").style.display = "none";
+      document.getElementById("nextBtn").style.display = "none";
+      document.getElementById("footerPlaceholder").style.display = "block";
+
+      const pct = ((currentIndex + 1) / VOCABULARY.length) * 100;
+      document.getElementById("progressBar").style.width = `${pct}%`;
+
+      availableBlocks = item.blocks.map((text, idx) => ({
+        id: `${text}-${idx}-${Math.random()}`,
+        text
+      })).sort(() => Math.random() - 0.5);
+      selectedBlocks = [];
+
+      renderBlocks();
+    }
+
+    function renderBlocks() {
+      const slots = document.getElementById("slotsContainer");
+      const tray = document.getElementById("trayContainer");
+      slots.innerHTML = "";
+      tray.innerHTML = "";
+
+      if (selectedBlocks.length === 0) {
+        slots.innerHTML = '<span class="empty-tip">点击下方发音积木</span>';
+      } else {
+        selectedBlocks.forEach(b => {
+          const btn = document.createElement("button");
+          btn.className = `duo-tile ${isSuccess ? "duo-tile-success" : ""}`;
+          btn.innerText = b.text;
+          btn.onclick = () => {
+            if (isSuccess) return;
+            audio.tap();
+            selectedBlocks = selectedBlocks.filter(x => x.id !== b.id);
+            availableBlocks.push(b);
+            renderBlocks();
+          };
+          slots.appendChild(btn);
+        });
+      }
+
+      availableBlocks.forEach(b => {
+        const btn = document.createElement("button");
+        btn.className = "duo-tile";
+        btn.innerText = b.text;
+        btn.onclick = () => handlePickBlock(b);
+        tray.appendChild(btn);
+      });
+    }
+
+    function handlePickBlock(b) {
+      if (isSuccess) return;
+      audio.tap();
+      audio.speak(b.text);
+
+      selectedBlocks.push(b);
+      availableBlocks = availableBlocks.filter(x => x.id !== b.id);
+      renderBlocks();
+
+      if (availableBlocks.length === 0) {
+        const userStr = selectedBlocks.map(x => x.text).join("");
+        const realStr = VOCABULARY[currentIndex].blocks.join("");
+
+        if (userStr === realStr) {
+          isSuccess = true;
+          audio.bingo();
+          renderBlocks();
+          showWordKnowledge();
+        } else {
+          audio.wrong();
+          const slots = document.getElementById("slotsContainer");
+          slots.classList.add("animate-shake");
+          setTimeout(() => {
+            slots.classList.remove("animate-shake");
+            availableBlocks = VOCABULARY[currentIndex].blocks.map((text, idx) => ({ id: `${text}-${idx}-${Math.random()}`, text })).sort(() => Math.random() - 0.5);
+            selectedBlocks = [];
+            renderBlocks();
+          }, 450);
+        }
+      }
+    }
+
+    function showWordKnowledge() {
+      const item = VOCABULARY[currentIndex];
+      
+      document.getElementById("kronMindSpark").innerText = item.mindSpark;
+      document.getElementById("ruleBadge").innerText = `规律：${item.rule}`;
+      document.getElementById("ruleDesc").innerText = item.ruleDesc;
+
+      const grid = document.getElementById("transferGrid");
+      grid.innerHTML = "";
+      item.transfers.forEach(t => {
+        const tile = document.createElement("div");
+        tile.className = "transfer-tile";
+        tile.innerHTML = `
+          <div>
+            <div class="transfer-word">${renderHighlight(t.word, t.hl)}</div>
+            <div class="transfer-cn">${t.cn}</div>
+          </div>
+          <span style="font-size: 13px; color: #CECECE;">🔊</span>
+        `;
+        tile.onclick = () => {
+          audio.tap();
+          audio.speak(t.word);
+        };
+        grid.appendChild(tile);
+      });
+
+      document.getElementById("successPanel").style.display = "block";
+      document.getElementById("nextBtn").style.display = "block";
+      
+      const isLast = currentIndex === VOCABULARY.length - 1;
+      document.getElementById("nextBtn").innerText = isLast ? "🎓 本单元全部达成！解锁家族大侦探 ➔" : "继续下一个单词 ➔";
+      document.getElementById("footerPlaceholder").style.display = "none";
+
+      if (isLast) {
+        hasCompletedAllWords = true;
+        const lockBtn = document.getElementById("lockStatusBtn");
+        lockBtn.innerText = "🎁 家族大侦探 (已解锁)";
+        lockBtn.style.borderColor = "#0984E3";
+        lockBtn.style.color = "#0984E3";
+        triggerConfetti();
+        audio.bingo();
+      }
+    }
+
+    function renderHighlight(word, hl) {
+      if (!hl || !word.toLowerCase().includes(hl.toLowerCase())) return word;
+      const reg = new RegExp(`(${hl})`, "i");
+      return word.replace(reg, `<span class="hl-green">$1</span>`);
+    }
+
+    function playCurrentWordAudio() {
+      audio.speak(VOCABULARY[currentIndex].word);
+    }
+
+    function goNextWord() {
+      if (currentIndex < VOCABULARY.length - 1) {
+        currentIndex++;
+        syncFromAha();
+    initWord();
+      } else {
+        switchToGame();
+      }
+    }
+
+    function trySwitchToGame() {
+      if (!hasCompletedAllWords) {
+        alert("🔒 Kron 老师提醒：必须把本单元全部 " + VOCABULARY.length + " 个家庭成员与性格情绪词汇拼完才能解锁家族大侦探！");
+        return;
+      }
+      switchToGame();
+    }
+
+    window.addEventListener("keydown", (e) => {
+      const isLearnVisible = document.getElementById("learnView").style.display !== "none";
+      if (isSuccess && isLearnVisible && (e.key === "Enter" || e.key === " ")) {
+        e.preventDefault();
+        goNextWord();
+      }
+    });
+
+/* ================= 模块二：Wordwall 赛博炼金工坊游戏逻辑 ================= */
+    let timerSec = 180;
+    let timerInterval = null;
+    let botInterval = null;
+    let autoCookInterval = null;
+    let patienceInterval = null;
+
+    let playerGold = 0;
+    let servedCount = 0;
+    let combo = 1;
+    let currentCustomer = null;
+    let currentPatience = 100;
+
+    let upgrades = {
+      knifeLevel: 0,
+      autoCookLevel: 0,
+      bellLevel: 0
+    };
+
+    let cafePlayers = [
+      {
+            "id": "me",
+            "name": "你 (王牌名侦探)",
+            "gold": 0,
+            "isBot": false
+      },
+      {
+            "id": "cat",
+            "name": "🐱 柴犬探案馆",
+            "gold": 270,
+            "isBot": true
+      },
+      {
+            "id": "duo",
+            "name": "🦉 多邻国密室解谜",
+            "gold": 410,
+            "isBot": true
+      },
+      {
+            "id": "kron",
+            "name": "⚡️ Kron 贝克街传奇",
+            "gold": 570,
+            "isBot": true
+      }
+];
+
+    const RECIPE_ITEMS = [
+      {
+            "name": "神秘家族谱系卷宗",
+            "emoji": "📜",
+            "tipBonus": 1.2
+      },
+      {
+            "name": "寻亲事务所特派员",
+            "emoji": "🔍",
+            "tipBonus": 1.3
+      },
+      {
+            "name": "情绪心理破译报告",
+            "emoji": "💭",
+            "tipBonus": 1.1
+      },
+      {
+            "name": "老旧泛黄家庭合影",
+            "emoji": "🧩",
+            "tipBonus": 1.4
+      },
+      {
+            "name": "阁楼带锁的秘密日记",
+            "emoji": "🗝️",
+            "tipBonus": 1.0
+      }
+];
+
+    function switchToGame() {
+      document.getElementById("learnView").style.display = "none";
+      document.getElementById("gameView").style.display = "flex";
+      document.body.classList.add("game-mode");
+      startBattle();
+    }
+
+    function switchToLearn() {
+      clearInterval(timerInterval);
+      clearInterval(botInterval);
+      clearInterval(autoCookInterval);
+      clearInterval(patienceInterval);
+      document.getElementById("gameView").style.display = "none";
+      document.getElementById("learnView").style.display = "flex";
+      document.body.classList.remove("game-mode");
+    }
+
+    function startBattle() {
+      audio.bingo();
+      playerGold = 0;
+      servedCount = 0;
+      combo = 1;
+      timerSec = 180;
+
+      cafePlayers.forEach(p => {
+        if (p.isBot) p.gold = Math.floor(Math.random() * 260 + 220);
+        else p.gold = 0;
+      });
+
+      updateStatsUI();
+      updateLeaderboard();
+
+      document.getElementById("gameStartScreen").style.display = "none";
+      document.getElementById("gameOverScreen").style.display = "none";
+      document.getElementById("gameDishDoneScreen").style.display = "none";
+
+      clearInterval(timerInterval);
+      clearInterval(botInterval);
+      clearInterval(autoCookInterval);
+
+      timerInterval = setInterval(() => {
+        timerSec--;
+        const m = String(Math.floor(timerSec / 60)).padStart(2, '0');
+        const s = String(timerSec % 60).padStart(2, '0');
+        document.getElementById("timeText").innerText = `${m}:${s}`;
+
+        if (timerSec <= 0) {
+          endGame();
+        }
+      }, 1000);
+
+      botInterval = setInterval(() => {
+        cafePlayers.forEach(p => {
+          if (p.isBot) {
+            const add = Math.floor(Math.random() * 80 + 30);
+            p.gold += add;
+          }
+        });
+        updateLeaderboard();
+      }, 2500);
+
+      nextCustomer();
+    }
+
+    function updateStatsUI() {
+      document.getElementById("playerGoldText").innerText = `🔮 ${playerGold}`;
+      document.getElementById("servedCountText").innerText = `✨ ${servedCount}`;
+      document.getElementById("comboText").innerText = `⚡ x${combo}`;
+      const me = cafePlayers.find(p => p.id === 'me');
+      if (me) me.gold = playerGold;
+      updateLeaderboard();
+    }
+
+    function nextCustomer() {
+      clearInterval(patienceInterval);
+      document.getElementById("gameDishDoneScreen").style.display = "none";
+      document.getElementById("gameOrderScreen").style.display = "block";
+
+      const pool = RECIPE_ITEMS;
+      const quest = pool[Math.floor(Math.random() * pool.length)];
+      const item = VOCABULARY[Math.floor(Math.random() * VOCABULARY.length)];
+
+      const orderSpeech = `“侦探线索：卷宗描述的人物特征是「${item.meaning}」！”`;
+      const qPrompt = `卷宗破译：选择正确的家庭成员或性格词汇：`;
+      const correctAns = item.word;
+
+      const otherWords = VOCABULARY.filter(w => w.word !== item.word).map(w => w.word).sort(() => Math.random() - 0.5);
+      const distractors = otherWords.slice(0, 3);
+
+      currentCustomer = {
+        name: quest.name,
+        emoji: quest.emoji,
+        tipBonus: quest.tipBonus,
+        targetWord: item,
+        ans: correctAns
+      };
+
+      const custEmojiEl = document.getElementById("custEmoji");
+      if (custEmojiEl) custEmojiEl.innerText = currentCustomer.emoji;
+      const custNameEl = document.getElementById("custName");
+      if (custNameEl) custNameEl.innerText = currentCustomer.name;
+      const custSpeechEl = document.getElementById("custOrderSpeech");
+      if (custSpeechEl) custSpeechEl.innerText = orderSpeech;
+      const qPromptEl = document.getElementById("gameQuestionPrompt");
+      if (qPromptEl) qPromptEl.innerText = qPrompt;
+
+      const opts = [correctAns, ...distractors].sort(() => Math.random() - 0.5);
+      const optGrid = document.getElementById("gameOptionGrid");
+      optGrid.innerHTML = "";
+
+      opts.forEach(opt => {
+        const btn = document.createElement("button");
+        btn.className = "duo-btn duo-btn-dark game-opt-btn";
+        btn.innerText = opt;
+        btn.onclick = () => handleOrderAnswer(opt);
+        optGrid.appendChild(btn);
+      });
+
+      currentPatience = 100;
+      const patienceSpeed = upgrades.bellLevel > 0 ? 0.9 : 1.5;
+      patienceInterval = setInterval(() => {
+        currentPatience -= patienceSpeed;
+        const pFill = document.getElementById("patienceBar");
+        if (pFill) {
+          pFill.style.width = `${Math.max(0, currentPatience)}%`;
+          if (currentPatience > 50) pFill.style.backgroundColor = "#58CC02";
+          else if (currentPatience > 25) pFill.style.backgroundColor = "#FF9600";
+          else pFill.style.backgroundColor = "#FF4B4B";
+        }
+
+        if (currentPatience <= 0) {
+          clearInterval(patienceInterval);
+          handleCustomerLeave();
+        }
+      }, 100);
+    }
+
+    function handleOrderAnswer(chosen) {
+      if (chosen === currentCustomer.ans) {
+        clearInterval(patienceInterval);
+        audio.sparkle();
+        servedCount++;
+        combo++;
+
+        let baseTip = Math.floor(190 * currentCustomer.tipBonus);
+        if (upgrades.knifeLevel > 0) baseTip = Math.floor(baseTip * 1.5);
+        const comboBonus = Math.floor(combo * 22);
+        const totalTip = baseTip + comboBonus;
+        playerGold += totalTip;
+
+        updateStatsUI();
+
+        document.getElementById("gameOrderScreen").style.display = "none";
+        document.getElementById("gameDishDoneScreen").style.display = "block";
+        document.getElementById("dishDoneIcon").innerText = `✨💎${currentCustomer.emoji}✨`;
+        document.getElementById("dishDoneTitle").innerText = `炼金大成！+${totalTip} 🔮`;
+        document.getElementById("dishDoneDesc").innerText = `${currentCustomer.name} 绽放出绝美流光！收获海量贤者能量（连击加成 +${comboBonus}）！`;
+
+        setTicker(`💎 奇迹！成功提纯 ${currentCustomer.name}，能量暴涨 +${totalTip} 点！`);
+      } else {
+        audio.wrong();
+        combo = 1;
+        updateStatsUI();
+        setTicker(`❌ 元素失衡！炼金熔炉冒出黑烟，连击重置！`);
+      }
+    }
+
+    function handleCustomerLeave() {
+      audio.wrong();
+      combo = 1;
+      updateStatsUI();
+      setTicker(`💨 熔炉冷却！${currentCustomer.name} 分子离散化，合成失败！`);
+      nextCustomer();
+    }
+
+    function setTicker(msg) {
+      document.getElementById("tickerMsg").innerText = msg;
+    }
+
+    function updateLeaderboard() {
+      const sorted = [...cafePlayers].sort((a, b) => b.gold - a.gold);
+      const grid = document.getElementById("leaderboardGrid");
+      grid.innerHTML = "";
+      sorted.forEach((p, idx) => {
+        const medal = idx === 0 ? "🥇 " : idx === 1 ? "🥈 " : idx === 2 ? "🥉 " : "#4 ";
+        const card = document.createElement("div");
+        card.className = `lb-card ${p.id === 'me' ? 'is-me' : ''}`;
+        card.innerHTML = `
+          <div class="lb-name">${medal}${p.name}</div>
+          <div class="lb-gold">${p.gold} 🔮</div>
+        `;
+        grid.appendChild(card);
+      });
+    }
+
+    function openMarket() {
+      document.getElementById("marketDrawer").style.display = "flex";
+    }
+    function closeMarket() {
+      document.getElementById("marketDrawer").style.display = "none";
+    }
+
+    function buyUpgrade(type, cost) {
+      if (playerGold < cost) {
+        alert("🔮 贤者之石不足，快去多提纯几份材质吧！");
+        return;
+      }
+      playerGold -= cost;
+      audio.sparkle();
+
+      if (type === 'knife') {
+        upgrades.knifeLevel++;
+        alert("⚡ 离子催化剂升级完成！单次合成收益提升 50%！");
+      } else if (type === 'autoCook') {
+        upgrades.autoCookLevel++;
+        if (!autoCookInterval) {
+          autoCookInterval = setInterval(() => {
+            playerGold += 60 * upgrades.autoCookLevel;
+            updateStatsUI();
+          }, 3000);
+        }
+        alert("🤖 自动分子提纯臂启动！每 3 秒自动产出贤者能量！");
+      } else if (type === 'bell') {
+        upgrades.bellLevel++;
+        alert("⏳ 时间膨胀沙漏开启！熔炉降温速度大幅减缓！");
+      }
+
+      updateStatsUI();
+      document.getElementById("playerBuffs").innerText = 
+        `🔮 催化矩阵: ${upgrades.autoCookLevel}级 | 🧪 提纯釜: +${upgrades.knifeLevel * 50}%`;
+      closeMarket();
+    }
+
+    function endGame() {
+      clearInterval(timerInterval);
+      clearInterval(botInterval);
+      clearInterval(autoCookInterval);
+      clearInterval(patienceInterval);
+
+      document.getElementById("gameOrderScreen").style.display = "none";
+      document.getElementById("gameDishDoneScreen").style.display = "none";
+      document.getElementById("gameOverScreen").style.display = "block";
+
+      const sorted = [...cafePlayers].sort((a, b) => b.gold - a.gold);
+      const myRank = sorted.findIndex(p => p.id === 'me') + 1;
+
+      if (myRank === 1) {
+        document.getElementById("finalTrophy").innerText = "👑";
+        document.getElementById("finalRankTitle").innerText = "赛博传奇大炼金术士！";
+        document.getElementById("finalRankDesc").innerText = `贤者之石高达 ${playerGold} 🔮！万物皆可由你炼化！`;
+        triggerConfetti();
+      } else {
+        document.getElementById("finalTrophy").innerText = "🥈";
+        document.getElementById("finalRankTitle").innerText = `荣获全城第 ${myRank} 名！`;
+        document.getElementById("finalRankDesc").innerText = `能量储备 ${playerGold} 🔮，距离至尊贤者仅一步之遥！`;
+      }
+
+      const podium = document.getElementById("finalPodium");
+      podium.innerHTML = "";
+      sorted.forEach((p, idx) => {
+        const row = document.createElement("div");
+        row.style.cssText = "display: flex; justify-content: space-between; padding: 6px 0; font-size: 13px; font-weight: 800;";
+        row.innerHTML = `
+          <span style="color: ${p.id === 'me' ? '#AF52DE' : '#FFF'};">${idx + 1}. ${p.name}</span>
+          <span style="color: #FFC800;">${p.gold} 🔮</span>
+        `;
+        podium.appendChild(row);
+      });
+    }
+
+function triggerConfetti() {
+      const canvas = document.getElementById("confettiCanvas");
+      const ctx = canvas.getContext("2d");
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+
+      const particles = [];
+      const colors = ["#0984E3", "#58CC02", "#FFC800", "#FF4757", "#AF52DE"];
+
+      for (let i = 0; i < 90; i++) {
+        particles.push({
+          x: canvas.width / 2,
+          y: canvas.height / 2,
+          vx: (Math.random() - 0.5) * 16,
+          vy: (Math.random() - 0.7) * 18,
+          size: Math.random() * 9 + 4,
+          color: colors[Math.floor(Math.random() * colors.length)],
+          rotation: Math.random() * 360,
+          vRot: (Math.random() - 0.5) * 12,
+          opacity: 1
+        });
+      }
+
+      let frames = 0;
+      function render() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        particles.forEach(p => {
+          p.x += p.vx;
+          p.y += p.vy;
+          p.vy += 0.35;
+          p.rotation += p.vRot;
+          p.opacity -= 0.01;
+
+          ctx.save();
+          ctx.translate(p.x, p.y);
+          ctx.rotate((p.rotation * Math.PI) / 180);
+          ctx.fillStyle = p.color;
+          ctx.globalAlpha = Math.max(0, p.opacity);
+          ctx.fillRect(-p.size / 2, -p.size / 2, p.size, p.size);
+          ctx.restore();
+        });
+
+        frames++;
+        if (frames < 100) {
+          requestAnimationFrame(render);
+        } else {
+          ctx.clearRect(0, 0, canvas.width, canvas.height);
+        }
+      }
+      render();
+    }
+    function fireConfetti() { triggerConfetti(); }
+
+    syncFromAha();
+    initWord();
+  </script>
+</body>
+</html>

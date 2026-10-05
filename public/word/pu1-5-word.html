@@ -1,0 +1,2468 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Power Up 1 · Unit 5: Happy birthday! (LexiBlock + Gimkit 极客玩具制造厂)</title>
+  <style>
+
+    :root {
+      --duo-green: #58CC02;
+      --duo-green-shadow: #46A302;
+      --duo-green-hover: #61E002;
+      --duo-blue: #1CB0F6;
+      --duo-blue-shadow: #1899D6;
+      --duo-gold: #FFC800;
+      --duo-gold-shadow: #E5A800;
+      --duo-coral: #FF7675;
+      --duo-coral-shadow: #D63031;
+      --duo-ocean: #0984E3;
+      --duo-ocean-shadow: #074B83;
+      --bg-light: #F7F7F9;
+      --bg-card: #FFFFFF;
+      --text-main: #1D1D1F;
+      --text-body: #4B4B4B;
+      --text-muted: #777777;
+      --text-sub: #AFAFAF;
+      --border-light: #E5E5E5;
+      --border-tile: #CECECE;
+      --radius-sm: 12px;
+      --radius-md: 16px;
+      --radius-lg: 24px;
+      --radius-pill: 999px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      user-select: none;
+      -webkit-tap-highlight-color: transparent;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", "Segoe UI", Roboto, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-light);
+      color: var(--text-body);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      transition: background-color 0.3s ease;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body.game-mode {
+      background-color: #081524;
+      color: #FFFFFF;
+    }
+
+    #app {
+      width: 100%;
+      max-width: 500px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 16px;
+      position: relative;
+    }
+
+    .duo-btn {
+      position: relative;
+      border-radius: 18px;
+      font-weight: 900;
+      cursor: pointer;
+      transition: all 0.08s ease;
+      text-align: center;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      user-select: none;
+      border: none;
+    }
+    .duo-btn:active {
+      transform: translateY(3px);
+      border-bottom-width: 2px !important;
+    }
+
+    .duo-btn-green {
+      background: var(--duo-green);
+      color: #FFFFFF;
+      border-bottom: 5px solid var(--duo-green-shadow);
+    }
+    .duo-btn-green:hover { background: var(--duo-green-hover); }
+
+    .duo-btn-ocean {
+      background: var(--duo-ocean);
+      color: #FFFFFF;
+      border-bottom: 5px solid var(--duo-ocean-shadow);
+    }
+
+    .duo-btn-gold {
+      background: var(--duo-gold);
+      color: #7A5200;
+      border-bottom: 5px solid var(--duo-gold-shadow);
+    }
+
+    .duo-btn-dark {
+      background: #102138;
+      color: #FFFFFF;
+      border: 2px solid #1E3B61;
+      border-bottom: 5px solid #0A1626;
+    }
+    .duo-btn-dark:hover { background: #172D4D; }
+
+    .duo-tile {
+      background-color: #FFFFFF;
+      color: var(--text-body);
+      border: 2px solid var(--border-light);
+      border-bottom: 4px solid var(--border-tile);
+      border-radius: 16px;
+      font-size: 20px;
+      font-weight: 900;
+      padding: 12px 18px;
+      cursor: pointer;
+      transition: all 0.08s ease-in-out;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      user-select: none;
+    }
+    .duo-tile:hover { background-color: #F8F8F8; }
+    .duo-tile:active {
+      transform: translateY(2px);
+      border-bottom-width: 2px;
+    }
+
+    .duo-tile-success {
+      background-color: var(--duo-green) !important;
+      color: #FFFFFF !important;
+      border-color: var(--duo-green) !important;
+      border-bottom-color: var(--duo-green-shadow) !important;
+      transform: scale(1.04);
+    }
+
+    .learn-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 12px;
+      gap: 12px;
+    }
+    .unit-tag {
+      background: #E3F2FD;
+      color: #1565C0;
+      font-size: 11px;
+      font-weight: 900;
+      padding: 4px 10px;
+      border-radius: 999px;
+      letter-spacing: 0.5px;
+      white-space: nowrap;
+    }
+    .progress-track {
+      flex: 1;
+      height: 14px;
+      background: #E5E5E5;
+      border-radius: var(--radius-pill);
+      overflow: hidden;
+      position: relative;
+    }
+    .progress-fill {
+      height: 100%;
+      background: var(--duo-green);
+      border-radius: var(--radius-pill);
+      transition: width 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+    .mode-switch-btn {
+      background: #FFF;
+      border: 2px solid #E5E5E5;
+      border-radius: var(--radius-pill);
+      padding: 6px 12px;
+      font-size: 12px;
+      font-weight: 800;
+      color: #777;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      transition: all 0.15s ease;
+      white-space: nowrap;
+    }
+    .mode-switch-btn:hover {
+      border-color: var(--duo-ocean);
+      color: var(--duo-ocean);
+    }
+
+    .word-header {
+      text-align: center;
+      margin-bottom: 16px;
+    }
+    .word-meaning {
+      font-size: 26px;
+      font-weight: 900;
+      color: var(--text-main);
+      margin-bottom: 6px;
+      letter-spacing: -0.5px;
+    }
+    .word-type-tag {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 800;
+      padding: 2px 8px;
+      border-radius: 6px;
+      margin-left: 6px;
+      vertical-align: middle;
+    }
+    .tag-adj { background: #EDE7F6; color: #512DA8; }
+    .tag-trip { background: #E1F5FE; color: #0288D1; }
+
+    .word-ipa-btn {
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      font-size: 15px;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      cursor: pointer;
+      padding: 4px 10px;
+      border-radius: var(--radius-pill);
+      transition: background 0.15s ease;
+    }
+    .word-ipa-btn:hover { background: #EDEDED; }
+
+    .slots-container {
+      min-height: 64px;
+      border-bottom: 2px dashed var(--border-tile);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 10px 0;
+      margin-bottom: 20px;
+    }
+    .tray-container {
+      min-height: 80px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    .empty-tip {
+      color: var(--text-sub);
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .kron-spark-card {
+      background: linear-gradient(135deg, #FFF9DB 0%, #FFF3BF 100%);
+      border: 2px solid #FFE066;
+      border-radius: 18px;
+      padding: 14px 16px;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      box-shadow: 0 4px 12px rgba(245, 159, 0, 0.08);
+    }
+    .kron-avatar {
+      font-size: 28px;
+      line-height: 1;
+      filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+    }
+    .kron-spark-content {
+      flex: 1;
+    }
+    .kron-spark-title {
+      font-size: 12px;
+      font-weight: 900;
+      color: #D9480F;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .kron-spark-text {
+      font-size: 14px;
+      color: #495057;
+      font-weight: 700;
+      line-height: 1.45;
+    }
+
+    .transfer-panel {
+      background: var(--bg-card);
+      border: 2px solid var(--border-light);
+      border-radius: 20px;
+      padding: 14px;
+      margin-top: 10px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.04);
+    }
+    .rule-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      margin-bottom: 12px;
+      line-height: 1.4;
+    }
+    .rule-badge {
+      background: #E8F5E9;
+      color: #2E7D32;
+      font-size: 11px;
+      font-weight: 900;
+      padding: 3px 8px;
+      border-radius: 6px;
+      white-space: nowrap;
+    }
+    .rule-desc {
+      font-size: 12px;
+      font-weight: 700;
+      color: #555;
+    }
+    .transfer-title {
+      font-size: 11px;
+      font-weight: 900;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 8px;
+    }
+    .transfer-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+    .transfer-tile {
+      background: #FAFAFA;
+      border: 1.5px solid var(--border-light);
+      border-radius: 12px;
+      padding: 8px 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+      transition: all 0.1s ease;
+    }
+    .transfer-tile:hover {
+      background: #F0FDF4;
+      border-color: var(--duo-green);
+    }
+    .transfer-word {
+      font-weight: 900;
+      font-size: 14px;
+      color: var(--text-main);
+    }
+    .transfer-cn {
+      font-size: 11px;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+    .hl-green {
+      color: var(--duo-green);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    @keyframes popIn {
+      0% { opacity: 0; transform: scale(0.92) translateY(8px); }
+      100% { opacity: 1; transform: scale(1) translateY(0); }
+    }
+    .animate-pop-in {
+      animation: popIn 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+    }
+
+    @keyframes shake {
+      0%, 100% { transform: translateX(0); }
+      20%, 60% { transform: translateX(-8px); }
+      40%, 80% { transform: translateX(8px); }
+    }
+    .animate-shake {
+      animation: shake 0.4s ease-in-out;
+    }
+
+    /* ================= Gimkit 海岛探险大富翁独立游戏 ================= */
+    
+.game-top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+    .timer-pill {
+      background: #0E221A;
+      border: 2px solid #1A3D2E;
+      border-radius: var(--radius-pill);
+      padding: 6px 14px;
+      font-size: 14px;
+      font-weight: 900;
+      color: #00B894;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .hacker-stats-row {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+    .hacker-stat-card {
+      flex: 1;
+      background: #091913;
+      border: 1px solid #163628;
+      border-radius: 16px;
+      padding: 10px 12px;
+      text-align: center;
+    }
+    .stat-label {
+      font-size: 11px;
+      color: #8C9BAE;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+    .stat-val {
+      font-size: 20px;
+      font-weight: 900;
+      color: #00B894;
+    }
+
+    .hacker-stage {
+      background: #081611;
+      border: 2px solid #18382A;
+      border-radius: 24px;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 14px;
+      min-height: 290px;
+      justify-content: center;
+    }
+
+    .terminal-bubble {
+      background: #10261D;
+      border: 2px solid #1E4D37;
+      border-radius: 18px;
+      padding: 10px 16px;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      max-width: 90%;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+    }
+    .terminal-tag {
+      font-size: 18px;
+      font-weight: 900;
+      color: #00B894;
+    }
+    .terminal-avatar-box {
+      position: relative;
+      margin-bottom: 8px;
+    }
+    .terminal-emoji {
+      font-size: 64px;
+      filter: drop-shadow(0 4px 8px rgba(0,0,0,0.4));
+      display: inline-block;
+      animation: matrixPulse 1.8s ease-in-out infinite alternate;
+    }
+    @keyframes matrixPulse {
+      0% { transform: scale(1); filter: drop-shadow(0 0 6px #00B894); }
+      100% { transform: scale(1.08); filter: drop-shadow(0 0 16px #00B894); }
+    }
+    .terminal-firewall-bar {
+      width: 130px;
+      height: 8px;
+      background: #18382A;
+      border-radius: 999px;
+      overflow: hidden;
+      margin: 0 auto;
+    }
+    .terminal-firewall-fill {
+      height: 100%;
+      background: #00B894;
+      border-radius: 999px;
+      transition: width 0.1s linear, background-color 0.3s ease;
+    }
+
+    .game-opt-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      width: 100%;
+    }
+    .game-opt-btn {
+      padding: 14px 10px;
+      font-size: 15px;
+      line-height: 1.3;
+      border-radius: 16px;
+    }
+
+    .ticker-bar {
+      background: #091913;
+      border: 1px solid #163628;
+      border-radius: var(--radius-pill);
+      padding: 6px 14px;
+      font-size: 12px;
+      color: #8DA1BA;
+      font-weight: 700;
+      margin-bottom: 12px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .leaderboard-mini {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 6px;
+      margin-bottom: 12px;
+    }
+    .lb-card {
+      background: #081611;
+      border: 1px solid #18382A;
+      border-radius: 12px;
+      padding: 8px 6px;
+      text-align: center;
+      transition: all 0.2s ease;
+    }
+    .lb-card.is-me {
+      border-color: #00B894;
+      background: #10261D;
+    }
+    .lb-name {
+      font-size: 11px;
+      color: #8C9BAE;
+      font-weight: 800;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .lb-gold {
+      font-size: 13px;
+      font-weight: 900;
+      color: #FFFFFF;
+    }
+
+    .market-drawer {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.75);
+      backdrop-filter: blur(8px);
+      z-index: 100;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .market-modal {
+      background: #061510;
+      border: 2px solid #00B894;
+      border-radius: 28px;
+      width: 100%;
+      max-width: 420px;
+      padding: 22px;
+      box-shadow: 0 20px 50px rgba(0,184,148,0.25);
+    }
+    .market-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #0E251C;
+      border: 1px solid #1B4433;
+      border-radius: 16px;
+      padding: 12px;
+      margin-bottom: 10px;
+    }
+
+    #confettiCanvas {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 999;
+    }
+  </style>
+</head>
+<body>
+
+  <canvas id="confettiCanvas"></canvas>
+
+  <div id="app">
+    
+    <!-- ==================== 视图 1：多邻国积木背单词 + Kron 脑洞场景 ==================== -->
+    <div id="learnView" style="display: flex; flex-direction: column; justify-content: space-between; min-height: calc(100vh - 32px);">
+      <header class="learn-header">
+        <span class="unit-tag">PU1 · UNIT 5</span>
+        <div class="progress-track">
+          <div class="progress-fill" id="progressBar" style="width: 0%;"></div>
+        </div>
+        <button class="mode-switch-btn" id="lockStatusBtn" onclick="trySwitchToGame()">
+          🔒 极客玩具制造厂 (需全通)
+        </button>
+      </header>
+      <!-- Aha! 生词本双向打通同步横幅 -->
+      <div id="ahaSyncBanner" style="display:none; align-items: center; justify-content: space-between; background: linear-gradient(135deg, rgba(88,204,2,0.12), rgba(28,176,246,0.12)); border: 1.5px solid #58CC02; border-radius: 14px; padding: 8px 12px; margin-bottom: 12px; font-size: 11px; font-weight: 800; color: #1D1D1F;">
+        <div style="display: flex; align-items: center; gap: 6px;">
+          <span>⚡</span>
+          <span>已成功打通并同步来自 <strong>Aha! 生词本</strong> 的 <span id="ahaSyncCount" style="color: #46A302; font-size: 13px;">0</span> 个重点词汇</span>
+        </div>
+        <button onclick="document.getElementById('ahaSyncBanner').style.display='none'" style="background:none; border:none; color:#888; cursor:pointer; font-size:12px; font-weight:bold;">✕</button>
+      </div>
+
+      <div style="margin: auto 0; padding: 12px 0;">
+        <div class="word-header">
+          <div class="word-meaning">
+            <span id="wordMeaning">...</span>
+            <span class="word-type-tag" id="wordTypeTag">Word</span>
+          </div>
+          <button class="word-ipa-btn" onclick="playCurrentWordAudio()">
+            <span id="wordIPA">...</span>
+            <span>🔊</span>
+          </button>
+        </div>
+
+        <div class="slots-container" id="slotsContainer"></div>
+        <div class="tray-container" id="trayContainer"></div>
+
+        <div id="successPanel" style="display: none;" class="animate-pop-in">
+          <div class="kron-spark-card">
+            <div class="kron-avatar">👨🏻‍🏫</div>
+            <div class="kron-spark-content">
+              <div class="kron-spark-title">⚡️ Kron 老师脑洞发问</div>
+              <div class="kron-spark-text" id="kronMindSpark">...</div>
+            </div>
+          </div>
+
+          <div class="transfer-panel">
+            <div class="rule-row">
+              <span class="rule-badge" id="ruleBadge">...</span>
+              <span class="rule-desc" id="ruleDesc">...</span>
+            </div>
+            <div class="transfer-title">举一反三单词积木（点击听纯正发音）</div>
+            <div class="transfer-grid" id="transferGrid"></div>
+          </div>
+        </div>
+      </div>
+
+      <div style="padding-top: 14px;">
+        <button class="duo-btn duo-btn-green" id="nextBtn" style="width: 100%; padding: 16px; font-size: 18px; display: none;" onclick="goNextWord()">
+          继续下一个单词 ➔
+        </button>
+        <div id="footerPlaceholder" style="text-align: center; color: #AFAFAF; font-size: 13px; font-weight: 700; height: 55px; line-height: 55px;">
+          点击下方发音积木完成拼装
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== 视图 2：极客玩具制造厂独立游戏 ==================== -->
+    <div id="gameView" style="display: none; flex-direction: column; justify-content: space-between; min-height: calc(100vh - 32px);">
+      <div>
+        <div class="game-top-bar">
+          <div class="timer-pill" id="timerDisplay">
+            <span>💻</span>
+            <span id="timeText">03:00</span>
+          </div>
+          <div style="display: flex; gap: 8px;">
+            <button class="duo-btn duo-btn-emerald" style="padding: 6px 12px; font-size: 12px;" onclick="openMarket()">
+              💾 极客军火库
+            </button>
+            <button class="duo-btn duo-btn-dark" style="padding: 6px 12px; font-size: 12px;" onclick="switchToLearn()">
+              📖 返回复习
+            </button>
+          </div>
+        </div>
+
+        <div class="hacker-stats-row">
+          <div class="hacker-stat-card">
+            <div class="stat-label">算力筹码</div>
+            <div class="stat-val" id="playerGoldText">⚡ 0</div>
+          </div>
+          <div class="hacker-stat-card">
+            <div class="stat-label">攻破主机</div>
+            <div class="stat-val" id="servedCountText">🔓 0</div>
+          </div>
+          <div class="hacker-stat-card">
+            <div class="stat-label">渗透加成</div>
+            <div class="stat-val" id="comboText" style="color: #00B894;">🔥 x1</div>
+          </div>
+        </div>
+
+        <div class="ticker-bar" id="tickerMsg">
+          🤖 玩具工厂自检完毕！破解数码与玩具密码，打造全宇宙最棒的生日惊喜！
+        </div>
+
+        <div class="leaderboard-mini" id="leaderboardGrid"></div>
+      </div>
+
+      <div class="hacker-stage" id="hackerStage">
+        
+        <div id="gameStartScreen" style="text-align: center; padding: 10px;">
+          <div style="font-size: 54px; margin-bottom: 8px;">💻</div>
+          <h1 style="font-size: 22px; font-weight: 900; margin-bottom: 6px; color: #00B894;">
+            GIMKIT · 极客玩具制造厂
+          </h1>
+          <p style="font-size: 13px; color: #8C9BAE; line-height: 1.5; margin-bottom: 20px;">
+            已吃透 18 个益智玩具与生日礼物核心词汇！<br/>核心目标集群已全面在线待命！<br/>答对题目注入充沛能量，攻破终极难关！
+          </p>
+          <button class="duo-btn duo-btn-emerald" style="width: 100%; padding: 15px; font-size: 16px;" onclick="startBattle()">
+            启动渗透黑客终端 ➔
+          </button>
+        </div>
+
+        <div id="gameOrderScreen" style="display: none; width: 100%; text-align: center;">
+          <div class="terminal-avatar-box">
+            <div class="terminal-emoji" id="custEmoji">👾</div>
+          </div>
+          
+          <div class="terminal-bubble" style="margin: 0 auto 12px auto;">
+            <span style="font-size: 18px;">🔑</span>
+            <div style="text-align: left;">
+              <div style="font-size: 11px; color: #8DA1BA; font-weight: 800;" id="custName">加密学科主机</div>
+              <div class="terminal-tag" id="custOrderSpeech">“目标访问：「科学」！”</div>
+            </div>
+          </div>
+
+          <div style="margin-bottom: 12px;">
+            <div class="terminal-firewall-bar">
+              <div class="terminal-firewall-fill" id="patienceBar" style="width: 100%;"></div>
+            </div>
+          </div>
+
+          <div style="font-size: 13px; font-weight: 900; color: #E5E5E5; margin-bottom: 14px;" id="gameQuestionPrompt">
+            破解密钥：匹配对应的学科或数字工具单词：
+          </div>
+
+          <div class="game-opt-grid" id="gameOptionGrid"></div>
+        </div>
+
+        <div id="gameDishDoneScreen" style="display: none; text-align: center;" class="animate-pop-in">
+          <div id="dishDoneIcon" style="font-size: 60px; margin-bottom: 8px;">✨💻🔓✨</div>
+          <h3 id="dishDoneTitle" style="font-size: 22px; font-weight: 900; color: #00B894; margin-bottom: 6px;">
+            渗透成功！+350 ⚡
+          </h3>
+          <p id="dishDoneDesc" style="font-size: 13px; color: #8DA1BA; margin-bottom: 18px;">
+            防火墙被瞬间瓦解！海量算力数据包下载完成！
+          </p>
+          <button class="duo-btn duo-btn-emerald" style="width: 100%; padding: 14px; font-size: 16px;" onclick="nextCustomer()">
+            入侵下一个主机 ➔
+          </button>
+        </div>
+
+        <div id="gameOverScreen" style="display: none; text-align: center; width: 100%;" class="animate-pop-in">
+          <div style="font-size: 56px; margin-bottom: 8px;" id="finalTrophy">👑</div>
+          <h2 style="font-size: 24px; font-weight: 900; color: #FFC800;" id="finalRankTitle">全球首席白帽极客！</h2>
+          <p style="font-size: 12px; color: #8C9BAE; margin-bottom: 16px;" id="finalRankDesc">算力高达 ${playerGold} ⚡！全网任你畅游！</p>
+          <div style="background: #0E251C; border-radius: 20px; padding: 14px; margin-bottom: 18px;" id="finalPodium"></div>
+          <button class="duo-btn duo-btn-emerald" style="width: 100%; padding: 14px; font-size: 16px;" onclick="startBattle()">
+            再黑一次 🔄
+          </button>
+        </div>
+
+      </div>
+
+      <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 10px; font-size: 11px; font-weight: 800; color: #5B6F8E;">
+        <span>GIMKIT CYBER · KRON 独家定制版</span>
+        <span id="playerBuffs">💻 木马注入: 0级 | 🛡️ 防火墙: 基础</span>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="market-drawer" id="marketDrawer">
+    <div class="market-modal">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+        <h3 style="font-size: 18px; font-weight: 900; color: #00B894;">💾 极客军火暗网</h3>
+        <button style="background: none; border: none; color: #8C9BAE; font-size: 22px; cursor: pointer;" onclick="closeMarket()">✕</button>
+      </div>
+
+      <div class="market-item">
+        <div>
+          <div style="font-weight: 900; font-size: 14px; color: #FFF;">⚡ 量子超频处理器</div>
+          <div style="font-size: 11px; color: #8C9BAE;">单次入侵破解算力永久提升 50%</div>
+        </div>
+        <button class="duo-btn duo-btn-emerald" style="padding: 8px 12px; font-size: 12px;" onclick="buyUpgrade('knife', 400)">
+          400 ⚡
+        </button>
+      </div>
+
+      <div class="market-item">
+        <div>
+          <div style="font-weight: 900; font-size: 14px; color: #FFF;">🤖 分布式挖矿木马</div>
+          <div style="font-size: 11px; color: #8C9BAE;">每 3 秒自动产出 60 点算力代币</div>
+        </div>
+        <button class="duo-btn duo-btn-emerald" style="padding: 8px 12px; font-size: 12px;" onclick="buyUpgrade('autoCook', 600)">
+          600 ⚡
+        </button>
+      </div>
+
+      <div class="market-item">
+        <div>
+          <div style="font-weight: 900; font-size: 14px; color: #FFF;">🛡️ 反追踪代理跳板</div>
+          <div style="font-size: 11px; color: #8C9BAE;">防火墙排查被踢时间减缓 40%</div>
+        </div>
+        <button class="duo-btn duo-btn-emerald" style="padding: 8px 12px; font-size: 12px;" onclick="buyUpgrade('bell', 350)">
+          350 ⚡
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    /* ================= PU1 Unit 5: 18 词全量数据库 (益智玩具与生日礼物) ================= */
+    const VOCABULARY = [
+      {
+            "word": "ball",
+            "meaning": "球 / 皮球",
+            "IPA": "/bɔːl/",
+            "type": "noun",
+            "blocks": [
+                  "b",
+                  "all"
+            ],
+            "mindSpark": "小个子拍球喊 tall ball，反弹砸在墙壁 wall，-all 大家族真好念！",
+            "rule": "all 黄金家族发圆唇长音 /ɔːl/",
+            "ruleDesc": "all 组合像一个圆圆的大球，发饱满圆唇的 /ɔːl/。",
+            "transfers": [
+                  {
+                        "word": "wall",
+                        "hl": "all",
+                        "cn": "墙壁"
+                  },
+                  {
+                        "word": "tall",
+                        "hl": "all",
+                        "cn": "高的"
+                  },
+                  {
+                        "word": "call",
+                        "hl": "all",
+                        "cn": "呼唤/打电话"
+                  },
+                  {
+                        "word": "small",
+                        "hl": "all",
+                        "cn": "小的"
+                  }
+            ]
+      },
+      {
+            "word": "bike",
+            "meaning": "自行车 / 单车",
+            "IPA": "/baɪk/",
+            "type": "noun",
+            "blocks": [
+                  "b",
+                  "i_e",
+                  "k"
+            ],
+            "mindSpark": "我很喜欢 like 骑我的新单车 ride a bike，踩动脚踏板，自由去兜风！",
+            "rule": "i_e 相对开音节 → /baɪk/",
+            "ruleDesc": "末尾不发音的魔法 e 施展魔法，让字母 i 发出大名 /aɪ/。",
+            "transfers": [
+                  {
+                        "word": "like",
+                        "hl": "k",
+                        "cn": "喜欢"
+                  },
+                  {
+                        "word": "hike",
+                        "hl": "k",
+                        "cn": "远足/徒步"
+                  },
+                  {
+                        "word": "kite",
+                        "hl": "k",
+                        "cn": "风筝"
+                  },
+                  {
+                        "word": "ball",
+                        "hl": "b",
+                        "cn": "球"
+                  }
+            ]
+      },
+      {
+            "word": "car",
+            "meaning": "小汽车 / 轿车",
+            "IPA": "/kɑːr/",
+            "type": "noun",
+            "blocks": [
+                  "c",
+                  "ar"
+            ],
+            "mindSpark": "开着漂亮的小汽车 car，开进美丽的公园 park，仰望天上的星星 star！",
+            "rule": "ar 组合发饱满长音 /ɑːr/",
+            "ruleDesc": "字母组合 ar 像医生叫你张开嘴巴说“啊”，发浑厚悠长的 /ɑːr/。",
+            "transfers": [
+                  {
+                        "word": "star",
+                        "hl": "ar",
+                        "cn": "星星"
+                  },
+                  {
+                        "word": "far",
+                        "hl": "ar",
+                        "cn": "遥远的"
+                  },
+                  {
+                        "word": "park",
+                        "hl": "ar",
+                        "cn": "公园/停车"
+                  },
+                  {
+                        "word": "card",
+                        "hl": "ar",
+                        "cn": "卡片"
+                  }
+            ]
+      },
+      {
+            "word": "doll",
+            "meaning": "洋娃娃 / 玩偶",
+            "IPA": "/dɒl/",
+            "type": "noun",
+            "blocks": [
+                  "d",
+                  "o",
+                  "ll"
+            ],
+            "mindSpark": "可爱的小洋娃娃 doll，大大的眼睛圆又亮，轻轻抱着它进入甜美梦乡！",
+            "rule": "短元音 o 闭音节，双写 ll",
+            "ruleDesc": "字母 o 嘴唇圆圆发短音 /ɒ/，舌尖抵住上齿龈发 /l/。",
+            "transfers": [
+                  {
+                        "word": "ball",
+                        "hl": "ll",
+                        "cn": "球"
+                  },
+                  {
+                        "word": "bell",
+                        "hl": "ll",
+                        "cn": "铃铛"
+                  },
+                  {
+                        "word": "roll",
+                        "hl": "o",
+                        "cn": "滚动"
+                  },
+                  {
+                        "word": "tell",
+                        "hl": "ll",
+                        "cn": "告诉"
+                  }
+            ]
+      },
+      {
+            "word": "house",
+            "meaning": "房子 / 房屋",
+            "IPA": "/haʊs/",
+            "type": "noun",
+            "blocks": [
+                  "h",
+                  "ou",
+                  "se"
+            ],
+            "mindSpark": "温馨大房子 house 里，跑进了一只调皮的小老鼠 mouse，-ouse 家族记心中！",
+            "rule": "ou 组合发双元音 /aʊ/，se 发清音 /s/",
+            "ruleDesc": "字母组合 ou 张大嘴巴滑向 /ʊ/ 发 /aʊ/，词尾 se 发清脆的 /s/。",
+            "transfers": [
+                  {
+                        "word": "mouse",
+                        "hl": "ou",
+                        "cn": "老鼠/鼠标"
+                  },
+                  {
+                        "word": "blouse",
+                        "hl": "ou",
+                        "cn": "女士衬衫"
+                  },
+                  {
+                        "word": "out",
+                        "hl": "ou",
+                        "cn": "外面"
+                  },
+                  {
+                        "word": "shout",
+                        "hl": "ou",
+                        "cn": "大喊"
+                  }
+            ]
+      },
+      {
+            "word": "kite",
+            "meaning": "风筝",
+            "IPA": "/kaɪt/",
+            "type": "noun",
+            "blocks": [
+                  "k",
+                  "i_e",
+                  "t"
+            ],
+            "mindSpark": "骑着自行车 bike，去草地上放风筝 fly a kite，白云悠悠 white clouds 飘！",
+            "rule": "i_e 相对开音节 → /kaɪt/",
+            "ruleDesc": "末尾不发音的魔法 e 施展力量，让 i 发字母大名 /aɪ/。",
+            "transfers": [
+                  {
+                        "word": "bike",
+                        "hl": "i_e",
+                        "cn": "自行车"
+                  },
+                  {
+                        "word": "white",
+                        "hl": "t",
+                        "cn": "白色的"
+                  },
+                  {
+                        "word": "write",
+                        "hl": "t",
+                        "cn": "书写"
+                  },
+                  {
+                        "word": "bite",
+                        "hl": "t",
+                        "cn": "咬"
+                  }
+            ]
+      },
+      {
+            "word": "robot",
+            "meaning": "机器人",
+            "IPA": "/ˈrəʊ.bɒt/",
+            "type": "noun",
+            "blocks": [
+                  "ro",
+                  "bot"
+            ],
+            "mindSpark": "高科技小伙伴 robot，走起路来喀哒响，两音节清晰拆解 ro-bot！",
+            "rule": "首音节绝对开音节：o 发 /əʊ/，第二音节闭音节 /bɒt/",
+            "ruleDesc": "ro- 是开音节读 /ˈrəʊ/，bot 是闭音节读 /bɒt/。",
+            "transfers": [
+                  {
+                        "word": "bot",
+                        "hl": "bot",
+                        "cn": "网络机器人/脚本"
+                  },
+                  {
+                        "word": "bottle",
+                        "hl": "bot",
+                        "cn": "瓶子 / 一瓶 (装液体的容器)"
+                  },
+                  {
+                        "word": "cameron",
+                        "hl": "ro",
+                        "cn": "卡梅伦 (猴子/角色名)"
+                  },
+                  {
+                        "word": "brother",
+                        "hl": "ro",
+                        "cn": "兄弟 (哥哥/弟弟)"
+                  }
+            ]
+      },
+      {
+            "word": "plane",
+            "meaning": "飞机",
+            "IPA": "/pleɪn/",
+            "type": "noun",
+            "blocks": [
+                  "pl",
+                  "a_e",
+                  "n"
+            ],
+            "mindSpark": "银白色的飞机 plane 展翅飞翔，开音节 a_e 像蓝天一样开阔明朗！",
+            "rule": "a_e 相对开音节 → /pleɪn/",
+            "ruleDesc": "末尾不发音的 e 让前面的 a 发字母大名 /eɪ/，pl 双辅音顺畅滑出。",
+            "transfers": [
+                  {
+                        "word": "plate",
+                        "hl": "pl",
+                        "cn": "盘子"
+                  },
+                  {
+                        "word": "play",
+                        "hl": "pl",
+                        "cn": "玩耍"
+                  },
+                  {
+                        "word": "airplane",
+                        "hl": "pl",
+                        "cn": "飞机 (全称)"
+                  },
+                  {
+                        "word": "train",
+                        "hl": "n",
+                        "cn": "火车"
+                  }
+            ]
+      },
+      {
+            "word": "balloon",
+            "meaning": "气球",
+            "IPA": "/bəˈluːn/",
+            "type": "noun",
+            "blocks": [
+                  "ba",
+                  "l",
+                  "oon"
+            ],
+            "mindSpark": "气球 balloon 飘得高，像圆圆的大月亮 moon，重音落在第二音节！",
+            "rule": "oo 字母组合发长元音 /uː/，重音在第二音节",
+            "ruleDesc": "弱读 ba- 后接重读 -loon，oo 发圆唇悠长的 /uː/。",
+            "transfers": [
+                  {
+                        "word": "moon",
+                        "hl": "oon",
+                        "cn": "月亮"
+                  },
+                  {
+                        "word": "spoon",
+                        "hl": "oon",
+                        "cn": "勺子"
+                  },
+                  {
+                        "word": "noon",
+                        "hl": "oon",
+                        "cn": "正午"
+                  },
+                  {
+                        "word": "cartoon",
+                        "hl": "oon",
+                        "cn": "卡通片"
+                  }
+            ]
+      },
+      {
+            "word": "board game",
+            "meaning": "棋盘游戏 / 桌游",
+            "IPA": "/ˈbɔːd ɡeɪm/",
+            "type": "noun",
+            "blocks": [
+                  "bo",
+                  "a",
+                  "rd",
+                  "g",
+                  "a",
+                  "me"
+            ],
+            "mindSpark": "放好棋盘 board，掷出骰子玩桌游 game，动脑思考其乐无穷！",
+            "rule": "board (棋盘) + game (开音节游戏)",
+            "ruleDesc": "在特制木板 board 上玩的游戏 game，合称棋盘桌游。",
+            "transfers": [
+                  {
+                        "word": "game",
+                        "hl": "g",
+                        "cn": "游戏"
+                  },
+                  {
+                        "word": "video game",
+                        "hl": "g",
+                        "cn": "电子游戏"
+                  },
+                  {
+                        "word": "blackboard",
+                        "hl": "bo",
+                        "cn": "黑板"
+                  },
+                  {
+                        "word": "keyboard",
+                        "hl": "bo",
+                        "cn": "键盘"
+                  }
+            ]
+      },
+      {
+            "word": "box",
+            "meaning": "盒子 / 箱子",
+            "IPA": "/bɒks/",
+            "type": "noun",
+            "blocks": [
+                  "b",
+                  "ox"
+            ],
+            "mindSpark": "神奇的百宝箱 box，里面跳出一只小狐狸 fox，x 读 /ks/ 最利落！",
+            "rule": "短元音 o 闭音节，字母 x 发 /ks/",
+            "ruleDesc": "一个字母 x 包含两个辅音音素 /k/ + /s/，收尾干净利索。",
+            "transfers": [
+                  {
+                        "word": "fox",
+                        "hl": "ox",
+                        "cn": "狐狸"
+                  },
+                  {
+                        "word": "boxer",
+                        "hl": "b",
+                        "cn": "拳击手"
+                  },
+                  {
+                        "word": "ball",
+                        "hl": "b",
+                        "cn": "球"
+                  },
+                  {
+                        "word": "boy",
+                        "hl": "b",
+                        "cn": "男孩"
+                  }
+            ]
+      },
+      {
+            "word": "computer",
+            "meaning": "电脑 / 计算机",
+            "IPA": "/kəmˈpjuː.tər/",
+            "type": "noun",
+            "blocks": [
+                  "com",
+                  "pu",
+                  "ter"
+            ],
+            "mindSpark": "智能伙伴 computer，连上键盘 keyboard 和鼠标 mouse，探索数字世界！",
+            "rule": "三音节拆解：com-pu-ter，u 发大名 /juː/",
+            "ruleDesc": "前弱后弱，中间音节最饱满，字母 u 发字母音 /juː/。",
+            "transfers": [
+                  {
+                        "word": "commonplace",
+                        "hl": "com",
+                        "cn": "司空见惯的 / 普遍的"
+                  },
+                  {
+                        "word": "commitment",
+                        "hl": "com",
+                        "cn": "承诺 / 投入 / 坚守"
+                  },
+                  {
+                        "word": "welcome",
+                        "hl": "com",
+                        "cn": "欢迎 / 令人愉悦的"
+                  },
+                  {
+                        "word": "competition",
+                        "hl": "com",
+                        "cn": "竞赛 / 比赛选拔"
+                  }
+            ]
+      },
+      {
+            "word": "drum",
+            "meaning": "鼓 / 架子鼓",
+            "IPA": "/drʌm/",
+            "type": "noun",
+            "blocks": [
+                  "dr",
+                  "u",
+                  "m"
+            ],
+            "mindSpark": "敲起大鼓咚咚响 drum，为最亲爱的妈妈 mum 奏响欢快乐曲！",
+            "rule": "dr 辅音连缀，短元音 u 闭音节",
+            "ruleDesc": "舌尖卷起发浊辅音连缀 /dr/，中间短元音 /ʌ/ 有力击打收尾 /m/。",
+            "transfers": [
+                  {
+                        "word": "mum",
+                        "hl": "u",
+                        "cn": "妈妈"
+                  },
+                  {
+                        "word": "plum",
+                        "hl": "u",
+                        "cn": "李子"
+                  },
+                  {
+                        "word": "drop",
+                        "hl": "dr",
+                        "cn": "落下/水滴"
+                  },
+                  {
+                        "word": "dress",
+                        "hl": "dr",
+                        "cn": "连衣裙"
+                  }
+            ]
+      },
+      {
+            "word": "keyboard",
+            "meaning": "键盘 (电脑或乐器)",
+            "IPA": "/ˈkiː.bɔːd/",
+            "type": "noun",
+            "blocks": [
+                  "key",
+                  "board"
+            ],
+            "mindSpark": "指尖飞舞敲击 key，面板整洁像块 board，打字飞快 keyboard！",
+            "rule": "复合名词：key (按键) + board (面板)",
+            "ruleDesc": "一个个按键排列在面板上，组合成电脑键盘或钢琴键盘。",
+            "transfers": [
+                  {
+                        "word": "key",
+                        "hl": "key",
+                        "cn": "钥匙/按键"
+                  },
+                  {
+                        "word": "blackboard",
+                        "hl": "board",
+                        "cn": "黑板"
+                  },
+                  {
+                        "word": "skateboard",
+                        "hl": "board",
+                        "cn": "滑板"
+                  },
+                  {
+                        "word": "cupboard",
+                        "hl": "board",
+                        "cn": "柜子"
+                  }
+            ]
+      },
+      {
+            "word": "mouse",
+            "meaning": "鼠标 / 小老鼠",
+            "IPA": "/maʊs/",
+            "type": "noun",
+            "blocks": [
+                  "m",
+                  "ou",
+                  "se"
+            ],
+            "mindSpark": "手握灵巧鼠标 mouse，点击屏幕游世界，和房子 house 押韵一模一样！",
+            "rule": "ou 组合发双元音 /aʊ/，se 发 /s/",
+            "ruleDesc": "单词兼具“小老鼠”与电脑“鼠标”两种含义，复数老鼠为 mice，电脑鼠标可作 mice 或 mouses。",
+            "transfers": [
+                  {
+                        "word": "house",
+                        "hl": "ou",
+                        "cn": "房子"
+                  },
+                  {
+                        "word": "blouse",
+                        "hl": "ou",
+                        "cn": "女士衬衫"
+                  },
+                  {
+                        "word": "out",
+                        "hl": "ou",
+                        "cn": "外面"
+                  },
+                  {
+                        "word": "loud",
+                        "hl": "ou",
+                        "cn": "大声的"
+                  }
+            ]
+      },
+      {
+            "word": "ship",
+            "meaning": "轮船 / 大船",
+            "IPA": "/ʃɪp/",
+            "type": "noun",
+            "blocks": [
+                  "sh",
+                  "i",
+                  "p"
+            ],
+            "mindSpark": "在大海上乘风破浪是大船 ship，去商店购物叫 shop，sh 嘘音吹拂水面！",
+            "rule": "sh 组合发 /ʃ/，短元音 i 闭音节",
+            "ruleDesc": "手指在唇前发“嘘” /ʃ/，字母 i 发短促 /ɪ/，结尾闭合双唇 /p/。",
+            "transfers": [
+                  {
+                        "word": "shop",
+                        "hl": "sh",
+                        "cn": "商店"
+                  },
+                  {
+                        "word": "fish",
+                        "hl": "sh",
+                        "cn": "鱼"
+                  },
+                  {
+                        "word": "trip",
+                        "hl": "i",
+                        "cn": "旅行"
+                  },
+                  {
+                        "word": "short",
+                        "hl": "sh",
+                        "cn": "短的"
+                  }
+            ]
+      },
+      {
+            "word": "teddy",
+            "meaning": "泰迪熊 / 毛绒熊玩偶",
+            "IPA": "/ˈted.i/",
+            "type": "noun",
+            "blocks": [
+                  "ted",
+                  "dy"
+            ],
+            "mindSpark": "抱一抱柔软暖和的 teddy，双写 dd 亲切可爱，陪你做个好梦！",
+            "rule": "双写 dd 保持短元音 e → /e/，末尾 y 发 /i/",
+            "ruleDesc": "双写辅音 dd 让 e 保持短元音，词尾 y 赋予玩偶亲切昵称感。",
+            "transfers": [
+                  {
+                        "word": "daddy",
+                        "hl": "dy",
+                        "cn": "爸爸"
+                  },
+                  {
+                        "word": "fragmented",
+                        "hl": "ted",
+                        "cn": "支离破碎的 / 断断续续的"
+                  },
+                  {
+                        "word": "addicted",
+                        "hl": "ted",
+                        "cn": "沉溺上瘾的 / 无法自拔的"
+                  },
+                  {
+                        "word": "fixated",
+                        "hl": "ted",
+                        "cn": "痴迷专注的 / 视线离不开的"
+                  }
+            ]
+      },
+      {
+            "word": "video game",
+            "meaning": "电子游戏",
+            "IPA": "/ˈvɪd.i.əʊ ɡeɪm/",
+            "type": "noun",
+            "blocks": [
+                  "v",
+                  "id",
+                  "eo",
+                  "g",
+                  "a",
+                  "me"
+            ],
+            "mindSpark": "大屏幕上看图像 video，操纵手柄畅玩游戏 game，精彩互动好开心！",
+            "rule": "video (视频影像) + game (开音节游戏)",
+            "ruleDesc": "结合了显示屏图像交互的游戏，game 中 a_e 开音节读 /eɪ/。",
+            "transfers": [
+                  {
+                        "word": "game",
+                        "hl": "g",
+                        "cn": "游戏"
+                  },
+                  {
+                        "word": "board game",
+                        "hl": "g",
+                        "cn": "桌游"
+                  },
+                  {
+                        "word": "gamer",
+                        "hl": "g",
+                        "cn": "游戏玩家"
+                  },
+                  {
+                        "word": "name",
+                        "hl": "a",
+                        "cn": "名字"
+                  }
+            ]
+      }
+];
+
+    /* ================= 纯原生 Web Audio 触感音效引擎 (全功能版) ================= */
+    const audio = {
+      synth: window.speechSynthesis,
+      ctx: null,
+      getCtx() {
+        try {
+          if (!this.ctx) {
+            const Cls = window.AudioContext || window.webkitAudioContext;
+            if (Cls) this.ctx = new Cls();
+          }
+          if (this.ctx && this.ctx.state === "suspended") {
+            this.ctx.resume();
+          }
+          return this.ctx;
+        } catch (e) {
+          return null;
+        }
+      },
+      speak(text) {
+        try {
+          if (this.synth) {
+            this.synth.cancel();
+            const u = new SpeechSynthesisUtterance(text);
+            u.lang = "en-US";
+            u.rate = 0.9;
+            this.synth.speak(u);
+          }
+        } catch (e) {}
+      },
+      tap() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          const osc = c.createOscillator();
+          const gain = c.createGain();
+          osc.frequency.setValueAtTime(450, now);
+          osc.frequency.exponentialRampToValueAtTime(750, now + 0.04);
+          gain.gain.setValueAtTime(0.1, now);
+          gain.gain.exponentialRampToValueAtTime(0.001, now + 0.05);
+          osc.connect(gain);
+          gain.connect(c.destination);
+          osc.start(now);
+          osc.stop(now + 0.05);
+        } catch (e) {}
+      },
+      correct() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          [523.25, 659.25].forEach((f, i) => {
+            const osc = c.createOscillator();
+            const gain = c.createGain();
+            osc.frequency.setValueAtTime(f, now + i * 0.06);
+            gain.gain.setValueAtTime(0.1, now + i * 0.06);
+            gain.gain.exponentialRampToValueAtTime(0.001, now + i * 0.06 + 0.15);
+            osc.connect(gain);
+            gain.connect(c.destination);
+            osc.start(now + i * 0.06);
+            osc.stop(now + i * 0.06 + 0.16);
+          });
+        } catch (e) {}
+      },
+      bingo() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          [523.25, 659.25, 783.99, 1046.5].forEach((f, i) => {
+            const osc = c.createOscillator();
+            const gain = c.createGain();
+            osc.type = "triangle";
+            osc.frequency.setValueAtTime(f, now + i * 0.05);
+            gain.gain.setValueAtTime(0.12, now + i * 0.05);
+            gain.gain.exponentialRampToValueAtTime(0.001, now + i * 0.05 + 0.25);
+            osc.connect(gain);
+            gain.connect(c.destination);
+            osc.start(now + i * 0.05);
+            osc.stop(now + i * 0.05 + 0.28);
+          });
+        } catch (e) {}
+      },
+      wrong() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          const osc = c.createOscillator();
+          const gain = c.createGain();
+          osc.type = "sawtooth";
+          osc.frequency.setValueAtTime(140, now);
+          osc.frequency.linearRampToValueAtTime(80, now + 0.16);
+          gain.gain.setValueAtTime(0.15, now);
+          gain.gain.linearRampToValueAtTime(0.001, now + 0.16);
+          osc.connect(gain);
+          gain.connect(c.destination);
+          osc.start(now);
+          osc.stop(now + 0.18);
+        } catch (e) {}
+      },
+      chestOpen() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          [300, 450, 600, 900].forEach((f, i) => {
+            const osc = c.createOscillator();
+            const gain = c.createGain();
+            osc.frequency.setValueAtTime(f, now + i * 0.04);
+            gain.gain.setValueAtTime(0.09, now + i * 0.04);
+            gain.gain.exponentialRampToValueAtTime(0.001, now + i * 0.04 + 0.15);
+            osc.connect(gain);
+            gain.connect(c.destination);
+            osc.start(now + i * 0.04);
+            osc.stop(now + i * 0.04 + 0.16);
+          });
+        } catch (e) {}
+      },
+      steal() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          const osc = c.createOscillator();
+          const gain = c.createGain();
+          osc.type = "sine";
+          osc.frequency.setValueAtTime(800, now);
+          osc.frequency.linearRampToValueAtTime(300, now + 0.2);
+          gain.gain.setValueAtTime(0.15, now);
+          gain.gain.exponentialRampToValueAtTime(0.001, now + 0.22);
+          osc.connect(gain);
+          gain.connect(c.destination);
+          osc.start(now);
+          osc.stop(now + 0.22);
+        } catch (e) {}
+      },
+      bomb() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          const osc = c.createOscillator();
+          const gain = c.createGain();
+          osc.type = "sawtooth";
+          osc.frequency.setValueAtTime(90, now);
+          osc.frequency.linearRampToValueAtTime(40, now + 0.3);
+          gain.gain.setValueAtTime(0.2, now);
+          gain.gain.exponentialRampToValueAtTime(0.001, now + 0.32);
+          osc.connect(gain);
+          gain.connect(c.destination);
+          osc.start(now);
+          osc.stop(now + 0.32);
+        } catch (e) {}
+      },
+      swap() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          [350, 700, 500, 1000].forEach((f, i) => {
+            const osc = c.createOscillator();
+            const gain = c.createGain();
+            osc.frequency.setValueAtTime(f, now + i * 0.05);
+            gain.gain.setValueAtTime(0.1, now + i * 0.05);
+            gain.gain.exponentialRampToValueAtTime(0.001, now + i * 0.05 + 0.18);
+            osc.connect(gain);
+            gain.connect(c.destination);
+            osc.start(now + i * 0.05);
+            osc.stop(now + i * 0.05 + 0.2);
+          });
+        } catch (e) {}
+      },
+      cash() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          [987.77, 1318.51].forEach((f, i) => {
+            const osc = c.createOscillator();
+            const gain = c.createGain();
+            osc.frequency.setValueAtTime(f, now + i * 0.07);
+            gain.gain.setValueAtTime(0.12, now + i * 0.07);
+            gain.gain.exponentialRampToValueAtTime(0.001, now + i * 0.07 + 0.25);
+            osc.connect(gain);
+            gain.connect(c.destination);
+            osc.start(now + i * 0.07);
+            osc.stop(now + i * 0.07 + 0.28);
+          });
+        } catch (e) {}
+      },
+      sizzle() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          const osc = c.createOscillator();
+          const gain = c.createGain();
+          osc.type = "square";
+          osc.frequency.setValueAtTime(180, now);
+          osc.frequency.exponentialRampToValueAtTime(260, now + 0.15);
+          gain.gain.setValueAtTime(0.08, now);
+          gain.gain.exponentialRampToValueAtTime(0.001, now + 0.16);
+          osc.connect(gain);
+          gain.connect(c.destination);
+          osc.start(now);
+          osc.stop(now + 0.16);
+        } catch (e) {}
+      },
+      heal() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          [587.33, 880, 1174.66, 1760].forEach((f, i) => {
+            const osc = c.createOscillator();
+            const gain = c.createGain();
+            osc.frequency.setValueAtTime(f, now + i * 0.06);
+            gain.gain.setValueAtTime(0.12, now + i * 0.06);
+            gain.gain.exponentialRampToValueAtTime(0.001, now + i * 0.06 + 0.25);
+            osc.connect(gain);
+            gain.connect(c.destination);
+            osc.start(now + i * 0.06);
+            osc.stop(now + i * 0.06 + 0.28);
+          });
+        } catch (e) {}
+      },
+      laser() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          const osc = c.createOscillator();
+          const gain = c.createGain();
+          osc.frequency.setValueAtTime(900, now);
+          osc.frequency.exponentialRampToValueAtTime(150, now + 0.12);
+          gain.gain.setValueAtTime(0.12, now);
+          gain.gain.exponentialRampToValueAtTime(0.001, now + 0.12);
+          osc.connect(gain);
+          gain.connect(c.destination);
+          osc.start(now);
+          osc.stop(now + 0.13);
+        } catch (e) {}
+      },
+      sparkle() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          [784, 988, 1175, 1568].forEach((f, i) => {
+            const osc = c.createOscillator();
+            const gain = c.createGain();
+            osc.type = "sine";
+            osc.frequency.setValueAtTime(f, now + i * 0.04);
+            gain.gain.setValueAtTime(0.1, now + i * 0.04);
+            gain.gain.exponentialRampToValueAtTime(0.001, now + i * 0.04 + 0.2);
+            osc.connect(gain);
+            gain.connect(c.destination);
+            osc.start(now + i * 0.04);
+            osc.stop(now + i * 0.04 + 0.22);
+          });
+        } catch (e) {}
+      },
+      hack() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          [350, 700, 1050, 1400].forEach((f, i) => {
+            const osc = c.createOscillator();
+            const gain = c.createGain();
+            osc.type = "triangle";
+            osc.frequency.setValueAtTime(f, now + i * 0.03);
+            gain.gain.setValueAtTime(0.1, now + i * 0.03);
+            gain.gain.exponentialRampToValueAtTime(0.001, now + i * 0.03 + 0.12);
+            osc.connect(gain);
+            gain.connect(c.destination);
+            osc.start(now + i * 0.03);
+            osc.stop(now + i * 0.03 + 0.14);
+          });
+        } catch (e) {}
+      },
+      cheer() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          [523, 659, 784, 1046, 1318].forEach((f, i) => {
+            const osc = c.createOscillator();
+            const gain = c.createGain();
+            osc.type = "triangle";
+            osc.frequency.setValueAtTime(f, now + i * 0.05);
+            gain.gain.setValueAtTime(0.12, now + i * 0.05);
+            gain.gain.exponentialRampToValueAtTime(0.001, now + i * 0.05 + 0.25);
+            osc.connect(gain);
+            gain.connect(c.destination);
+            osc.start(now + i * 0.05);
+            osc.stop(now + i * 0.05 + 0.28);
+          });
+        } catch (e) {}
+      },
+      honk() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          const osc1 = c.createOscillator();
+          const osc2 = c.createOscillator();
+          const gain = c.createGain();
+          osc1.frequency.setValueAtTime(420, now);
+          osc2.frequency.setValueAtTime(530, now);
+          gain.gain.setValueAtTime(0.15, now);
+          gain.gain.exponentialRampToValueAtTime(0.001, now + 0.18);
+          osc1.connect(gain);
+          osc2.connect(gain);
+          gain.connect(c.destination);
+          osc1.start(now);
+          osc2.start(now);
+          osc1.stop(now + 0.2);
+          osc2.stop(now + 0.2);
+        } catch (e) {}
+      },
+      ocean() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          [440, 554, 659, 880, 1108].forEach((f, i) => {
+            const osc = c.createOscillator();
+            const gain = c.createGain();
+            osc.type = "triangle";
+            osc.frequency.setValueAtTime(f, now + i * 0.05);
+            gain.gain.setValueAtTime(0.12, now + i * 0.05);
+            gain.gain.exponentialRampToValueAtTime(0.001, now + i * 0.05 + 0.25);
+            osc.connect(gain);
+            gain.connect(c.destination);
+            osc.start(now + i * 0.05);
+            osc.stop(now + i * 0.05 + 0.28);
+          });
+        } catch (e) {}
+      }
+    };
+
+
+    /* ================= 核心学习模式逻辑 ================= */
+    let currentIndex = 0;
+    let availableBlocks = [];
+    let selectedBlocks = [];
+    let isSuccess = false;
+    let hasCompletedAllWords = false;
+
+    
+    function syncFromAha() {
+      try {
+        const raw = localStorage.getItem('kron_word_current_unit_payload') || localStorage.getItem('kron_saved_words') || localStorage.getItem('kron:word:shared_vocab');
+        if (!raw) return;
+        const data = JSON.parse(raw);
+        const words = Array.isArray(data) ? data : (data.words || []);
+        if (!words || words.length === 0) return;
+
+        const savedMap = new Map();
+        words.forEach(w => {
+          if (w.word) savedMap.set(w.word.toLowerCase().trim(), w);
+        });
+
+        let matched = 0;
+        VOCABULARY.forEach(item => {
+          const wClean = item.word.toLowerCase().trim();
+          const hasDirect = savedMap.has(wClean);
+          const hasContained = Array.from(savedMap.keys()).some(k => k && (wClean.includes(k) || k.includes(wClean)));
+          if (hasDirect || hasContained) {
+            item.isAhaSaved = true;
+            matched++;
+          }
+        });
+
+        words.forEach(w => {
+          const wClean = (w.word || '').toLowerCase().trim();
+          const exists = VOCABULARY.some(v => {
+            const vClean = v.word.toLowerCase().trim();
+            return vClean === wClean || vClean.includes(wClean);
+          });
+          if (!exists && wClean) {
+            let blocks = [w.word];
+            if (wClean === 'instrument') {
+              blocks = ['in', 'stru', 'ment'];
+            } else if (wClean === 'play') {
+              blocks = ['pl', 'ay'];
+            } else if (wClean === 'play an instrument') {
+              blocks = ['pl', 'ay', 'an', 'in', 'stru', 'ment'];
+            } else {
+              const rawParts = w.word.split(/\s+/).filter(Boolean);
+              blocks = rawParts.length > 1 ? rawParts : [w.word];
+            }
+            VOCABULARY.push({
+              word: w.word,
+              meaning: w.translation || 'Aha! 重点词汇',
+              IPA: w.phonetic || `/${wClean}/`,
+              type: w.partOfSpeech || 'saved',
+              blocks,
+              mindSpark: '你在 Kron English Aha! 学习中亲手收藏的重点单词，快来拼出它吧！',
+              rule: 'Aha! 生词本同步词汇',
+              ruleDesc: '来自课堂实战提问与高频语境，属于你的专属记忆！',
+              transfers: [],
+              isAhaSaved: true
+            });
+            matched++;
+          }
+        });
+
+        const banner = document.getElementById('ahaSyncBanner');
+        const countEl = document.getElementById('ahaSyncCount');
+        if (banner && countEl && words.length > 0) {
+          countEl.innerText = words.length;
+          banner.style.display = 'flex';
+        }
+      } catch (e) {
+        console.warn('Aha sync notice:', e);
+      }
+    }
+
+    function initWord() {
+      isSuccess = false;
+      const item = VOCABULARY[currentIndex];
+
+      document.getElementById("wordMeaning").innerText = item.meaning;
+      document.getElementById("wordIPA").innerText = item.IPA;
+      
+      const tagEl = document.getElementById("wordTypeTag");
+      if (tagEl) {
+        tagEl.innerText = item.type ? item.type.toUpperCase() : "WORD";
+        tagEl.className = "word-type-tag " + (item.type ? `tag-${item.type}` : "tag-word");
+      }
+
+      document.getElementById("successPanel").style.display = "none";
+      document.getElementById("nextBtn").style.display = "none";
+      document.getElementById("footerPlaceholder").style.display = "block";
+
+      const pct = ((currentIndex + 1) / VOCABULARY.length) * 100;
+      document.getElementById("progressBar").style.width = `${pct}%`;
+
+      availableBlocks = item.blocks.map((text, idx) => ({
+        id: `${text}-${idx}-${Math.random()}`,
+        text
+      })).sort(() => Math.random() - 0.5);
+      selectedBlocks = [];
+
+      renderBlocks();
+    }
+
+    function renderBlocks() {
+      const slots = document.getElementById("slotsContainer");
+      const tray = document.getElementById("trayContainer");
+      slots.innerHTML = "";
+      tray.innerHTML = "";
+
+      if (selectedBlocks.length === 0) {
+        slots.innerHTML = '<span class="empty-tip">点击下方发音积木</span>';
+      } else {
+        selectedBlocks.forEach(b => {
+          const btn = document.createElement("button");
+          btn.className = `duo-tile ${isSuccess ? "duo-tile-success" : ""}`;
+          btn.innerText = b.text;
+          btn.onclick = () => {
+            if (isSuccess) return;
+            audio.tap();
+            selectedBlocks = selectedBlocks.filter(x => x.id !== b.id);
+            availableBlocks.push(b);
+            renderBlocks();
+          };
+          slots.appendChild(btn);
+        });
+      }
+
+      availableBlocks.forEach(b => {
+        const btn = document.createElement("button");
+        btn.className = "duo-tile";
+        btn.innerText = b.text;
+        btn.onclick = () => handlePickBlock(b);
+        tray.appendChild(btn);
+      });
+    }
+
+    function handlePickBlock(b) {
+      if (isSuccess) return;
+      audio.tap();
+      audio.speak(b.text);
+
+      selectedBlocks.push(b);
+      availableBlocks = availableBlocks.filter(x => x.id !== b.id);
+      renderBlocks();
+
+      if (availableBlocks.length === 0) {
+        const userStr = selectedBlocks.map(x => x.text).join("");
+        const realStr = VOCABULARY[currentIndex].blocks.join("");
+
+        if (userStr === realStr) {
+          isSuccess = true;
+          audio.bingo();
+          renderBlocks();
+          showWordKnowledge();
+        } else {
+          audio.wrong();
+          const slots = document.getElementById("slotsContainer");
+          slots.classList.add("animate-shake");
+          setTimeout(() => {
+            slots.classList.remove("animate-shake");
+            availableBlocks = VOCABULARY[currentIndex].blocks.map((text, idx) => ({ id: `${text}-${idx}-${Math.random()}`, text })).sort(() => Math.random() - 0.5);
+            selectedBlocks = [];
+            renderBlocks();
+          }, 450);
+        }
+      }
+    }
+
+    function showWordKnowledge() {
+      const item = VOCABULARY[currentIndex];
+      
+      document.getElementById("kronMindSpark").innerText = item.mindSpark;
+      document.getElementById("ruleBadge").innerText = `规律：${item.rule}`;
+      document.getElementById("ruleDesc").innerText = item.ruleDesc;
+
+      const grid = document.getElementById("transferGrid");
+      grid.innerHTML = "";
+      item.transfers.forEach(t => {
+        const tile = document.createElement("div");
+        tile.className = "transfer-tile";
+        tile.innerHTML = `
+          <div>
+            <div class="transfer-word">${renderHighlight(t.word, t.hl)}</div>
+            <div class="transfer-cn">${t.cn}</div>
+          </div>
+          <span style="font-size: 13px; color: #CECECE;">🔊</span>
+        `;
+        tile.onclick = () => {
+          audio.tap();
+          audio.speak(t.word);
+        };
+        grid.appendChild(tile);
+      });
+
+      document.getElementById("successPanel").style.display = "block";
+      document.getElementById("nextBtn").style.display = "block";
+      
+      const isLast = currentIndex === VOCABULARY.length - 1;
+      document.getElementById("nextBtn").innerText = isLast ? "🎓 本单元全部达成！解锁极客玩具制造厂 ➔" : "继续下一个单词 ➔";
+      document.getElementById("footerPlaceholder").style.display = "none";
+
+      if (isLast) {
+        hasCompletedAllWords = true;
+        const lockBtn = document.getElementById("lockStatusBtn");
+        lockBtn.innerText = "🎁 极客玩具制造厂 (已解锁)";
+        lockBtn.style.borderColor = "#0984E3";
+        lockBtn.style.color = "#0984E3";
+        triggerConfetti();
+        audio.bingo();
+      }
+    }
+
+    function renderHighlight(word, hl) {
+      if (!hl || !word.toLowerCase().includes(hl.toLowerCase())) return word;
+      const reg = new RegExp(`(${hl})`, "i");
+      return word.replace(reg, `<span class="hl-green">$1</span>`);
+    }
+
+    function playCurrentWordAudio() {
+      audio.speak(VOCABULARY[currentIndex].word);
+    }
+
+    function goNextWord() {
+      if (currentIndex < VOCABULARY.length - 1) {
+        currentIndex++;
+        syncFromAha();
+    initWord();
+      } else {
+        switchToGame();
+      }
+    }
+
+    function trySwitchToGame() {
+      if (!hasCompletedAllWords) {
+        alert("🔒 Kron 老师提醒：必须把本单元全部 " + VOCABULARY.length + " 个益智玩具与生日礼物核心词汇拼完才能解锁极客玩具制造厂！");
+        return;
+      }
+      switchToGame();
+    }
+
+    window.addEventListener("keydown", (e) => {
+      const isLearnVisible = document.getElementById("learnView").style.display !== "none";
+      if (isSuccess && isLearnVisible && (e.key === "Enter" || e.key === " ")) {
+        e.preventDefault();
+        goNextWord();
+      }
+    });
+
+/* ================= 模块二：Gimkit 赛博黑客数据入侵独立游戏逻辑 ================= */
+    let timerSec = 180;
+    let timerInterval = null;
+    let botInterval = null;
+    let autoCookInterval = null;
+    let patienceInterval = null;
+
+    let playerGold = 0;
+    let servedCount = 0;
+    let combo = 1;
+    let currentCustomer = null;
+    let currentPatience = 100;
+
+    let upgrades = {
+      knifeLevel: 0,
+      autoCookLevel: 0,
+      bellLevel: 0
+    };
+
+    let cafePlayers = [
+      {
+            "id": "me",
+            "name": "你 (首席极客发明家)",
+            "gold": 0,
+            "isBot": false
+      },
+      {
+            "id": "cat",
+            "name": "🐱 柴犬数据站",
+            "gold": 280,
+            "isBot": true
+      },
+      {
+            "id": "duo",
+            "name": "🦉 多邻国防火墙",
+            "gold": 430,
+            "isBot": true
+      },
+      {
+            "id": "kron",
+            "name": "⚡️ Kron 量子云超算",
+            "gold": 590,
+            "isBot": true
+      }
+];
+
+    const TARGET_HOSTS = [
+      {
+            "name": "智能机器人装配台",
+            "emoji": "🤖",
+            "tipBonus": 1.2
+      },
+      {
+            "name": "高空动力风筝飞翼",
+            "emoji": "🪁",
+            "tipBonus": 1.3
+      },
+      {
+            "name": "超能游戏主机核心",
+            "emoji": "🎮",
+            "tipBonus": 1.4
+      },
+      {
+            "name": "绚丽气球氦气工厂",
+            "emoji": "🎈",
+            "tipBonus": 1.1
+      },
+      {
+            "name": "数字电脑运算终端",
+            "emoji": "💻",
+            "tipBonus": 1.0
+      }
+];
+
+    function switchToGame() {
+      document.getElementById("learnView").style.display = "none";
+      document.getElementById("gameView").style.display = "flex";
+      document.body.classList.add("game-mode");
+      startBattle();
+    }
+
+    function switchToLearn() {
+      clearInterval(timerInterval);
+      clearInterval(botInterval);
+      clearInterval(autoCookInterval);
+      clearInterval(patienceInterval);
+      document.getElementById("gameView").style.display = "none";
+      document.getElementById("learnView").style.display = "flex";
+      document.body.classList.remove("game-mode");
+    }
+
+    function startBattle() {
+      audio.bingo();
+      playerGold = 0;
+      servedCount = 0;
+      combo = 1;
+      timerSec = 180;
+
+      cafePlayers.forEach(p => {
+        if (p.isBot) p.gold = Math.floor(Math.random() * 280 + 220);
+        else p.gold = 0;
+      });
+
+      updateStatsUI();
+      updateLeaderboard();
+
+      document.getElementById("gameStartScreen").style.display = "none";
+      document.getElementById("gameOverScreen").style.display = "none";
+      document.getElementById("gameDishDoneScreen").style.display = "none";
+
+      clearInterval(timerInterval);
+      clearInterval(botInterval);
+      clearInterval(autoCookInterval);
+
+      timerInterval = setInterval(() => {
+        timerSec--;
+        const m = String(Math.floor(timerSec / 60)).padStart(2, '0');
+        const s = String(timerSec % 60).padStart(2, '0');
+        document.getElementById("timeText").innerText = `${m}:${s}`;
+
+        if (timerSec <= 0) {
+          endGame();
+        }
+      }, 1000);
+
+      botInterval = setInterval(() => {
+        cafePlayers.forEach(p => {
+          if (p.isBot) {
+            const add = Math.floor(Math.random() * 85 + 25);
+            p.gold += add;
+          }
+        });
+        updateLeaderboard();
+      }, 2500);
+
+      nextCustomer();
+    }
+
+    function updateStatsUI() {
+      document.getElementById("playerGoldText").innerText = `⚡ ${playerGold}`;
+      document.getElementById("servedCountText").innerText = `🔓 ${servedCount}`;
+      document.getElementById("comboText").innerText = `🔥 x${combo}`;
+      const me = cafePlayers.find(p => p.id === 'me');
+      if (me) me.gold = playerGold;
+      updateLeaderboard();
+    }
+
+    function nextCustomer() {
+      clearInterval(patienceInterval);
+      document.getElementById("gameDishDoneScreen").style.display = "none";
+      document.getElementById("gameOrderScreen").style.display = "block";
+
+      const pool = TARGET_HOSTS;
+      const quest = pool[Math.floor(Math.random() * pool.length)];
+      const item = VOCABULARY[Math.floor(Math.random() * VOCABULARY.length)];
+
+      const orderSpeech = `“系统能量请求：当前挑战目标是「${item.meaning}」！”`;
+      const qPrompt = `能量注入：选择对应的核心英文单词：`;
+      const correctAns = item.word;
+
+      const otherWords = VOCABULARY.filter(w => w.word !== item.word).map(w => w.word).sort(() => Math.random() - 0.5);
+      const distractors = otherWords.slice(0, 3);
+
+      currentCustomer = {
+        name: quest.name,
+        emoji: quest.emoji,
+        tipBonus: quest.tipBonus,
+        targetWord: item,
+        ans: correctAns
+      };
+
+      const custEmojiEl = document.getElementById("custEmoji");
+      if (custEmojiEl) custEmojiEl.innerText = currentCustomer.emoji;
+      const custNameEl = document.getElementById("custName");
+      if (custNameEl) custNameEl.innerText = currentCustomer.name;
+      const custSpeechEl = document.getElementById("custOrderSpeech");
+      if (custSpeechEl) custSpeechEl.innerText = orderSpeech;
+      const qPromptEl = document.getElementById("gameQuestionPrompt");
+      if (qPromptEl) qPromptEl.innerText = qPrompt;
+
+      const opts = [correctAns, ...distractors].sort(() => Math.random() - 0.5);
+      const optGrid = document.getElementById("gameOptionGrid");
+      optGrid.innerHTML = "";
+
+      opts.forEach(opt => {
+        const btn = document.createElement("button");
+        btn.className = "duo-btn duo-btn-dark game-opt-btn";
+        btn.innerText = opt;
+        btn.onclick = () => handleOrderAnswer(opt);
+        optGrid.appendChild(btn);
+      });
+
+      currentPatience = 100;
+      const patienceSpeed = upgrades.bellLevel > 0 ? 0.9 : 1.5;
+      patienceInterval = setInterval(() => {
+        currentPatience -= patienceSpeed;
+        const pFill = document.getElementById("patienceBar");
+        if (pFill) {
+          pFill.style.width = `${Math.max(0, currentPatience)}%`;
+          if (currentPatience > 50) pFill.style.backgroundColor = "#58CC02";
+          else if (currentPatience > 25) pFill.style.backgroundColor = "#FF9600";
+          else pFill.style.backgroundColor = "#FF4B4B";
+        }
+
+        if (currentPatience <= 0) {
+          clearInterval(patienceInterval);
+          handleCustomerLeave();
+        }
+      }, 100);
+    }
+
+    function handleOrderAnswer(chosen) {
+      if (chosen === currentCustomer.ans) {
+        clearInterval(patienceInterval);
+        audio.hack();
+        servedCount++;
+        combo++;
+
+        let baseTip = Math.floor(200 * currentCustomer.tipBonus);
+        if (upgrades.knifeLevel > 0) baseTip = Math.floor(baseTip * 1.5);
+        const comboBonus = Math.floor(combo * 25);
+        const totalTip = baseTip + comboBonus;
+        playerGold += totalTip;
+
+        updateStatsUI();
+
+        document.getElementById("gameOrderScreen").style.display = "none";
+        document.getElementById("gameDishDoneScreen").style.display = "block";
+        document.getElementById("dishDoneIcon").innerText = `✨🔓${currentCustomer.emoji}✨`;
+        document.getElementById("dishDoneTitle").innerText = `渗透成功！+${totalTip} ⚡`;
+        document.getElementById("dishDoneDesc").innerText = `${currentCustomer.name} 防火墙被瞬间瓦解！海量算力代币下载完成（连击加成 +${comboBonus}）！`;
+
+        setTicker(`🔓 攻破！成功接入 ${currentCustomer.name}，算力暴增 +${totalTip} 筹码！`);
+      } else {
+        audio.wrong();
+        combo = 1;
+        updateStatsUI();
+        setTicker(`❌ 语法密钥错误！被安全系统阻断，连击重置！`);
+      }
+    }
+
+    function handleCustomerLeave() {
+      audio.wrong();
+      combo = 1;
+      updateStatsUI();
+      setTicker(`💨 终端超时！${currentCustomer.name} 重置了访问密钥，入侵失败！`);
+      nextCustomer();
+    }
+
+    function setTicker(msg) {
+      document.getElementById("tickerMsg").innerText = msg;
+    }
+
+    function updateLeaderboard() {
+      const sorted = [...cafePlayers].sort((a, b) => b.gold - a.gold);
+      const grid = document.getElementById("leaderboardGrid");
+      grid.innerHTML = "";
+      sorted.forEach((p, idx) => {
+        const medal = idx === 0 ? "🥇 " : idx === 1 ? "🥈 " : idx === 2 ? "🥉 " : "#4 ";
+        const card = document.createElement("div");
+        card.className = `lb-card ${p.id === 'me' ? 'is-me' : ''}`;
+        card.innerHTML = `
+          <div class="lb-name">${medal}${p.name}</div>
+          <div class="lb-gold">${p.gold} ⚡</div>
+        `;
+        grid.appendChild(card);
+      });
+    }
+
+    function openMarket() {
+      document.getElementById("marketDrawer").style.display = "flex";
+    }
+    function closeMarket() {
+      document.getElementById("marketDrawer").style.display = "none";
+    }
+
+    function buyUpgrade(type, cost) {
+      if (playerGold < cost) {
+        alert("⚡ 算力筹码不足，快去多攻破几个主机吧！");
+        return;
+      }
+      playerGold -= cost;
+      audio.hack();
+
+      if (type === 'knife') {
+        upgrades.knifeLevel++;
+        alert("⚡ 量子超频处理器升级完成！单次入侵收益提升 50%！");
+      } else if (type === 'autoCook') {
+        upgrades.autoCookLevel++;
+        if (!autoCookInterval) {
+          autoCookInterval = setInterval(() => {
+            playerGold += 60 * upgrades.autoCookLevel;
+            updateStatsUI();
+          }, 3000);
+        }
+        alert("🤖 分布式挖矿木马部署完毕！每 3 秒自动产出算力！");
+      } else if (type === 'bell') {
+        upgrades.bellLevel++;
+        alert("🛡️ 反追踪代理跳板已开启！主机检测倒计时极大延长！");
+      }
+
+      updateStatsUI();
+      document.getElementById("playerBuffs").innerText = 
+        `💻 木马注入: ${upgrades.autoCookLevel}级 | 🛡️ 防火墙: +${upgrades.knifeLevel * 50}%`;
+      closeMarket();
+    }
+
+    function endGame() {
+      clearInterval(timerInterval);
+      clearInterval(botInterval);
+      clearInterval(autoCookInterval);
+      clearInterval(patienceInterval);
+
+      document.getElementById("gameOrderScreen").style.display = "none";
+      document.getElementById("gameDishDoneScreen").style.display = "none";
+      document.getElementById("gameOverScreen").style.display = "block";
+
+      const sorted = [...cafePlayers].sort((a, b) => b.gold - a.gold);
+      const myRank = sorted.findIndex(p => p.id === 'me') + 1;
+
+      if (myRank === 1) {
+        document.getElementById("finalTrophy").innerText = "👑";
+        document.getElementById("finalRankTitle").innerText = "全球首席黑客霸主！";
+        document.getElementById("finalRankDesc").innerText = `算力筹码高达 ${playerGold} ⚡！全网数据任你调遣！`;
+        triggerConfetti();
+      } else {
+        document.getElementById("finalTrophy").innerText = "🥈";
+        document.getElementById("finalRankTitle").innerText = `荣获全网第 ${myRank} 名！`;
+        document.getElementById("finalRankDesc").innerText = `算力储备 ${playerGold} ⚡，距离顶级黑客仅差一步！`;
+      }
+
+      const podium = document.getElementById("finalPodium");
+      podium.innerHTML = "";
+      sorted.forEach((p, idx) => {
+        const row = document.createElement("div");
+        row.style.cssText = "display: flex; justify-content: space-between; padding: 6px 0; font-size: 13px; font-weight: 800;";
+        row.innerHTML = `
+          <span style="color: ${p.id === 'me' ? '#00B894' : '#FFF'};">${idx + 1}. ${p.name}</span>
+          <span style="color: #FFC800;">${p.gold} ⚡</span>
+        `;
+        podium.appendChild(row);
+      });
+    }
+
+function triggerConfetti() {
+      const canvas = document.getElementById("confettiCanvas");
+      const ctx = canvas.getContext("2d");
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+
+      const particles = [];
+      const colors = ["#0984E3", "#58CC02", "#FFC800", "#FF4757", "#AF52DE"];
+
+      for (let i = 0; i < 90; i++) {
+        particles.push({
+          x: canvas.width / 2,
+          y: canvas.height / 2,
+          vx: (Math.random() - 0.5) * 16,
+          vy: (Math.random() - 0.7) * 18,
+          size: Math.random() * 9 + 4,
+          color: colors[Math.floor(Math.random() * colors.length)],
+          rotation: Math.random() * 360,
+          vRot: (Math.random() - 0.5) * 12,
+          opacity: 1
+        });
+      }
+
+      let frames = 0;
+      function render() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        particles.forEach(p => {
+          p.x += p.vx;
+          p.y += p.vy;
+          p.vy += 0.35;
+          p.rotation += p.vRot;
+          p.opacity -= 0.01;
+
+          ctx.save();
+          ctx.translate(p.x, p.y);
+          ctx.rotate((p.rotation * Math.PI) / 180);
+          ctx.fillStyle = p.color;
+          ctx.globalAlpha = Math.max(0, p.opacity);
+          ctx.fillRect(-p.size / 2, -p.size / 2, p.size, p.size);
+          ctx.restore();
+        });
+
+        frames++;
+        if (frames < 100) {
+          requestAnimationFrame(render);
+        } else {
+          ctx.clearRect(0, 0, canvas.width, canvas.height);
+        }
+      }
+      render();
+    }
+    function fireConfetti() { triggerConfetti(); }
+
+    syncFromAha();
+    initWord();
+  </script>
+</body>
+</html>

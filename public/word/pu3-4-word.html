@@ -1,0 +1,2204 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Power Up 3 · Unit 4: 荒岛探险与过去动词 (LexiBlock + Blooket 荒岛塔防守卫战)</title>
+  <style>
+    :root {
+      --duo-green: #58CC02;
+      --duo-green-shadow: #46A302;
+      --duo-green-hover: #61E002;
+      --duo-blue: #1CB0F6;
+      --duo-blue-shadow: #1899D6;
+      --duo-gold: #FFC800;
+      --duo-gold-shadow: #E5A800;
+      --duo-orange: #FF9600;
+      --duo-orange-shadow: #E58700;
+      --duo-red: #FF4B4B;
+      --duo-red-shadow: #EA2B2B;
+      --duo-cyan: #00D8D6;
+      --duo-cyan-shadow: #00A8A6;
+      --bg-light: #F7F7F9;
+      --bg-card: #FFFFFF;
+      --text-main: #1D1D1F;
+      --text-body: #4B4B4B;
+      --text-muted: #777777;
+      --text-sub: #AFAFAF;
+      --border-light: #E5E5E5;
+      --border-tile: #CECECE;
+      --radius-sm: 12px;
+      --radius-md: 16px;
+      --radius-lg: 24px;
+      --radius-pill: 999px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      user-select: none;
+      -webkit-tap-highlight-color: transparent;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", "Segoe UI", Roboto, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-light);
+      color: var(--text-body);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      transition: background-color 0.3s ease;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body.game-mode {
+      background-color: #0A141A;
+      color: #FFFFFF;
+    }
+
+    #app {
+      width: 100%;
+      max-width: 500px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 16px;
+      position: relative;
+    }
+
+    .duo-btn {
+      position: relative;
+      border-radius: 18px;
+      font-weight: 900;
+      cursor: pointer;
+      transition: all 0.08s ease;
+      text-align: center;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      user-select: none;
+      border: none;
+    }
+    .duo-btn:active {
+      transform: translateY(3px);
+      border-bottom-width: 2px !important;
+    }
+
+    .duo-btn-green {
+      background: var(--duo-green);
+      color: #FFFFFF;
+      border-bottom: 5px solid var(--duo-green-shadow);
+    }
+    .duo-btn-green:hover { background: var(--duo-green-hover); }
+
+    .duo-btn-cyan {
+      background: var(--duo-cyan);
+      color: #00363A;
+      border-bottom: 5px solid var(--duo-cyan-shadow);
+    }
+
+    .duo-btn-gold {
+      background: var(--duo-gold);
+      color: #7A5200;
+      border-bottom: 5px solid var(--duo-gold-shadow);
+    }
+
+    .duo-btn-dark {
+      background: #15222E;
+      color: #FFFFFF;
+      border: 2px solid #23374A;
+      border-bottom: 5px solid #0D171F;
+    }
+    .duo-btn-dark:hover { background: #1C2E3E; }
+
+    .duo-tile {
+      background-color: #FFFFFF;
+      color: var(--text-body);
+      border: 2px solid var(--border-light);
+      border-bottom: 4px solid var(--border-tile);
+      border-radius: 16px;
+      font-size: 20px;
+      font-weight: 900;
+      padding: 12px 18px;
+      cursor: pointer;
+      transition: all 0.08s ease-in-out;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      user-select: none;
+    }
+    .duo-tile:hover { background-color: #F8F8F8; }
+    .duo-tile:active {
+      transform: translateY(2px);
+      border-bottom-width: 2px;
+    }
+
+    .duo-tile-success {
+      background-color: var(--duo-green) !important;
+      color: #FFFFFF !important;
+      border-color: var(--duo-green) !important;
+      border-bottom-color: var(--duo-green-shadow) !important;
+      transform: scale(1.04);
+    }
+
+    .learn-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 12px;
+      gap: 12px;
+    }
+    .unit-tag {
+      background: #E0F7FA;
+      color: #006064;
+      font-size: 11px;
+      font-weight: 900;
+      padding: 4px 10px;
+      border-radius: 999px;
+      letter-spacing: 0.5px;
+      white-space: nowrap;
+    }
+    .progress-track {
+      flex: 1;
+      height: 14px;
+      background: #E5E5E5;
+      border-radius: var(--radius-pill);
+      overflow: hidden;
+      position: relative;
+    }
+    .progress-fill {
+      height: 100%;
+      background: var(--duo-green);
+      border-radius: var(--radius-pill);
+      transition: width 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+    .mode-switch-btn {
+      background: #FFF;
+      border: 2px solid #E5E5E5;
+      border-radius: var(--radius-pill);
+      padding: 6px 12px;
+      font-size: 12px;
+      font-weight: 800;
+      color: #777;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      transition: all 0.15s ease;
+      white-space: nowrap;
+    }
+    .mode-switch-btn:hover {
+      border-color: var(--duo-cyan);
+      color: var(--duo-cyan);
+    }
+
+    .word-header {
+      text-align: center;
+      margin-bottom: 16px;
+    }
+    .word-meaning {
+      font-size: 26px;
+      font-weight: 900;
+      color: var(--text-main);
+      margin-bottom: 6px;
+      letter-spacing: -0.5px;
+    }
+    .word-type-tag {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 800;
+      padding: 2px 8px;
+      border-radius: 6px;
+      margin-left: 6px;
+      vertical-align: middle;
+    }
+    .tag-nature { background: #E0F2F1; color: #00796B; }
+    .tag-action { background: #E8EAF6; color: #303F9F; }
+
+    .word-ipa-btn {
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      font-size: 15px;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      cursor: pointer;
+      padding: 4px 10px;
+      border-radius: var(--radius-pill);
+      transition: background 0.15s ease;
+    }
+    .word-ipa-btn:hover { background: #EDEDED; }
+
+    .slots-container {
+      min-height: 64px;
+      border-bottom: 2px dashed var(--border-tile);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 10px 0;
+      margin-bottom: 20px;
+    }
+    .tray-container {
+      min-height: 80px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    .empty-tip {
+      color: var(--text-sub);
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .kron-spark-card {
+      background: linear-gradient(135deg, #FFF9DB 0%, #FFF3BF 100%);
+      border: 2px solid #FFE066;
+      border-radius: 18px;
+      padding: 14px 16px;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      box-shadow: 0 4px 12px rgba(245, 159, 0, 0.08);
+    }
+    .kron-avatar {
+      font-size: 28px;
+      line-height: 1;
+      filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+    }
+    .kron-spark-content {
+      flex: 1;
+    }
+    .kron-spark-title {
+      font-size: 12px;
+      font-weight: 900;
+      color: #D9480F;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .kron-spark-text {
+      font-size: 14px;
+      color: #495057;
+      font-weight: 700;
+      line-height: 1.45;
+    }
+
+    .transfer-panel {
+      background: var(--bg-card);
+      border: 2px solid var(--border-light);
+      border-radius: 20px;
+      padding: 14px;
+      margin-top: 10px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.04);
+    }
+    .rule-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      margin-bottom: 12px;
+      line-height: 1.4;
+    }
+    .rule-badge {
+      background: #E8F5E9;
+      color: #2E7D32;
+      font-size: 11px;
+      font-weight: 900;
+      padding: 3px 8px;
+      border-radius: 6px;
+      white-space: nowrap;
+    }
+    .rule-desc {
+      font-size: 12px;
+      font-weight: 700;
+      color: #555;
+    }
+    .transfer-title {
+      font-size: 11px;
+      font-weight: 900;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 8px;
+    }
+    .transfer-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+    .transfer-tile {
+      background: #FAFAFA;
+      border: 1.5px solid var(--border-light);
+      border-radius: 12px;
+      padding: 8px 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+      transition: all 0.1s ease;
+    }
+    .transfer-tile:hover {
+      background: #F0FDF4;
+      border-color: var(--duo-green);
+    }
+    .transfer-word {
+      font-weight: 900;
+      font-size: 14px;
+      color: var(--text-main);
+    }
+    .transfer-cn {
+      font-size: 11px;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+    .hl-green {
+      color: var(--duo-green);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    @keyframes popIn {
+      0% { opacity: 0; transform: scale(0.92) translateY(8px); }
+      100% { opacity: 1; transform: scale(1) translateY(0); }
+    }
+    .animate-pop-in {
+      animation: popIn 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+    }
+
+    @keyframes shake {
+      0%, 100% { transform: translateX(0); }
+      20%, 60% { transform: translateX(-8px); }
+      40%, 80% { transform: translateX(8px); }
+    }
+    .animate-shake {
+      animation: shake 0.4s ease-in-out;
+    }
+
+    /* ================= Blooket Island Tower Defense 荒岛塔防独立游戏 ================= */
+    .game-top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+    .timer-pill {
+      background: #15222E;
+      border: 2px solid #23374A;
+      border-radius: var(--radius-pill);
+      padding: 6px 14px;
+      font-size: 14px;
+      font-weight: 900;
+      color: #00D8D6;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .defense-stats-row {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+    .defense-stat-card {
+      flex: 1;
+      background: #101B24;
+      border: 1px solid #1E3142;
+      border-radius: 16px;
+      padding: 10px 12px;
+      text-align: center;
+    }
+    .stat-label {
+      font-size: 11px;
+      color: #8C9BAE;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+    .stat-val {
+      font-size: 20px;
+      font-weight: 900;
+      color: #00D8D6;
+    }
+
+    .tower-stage {
+      background: #0E1820;
+      border: 2px solid #1F3243;
+      border-radius: 24px;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 14px;
+      min-height: 290px;
+      justify-content: center;
+    }
+
+    .enemy-wave-bubble {
+      background: #172635;
+      border: 2px solid #2A435C;
+      border-radius: 18px;
+      padding: 10px 16px;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      max-width: 90%;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+    }
+    .enemy-tag {
+      font-size: 18px;
+      font-weight: 900;
+      color: #00D8D6;
+    }
+    .enemy-avatar-box {
+      position: relative;
+      margin-bottom: 8px;
+    }
+    .enemy-emoji {
+      font-size: 64px;
+      filter: drop-shadow(0 4px 8px rgba(0,0,0,0.4));
+      display: inline-block;
+      animation: marchEnemy 1.6s ease-in-out infinite alternate;
+    }
+    @keyframes marchEnemy {
+      0% { transform: translateX(-8px) rotate(-4deg); }
+      100% { transform: translateX(8px) rotate(4deg); }
+    }
+    .enemy-hp-bar {
+      width: 130px;
+      height: 8px;
+      background: #1F3243;
+      border-radius: 999px;
+      overflow: hidden;
+      margin: 0 auto;
+    }
+    .enemy-hp-fill {
+      height: 100%;
+      background: #00D8D6;
+      border-radius: 999px;
+      transition: width 0.1s linear, background-color 0.3s ease;
+    }
+
+    .game-opt-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      width: 100%;
+    }
+    .game-opt-btn {
+      padding: 14px 10px;
+      font-size: 15px;
+      line-height: 1.3;
+      border-radius: 16px;
+    }
+
+    .ticker-bar {
+      background: #101B24;
+      border: 1px solid #1F3243;
+      border-radius: var(--radius-pill);
+      padding: 6px 14px;
+      font-size: 12px;
+      color: #8DA1BA;
+      font-weight: 700;
+      margin-bottom: 12px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .leaderboard-mini {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 6px;
+      margin-bottom: 12px;
+    }
+    .lb-card {
+      background: #0E1820;
+      border: 1px solid #1F3243;
+      border-radius: 12px;
+      padding: 8px 6px;
+      text-align: center;
+      transition: all 0.2s ease;
+    }
+    .lb-card.is-me {
+      border-color: #00D8D6;
+      background: #172635;
+    }
+    .lb-name {
+      font-size: 11px;
+      color: #8C9BAE;
+      font-weight: 800;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .lb-gold {
+      font-size: 13px;
+      font-weight: 900;
+      color: #FFFFFF;
+    }
+
+    .market-drawer {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.75);
+      backdrop-filter: blur(8px);
+      z-index: 100;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .market-modal {
+      background: #0B151C;
+      border: 2px solid #00D8D6;
+      border-radius: 28px;
+      width: 100%;
+      max-width: 420px;
+      padding: 22px;
+      box-shadow: 0 20px 50px rgba(0,216,214,0.25);
+    }
+    .market-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #14222D;
+      border: 1px solid #233749;
+      border-radius: 16px;
+      padding: 12px;
+      margin-bottom: 10px;
+    }
+
+    #confettiCanvas {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 999;
+    }
+  </style>
+</head>
+<body>
+
+  <canvas id="confettiCanvas"></canvas>
+
+  <div id="app">
+    
+    <!-- ==================== 视图 1：多邻国积木背单词 + Kron 脑洞场景 ==================== -->
+    <div id="learnView" style="display: flex; flex-direction: column; justify-content: space-between; min-height: calc(100vh - 32px);">
+      <header class="learn-header">
+        <span class="unit-tag">PU3 · UNIT 4</span>
+        <div class="progress-track">
+          <div class="progress-fill" id="progressBar" style="width: 0%;"></div>
+        </div>
+        <button class="mode-switch-btn" id="lockStatusBtn" onclick="trySwitchToGame()">
+          🔒 荒岛塔防 (需全通)
+        </button>
+      </header>
+      <!-- Aha! 生词本双向打通同步横幅 -->
+      <div id="ahaSyncBanner" style="display:none; align-items: center; justify-content: space-between; background: linear-gradient(135deg, rgba(88,204,2,0.12), rgba(28,176,246,0.12)); border: 1.5px solid #58CC02; border-radius: 14px; padding: 8px 12px; margin-bottom: 12px; font-size: 11px; font-weight: 800; color: #1D1D1F;">
+        <div style="display: flex; align-items: center; gap: 6px;">
+          <span>⚡</span>
+          <span>已成功打通并同步来自 <strong>Aha! 生词本</strong> 的 <span id="ahaSyncCount" style="color: #46A302; font-size: 13px;">0</span> 个重点词汇</span>
+        </div>
+        <button onclick="document.getElementById('ahaSyncBanner').style.display='none'" style="background:none; border:none; color:#888; cursor:pointer; font-size:12px; font-weight:bold;">✕</button>
+      </div>
+
+      <div style="margin: auto 0; padding: 12px 0;">
+        <div class="word-header">
+          <div class="word-meaning">
+            <span id="wordMeaning">...</span>
+            <span class="word-type-tag" id="wordTypeTag">Nature</span>
+          </div>
+          <button class="word-ipa-btn" onclick="playCurrentWordAudio()">
+            <span id="wordIPA">...</span>
+            <span>🔊</span>
+          </button>
+        </div>
+
+        <div class="slots-container" id="slotsContainer"></div>
+        <div class="tray-container" id="trayContainer"></div>
+
+        <div id="successPanel" style="display: none;" class="animate-pop-in">
+          <div class="kron-spark-card">
+            <div class="kron-avatar">👨🏻‍🏫</div>
+            <div class="kron-spark-content">
+              <div class="kron-spark-title">⚡️ Kron 老师脑洞发问</div>
+              <div class="kron-spark-text" id="kronMindSpark">...</div>
+            </div>
+          </div>
+
+          <div class="transfer-panel">
+            <div class="rule-row">
+              <span class="rule-badge" id="ruleBadge">...</span>
+              <span class="rule-desc" id="ruleDesc">...</span>
+            </div>
+            <div class="transfer-title">举一反三单词积木（点击听纯正发音）</div>
+            <div class="transfer-grid" id="transferGrid"></div>
+          </div>
+        </div>
+      </div>
+
+      <div style="padding-top: 14px;">
+        <button class="duo-btn duo-btn-green" id="nextBtn" style="width: 100%; padding: 16px; font-size: 18px; display: none;" onclick="goNextWord()">
+          继续
+        </button>
+        <div id="footerPlaceholder" style="text-align: center; color: #AFAFAF; font-size: 13px; font-weight: 700; height: 55px; line-height: 55px;">
+          点击下方发音积木完成拼装
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== 视图 2：Blooket 荒岛塔防守卫战独立游戏 ==================== -->
+    <div id="gameView" style="display: none; flex-direction: column; justify-content: space-between; min-height: calc(100vh - 32px);">
+      <div>
+        <div class="game-top-bar">
+          <div class="timer-pill" id="timerDisplay">
+            <span>🛡️</span>
+            <span id="timeText">03:00</span>
+          </div>
+          <div style="display: flex; gap: 8px;">
+            <button class="duo-btn duo-btn-cyan" style="padding: 6px 12px; font-size: 12px;" onclick="openMarket()">
+              ⚡ 塔防军工
+            </button>
+            <button class="duo-btn duo-btn-dark" style="padding: 6px 12px; font-size: 12px;" onclick="switchToLearn()">
+              📖 返回复习
+            </button>
+          </div>
+        </div>
+
+        <div class="defense-stats-row">
+          <div class="defense-stat-card">
+            <div class="stat-label">防线能量</div>
+            <div class="stat-val" id="playerGoldText">⚡ 0</div>
+          </div>
+          <div class="defense-stat-card">
+            <div class="stat-label">击退波次</div>
+            <div class="stat-val" id="servedCountText">🌊 0</div>
+          </div>
+          <div class="defense-stat-card">
+            <div class="stat-label">连击加成</div>
+            <div class="stat-val" id="comboText" style="color: #00D8D6;">💥 x1</div>
+          </div>
+        </div>
+
+        <div class="ticker-bar" id="tickerMsg">
+          🌊 巨浪涌动！海盗舰队正逼近神秘荒岛，速建自然元素炮塔！
+        </div>
+
+        <div class="leaderboard-mini" id="leaderboardGrid"></div>
+      </div>
+
+      <div class="tower-stage" id="towerStage">
+        
+        <div id="gameStartScreen" style="text-align: center; padding: 10px;">
+          <div style="font-size: 54px; margin-bottom: 8px;">🏝️</div>
+          <h1 style="font-size: 22px; font-weight: 900; margin-bottom: 6px; color: #00D8D6;">
+            BLOOKET · 荒岛塔防守卫战
+          </h1>
+          <p style="font-size: 13px; color: #8C9BAE; line-height: 1.5; margin-bottom: 20px;">
+            已吃透 19 个自然地理与过去时动作词汇！<br/>海盗大军正在抢滩登陆！<br/>答对题目充能星光巨浪炮，保卫荒岛核心水晶！
+          </p>
+          <button class="duo-btn duo-btn-cyan" style="width: 100%; padding: 15px; font-size: 16px;" onclick="startBattle()">
+            开启荒岛防线 ➔
+          </button>
+        </div>
+
+        <div id="gameOrderScreen" style="display: none; width: 100%; text-align: center;">
+          <div class="enemy-avatar-box">
+            <div class="enemy-emoji" id="custEmoji">🏴‍☠️</div>
+          </div>
+          
+          <div class="enemy-wave-bubble" style="margin: 0 auto 12px auto;">
+            <span style="font-size: 18px;">🎯</span>
+            <div style="text-align: left;">
+              <div style="font-size: 11px; color: #8DA1BA; font-weight: 800;" id="custName">入侵敌舰</div>
+              <div class="enemy-tag" id="custOrderSpeech">“锁定目标：「波浪/海浪」！”</div>
+            </div>
+          </div>
+
+          <div style="margin-bottom: 12px;">
+            <div class="enemy-hp-bar">
+              <div class="enemy-hp-fill" id="patienceBar" style="width: 100%;"></div>
+            </div>
+          </div>
+
+          <div style="font-size: 13px; font-weight: 900; color: #E5E5E5; margin-bottom: 14px;" id="gameQuestionPrompt">
+            元素炮充能：选择对应的自然/过去式单词：
+          </div>
+
+          <div class="game-opt-grid" id="gameOptionGrid"></div>
+        </div>
+
+        <div id="gameDishDoneScreen" style="display: none; text-align: center;" class="animate-pop-in">
+          <div id="dishDoneIcon" style="font-size: 60px; margin-bottom: 8px;">💥🌊⚡</div>
+          <h3 id="dishDoneTitle" style="font-size: 22px; font-weight: 900; color: #00D8D6; margin-bottom: 6px;">
+            敌舰轰碎！+350 ⚡
+          </h3>
+          <p id="dishDoneDesc" style="font-size: 13px; color: #8DA1BA; margin-bottom: 18px;">
+            星光巨浪炮精准暴击！敌舰被轰入深海大洋！
+          </p>
+          <button class="duo-btn duo-btn-cyan" style="width: 100%; padding: 14px; font-size: 16px;" onclick="nextCustomer()">
+            锁定下一波敌军 ➔
+          </button>
+        </div>
+
+        <div id="gameOverScreen" style="display: none; text-align: center; width: 100%;" class="animate-pop-in">
+          <div style="font-size: 56px; margin-bottom: 8px;" id="finalTrophy">👑</div>
+          <h2 style="font-size: 24px; font-weight: 900; color: #FFC800;" id="finalRankTitle">荒岛领主总司令！</h2>
+          <p style="font-size: 12px; color: #8C9BAE; margin-bottom: 16px;" id="finalRankDesc">防线完好无损，全灭敌军！</p>
+          <div style="background: #14222D; border-radius: 20px; padding: 14px; margin-bottom: 18px;" id="finalPodium"></div>
+          <button class="duo-btn duo-btn-cyan" style="width: 100%; padding: 14px; font-size: 16px;" onclick="startBattle()">
+            再防守一轮 🔄
+          </button>
+        </div>
+
+      </div>
+
+      <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 10px; font-size: 11px; font-weight: 800; color: #5B6F8E;">
+        <span>BLOOKET ISLAND TD · KRON 独家定制版</span>
+        <span id="playerBuffs">🌊 巨浪炮: 0级 | ⚡ 闪电塔: 基础</span>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="market-drawer" id="marketDrawer">
+    <div class="market-modal">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+        <h3 style="font-size: 18px; font-weight: 900; color: #00D8D6;">⚡ 荒岛塔防军备工坊</h3>
+        <button style="background: none; border: none; color: #8C9BAE; font-size: 22px; cursor: pointer;" onclick="closeMarket()">✕</button>
+      </div>
+
+      <div class="market-item">
+        <div>
+          <div style="font-weight: 900; font-size: 14px; color: #FFF;">⚡ 离子充能矩阵</div>
+          <div style="font-size: 11px; color: #8C9BAE;">单次击破敌舰能量永久提升 50%</div>
+        </div>
+        <button class="duo-btn duo-btn-cyan" style="padding: 8px 12px; font-size: 12px;" onclick="buyUpgrade('knife', 400)">
+          400 ⚡
+        </button>
+      </div>
+
+      <div class="market-item">
+        <div>
+          <div style="font-weight: 900; font-size: 14px; color: #FFF;">🌊 潮汐发电机</div>
+          <div style="font-size: 11px; color: #8C9BAE;">每 3 秒自动产出 60 点防守能量</div>
+        </div>
+        <button class="duo-btn duo-btn-cyan" style="padding: 8px 12px; font-size: 12px;" onclick="buyUpgrade('autoCook', 600)">
+          600 ⚡
+        </button>
+      </div>
+
+      <div class="market-item">
+        <div>
+          <div style="font-weight: 900; font-size: 14px; color: #FFF;">🌪️ 暴风减速带</div>
+          <div style="font-size: 11px; color: #8C9BAE;">敌军进犯速度极大减缓 40%</div>
+        </div>
+        <button class="duo-btn duo-btn-cyan" style="padding: 8px 12px; font-size: 12px;" onclick="buyUpgrade('bell', 350)">
+          350 ⚡
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    /* ================= Unit 4: 19 词全量数据库 (自然地理与过去时动作) ================= */
+    const VOCABULARY = [
+      {
+            "word": "island",
+            "meaning": "岛屿 / 荒岛",
+            "IPA": "/ˈaɪ.lənd/",
+            "type": "nature",
+            "blocks": [
+                  "is",
+                  "land"
+            ],
+            "mindSpark": "流落荒岛求生记！字母 s 闭麦隐形！如果只能带一样东西去无人 island，你选手机还是锅？",
+            "rule": "发音刺客：字母 s 闭麦不发音！",
+            "ruleDesc": "island 里的 s 绝对不读！发音是 /ˈaɪ.lənd/，不是 is-land！",
+            "transfers": [
+                  {
+                        "word": "aisle",
+                        "hl": "is",
+                        "cn": "过道(s不读)"
+                  },
+                  {
+                        "word": "land",
+                        "hl": "land",
+                        "cn": "陆地"
+                  },
+                  {
+                        "word": "highland",
+                        "hl": "land",
+                        "cn": "高地"
+                  },
+                  {
+                        "word": "mainland",
+                        "hl": "land",
+                        "cn": "大陆"
+                  }
+            ]
+      },
+      {
+            "word": "jungle",
+            "meaning": "热带丛林 / 密林",
+            "IPA": "/ˈdʒʌŋ.ɡəl/",
+            "type": "nature",
+            "blocks": [
+                  "jun",
+                  "gle"
+            ],
+            "mindSpark": "泰山在藤蔓上荡秋千！在充满未知神秘猛兽的 jungle 里，你敢夜间徒步吗？",
+            "rule": "-gle 辅音成音节 /ɡəl/",
+            "ruleDesc": "j 发 /dʒ/，u 发短音 /ʌ/，词尾 -gle 轻巧成音节。",
+            "transfers": [
+                  {
+                        "word": "single",
+                        "hl": "gle",
+                        "cn": "单个的"
+                  },
+                  {
+                        "word": "triangle",
+                        "hl": "gle",
+                        "cn": "三角形"
+                  },
+                  {
+                        "word": "jungle book",
+                        "hl": "jun",
+                        "cn": "森林王子"
+                  }
+            ]
+      },
+      {
+            "word": "moon",
+            "meaning": "月亮 / 月球",
+            "IPA": "/muːn/",
+            "type": "nature",
+            "blocks": [
+                  "m",
+                  "oon"
+            ],
+            "mindSpark": "夜空中最亮的明灯！阿姆斯特朗在 moon 上迈出了一大步，你想不想上去踩踩月壤？",
+            "rule": "oo 经典长音 /uː/",
+            "ruleDesc": "双 o 发嘴唇收圆的长音 /uː/，音色悠扬浑厚。",
+            "transfers": [
+                  {
+                        "word": "afternoon",
+                        "hl": "oon",
+                        "cn": "下午"
+                  },
+                  {
+                        "word": "spoon",
+                        "hl": "oon",
+                        "cn": "勺子"
+                  },
+                  {
+                        "word": "soon",
+                        "hl": "oon",
+                        "cn": "很快"
+                  },
+                  {
+                        "word": "moonlight",
+                        "hl": "m",
+                        "cn": "月光"
+                  }
+            ]
+      },
+      {
+            "word": "plant",
+            "meaning": "植物 / 种植 / 工厂",
+            "IPA": "/plɑːnt/",
+            "type": "nature",
+            "blocks": [
+                  "pl",
+                  "ant"
+            ],
+            "mindSpark": "绿植治愈人心！你家里养过多肉还是绿萝？你养的 plant 存活最长纪录是多久？",
+            "rule": "pl- 辅音连缀滑音",
+            "ruleDesc": "舌尖迅速从上齿龈滑出 /pl/，英音发长元音 /ɑː/。",
+            "transfers": [
+                  {
+                        "word": "planet",
+                        "hl": "pl",
+                        "cn": "行星"
+                  },
+                  {
+                        "word": "plane",
+                        "hl": "pl",
+                        "cn": "飞机"
+                  },
+                  {
+                        "word": "plantation",
+                        "hl": "pl",
+                        "cn": "种植园"
+                  },
+                  {
+                        "word": "ant",
+                        "hl": "ant",
+                        "cn": "蚂蚁"
+                  }
+            ]
+      },
+      {
+            "word": "sky",
+            "meaning": "天空 / 天空苍穹",
+            "IPA": "/skaɪ/",
+            "type": "nature",
+            "blocks": [
+                  "sk",
+                  "y"
+            ],
+            "mindSpark": "抬头看 sky 突然发现天上有飞碟在朝你闪灯，你第一句话会说什么？",
+            "rule": "单音节词尾 y 发长双元音 /aɪ/",
+            "ruleDesc": "短小精悍的词，结尾 y 往往担当元音发大声的 /aɪ/。",
+            "transfers": [
+                  {
+                        "word": "fly",
+                        "hl": "y",
+                        "cn": "飞翔"
+                  },
+                  {
+                        "word": "cry",
+                        "hl": "y",
+                        "cn": "哭泣"
+                  },
+                  {
+                        "word": "skate",
+                        "hl": "sk",
+                        "cn": "滑冰"
+                  },
+                  {
+                        "word": "skyscraper",
+                        "hl": "sk",
+                        "cn": "摩天大楼"
+                  }
+            ]
+      },
+      {
+            "word": "star",
+            "meaning": "星星 / 恒星 / 巨星",
+            "IPA": "/stɑː/",
+            "type": "nature",
+            "blocks": [
+                  "st",
+                  "ar"
+            ],
+            "mindSpark": "一闪一闪亮晶晶！夏天的夜空里数过流星吗？对着哪颗 star 许过的愿望最灵验？",
+            "rule": "ar 发开阔长音 /ɑː/",
+            "ruleDesc": "经典老板 r 组合：ar 永远发开阔饱满的 /ɑː/！",
+            "transfers": [
+                  {
+                        "word": "car",
+                        "hl": "ar",
+                        "cn": "汽车"
+                  },
+                  {
+                        "word": "far",
+                        "hl": "ar",
+                        "cn": "遥远"
+                  },
+                  {
+                        "word": "park",
+                        "hl": "ar",
+                        "cn": "公园"
+                  },
+                  {
+                        "word": "superstar",
+                        "hl": "st",
+                        "cn": "超级巨星"
+                  }
+            ]
+      },
+      {
+            "word": "waterfall",
+            "meaning": "瀑布",
+            "IPA": "/ˈwɔː.tə.fɔːl/",
+            "type": "nature",
+            "blocks": [
+                  "water",
+                  "fall"
+            ],
+            "mindSpark": "水(water)从高处掉下来(fall)就是瀑布！黄果树瀑布你打卡过吗？",
+            "rule": "合成词：water (水) + fall (掉落)",
+            "ruleDesc": "两个基础词合体！fall 中 all 固定发圆唇长音 /ɔːl/。",
+            "transfers": [
+                  {
+                        "word": "fall",
+                        "hl": "fall",
+                        "cn": "掉落/秋天"
+                  },
+                  {
+                        "word": "underwater",
+                        "hl": "water",
+                        "cn": "水下"
+                  }
+            ]
+      },
+      {
+            "word": "wave",
+            "meaning": "海浪 / 波浪 / 挥手",
+            "IPA": "/weɪv/",
+            "type": "nature",
+            "blocks": [
+                  "w",
+                  "ave"
+            ],
+            "mindSpark": "去海边冲浪！面对三米高的滔天巨浪 wave，你是迎头冲上去还是掉头就跑？",
+            "rule": "a_e 相对开音节发字母本音 /eɪ/",
+            "ruleDesc": "magic e 魔法让 a 发字母自身的名字音 /eɪ/，v 发咬唇浊辅音。",
+            "transfers": [
+                  {
+                        "word": "save",
+                        "hl": "ave",
+                        "cn": "拯救"
+                  },
+                  {
+                        "word": "brave",
+                        "hl": "ave",
+                        "cn": "勇敢的"
+                  },
+                  {
+                        "word": "gave",
+                        "hl": "ave",
+                        "cn": "给了"
+                  },
+                  {
+                        "word": "microwave",
+                        "hl": "w",
+                        "cn": "微波炉"
+                  }
+            ]
+      },
+      {
+            "word": "world",
+            "meaning": "世界 / 地球",
+            "IPA": "/wɜːld/",
+            "type": "nature",
+            "blocks": [
+                  "wor",
+                  "ld"
+            ],
+            "mindSpark": "世界那么大，你想去看看！如果能免费环游 world 一年，你的第一站定在哪里？",
+            "rule": "wor- 发长卷舌音 /wɜː/",
+            "ruleDesc": "w 后面的 or 变异发 /ɜː/，词尾 ld 清晰收尾。",
+            "transfers": [
+                  {
+                        "word": "word",
+                        "hl": "wor",
+                        "cn": "单词"
+                  },
+                  {
+                        "word": "work",
+                        "hl": "wor",
+                        "cn": "工作"
+                  },
+                  {
+                        "word": "worm",
+                        "hl": "wor",
+                        "cn": "蠕虫"
+                  },
+                  {
+                        "word": "worldwide",
+                        "hl": "wor",
+                        "cn": "全世界范围"
+                  }
+            ]
+      },
+      {
+            "word": "bounced",
+            "meaning": "弹跳了 / 弹起 (bounce 的过去式)",
+            "IPA": "/baʊnst/",
+            "type": "action",
+            "blocks": [
+                  "boun",
+                  "ced"
+            ],
+            "mindSpark": "篮球砸在地上高高弹起！昨天下楼拍球，皮球 bounced 进了隔壁花园怎么办？",
+            "rule": "ou 读 /aʊ/ + -ced 尾巴读 /st/",
+            "ruleDesc": "跳跳糖般的 ou 发 /aʊ/；清辅音 c 后加 ed 读作干脆的 /t/！",
+            "transfers": [
+                  {
+                        "word": "bounce",
+                        "hl": "boun",
+                        "cn": "弹跳(原型)"
+                  },
+                  {
+                        "word": "danced",
+                        "hl": "ced",
+                        "cn": "跳舞了"
+                  },
+                  {
+                        "word": "pranced",
+                        "hl": "ced",
+                        "cn": "雀跃了"
+                  },
+                  {
+                        "word": "bound",
+                        "hl": "boun",
+                        "cn": "跳跃"
+                  }
+            ]
+      },
+      {
+            "word": "caught",
+            "meaning": "抓住了 / 赶上了 (catch 的过去式)",
+            "IPA": "/kɔːt/",
+            "type": "action",
+            "blocks": [
+                  "c",
+                  "aught"
+            ],
+            "mindSpark": "守门员神扑救！飞过来的足球被他单手牢牢 caught 住了，帅不帅？",
+            "rule": "不规则动词：catch 变 caught",
+            "ruleDesc": "aught 黄金组发长音 /ɔːt/，中间 gh 彻底隐形闭麦！",
+            "transfers": [
+                  {
+                        "word": "catch",
+                        "hl": "c",
+                        "cn": "抓住(原型)"
+                  },
+                  {
+                        "word": "taught",
+                        "hl": "aught",
+                        "cn": "教导了"
+                  },
+                  {
+                        "word": "daughter",
+                        "hl": "aught",
+                        "cn": "女儿"
+                  },
+                  {
+                        "word": "naughty",
+                        "hl": "aught",
+                        "cn": "淘气的"
+                  }
+            ]
+      },
+      {
+            "word": "fished",
+            "meaning": "钓鱼了 / 捕鱼 (fish 的过去式)",
+            "IPA": "/fɪʃt/",
+            "type": "action",
+            "blocks": [
+                  "fish",
+                  "ed"
+            ],
+            "mindSpark": "老爷爷在河边坐了一整天钓鱼！昨天姜太公在江边 fished 出了一条什么大鱼？",
+            "rule": "规则动词：sh 清辅音后 ed 读 /t/",
+            "ruleDesc": "清清浊浊：清辅音 sh 后面加 ed，自然跟着读清脆的 /t/！",
+            "transfers": [
+                  {
+                        "word": "fish",
+                        "hl": "fish",
+                        "cn": "鱼/钓鱼"
+                  },
+                  {
+                        "word": "wished",
+                        "hl": "ed",
+                        "cn": "许愿了"
+                  },
+                  {
+                        "word": "washed",
+                        "hl": "ed",
+                        "cn": "洗了"
+                  },
+                  {
+                        "word": "pushed",
+                        "hl": "ed",
+                        "cn": "推了"
+                  }
+            ]
+      },
+      {
+            "word": "flew",
+            "meaning": "飞了 / 飞行 (fly 的过去式)",
+            "IPA": "/fluː/",
+            "type": "action",
+            "blocks": [
+                  "fl",
+                  "ew"
+            ],
+            "mindSpark": "超人起飞！昨天那只雄鹰从雪山顶上 flew 越了整个山谷，酷不酷？",
+            "rule": "不规则动词：fly 变 flew",
+            "ruleDesc": "ew 组合发圆唇的长音 /uː/，飞行动词家族经典过去式。",
+            "transfers": [
+                  {
+                        "word": "fly",
+                        "hl": "fl",
+                        "cn": "飞(原型)"
+                  },
+                  {
+                        "word": "blew",
+                        "hl": "ew",
+                        "cn": "吹了"
+                  },
+                  {
+                        "word": "grew",
+                        "hl": "ew",
+                        "cn": "成长了"
+                  },
+                  {
+                        "word": "threw",
+                        "hl": "ew",
+                        "cn": "扔了"
+                  }
+            ]
+      },
+      {
+            "word": "hopped",
+            "meaning": "单脚跳了 / 小跳了一步 (hop 的过去式)",
+            "IPA": "/hɒpt/",
+            "type": "action",
+            "blocks": [
+                  "hop",
+                  "ped"
+            ],
+            "mindSpark": "小兔子蹦蹦跳跳真可爱！昨天草地上小灰兔敏捷地 hopped 进了灌木丛！",
+            "rule": "短元音重读闭音节：双写 p + ed",
+            "ruleDesc": "一个元音加一个辅音字母结尾，必须双写辅音字母再加 ed，读 /t/！",
+            "transfers": [
+                  {
+                        "word": "hop",
+                        "hl": "hop",
+                        "cn": "小跳(原型)"
+                  },
+                  {
+                        "word": "stopped",
+                        "hl": "ped",
+                        "cn": "停下了"
+                  },
+                  {
+                        "word": "dropped",
+                        "hl": "ped",
+                        "cn": "掉落了"
+                  },
+                  {
+                        "word": "shopped",
+                        "hl": "hop",
+                        "cn": "购物了"
+                  }
+            ]
+      },
+      {
+            "word": "kicked",
+            "meaning": "踢了 (kick 的过去式)",
+            "IPA": "/kɪkt/",
+            "type": "action",
+            "blocks": [
+                  "kick",
+                  "ed"
+            ],
+            "mindSpark": "临门一脚！昨天足球比赛倒数第十秒，前锋一脚 kicked 进了绝杀球！",
+            "rule": "规则动词：ck 清辅音后加 ed 读 /t/",
+            "ruleDesc": "词根 kick 原型已有 ck，后面直接加 ed 发 /t/。",
+            "transfers": [
+                  {
+                        "word": "kick",
+                        "hl": "kick",
+                        "cn": "踢(原型)"
+                  },
+                  {
+                        "word": "licked",
+                        "hl": "ed",
+                        "cn": "舔了"
+                  },
+                  {
+                        "word": "picked",
+                        "hl": "ed",
+                        "cn": "采摘了/挑选了"
+                  },
+                  {
+                        "word": "locked",
+                        "hl": "ed",
+                        "cn": "锁上了"
+                  }
+            ]
+      },
+      {
+            "word": "learnt",
+            "meaning": "学会了 / 学习了 (learn 的过去式)",
+            "IPA": "/lɜːnt/",
+            "type": "action",
+            "blocks": [
+                  "lear",
+                  "nt"
+            ],
+            "mindSpark": "今天在 Kron 老师这里你又 learnt 到了多少神仙记忆口诀？",
+            "rule": "不规则动词：直接加 t",
+            "ruleDesc": "英式英语更青睐用 learnt (发 /t/)，美式常写作 learned。",
+            "transfers": [
+                  {
+                        "word": "learn",
+                        "hl": "lear",
+                        "cn": "学习(原型)"
+                  },
+                  {
+                        "word": "learner",
+                        "hl": "lear",
+                        "cn": "学习者"
+                  },
+                  {
+                        "word": "burnt",
+                        "hl": "nt",
+                        "cn": "烧焦了"
+                  }
+            ]
+      },
+      {
+            "word": "sailed",
+            "meaning": "航行了 / 乘船出海 (sail 的过去式)",
+            "IPA": "/seɪld/",
+            "type": "action",
+            "blocks": [
+                  "sail",
+                  "ed"
+            ],
+            "mindSpark": "加勒比海盗扬帆起航！黑珍珠号顺风 sailed 驶向宝藏荒岛！",
+            "rule": "浊辅音 l 后加 ed 读浊音 /d/",
+            "ruleDesc": "ai 组合发双元音 /eɪ/，清清浊浊，结尾跟随发圆润浊辅音 /d/。",
+            "transfers": [
+                  {
+                        "word": "sail",
+                        "hl": "sail",
+                        "cn": "航行(原型)"
+                  },
+                  {
+                        "word": "sailor",
+                        "hl": "sail",
+                        "cn": "水手"
+                  },
+                  {
+                        "word": "hailed",
+                        "hl": "ed",
+                        "cn": "招呼了"
+                  },
+                  {
+                        "word": "mailed",
+                        "hl": "ed",
+                        "cn": "邮寄了"
+                  }
+            ]
+      },
+      {
+            "word": "skipped",
+            "meaning": "轻快跳跃了 / 跳绳了 / 跳过了 (skip 的过去式)",
+            "IPA": "/skɪpt/",
+            "type": "action",
+            "blocks": [
+                  "skip",
+                  "ped"
+            ],
+            "mindSpark": "课间十分钟摇起大绳！昨天操场上谁一口气 skipped 了一百个大绳没断？",
+            "rule": "短元音 CVC 结构：双写 p + ed",
+            "ruleDesc": "skip 尾部短促，双写 p 保护短元音 /ɪ/，结尾读 /t/。",
+            "transfers": [
+                  {
+                        "word": "skip",
+                        "hl": "skip",
+                        "cn": "跳跃/跳过(原型)"
+                  },
+                  {
+                        "word": "tripped",
+                        "hl": "ped",
+                        "cn": "绊倒了"
+                  },
+                  {
+                        "word": "flipped",
+                        "hl": "ped",
+                        "cn": "翻转了"
+                  },
+                  {
+                        "word": "dipped",
+                        "hl": "ped",
+                        "cn": "蘸了"
+                  }
+            ]
+      },
+      {
+            "word": "threw",
+            "meaning": "扔了 / 抛了 (throw 的过去式)",
+            "IPA": "/θruː/",
+            "type": "action",
+            "blocks": [
+                  "thr",
+                  "ew"
+            ],
+            "mindSpark": "棒球投手全力投球！昨天在海滩上你把飞盘 threw 出了多远？",
+            "rule": "不规则动词：ow 变 ew 读长音 /uː/",
+            "ruleDesc": "咬舌清辅音 th + r 连缀，throw ➔ threw，读作纯净有力的 /θruː/。",
+            "transfers": [
+                  {
+                        "word": "throw",
+                        "hl": "thr",
+                        "cn": "投掷(原型)"
+                  },
+                  {
+                        "word": "grew",
+                        "hl": "ew",
+                        "cn": "长大了"
+                  },
+                  {
+                        "word": "blew",
+                        "hl": "ew",
+                        "cn": "吹了"
+                  },
+                  {
+                        "word": "flew",
+                        "hl": "ew",
+                        "cn": "飞了"
+                  }
+            ]
+      }
+];
+
+    /* ================= 纯原生 Web Audio 触感音效引擎 ================= */
+    const audio = {
+      synth: window.speechSynthesis,
+      ctx: null,
+      getCtx() {
+        try {
+          if (!this.ctx) {
+            const Cls = window.AudioContext || window.webkitAudioContext;
+            if (Cls) this.ctx = new Cls();
+          }
+          if (this.ctx && this.ctx.state === "suspended") {
+            this.ctx.resume();
+          }
+          return this.ctx;
+        } catch (e) {
+          return null;
+        }
+      },
+      speak(text) {
+        try {
+          if (this.synth) {
+            this.synth.cancel();
+            const u = new SpeechSynthesisUtterance(text);
+            u.lang = "en-US";
+            u.rate = 0.9;
+            this.synth.speak(u);
+          }
+        } catch (e) {}
+      },
+      tap() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          const osc = c.createOscillator();
+          const gain = c.createGain();
+          osc.frequency.setValueAtTime(450, now);
+          osc.frequency.exponentialRampToValueAtTime(750, now + 0.04);
+          gain.gain.setValueAtTime(0.1, now);
+          gain.gain.exponentialRampToValueAtTime(0.001, now + 0.05);
+          osc.connect(gain);
+          gain.connect(c.destination);
+          osc.start(now);
+          osc.stop(now + 0.05);
+        } catch (e) {}
+      },
+      bingo() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          [523.25, 659.25, 783.99, 1046.5].forEach((f, i) => {
+            const osc = c.createOscillator();
+            const gain = c.createGain();
+            osc.type = "triangle";
+            osc.frequency.setValueAtTime(f, now + i * 0.05);
+            gain.gain.setValueAtTime(0.12, now + i * 0.05);
+            gain.gain.exponentialRampToValueAtTime(0.001, now + i * 0.05 + 0.25);
+            osc.connect(gain);
+            gain.connect(c.destination);
+            osc.start(now + i * 0.05);
+            osc.stop(now + i * 0.05 + 0.28);
+          });
+        } catch (e) {}
+      },
+      wrong() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          const osc = c.createOscillator();
+          const gain = c.createGain();
+          osc.type = "sawtooth";
+          osc.frequency.setValueAtTime(140, now);
+          osc.frequency.linearRampToValueAtTime(80, now + 0.16);
+          gain.gain.setValueAtTime(0.15, now);
+          gain.gain.linearRampToValueAtTime(0.001, now + 0.16);
+          osc.connect(gain);
+          gain.connect(c.destination);
+          osc.start(now);
+          osc.stop(now + 0.18);
+        } catch (e) {}
+      },
+      laser() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          const osc = c.createOscillator();
+          const gain = c.createGain();
+          osc.type = "sawtooth";
+          osc.frequency.setValueAtTime(900, now);
+          osc.frequency.exponentialRampToValueAtTime(180, now + 0.15);
+          gain.gain.setValueAtTime(0.15, now);
+          gain.gain.exponentialRampToValueAtTime(0.001, now + 0.15);
+          osc.connect(gain);
+          gain.connect(c.destination);
+          osc.start(now);
+          osc.stop(now + 0.16);
+        } catch (e) {}
+      }
+    };
+
+    /* ================= 模块一：多邻国积木背单词交互逻辑 ================= */
+    let currentIndex = 0;
+    let selectedBlocks = [];
+    let availableBlocks = [];
+    let isSuccess = false;
+    let hasCompletedAllWords = false;
+
+    
+    function syncFromAha() {
+      try {
+        const raw = localStorage.getItem('kron_word_current_unit_payload') || localStorage.getItem('kron_saved_words') || localStorage.getItem('kron:word:shared_vocab');
+        if (!raw) return;
+        const data = JSON.parse(raw);
+        const words = Array.isArray(data) ? data : (data.words || []);
+        if (!words || words.length === 0) return;
+
+        const savedMap = new Map();
+        words.forEach(w => {
+          if (w.word) savedMap.set(w.word.toLowerCase().trim(), w);
+        });
+
+        let matched = 0;
+        VOCABULARY.forEach(item => {
+          const wClean = item.word.toLowerCase().trim();
+          const hasDirect = savedMap.has(wClean);
+          const hasContained = Array.from(savedMap.keys()).some(k => k && (wClean.includes(k) || k.includes(wClean)));
+          if (hasDirect || hasContained) {
+            item.isAhaSaved = true;
+            matched++;
+          }
+        });
+
+        words.forEach(w => {
+          const wClean = (w.word || '').toLowerCase().trim();
+          const exists = VOCABULARY.some(v => {
+            const vClean = v.word.toLowerCase().trim();
+            return vClean === wClean || vClean.includes(wClean);
+          });
+          if (!exists && wClean) {
+            let blocks = [w.word];
+            if (wClean === 'instrument') {
+              blocks = ['in', 'stru', 'ment'];
+            } else if (wClean === 'play') {
+              blocks = ['pl', 'ay'];
+            } else if (wClean === 'play an instrument') {
+              blocks = ['pl', 'ay', 'an', 'in', 'stru', 'ment'];
+            } else {
+              const rawParts = w.word.split(/\s+/).filter(Boolean);
+              blocks = rawParts.length > 1 ? rawParts : [w.word];
+            }
+            VOCABULARY.push({
+              word: w.word,
+              meaning: w.translation || 'Aha! 重点词汇',
+              IPA: w.phonetic || `/${wClean}/`,
+              type: w.partOfSpeech || 'saved',
+              blocks,
+              mindSpark: '你在 Kron English Aha! 学习中亲手收藏的重点单词，快来拼出它吧！',
+              rule: 'Aha! 生词本同步词汇',
+              ruleDesc: '来自课堂实战提问与高频语境，属于你的专属记忆！',
+              transfers: [],
+              isAhaSaved: true
+            });
+            matched++;
+          }
+        });
+
+        const banner = document.getElementById('ahaSyncBanner');
+        const countEl = document.getElementById('ahaSyncCount');
+        if (banner && countEl && words.length > 0) {
+          countEl.innerText = words.length;
+          banner.style.display = 'flex';
+        }
+      } catch (e) {
+        console.warn('Aha sync notice:', e);
+      }
+    }
+
+    function initWord() {
+      const item = VOCABULARY[currentIndex];
+      selectedBlocks = [];
+      availableBlocks = item.blocks.map((text, idx) => ({ id: `${text}-${idx}-${Math.random()}`, text }));
+      availableBlocks.sort(() => Math.random() - 0.5);
+      isSuccess = false;
+
+      const pct = ((currentIndex + 1) / VOCABULARY.length) * 100;
+      document.getElementById("progressBar").style.width = `${pct}%`;
+      document.getElementById("wordMeaning").innerText = item.meaning;
+      document.getElementById("wordIPA").innerText = item.IPA;
+      
+      const tagEl = document.getElementById("wordTypeTag");
+      if (item.type === "nature") {
+        tagEl.className = "word-type-tag tag-nature";
+        tagEl.innerText = "🌴 自然地理";
+      } else {
+        tagEl.className = "word-type-tag tag-action";
+        tagEl.innerText = "⚡️ 过去时动作";
+      }
+
+      document.getElementById("successPanel").style.display = "none";
+      document.getElementById("nextBtn").style.display = "none";
+      document.getElementById("footerPlaceholder").style.display = "block";
+
+      renderBlocks();
+    }
+
+    function renderBlocks() {
+      const slots = document.getElementById("slotsContainer");
+      const tray = document.getElementById("trayContainer");
+      slots.innerHTML = "";
+      tray.innerHTML = "";
+
+      if (selectedBlocks.length === 0 && !isSuccess) {
+        slots.innerHTML = `<span class="empty-tip">点击下方发音积木完成拼装</span>`;
+      }
+
+      selectedBlocks.forEach(b => {
+        const btn = document.createElement("button");
+        btn.className = `duo-tile ${isSuccess ? "duo-tile-success" : ""}`;
+        btn.innerText = b.text;
+        btn.onclick = () => {
+          if (isSuccess) return;
+          audio.tap();
+          selectedBlocks = selectedBlocks.filter(x => x.id !== b.id);
+          availableBlocks.push(b);
+          renderBlocks();
+        };
+        slots.appendChild(btn);
+      });
+
+      if (!isSuccess) {
+        availableBlocks.forEach(b => {
+          const btn = document.createElement("button");
+          btn.className = "duo-tile";
+          btn.innerText = b.text;
+          btn.onclick = () => handlePickBlock(b);
+          tray.appendChild(btn);
+        });
+      }
+    }
+
+    function handlePickBlock(b) {
+      if (isSuccess) return;
+      audio.tap();
+      audio.speak(b.text);
+
+      selectedBlocks.push(b);
+      availableBlocks = availableBlocks.filter(x => x.id !== b.id);
+      renderBlocks();
+
+      if (availableBlocks.length === 0) {
+        const userStr = selectedBlocks.map(x => x.text).join("");
+        const realStr = VOCABULARY[currentIndex].blocks.join("");
+
+        if (userStr === realStr) {
+          isSuccess = true;
+          audio.bingo();
+          renderBlocks();
+
+          setTimeout(() => {
+            audio.speak(VOCABULARY[currentIndex].word);
+          }, 250);
+
+          showWordKnowledge();
+        } else {
+          audio.wrong();
+          const slots = document.getElementById("slotsContainer");
+          slots.classList.add("animate-shake");
+          setTimeout(() => {
+            slots.classList.remove("animate-shake");
+            availableBlocks = VOCABULARY[currentIndex].blocks.map((text, idx) => ({ id: `${text}-${idx}-${Math.random()}`, text })).sort(() => Math.random() - 0.5);
+            selectedBlocks = [];
+            renderBlocks();
+          }, 450);
+        }
+      }
+    }
+
+    function showWordKnowledge() {
+      const item = VOCABULARY[currentIndex];
+      
+      document.getElementById("kronMindSpark").innerText = item.mindSpark;
+      document.getElementById("ruleBadge").innerText = `规律：${item.rule}`;
+      document.getElementById("ruleDesc").innerText = item.ruleDesc;
+
+      const grid = document.getElementById("transferGrid");
+      grid.innerHTML = "";
+      item.transfers.forEach(t => {
+        const tile = document.createElement("div");
+        tile.className = "transfer-tile";
+        tile.innerHTML = `
+          <div>
+            <div class="transfer-word">${renderHighlight(t.word, t.hl)}</div>
+            <div class="transfer-cn">${t.cn}</div>
+          </div>
+          <span style="font-size: 13px; color: #CECECE;">🔊</span>
+        `;
+        tile.onclick = () => {
+          audio.tap();
+          audio.speak(t.word);
+        };
+        grid.appendChild(tile);
+      });
+
+      document.getElementById("successPanel").style.display = "block";
+      document.getElementById("nextBtn").style.display = "block";
+      
+      const isLast = currentIndex === VOCABULARY.length - 1;
+      document.getElementById("nextBtn").innerText = isLast ? "🎉 19 词全通关！解锁荒岛塔防 🛡️" : "继续下一个单词 ➔";
+      document.getElementById("footerPlaceholder").style.display = "none";
+
+      if (isLast) {
+        hasCompletedAllWords = true;
+        const lockBtn = document.getElementById("lockStatusBtn");
+        lockBtn.innerText = "🛡️ 荒岛塔防 (已解锁)";
+        lockBtn.style.borderColor = "#00D8D6";
+        lockBtn.style.color = "#00D8D6";
+        triggerConfetti();
+      }
+    }
+
+    function renderHighlight(word, hl) {
+      if (!hl || !word.toLowerCase().includes(hl.toLowerCase())) return word;
+      const reg = new RegExp(`(${hl})`, "i");
+      return word.replace(reg, `<span class="hl-green">$1</span>`);
+    }
+
+    function playCurrentWordAudio() {
+      audio.speak(VOCABULARY[currentIndex].word);
+    }
+
+    function goNextWord() {
+      if (currentIndex < VOCABULARY.length - 1) {
+        currentIndex++;
+        syncFromAha();
+    initWord();
+      } else {
+        switchToGame();
+      }
+    }
+
+    function trySwitchToGame() {
+      if (!hasCompletedAllWords) {
+        alert("🔒 Kron 老师提醒：必须把本单元全部 19 个自然地理与过去动作词汇拼完才能解锁荒岛防御战！");
+        return;
+      }
+      switchToGame();
+    }
+
+    window.addEventListener("keydown", (e) => {
+      const isLearnVisible = document.getElementById("learnView").style.display !== "none";
+      if (isSuccess && isLearnVisible && (e.key === "Enter" || e.key === " ")) {
+        e.preventDefault();
+        goNextWord();
+      }
+    });
+
+    /* ================= 模块二：Blooket 荒岛塔防守卫战逻辑 ================= */
+    let timerSec = 180;
+    let timerInterval = null;
+    let botInterval = null;
+    let autoCookInterval = null;
+    let patienceInterval = null;
+
+    let playerGold = 0;
+    let servedCount = 0;
+    let combo = 1;
+    let currentCustomer = null;
+    let currentPatience = 100;
+
+    let upgrades = {
+      knifeLevel: 0,
+      autoCookLevel: 0,
+      bellLevel: 0
+    };
+
+    let cafePlayers = [
+      { id: "me", name: "你 (荒岛总督)", gold: 0, isBot: false },
+      { id: "cat", name: "🐱 海浪防卫队", gold: 260, isBot: true },
+      { id: "duo", name: "🦉 多邻国突击军", gold: 420, isBot: true },
+      { id: "kron", name: "⚡️ Kron 元素要塞", gold: 580, isBot: true }
+    ];
+
+    const ENEMY_POOL = [
+      { name: "骷髅海盗船长", emoji: "🏴‍☠️", tipBonus: 1.2 },
+      { name: "深海大章鱼", emoji: "🐙", tipBonus: 1.3 },
+      { name: "丛林盗宝贼", emoji: "🥷", tipBonus: 1.1 },
+      { name: "铁甲螃蟹怪", emoji: "🦀", tipBonus: 1.0 },
+      { name: "暗夜吸血蝙蝠", emoji: "🦇", tipBonus: 1.4 }
+    ];
+
+    function switchToGame() {
+      document.getElementById("learnView").style.display = "none";
+      document.getElementById("gameView").style.display = "flex";
+      document.body.classList.add("game-mode");
+      startBattle();
+    }
+
+    function switchToLearn() {
+      clearInterval(timerInterval);
+      clearInterval(botInterval);
+      clearInterval(autoCookInterval);
+      clearInterval(patienceInterval);
+      document.getElementById("gameView").style.display = "none";
+      document.getElementById("learnView").style.display = "flex";
+      document.body.classList.remove("game-mode");
+    }
+
+    function startBattle() {
+      audio.bingo();
+      playerGold = 0;
+      servedCount = 0;
+      combo = 1;
+      timerSec = 180;
+
+      cafePlayers.forEach(p => {
+        if (p.isBot) p.gold = Math.floor(Math.random() * 280 + 200);
+        else p.gold = 0;
+      });
+
+      updateStatsUI();
+      updateLeaderboard();
+
+      document.getElementById("gameStartScreen").style.display = "none";
+      document.getElementById("gameOverScreen").style.display = "none";
+      document.getElementById("gameDishDoneScreen").style.display = "none";
+
+      clearInterval(timerInterval);
+      clearInterval(botInterval);
+      clearInterval(autoCookInterval);
+
+      timerInterval = setInterval(() => {
+        timerSec--;
+        const m = String(Math.floor(timerSec / 60)).padStart(2, '0');
+        const s = String(timerSec % 60).padStart(2, '0');
+        document.getElementById("timeText").innerText = `${m}:${s}`;
+
+        if (timerSec <= 0) {
+          endGame();
+        }
+      }, 1000);
+
+      botInterval = setInterval(() => {
+        cafePlayers.forEach(p => {
+          if (p.isBot) {
+            const add = Math.floor(Math.random() * 85 + 25);
+            p.gold += add;
+          }
+        });
+        updateLeaderboard();
+      }, 2500);
+
+      nextCustomer();
+    }
+
+    function updateStatsUI() {
+      document.getElementById("playerGoldText").innerText = `⚡ ${playerGold}`;
+      document.getElementById("servedCountText").innerText = `🌊 ${servedCount}`;
+      document.getElementById("comboText").innerText = `💥 x${combo}`;
+      const me = cafePlayers.find(p => p.id === 'me');
+      if (me) me.gold = playerGold;
+      updateLeaderboard();
+    }
+
+    function nextCustomer() {
+      clearInterval(patienceInterval);
+      document.getElementById("gameDishDoneScreen").style.display = "none";
+      document.getElementById("gameOrderScreen").style.display = "block";
+
+      const enemy = ENEMY_POOL[Math.floor(Math.random() * ENEMY_POOL.length)];
+      const item = VOCABULARY[Math.floor(Math.random() * VOCABULARY.length)];
+
+      let orderSpeech = "";
+      let qPrompt = "";
+      let correctAns = "";
+      let distractors = [];
+
+      if (item.type === "nature") {
+        orderSpeech = `“敌军进攻：目标荒岛「${item.meaning}」！”`;
+        qPrompt = `防御锁定：请选择对应的英语单词：`;
+        correctAns = item.word;
+        distractors = VOCABULARY.filter(w => w.type === "nature" && w.word !== item.word).map(w => w.word).slice(0, 3);
+      } else {
+        const actionMap = {
+          "bounced": "bounce (弹跳)",
+          "caught": "catch (抓住)",
+          "fished": "fish (钓鱼)",
+          "flew": "fly (飞翔)",
+          "hopped": "hop (小跳)",
+          "kicked": "kick (踢球)",
+          "learnt": "learn (学会)",
+          "sailed": "sail (航海)",
+          "skipped": "skip (跳跃)",
+          "threw": "throw (投掷)"
+        };
+        const proto = actionMap[item.word] || item.meaning;
+        orderSpeech = `“战术识别：动作「${proto}」的过去式是？”`;
+        qPrompt = `过去式判定：选择正确的过去动词发射炮火：`;
+        correctAns = item.word;
+        distractors = VOCABULARY.filter(w => w.type === "action" && w.word !== item.word).map(w => w.word).slice(0, 3);
+      }
+
+      currentCustomer = {
+        name: enemy.name,
+        emoji: enemy.emoji,
+        tipBonus: enemy.tipBonus,
+        targetWord: item,
+        ans: correctAns
+      };
+
+      document.getElementById("custEmoji").innerText = currentCustomer.emoji;
+      document.getElementById("custName").innerText = currentCustomer.name;
+      document.getElementById("custOrderSpeech").innerText = orderSpeech;
+      document.getElementById("gameQuestionPrompt").innerText = qPrompt;
+
+      const opts = [correctAns, ...distractors].sort(() => Math.random() - 0.5);
+      const optGrid = document.getElementById("gameOptionGrid");
+      optGrid.innerHTML = "";
+
+      opts.forEach(opt => {
+        const btn = document.createElement("button");
+        btn.className = "duo-btn duo-btn-dark game-opt-btn";
+        btn.innerText = opt;
+        btn.onclick = () => handleOrderAnswer(opt);
+        optGrid.appendChild(btn);
+      });
+
+      currentPatience = 100;
+      const patienceSpeed = upgrades.bellLevel > 0 ? 1.0 : 1.6;
+      patienceInterval = setInterval(() => {
+        currentPatience -= patienceSpeed;
+        const pFill = document.getElementById("patienceBar");
+        pFill.style.width = `${Math.max(0, currentPatience)}%`;
+        if (currentPatience > 50) pFill.style.backgroundColor = "#00D8D6";
+        else if (currentPatience > 25) pFill.style.backgroundColor = "#FF9600";
+        else pFill.style.backgroundColor = "#FF4B4B";
+
+        if (currentPatience <= 0) {
+          clearInterval(patienceInterval);
+          handleCustomerLeave();
+        }
+      }, 100);
+    }
+
+    function handleOrderAnswer(chosen) {
+      if (chosen === currentCustomer.ans) {
+        clearInterval(patienceInterval);
+        audio.laser();
+        servedCount++;
+        combo++;
+
+        let baseTip = Math.floor(200 * currentCustomer.tipBonus);
+        if (upgrades.knifeLevel > 0) baseTip = Math.floor(baseTip * 1.5);
+        const comboBonus = Math.floor(combo * 25);
+        const totalTip = baseTip + comboBonus;
+        playerGold += totalTip;
+
+        updateStatsUI();
+
+        document.getElementById("gameOrderScreen").style.display = "none";
+        document.getElementById("gameDishDoneScreen").style.display = "block";
+        document.getElementById("dishDoneIcon").innerText = `💥⚡🌊`;
+        document.getElementById("dishDoneTitle").innerText = `击溃敌军！+${totalTip} ⚡`;
+        document.getElementById("dishDoneDesc").innerText = `${currentCustomer.name} 被巨浪流星炮击沉！荒岛收获了海量水晶能量（连击加成 +${comboBonus}）！`;
+
+        setTicker(`💥 战报！成功击沉 ${currentCustomer.name}，能量狂飙 +${totalTip} 点！`);
+      } else {
+        audio.wrong();
+        combo = 1;
+        updateStatsUI();
+        setTicker(`❌ 炮塔偏离！敌舰逼近，连击重置！`);
+      }
+    }
+
+    function handleCustomerLeave() {
+      audio.wrong();
+      combo = 1;
+      updateStatsUI();
+      setTicker(`💨 敌舰突破！${currentCustomer.name} 偷走了荒岛物资并逃脱！`);
+      nextCustomer();
+    }
+
+    function setTicker(msg) {
+      document.getElementById("tickerMsg").innerText = msg;
+    }
+
+    function updateLeaderboard() {
+      const sorted = [...cafePlayers].sort((a, b) => b.gold - a.gold);
+      const grid = document.getElementById("leaderboardGrid");
+      grid.innerHTML = "";
+      sorted.forEach((p, idx) => {
+        const medal = idx === 0 ? "🥇 " : idx === 1 ? "🥈 " : idx === 2 ? "🥉 " : "#4 ";
+        const card = document.createElement("div");
+        card.className = `lb-card ${p.id === 'me' ? 'is-me' : ''}`;
+        card.innerHTML = `
+          <div class="lb-name">${medal}${p.name}</div>
+          <div class="lb-gold">${p.gold} ⚡</div>
+        `;
+        grid.appendChild(card);
+      });
+    }
+
+    function openMarket() {
+      document.getElementById("marketDrawer").style.display = "flex";
+    }
+    function closeMarket() {
+      document.getElementById("marketDrawer").style.display = "none";
+    }
+
+    function buyUpgrade(type, cost) {
+      if (playerGold < cost) {
+        alert("⚡ 防守能量不足，快去多击溃几艘敌舰吧！");
+        return;
+      }
+      playerGold -= cost;
+      audio.laser();
+
+      if (type === 'knife') {
+        upgrades.knifeLevel++;
+        alert("⚡ 离子充能矩阵升级完成！单次炮击收益提升 50%！");
+      } else if (type === 'autoCook') {
+        upgrades.autoCookLevel++;
+        if (!autoCookInterval) {
+          autoCookInterval = setInterval(() => {
+            playerGold += 60 * upgrades.autoCookLevel;
+            updateStatsUI();
+          }, 3000);
+        }
+        alert("🌊 潮汐发电机部署完成！每 3 秒自动产出能量！");
+      } else if (type === 'bell') {
+        upgrades.bellLevel++;
+        alert("🌪️ 暴风减速带开启！敌军航速大幅迟滞！");
+      }
+
+      updateStatsUI();
+      document.getElementById("playerBuffs").innerText = 
+        `🌊 巨浪炮: ${upgrades.autoCookLevel}级 | ⚡ 闪电塔: +${upgrades.knifeLevel * 50}%`;
+      closeMarket();
+    }
+
+    function endGame() {
+      clearInterval(timerInterval);
+      clearInterval(botInterval);
+      clearInterval(autoCookInterval);
+      clearInterval(patienceInterval);
+
+      document.getElementById("gameOrderScreen").style.display = "none";
+      document.getElementById("gameDishDoneScreen").style.display = "none";
+      document.getElementById("gameOverScreen").style.display = "block";
+
+      const sorted = [...cafePlayers].sort((a, b) => b.gold - a.gold);
+      const myRank = sorted.findIndex(p => p.id === 'me') + 1;
+
+      if (myRank === 1) {
+        document.getElementById("finalTrophy").innerText = "👑";
+        document.getElementById("finalRankTitle").innerText = "荒岛最高统治官！";
+        document.getElementById("finalRankDesc").innerText = `防线能量高达 ${playerGold} ⚡！海盗闻风丧胆！`;
+        triggerConfetti();
+      } else {
+        document.getElementById("finalTrophy").innerText = "🥈";
+        document.getElementById("finalRankTitle").innerText = `荣获全海域第 ${myRank} 名！`;
+        document.getElementById("finalRankDesc").innerText = `能量累积 ${playerGold} ⚡，荒岛依然固若金汤！`;
+      }
+
+      const podium = document.getElementById("finalPodium");
+      podium.innerHTML = "";
+      sorted.forEach((p, idx) => {
+        const row = document.createElement("div");
+        row.style.cssText = "display: flex; justify-content: space-between; padding: 6px 0; font-size: 13px; font-weight: 800;";
+        row.innerHTML = `
+          <span style="color: ${p.id === 'me' ? '#00D8D6' : '#FFF'};">${idx + 1}. ${p.name}</span>
+          <span style="color: #00D8D6;">${p.gold} ⚡</span>
+        `;
+        podium.appendChild(row);
+      });
+    }
+
+    function triggerConfetti() {
+      const canvas = document.getElementById("confettiCanvas");
+      const ctx = canvas.getContext("2d");
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+
+      const particles = [];
+      const colors = ["#00D8D6", "#1CB0F6", "#58CC02", "#FFC800", "#FF4B4B"];
+
+      for (let i = 0; i < 70; i++) {
+        particles.push({
+          x: canvas.width / 2,
+          y: canvas.height / 2,
+          vx: (Math.random() - 0.5) * 14,
+          vy: (Math.random() - 0.7) * 16,
+          size: Math.random() * 8 + 4,
+          color: colors[Math.floor(Math.random() * colors.length)],
+          rotation: Math.random() * 360,
+          vRot: (Math.random() - 0.5) * 10,
+          opacity: 1
+        });
+      }
+
+      let frames = 0;
+      function render() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        particles.forEach(p => {
+          p.x += p.vx;
+          p.y += p.vy;
+          p.vy += 0.35;
+          p.rotation += p.vRot;
+          p.opacity -= 0.012;
+
+          ctx.save();
+          ctx.translate(p.x, p.y);
+          ctx.rotate((p.rotation * Math.PI) / 180);
+          ctx.fillStyle = p.color;
+          ctx.globalAlpha = Math.max(0, p.opacity);
+          ctx.fillRect(-p.size / 2, -p.size / 2, p.size, p.size);
+          ctx.restore();
+        });
+
+        frames++;
+        if (frames < 90) {
+          requestAnimationFrame(render);
+        } else {
+          ctx.clearRect(0, 0, canvas.width, canvas.height);
+        }
+      }
+      render();
+    }
+
+    syncFromAha();
+    initWord();
+  </script>
+</body>
+</html>

@@ -1,0 +1,2244 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Power Up 3 · Unit 3: 身体急救营 (LexiBlock + Wordwall 极速战地小医生)</title>
+  <style>
+    :root {
+      --duo-green: #58CC02;
+      --duo-green-shadow: #46A302;
+      --duo-green-hover: #61E002;
+      --duo-blue: #1CB0F6;
+      --duo-blue-shadow: #1899D6;
+      --duo-gold: #FFC800;
+      --duo-gold-shadow: #E5A800;
+      --duo-orange: #FF9600;
+      --duo-orange-shadow: #E58700;
+      --duo-red: #FF4B4B;
+      --duo-red-shadow: #EA2B2B;
+      --duo-purple: #CE82FF;
+      --duo-purple-shadow: #A550DF;
+      --bg-light: #F7F7F9;
+      --bg-card: #FFFFFF;
+      --text-main: #1D1D1F;
+      --text-body: #4B4B4B;
+      --text-muted: #777777;
+      --text-sub: #AFAFAF;
+      --border-light: #E5E5E5;
+      --border-tile: #CECECE;
+      --radius-sm: 12px;
+      --radius-md: 16px;
+      --radius-lg: 24px;
+      --radius-pill: 999px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      user-select: none;
+      -webkit-tap-highlight-color: transparent;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", "Segoe UI", Roboto, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-light);
+      color: var(--text-body);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      transition: background-color 0.3s ease;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body.game-mode {
+      background-color: #0D161F;
+      color: #FFFFFF;
+    }
+
+    #app {
+      width: 100%;
+      max-width: 500px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 16px;
+      position: relative;
+    }
+
+    /* 多邻国 3D 触感按键系统 */
+    .duo-btn {
+      position: relative;
+      border-radius: 18px;
+      font-weight: 900;
+      cursor: pointer;
+      transition: all 0.08s ease;
+      text-align: center;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      user-select: none;
+      border: none;
+    }
+    .duo-btn:active {
+      transform: translateY(3px);
+      border-bottom-width: 2px !important;
+    }
+
+    .duo-btn-green {
+      background: var(--duo-green);
+      color: #FFFFFF;
+      border-bottom: 5px solid var(--duo-green-shadow);
+    }
+    .duo-btn-green:hover { background: var(--duo-green-hover); }
+
+    .duo-btn-gold {
+      background: var(--duo-gold);
+      color: #7A5200;
+      border-bottom: 5px solid var(--duo-gold-shadow);
+    }
+
+    .duo-btn-red {
+      background: var(--duo-red);
+      color: #FFFFFF;
+      border-bottom: 5px solid var(--duo-red-shadow);
+    }
+
+    .duo-btn-blue {
+      background: var(--duo-blue);
+      color: #FFFFFF;
+      border-bottom: 5px solid var(--duo-blue-shadow);
+    }
+
+    .duo-btn-dark {
+      background: #172331;
+      color: #FFFFFF;
+      border: 2px solid #283C52;
+      border-bottom: 5px solid #101924;
+    }
+    .duo-btn-dark:hover { background: #203144; }
+
+    /* 3D 积木块 */
+    .duo-tile {
+      background-color: #FFFFFF;
+      color: var(--text-body);
+      border: 2px solid var(--border-light);
+      border-bottom: 4px solid var(--border-tile);
+      border-radius: 16px;
+      font-size: 20px;
+      font-weight: 900;
+      padding: 12px 18px;
+      cursor: pointer;
+      transition: all 0.08s ease-in-out;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      user-select: none;
+    }
+    .duo-tile:hover { background-color: #F8F8F8; }
+    .duo-tile:active {
+      transform: translateY(2px);
+      border-bottom-width: 2px;
+    }
+
+    .duo-tile-success {
+      background-color: var(--duo-green) !important;
+      color: #FFFFFF !important;
+      border-color: var(--duo-green) !important;
+      border-bottom-color: var(--duo-green-shadow) !important;
+      transform: scale(1.04);
+    }
+
+    /* 学习阶段顶部导航 */
+    .learn-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 12px;
+      gap: 12px;
+    }
+    .unit-tag {
+      background: #FFEBEE;
+      color: #C62828;
+      font-size: 11px;
+      font-weight: 900;
+      padding: 4px 10px;
+      border-radius: 999px;
+      letter-spacing: 0.5px;
+      white-space: nowrap;
+    }
+    .progress-track {
+      flex: 1;
+      height: 14px;
+      background: #E5E5E5;
+      border-radius: var(--radius-pill);
+      overflow: hidden;
+      position: relative;
+    }
+    .progress-fill {
+      height: 100%;
+      background: var(--duo-green);
+      border-radius: var(--radius-pill);
+      transition: width 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+    .mode-switch-btn {
+      background: #FFF;
+      border: 2px solid #E5E5E5;
+      border-radius: var(--radius-pill);
+      padding: 6px 12px;
+      font-size: 12px;
+      font-weight: 800;
+      color: #777;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      transition: all 0.15s ease;
+      white-space: nowrap;
+    }
+    .mode-switch-btn:hover {
+      border-color: var(--duo-red);
+      color: var(--duo-red);
+    }
+
+    /* 单词学习核心区 */
+    .word-header {
+      text-align: center;
+      margin-bottom: 16px;
+    }
+    .word-meaning {
+      font-size: 26px;
+      font-weight: 900;
+      color: var(--text-main);
+      margin-bottom: 6px;
+      letter-spacing: -0.5px;
+    }
+    .word-type-tag {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 800;
+      padding: 2px 8px;
+      border-radius: 6px;
+      margin-left: 6px;
+      vertical-align: middle;
+    }
+    .tag-body { background: #E3F2FD; color: #1565C0; }
+    .tag-ill { background: #FFEBEE; color: #D32F2F; }
+
+    .word-ipa-btn {
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      font-size: 15px;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      cursor: pointer;
+      padding: 4px 10px;
+      border-radius: var(--radius-pill);
+      transition: background 0.15s ease;
+    }
+    .word-ipa-btn:hover { background: #EDEDED; }
+
+    /* 积木槽与待选区 */
+    .slots-container {
+      min-height: 64px;
+      border-bottom: 2px dashed var(--border-tile);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 10px 0;
+      margin-bottom: 20px;
+    }
+    .tray-container {
+      min-height: 80px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    .empty-tip {
+      color: var(--text-sub);
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    /* Kron 老师脑洞微场景卡片 */
+    .kron-spark-card {
+      background: linear-gradient(135deg, #FFF9DB 0%, #FFF3BF 100%);
+      border: 2px solid #FFE066;
+      border-radius: 18px;
+      padding: 14px 16px;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      box-shadow: 0 4px 12px rgba(245, 159, 0, 0.08);
+    }
+    .kron-avatar {
+      font-size: 28px;
+      line-height: 1;
+      filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+    }
+    .kron-spark-content {
+      flex: 1;
+    }
+    .kron-spark-title {
+      font-size: 12px;
+      font-weight: 900;
+      color: #D9480F;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .kron-spark-text {
+      font-size: 14px;
+      color: #495057;
+      font-weight: 700;
+      line-height: 1.45;
+    }
+
+    /* 举一反三面板 */
+    .transfer-panel {
+      background: var(--bg-card);
+      border: 2px solid var(--border-light);
+      border-radius: 20px;
+      padding: 14px;
+      margin-top: 10px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.04);
+    }
+    .rule-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      margin-bottom: 12px;
+      line-height: 1.4;
+    }
+    .rule-badge {
+      background: #E8F5E9;
+      color: #2E7D32;
+      font-size: 11px;
+      font-weight: 900;
+      padding: 3px 8px;
+      border-radius: 6px;
+      white-space: nowrap;
+    }
+    .rule-desc {
+      font-size: 12px;
+      font-weight: 700;
+      color: #555;
+    }
+    .transfer-title {
+      font-size: 11px;
+      font-weight: 900;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 8px;
+    }
+    .transfer-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+    .transfer-tile {
+      background: #FAFAFA;
+      border: 1.5px solid var(--border-light);
+      border-radius: 12px;
+      padding: 8px 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+      transition: all 0.1s ease;
+    }
+    .transfer-tile:hover {
+      background: #F0FDF4;
+      border-color: var(--duo-green);
+    }
+    .transfer-word {
+      font-weight: 900;
+      font-size: 14px;
+      color: var(--text-main);
+    }
+    .transfer-cn {
+      font-size: 11px;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+    .hl-green {
+      color: var(--duo-green);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    /* 动效 */
+    @keyframes popIn {
+      0% { opacity: 0; transform: scale(0.92) translateY(8px); }
+      100% { opacity: 1; transform: scale(1) translateY(0); }
+    }
+    .animate-pop-in {
+      animation: popIn 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+    }
+
+    @keyframes shake {
+      0%, 100% { transform: translateX(0); }
+      20%, 60% { transform: translateX(-8px); }
+      40%, 80% { transform: translateX(8px); }
+    }
+    .animate-shake {
+      animation: shake 0.4s ease-in-out;
+    }
+
+    /* ================= Wordwall 战地小医生极速急诊独立游戏模块 ================= */
+    .game-top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+    .timer-pill {
+      background: #172331;
+      border: 2px solid #283C52;
+      border-radius: var(--radius-pill);
+      padding: 6px 14px;
+      font-size: 14px;
+      font-weight: 900;
+      color: #FF4B4B;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .medic-stats-row {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+    .medic-stat-card {
+      flex: 1;
+      background: #141F2C;
+      border: 1px solid #233448;
+      border-radius: 16px;
+      padding: 10px 12px;
+      text-align: center;
+    }
+    .stat-label {
+      font-size: 11px;
+      color: #8C9BAE;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+    .stat-val {
+      font-size: 20px;
+      font-weight: 900;
+      color: #FFC800;
+    }
+
+    /* 战地急救仓舞台 */
+    .medic-stage {
+      background: #121B27;
+      border: 2px solid #24354A;
+      border-radius: 24px;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 14px;
+      min-height: 290px;
+      justify-content: center;
+    }
+
+    .ecg-line {
+      width: 100%;
+      height: 20px;
+      background: repeating-linear-gradient(90deg, transparent, transparent 15px, rgba(88,204,2,0.15) 15px, rgba(88,204,2,0.15) 30px);
+      margin-bottom: 10px;
+      position: relative;
+    }
+
+    .patient-bubble {
+      background: #1E2D3E;
+      border: 2px solid #354B64;
+      border-radius: 18px;
+      padding: 10px 16px;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      max-width: 90%;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+    }
+    .patient-symptom-tag {
+      font-size: 18px;
+      font-weight: 900;
+      color: #FF4B4B;
+    }
+    .patient-avatar-box {
+      position: relative;
+      margin-bottom: 8px;
+    }
+    .patient-emoji {
+      font-size: 64px;
+      filter: drop-shadow(0 4px 8px rgba(0,0,0,0.4));
+      display: inline-block;
+      animation: pulsePatient 1.5s ease-in-out infinite;
+    }
+    @keyframes pulsePatient {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.06); }
+    }
+    .patient-health-bar {
+      width: 130px;
+      height: 8px;
+      background: #24354A;
+      border-radius: 999px;
+      overflow: hidden;
+      margin: 0 auto;
+    }
+    .patient-health-fill {
+      height: 100%;
+      background: #58CC02;
+      border-radius: 999px;
+      transition: width 0.1s linear, background-color 0.3s ease;
+    }
+
+    /* 答题选项网格 */
+    .game-opt-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      width: 100%;
+    }
+    .game-opt-btn {
+      padding: 14px 10px;
+      font-size: 15px;
+      line-height: 1.3;
+      border-radius: 16px;
+    }
+
+    /* 战报栏 */
+    .ticker-bar {
+      background: #141F2C;
+      border: 1px solid #26384D;
+      border-radius: var(--radius-pill);
+      padding: 6px 14px;
+      font-size: 12px;
+      color: #8DA1BA;
+      font-weight: 700;
+      margin-bottom: 12px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    /* 实时排行榜 */
+    .leaderboard-mini {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 6px;
+      margin-bottom: 12px;
+    }
+    .lb-card {
+      background: #121B27;
+      border: 1px solid #233448;
+      border-radius: 12px;
+      padding: 8px 6px;
+      text-align: center;
+      transition: all 0.2s ease;
+    }
+    .lb-card.is-me {
+      border-color: #FF4B4B;
+      background: #1E2D3E;
+    }
+    .lb-name {
+      font-size: 11px;
+      color: #8C9BAE;
+      font-weight: 800;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .lb-gold {
+      font-size: 13px;
+      font-weight: 900;
+      color: #FFFFFF;
+    }
+
+    /* 急救站升级抽屉 */
+    .market-drawer {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.75);
+      backdrop-filter: blur(8px);
+      z-index: 100;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .market-modal {
+      background: #101824;
+      border: 2px solid #FF4B4B;
+      border-radius: 28px;
+      width: 100%;
+      max-width: 420px;
+      padding: 22px;
+      box-shadow: 0 20px 50px rgba(255,75,75,0.25);
+    }
+    .market-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #172331;
+      border: 1px solid #283C52;
+      border-radius: 16px;
+      padding: 12px;
+      margin-bottom: 10px;
+    }
+
+    #confettiCanvas {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 999;
+    }
+  </style>
+</head>
+<body>
+
+  <canvas id="confettiCanvas"></canvas>
+
+  <div id="app">
+    
+    <!-- ==================== 视图 1：多邻国积木背单词 + Kron 脑洞场景 ==================== -->
+    <div id="learnView" style="display: flex; flex-direction: column; justify-content: space-between; min-height: calc(100vh - 32px);">
+      <!-- 顶部进度与切换 -->
+      <header class="learn-header">
+        <span class="unit-tag">PU3 · UNIT 3</span>
+        <div class="progress-track">
+          <div class="progress-fill" id="progressBar" style="width: 0%;"></div>
+        </div>
+        <button class="mode-switch-btn" id="lockStatusBtn" onclick="trySwitchToGame()">
+          🔒 战地急救 (需全通)
+        </button>
+      </header>
+      <!-- Aha! 生词本双向打通同步横幅 -->
+      <div id="ahaSyncBanner" style="display:none; align-items: center; justify-content: space-between; background: linear-gradient(135deg, rgba(88,204,2,0.12), rgba(28,176,246,0.12)); border: 1.5px solid #58CC02; border-radius: 14px; padding: 8px 12px; margin-bottom: 12px; font-size: 11px; font-weight: 800; color: #1D1D1F;">
+        <div style="display: flex; align-items: center; gap: 6px;">
+          <span>⚡</span>
+          <span>已成功打通并同步来自 <strong>Aha! 生词本</strong> 的 <span id="ahaSyncCount" style="color: #46A302; font-size: 13px;">0</span> 个重点词汇</span>
+        </div>
+        <button onclick="document.getElementById('ahaSyncBanner').style.display='none'" style="background:none; border:none; color:#888; cursor:pointer; font-size:12px; font-weight:bold;">✕</button>
+      </div>
+
+      <!-- 核心积木交互区 -->
+      <div style="margin: auto 0; padding: 12px 0;">
+        <div class="word-header">
+          <div class="word-meaning">
+            <span id="wordMeaning">...</span>
+            <span class="word-type-tag" id="wordTypeTag">Body</span>
+          </div>
+          <button class="word-ipa-btn" onclick="playCurrentWordAudio()">
+            <span id="wordIPA">...</span>
+            <span>🔊</span>
+          </button>
+        </div>
+
+        <!-- 拼装槽 -->
+        <div class="slots-container" id="slotsContainer"></div>
+
+        <!-- 待选积木区 -->
+        <div class="tray-container" id="trayContainer"></div>
+
+        <!-- 通关后呈现：Kron 老师脑洞微场景 + 规律与举一反三面板 -->
+        <div id="successPanel" style="display: none;" class="animate-pop-in">
+          <!-- Kron 脑洞小问题 -->
+          <div class="kron-spark-card">
+            <div class="kron-avatar">👨🏻‍🏫</div>
+            <div class="kron-spark-content">
+              <div class="kron-spark-title">⚡️ Kron 老师脑洞发问</div>
+              <div class="kron-spark-text" id="kronMindSpark">...</div>
+            </div>
+          </div>
+
+          <!-- 举一反三与拼读规律 -->
+          <div class="transfer-panel">
+            <div class="rule-row">
+              <span class="rule-badge" id="ruleBadge">...</span>
+              <span class="rule-desc" id="ruleDesc">...</span>
+            </div>
+            <div class="transfer-title">举一反三单词积木（点击听纯正发音）</div>
+            <div class="transfer-grid" id="transferGrid"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 底部绿色大按键 -->
+      <div style="padding-top: 14px;">
+        <button class="duo-btn duo-btn-green" id="nextBtn" style="width: 100%; padding: 16px; font-size: 18px; display: none;" onclick="goNextWord()">
+          继续
+        </button>
+        <div id="footerPlaceholder" style="text-align: center; color: #AFAFAF; font-size: 13px; font-weight: 700; height: 55px; line-height: 55px;">
+          点击下方发音积木完成拼装
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== 视图 2：Wordwall 战地小医生极速急诊独立游戏 ==================== -->
+    <div id="gameView" style="display: none; flex-direction: column; justify-content: space-between; min-height: calc(100vh - 32px);">
+      <div>
+        <div class="game-top-bar">
+          <div class="timer-pill" id="timerDisplay">
+            <span>🚨</span>
+            <span id="timeText">03:00</span>
+          </div>
+          <div style="display: flex; gap: 8px;">
+            <button class="duo-btn duo-btn-red" style="padding: 6px 12px; font-size: 12px;" onclick="openMarket()">
+              💊 医疗军备
+            </button>
+            <button class="duo-btn duo-btn-dark" style="padding: 6px 12px; font-size: 12px;" onclick="switchToLearn()">
+              📖 返回复习
+            </button>
+          </div>
+        </div>
+
+        <!-- 救护站指标 -->
+        <div class="medic-stats-row">
+          <div class="medic-stat-card">
+            <div class="stat-label">拯救积分</div>
+            <div class="stat-val" id="playerGoldText">💉 0</div>
+          </div>
+          <div class="medic-stat-card">
+            <div class="stat-label">痊愈出院</div>
+            <div class="stat-val" id="servedCountText">🩹 0</div>
+          </div>
+          <div class="medic-stat-card">
+            <div class="stat-label">抢救连击</div>
+            <div class="stat-val" id="comboText" style="color: #FF4B4B;">⚡ x1</div>
+          </div>
+        </div>
+
+        <!-- 跑马灯战报 -->
+        <div class="ticker-bar" id="tickerMsg">
+          🚨 战地小医院急救警报拉响！对准病灶速射药品救人！
+        </div>
+
+        <!-- 实时天梯排行榜 -->
+        <div class="leaderboard-mini" id="leaderboardGrid"></div>
+      </div>
+
+      <!-- 核心急救病房舞台 -->
+      <div class="medic-stage" id="medicStage">
+        
+        <!-- 初始营业确认屏 -->
+        <div id="gameStartScreen" style="text-align: center; padding: 10px;">
+          <div style="font-size: 54px; margin-bottom: 8px;">🚑</div>
+          <h1 style="font-size: 22px; font-weight: 900; margin-bottom: 6px; color: #FF4B4B;">
+            WORDWALL · 极速战地小医生
+          </h1>
+          <p style="font-size: 13px; color: #8C9BAE; line-height: 1.5; margin-bottom: 20px;">
+            恭喜吃透 19 个身体部位与急救词汇！<br/>急诊室已被负伤的小怪兽挤爆！<br/>看准症状对症下药，化身全城王牌主治医师！
+          </p>
+          <button class="duo-btn duo-btn-red" style="width: 100%; padding: 15px; font-size: 16px;" onclick="startBattle()">
+            开启急诊接诊 ➔
+          </button>
+        </div>
+
+        <!-- 核心急救答题屏 -->
+        <div id="gameOrderScreen" style="display: none; width: 100%; text-align: center;">
+          <div class="patient-avatar-box">
+            <div class="patient-emoji" id="custEmoji">👾</div>
+          </div>
+          
+          <div class="patient-bubble" style="margin: 0 auto 12px auto;">
+            <span style="font-size: 18px;">🩺</span>
+            <div style="text-align: left;">
+              <div style="font-size: 11px; color: #8DA1BA; font-weight: 800;" id="custName">伤员怪兽</div>
+              <div class="patient-symptom-tag" id="custOrderSpeech">“哎哟！我 stomach-ache 疼死啦！”</div>
+            </div>
+          </div>
+
+          <div style="margin-bottom: 12px;">
+            <div class="patient-health-bar">
+              <div class="patient-health-fill" id="patienceBar" style="width: 100%;"></div>
+            </div>
+          </div>
+
+          <div style="font-size: 13px; font-weight: 900; color: #E5E5E5; margin-bottom: 14px;" id="gameQuestionPrompt">
+            紧急诊断：对准患病部位精准治疗：
+          </div>
+
+          <div class="game-opt-grid" id="gameOptionGrid"></div>
+        </div>
+
+        <!-- 急救成功爽感反馈屏 -->
+        <div id="gameDishDoneScreen" style="display: none; text-align: center;" class="animate-pop-in">
+          <div id="dishDoneIcon" style="font-size: 60px; margin-bottom: 8px;">✨❤️‍🩹✨</div>
+          <h3 id="dishDoneTitle" style="font-size: 22px; font-weight: 900; color: #58CC02; margin-bottom: 6px;">
+            抢救成功！+320 💉
+          </h3>
+          <p id="dishDoneDesc" style="font-size: 13px; color: #8DA1BA; margin-bottom: 18px;">
+            病患小怪兽瞬间生龙活虎，感激涕零地出院了！
+          </p>
+          <button class="duo-btn duo-btn-green" style="width: 100%; padding: 14px; font-size: 16px;" onclick="nextCustomer()">
+            抢救下一位伤员 ➔
+          </button>
+        </div>
+
+        <!-- 终局结算屏 -->
+        <div id="gameOverScreen" style="display: none; text-align: center; width: 100%;" class="animate-pop-in">
+          <div style="font-size: 56px; margin-bottom: 8px;" id="finalTrophy">🏆</div>
+          <h2 style="font-size: 24px; font-weight: 900; color: #FFC800;" id="finalRankTitle">传奇神医勋章！</h2>
+          <p style="font-size: 12px; color: #8C9BAE; margin-bottom: 16px;" id="finalRankDesc">今晚拯救了整座怪兽城市！</p>
+          <div style="background: #172331; border-radius: 20px; padding: 14px; margin-bottom: 18px;" id="finalPodium"></div>
+          <button class="duo-btn duo-btn-red" style="width: 100%; padding: 14px; font-size: 16px;" onclick="startBattle()">
+            再上一轮夜班 🔄
+          </button>
+        </div>
+
+      </div>
+
+      <!-- 底部 Buff 栏 -->
+      <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 10px; font-size: 11px; font-weight: 800; color: #5B6F8E;">
+        <span>WORDWALL MEDIC · KRON 独家定制版</span>
+        <span id="playerBuffs">💉 强心剂: 0级 | 🩹 超级创口贴: 基础</span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- 医疗装备升级抽屉 -->
+  <div class="market-drawer" id="marketDrawer">
+    <div class="market-modal">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+        <h3 style="font-size: 18px; font-weight: 900; color: #FF4B4B;">💊 战地医疗军备处</h3>
+        <button style="background: none; border: none; color: #8C9BAE; font-size: 22px; cursor: pointer;" onclick="closeMarket()">✕</button>
+      </div>
+
+      <div class="market-item">
+        <div>
+          <div style="font-weight: 900; font-size: 14px; color: #FFF;">💉 极速肾上腺素</div>
+          <div style="font-size: 11px; color: #8C9BAE;">单次急救成功积分永久提升 50%</div>
+        </div>
+        <button class="duo-btn duo-btn-red" style="padding: 8px 12px; font-size: 12px;" onclick="buyUpgrade('knife', 400)">
+          400 💉
+        </button>
+      </div>
+
+      <div class="market-item">
+        <div>
+          <div style="font-weight: 900; font-size: 14px; color: #FFF;">🤖 自动挂号诊疗仪</div>
+          <div style="font-size: 11px; color: #8C9BAE;">每 3 秒自动入账 60 点医术积分</div>
+        </div>
+        <button class="duo-btn duo-btn-red" style="padding: 8px 12px; font-size: 12px;" onclick="buyUpgrade('autoCook', 600)">
+          600 💉
+        </button>
+      </div>
+
+      <div class="market-item">
+        <div>
+          <div style="font-weight: 900; font-size: 14px; color: #FFF;">🧊 极光冷敷贴</div>
+          <div style="font-size: 11px; color: #8C9BAE;">病患病情恶化流失速度减缓 40%</div>
+        </div>
+        <button class="duo-btn duo-btn-red" style="padding: 8px 12px; font-size: 12px;" onclick="buyUpgrade('bell', 350)">
+          350 💉
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    /* ================= Unit 3: 19 词全量数据库 (身体部位与病痛急救) ================= */
+    const VOCABULARY = [
+      {
+            "word": "back",
+            "meaning": "背部 / 后背",
+            "IPA": "/bæk/",
+            "type": "body",
+            "blocks": [
+                  "b",
+                  "ack"
+            ],
+            "mindSpark": "低头玩手机太久，你的 back 会不会酸痛？快挺胸抬头拯救脊椎！",
+            "rule": "短元音 a + ck 清脆爆破 /k/",
+            "ruleDesc": "a 发张大嘴的 /æ/，词尾 ck 发干脆利落的清辅音 /k/。",
+            "transfers": [
+                  {
+                        "word": "black",
+                        "hl": "ack",
+                        "cn": "黑色"
+                  },
+                  {
+                        "word": "pack",
+                        "hl": "ack",
+                        "cn": "打包/背包"
+                  },
+                  {
+                        "word": "sack",
+                        "hl": "ack",
+                        "cn": "麻袋"
+                  },
+                  {
+                        "word": "snack",
+                        "hl": "ack",
+                        "cn": "零食"
+                  }
+            ]
+      },
+      {
+            "word": "bandage",
+            "meaning": "绷带",
+            "IPA": "/ˈbæn.dɪdʒ/",
+            "type": "body",
+            "blocks": [
+                  "ban",
+                  "dage"
+            ],
+            "mindSpark": "木乃伊全身上下缠满了什么？摔破膝盖时它是最强贴身护盾！",
+            "rule": "-age 弱读成轻快的 /ɪdʒ/",
+            "ruleDesc": "band (捆扎带) + age 后缀，结尾 -age 习惯弱化发音为 /ɪdʒ/。",
+            "transfers": [
+                  {
+                        "word": "banana",
+                        "hl": "ban",
+                        "cn": "香蕉"
+                  },
+                  {
+                        "word": "husband",
+                        "hl": "ban",
+                        "cn": "丈夫"
+                  },
+                  {
+                        "word": "bank",
+                        "hl": "ban",
+                        "cn": "银行"
+                  },
+                  {
+                        "word": "headband",
+                        "hl": "ban",
+                        "cn": "发带 / 运动吸汗带"
+                  }
+            ]
+      },
+      {
+            "word": "elbow",
+            "meaning": "肘部 / 手肘",
+            "IPA": "/ˈel.bəʊ/",
+            "type": "body",
+            "blocks": [
+                  "el",
+                  "bow"
+            ],
+            "mindSpark": "你能用自己的舌头舔到自己的 elbow 吗？据说 99% 的人都做不到！",
+            "rule": "bow 发双元音 /əʊ/",
+            "ruleDesc": "手肘弯曲的形状就像一把弓(bow)，发圆润的 /əʊ/。",
+            "transfers": [
+                  {
+                        "word": "rainbow",
+                        "hl": "bow",
+                        "cn": "彩虹"
+                  },
+                  {
+                        "word": "yellow",
+                        "hl": "el",
+                        "cn": "黄色"
+                  }
+            ]
+      },
+      {
+            "word": "finger",
+            "meaning": "手指",
+            "IPA": "/ˈfɪŋ.ɡər/",
+            "type": "body",
+            "blocks": [
+                  "fin",
+                  "ger"
+            ],
+            "mindSpark": "手指天天敲屏幕！如果要多长出一根 finger，你希望它有什么特异功能？",
+            "rule": "ng 发鼻音 /ŋɡ/ 拆分读",
+            "ruleDesc": "finger 里的 ng 要分出发音，读作 /ˈfɪŋ.ɡər/。",
+            "transfers": [
+                  {
+                        "word": "singer",
+                        "hl": "ger",
+                        "cn": "歌手"
+                  },
+                  {
+                        "word": "longer",
+                        "hl": "ger",
+                        "cn": "更长"
+                  },
+                  {
+                        "word": "hunger",
+                        "hl": "ger",
+                        "cn": "饥饿"
+                  }
+            ]
+      },
+      {
+            "word": "knee",
+            "meaning": "膝盖",
+            "IPA": "/niː/",
+            "type": "body",
+            "blocks": [
+                  "kn",
+                  "ee"
+            ],
+            "mindSpark": "“膝盖中了一箭！”摔倒时是不是第一个受伤的总可怜是 knee？",
+            "rule": "kn 组合开头的 k 绝对闭麦！",
+            "ruleDesc": "发音刺客：开头的 k 完全不读！ee 发经典长元音 /iː/。",
+            "transfers": [
+                  {
+                        "word": "knife",
+                        "hl": "kn",
+                        "cn": "刀子(k不读)"
+                  },
+                  {
+                        "word": "knight",
+                        "hl": "kn",
+                        "cn": "骑士(k不读)"
+                  },
+                  {
+                        "word": "know",
+                        "hl": "kn",
+                        "cn": "知道(k不读)"
+                  },
+                  {
+                        "word": "knock",
+                        "hl": "kn",
+                        "cn": "敲门(k不读)"
+                  }
+            ]
+      },
+      {
+            "word": "neck",
+            "meaning": "脖子 / 颈部",
+            "IPA": "/nek/",
+            "type": "body",
+            "blocks": [
+                  "n",
+                  "eck"
+            ],
+            "mindSpark": "长颈鹿的脖子有两米长！如果你的 neck 变长，上课偷看小抄是不是贼方便？",
+            "rule": "短元音 e + ck 结尾",
+            "ruleDesc": "e 发短音 /e/，ck 紧随其后发干脆的 /k/。",
+            "transfers": [
+                  {
+                        "word": "check",
+                        "hl": "eck",
+                        "cn": "检查"
+                  },
+                  {
+                        "word": "deck",
+                        "hl": "eck",
+                        "cn": "甲板"
+                  },
+                  {
+                        "word": "wreck",
+                        "hl": "eck",
+                        "cn": "残骸"
+                  },
+                  {
+                        "word": "necklace",
+                        "hl": "n",
+                        "cn": "项链"
+                  }
+            ]
+      },
+      {
+            "word": "shoulder",
+            "meaning": "肩膀",
+            "IPA": "/ˈʃəʊl.dər/",
+            "type": "body",
+            "blocks": [
+                  "shoul",
+                  "der"
+            ],
+            "mindSpark": "好哥们勾肩搭背！你的 shoulder 是用来背沉甸甸的书包，还是用来扛责任的？",
+            "rule": "sh 嘘声 + ou 发饱满 /əʊ/",
+            "ruleDesc": "sh 读嘘声 /ʃ/，ou 发饱满的 /əʊ/，肩负重任的肩膀！",
+            "transfers": [
+                  {
+                        "word": "boulder",
+                        "hl": "der",
+                        "cn": "巨石"
+                  },
+                  {
+                        "word": "folder",
+                        "hl": "der",
+                        "cn": "文件夹"
+                  },
+                  {
+                        "word": "older",
+                        "hl": "der",
+                        "cn": "更年长的"
+                  },
+                  {
+                        "word": "holder",
+                        "hl": "der",
+                        "cn": "持有人/支架"
+                  }
+            ]
+      },
+      {
+            "word": "stomach",
+            "meaning": "胃 / 肚子",
+            "IPA": "/ˈstʌm.ək/",
+            "type": "body",
+            "blocks": [
+                  "stom",
+                  "ach"
+            ],
+            "mindSpark": "咕噜咕噜叫！上课上一半 stomach 突然唱起空城计，全班都听到了有多尴尬？",
+            "rule": "发音刺客：ch 异化发 /k/！",
+            "ruleDesc": "高难度陷阱：ch 不读“吃”，而是硬音 /k/！o 发短音 /ʌ/。",
+            "transfers": [
+                  {
+                        "word": "ache",
+                        "hl": "ach",
+                        "cn": "疼痛(/k/)"
+                  },
+                  {
+                        "word": "stomach-ache",
+                        "hl": "stom",
+                        "cn": "胃痛 / 肚子痛"
+                  },
+                  {
+                        "word": "teacher",
+                        "hl": "ach",
+                        "cn": "老师"
+                  },
+                  {
+                        "word": "beach",
+                        "hl": "ach",
+                        "cn": "海滩 / 沙滩"
+                  }
+            ]
+      },
+      {
+            "word": "toe",
+            "meaning": "脚趾",
+            "IPA": "/təʊ/",
+            "type": "body",
+            "blocks": [
+                  "t",
+                  "oe"
+            ],
+            "mindSpark": "不小心用脚趾撞上桌角的那一秒，你的大脑是不是一片空白只剩尖叫？",
+            "rule": "oe 组合发字母本音 /əʊ/",
+            "ruleDesc": "词尾 oe 发字母 O 的名字音 /əʊ/。大脚趾是 big toe！",
+            "transfers": [
+                  {
+                        "word": "tiptoe",
+                        "hl": "t",
+                        "cn": "垫起脚尖"
+                  },
+                  {
+                        "word": "foe",
+                        "hl": "oe",
+                        "cn": "敌人"
+                  },
+                  {
+                        "word": "goes",
+                        "hl": "oe",
+                        "cn": "去(第三人称)"
+                  },
+                  {
+                        "word": "tomatoes",
+                        "hl": "t",
+                        "cn": "西红柿(复数)"
+                  }
+            ]
+      },
+      {
+            "word": "backache",
+            "meaning": "后背痛 / 腰酸背痛",
+            "IPA": "/ˈbæk.eɪk/",
+            "type": "ill",
+            "blocks": [
+                  "back",
+                  "ache"
+            ],
+            "mindSpark": "老爷爷捶腰叹气！今天背了太沉的书包，你的 backache 犯了吗？",
+            "rule": "合成词：back (背) + ache (疼)",
+            "ruleDesc": "ache 永远发硬音 /eɪk/，和身体部位组合就是各种疼痛。",
+            "transfers": [
+                  {
+                        "word": "headache",
+                        "hl": "ache",
+                        "cn": "头痛"
+                  },
+                  {
+                        "word": "toothache",
+                        "hl": "ache",
+                        "cn": "牙痛"
+                  },
+                  {
+                        "word": "stomach-ache",
+                        "hl": "ache",
+                        "cn": "胃痛"
+                  },
+                  {
+                        "word": "earache",
+                        "hl": "ache",
+                        "cn": "耳朵痛"
+                  }
+            ]
+      },
+      {
+            "word": "cold",
+            "meaning": "感冒 / 着凉",
+            "IPA": "/kəʊld/",
+            "type": "ill",
+            "blocks": [
+                  "c",
+                  "old"
+            ],
+            "mindSpark": "阿嚏——！擤鼻涕擤成了红鼻子驯鹿，得了 cold 最想喝什么热饮？",
+            "rule": "-old 家族发双元音 /əʊld/",
+            "ruleDesc": "have a cold = 得了感冒；形容词 cold = 寒冷的。",
+            "transfers": [
+                  {
+                        "word": "hold",
+                        "hl": "old",
+                        "cn": "握住/坚持"
+                  },
+                  {
+                        "word": "gold",
+                        "hl": "old",
+                        "cn": "黄金"
+                  },
+                  {
+                        "word": "told",
+                        "hl": "old",
+                        "cn": "告诉了"
+                  },
+                  {
+                        "word": "bold",
+                        "hl": "old",
+                        "cn": "大胆的大字的"
+                  }
+            ]
+      },
+      {
+            "word": "cough",
+            "meaning": "咳嗽",
+            "IPA": "/kɒf/",
+            "type": "ill",
+            "blocks": [
+                  "c",
+                  "ough"
+            ],
+            "mindSpark": "在绝对安静的考场上，你越想憋住 cough，喉咙就越痒，对不对？",
+            "rule": "终极发音刺客：ough 读 /ɒf/！",
+            "ruleDesc": "这里 gh 突变变成唇齿清音 /f/！发音短促有力。",
+            "transfers": [
+                  {
+                        "word": "rough",
+                        "hl": "ough",
+                        "cn": "粗糙的(/f/)"
+                  },
+                  {
+                        "word": "tough",
+                        "hl": "ough",
+                        "cn": "坚韧的(/f/)"
+                  },
+                  {
+                        "word": "enough",
+                        "hl": "ough",
+                        "cn": "足够(/f/)"
+                  },
+                  {
+                        "word": "cat",
+                        "hl": "c",
+                        "cn": "猫"
+                  }
+            ]
+      },
+      {
+            "word": "headache",
+            "meaning": "头痛",
+            "IPA": "/ˈhed.eɪk/",
+            "type": "ill",
+            "blocks": [
+                  "head",
+                  "ache"
+            ],
+            "mindSpark": "数学卷子压轴大题一出来，直接看得我整个人原地产生剧烈 headache！",
+            "rule": "合成词：head (头) + ache (疼)",
+            "ruleDesc": "head 中 ea 读短音 /e/，加上 /eɪk/ 拼出 /ˈhed.eɪk/。",
+            "transfers": [
+                  {
+                        "word": "ahead",
+                        "hl": "head",
+                        "cn": "在前面"
+                  },
+                  {
+                        "word": "header",
+                        "hl": "head",
+                        "cn": "头球/标题"
+                  },
+                  {
+                        "word": "heartache",
+                        "hl": "ache",
+                        "cn": "心痛"
+                  }
+            ]
+      },
+      {
+            "word": "hurt",
+            "meaning": "弄疼 / 受伤 / 疼痛",
+            "IPA": "/hɜːt/",
+            "type": "ill",
+            "blocks": [
+                  "h",
+                  "urt"
+            ],
+            "mindSpark": "打针的那一瞬间，护士阿姨总说“一点都不 hurt”，你信了吗？",
+            "rule": "ur 发卷舌长音 /ɜː/",
+            "ruleDesc": "hurt 的过去式依然是 hurt（不规则单复同形），表示受伤或感觉疼痛。",
+            "transfers": [
+                  {
+                        "word": "hat",
+                        "hl": "h",
+                        "cn": "帽子"
+                  },
+                  {
+                        "word": "hand",
+                        "hl": "h",
+                        "cn": "手"
+                  },
+                  {
+                        "word": "house",
+                        "hl": "h",
+                        "cn": "房子"
+                  },
+                  {
+                        "word": "happy",
+                        "hl": "h",
+                        "cn": "快乐"
+                  }
+            ]
+      },
+      {
+            "word": "ill",
+            "meaning": "生病的",
+            "IPA": "/ɪl/",
+            "type": "ill",
+            "blocks": [
+                  "i",
+                  "ll"
+            ],
+            "mindSpark": "生病 ill 虽然难受，但一想到今天不用去学校考试，嘴角有没有微微上扬？",
+            "rule": "短元音 i + 双写 ll",
+            "ruleDesc": "短促的 /ɪ/ 搭配舌尖顶住上齿龈的 /l/，比 sick 更书面正式。",
+            "transfers": [
+                  {
+                        "word": "fill",
+                        "hl": "i",
+                        "cn": "充满"
+                  },
+                  {
+                        "word": "pill",
+                        "hl": "i",
+                        "cn": "药丸"
+                  },
+                  {
+                        "word": "bill",
+                        "hl": "i",
+                        "cn": "账单"
+                  },
+                  {
+                        "word": "skill",
+                        "hl": "i",
+                        "cn": "技能"
+                  }
+            ]
+      },
+      {
+            "word": "sore throat",
+            "meaning": "嗓子疼 / 咽喉肿痛",
+            "IPA": "/sɔː θrəʊt/",
+            "type": "ill",
+            "blocks": [
+                  "s",
+                  "o",
+                  "re",
+                  "th",
+                  "r",
+                  "oat"
+            ],
+            "mindSpark": "演唱会疯狂尖叫两小时，第二天一醒来直接喜提哑巴般的 sore throat！",
+            "rule": "sore (酸痛) + throat (咽喉)",
+            "ruleDesc": "sore 表示红肿酸痛，throat 中 oa 发长双元音 /əʊ/。",
+            "transfers": [
+                  {
+                        "word": "more",
+                        "hl": "o",
+                        "cn": "更多"
+                  },
+                  {
+                        "word": "score",
+                        "hl": "s",
+                        "cn": "得分"
+                  },
+                  {
+                        "word": "shore",
+                        "hl": "s",
+                        "cn": "海岸"
+                  },
+                  {
+                        "word": "sun",
+                        "hl": "s",
+                        "cn": "太阳"
+                  }
+            ]
+      },
+      {
+            "word": "stomach-ache",
+            "meaning": "胃痛 / 肚子痛",
+            "IPA": "/ˈstʌm.ək.eɪk/",
+            "type": "ill",
+            "blocks": [
+                  "stomach",
+                  "ache"
+            ],
+            "mindSpark": "一口气炫了五根冰棒加两包辣条，十分钟后你的 stomach-ache 就找上门了！",
+            "rule": "复合词：stomach + ache",
+            "ruleDesc": "肚子痛专用词，中间连字符可加可不加，读作 /ˈstʌm.ək.eɪk/。",
+            "transfers": [
+                  {
+                        "word": "stomach",
+                        "hl": "stomach",
+                        "cn": "肚子/胃"
+                  },
+                  {
+                        "word": "backache",
+                        "hl": "ache",
+                        "cn": "腰痛"
+                  },
+                  {
+                        "word": "headache",
+                        "hl": "ache",
+                        "cn": "头痛"
+                  },
+                  {
+                        "word": "toothache",
+                        "hl": "ache",
+                        "cn": "牙痛"
+                  }
+            ]
+      },
+      {
+            "word": "temperature",
+            "meaning": "体温 / 发烧 / 温度",
+            "IPA": "/ˈtem.prə.tʃər/",
+            "type": "ill",
+            "blocks": [
+                  "tem",
+                  "per",
+                  "a",
+                  "ture"
+            ],
+            "mindSpark": "水银体温计一夹，超过 38.5 度的 high temperature，恭喜你成功喜提病假一天！",
+            "rule": "-ture 结尾固定发 /tʃər/",
+            "ruleDesc": "高频音节拆分：tem-per-a-ture，have a temperature 就是发烧了！",
+            "transfers": [
+                  {
+                        "word": "picture",
+                        "hl": "ture",
+                        "cn": "图片"
+                  },
+                  {
+                        "word": "nature",
+                        "hl": "ture",
+                        "cn": "大自然"
+                  },
+                  {
+                        "word": "future",
+                        "hl": "ture",
+                        "cn": "未来"
+                  },
+                  {
+                        "word": "creature",
+                        "hl": "ture",
+                        "cn": "生物"
+                  }
+            ]
+      },
+      {
+            "word": "toothache",
+            "meaning": "牙痛",
+            "IPA": "/ˈtuːθ.eɪk/",
+            "type": "ill",
+            "blocks": [
+                  "tooth",
+                  "ache"
+            ],
+            "mindSpark": "吃太多糖不刷牙，小蛀虫在嘴里蹦迪，toothache 疼得你捂着脸直打滚！",
+            "rule": "合成词：tooth (牙) + ache (疼)",
+            "ruleDesc": "oo 发长音 /uː/，俗话说‘牙疼不是病，疼起来真要命’！",
+            "transfers": [
+                  {
+                        "word": "toothbrush",
+                        "hl": "tooth",
+                        "cn": "牙刷"
+                  },
+                  {
+                        "word": "toothpaste",
+                        "hl": "tooth",
+                        "cn": "牙膏"
+                  },
+                  {
+                        "word": "sweet tooth",
+                        "hl": "tooth",
+                        "cn": "爱吃甜食"
+                  },
+                  {
+                        "word": "headache",
+                        "hl": "ache",
+                        "cn": "头痛"
+                  }
+            ]
+      }
+];
+
+    /* ================= 纯原生 Web Audio 触感音效引擎 ================= */
+    const audio = {
+      synth: window.speechSynthesis,
+      ctx: null,
+      getCtx() {
+        try {
+          if (!this.ctx) {
+            const Cls = window.AudioContext || window.webkitAudioContext;
+            if (Cls) this.ctx = new Cls();
+          }
+          if (this.ctx && this.ctx.state === "suspended") {
+            this.ctx.resume();
+          }
+          return this.ctx;
+        } catch (e) {
+          return null;
+        }
+      },
+      speak(text) {
+        try {
+          if (this.synth) {
+            this.synth.cancel();
+            const u = new SpeechSynthesisUtterance(text);
+            u.lang = "en-US";
+            u.rate = 0.9;
+            this.synth.speak(u);
+          }
+        } catch (e) {}
+      },
+      tap() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          const osc = c.createOscillator();
+          const gain = c.createGain();
+          osc.frequency.setValueAtTime(450, now);
+          osc.frequency.exponentialRampToValueAtTime(750, now + 0.04);
+          gain.gain.setValueAtTime(0.1, now);
+          gain.gain.exponentialRampToValueAtTime(0.001, now + 0.05);
+          osc.connect(gain);
+          gain.connect(c.destination);
+          osc.start(now);
+          osc.stop(now + 0.05);
+        } catch (e) {}
+      },
+      bingo() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          [523.25, 659.25, 783.99, 1046.5].forEach((f, i) => {
+            const osc = c.createOscillator();
+            const gain = c.createGain();
+            osc.type = "triangle";
+            osc.frequency.setValueAtTime(f, now + i * 0.05);
+            gain.gain.setValueAtTime(0.12, now + i * 0.05);
+            gain.gain.exponentialRampToValueAtTime(0.001, now + i * 0.05 + 0.25);
+            osc.connect(gain);
+            gain.connect(c.destination);
+            osc.start(now + i * 0.05);
+            osc.stop(now + i * 0.05 + 0.28);
+          });
+        } catch (e) {}
+      },
+      wrong() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          const osc = c.createOscillator();
+          const gain = c.createGain();
+          osc.type = "sawtooth";
+          osc.frequency.setValueAtTime(140, now);
+          osc.frequency.linearRampToValueAtTime(80, now + 0.16);
+          gain.gain.setValueAtTime(0.15, now);
+          gain.gain.linearRampToValueAtTime(0.001, now + 0.16);
+          osc.connect(gain);
+          gain.connect(c.destination);
+          osc.start(now);
+          osc.stop(now + 0.18);
+        } catch (e) {}
+      },
+      heal() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          [587.33, 880, 1174.66, 1760].forEach((f, i) => {
+            const osc = c.createOscillator();
+            const gain = c.createGain();
+            osc.type = "sine";
+            osc.frequency.setValueAtTime(f, now + i * 0.05);
+            gain.gain.setValueAtTime(0.12, now + i * 0.05);
+            gain.gain.exponentialRampToValueAtTime(0.001, now + i * 0.05 + 0.2);
+            osc.connect(gain);
+            gain.connect(c.destination);
+            osc.start(now + i * 0.05);
+            osc.stop(now + i * 0.05 + 0.22);
+          });
+        } catch (e) {}
+      }
+    };
+
+    /* ================= 模块一：多邻国积木背单词交互逻辑 ================= */
+    let currentIndex = 0;
+    let selectedBlocks = [];
+    let availableBlocks = [];
+    let isSuccess = false;
+    let hasCompletedAllWords = false;
+
+    
+    function syncFromAha() {
+      try {
+        const raw = localStorage.getItem('kron_word_current_unit_payload') || localStorage.getItem('kron_saved_words') || localStorage.getItem('kron:word:shared_vocab');
+        if (!raw) return;
+        const data = JSON.parse(raw);
+        const words = Array.isArray(data) ? data : (data.words || []);
+        if (!words || words.length === 0) return;
+
+        const savedMap = new Map();
+        words.forEach(w => {
+          if (w.word) savedMap.set(w.word.toLowerCase().trim(), w);
+        });
+
+        let matched = 0;
+        VOCABULARY.forEach(item => {
+          const wClean = item.word.toLowerCase().trim();
+          const hasDirect = savedMap.has(wClean);
+          const hasContained = Array.from(savedMap.keys()).some(k => k && (wClean.includes(k) || k.includes(wClean)));
+          if (hasDirect || hasContained) {
+            item.isAhaSaved = true;
+            matched++;
+          }
+        });
+
+        words.forEach(w => {
+          const wClean = (w.word || '').toLowerCase().trim();
+          const exists = VOCABULARY.some(v => {
+            const vClean = v.word.toLowerCase().trim();
+            return vClean === wClean || vClean.includes(wClean);
+          });
+          if (!exists && wClean) {
+            let blocks = [w.word];
+            if (wClean === 'instrument') {
+              blocks = ['in', 'stru', 'ment'];
+            } else if (wClean === 'play') {
+              blocks = ['pl', 'ay'];
+            } else if (wClean === 'play an instrument') {
+              blocks = ['pl', 'ay', 'an', 'in', 'stru', 'ment'];
+            } else {
+              const rawParts = w.word.split(/\s+/).filter(Boolean);
+              blocks = rawParts.length > 1 ? rawParts : [w.word];
+            }
+            VOCABULARY.push({
+              word: w.word,
+              meaning: w.translation || 'Aha! 重点词汇',
+              IPA: w.phonetic || `/${wClean}/`,
+              type: w.partOfSpeech || 'saved',
+              blocks,
+              mindSpark: '你在 Kron English Aha! 学习中亲手收藏的重点单词，快来拼出它吧！',
+              rule: 'Aha! 生词本同步词汇',
+              ruleDesc: '来自课堂实战提问与高频语境，属于你的专属记忆！',
+              transfers: [],
+              isAhaSaved: true
+            });
+            matched++;
+          }
+        });
+
+        const banner = document.getElementById('ahaSyncBanner');
+        const countEl = document.getElementById('ahaSyncCount');
+        if (banner && countEl && words.length > 0) {
+          countEl.innerText = words.length;
+          banner.style.display = 'flex';
+        }
+      } catch (e) {
+        console.warn('Aha sync notice:', e);
+      }
+    }
+
+    function initWord() {
+      const item = VOCABULARY[currentIndex];
+      selectedBlocks = [];
+      availableBlocks = item.blocks.map((text, idx) => ({ id: `${text}-${idx}-${Math.random()}`, text }));
+      availableBlocks.sort(() => Math.random() - 0.5);
+      isSuccess = false;
+
+      const pct = ((currentIndex + 1) / VOCABULARY.length) * 100;
+      document.getElementById("progressBar").style.width = `${pct}%`;
+      document.getElementById("wordMeaning").innerText = item.meaning;
+      document.getElementById("wordIPA").innerText = item.IPA;
+      
+      const tagEl = document.getElementById("wordTypeTag");
+      if (item.type === "body") {
+        tagEl.className = "word-type-tag tag-body";
+        tagEl.innerText = "🦾 身体器官";
+      } else {
+        tagEl.className = "word-type-tag tag-ill";
+        tagEl.innerText = "💊 病痛急救";
+      }
+
+      document.getElementById("successPanel").style.display = "none";
+      document.getElementById("nextBtn").style.display = "none";
+      document.getElementById("footerPlaceholder").style.display = "block";
+
+      renderBlocks();
+    }
+
+    function renderBlocks() {
+      const slots = document.getElementById("slotsContainer");
+      const tray = document.getElementById("trayContainer");
+      slots.innerHTML = "";
+      tray.innerHTML = "";
+
+      if (selectedBlocks.length === 0 && !isSuccess) {
+        slots.innerHTML = `<span class="empty-tip">点击下方发音积木完成拼装</span>`;
+      }
+
+      selectedBlocks.forEach(b => {
+        const btn = document.createElement("button");
+        btn.className = `duo-tile ${isSuccess ? "duo-tile-success" : ""}`;
+        btn.innerText = b.text;
+        btn.onclick = () => {
+          if (isSuccess) return;
+          audio.tap();
+          selectedBlocks = selectedBlocks.filter(x => x.id !== b.id);
+          availableBlocks.push(b);
+          renderBlocks();
+        };
+        slots.appendChild(btn);
+      });
+
+      if (!isSuccess) {
+        availableBlocks.forEach(b => {
+          const btn = document.createElement("button");
+          btn.className = "duo-tile";
+          btn.innerText = b.text;
+          btn.onclick = () => handlePickBlock(b);
+          tray.appendChild(btn);
+        });
+      }
+    }
+
+    function handlePickBlock(b) {
+      if (isSuccess) return;
+      audio.tap();
+      audio.speak(b.text);
+
+      selectedBlocks.push(b);
+      availableBlocks = availableBlocks.filter(x => x.id !== b.id);
+      renderBlocks();
+
+      if (availableBlocks.length === 0) {
+        const userStr = selectedBlocks.map(x => x.text).join("");
+        const realStr = VOCABULARY[currentIndex].blocks.join("");
+
+        if (userStr === realStr) {
+          isSuccess = true;
+          audio.bingo();
+          renderBlocks();
+
+          setTimeout(() => {
+            audio.speak(VOCABULARY[currentIndex].word);
+          }, 250);
+
+          showWordKnowledge();
+        } else {
+          audio.wrong();
+          const slots = document.getElementById("slotsContainer");
+          slots.classList.add("animate-shake");
+          setTimeout(() => {
+            slots.classList.remove("animate-shake");
+            availableBlocks = VOCABULARY[currentIndex].blocks.map((text, idx) => ({ id: `${text}-${idx}-${Math.random()}`, text })).sort(() => Math.random() - 0.5);
+            selectedBlocks = [];
+            renderBlocks();
+          }, 450);
+        }
+      }
+    }
+
+    function showWordKnowledge() {
+      const item = VOCABULARY[currentIndex];
+      
+      document.getElementById("kronMindSpark").innerText = item.mindSpark;
+      document.getElementById("ruleBadge").innerText = `规律：${item.rule}`;
+      document.getElementById("ruleDesc").innerText = item.ruleDesc;
+
+      const grid = document.getElementById("transferGrid");
+      grid.innerHTML = "";
+      item.transfers.forEach(t => {
+        const tile = document.createElement("div");
+        tile.className = "transfer-tile";
+        tile.innerHTML = `
+          <div>
+            <div class="transfer-word">${renderHighlight(t.word, t.hl)}</div>
+            <div class="transfer-cn">${t.cn}</div>
+          </div>
+          <span style="font-size: 13px; color: #CECECE;">🔊</span>
+        `;
+        tile.onclick = () => {
+          audio.tap();
+          audio.speak(t.word);
+        };
+        grid.appendChild(tile);
+      });
+
+      document.getElementById("successPanel").style.display = "block";
+      document.getElementById("nextBtn").style.display = "block";
+      
+      const isLast = currentIndex === VOCABULARY.length - 1;
+      document.getElementById("nextBtn").innerText = isLast ? "🎉 19 词全通关！解锁战地急救 🚨" : "继续下一个单词 ➔";
+      document.getElementById("footerPlaceholder").style.display = "none";
+
+      if (isLast) {
+        hasCompletedAllWords = true;
+        const lockBtn = document.getElementById("lockStatusBtn");
+        lockBtn.innerText = "🚨 战地急救 (已解锁)";
+        lockBtn.style.borderColor = "#FF4B4B";
+        lockBtn.style.color = "#FF4B4B";
+        triggerConfetti();
+      }
+    }
+
+    function renderHighlight(word, hl) {
+      if (!hl || !word.toLowerCase().includes(hl.toLowerCase())) return word;
+      const reg = new RegExp(`(${hl})`, "i");
+      return word.replace(reg, `<span class="hl-green">$1</span>`);
+    }
+
+    function playCurrentWordAudio() {
+      audio.speak(VOCABULARY[currentIndex].word);
+    }
+
+    function goNextWord() {
+      if (currentIndex < VOCABULARY.length - 1) {
+        currentIndex++;
+        syncFromAha();
+    initWord();
+      } else {
+        switchToGame();
+      }
+    }
+
+    function trySwitchToGame() {
+      if (!hasCompletedAllWords) {
+        alert("🔒 Kron 老师提醒：必须把本单元全部 19 个身体部位与急救词汇拼完才能解锁战地医院！加油救死扶伤！");
+        return;
+      }
+      switchToGame();
+    }
+
+    window.addEventListener("keydown", (e) => {
+      const isLearnVisible = document.getElementById("learnView").style.display !== "none";
+      if (isSuccess && isLearnVisible && (e.key === "Enter" || e.key === " ")) {
+        e.preventDefault();
+        goNextWord();
+      }
+    });
+
+    /* ================= 模块二：Wordwall 极速战地小医生独立游戏逻辑 ================= */
+    let timerSec = 180;
+    let timerInterval = null;
+    let botInterval = null;
+    let autoCookInterval = null;
+    let patienceInterval = null;
+
+    let playerGold = 0;
+    let servedCount = 0;
+    let combo = 1;
+    let currentCustomer = null;
+    let currentPatience = 100;
+
+    let upgrades = {
+      knifeLevel: 0,
+      autoCookLevel: 0,
+      bellLevel: 0
+    };
+
+    let cafePlayers = [
+      { id: "me", name: "你 (主治神医)", gold: 0, isBot: false },
+      { id: "cat", name: "🐱 柴犬急救站", gold: 240, isBot: true },
+      { id: "duo", name: "🦉 多邻国诊所", gold: 380, isBot: true },
+      { id: "kron", name: "⚡️ Kron 教授医疗队", gold: 520, isBot: true }
+    ];
+
+    const PATIENT_POOL = [
+      { name: "贪吃的小恐龙", emoji: "🦖", tipBonus: 1.1 },
+      { name: "近视的绿猫头鹰", emoji: "🦉", tipBonus: 1.2 },
+      { name: "摔跤的小柴犬", emoji: "🐕", tipBonus: 1.0 },
+      { name: "感冒的外星水怪", emoji: "👾", tipBonus: 1.4 },
+      { name: "牙疼的巨齿鲨", emoji: "🦈", tipBonus: 1.3 }
+    ];
+
+    function switchToGame() {
+      document.getElementById("learnView").style.display = "none";
+      document.getElementById("gameView").style.display = "flex";
+      document.body.classList.add("game-mode");
+      startBattle();
+    }
+
+    function switchToLearn() {
+      clearInterval(timerInterval);
+      clearInterval(botInterval);
+      clearInterval(autoCookInterval);
+      clearInterval(patienceInterval);
+      document.getElementById("gameView").style.display = "none";
+      document.getElementById("learnView").style.display = "flex";
+      document.body.classList.remove("game-mode");
+    }
+
+    function startBattle() {
+      audio.bingo();
+      playerGold = 0;
+      servedCount = 0;
+      combo = 1;
+      timerSec = 180;
+
+      cafePlayers.forEach(p => {
+        if (p.isBot) p.gold = Math.floor(Math.random() * 250 + 200);
+        else p.gold = 0;
+      });
+
+      updateStatsUI();
+      updateLeaderboard();
+
+      document.getElementById("gameStartScreen").style.display = "none";
+      document.getElementById("gameOverScreen").style.display = "none";
+      document.getElementById("gameDishDoneScreen").style.display = "none";
+
+      clearInterval(timerInterval);
+      clearInterval(botInterval);
+      clearInterval(autoCookInterval);
+
+      timerInterval = setInterval(() => {
+        timerSec--;
+        const m = String(Math.floor(timerSec / 60)).padStart(2, '0');
+        const s = String(timerSec % 60).padStart(2, '0');
+        document.getElementById("timeText").innerText = `${m}:${s}`;
+
+        if (timerSec <= 0) {
+          endGame();
+        }
+      }, 1000);
+
+      botInterval = setInterval(() => {
+        cafePlayers.forEach(p => {
+          if (p.isBot) {
+            const add = Math.floor(Math.random() * 75 + 25);
+            p.gold += add;
+          }
+        });
+        updateLeaderboard();
+      }, 2500);
+
+      nextCustomer();
+    }
+
+    function updateStatsUI() {
+      document.getElementById("playerGoldText").innerText = `💉 ${playerGold}`;
+      document.getElementById("servedCountText").innerText = `🩹 ${servedCount}`;
+      document.getElementById("comboText").innerText = `⚡ x${combo}`;
+      const me = cafePlayers.find(p => p.id === 'me');
+      if (me) me.gold = playerGold;
+      updateLeaderboard();
+    }
+
+    function nextCustomer() {
+      clearInterval(patienceInterval);
+      document.getElementById("gameDishDoneScreen").style.display = "none";
+      document.getElementById("gameOrderScreen").style.display = "block";
+
+      const patient = PATIENT_POOL[Math.floor(Math.random() * PATIENT_POOL.length)];
+      const item = VOCABULARY[Math.floor(Math.random() * VOCABULARY.length)];
+
+      let orderSpeech = "";
+      let qPrompt = "";
+      let correctAns = "";
+      let distractors = [];
+
+      if (item.type === "ill") {
+        orderSpeech = `“救命！我感觉我有「${item.meaning}」！”`;
+        qPrompt = `精准诊断：请匹配对应的病症英语：`;
+        correctAns = item.word;
+        distractors = VOCABULARY.filter(w => w.type === "ill" && w.word !== item.word).map(w => w.word).slice(0, 3);
+      } else {
+        orderSpeech = `“哎哟！我受伤的部位是「${item.meaning}」！”`;
+        qPrompt = `对准病灶：选择要包扎的身体部位：`;
+        correctAns = item.word;
+        distractors = VOCABULARY.filter(w => w.type === "body" && w.word !== item.word).map(w => w.word).slice(0, 3);
+      }
+
+      currentCustomer = {
+        name: patient.name,
+        emoji: patient.emoji,
+        tipBonus: patient.tipBonus,
+        targetWord: item,
+        ans: correctAns
+      };
+
+      document.getElementById("custEmoji").innerText = currentCustomer.emoji;
+      document.getElementById("custName").innerText = currentCustomer.name;
+      document.getElementById("custOrderSpeech").innerText = orderSpeech;
+      document.getElementById("gameQuestionPrompt").innerText = qPrompt;
+
+      const opts = [correctAns, ...distractors].sort(() => Math.random() - 0.5);
+      const optGrid = document.getElementById("gameOptionGrid");
+      optGrid.innerHTML = "";
+
+      opts.forEach(opt => {
+        const btn = document.createElement("button");
+        btn.className = "duo-btn duo-btn-dark game-opt-btn";
+        btn.innerText = opt;
+        btn.onclick = () => handleOrderAnswer(opt);
+        optGrid.appendChild(btn);
+      });
+
+      currentPatience = 100;
+      const patienceSpeed = upgrades.bellLevel > 0 ? 1.0 : 1.6;
+      patienceInterval = setInterval(() => {
+        currentPatience -= patienceSpeed;
+        const pFill = document.getElementById("patienceBar");
+        pFill.style.width = `${Math.max(0, currentPatience)}%`;
+        if (currentPatience > 50) pFill.style.backgroundColor = "#58CC02";
+        else if (currentPatience > 25) pFill.style.backgroundColor = "#FF9600";
+        else pFill.style.backgroundColor = "#FF4B4B";
+
+        if (currentPatience <= 0) {
+          clearInterval(patienceInterval);
+          handleCustomerLeave();
+        }
+      }, 100);
+    }
+
+    function handleOrderAnswer(chosen) {
+      if (chosen === currentCustomer.ans) {
+        clearInterval(patienceInterval);
+        audio.heal();
+        servedCount++;
+        combo++;
+
+        let baseTip = Math.floor(180 * currentCustomer.tipBonus);
+        if (upgrades.knifeLevel > 0) baseTip = Math.floor(baseTip * 1.5);
+        const comboBonus = Math.floor(combo * 20);
+        const totalTip = baseTip + comboBonus;
+        playerGold += totalTip;
+
+        updateStatsUI();
+
+        document.getElementById("gameOrderScreen").style.display = "none";
+        document.getElementById("gameDishDoneScreen").style.display = "block";
+        document.getElementById("dishDoneIcon").innerText = `✨❤️‍🩹✨`;
+        document.getElementById("dishDoneTitle").innerText = `抢救成功！+${totalTip} 💉`;
+        document.getElementById("dishDoneDesc").innerText = `${currentCustomer.name} 的病情瞬间好转！感激涕零送来锦旗（连击加成 +${comboBonus}）！`;
+
+        setTicker(`❤️‍🩹 妙手回春！成功治愈 ${currentCustomer.name}，医术声望 +${totalTip} 点！`);
+      } else {
+        audio.wrong();
+        combo = 1;
+        updateStatsUI();
+        setTicker(`❌ 用药错误！小怪兽痛得嗷嗷叫，连击重置！`);
+      }
+    }
+
+    function handleCustomerLeave() {
+      audio.wrong();
+      combo = 1;
+      updateStatsUI();
+      setTicker(`💨 病情延误！${currentCustomer.name} 没耐心转院了，急救失败！`);
+      nextCustomer();
+    }
+
+    function setTicker(msg) {
+      document.getElementById("tickerMsg").innerText = msg;
+    }
+
+    function updateLeaderboard() {
+      const sorted = [...cafePlayers].sort((a, b) => b.gold - a.gold);
+      const grid = document.getElementById("leaderboardGrid");
+      grid.innerHTML = "";
+      sorted.forEach((p, idx) => {
+        const medal = idx === 0 ? "🥇 " : idx === 1 ? "🥈 " : idx === 2 ? "🥉 " : "#4 ";
+        const card = document.createElement("div");
+        card.className = `lb-card ${p.id === 'me' ? 'is-me' : ''}`;
+        card.innerHTML = `
+          <div class="lb-name">${medal}${p.name}</div>
+          <div class="lb-gold">${p.gold} 💉</div>
+        `;
+        grid.appendChild(card);
+      });
+    }
+
+    function openMarket() {
+      document.getElementById("marketDrawer").style.display = "flex";
+    }
+    function closeMarket() {
+      document.getElementById("marketDrawer").style.display = "none";
+    }
+
+    function buyUpgrade(type, cost) {
+      if (playerGold < cost) {
+        alert("💉 医术积分不足，快多抢救几名伤员吧！");
+        return;
+      }
+      playerGold -= cost;
+      audio.heal();
+
+      if (type === 'knife') {
+        upgrades.knifeLevel++;
+        alert("💉 极速肾上腺素注射器就绪！单次治疗积分提升 50%！");
+      } else if (type === 'autoCook') {
+        upgrades.autoCookLevel++;
+        if (!autoCookInterval) {
+          autoCookInterval = setInterval(() => {
+            playerGold += 60 * upgrades.autoCookLevel;
+            updateStatsUI();
+          }, 3000);
+        }
+        alert("🤖 自动挂号诊疗仪启动！每 3 秒自动入账积分！");
+      } else if (type === 'bell') {
+        upgrades.bellLevel++;
+        alert("🧊 极光冷敷贴贴上！病患病情流失速度大幅减缓！");
+      }
+
+      updateStatsUI();
+      document.getElementById("playerBuffs").innerText = 
+        `💉 强心剂: ${upgrades.autoCookLevel}级 | 🩹 超级创口贴: +${upgrades.knifeLevel * 50}%`;
+      closeMarket();
+    }
+
+    function endGame() {
+      clearInterval(timerInterval);
+      clearInterval(botInterval);
+      clearInterval(autoCookInterval);
+      clearInterval(patienceInterval);
+
+      document.getElementById("gameOrderScreen").style.display = "none";
+      document.getElementById("gameDishDoneScreen").style.display = "none";
+      document.getElementById("gameOverScreen").style.display = "block";
+
+      const sorted = [...cafePlayers].sort((a, b) => b.gold - a.gold);
+      const myRank = sorted.findIndex(p => p.id === 'me') + 1;
+
+      if (myRank === 1) {
+        document.getElementById("finalTrophy").innerText = "👑";
+        document.getElementById("finalRankTitle").innerText = "战地首席神医！";
+        document.getElementById("finalRankDesc").innerText = `拯救积分高达 ${playerGold} 💉！全城怪兽为你欢呼！`;
+        triggerConfetti();
+      } else {
+        document.getElementById("finalTrophy").innerText = "🥈";
+        document.getElementById("finalRankTitle").innerText = `荣获全城第 ${myRank} 名！`;
+        document.getElementById("finalRankDesc").innerText = `医术积分 ${playerGold} 💉，距离第一神医仅差一步！`;
+      }
+
+      const podium = document.getElementById("finalPodium");
+      podium.innerHTML = "";
+      sorted.forEach((p, idx) => {
+        const row = document.createElement("div");
+        row.style.cssText = "display: flex; justify-content: space-between; padding: 6px 0; font-size: 13px; font-weight: 800;";
+        row.innerHTML = `
+          <span style="color: ${p.id === 'me' ? '#FF4B4B' : '#FFF'};">${idx + 1}. ${p.name}</span>
+          <span style="color: #FFC800;">${p.gold} 💉</span>
+        `;
+        podium.appendChild(row);
+      });
+    }
+
+    function triggerConfetti() {
+      const canvas = document.getElementById("confettiCanvas");
+      const ctx = canvas.getContext("2d");
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+
+      const particles = [];
+      const colors = ["#FF4B4B", "#1CB0F6", "#58CC02", "#FFC800", "#CE82FF"];
+
+      for (let i = 0; i < 70; i++) {
+        particles.push({
+          x: canvas.width / 2,
+          y: canvas.height / 2,
+          vx: (Math.random() - 0.5) * 14,
+          vy: (Math.random() - 0.7) * 16,
+          size: Math.random() * 8 + 4,
+          color: colors[Math.floor(Math.random() * colors.length)],
+          rotation: Math.random() * 360,
+          vRot: (Math.random() - 0.5) * 10,
+          opacity: 1
+        });
+      }
+
+      let frames = 0;
+      function render() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        particles.forEach(p => {
+          p.x += p.vx;
+          p.y += p.vy;
+          p.vy += 0.35;
+          p.rotation += p.vRot;
+          p.opacity -= 0.012;
+
+          ctx.save();
+          ctx.translate(p.x, p.y);
+          ctx.rotate((p.rotation * Math.PI) / 180);
+          ctx.fillStyle = p.color;
+          ctx.globalAlpha = Math.max(0, p.opacity);
+          ctx.fillRect(-p.size / 2, -p.size / 2, p.size, p.size);
+          ctx.restore();
+        });
+
+        frames++;
+        if (frames < 90) {
+          requestAnimationFrame(render);
+        } else {
+          ctx.clearRect(0, 0, canvas.width, canvas.height);
+        }
+      }
+      render();
+    }
+
+    syncFromAha();
+    initWord();
+  </script>
+</body>
+</html>

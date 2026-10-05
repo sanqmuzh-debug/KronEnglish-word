@@ -1,0 +1,2715 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>THINK Level 1 · Unit 12: Moving about (LexiBlock + Gimkit 环球极速航班大亨)</title>
+  <style>
+
+    :root {
+      --duo-green: #58CC02;
+      --duo-green-shadow: #46A302;
+      --duo-green-hover: #61E002;
+      --duo-blue: #1CB0F6;
+      --duo-blue-shadow: #1899D6;
+      --duo-gold: #FFC800;
+      --duo-gold-shadow: #E5A800;
+      --duo-coral: #FF7675;
+      --duo-coral-shadow: #D63031;
+      --duo-ocean: #0984E3;
+      --duo-ocean-shadow: #074B83;
+      --bg-light: #F7F7F9;
+      --bg-card: #FFFFFF;
+      --text-main: #1D1D1F;
+      --text-body: #4B4B4B;
+      --text-muted: #777777;
+      --text-sub: #AFAFAF;
+      --border-light: #E5E5E5;
+      --border-tile: #CECECE;
+      --radius-sm: 12px;
+      --radius-md: 16px;
+      --radius-lg: 24px;
+      --radius-pill: 999px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      user-select: none;
+      -webkit-tap-highlight-color: transparent;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", "Segoe UI", Roboto, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-light);
+      color: var(--text-body);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      transition: background-color 0.3s ease;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body.game-mode {
+      background-color: #081524;
+      color: #FFFFFF;
+    }
+
+    #app {
+      width: 100%;
+      max-width: 500px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 16px;
+      position: relative;
+    }
+
+    .duo-btn {
+      position: relative;
+      border-radius: 18px;
+      font-weight: 900;
+      cursor: pointer;
+      transition: all 0.08s ease;
+      text-align: center;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      user-select: none;
+      border: none;
+    }
+    .duo-btn:active {
+      transform: translateY(3px);
+      border-bottom-width: 2px !important;
+    }
+
+    .duo-btn-green {
+      background: var(--duo-green);
+      color: #FFFFFF;
+      border-bottom: 5px solid var(--duo-green-shadow);
+    }
+    .duo-btn-green:hover { background: var(--duo-green-hover); }
+
+    .duo-btn-ocean {
+      background: var(--duo-ocean);
+      color: #FFFFFF;
+      border-bottom: 5px solid var(--duo-ocean-shadow);
+    }
+
+    .duo-btn-gold {
+      background: var(--duo-gold);
+      color: #7A5200;
+      border-bottom: 5px solid var(--duo-gold-shadow);
+    }
+
+    .duo-btn-dark {
+      background: #102138;
+      color: #FFFFFF;
+      border: 2px solid #1E3B61;
+      border-bottom: 5px solid #0A1626;
+    }
+    .duo-btn-dark:hover { background: #172D4D; }
+
+    .duo-tile {
+      background-color: #FFFFFF;
+      color: var(--text-body);
+      border: 2px solid var(--border-light);
+      border-bottom: 4px solid var(--border-tile);
+      border-radius: 16px;
+      font-size: 20px;
+      font-weight: 900;
+      padding: 12px 18px;
+      cursor: pointer;
+      transition: all 0.08s ease-in-out;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      user-select: none;
+    }
+    .duo-tile:hover { background-color: #F8F8F8; }
+    .duo-tile:active {
+      transform: translateY(2px);
+      border-bottom-width: 2px;
+    }
+
+    .duo-tile-success {
+      background-color: var(--duo-green) !important;
+      color: #FFFFFF !important;
+      border-color: var(--duo-green) !important;
+      border-bottom-color: var(--duo-green-shadow) !important;
+      transform: scale(1.04);
+    }
+
+    .learn-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 12px;
+      gap: 12px;
+    }
+    .unit-tag {
+      background: #E3F2FD;
+      color: #1565C0;
+      font-size: 11px;
+      font-weight: 900;
+      padding: 4px 10px;
+      border-radius: 999px;
+      letter-spacing: 0.5px;
+      white-space: nowrap;
+    }
+    .progress-track {
+      flex: 1;
+      height: 14px;
+      background: #E5E5E5;
+      border-radius: var(--radius-pill);
+      overflow: hidden;
+      position: relative;
+    }
+    .progress-fill {
+      height: 100%;
+      background: var(--duo-green);
+      border-radius: var(--radius-pill);
+      transition: width 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+    .mode-switch-btn {
+      background: #FFF;
+      border: 2px solid #E5E5E5;
+      border-radius: var(--radius-pill);
+      padding: 6px 12px;
+      font-size: 12px;
+      font-weight: 800;
+      color: #777;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      transition: all 0.15s ease;
+      white-space: nowrap;
+    }
+    .mode-switch-btn:hover {
+      border-color: var(--duo-ocean);
+      color: var(--duo-ocean);
+    }
+
+    .word-header {
+      text-align: center;
+      margin-bottom: 16px;
+    }
+    .word-meaning {
+      font-size: 26px;
+      font-weight: 900;
+      color: var(--text-main);
+      margin-bottom: 6px;
+      letter-spacing: -0.5px;
+    }
+    .word-type-tag {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 800;
+      padding: 2px 8px;
+      border-radius: 6px;
+      margin-left: 6px;
+      vertical-align: middle;
+    }
+    .tag-adj { background: #EDE7F6; color: #512DA8; }
+    .tag-trip { background: #E1F5FE; color: #0288D1; }
+
+    .word-ipa-btn {
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      font-size: 15px;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      cursor: pointer;
+      padding: 4px 10px;
+      border-radius: var(--radius-pill);
+      transition: background 0.15s ease;
+    }
+    .word-ipa-btn:hover { background: #EDEDED; }
+
+    .slots-container {
+      min-height: 64px;
+      border-bottom: 2px dashed var(--border-tile);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 10px 0;
+      margin-bottom: 20px;
+    }
+    .tray-container {
+      min-height: 80px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    .empty-tip {
+      color: var(--text-sub);
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .kron-spark-card {
+      background: linear-gradient(135deg, #FFF9DB 0%, #FFF3BF 100%);
+      border: 2px solid #FFE066;
+      border-radius: 18px;
+      padding: 14px 16px;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      box-shadow: 0 4px 12px rgba(245, 159, 0, 0.08);
+    }
+    .kron-avatar {
+      font-size: 28px;
+      line-height: 1;
+      filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+    }
+    .kron-spark-content {
+      flex: 1;
+    }
+    .kron-spark-title {
+      font-size: 12px;
+      font-weight: 900;
+      color: #D9480F;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .kron-spark-text {
+      font-size: 14px;
+      color: #495057;
+      font-weight: 700;
+      line-height: 1.45;
+    }
+
+    .transfer-panel {
+      background: var(--bg-card);
+      border: 2px solid var(--border-light);
+      border-radius: 20px;
+      padding: 14px;
+      margin-top: 10px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.04);
+    }
+    .rule-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      margin-bottom: 12px;
+      line-height: 1.4;
+    }
+    .rule-badge {
+      background: #E8F5E9;
+      color: #2E7D32;
+      font-size: 11px;
+      font-weight: 900;
+      padding: 3px 8px;
+      border-radius: 6px;
+      white-space: nowrap;
+    }
+    .rule-desc {
+      font-size: 12px;
+      font-weight: 700;
+      color: #555;
+    }
+    .transfer-title {
+      font-size: 11px;
+      font-weight: 900;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 8px;
+    }
+    .transfer-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+    .transfer-tile {
+      background: #FAFAFA;
+      border: 1.5px solid var(--border-light);
+      border-radius: 12px;
+      padding: 8px 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+      transition: all 0.1s ease;
+    }
+    .transfer-tile:hover {
+      background: #F0FDF4;
+      border-color: var(--duo-green);
+    }
+    .transfer-word {
+      font-weight: 900;
+      font-size: 14px;
+      color: var(--text-main);
+    }
+    .transfer-cn {
+      font-size: 11px;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+    .hl-green {
+      color: var(--duo-green);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    @keyframes popIn {
+      0% { opacity: 0; transform: scale(0.92) translateY(8px); }
+      100% { opacity: 1; transform: scale(1) translateY(0); }
+    }
+    .animate-pop-in {
+      animation: popIn 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+    }
+
+    @keyframes shake {
+      0%, 100% { transform: translateX(0); }
+      20%, 60% { transform: translateX(-8px); }
+      40%, 80% { transform: translateX(8px); }
+    }
+    .animate-shake {
+      animation: shake 0.4s ease-in-out;
+    }
+
+    /* ================= Gimkit 海岛探险大富翁独立游戏 ================= */
+    
+.game-top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+    .timer-pill {
+      background: #102138;
+      border: 2px solid #1E3B61;
+      border-radius: var(--radius-pill);
+      padding: 6px 14px;
+      font-size: 14px;
+      font-weight: 900;
+      color: #0984E3;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .island-stats-row {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+    .island-stat-card {
+      flex: 1;
+      background: #0B192B;
+      border: 1px solid #183354;
+      border-radius: 16px;
+      padding: 10px 12px;
+      text-align: center;
+    }
+    .stat-label {
+      font-size: 11px;
+      color: #8C9BAE;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+    .stat-val {
+      font-size: 20px;
+      font-weight: 900;
+      color: #0984E3;
+    }
+
+    .island-stage {
+      background: #091729;
+      border: 2px solid #1B375C;
+      border-radius: 24px;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 14px;
+      min-height: 290px;
+      justify-content: center;
+    }
+
+    .quest-bubble {
+      background: #142842;
+      border: 2px solid #244976;
+      border-radius: 18px;
+      padding: 10px 16px;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      max-width: 90%;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+    }
+    .quest-tag {
+      font-size: 18px;
+      font-weight: 900;
+      color: #0984E3;
+    }
+    .explorer-avatar-box {
+      position: relative;
+      margin-bottom: 8px;
+    }
+    .explorer-emoji {
+      font-size: 64px;
+      filter: drop-shadow(0 4px 8px rgba(0,0,0,0.4));
+      display: inline-block;
+      animation: campFloat 1.8s ease-in-out infinite alternate;
+    }
+    @keyframes campFloat {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(-8px); }
+    }
+    .quest-timer-bar {
+      width: 130px;
+      height: 8px;
+      background: #1B375C;
+      border-radius: 999px;
+      overflow: hidden;
+      margin: 0 auto;
+    }
+    .quest-timer-fill {
+      height: 100%;
+      background: #0984E3;
+      border-radius: 999px;
+      transition: width 0.1s linear, background-color 0.3s ease;
+    }
+
+    .game-opt-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      width: 100%;
+    }
+    .game-opt-btn {
+      padding: 14px 10px;
+      font-size: 15px;
+      line-height: 1.3;
+      border-radius: 16px;
+    }
+
+    .ticker-bar {
+      background: #0B192B;
+      border: 1px solid #183354;
+      border-radius: var(--radius-pill);
+      padding: 6px 14px;
+      font-size: 12px;
+      color: #8DA1BA;
+      font-weight: 700;
+      margin-bottom: 12px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .leaderboard-mini {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 6px;
+      margin-bottom: 12px;
+    }
+    .lb-card {
+      background: #091729;
+      border: 1px solid #1B375C;
+      border-radius: 12px;
+      padding: 8px 6px;
+      text-align: center;
+      transition: all 0.2s ease;
+    }
+    .lb-card.is-me {
+      border-color: #0984E3;
+      background: #142842;
+    }
+    .lb-name {
+      font-size: 11px;
+      color: #8C9BAE;
+      font-weight: 800;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .lb-gold {
+      font-size: 13px;
+      font-weight: 900;
+      color: #FFFFFF;
+    }
+
+    .market-drawer {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.75);
+      backdrop-filter: blur(8px);
+      z-index: 100;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .market-modal {
+      background: #071526;
+      border: 2px solid #0984E3;
+      border-radius: 28px;
+      width: 100%;
+      max-width: 420px;
+      padding: 22px;
+      box-shadow: 0 20px 50px rgba(9,132,227,0.25);
+    }
+    .market-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #11233B;
+      border: 1px solid #204068;
+      border-radius: 16px;
+      padding: 12px;
+      margin-bottom: 10px;
+    }
+
+    #confettiCanvas {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 999;
+    }
+  </style>
+</head>
+<body>
+
+  <canvas id="confettiCanvas"></canvas>
+
+  <div id="app">
+    
+    <!-- ==================== 视图 1：多邻国积木背单词 + Kron 脑洞场景 ==================== -->
+    <div id="learnView" style="display: flex; flex-direction: column; justify-content: space-between; min-height: calc(100vh - 32px);">
+      <header class="learn-header">
+        <span class="unit-tag">TH1 · UNIT 12</span>
+        <div class="progress-track">
+          <div class="progress-fill" id="progressBar" style="width: 0%;"></div>
+        </div>
+        <button class="mode-switch-btn" id="lockStatusBtn" onclick="trySwitchToGame()">
+          🔒 环球极速领航 (需全通)
+        </button>
+      </header>
+      <!-- Aha! 生词本双向打通同步横幅 -->
+      <div id="ahaSyncBanner" style="display:none; align-items: center; justify-content: space-between; background: linear-gradient(135deg, rgba(88,204,2,0.12), rgba(28,176,246,0.12)); border: 1.5px solid #58CC02; border-radius: 14px; padding: 8px 12px; margin-bottom: 12px; font-size: 11px; font-weight: 800; color: #1D1D1F;">
+        <div style="display: flex; align-items: center; gap: 6px;">
+          <span>⚡</span>
+          <span>已成功打通并同步来自 <strong>Aha! 生词本</strong> 的 <span id="ahaSyncCount" style="color: #46A302; font-size: 13px;">0</span> 个重点词汇</span>
+        </div>
+        <button onclick="document.getElementById('ahaSyncBanner').style.display='none'" style="background:none; border:none; color:#888; cursor:pointer; font-size:12px; font-weight:bold;">✕</button>
+      </div>
+
+      <div style="margin: auto 0; padding: 12px 0;">
+        <div class="word-header">
+          <div class="word-meaning">
+            <span id="wordMeaning">...</span>
+            <span class="word-type-tag" id="wordTypeTag">Word</span>
+          </div>
+          <button class="word-ipa-btn" onclick="playCurrentWordAudio()">
+            <span id="wordIPA">...</span>
+            <span>🔊</span>
+          </button>
+        </div>
+
+        <div class="slots-container" id="slotsContainer"></div>
+        <div class="tray-container" id="trayContainer"></div>
+
+        <div id="successPanel" style="display: none;" class="animate-pop-in">
+          <div class="kron-spark-card">
+            <div class="kron-avatar">👨🏻‍🏫</div>
+            <div class="kron-spark-content">
+              <div class="kron-spark-title">⚡️ Kron 老师脑洞发问</div>
+              <div class="kron-spark-text" id="kronMindSpark">...</div>
+            </div>
+          </div>
+
+          <div class="transfer-panel">
+            <div class="rule-row">
+              <span class="rule-badge" id="ruleBadge">...</span>
+              <span class="rule-desc" id="ruleDesc">...</span>
+            </div>
+            <div class="transfer-title">举一反三单词积木（点击听纯正发音）</div>
+            <div class="transfer-grid" id="transferGrid"></div>
+          </div>
+        </div>
+      </div>
+
+      <div style="padding-top: 14px;">
+        <button class="duo-btn duo-btn-green" id="nextBtn" style="width: 100%; padding: 16px; font-size: 18px; display: none;" onclick="goNextWord()">
+          继续下一个单词 ➔
+        </button>
+        <div id="footerPlaceholder" style="text-align: center; color: #AFAFAF; font-size: 13px; font-weight: 700; height: 55px; line-height: 55px;">
+          点击下方发音积木完成拼装
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== 视图 2：环球航班大亨独立游戏 ==================== -->
+    <div id="gameView" style="display: none; flex-direction: column; justify-content: space-between; min-height: calc(100vh - 32px);">
+      <div>
+        <div class="game-top-bar">
+          <div class="timer-pill" id="timerDisplay">
+            <span>🏝️</span>
+            <span id="timeText">03:00</span>
+          </div>
+          <div style="display: flex; gap: 8px;">
+            <button class="duo-btn duo-btn-ocean" style="padding: 6px 12px; font-size: 12px;" onclick="openMarket()">
+              🎒 航线机队升级
+            </button>
+            <button class="duo-btn duo-btn-dark" style="padding: 6px 12px; font-size: 12px;" onclick="switchToLearn()">
+              📖 返回复习
+            </button>
+          </div>
+        </div>
+
+        <div class="island-stats-row">
+          <div class="island-stat-card">
+            <div class="stat-label">探险金币</div>
+            <div class="stat-val" id="playerGoldText">🪙 0</div>
+          </div>
+          <div class="island-stat-card">
+            <div class="stat-label">探索地标</div>
+            <div class="stat-val" id="servedCountText">🏖️ 0</div>
+          </div>
+          <div class="island-stat-card">
+            <div class="stat-label">探险狂热</div>
+            <div class="stat-val" id="comboText" style="color: #0984E3;">🔥 x1</div>
+          </div>
+        </div>
+
+        <div class="ticker-bar" id="tickerMsg">
+          🌴 终极海岛度假探险开启！收拾行李、搭建沙堡、奔赴胜地！
+        </div>
+
+        <div class="leaderboard-mini" id="leaderboardGrid"></div>
+      </div>
+
+      <div class="island-stage" id="islandStage">
+        
+        <div id="gameStartScreen" style="text-align: center; padding: 10px;">
+          <div style="font-size: 54px; margin-bottom: 8px;">🏕️</div>
+          <h1 style="font-size: 22px; font-weight: 900; margin-bottom: 6px; color: #0984E3;">
+            GIMKIT · 海岛探险大富翁
+          </h1>
+          <p style="font-size: 13px; color: #8C9BAE; line-height: 1.5; margin-bottom: 20px;">
+            已吃透全套 17 个度假描述与旅行装备词汇！<br/>探险队已经抵达神秘热带群岛！<br/>答对题目收集全套露营装备，登上海岛大亨财富之巅！
+          </p>
+          <button class="duo-btn duo-btn-ocean" style="width: 100%; padding: 15px; font-size: 16px;" onclick="startBattle()">
+            开启终极海岛探险 ➔
+          </button>
+        </div>
+
+        <div id="gameOrderScreen" style="display: none; width: 100%; text-align: center;">
+          <div class="explorer-avatar-box">
+            <div class="explorer-emoji" id="custEmoji">🏖️</div>
+          </div>
+          
+          <div class="quest-bubble" style="margin: 0 auto 12px auto;">
+            <span style="font-size: 18px;">🧭</span>
+            <div style="text-align: left;">
+              <div style="font-size: 11px; color: #8DA1BA; font-weight: 800;" id="custName">探险任务</div>
+              <div class="quest-tag" id="custOrderSpeech">“寻觅装备：「帐篷」！”</div>
+            </div>
+          </div>
+
+          <div style="margin-bottom: 12px;">
+            <div class="quest-timer-bar">
+              <div class="quest-timer-fill" id="patienceBar" style="width: 100%;"></div>
+            </div>
+          </div>
+
+          <div style="font-size: 13px; font-weight: 900; color: #E5E5E5; margin-bottom: 14px;" id="gameQuestionPrompt">
+            探险通关：匹配对应的度假描述或露营装备：
+          </div>
+
+          <div class="game-opt-grid" id="gameOptionGrid"></div>
+        </div>
+
+        <div id="gameDishDoneScreen" style="display: none; text-align: center;" class="animate-pop-in">
+          <div id="dishDoneIcon" style="font-size: 60px; margin-bottom: 8px;">✨🏖️💎✨</div>
+          <h3 id="dishDoneTitle" style="font-size: 22px; font-weight: 900; color: #0984E3; margin-bottom: 6px;">
+            探险大捷！+350 🪙
+          </h3>
+          <p id="dishDoneDesc" style="font-size: 13px; color: #8DA1BA; margin-bottom: 18px;">
+            成功搜寻到神秘遗迹宝箱！海量金币入账！
+          </p>
+          <button class="duo-btn duo-btn-ocean" style="width: 100%; padding: 14px; font-size: 16px;" onclick="nextCustomer()">
+            探索下一个神秘坐标 ➔
+          </button>
+        </div>
+
+        <div id="gameOverScreen" style="display: none; text-align: center; width: 100%;" class="animate-pop-in">
+          <div style="font-size: 56px; margin-bottom: 8px;" id="finalTrophy">👑</div>
+          <h2 style="font-size: 24px; font-weight: 900; color: #FFC800;" id="finalRankTitle">全球终极荣誉探险大亨！</h2>
+          <p style="font-size: 12px; color: #8C9BAE; margin-bottom: 16px;" id="finalRankDesc">Power Up 3 全书单词大满贯！恭喜毕业！</p>
+          <div style="background: #11233B; border-radius: 20px; padding: 14px; margin-bottom: 18px;" id="finalPodium"></div>
+          <button class="duo-btn duo-btn-ocean" style="width: 100%; padding: 14px; font-size: 16px;" onclick="startBattle()">
+            再探一次 🔄
+          </button>
+        </div>
+
+      </div>
+
+      <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 10px; font-size: 11px; font-weight: 800; color: #5B6F8E;">
+        <span>GIMKIT EXPEDITION · KRON 终极珍藏版</span>
+        <span id="playerBuffs">⛺ 充气帐篷: 0级 | 👟 跑鞋: 基础</span>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="market-drawer" id="marketDrawer">
+    <div class="market-modal">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+        <h3 style="font-size: 18px; font-weight: 900; color: #0984E3;">🎒 海岛航线机队升级</h3>
+        <button style="background: none; border: none; color: #8C9BAE; font-size: 22px; cursor: pointer;" onclick="closeMarket()">✕</button>
+      </div>
+
+      <div class="market-item">
+        <div>
+          <div style="font-weight: 900; font-size: 14px; color: #FFF;">👟 筋斗云极速跑鞋</div>
+          <div style="font-size: 11px; color: #8C9BAE;">单次探索探险金币收益提升 50%</div>
+        </div>
+        <button class="duo-btn duo-btn-ocean" style="padding: 8px 12px; font-size: 12px;" onclick="buyUpgrade('knife', 400)">
+          400 🪙
+        </button>
+      </div>
+
+      <div class="market-item">
+        <div>
+          <div style="font-weight: 900; font-size: 14px; color: #FFF;">🏖️ 自动化度假海滩酒店</div>
+          <div style="font-size: 11px; color: #8C9BAE;">每 3 秒自动产出 60 点探险金币</div>
+        </div>
+        <button class="duo-btn duo-btn-ocean" style="padding: 8px 12px; font-size: 12px;" onclick="buyUpgrade('autoCook', 600)">
+          600 🪙
+        </button>
+      </div>
+
+      <div class="market-item">
+        <div>
+          <div style="font-weight: 900; font-size: 14px; color: #FFF;">🏕️ 防风暴超级天幕帐篷</div>
+          <div style="font-size: 11px; color: #8C9BAE;">探险倒计时流失速度减缓 40%</div>
+        </div>
+        <button class="duo-btn duo-btn-ocean" style="padding: 8px 12px; font-size: 12px;" onclick="buyUpgrade('bell', 350)">
+          350 🪙
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    /* ================= Unit 12: 26 词全量数据库 (环球旅行与交通探险) ================= */
+    const VOCABULARY = [
+      {
+            "word": "bicycle",
+            "meaning": "脚踏车 / 自行车",
+            "IPA": "/ˈbaɪ.sɪ.kl̩/",
+            "type": "transport",
+            "blocks": [
+                  "bi",
+                  "cy",
+                  "cle"
+            ],
+            "mindSpark": "迎着春风骑上心爱的小单车，车铃叮当响，下坡时不蹬脚踏车像在低空滑翔！",
+            "rule": "前缀 bi- (两个) + cycle (车轮圆环)",
+            "ruleDesc": "两个轮子的代步工具；前缀 bi- 发 /baɪ/，cy 软化发 /sɪ/，-cle 为成音节 /kl̩/。",
+            "transfers": [
+                  {
+                        "word": "bike",
+                        "hl": "bi",
+                        "cn": "单车(口语简称)"
+                  },
+                  {
+                        "word": "bilingual",
+                        "hl": "bi",
+                        "cn": "双语的"
+                  },
+                  {
+                        "word": "tricycle",
+                        "hl": "cy",
+                        "cn": "三轮车"
+                  },
+                  {
+                        "word": "motorcycle",
+                        "hl": "cy",
+                        "cn": "摩托车"
+                  }
+            ]
+      },
+      {
+            "word": "boat",
+            "meaning": "水上小船 / 游艇",
+            "IPA": "/bəʊt/",
+            "type": "transport",
+            "blocks": [
+                  "b",
+                  "oat"
+            ],
+            "mindSpark": "湖面上划着双桨小木船，微风拂过水面泛起粼粼波光，让我们荡起双桨！",
+            "rule": "oa 组合发双元音 /əʊ/",
+            "ruleDesc": "oa 发饱满圆润的 /əʊ/；通常指小型船只，而跨洋巨轮则称为 ship。",
+            "transfers": [
+                  {
+                        "word": "coat",
+                        "hl": "oat",
+                        "cn": "大衣外套"
+                  },
+                  {
+                        "word": "goat",
+                        "hl": "oat",
+                        "cn": "山羊"
+                  },
+                  {
+                        "word": "float",
+                        "hl": "oat",
+                        "cn": "漂浮"
+                  },
+                  {
+                        "word": "ball",
+                        "hl": "b",
+                        "cn": "球"
+                  }
+            ]
+      },
+      {
+            "word": "bus",
+            "meaning": "公共汽车 / 巴士",
+            "IPA": "/bʌs/",
+            "type": "transport",
+            "blocks": [
+                  "b",
+                  "us"
+            ],
+            "mindSpark": "眼看着公交车缓缓关门起步，你在后面狂奔挥手大喊：“师傅等一下！我还没上车！”",
+            "rule": "CVC 短元音 /ʌ/",
+            "ruleDesc": "源自拉丁语 omnibus (为所有人提供) 的缩写；复数加 -es 变为 buses。",
+            "transfers": [
+                  {
+                        "word": "buses",
+                        "hl": "b",
+                        "cn": "公交车(复数)"
+                  },
+                  {
+                        "word": "minibus",
+                        "hl": "b",
+                        "cn": "小巴客车"
+                  },
+                  {
+                        "word": "tub",
+                        "hl": "b",
+                        "cn": "浴缸"
+                  },
+                  {
+                        "word": "ball",
+                        "hl": "b",
+                        "cn": "球"
+                  }
+            ]
+      },
+      {
+            "word": "car",
+            "meaning": "小汽车 / 轿车",
+            "IPA": "/kɑː/",
+            "type": "transport",
+            "blocks": [
+                  "c",
+                  "ar"
+            ],
+            "mindSpark": "家庭自驾游后排永远是零食根据地，副驾驶放着导航音乐，一路向快乐出发！",
+            "rule": "ar 组合发饱满长音 /ɑː/",
+            "ruleDesc": "最基础高频代步词汇；源自古凯尔特语战车；常用搭配 drive a car。",
+            "transfers": [
+                  {
+                        "word": "card",
+                        "hl": "ar",
+                        "cn": "卡片"
+                  },
+                  {
+                        "word": "cart",
+                        "hl": "ar",
+                        "cn": "推车/马车"
+                  },
+                  {
+                        "word": "scar",
+                        "hl": "ar",
+                        "cn": "伤疤"
+                  },
+                  {
+                        "word": "park",
+                        "hl": "ar",
+                        "cn": "停车/公园"
+                  }
+            ]
+      },
+      {
+            "word": "plane",
+            "meaning": "喷气式飞机 / 客机",
+            "IPA": "/pleɪn/",
+            "type": "transport",
+            "blocks": [
+                  "pl",
+                  "ane"
+            ],
+            "mindSpark": "坐在靠窗座位冲出云层的一瞬间，脚下是棉花糖般的云海，天空蓝得让人沉醉！",
+            "rule": "magic e 让 a 发字母大名 /eɪ/",
+            "ruleDesc": "airplane 或 aeroplane 的口语通用简写；同音词 plain (平原/朴素的)。",
+            "transfers": [
+                  {
+                        "word": "airplane",
+                        "hl": "pl",
+                        "cn": "飞机"
+                  },
+                  {
+                        "word": "plate",
+                        "hl": "pl",
+                        "cn": "盘子"
+                  },
+                  {
+                        "word": "plan",
+                        "hl": "pl",
+                        "cn": "计划"
+                  },
+                  {
+                        "word": "planet",
+                        "hl": "pl",
+                        "cn": "行星"
+                  }
+            ]
+      },
+      {
+            "word": "train",
+            "meaning": "铁轨列车 / 高铁火车",
+            "IPA": "/treɪn/",
+            "type": "transport",
+            "blocks": [
+                  "tr",
+                  "ain"
+            ],
+            "mindSpark": "车厢窗外闪过飞驰的田野与村庄，手里端着泡面听着铁轨哐当声，这是独一无二的旅途浪漫！",
+            "rule": "ai 组合发双元音 /eɪ/",
+            "ruleDesc": "tr- 辅音连缀发 /tr/；除了列车火车，作动词时表示“刻苦训练/培养”。",
+            "transfers": [
+                  {
+                        "word": "rain",
+                        "hl": "ain",
+                        "cn": "雨水"
+                  },
+                  {
+                        "word": "pain",
+                        "hl": "ain",
+                        "cn": "疼痛"
+                  },
+                  {
+                        "word": "trainer",
+                        "hl": "tr",
+                        "cn": "教练/跑鞋"
+                  },
+                  {
+                        "word": "training",
+                        "hl": "tr",
+                        "cn": "培训训练"
+                  }
+            ]
+      },
+      {
+            "word": "minibus",
+            "meaning": "迷你小巴 / 中巴客车",
+            "IPA": "/ˈmɪ.ni.bʌs/",
+            "type": "transport",
+            "blocks": [
+                  "mi",
+                  "ni",
+                  "b",
+                  "us"
+            ],
+            "mindSpark": "去郊区研学包下的一辆十人座小巴，车厢里一路欢声笑语，音响里放着合唱神曲！",
+            "rule": "前缀 mini- (微型的) + bus (客车)",
+            "ruleDesc": "mini- 源自 miniature (缩微模型)；指十几个座位的短途灵活中小型客车。",
+            "transfers": [
+                  {
+                        "word": "minimum",
+                        "hl": "mi",
+                        "cn": "最小值"
+                  },
+                  {
+                        "word": "minimal",
+                        "hl": "mi",
+                        "cn": "极简的"
+                  },
+                  {
+                        "word": "miniature",
+                        "hl": "mi",
+                        "cn": "缩影/微型画"
+                  },
+                  {
+                        "word": "ball",
+                        "hl": "b",
+                        "cn": "球"
+                  }
+            ]
+      },
+      {
+            "word": "helicopter",
+            "meaning": "直升飞机",
+            "IPA": "/ˈhel.ɪˌkɒp.tə/",
+            "type": "transport",
+            "blocks": [
+                  "hel",
+                  "i",
+                  "cop",
+                  "ter"
+            ],
+            "mindSpark": "头顶巨大的旋翼螺旋桨轰鸣呼啸盘旋，垂直起飞直插云霄，救援现场的最强空中雄鹰！",
+            "rule": "希腊词根：helico- (螺旋盘旋) + pter (羽翼翅膀)",
+            "ruleDesc": "四个音节节奏鲜明：hel·i·cop·ter；词尾 -ter 弱读为 /tə/，口语常简称为 chopper。",
+            "transfers": [
+                  {
+                        "word": "copter",
+                        "hl": "cop",
+                        "cn": "直升机(俚语)"
+                  },
+                  {
+                        "word": "helix",
+                        "hl": "hel",
+                        "cn": "双螺旋结构"
+                  },
+                  {
+                        "word": "pterodactyl",
+                        "hl": "ter",
+                        "cn": "翼龙"
+                  },
+                  {
+                        "word": "flight",
+                        "hl": "i",
+                        "cn": "飞行航班"
+                  }
+            ]
+      },
+      {
+            "word": "tram",
+            "meaning": "有轨电车",
+            "IPA": "/træm/",
+            "type": "transport",
+            "blocks": [
+                  "tr",
+                  "am"
+            ],
+            "mindSpark": "行驶在市中心复古铁轨上的叮叮车，慢悠悠穿过繁华大街，窗外是复古的城市风景！",
+            "rule": "tr- 辅音连缀 + 短元音 /æ/",
+            "ruleDesc": "单音节词汇，沿城市道路中铺设的金属轨道由架空电线驱动的环保公共交通。",
+            "transfers": [
+                  {
+                        "word": "track",
+                        "hl": "tr",
+                        "cn": "轨道/小径"
+                  },
+                  {
+                        "word": "train",
+                        "hl": "tr",
+                        "cn": "火车"
+                  },
+                  {
+                        "word": "cram",
+                        "hl": "am",
+                        "cn": "填鸭死记硬背"
+                  },
+                  {
+                        "word": "jam",
+                        "hl": "am",
+                        "cn": "果酱/拥堵"
+                  }
+            ]
+      },
+      {
+            "word": "motorbike",
+            "meaning": "双轮摩托车",
+            "IPA": "/ˈməʊ.tə.baɪk/",
+            "type": "transport",
+            "blocks": [
+                  "mo",
+                  "tor",
+                  "bike"
+            ],
+            "mindSpark": "戴上酷酷的复古头盔，油门一拧发动机发出雄浑轰鸣，风驰电掣感受速度与激情！",
+            "rule": "复合词：motor (马达引擎) + bike (单车)",
+            "ruleDesc": "o_e 与 o 均发双元音 /əʊ/；bike 里的 i 发 /aɪ/，是 motorcycle 的日常口语词汇。",
+            "transfers": [
+                  {
+                        "word": "motor",
+                        "hl": "mo",
+                        "cn": "电动机/马达"
+                  },
+                  {
+                        "word": "motorcycle",
+                        "hl": "mo",
+                        "cn": "摩托车(书面)"
+                  },
+                  {
+                        "word": "motorway",
+                        "hl": "mo",
+                        "cn": "高速公路(英式)"
+                  },
+                  {
+                        "word": "bike",
+                        "hl": "bike",
+                        "cn": "自行车"
+                  }
+            ]
+      },
+      {
+            "word": "scooter",
+            "meaning": "踏板轻骑车 / 儿童滑板车",
+            "IPA": "/ˈskuː.tə/",
+            "type": "transport",
+            "blocks": [
+                  "scoot",
+                  "er"
+            ],
+            "mindSpark": "不管是放学在广场飞驰的三轮滑板车，还是在罗马街头穿梭的 Vespa 小踏板，都超拉风！",
+            "rule": "动词 scoot (迅速疾行溜走) + -er",
+            "ruleDesc": "oo 发饱满长元音 /uː/；小轮子轻便代步工具，既指小踏板摩托也指人力滑板车。",
+            "transfers": [
+                  {
+                        "word": "cameron",
+                        "hl": "er",
+                        "cn": "卡梅伦 (猴子/角色名)"
+                  },
+                  {
+                        "word": "brother",
+                        "hl": "er",
+                        "cn": "兄弟 (哥哥/弟弟)"
+                  },
+                  {
+                        "word": "sister",
+                        "hl": "er",
+                        "cn": "姐妹 (姐姐/妹妹)"
+                  },
+                  {
+                        "word": "teacher",
+                        "hl": "er",
+                        "cn": "老师"
+                  }
+            ]
+      },
+      {
+            "word": "underground train",
+            "meaning": "城市地铁地下列车",
+            "IPA": "/ˈʌn.də.ɡraʊnd ˌtreɪn/",
+            "type": "transport",
+            "blocks": [
+                  "un",
+                  "d",
+                  "er",
+                  "gr",
+                  "ou",
+                  "nd",
+                  "tr",
+                  "a",
+                  "in"
+            ],
+            "mindSpark": "伦敦地铁站标志性的大圆红圈和那句永恒的“Mind the gap（请注意列车空隙）”！",
+            "rule": "复合词：under (在...下) + ground (地面) + train",
+            "ruleDesc": "英式英语称地铁为 Underground 或 the Tube；美语常称为 Subway。",
+            "transfers": [
+                  {
+                        "word": "ground",
+                        "hl": "un",
+                        "cn": "地面"
+                  },
+                  {
+                        "word": "playground",
+                        "hl": "un",
+                        "cn": "操场"
+                  },
+                  {
+                        "word": "underwater",
+                        "hl": "un",
+                        "cn": "水下的"
+                  },
+                  {
+                        "word": "fun",
+                        "hl": "un",
+                        "cn": "乐趣"
+                  }
+            ]
+      },
+      {
+            "word": "miss (a bus, train etc)",
+            "meaning": "错过了 (班车 / 火车等)",
+            "IPA": "/mɪs/",
+            "type": "travel",
+            "blocks": [
+                  "m",
+                  "i",
+                  "ss"
+            ],
+            "mindSpark": "就差最后十米，眼睁睁看着闸门在眼前啪嗒关上，心碎一地的大写尴尬！",
+            "rule": "短元音 i + 双写 ss",
+            "ruleDesc": "除了“想念”，当接交通工具时核心指“未赶上、错失”；反义词是赶上 catch。",
+            "transfers": [
+                  {
+                        "word": "kiss",
+                        "hl": "i",
+                        "cn": "吻"
+                  },
+                  {
+                        "word": "hiss",
+                        "hl": "i",
+                        "cn": "嘶嘶声"
+                  },
+                  {
+                        "word": "dismiss",
+                        "hl": "m",
+                        "cn": "解散/驳回"
+                  },
+                  {
+                        "word": "man",
+                        "hl": "m",
+                        "cn": "男人"
+                  }
+            ]
+      },
+      {
+            "word": "fly",
+            "meaning": "乘飞机旅行 / 凌空飞行",
+            "IPA": "/flaɪ/",
+            "type": "travel",
+            "blocks": [
+                  "fl",
+                  "y"
+            ],
+            "mindSpark": "“I'm flying to London tomorrow！”收拾好行李箱，下一秒就要飞越云海跨越大洲！",
+            "rule": "fl- 辅音连缀 + y 发长元音 /aɪ/",
+            "ruleDesc": "不规则动词：过去式是 flew /fluː/，过去分词是 flown /fləʊn/；作名词时指苍蝇。",
+            "transfers": [
+                  {
+                        "word": "flight",
+                        "hl": "fl",
+                        "cn": "飞行航班"
+                  },
+                  {
+                        "word": "sky",
+                        "hl": "y",
+                        "cn": "天空"
+                  },
+                  {
+                        "word": "flew",
+                        "hl": "fl",
+                        "cn": "飞过了(过去式)"
+                  },
+                  {
+                        "word": "butterfly",
+                        "hl": "fl",
+                        "cn": "蝴蝶"
+                  }
+            ]
+      },
+      {
+            "word": "catch (a bus, train etc)",
+            "meaning": "赶上并搭乘 (公交 / 火车)",
+            "IPA": "/kætʃ/",
+            "type": "travel",
+            "blocks": [
+                  "c",
+                  "at",
+                  "ch"
+            ],
+            "mindSpark": "百米冲刺在最后一秒大脚跨进车门，气喘吁吁但嘴角上扬：“终于赶上了！”",
+            "rule": "-atch 组合发 /ætʃ/",
+            "ruleDesc": "不规则动词：过去式和过去分词是 caught /kɔːt/；接交通工具专指赶车成功搭乘。",
+            "transfers": [
+                  {
+                        "word": "match",
+                        "hl": "c",
+                        "cn": "比赛/火柴"
+                  },
+                  {
+                        "word": "watch",
+                        "hl": "at",
+                        "cn": "手表/注视"
+                  },
+                  {
+                        "word": "batch",
+                        "hl": "c",
+                        "cn": "一批"
+                  },
+                  {
+                        "word": "caught",
+                        "hl": "c",
+                        "cn": "抓住了(过去式)"
+                  }
+            ]
+      },
+      {
+            "word": "take (a taxi)",
+            "meaning": "搭乘打车 (出租车)",
+            "IPA": "/teɪk/",
+            "type": "travel",
+            "blocks": [
+                  "t",
+                  "a",
+                  "ke"
+            ],
+            "mindSpark": "暴雨天站在路边拼命扬手拦黄色出租车，钻进车厢后座那一刻感觉终于脱险！",
+            "rule": "magic e 让 a 发字母大名 /eɪ/",
+            "ruleDesc": "万能交通动词：take a taxi, take a bus, take the train, take the subway；过去式是 took。",
+            "transfers": [
+                  {
+                        "word": "taxi",
+                        "hl": "t",
+                        "cn": "出租车"
+                  },
+                  {
+                        "word": "took",
+                        "hl": "t",
+                        "cn": "拿/乘(过去式)"
+                  },
+                  {
+                        "word": "taken",
+                        "hl": "t",
+                        "cn": "被带走"
+                  },
+                  {
+                        "word": "mistake",
+                        "hl": "t",
+                        "cn": "错误"
+                  }
+            ]
+      },
+      {
+            "word": "ride (a motorbike, bike)",
+            "meaning": "骑行驾驶 (摩托车 / 单车 / 马匹)",
+            "IPA": "/raɪd/",
+            "type": "travel",
+            "blocks": [
+                  "r",
+                  "i",
+                  "de"
+            ],
+            "mindSpark": "跨上单车脚蹬飞转，或者跨上大排量机车体验风在耳边呼啸，这就是双轮的独属乐趣！",
+            "rule": "跨坐在两边骑行专指 ride",
+            "ruleDesc": "骑两轮车辆或骑动物用 ride；开有车厢的四轮轿车用 drive；过去式是 rode，分词是 ridden。",
+            "transfers": [
+                  {
+                        "word": "rider",
+                        "hl": "r",
+                        "cn": "骑手"
+                  },
+                  {
+                        "word": "side",
+                        "hl": "i",
+                        "cn": "侧边"
+                  },
+                  {
+                        "word": "hide",
+                        "hl": "i",
+                        "cn": "隐藏"
+                  },
+                  {
+                        "word": "tide",
+                        "hl": "i",
+                        "cn": "潮汐"
+                  }
+            ]
+      },
+      {
+            "word": "drive (to …)",
+            "meaning": "自驾驱车 (前往某地)",
+            "IPA": "/draɪv/",
+            "type": "travel",
+            "blocks": [
+                  "dr",
+                  "i",
+                  "ve"
+            ],
+            "mindSpark": "拿到驾照第一天，双手紧握方向盘手心冒汗，挂上 D 挡缓缓开向广阔天地！",
+            "rule": "辅音连缀 dr- + magic e 让 i 发 /aɪ/",
+            "ruleDesc": "专指驾驶控制四轮以上的机动车；不规则动词：drive -> drove -> driven。",
+            "transfers": [
+                  {
+                        "word": "driver",
+                        "hl": "dr",
+                        "cn": "司机"
+                  },
+                  {
+                        "word": "drove",
+                        "hl": "dr",
+                        "cn": "驾驶了(过去式)"
+                  },
+                  {
+                        "word": "dive",
+                        "hl": "i",
+                        "cn": "潜水"
+                  },
+                  {
+                        "word": "strive",
+                        "hl": "i",
+                        "cn": "拼搏奋斗"
+                  }
+            ]
+      },
+      {
+            "word": "journey",
+            "meaning": "长途旅程 / 人生历程",
+            "IPA": "/ˈdʒɜː.ni/",
+            "type": "travel",
+            "blocks": [
+                  "jour",
+                  "ney"
+            ],
+            "mindSpark": "千里之行始于足下 (A journey of a thousand miles begins with a single step)！",
+            "rule": "our 发长卷舌音 /ɜː/，-ey 发轻短 /i/",
+            "ruleDesc": "源自古法语 journée (一天的行程)；强调陆路距离较长、历经风雨的过程感。",
+            "transfers": [
+                  {
+                        "word": "journalist",
+                        "hl": "jour",
+                        "cn": "新闻记者"
+                  },
+                  {
+                        "word": "journal",
+                        "hl": "jour",
+                        "cn": "日记/期刊"
+                  },
+                  {
+                        "word": "money",
+                        "hl": "ney",
+                        "cn": "金钱"
+                  },
+                  {
+                        "word": "honey",
+                        "hl": "ney",
+                        "cn": "蜂蜜/宝贝"
+                  }
+            ]
+      },
+      {
+            "word": "on time",
+            "meaning": "准时无误 / 不早不晚",
+            "IPA": "/ˌɒn ˈtaɪm/",
+            "type": "travel",
+            "blocks": [
+                  "on",
+                  "t",
+                  "i",
+                  "me"
+            ],
+            "mindSpark": "火车 08:30 发车，你在 08:29 踩点刷闸机冲上车厢，这就是顶级的 on time 踩点大师！",
+            "rule": "固定介词短语：on time (正点准时)",
+            "ruleDesc": "注意区别：on time 指分秒不差、按时刻表准点；in time 指赶在发生危机之前“及时”。",
+            "transfers": [
+                  {
+                        "word": "in time",
+                        "hl": "t",
+                        "cn": "及时赶上"
+                  },
+                  {
+                        "word": "time",
+                        "hl": "t",
+                        "cn": "时间"
+                  },
+                  {
+                        "word": "timetable",
+                        "hl": "t",
+                        "cn": "时间时刻表"
+                  },
+                  {
+                        "word": "punctual",
+                        "hl": "t",
+                        "cn": "准时的(形容词)"
+                  }
+            ]
+      },
+      {
+            "word": "village",
+            "meaning": "宁静乡村 / 村落",
+            "IPA": "/ˈvɪl.ɪdʒ/",
+            "type": "travel",
+            "blocks": [
+                  "vil",
+                  "lage"
+            ],
+            "mindSpark": "群山环抱的小山村，袅袅炊烟升起，溪流潺潺小狗撒欢，世外桃源般的 village 慢生活！",
+            "rule": "-age 结尾弱读为轻快的 /ɪdʒ/",
+            "ruleDesc": "双写 ll 锁死前面 i 发短促的 /ɪ/，-age 弱化发 /ɪdʒ/；村民叫做 villager。",
+            "transfers": [
+                  {
+                        "word": "villager",
+                        "hl": "vil",
+                        "cn": "村民"
+                  },
+                  {
+                        "word": "daredevil",
+                        "hl": "vil",
+                        "cn": "铤而走险的勇士 / 冒失狂人"
+                  },
+                  {
+                        "word": "villian",
+                        "hl": "vil",
+                        "cn": "反派角色 / 大坏蛋"
+                  }
+            ]
+      },
+      {
+            "word": "wide",
+            "meaning": "宽阔开阔的 / 广阔的",
+            "IPA": "/waɪd/",
+            "type": "travel",
+            "blocks": [
+                  "w",
+                  "ide"
+            ],
+            "mindSpark": "站在双向八车道的开阔跨海大桥上，两旁海面广阔无垠，路面超级 wide！",
+            "rule": "magic e 让 i 发字母大名 /aɪ/",
+            "ruleDesc": "单音节词，形容两边距离开阔；名词形式是 width (/wɪdθ/ 宽度)，全球广域网是 World Wide Web。",
+            "transfers": [
+                  {
+                        "word": "side",
+                        "hl": "ide",
+                        "cn": "侧面"
+                  },
+                  {
+                        "word": "ride",
+                        "hl": "ide",
+                        "cn": "骑行"
+                  },
+                  {
+                        "word": "tide",
+                        "hl": "ide",
+                        "cn": "潮水"
+                  },
+                  {
+                        "word": "widespread",
+                        "hl": "w",
+                        "cn": "分布广泛的"
+                  }
+            ]
+      },
+      {
+            "word": "take a risk",
+            "meaning": "冒险行事 / 承担风险挑战",
+            "IPA": "/ˌteɪk ə ˈrɪsk/",
+            "type": "travel",
+            "blocks": [
+                  "t",
+                  "a",
+                  "ke",
+                  "a",
+                  "r",
+                  "i",
+                  "sk"
+            ],
+            "mindSpark": "走过悬空百米的简易吊桥去上学，山风呼啸，虽然心跳爆表，但勇敢者无所畏惧！",
+            "rule": "短元音 i + 词尾辅音连缀 -sk",
+            "ruleDesc": "risk 既是名词也是动词；固定短语 take a risk (冒险一搏)，形容面对危险依然勇敢向前。",
+            "transfers": [
+                  {
+                        "word": "risk",
+                        "hl": "r",
+                        "cn": "风险/冒险"
+                  },
+                  {
+                        "word": "risky",
+                        "hl": "r",
+                        "cn": "充满危险的"
+                  },
+                  {
+                        "word": "task",
+                        "hl": "t",
+                        "cn": "任务"
+                  },
+                  {
+                        "word": "danger",
+                        "hl": "a",
+                        "cn": "危险"
+                  }
+            ]
+      },
+      {
+            "word": "tiny",
+            "meaning": "极其微小的 / 袖珍玲珑的",
+            "IPA": "/ˈtaɪ.ni/",
+            "type": "travel",
+            "blocks": [
+                  "ti",
+                  "ny"
+            ],
+            "mindSpark": "在显微镜下才看得到的小水熊虫，或者刚出生只有大拇指那么长的小奶猫，简直太 tiny 了！",
+            "rule": "i 发长双元音 /aɪ/，y 发短音 /i/",
+            "ruleDesc": "比 small 更加小巧玲珑、微乎其微的袖珍感；读作 /ˈtaɪ.ni/，重音在 ti。",
+            "transfers": [
+                  {
+                        "word": "time",
+                        "hl": "ti",
+                        "cn": "时间(/aɪ/)"
+                  },
+                  {
+                        "word": "tidy",
+                        "hl": "ti",
+                        "cn": "整洁的"
+                  }
+            ]
+      },
+      {
+            "word": "tracks",
+            "meaning": "乡间小径 / 铁轨线路 / 崎岖痕迹",
+            "IPA": "/træks/",
+            "type": "travel",
+            "blocks": [
+                  "tr",
+                  "acks"
+            ],
+            "mindSpark": "每天清晨沿着山间踩出来的崎岖小泥路走四十分钟去上学，泥巴路上印满轻快的脚印！",
+            "rule": "tr- 辅音连缀 + 短元音 a + ck 清脆爆破 /k/",
+            "ruleDesc": "复数加 -s 读清辅音 /ts/；既可以指铁轨、跑道，也可以指被频繁踩踏出的小土路。",
+            "transfers": [
+                  {
+                        "word": "track",
+                        "hl": "tr",
+                        "cn": "轨道/追踪"
+                  },
+                  {
+                        "word": "train",
+                        "hl": "tr",
+                        "cn": "火车"
+                  }
+            ]
+      },
+      {
+            "word": "neighbours",
+            "meaning": "街坊四邻 / 隔壁邻居",
+            "IPA": "/ˈneɪ.bəz/",
+            "type": "travel",
+            "blocks": [
+                  "neigh",
+                  "bours"
+            ],
+            "mindSpark": "远亲不如近邻！炖了排骨汤端一碗给隔壁王奶奶，换来一大盘刚出锅的热气腾腾包子！",
+            "rule": "英式拼写 -our，美式常写作 neighbor",
+            "ruleDesc": "发音大刺客：eigh 发字母本音 /eɪ/，gh 完全静音！bours 弱化读 /bəz/，重音在首音节。",
+            "transfers": [
+                  {
+                        "word": "neighbourhood",
+                        "hl": "neigh",
+                        "cn": "街区社区"
+                  }
+            ]
+      }
+];
+
+    /* ================= 纯原生 Web Audio 触感音效引擎 (全功能版) ================= */
+    const audio = {
+      synth: window.speechSynthesis,
+      ctx: null,
+      getCtx() {
+        try {
+          if (!this.ctx) {
+            const Cls = window.AudioContext || window.webkitAudioContext;
+            if (Cls) this.ctx = new Cls();
+          }
+          if (this.ctx && this.ctx.state === "suspended") {
+            this.ctx.resume();
+          }
+          return this.ctx;
+        } catch (e) {
+          return null;
+        }
+      },
+      speak(text) {
+        try {
+          if (this.synth) {
+            this.synth.cancel();
+            const u = new SpeechSynthesisUtterance(text);
+            u.lang = "en-US";
+            u.rate = 0.9;
+            this.synth.speak(u);
+          }
+        } catch (e) {}
+      },
+      tap() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          const osc = c.createOscillator();
+          const gain = c.createGain();
+          osc.frequency.setValueAtTime(450, now);
+          osc.frequency.exponentialRampToValueAtTime(750, now + 0.04);
+          gain.gain.setValueAtTime(0.1, now);
+          gain.gain.exponentialRampToValueAtTime(0.001, now + 0.05);
+          osc.connect(gain);
+          gain.connect(c.destination);
+          osc.start(now);
+          osc.stop(now + 0.05);
+        } catch (e) {}
+      },
+      correct() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          [523.25, 659.25].forEach((f, i) => {
+            const osc = c.createOscillator();
+            const gain = c.createGain();
+            osc.frequency.setValueAtTime(f, now + i * 0.06);
+            gain.gain.setValueAtTime(0.1, now + i * 0.06);
+            gain.gain.exponentialRampToValueAtTime(0.001, now + i * 0.06 + 0.15);
+            osc.connect(gain);
+            gain.connect(c.destination);
+            osc.start(now + i * 0.06);
+            osc.stop(now + i * 0.06 + 0.16);
+          });
+        } catch (e) {}
+      },
+      bingo() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          [523.25, 659.25, 783.99, 1046.5].forEach((f, i) => {
+            const osc = c.createOscillator();
+            const gain = c.createGain();
+            osc.type = "triangle";
+            osc.frequency.setValueAtTime(f, now + i * 0.05);
+            gain.gain.setValueAtTime(0.12, now + i * 0.05);
+            gain.gain.exponentialRampToValueAtTime(0.001, now + i * 0.05 + 0.25);
+            osc.connect(gain);
+            gain.connect(c.destination);
+            osc.start(now + i * 0.05);
+            osc.stop(now + i * 0.05 + 0.28);
+          });
+        } catch (e) {}
+      },
+      wrong() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          const osc = c.createOscillator();
+          const gain = c.createGain();
+          osc.type = "sawtooth";
+          osc.frequency.setValueAtTime(140, now);
+          osc.frequency.linearRampToValueAtTime(80, now + 0.16);
+          gain.gain.setValueAtTime(0.15, now);
+          gain.gain.linearRampToValueAtTime(0.001, now + 0.16);
+          osc.connect(gain);
+          gain.connect(c.destination);
+          osc.start(now);
+          osc.stop(now + 0.18);
+        } catch (e) {}
+      },
+      chestOpen() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          [300, 450, 600, 900].forEach((f, i) => {
+            const osc = c.createOscillator();
+            const gain = c.createGain();
+            osc.frequency.setValueAtTime(f, now + i * 0.04);
+            gain.gain.setValueAtTime(0.09, now + i * 0.04);
+            gain.gain.exponentialRampToValueAtTime(0.001, now + i * 0.04 + 0.15);
+            osc.connect(gain);
+            gain.connect(c.destination);
+            osc.start(now + i * 0.04);
+            osc.stop(now + i * 0.04 + 0.16);
+          });
+        } catch (e) {}
+      },
+      steal() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          const osc = c.createOscillator();
+          const gain = c.createGain();
+          osc.type = "sine";
+          osc.frequency.setValueAtTime(800, now);
+          osc.frequency.linearRampToValueAtTime(300, now + 0.2);
+          gain.gain.setValueAtTime(0.15, now);
+          gain.gain.exponentialRampToValueAtTime(0.001, now + 0.22);
+          osc.connect(gain);
+          gain.connect(c.destination);
+          osc.start(now);
+          osc.stop(now + 0.22);
+        } catch (e) {}
+      },
+      bomb() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          const osc = c.createOscillator();
+          const gain = c.createGain();
+          osc.type = "sawtooth";
+          osc.frequency.setValueAtTime(90, now);
+          osc.frequency.linearRampToValueAtTime(40, now + 0.3);
+          gain.gain.setValueAtTime(0.2, now);
+          gain.gain.exponentialRampToValueAtTime(0.001, now + 0.32);
+          osc.connect(gain);
+          gain.connect(c.destination);
+          osc.start(now);
+          osc.stop(now + 0.32);
+        } catch (e) {}
+      },
+      swap() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          [350, 700, 500, 1000].forEach((f, i) => {
+            const osc = c.createOscillator();
+            const gain = c.createGain();
+            osc.frequency.setValueAtTime(f, now + i * 0.05);
+            gain.gain.setValueAtTime(0.1, now + i * 0.05);
+            gain.gain.exponentialRampToValueAtTime(0.001, now + i * 0.05 + 0.18);
+            osc.connect(gain);
+            gain.connect(c.destination);
+            osc.start(now + i * 0.05);
+            osc.stop(now + i * 0.05 + 0.2);
+          });
+        } catch (e) {}
+      },
+      cash() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          [987.77, 1318.51].forEach((f, i) => {
+            const osc = c.createOscillator();
+            const gain = c.createGain();
+            osc.frequency.setValueAtTime(f, now + i * 0.07);
+            gain.gain.setValueAtTime(0.12, now + i * 0.07);
+            gain.gain.exponentialRampToValueAtTime(0.001, now + i * 0.07 + 0.25);
+            osc.connect(gain);
+            gain.connect(c.destination);
+            osc.start(now + i * 0.07);
+            osc.stop(now + i * 0.07 + 0.28);
+          });
+        } catch (e) {}
+      },
+      sizzle() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          const osc = c.createOscillator();
+          const gain = c.createGain();
+          osc.type = "square";
+          osc.frequency.setValueAtTime(180, now);
+          osc.frequency.exponentialRampToValueAtTime(260, now + 0.15);
+          gain.gain.setValueAtTime(0.08, now);
+          gain.gain.exponentialRampToValueAtTime(0.001, now + 0.16);
+          osc.connect(gain);
+          gain.connect(c.destination);
+          osc.start(now);
+          osc.stop(now + 0.16);
+        } catch (e) {}
+      },
+      heal() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          [587.33, 880, 1174.66, 1760].forEach((f, i) => {
+            const osc = c.createOscillator();
+            const gain = c.createGain();
+            osc.frequency.setValueAtTime(f, now + i * 0.06);
+            gain.gain.setValueAtTime(0.12, now + i * 0.06);
+            gain.gain.exponentialRampToValueAtTime(0.001, now + i * 0.06 + 0.25);
+            osc.connect(gain);
+            gain.connect(c.destination);
+            osc.start(now + i * 0.06);
+            osc.stop(now + i * 0.06 + 0.28);
+          });
+        } catch (e) {}
+      },
+      laser() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          const osc = c.createOscillator();
+          const gain = c.createGain();
+          osc.frequency.setValueAtTime(900, now);
+          osc.frequency.exponentialRampToValueAtTime(150, now + 0.12);
+          gain.gain.setValueAtTime(0.12, now);
+          gain.gain.exponentialRampToValueAtTime(0.001, now + 0.12);
+          osc.connect(gain);
+          gain.connect(c.destination);
+          osc.start(now);
+          osc.stop(now + 0.13);
+        } catch (e) {}
+      },
+      sparkle() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          [784, 988, 1175, 1568].forEach((f, i) => {
+            const osc = c.createOscillator();
+            const gain = c.createGain();
+            osc.type = "sine";
+            osc.frequency.setValueAtTime(f, now + i * 0.04);
+            gain.gain.setValueAtTime(0.1, now + i * 0.04);
+            gain.gain.exponentialRampToValueAtTime(0.001, now + i * 0.04 + 0.2);
+            osc.connect(gain);
+            gain.connect(c.destination);
+            osc.start(now + i * 0.04);
+            osc.stop(now + i * 0.04 + 0.22);
+          });
+        } catch (e) {}
+      },
+      hack() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          [350, 700, 1050, 1400].forEach((f, i) => {
+            const osc = c.createOscillator();
+            const gain = c.createGain();
+            osc.type = "triangle";
+            osc.frequency.setValueAtTime(f, now + i * 0.03);
+            gain.gain.setValueAtTime(0.1, now + i * 0.03);
+            gain.gain.exponentialRampToValueAtTime(0.001, now + i * 0.03 + 0.12);
+            osc.connect(gain);
+            gain.connect(c.destination);
+            osc.start(now + i * 0.03);
+            osc.stop(now + i * 0.03 + 0.14);
+          });
+        } catch (e) {}
+      },
+      cheer() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          [523, 659, 784, 1046, 1318].forEach((f, i) => {
+            const osc = c.createOscillator();
+            const gain = c.createGain();
+            osc.type = "triangle";
+            osc.frequency.setValueAtTime(f, now + i * 0.05);
+            gain.gain.setValueAtTime(0.12, now + i * 0.05);
+            gain.gain.exponentialRampToValueAtTime(0.001, now + i * 0.05 + 0.25);
+            osc.connect(gain);
+            gain.connect(c.destination);
+            osc.start(now + i * 0.05);
+            osc.stop(now + i * 0.05 + 0.28);
+          });
+        } catch (e) {}
+      },
+      honk() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          const osc1 = c.createOscillator();
+          const osc2 = c.createOscillator();
+          const gain = c.createGain();
+          osc1.frequency.setValueAtTime(420, now);
+          osc2.frequency.setValueAtTime(530, now);
+          gain.gain.setValueAtTime(0.15, now);
+          gain.gain.exponentialRampToValueAtTime(0.001, now + 0.18);
+          osc1.connect(gain);
+          osc2.connect(gain);
+          gain.connect(c.destination);
+          osc1.start(now);
+          osc2.start(now);
+          osc1.stop(now + 0.2);
+          osc2.stop(now + 0.2);
+        } catch (e) {}
+      },
+      ocean() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          [440, 554, 659, 880, 1108].forEach((f, i) => {
+            const osc = c.createOscillator();
+            const gain = c.createGain();
+            osc.type = "triangle";
+            osc.frequency.setValueAtTime(f, now + i * 0.05);
+            gain.gain.setValueAtTime(0.12, now + i * 0.05);
+            gain.gain.exponentialRampToValueAtTime(0.001, now + i * 0.05 + 0.25);
+            osc.connect(gain);
+            gain.connect(c.destination);
+            osc.start(now + i * 0.05);
+            osc.stop(now + i * 0.05 + 0.28);
+          });
+        } catch (e) {}
+      }
+    };
+
+
+    /* ================= 核心学习模式逻辑 ================= */
+    let currentIndex = 0;
+    let availableBlocks = [];
+    let selectedBlocks = [];
+    let isSuccess = false;
+    let hasCompletedAllWords = false;
+
+    
+    function syncFromAha() {
+      try {
+        const raw = localStorage.getItem('kron_word_current_unit_payload') || localStorage.getItem('kron_saved_words') || localStorage.getItem('kron:word:shared_vocab');
+        if (!raw) return;
+        const data = JSON.parse(raw);
+        const words = Array.isArray(data) ? data : (data.words || []);
+        if (!words || words.length === 0) return;
+
+        const savedMap = new Map();
+        words.forEach(w => {
+          if (w.word) savedMap.set(w.word.toLowerCase().trim(), w);
+        });
+
+        let matched = 0;
+        VOCABULARY.forEach(item => {
+          const wClean = item.word.toLowerCase().trim();
+          const hasDirect = savedMap.has(wClean);
+          const hasContained = Array.from(savedMap.keys()).some(k => k && (wClean.includes(k) || k.includes(wClean)));
+          if (hasDirect || hasContained) {
+            item.isAhaSaved = true;
+            matched++;
+          }
+        });
+
+        words.forEach(w => {
+          const wClean = (w.word || '').toLowerCase().trim();
+          const exists = VOCABULARY.some(v => {
+            const vClean = v.word.toLowerCase().trim();
+            return vClean === wClean || vClean.includes(wClean);
+          });
+          if (!exists && wClean) {
+            let blocks = [w.word];
+            if (wClean === 'instrument') {
+              blocks = ['in', 'stru', 'ment'];
+            } else if (wClean === 'play') {
+              blocks = ['pl', 'ay'];
+            } else if (wClean === 'play an instrument') {
+              blocks = ['pl', 'ay', 'an', 'in', 'stru', 'ment'];
+            } else {
+              const rawParts = w.word.split(/\s+/).filter(Boolean);
+              blocks = rawParts.length > 1 ? rawParts : [w.word];
+            }
+            VOCABULARY.push({
+              word: w.word,
+              meaning: w.translation || 'Aha! 重点词汇',
+              IPA: w.phonetic || `/${wClean}/`,
+              type: w.partOfSpeech || 'saved',
+              blocks,
+              mindSpark: '你在 Kron English Aha! 学习中亲手收藏的重点单词，快来拼出它吧！',
+              rule: 'Aha! 生词本同步词汇',
+              ruleDesc: '来自课堂实战提问与高频语境，属于你的专属记忆！',
+              transfers: [],
+              isAhaSaved: true
+            });
+            matched++;
+          }
+        });
+
+        const banner = document.getElementById('ahaSyncBanner');
+        const countEl = document.getElementById('ahaSyncCount');
+        if (banner && countEl && words.length > 0) {
+          countEl.innerText = words.length;
+          banner.style.display = 'flex';
+        }
+      } catch (e) {
+        console.warn('Aha sync notice:', e);
+      }
+    }
+
+    function initWord() {
+      isSuccess = false;
+      const item = VOCABULARY[currentIndex];
+
+      document.getElementById("wordMeaning").innerText = item.meaning;
+      document.getElementById("wordIPA").innerText = item.IPA;
+      
+      const tagEl = document.getElementById("wordTypeTag");
+      if (tagEl) {
+        tagEl.innerText = item.type ? item.type.toUpperCase() : "WORD";
+        tagEl.className = "word-type-tag " + (item.type ? `tag-${item.type}` : "tag-word");
+      }
+
+      document.getElementById("successPanel").style.display = "none";
+      document.getElementById("nextBtn").style.display = "none";
+      document.getElementById("footerPlaceholder").style.display = "block";
+
+      const pct = ((currentIndex + 1) / VOCABULARY.length) * 100;
+      document.getElementById("progressBar").style.width = `${pct}%`;
+
+      availableBlocks = item.blocks.map((text, idx) => ({
+        id: `${text}-${idx}-${Math.random()}`,
+        text
+      })).sort(() => Math.random() - 0.5);
+      selectedBlocks = [];
+
+      renderBlocks();
+    }
+
+    function renderBlocks() {
+      const slots = document.getElementById("slotsContainer");
+      const tray = document.getElementById("trayContainer");
+      slots.innerHTML = "";
+      tray.innerHTML = "";
+
+      if (selectedBlocks.length === 0) {
+        slots.innerHTML = '<span class="empty-tip">点击下方发音积木</span>';
+      } else {
+        selectedBlocks.forEach(b => {
+          const btn = document.createElement("button");
+          btn.className = `duo-tile ${isSuccess ? "duo-tile-success" : ""}`;
+          btn.innerText = b.text;
+          btn.onclick = () => {
+            if (isSuccess) return;
+            audio.tap();
+            selectedBlocks = selectedBlocks.filter(x => x.id !== b.id);
+            availableBlocks.push(b);
+            renderBlocks();
+          };
+          slots.appendChild(btn);
+        });
+      }
+
+      availableBlocks.forEach(b => {
+        const btn = document.createElement("button");
+        btn.className = "duo-tile";
+        btn.innerText = b.text;
+        btn.onclick = () => handlePickBlock(b);
+        tray.appendChild(btn);
+      });
+    }
+
+    function handlePickBlock(b) {
+      if (isSuccess) return;
+      audio.tap();
+      audio.speak(b.text);
+
+      selectedBlocks.push(b);
+      availableBlocks = availableBlocks.filter(x => x.id !== b.id);
+      renderBlocks();
+
+      if (availableBlocks.length === 0) {
+        const userStr = selectedBlocks.map(x => x.text).join("");
+        const realStr = VOCABULARY[currentIndex].blocks.join("");
+
+        if (userStr === realStr) {
+          isSuccess = true;
+          audio.bingo();
+          renderBlocks();
+          showWordKnowledge();
+        } else {
+          audio.wrong();
+          const slots = document.getElementById("slotsContainer");
+          slots.classList.add("animate-shake");
+          setTimeout(() => {
+            slots.classList.remove("animate-shake");
+            availableBlocks = VOCABULARY[currentIndex].blocks.map((text, idx) => ({ id: `${text}-${idx}-${Math.random()}`, text })).sort(() => Math.random() - 0.5);
+            selectedBlocks = [];
+            renderBlocks();
+          }, 450);
+        }
+      }
+    }
+
+    function showWordKnowledge() {
+      const item = VOCABULARY[currentIndex];
+      
+      document.getElementById("kronMindSpark").innerText = item.mindSpark;
+      document.getElementById("ruleBadge").innerText = `规律：${item.rule}`;
+      document.getElementById("ruleDesc").innerText = item.ruleDesc;
+
+      const grid = document.getElementById("transferGrid");
+      grid.innerHTML = "";
+      item.transfers.forEach(t => {
+        const tile = document.createElement("div");
+        tile.className = "transfer-tile";
+        tile.innerHTML = `
+          <div>
+            <div class="transfer-word">${renderHighlight(t.word, t.hl)}</div>
+            <div class="transfer-cn">${t.cn}</div>
+          </div>
+          <span style="font-size: 13px; color: #CECECE;">🔊</span>
+        `;
+        tile.onclick = () => {
+          audio.tap();
+          audio.speak(t.word);
+        };
+        grid.appendChild(tile);
+      });
+
+      document.getElementById("successPanel").style.display = "block";
+      document.getElementById("nextBtn").style.display = "block";
+      
+      const isLast = currentIndex === VOCABULARY.length - 1;
+      document.getElementById("nextBtn").innerText = isLast ? "🎓 本单元全部达成！解锁环球航班大亨 ➔" : "继续下一个单词 ➔";
+      document.getElementById("footerPlaceholder").style.display = "none";
+
+      if (isLast) {
+        hasCompletedAllWords = true;
+        const lockBtn = document.getElementById("lockStatusBtn");
+        lockBtn.innerText = "🎁 环球极速领航 (已解锁)";
+        lockBtn.style.borderColor = "#0984E3";
+        lockBtn.style.color = "#0984E3";
+        triggerConfetti();
+        audio.bingo();
+      }
+    }
+
+    function renderHighlight(word, hl) {
+      if (!hl || !word.toLowerCase().includes(hl.toLowerCase())) return word;
+      const reg = new RegExp(`(${hl})`, "i");
+      return word.replace(reg, `<span class="hl-green">$1</span>`);
+    }
+
+    function playCurrentWordAudio() {
+      audio.speak(VOCABULARY[currentIndex].word);
+    }
+
+    function goNextWord() {
+      if (currentIndex < VOCABULARY.length - 1) {
+        currentIndex++;
+        syncFromAha();
+    initWord();
+      } else {
+        switchToGame();
+      }
+    }
+
+    function trySwitchToGame() {
+      if (!hasCompletedAllWords) {
+        alert("🔒 Kron 老师提醒：必须把本单元全部 " + VOCABULARY.length + " 个环球旅行与交通探险词汇拼完才能解锁环球航班大亨！");
+        return;
+      }
+      switchToGame();
+    }
+
+    window.addEventListener("keydown", (e) => {
+      const isLearnVisible = document.getElementById("learnView").style.display !== "none";
+      if (isSuccess && isLearnVisible && (e.key === "Enter" || e.key === " ")) {
+        e.preventDefault();
+        goNextWord();
+      }
+    });
+
+/* ================= 模块二：Gimkit 海岛探险大富翁独立游戏逻辑 ================= */
+    let timerSec = 180;
+    let timerInterval = null;
+    let botInterval = null;
+    let autoCookInterval = null;
+    let patienceInterval = null;
+
+    let playerGold = 0;
+    let servedCount = 0;
+    let combo = 1;
+    let currentCustomer = null;
+    let currentPatience = 100;
+
+    let upgrades = {
+      knifeLevel: 0,
+      autoCookLevel: 0,
+      bellLevel: 0
+    };
+
+    let cafePlayers = [
+      {
+            "id": "me",
+            "name": "你 (全球领航大亨)",
+            "gold": 0,
+            "isBot": false
+      },
+      {
+            "id": "cat",
+            "name": "🐱 柴犬天际航空",
+            "gold": 290,
+            "isBot": true
+      },
+      {
+            "id": "duo",
+            "name": "🦉 多邻国环球空运",
+            "gold": 440,
+            "isBot": true
+      },
+      {
+            "id": "kron",
+            "name": "⚡️ Kron 极速航空联合舰队",
+            "gold": 600,
+            "isBot": true
+      }
+];
+
+    const QUEST_TYPES = [
+      {
+            "name": "巴黎戴高乐国际空港",
+            "emoji": "🗼",
+            "tipBonus": 1.2
+      },
+      {
+            "name": "东京羽田极速停机坪",
+            "emoji": "🗻",
+            "tipBonus": 1.3
+      },
+      {
+            "name": "纽约肯尼迪全球枢纽",
+            "emoji": "🗽",
+            "tipBonus": 1.4
+      },
+      {
+            "name": "伦敦希思罗空中走廊",
+            "emoji": "🏰",
+            "tipBonus": 1.1
+      },
+      {
+            "name": "悉尼海湾跨洋枢纽",
+            "emoji": "🦘",
+            "tipBonus": 1.0
+      }
+];
+
+    function switchToGame() {
+      document.getElementById("learnView").style.display = "none";
+      document.getElementById("gameView").style.display = "flex";
+      document.body.classList.add("game-mode");
+      startBattle();
+    }
+
+    function switchToLearn() {
+      clearInterval(timerInterval);
+      clearInterval(botInterval);
+      clearInterval(autoCookInterval);
+      clearInterval(patienceInterval);
+      document.getElementById("gameView").style.display = "none";
+      document.getElementById("learnView").style.display = "flex";
+      document.body.classList.remove("game-mode");
+    }
+
+    function startBattle() {
+      audio.bingo();
+      playerGold = 0;
+      servedCount = 0;
+      combo = 1;
+      timerSec = 180;
+
+      cafePlayers.forEach(p => {
+        if (p.isBot) p.gold = Math.floor(Math.random() * 280 + 200);
+        else p.gold = 0;
+      });
+
+      updateStatsUI();
+      updateLeaderboard();
+
+      document.getElementById("gameStartScreen").style.display = "none";
+      document.getElementById("gameOverScreen").style.display = "none";
+      document.getElementById("gameDishDoneScreen").style.display = "none";
+
+      clearInterval(timerInterval);
+      clearInterval(botInterval);
+      clearInterval(autoCookInterval);
+
+      timerInterval = setInterval(() => {
+        timerSec--;
+        const m = String(Math.floor(timerSec / 60)).padStart(2, '0');
+        const s = String(timerSec % 60).padStart(2, '0');
+        document.getElementById("timeText").innerText = `${m}:${s}`;
+
+        if (timerSec <= 0) {
+          endGame();
+        }
+      }, 1000);
+
+      botInterval = setInterval(() => {
+        cafePlayers.forEach(p => {
+          if (p.isBot) {
+            const add = Math.floor(Math.random() * 85 + 25);
+            p.gold += add;
+          }
+        });
+        updateLeaderboard();
+      }, 2500);
+
+      nextCustomer();
+    }
+
+    function updateStatsUI() {
+      document.getElementById("playerGoldText").innerText = `🪙 ${playerGold}`;
+      document.getElementById("servedCountText").innerText = `🏖️ ${servedCount}`;
+      document.getElementById("comboText").innerText = `🔥 x${combo}`;
+      const me = cafePlayers.find(p => p.id === 'me');
+      if (me) me.gold = playerGold;
+      updateLeaderboard();
+    }
+
+    function nextCustomer() {
+      clearInterval(patienceInterval);
+      document.getElementById("gameDishDoneScreen").style.display = "none";
+      document.getElementById("gameOrderScreen").style.display = "block";
+
+      const pool = QUEST_TYPES;
+      const quest = pool[Math.floor(Math.random() * pool.length)];
+      const item = VOCABULARY[Math.floor(Math.random() * VOCABULARY.length)];
+
+      const orderSpeech = `“塔台调度：国际航班正申请飞往「${item.meaning}」！”`;
+      const qPrompt = `航线调度：选择正确的环球旅行与交通词汇：`;
+      const correctAns = item.word;
+
+      const otherWords = VOCABULARY.filter(w => w.word !== item.word).map(w => w.word).sort(() => Math.random() - 0.5);
+      const distractors = otherWords.slice(0, 3);
+
+      currentCustomer = {
+        name: quest.name,
+        emoji: quest.emoji,
+        tipBonus: quest.tipBonus,
+        targetWord: item,
+        ans: correctAns
+      };
+
+      const custEmojiEl = document.getElementById("custEmoji");
+      if (custEmojiEl) custEmojiEl.innerText = currentCustomer.emoji;
+      const custNameEl = document.getElementById("custName");
+      if (custNameEl) custNameEl.innerText = currentCustomer.name;
+      const custSpeechEl = document.getElementById("custOrderSpeech");
+      if (custSpeechEl) custSpeechEl.innerText = orderSpeech;
+      const qPromptEl = document.getElementById("gameQuestionPrompt");
+      if (qPromptEl) qPromptEl.innerText = qPrompt;
+
+      const opts = [correctAns, ...distractors].sort(() => Math.random() - 0.5);
+      const optGrid = document.getElementById("gameOptionGrid");
+      optGrid.innerHTML = "";
+
+      opts.forEach(opt => {
+        const btn = document.createElement("button");
+        btn.className = "duo-btn duo-btn-dark game-opt-btn";
+        btn.innerText = opt;
+        btn.onclick = () => handleOrderAnswer(opt);
+        optGrid.appendChild(btn);
+      });
+
+      currentPatience = 100;
+      const patienceSpeed = upgrades.bellLevel > 0 ? 0.9 : 1.5;
+      patienceInterval = setInterval(() => {
+        currentPatience -= patienceSpeed;
+        const pFill = document.getElementById("patienceBar");
+        if (pFill) {
+          pFill.style.width = `${Math.max(0, currentPatience)}%`;
+          if (currentPatience > 50) pFill.style.backgroundColor = "#58CC02";
+          else if (currentPatience > 25) pFill.style.backgroundColor = "#FF9600";
+          else pFill.style.backgroundColor = "#FF4B4B";
+        }
+
+        if (currentPatience <= 0) {
+          clearInterval(patienceInterval);
+          handleCustomerLeave();
+        }
+      }, 100);
+    }
+
+    function handleOrderAnswer(chosen) {
+      if (chosen === currentCustomer.ans) {
+        clearInterval(patienceInterval);
+        audio.ocean();
+        servedCount++;
+        combo++;
+
+        let baseTip = Math.floor(200 * currentCustomer.tipBonus);
+        if (upgrades.knifeLevel > 0) baseTip = Math.floor(baseTip * 1.5);
+        const comboBonus = Math.floor(combo * 25);
+        const totalTip = baseTip + comboBonus;
+        playerGold += totalTip;
+
+        updateStatsUI();
+
+        document.getElementById("gameOrderScreen").style.display = "none";
+        document.getElementById("gameDishDoneScreen").style.display = "block";
+        document.getElementById("dishDoneIcon").innerText = `✨🏖️${currentCustomer.emoji}✨`;
+        document.getElementById("dishDoneTitle").innerText = `探索大捷！+${totalTip} 🪙`;
+        document.getElementById("dishDoneDesc").innerText = `${currentCustomer.name} 挖掘出黄金宝藏箱！收获海量海岛财富（狂热连击 +${comboBonus}）！`;
+
+        setTicker(`🏖️ 捷报！成功探索 ${currentCustomer.name}，海岛财富暴增 +${totalTip} 金币！`);
+      } else {
+        audio.wrong();
+        combo = 1;
+        updateStatsUI();
+        setTicker(`❌ 装备拿错！被海浪冲走一件行李，连击重置！`);
+      }
+    }
+
+    function handleCustomerLeave() {
+      audio.wrong();
+      combo = 1;
+      updateStatsUI();
+      setTicker(`💨 潮水上涨！${currentCustomer.name} 被潮水淹没，探索失败！`);
+      nextCustomer();
+    }
+
+    function setTicker(msg) {
+      document.getElementById("tickerMsg").innerText = msg;
+    }
+
+    function updateLeaderboard() {
+      const sorted = [...cafePlayers].sort((a, b) => b.gold - a.gold);
+      const grid = document.getElementById("leaderboardGrid");
+      grid.innerHTML = "";
+      sorted.forEach((p, idx) => {
+        const medal = idx === 0 ? "🥇 " : idx === 1 ? "🥈 " : idx === 2 ? "🥉 " : "#4 ";
+        const card = document.createElement("div");
+        card.className = `lb-card ${p.id === 'me' ? 'is-me' : ''}`;
+        card.innerHTML = `
+          <div class="lb-name">${medal}${p.name}</div>
+          <div class="lb-gold">${p.gold} 🪙</div>
+        `;
+        grid.appendChild(card);
+      });
+    }
+
+    function openMarket() {
+      document.getElementById("marketDrawer").style.display = "flex";
+    }
+    function closeMarket() {
+      document.getElementById("marketDrawer").style.display = "none";
+    }
+
+    function buyUpgrade(type, cost) {
+      if (playerGold < cost) {
+        alert("🪙 探险金币不足，快去多探索几个海滩宝藏吧！");
+        return;
+      }
+      playerGold -= cost;
+      audio.ocean();
+
+      if (type === 'knife') {
+        upgrades.knifeLevel++;
+        alert("👟 筋斗云跑鞋穿上！单次探索收益提升 50%！");
+      } else if (type === 'autoCook') {
+        upgrades.autoCookLevel++;
+        if (!autoCookInterval) {
+          autoCookInterval = setInterval(() => {
+            playerGold += 60 * upgrades.autoCookLevel;
+            updateStatsUI();
+          }, 3000);
+        }
+        alert("🏖️ 自动化度假酒店开业！每 3 秒自动产出度假金币！");
+      } else if (type === 'bell') {
+        upgrades.bellLevel++;
+        alert("🏕️ 防风暴超级天幕支起！探索倒计时大幅减缓！");
+      }
+
+      updateStatsUI();
+      document.getElementById("playerBuffs").innerText = 
+        `⛺ 充气帐篷: ${upgrades.autoCookLevel}级 | 👟 跑鞋: +${upgrades.knifeLevel * 50}%`;
+      closeMarket();
+    }
+
+    function endGame() {
+      clearInterval(timerInterval);
+      clearInterval(botInterval);
+      clearInterval(autoCookInterval);
+      clearInterval(patienceInterval);
+
+      document.getElementById("gameOrderScreen").style.display = "none";
+      document.getElementById("gameDishDoneScreen").style.display = "none";
+      document.getElementById("gameOverScreen").style.display = "block";
+
+      const sorted = [...cafePlayers].sort((a, b) => b.gold - a.gold);
+      const myRank = sorted.findIndex(p => p.id === 'me') + 1;
+
+      if (myRank === 1) {
+        document.getElementById("finalTrophy").innerText = "👑";
+        document.getElementById("finalRankTitle").innerText = "全书总冠军·海岛探险神王！";
+        document.getElementById("finalRankDesc").innerText = `探险财富高达 ${playerGold} 🪙！Power Up 3 完美毕业！`;
+        triggerConfetti();
+      } else {
+        document.getElementById("finalTrophy").innerText = "🥈";
+        document.getElementById("finalRankTitle").innerText = `荣获全海岛第 ${myRank} 名！`;
+        document.getElementById("finalRankDesc").innerText = `财富累积 ${playerGold} 🪙，圆满完成全部 9 个单元学习！`;
+      }
+
+      const podium = document.getElementById("finalPodium");
+      podium.innerHTML = "";
+      sorted.forEach((p, idx) => {
+        const row = document.createElement("div");
+        row.style.cssText = "display: flex; justify-content: space-between; padding: 6px 0; font-size: 13px; font-weight: 800;";
+        row.innerHTML = `
+          <span style="color: ${p.id === 'me' ? '#0984E3' : '#FFF'};">${idx + 1}. ${p.name}</span>
+          <span style="color: #FFC800;">${p.gold} 🪙</span>
+        `;
+        podium.appendChild(row);
+      });
+    }
+
+function triggerConfetti() {
+      const canvas = document.getElementById("confettiCanvas");
+      const ctx = canvas.getContext("2d");
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+
+      const particles = [];
+      const colors = ["#0984E3", "#58CC02", "#FFC800", "#FF4757", "#AF52DE"];
+
+      for (let i = 0; i < 90; i++) {
+        particles.push({
+          x: canvas.width / 2,
+          y: canvas.height / 2,
+          vx: (Math.random() - 0.5) * 16,
+          vy: (Math.random() - 0.7) * 18,
+          size: Math.random() * 9 + 4,
+          color: colors[Math.floor(Math.random() * colors.length)],
+          rotation: Math.random() * 360,
+          vRot: (Math.random() - 0.5) * 12,
+          opacity: 1
+        });
+      }
+
+      let frames = 0;
+      function render() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        particles.forEach(p => {
+          p.x += p.vx;
+          p.y += p.vy;
+          p.vy += 0.35;
+          p.rotation += p.vRot;
+          p.opacity -= 0.01;
+
+          ctx.save();
+          ctx.translate(p.x, p.y);
+          ctx.rotate((p.rotation * Math.PI) / 180);
+          ctx.fillStyle = p.color;
+          ctx.globalAlpha = Math.max(0, p.opacity);
+          ctx.fillRect(-p.size / 2, -p.size / 2, p.size, p.size);
+          ctx.restore();
+        });
+
+        frames++;
+        if (frames < 100) {
+          requestAnimationFrame(render);
+        } else {
+          ctx.clearRect(0, 0, canvas.width, canvas.height);
+        }
+      }
+      render();
+    }
+    function fireConfetti() { triggerConfetti(); }
+
+    syncFromAha();
+    initWord();
+  </script>
+</body>
+</html>

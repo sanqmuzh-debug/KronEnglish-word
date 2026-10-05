@@ -1,0 +1,1752 @@
+[
+  {
+    "file": "pu0-1-word.html",
+    "book": "pu0",
+    "unit": "1",
+    "title": "Power Up Start Smart · Unit 1: My Family (LexiBlock + Wordwall 家族小侦探)",
+    "mode": "wordwall",
+    "count": 10,
+    "samples": [
+      "boy",
+      "family",
+      "girl",
+      "man"
+    ]
+  },
+  {
+    "file": "pu0-2-word.html",
+    "book": "pu0",
+    "unit": "2",
+    "title": "Power Up Start Smart · Unit 2: At School (LexiBlock + Gimkit 校园探秘大亨)",
+    "mode": "gimkit",
+    "count": 10,
+    "samples": [
+      "bag",
+      "classroom",
+      "pencil",
+      "playground"
+    ]
+  },
+  {
+    "file": "pu0-3-word.html",
+    "book": "pu0",
+    "unit": "3",
+    "title": "Power Up Start Smart · Unit 3: Delicious Food (LexiBlock + Blooket 美味美食节大夺宝)",
+    "mode": "gimkit",
+    "count": 10,
+    "samples": [
+      "apple",
+      "banana",
+      "grapes",
+      "orange"
+    ]
+  },
+  {
+    "file": "pu0-4-word.html",
+    "book": "pu0",
+    "unit": "4",
+    "title": "Power Up Start Smart · Unit 4: Home Sweet Home (LexiBlock + Wordwall 温馨寻宝大冒险)",
+    "mode": "wordwall",
+    "count": 10,
+    "samples": [
+      "bed",
+      "clock",
+      "computer",
+      "lamp"
+    ]
+  },
+  {
+    "file": "pu0-5-word.html",
+    "book": "pu0",
+    "unit": "5",
+    "title": "Power Up Start Smart · Unit 5: All About Me (LexiBlock + Gimkit 奇妙身体能量站)",
+    "mode": "gimkit",
+    "count": 10,
+    "samples": [
+      "ears",
+      "eyes",
+      "hair",
+      "mouth"
+    ]
+  },
+  {
+    "file": "pu0-6-word.html",
+    "book": "pu0",
+    "unit": "6",
+    "title": "Power Up Start Smart · Unit 6: Toys & Transport (LexiBlock + Blooket 玩具总动员淘金热)",
+    "mode": "gimkit",
+    "count": 10,
+    "samples": [
+      "board game",
+      "camera",
+      "doll",
+      "teddy"
+    ]
+  },
+  {
+    "file": "pu0-7-word.html",
+    "book": "pu0",
+    "unit": "7",
+    "title": "Power Up Start Smart · Unit 7: Action Time (LexiBlock + Wordwall 运动健将挑战赛)",
+    "mode": "wordwall",
+    "count": 10,
+    "samples": [
+      "climb",
+      "jump",
+      "run",
+      "swim"
+    ]
+  },
+  {
+    "file": "pu0-8-word.html",
+    "book": "pu0",
+    "unit": "8",
+    "title": "Power Up Start Smart · Unit 8: Holiday Fun (LexiBlock + Gimkit 阳光海滩大度假)",
+    "mode": "gimkit",
+    "count": 10,
+    "samples": [
+      "clean",
+      "drink",
+      "eat",
+      "sleep"
+    ]
+  },
+  {
+    "file": "pu0-9-word.html",
+    "book": "pu0",
+    "unit": "9",
+    "title": "Power Up Start Smart · Unit 9: Clothes & Animals (LexiBlock + Blooket 奇趣农场大狂欢)",
+    "mode": "gimkit",
+    "count": 10,
+    "samples": [
+      "jacket",
+      "jeans",
+      "shoes",
+      "socks"
+    ]
+  },
+  {
+    "file": "pu0-welcome-word.html",
+    "book": "pu0",
+    "unit": "welcome",
+    "title": "Power Up Start Smart · Welcome: Meet the Friends (LexiBlock + Blooket 友谊彩虹开箱大乱斗)",
+    "mode": "gimkit",
+    "count": 25,
+    "samples": [
+      "blue",
+      "red",
+      "green",
+      "yellow"
+    ]
+  },
+  {
+    "file": "pu1-1-word.html",
+    "book": "pu1",
+    "unit": "1",
+    "title": "Power Up 1 · Unit 1: My school (LexiBlock + Wordwall 极速文具传送带)",
+    "mode": "wordwall",
+    "count": 20,
+    "samples": [
+      "bag",
+      "book",
+      "chair",
+      "classroom"
+    ]
+  },
+  {
+    "file": "pu1-2-word.html",
+    "book": "pu1",
+    "unit": "2",
+    "title": "Power Up 1 · Unit 2: Family and friends (LexiBlock + Gimkit 家族能量守护站)",
+    "mode": "gimkit",
+    "count": 22,
+    "samples": [
+      "brother",
+      "dad",
+      "family",
+      "father"
+    ]
+  },
+  {
+    "file": "pu1-3-word.html",
+    "book": "pu1",
+    "unit": "3",
+    "title": "Power Up 1 · Unit 3: Animals (LexiBlock + Blooket 森林动物大乱斗)",
+    "mode": "gimkit",
+    "count": 16,
+    "samples": [
+      "cat",
+      "chicken",
+      "cow",
+      "dog"
+    ]
+  },
+  {
+    "file": "pu1-4-word.html",
+    "book": "pu1",
+    "unit": "4",
+    "title": "Power Up 1 · Unit 4: Food with friends (LexiBlock + Wordwall 疯狂美味小餐厅)",
+    "mode": "wordwall",
+    "count": 20,
+    "samples": [
+      "banana",
+      "bread",
+      "burger",
+      "cake"
+    ]
+  },
+  {
+    "file": "pu1-5-word.html",
+    "book": "pu1",
+    "unit": "5",
+    "title": "Power Up 1 · Unit 5: Happy birthday! (LexiBlock + Gimkit 极客玩具制造厂)",
+    "mode": "gimkit",
+    "count": 18,
+    "samples": [
+      "ball",
+      "bike",
+      "car",
+      "doll"
+    ]
+  },
+  {
+    "file": "pu1-6-word.html",
+    "book": "pu1",
+    "unit": "6",
+    "title": "Power Up 1 · Unit 6: A day out (LexiBlock + Blooket 城市探险黄金游)",
+    "mode": "gimkit",
+    "count": 23,
+    "samples": [
+      "bus",
+      "bus stop",
+      "car",
+      "flower"
+    ]
+  },
+  {
+    "file": "pu1-7-word.html",
+    "book": "pu1",
+    "unit": "7",
+    "title": "Power Up 1 · Unit 7: Let's play! (LexiBlock + Wordwall 运动健将终点冲刺)",
+    "mode": "wordwall",
+    "count": 19,
+    "samples": [
+      "music",
+      "play basketball",
+      "play football",
+      "play tennis"
+    ]
+  },
+  {
+    "file": "pu1-8-word.html",
+    "book": "pu1",
+    "unit": "8",
+    "title": "Power Up 1 · Unit 8: At home (LexiBlock + Gimkit 梦想家园大亨)",
+    "mode": "gimkit",
+    "count": 17,
+    "samples": [
+      "bath",
+      "bathroom",
+      "bed",
+      "bedroom"
+    ]
+  },
+  {
+    "file": "pu1-9-word.html",
+    "book": "pu1",
+    "unit": "9",
+    "title": "Power Up 1 · Unit 9: Holiday time (LexiBlock + Blooket 海滩夏日寻宝)",
+    "mode": "gimkit",
+    "count": 24,
+    "samples": [
+      "boots",
+      "cap",
+      "coat",
+      "dress"
+    ]
+  },
+  {
+    "file": "pu1-welcome-word.html",
+    "book": "pu1",
+    "unit": "welcome",
+    "title": "Power Up 1 · Welcome: Meet the team (LexiBlock + Blooket 初见开箱夺宝)",
+    "mode": "gimkit",
+    "count": 8,
+    "samples": [
+      "Jim",
+      "Jenny",
+      "Henrietta",
+      "Rocky"
+    ]
+  },
+  {
+    "file": "pu2-1-word.html",
+    "book": "pu2",
+    "unit": "1",
+    "title": "Power Up 2 · Unit 1: A day on the farm (LexiBlock + Blooket 拖拉机夺宝风暴)",
+    "mode": "gimkit",
+    "count": 18,
+    "samples": [
+      "field",
+      "forest",
+      "grass",
+      "ground"
+    ]
+  },
+  {
+    "file": "pu2-2-word.html",
+    "book": "pu2",
+    "unit": "2",
+    "title": "Power Up 2 · Unit 2: My week (LexiBlock + Wordwall 活力周末冲刺)",
+    "mode": "wordwall",
+    "count": 15,
+    "samples": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday"
+    ]
+  },
+  {
+    "file": "pu2-3-word.html",
+    "book": "pu2",
+    "unit": "3",
+    "title": "Power Up 2 · Unit 3: Look at us! (LexiBlock + Gimkit 化装舞台大竞技)",
+    "mode": "gimkit",
+    "count": 21,
+    "samples": [
+      "clown",
+      "cook",
+      "dentist",
+      "doctor"
+    ]
+  },
+  {
+    "file": "pu2-4-word.html",
+    "book": "pu2",
+    "unit": "4",
+    "title": "Power Up 2 · Unit 4: Home sweet home (LexiBlock + Blooket 楼宇迷宫夺宝)",
+    "mode": "gimkit",
+    "count": 21,
+    "samples": [
+      "aunt",
+      "cousin",
+      "daughter",
+      "granddaughter"
+    ]
+  },
+  {
+    "file": "pu2-5-word.html",
+    "book": "pu2",
+    "unit": "5",
+    "title": "Power Up 2 · Unit 5: Animal world (LexiBlock + Wordwall 野生动物狂野飞跃)",
+    "mode": "wordwall",
+    "count": 19,
+    "samples": [
+      "bat",
+      "bear",
+      "dolphin",
+      "kangaroo"
+    ]
+  },
+  {
+    "file": "pu2-6-word.html",
+    "book": "pu2",
+    "unit": "6",
+    "title": "Power Up 2 · Unit 6: Weather and clothes (LexiBlock + Gimkit 四季风暴竞技)",
+    "mode": "gimkit",
+    "count": 16,
+    "samples": [
+      "cloud",
+      "cold",
+      "hot",
+      "rain"
+    ]
+  },
+  {
+    "file": "pu2-7-word.html",
+    "book": "pu2",
+    "unit": "7",
+    "title": "Power Up 2 · Unit 7: Food and cooking (LexiBlock + Blooket 小厨神开箱大乱斗)",
+    "mode": "gimkit",
+    "count": 19,
+    "samples": [
+      "bottle",
+      "bowl",
+      "cheese",
+      "cup"
+    ]
+  },
+  {
+    "file": "pu2-8-word.html",
+    "book": "pu2",
+    "unit": "8",
+    "title": "Power Up 2 · Unit 8: In the city (LexiBlock + Gimkit 城市漫步极客战)",
+    "mode": "gimkit",
+    "count": 20,
+    "samples": [
+      "car park",
+      "city centre",
+      "funfair",
+      "map"
+    ]
+  },
+  {
+    "file": "pu2-9-word.html",
+    "book": "pu2",
+    "unit": "9",
+    "title": "Power Up 2 · Unit 9: Big adventures (LexiBlock + Wordwall 环球奇境冒险冲刺)",
+    "mode": "wordwall",
+    "count": 18,
+    "samples": [
+      "afraid",
+      "boring",
+      "dangerous",
+      "difficult"
+    ]
+  },
+  {
+    "file": "pu2-welcome-word.html",
+    "book": "pu2",
+    "unit": "welcome",
+    "title": "Power Up 2 · Welcome: Meet the Friends (LexiBlock + Blooket 农场伙伴开箱对决)",
+    "mode": "gimkit",
+    "count": 12,
+    "samples": [
+      "Jim",
+      "Jenny",
+      "Mr Friendly",
+      "Mrs Friendly"
+    ]
+  },
+  {
+    "file": "pu3-0-word.html",
+    "book": "pu3",
+    "unit": "0",
+    "title": "Power Up 3 · Welcome: Welcome to Diversicus (LexiBlock + Blooket 马戏团伙伴夺宝)",
+    "mode": "gimkit",
+    "count": 8,
+    "samples": [
+      "Jim",
+      "Jenny",
+      "Pablo",
+      "Su-Lin"
+    ]
+  },
+  {
+    "file": "pu3-1-word.html",
+    "book": "pu3",
+    "unit": "1",
+    "title": "LexiBlock: 多邻国积木背单词 + Blooket 开箱神偷终极合体版",
+    "mode": "gimkit",
+    "count": 13,
+    "samples": [
+      "six o'clock",
+      "half past three",
+      "midday",
+      "midnight"
+    ]
+  },
+  {
+    "file": "pu3-2-word.html",
+    "book": "pu3",
+    "unit": "2",
+    "title": "Power Up 3 · Unit 2: 美食大亨与过去时迷宫 (LexiBlock + Blooket Café 暴走食堂)",
+    "mode": "blooket",
+    "count": 22,
+    "samples": [
+      "cereal",
+      "coffee",
+      "cup",
+      "glass"
+    ]
+  },
+  {
+    "file": "pu3-3-word.html",
+    "book": "pu3",
+    "unit": "3",
+    "title": "Power Up 3 · Unit 3: 身体急救营 (LexiBlock + Wordwall 极速战地小医生)",
+    "mode": "wordwall",
+    "count": 19,
+    "samples": [
+      "back",
+      "bandage",
+      "elbow",
+      "finger"
+    ]
+  },
+  {
+    "file": "pu3-4-word.html",
+    "book": "pu3",
+    "unit": "4",
+    "title": "Power Up 3 · Unit 4: 荒岛探险与过去动词 (LexiBlock + Blooket 荒岛塔防守卫战)",
+    "mode": "blooket",
+    "count": 19,
+    "samples": [
+      "island",
+      "jungle",
+      "moon",
+      "plant"
+    ]
+  },
+  {
+    "file": "pu3-5-word.html",
+    "book": "pu3",
+    "unit": "5",
+    "title": "Power Up 3 · Unit 5: 材质与质感工坊 (LexiBlock + Wordwall 赛博炼金工坊)",
+    "mode": "wordwall",
+    "count": 18,
+    "samples": [
+      "bright",
+      "dark",
+      "gold",
+      "light"
+    ]
+  },
+  {
+    "file": "pu3-6-word.html",
+    "book": "pu3",
+    "unit": "6",
+    "title": "Power Up 3 · Unit 6: 校园学科与数字极客 (LexiBlock + Gimkit 赛博黑客数据战)",
+    "mode": "gimkit",
+    "count": 21,
+    "samples": [
+      "art",
+      "break",
+      "geography",
+      "history"
+    ]
+  },
+  {
+    "file": "pu3-7-word.html",
+    "book": "pu3",
+    "unit": "7",
+    "title": "Power Up 3 · Unit 7: 职业名人与性格特质 (LexiBlock + Blooket 明星经纪人大乱斗)",
+    "mode": "blooket",
+    "count": 19,
+    "samples": [
+      "artist",
+      "cook",
+      "designer",
+      "driver"
+    ]
+  },
+  {
+    "file": "pu3-8-word.html",
+    "book": "pu3",
+    "unit": "8",
+    "title": "Power Up 3 · Unit 8: 方向导航与城市地标 (LexiBlock + Wordwall 赛博出租车迷宫)",
+    "mode": "wordwall",
+    "count": 19,
+    "samples": [
+      "left",
+      "right",
+      "straight on",
+      "North"
+    ]
+  },
+  {
+    "file": "pu3-9-word.html",
+    "book": "pu3",
+    "unit": "9",
+    "title": "Power Up 3 · Unit 9: 度假冒险与旅行装备 (LexiBlock + Gimkit 海岛探险大富翁)",
+    "mode": "gimkit",
+    "count": 17,
+    "samples": [
+      "alone",
+      "excellent",
+      "horrible",
+      "huge"
+    ]
+  },
+  {
+    "file": "pu3-welcome-word.html",
+    "book": "pu3",
+    "unit": "welcome",
+    "title": "Power Up 3 · Welcome: Welcome to Diversicus (LexiBlock + Blooket 马戏团伙伴夺宝)",
+    "mode": "gimkit",
+    "count": 8,
+    "samples": [
+      "Jim",
+      "Jenny",
+      "Pablo",
+      "Su-Lin"
+    ]
+  },
+  {
+    "file": "pu4-1-word.html",
+    "book": "pu4",
+    "unit": "1",
+    "title": "Power Up 4 · Unit 1: This year's trip (LexiBlock + Blooket 公路漫游夺宝)",
+    "mode": "gimkit",
+    "count": 20,
+    "samples": [
+      "January",
+      "February",
+      "March",
+      "April"
+    ]
+  },
+  {
+    "file": "pu4-2-word.html",
+    "book": "pu4",
+    "unit": "2",
+    "title": "Power Up 4 · Unit 2: Our beautiful planet (LexiBlock + Wordwall 生态秘境冲刺)",
+    "mode": "wordwall",
+    "count": 20,
+    "samples": [
+      "cave",
+      "desert",
+      "environment",
+      "fire"
+    ]
+  },
+  {
+    "file": "pu4-3-word.html",
+    "book": "pu4",
+    "unit": "3",
+    "title": "Power Up 4 · Unit 3: Let's celebrate! (LexiBlock + Gimkit 盛典旋律竞技)",
+    "mode": "gimkit",
+    "count": 25,
+    "samples": [
+      "chess",
+      "match / game",
+      "prize",
+      "puzzle"
+    ]
+  },
+  {
+    "file": "pu4-4-word.html",
+    "book": "pu4",
+    "unit": "4",
+    "title": "Power Up 4 · Unit 4: Time of our lives (LexiBlock + Blooket 时光锁链对决)",
+    "mode": "gimkit",
+    "count": 19,
+    "samples": [
+      "fetch / get",
+      "look after / take care of",
+      "make sure",
+      "meet"
+    ]
+  },
+  {
+    "file": "pu4-5-word.html",
+    "book": "pu4",
+    "unit": "5",
+    "title": "Power Up 4 · Unit 5: Let it snow! (LexiBlock + Wordwall 极速雪原冲刺)",
+    "mode": "wordwall",
+    "count": 17,
+    "samples": [
+      "spring",
+      "summer",
+      "autumn / fall",
+      "winter"
+    ]
+  },
+  {
+    "file": "pu4-6-word.html",
+    "book": "pu4",
+    "unit": "6",
+    "title": "Power Up 4 · Unit 6: Working together (LexiBlock + Gimkit 未来职场精英战)",
+    "mode": "gimkit",
+    "count": 18,
+    "samples": [
+      "athlete",
+      "businessman / businesswoman",
+      "engineer",
+      "firefighter"
+    ]
+  },
+  {
+    "file": "pu4-7-word.html",
+    "book": "pu4",
+    "unit": "7",
+    "title": "Power Up 4 · Unit 7: Then and now (LexiBlock + Blooket 古今奇物寻宝)",
+    "mode": "gimkit",
+    "count": 21,
+    "samples": [
+      "brush",
+      "comb",
+      "fridge",
+      "gate"
+    ]
+  },
+  {
+    "file": "pu4-8-word.html",
+    "book": "pu4",
+    "unit": "8",
+    "title": "Power Up 4 · Unit 8: Space travel (LexiBlock + Gimkit 星际漫游深空拓荒)",
+    "mode": "gimkit",
+    "count": 22,
+    "samples": [
+      "astronaut",
+      "deep",
+      "engine",
+      "enormous"
+    ]
+  },
+  {
+    "file": "pu4-9-word.html",
+    "book": "pu4",
+    "unit": "9",
+    "title": "Power Up 4 · Unit 9: Great bakers (LexiBlock + Wordwall 美味烘焙大挑战)",
+    "mode": "wordwall",
+    "count": 21,
+    "samples": [
+      "cake",
+      "delicious",
+      "fork",
+      "healthy snacks"
+    ]
+  },
+  {
+    "file": "pu4-welcome-word.html",
+    "book": "pu4",
+    "unit": "welcome",
+    "title": "Power Up 4 · Welcome: Welcome to Diversicus (LexiBlock + Blooket 马戏团伙伴夺宝)",
+    "mode": "gimkit",
+    "count": 8,
+    "samples": [
+      "Jim",
+      "Jenny",
+      "Pablo",
+      "Su-Lin"
+    ]
+  },
+  {
+    "file": "th0-1-word.html",
+    "book": "th0",
+    "unit": "1",
+    "title": "THINK TH0 · 1: All together (大家在一起) (LexiBlock 3D)",
+    "mode": "wordwall",
+    "count": 22,
+    "samples": [
+      "Brazil",
+      "Ecuador",
+      "Indonesia",
+      "Japan"
+    ]
+  },
+  {
+    "file": "th0-10-word.html",
+    "book": "th0",
+    "unit": "10",
+    "title": "THINK TH0 · 10: Out of the past (时光印记) (LexiBlock 3D)",
+    "mode": "wordwall",
+    "count": 23,
+    "samples": [
+      "astronaut",
+      "competition",
+      "factory",
+      "skydiving"
+    ]
+  },
+  {
+    "file": "th0-11-word.html",
+    "book": "th0",
+    "unit": "11",
+    "title": "THINK TH0 · 11: Amazing animals (神奇动物) (LexiBlock 3D)",
+    "mode": "gimkit",
+    "count": 36,
+    "samples": [
+      "bear",
+      "bird",
+      "cat",
+      "dolphin"
+    ]
+  },
+  {
+    "file": "th0-12-word.html",
+    "book": "th0",
+    "unit": "12",
+    "title": "THINK TH0 · 12: Moving about (出行天下) (LexiBlock 3D)",
+    "mode": "gimkit",
+    "count": 22,
+    "samples": [
+      "bike",
+      "boat",
+      "bus",
+      "car"
+    ]
+  },
+  {
+    "file": "th0-2-word.html",
+    "book": "th0",
+    "unit": "2",
+    "title": "THINK TH0 · 2: Away from home (出门在外) (LexiBlock 3D)",
+    "mode": "gimkit",
+    "count": 24,
+    "samples": [
+      "angry",
+      "bored",
+      "cold",
+      "excited"
+    ]
+  },
+  {
+    "file": "th0-3-word.html",
+    "book": "th0",
+    "unit": "3",
+    "title": "THINK TH0 · 3: Home sweet home (温馨小家) (LexiBlock 3D)",
+    "mode": "gimkit",
+    "count": 28,
+    "samples": [
+      "son",
+      "daughter",
+      "husband",
+      "wife"
+    ]
+  },
+  {
+    "file": "th0-4-word.html",
+    "book": "th0",
+    "unit": "4",
+    "title": "THINK TH0 · 4: It's a big world (大千世界) (LexiBlock 3D)",
+    "mode": "wordwall",
+    "count": 24,
+    "samples": [
+      "square",
+      "palace",
+      "statue",
+      "bank"
+    ]
+  },
+  {
+    "file": "th0-5-word.html",
+    "book": "th0",
+    "unit": "5",
+    "title": "THINK TH0 · 5: Around town (小镇生活) (LexiBlock 3D)",
+    "mode": "gimkit",
+    "count": 17,
+    "samples": [
+      "dance",
+      "e-reader",
+      "games console",
+      "GPS"
+    ]
+  },
+  {
+    "file": "th0-6-word.html",
+    "book": "th0",
+    "unit": "6",
+    "title": "THINK TH0 · 6: Family and friends (好友与外貌) (LexiBlock 3D)",
+    "mode": "gimkit",
+    "count": 29,
+    "samples": [
+      "teacher",
+      "arm",
+      "body",
+      "ear"
+    ]
+  },
+  {
+    "file": "th0-7-word.html",
+    "book": "th0",
+    "unit": "7",
+    "title": "THINK TH0 · 7: You can do it (挑战潜能) (LexiBlock 3D)",
+    "mode": "wordwall",
+    "count": 44,
+    "samples": [
+      "cycle",
+      "dive",
+      "skateboard",
+      "ski"
+    ]
+  },
+  {
+    "file": "th0-8-word.html",
+    "book": "th0",
+    "unit": "8",
+    "title": "THINK TH0 · 8: What are you doing? (正在发生) (LexiBlock 3D)",
+    "mode": "gimkit",
+    "count": 19,
+    "samples": [
+      "concert",
+      "lights",
+      "singer",
+      "stage"
+    ]
+  },
+  {
+    "file": "th0-9-word.html",
+    "book": "th0",
+    "unit": "9",
+    "title": "THINK TH0 · 9: My favourite food (舌尖美味) (LexiBlock 3D)",
+    "mode": "gimkit",
+    "count": 31,
+    "samples": [
+      "chef",
+      "omelette",
+      "salad",
+      "steak"
+    ]
+  },
+  {
+    "file": "th0-welcome-word.html",
+    "book": "th0",
+    "unit": "welcome",
+    "title": "THINK TH0 · WELCOME: Welcome Unit · 启航与破冰 (LexiBlock 3D)",
+    "mode": "gimkit",
+    "count": 6,
+    "samples": [
+      "hello",
+      "world",
+      "friend",
+      "welcome"
+    ]
+  },
+  {
+    "file": "th1-1-word.html",
+    "book": "th1",
+    "unit": "1",
+    "title": "THINK Level 1 · Unit 1: Having fun (LexiBlock + Blooket 开宝箱神偷)",
+    "mode": "gimkit",
+    "count": 12,
+    "samples": [
+      "play an instrument",
+      "write a blog",
+      "keep a pet",
+      "take photos"
+    ]
+  },
+  {
+    "file": "th1-10-word.html",
+    "book": "th1",
+    "unit": "10",
+    "title": "THINK Level 1 · Unit 10: Out and about (LexiBlock + Wordwall 赛博城市出租车)",
+    "mode": "wordwall",
+    "count": 22,
+    "samples": [
+      "concert hall",
+      "car park",
+      "shopping mall",
+      "bus station"
+    ]
+  },
+  {
+    "file": "th1-11-word.html",
+    "book": "th1",
+    "unit": "11",
+    "title": "THINK Level 1 · Unit 11: Future bodies (LexiBlock + Wordwall 未来生化战地小急救)",
+    "mode": "wordwall",
+    "count": 14,
+    "samples": [
+      "ankle",
+      "back",
+      "elbow",
+      "knees"
+    ]
+  },
+  {
+    "file": "th1-12-word.html",
+    "book": "th1",
+    "unit": "12",
+    "title": "THINK Level 1 · Unit 12: Moving about (LexiBlock + Gimkit 环球极速航班大亨)",
+    "mode": "gimkit",
+    "count": 26,
+    "samples": [
+      "bicycle",
+      "boat",
+      "bus",
+      "car"
+    ]
+  },
+  {
+    "file": "th1-2-word.html",
+    "book": "th1",
+    "unit": "2",
+    "title": "THINK Level 1 · Unit 2: Spending money (LexiBlock + Blooket 疯狂免税潮牌店)",
+    "mode": "blooket",
+    "count": 26,
+    "samples": [
+      "bookshop",
+      "chemist's",
+      "clothes shop",
+      "coffee shop"
+    ]
+  },
+  {
+    "file": "th1-3-word.html",
+    "book": "th1",
+    "unit": "3",
+    "title": "THINK Level 1 · Unit 3: We are what we eat (LexiBlock + Blooket 暴走深夜食堂)",
+    "mode": "blooket",
+    "count": 32,
+    "samples": [
+      "carrots",
+      "cake",
+      "peppers",
+      "yoghurt"
+    ]
+  },
+  {
+    "file": "th1-4-word.html",
+    "book": "th1",
+    "unit": "4",
+    "title": "THINK Level 1 · Unit 4: All in the family (LexiBlock + Wordwall 家族大侦探)",
+    "mode": "wordwall",
+    "count": 24,
+    "samples": [
+      "grandparents",
+      "grandma",
+      "grandpa",
+      "big brother/sister"
+    ]
+  },
+  {
+    "file": "th1-5-word.html",
+    "book": "th1",
+    "unit": "5",
+    "title": "THINK Level 1 · Unit 5: No place like home (LexiBlock + Wordwall 梦想家园工坊)",
+    "mode": "wordwall",
+    "count": 22,
+    "samples": [
+      "armchair",
+      "carpet",
+      "cooker",
+      "curtains"
+    ]
+  },
+  {
+    "file": "th1-6-word.html",
+    "book": "th1",
+    "unit": "6",
+    "title": "THINK Level 1 · Unit 6: Friends forever (LexiBlock + Blooket 友谊守护城堡)",
+    "mode": "blooket",
+    "count": 19,
+    "samples": [
+      "yesterday (morning / afternoon / evening)",
+      "last (year / month / week / Monday, etc.)",
+      "(a year / three weeks / eight hours, etc.) ago",
+      "intelligent"
+    ]
+  },
+  {
+    "file": "th1-7-word.html",
+    "book": "th1",
+    "unit": "7",
+    "title": "THINK Level 1 · Unit 7: Smart life (LexiBlock + Gimkit 科技芯片算力战)",
+    "mode": "gimkit",
+    "count": 24,
+    "samples": [
+      "satnav",
+      "MP3 player",
+      "torch",
+      "games console"
+    ]
+  },
+  {
+    "file": "th1-8-word.html",
+    "book": "th1",
+    "unit": "8",
+    "title": "THINK Level 1 · Unit 8: A question of sport (LexiBlock + Wordwall 冠军冲线大决战)",
+    "mode": "wordwall",
+    "count": 22,
+    "samples": [
+      "sailing",
+      "diving",
+      "golf",
+      "gymnastics"
+    ]
+  },
+  {
+    "file": "th1-9-word.html",
+    "book": "th1",
+    "unit": "9",
+    "title": "THINK Level 1 · Unit 9: Wild and wonderful (LexiBlock + Gimkit 自然旷野探险大富翁)",
+    "mode": "gimkit",
+    "count": 33,
+    "samples": [
+      "beach",
+      "desert",
+      "forest",
+      "hill"
+    ]
+  },
+  {
+    "file": "th2-1-word.html",
+    "book": "th2",
+    "unit": "1",
+    "title": "THINK TH2 · 1: Unit 1 · Incredible people (难忘人物与品质) (LexiBlock 3D)",
+    "mode": "wordwall",
+    "count": 23,
+    "samples": [
+      "brave",
+      "charming",
+      "laid-back",
+      "creative"
+    ]
+  },
+  {
+    "file": "th2-10-word.html",
+    "book": "th2",
+    "unit": "10",
+    "title": "THINK TH2 · 10: Unit 10 · Mind and body (健康活力与习惯) (LexiBlock 3D)",
+    "mode": "wordwall",
+    "count": 19,
+    "samples": [
+      "when",
+      "then",
+      "until",
+      "while"
+    ]
+  },
+  {
+    "file": "th2-11-word.html",
+    "book": "th2",
+    "unit": "11",
+    "title": "THINK TH2 · 11: Unit 11 · Breaking news (乐善好施与社会新闻) (LexiBlock 3D)",
+    "mode": "gimkit",
+    "count": 20,
+    "samples": [
+      "fun",
+      "hilarious",
+      "laughing",
+      "funny"
+    ]
+  },
+  {
+    "file": "th2-12-word.html",
+    "book": "th2",
+    "unit": "12",
+    "title": "THINK TH2 · 12: Unit 12 · Rules and regulations (规矩规则与准则) (LexiBlock 3D)",
+    "mode": "gimkit",
+    "count": 19,
+    "samples": [
+      "fee",
+      "own",
+      "royalties",
+      "fine"
+    ]
+  },
+  {
+    "file": "th2-2-word.html",
+    "book": "th2",
+    "unit": "2",
+    "title": "THINK TH2 · 2: Unit 2 · A good education (学校日常与教育) (LexiBlock 3D)",
+    "mode": "gimkit",
+    "count": 33,
+    "samples": [
+      "Science",
+      "Physics",
+      "Biology",
+      "Chemistry"
+    ]
+  },
+  {
+    "file": "th2-3-word.html",
+    "book": "th2",
+    "unit": "3",
+    "title": "THINK TH2 · 3: Unit 3 · On the screen (影视荧幕与娱乐) (LexiBlock 3D)",
+    "mode": "gimkit",
+    "count": 29,
+    "samples": [
+      "action film",
+      "animated film",
+      "comedy",
+      "documentary"
+    ]
+  },
+  {
+    "file": "th2-4-word.html",
+    "book": "th2",
+    "unit": "4",
+    "title": "THINK TH2 · 4: Unit 4 · Online life (数字生活与沟通) (LexiBlock 3D)",
+    "mode": "wordwall",
+    "count": 28,
+    "samples": [
+      "attach",
+      "install",
+      "advisable",
+      "cave"
+    ]
+  },
+  {
+    "file": "th2-5-word.html",
+    "book": "th2",
+    "unit": "5",
+    "title": "THINK TH2 · 5: Unit 5 · Music to my ears (音乐之旅与乐器) (LexiBlock 3D)",
+    "mode": "gimkit",
+    "count": 24,
+    "samples": [
+      "bass guitar",
+      "drums",
+      "guitar",
+      "keyboard"
+    ]
+  },
+  {
+    "file": "th2-6-word.html",
+    "book": "th2",
+    "unit": "6",
+    "title": "THINK TH2 · 6: Unit 6 · No planet B (地球家园与环保) (LexiBlock 3D)",
+    "mode": "gimkit",
+    "count": 25,
+    "samples": [
+      "extinct",
+      "laws",
+      "waste",
+      "melt"
+    ]
+  },
+  {
+    "file": "th2-7-word.html",
+    "book": "th2",
+    "unit": "7",
+    "title": "THINK TH2 · 7: Unit 7 · The future is now (未来时光与计划) (LexiBlock 3D)",
+    "mode": "wordwall",
+    "count": 19,
+    "samples": [
+      "the week after next",
+      "before too long",
+      "in two weeks' time",
+      "next weekend"
+    ]
+  },
+  {
+    "file": "th2-8-word.html",
+    "book": "th2",
+    "unit": "8",
+    "title": "THINK TH2 · 8: Unit 8 · Science and us (科技探索与实验) (LexiBlock 3D)",
+    "mode": "gimkit",
+    "count": 22,
+    "samples": [
+      "a cure",
+      "discover",
+      "an experiment",
+      "invent"
+    ]
+  },
+  {
+    "file": "th2-9-word.html",
+    "book": "th2",
+    "unit": "9",
+    "title": "THINK TH2 · 9: Unit 9 · Working week (职业职场与发展) (LexiBlock 3D)",
+    "mode": "gimkit",
+    "count": 21,
+    "samples": [
+      "earn",
+      "challenging",
+      "the pay",
+      "successful"
+    ]
+  },
+  {
+    "file": "th3-1-word.html",
+    "book": "th3",
+    "unit": "1",
+    "title": "THINK TH3 · 1: Unit 1 · Life plans (LexiBlock 3D)",
+    "mode": "wordwall",
+    "count": 21,
+    "samples": [
+      "retire",
+      "travel the world",
+      "start a career",
+      "get a degree"
+    ]
+  },
+  {
+    "file": "th3-10-word.html",
+    "book": "th3",
+    "unit": "10",
+    "title": "THINK TH3 · 10: Unit 10 · Money (LexiBlock 3D)",
+    "mode": "wordwall",
+    "count": 24,
+    "samples": [
+      "tip",
+      "off",
+      "reward",
+      "bargain"
+    ]
+  },
+  {
+    "file": "th3-11-word.html",
+    "book": "th3",
+    "unit": "11",
+    "title": "THINK TH3 · 11: Unit 11 · Help! (LexiBlock 3D)",
+    "mode": "gimkit",
+    "count": 24,
+    "samples": [
+      "rescue",
+      "dangerous",
+      "safety",
+      "survive"
+    ]
+  },
+  {
+    "file": "th3-12-word.html",
+    "book": "th3",
+    "unit": "12",
+    "title": "THINK TH3 · 12: Unit 12 · A word of advice (LexiBlock 3D)",
+    "mode": "gimkit",
+    "count": 16,
+    "samples": [
+      "terrified",
+      "sweat",
+      "panic",
+      "tremble"
+    ]
+  },
+  {
+    "file": "th3-2-word.html",
+    "book": "th3",
+    "unit": "2",
+    "title": "THINK TH3 · 2: Unit 2 · Hard times (LexiBlock 3D)",
+    "mode": "gimkit",
+    "count": 24,
+    "samples": [
+      "smash",
+      "enrage",
+      "strike",
+      "demolish"
+    ]
+  },
+  {
+    "file": "th3-3-word.html",
+    "book": "th3",
+    "unit": "3",
+    "title": "THINK TH3 · 3: Unit 3 · What's in a name? (LexiBlock 3D)",
+    "mode": "gimkit",
+    "count": 16,
+    "samples": [
+      "advertisement",
+      "brand",
+      "chain",
+      "consumers"
+    ]
+  },
+  {
+    "file": "th3-4-word.html",
+    "book": "th3",
+    "unit": "4",
+    "title": "THINK TH3 · 4: Unit 4 · Dilemmas (LexiBlock 3D)",
+    "mode": "wordwall",
+    "count": 20,
+    "samples": [
+      "cheat",
+      "first thought",
+      "the right decision",
+      "reconsidered"
+    ]
+  },
+  {
+    "file": "th3-5-word.html",
+    "book": "th3",
+    "unit": "5",
+    "title": "THINK TH3 · 5: Unit 5 · What a story! (LexiBlock 3D)",
+    "mode": "gimkit",
+    "count": 23,
+    "samples": [
+      "character",
+      "dialogue",
+      "ending",
+      "hero"
+    ]
+  },
+  {
+    "file": "th3-6-word.html",
+    "book": "th3",
+    "unit": "6",
+    "title": "THINK TH3 · 6: Unit 6 · How do they do that? (LexiBlock 3D)",
+    "mode": "gimkit",
+    "count": 21,
+    "samples": [
+      "terrible",
+      "huge",
+      "freezing",
+      "fascinating"
+    ]
+  },
+  {
+    "file": "th3-7-word.html",
+    "book": "th3",
+    "unit": "7",
+    "title": "THINK TH3 · 7: Unit 7 · All the same (LexiBlock 3D)",
+    "mode": "wordwall",
+    "count": 27,
+    "samples": [
+      "cold",
+      "unfriendly",
+      "lively",
+      "polite"
+    ]
+  },
+  {
+    "file": "th3-8-word.html",
+    "book": "th3",
+    "unit": "8",
+    "title": "THINK TH3 · 8: Unit 8 · It's a crime (LexiBlock 3D)",
+    "mode": "gimkit",
+    "count": 26,
+    "samples": [
+      "murder",
+      "arrest",
+      "fine",
+      "murderer"
+    ]
+  },
+  {
+    "file": "th3-9-word.html",
+    "book": "th3",
+    "unit": "9",
+    "title": "THINK TH3 · 9: Unit 9 · What happened? (LexiBlock 3D)",
+    "mode": "gimkit",
+    "count": 16,
+    "samples": [
+      "unexplained",
+      "mysterious",
+      "extraterrestrial",
+      "odd"
+    ]
+  },
+  {
+    "file": "th4-1-word.html",
+    "book": "th4",
+    "unit": "1",
+    "title": "THINK Level 4 · Unit 1: Survival (LexiBlock + Blooket 荒野逃生夺宝)",
+    "mode": "gimkit",
+    "count": 20,
+    "samples": [
+      "dive",
+      "climb",
+      "crawl",
+      "hop"
+    ]
+  },
+  {
+    "file": "th4-10-word.html",
+    "book": "th4",
+    "unit": "10",
+    "title": "THINK Level 4 · Unit 10: The media (LexiBlock + Wordwall 新闻编辑部极限极速侦查)",
+    "mode": "wordwall",
+    "count": 23,
+    "samples": [
+      "let someone know",
+      "pass on the message",
+      "get in touch",
+      "keep in touch"
+    ]
+  },
+  {
+    "file": "th4-11-word.html",
+    "book": "th4",
+    "unit": "11",
+    "title": "THINK Level 4 · Unit 11: To the movies (LexiBlock + Blooket 星际轨道空间站对接)",
+    "mode": "gimkit",
+    "count": 22,
+    "samples": [
+      "out of this world",
+      "it's not rocket science",
+      "once in a blue moon",
+      "starry-eyed"
+    ]
+  },
+  {
+    "file": "th4-12-word.html",
+    "book": "th4",
+    "unit": "12",
+    "title": "THINK Level 4 · Unit 12: A life of crime (LexiBlock + Gimkit 秘境无人区探险家)",
+    "mode": "gimkit",
+    "count": 28,
+    "samples": [
+      "bay",
+      "canyon",
+      "dune",
+      "glacier"
+    ]
+  },
+  {
+    "file": "th4-2-word.html",
+    "book": "th4",
+    "unit": "2",
+    "title": "THINK Level 4 · Unit 2: Going places (LexiBlock + Wordwall 环球公路漫游)",
+    "mode": "wordwall",
+    "count": 28,
+    "samples": [
+      "commuters",
+      "employees",
+      "employers",
+      "immigrants"
+    ]
+  },
+  {
+    "file": "th4-3-word.html",
+    "book": "th4",
+    "unit": "3",
+    "title": "THINK Level 4 · Unit 3: The mind's eye (LexiBlock + Gimkit 青春时空穿梭机)",
+    "mode": "gimkit",
+    "count": 27,
+    "samples": [
+      "sword",
+      "shield",
+      "leather jacket",
+      "wig"
+    ]
+  },
+  {
+    "file": "th4-4-word.html",
+    "book": "th4",
+    "unit": "4",
+    "title": "THINK Level 4 · Unit 4: Think into the future (LexiBlock + Blooket 脑力风暴竞技场)",
+    "mode": "gimkit",
+    "count": 25,
+    "samples": [
+      "bright",
+      "arrogant",
+      "bad-tempered",
+      "cautious"
+    ]
+  },
+  {
+    "file": "th4-5-word.html",
+    "book": "th4",
+    "unit": "5",
+    "title": "THINK Level 4 · Unit 5: Life's little luxuries (LexiBlock + Gimkit 赛博防火墙极客入侵)",
+    "mode": "gimkit",
+    "count": 26,
+    "samples": [
+      "adaptor",
+      "'at' symbol",
+      "charger",
+      "headset"
+    ]
+  },
+  {
+    "file": "th4-6-word.html",
+    "book": "th4",
+    "unit": "6",
+    "title": "THINK Level 4 · Unit 6: Getting involved (LexiBlock + Blooket 默契战队联盟大乱斗)",
+    "mode": "gimkit",
+    "count": 28,
+    "samples": [
+      "define",
+      "introduce",
+      "admit",
+      "suggest"
+    ]
+  },
+  {
+    "file": "th4-7-word.html",
+    "book": "th4",
+    "unit": "7",
+    "title": "THINK Level 4 · Unit 7: Science countdown (LexiBlock + Wordwall 晴雨表情绪大冒险)",
+    "mode": "wordwall",
+    "count": 21,
+    "samples": [
+      "about to",
+      "off to",
+      "on the point of",
+      "due to"
+    ]
+  },
+  {
+    "file": "th4-8-word.html",
+    "book": "th4",
+    "unit": "8",
+    "title": "THINK Level 4 · Unit 8: Wonders of the world (LexiBlock + Blooket 奇迹宝藏清单寻宝)",
+    "mode": "gimkit",
+    "count": 21,
+    "samples": [
+      "come down with",
+      "carry out",
+      "come up with",
+      "pick up on"
+    ]
+  },
+  {
+    "file": "th4-9-word.html",
+    "book": "th4",
+    "unit": "9",
+    "title": "THINK Level 4 · Unit 9: Working life (LexiBlock + Gimkit 职场生涯大亨)",
+    "mode": "gimkit",
+    "count": 24,
+    "samples": [
+      "(not) go your way",
+      "blame",
+      "let (someone) down",
+      "try your hardest"
+    ]
+  },
+  {
+    "file": "th5-1-word.html",
+    "book": "th5",
+    "unit": "1",
+    "title": "THINK TH5 · 1: Unit 1 · Family matters (家庭与人际) (LexiBlock 3D)",
+    "mode": "wordwall",
+    "count": 24,
+    "samples": [
+      "traditional",
+      "insecure",
+      "unconventional",
+      "demanding"
+    ]
+  },
+  {
+    "file": "th5-10-word.html",
+    "book": "th5",
+    "unit": "10",
+    "title": "THINK TH5 · 10: Unit 10 · Learning for life (高等教育与学术深造) (LexiBlock 3D)",
+    "mode": "wordwall",
+    "count": 18,
+    "samples": [
+      "infirmary",
+      "registrar",
+      "foundling",
+      "dormitory"
+    ]
+  },
+  {
+    "file": "th5-11-word.html",
+    "book": "th5",
+    "unit": "11",
+    "title": "THINK TH5 · 11: Unit 11 · The modern world (现代生活与情绪管理) (LexiBlock 3D)",
+    "mode": "gimkit",
+    "count": 23,
+    "samples": [
+      "capitalism",
+      "pessimism",
+      "optimism",
+      "socialism"
+    ]
+  },
+  {
+    "file": "th5-12-word.html",
+    "book": "th5",
+    "unit": "12",
+    "title": "THINK TH5 · 12: Unit 12 · Celebrating heroes (英雄表彰、成败与梦想) (LexiBlock 3D)",
+    "mode": "gimkit",
+    "count": 20,
+    "samples": [
+      "in mind",
+      "in particular",
+      "in no time",
+      "shortlist (someone)"
+    ]
+  },
+  {
+    "file": "th5-2-word.html",
+    "book": "th5",
+    "unit": "2",
+    "title": "THINK TH5 · 2: Unit 2 · Sweet dreams (睡眠与梦境) (LexiBlock 3D)",
+    "mode": "gimkit",
+    "count": 29,
+    "samples": [
+      "light sleeper",
+      "oversleep",
+      "dream job",
+      "burst"
+    ]
+  },
+  {
+    "file": "th5-3-word.html",
+    "book": "th5",
+    "unit": "3",
+    "title": "THINK TH5 · 3: Unit 3 · Lucky for some? (运气与机遇) (LexiBlock 3D)",
+    "mode": "gimkit",
+    "count": 22,
+    "samples": [
+      "overall",
+      "turn down",
+      "turn back",
+      "stay on"
+    ]
+  },
+  {
+    "file": "th5-4-word.html",
+    "book": "th5",
+    "unit": "4",
+    "title": "THINK TH5 · 4: Unit 4 · Having a laugh (幽默与笑语) (LexiBlock 3D)",
+    "mode": "wordwall",
+    "count": 25,
+    "samples": [
+      "hilarious",
+      "witty",
+      "amusing",
+      "laughing stock"
+    ]
+  },
+  {
+    "file": "th5-5-word.html",
+    "book": "th5",
+    "unit": "5",
+    "title": "THINK TH5 · 5: Unit 5 · What a thrill! (挑战极限与冒险) (LexiBlock 3D)",
+    "mode": "gimkit",
+    "count": 22,
+    "samples": [
+      "stunt",
+      "daredevil",
+      "risk-taker",
+      "audacious"
+    ]
+  },
+  {
+    "file": "th5-6-word.html",
+    "book": "th5",
+    "unit": "6",
+    "title": "THINK TH5 · 6: Unit 6 · Famous lives (名望与名利场) (LexiBlock 3D)",
+    "mode": "gimkit",
+    "count": 21,
+    "samples": [
+      "addicted",
+      "idol",
+      "fascination",
+      "worship"
+    ]
+  },
+  {
+    "file": "th5-7-word.html",
+    "book": "th5",
+    "unit": "7",
+    "title": "THINK TH5 · 7: Unit 7 · A thing of beauty? (审美潮流与情感反应) (LexiBlock 3D)",
+    "mode": "wordwall",
+    "count": 21,
+    "samples": [
+      "short-lived",
+      "must-have",
+      "pilgrim",
+      "sorrows"
+    ]
+  },
+  {
+    "file": "th5-8-word.html",
+    "book": "th5",
+    "unit": "8",
+    "title": "THINK TH5 · 8: Unit 8 · Cracking the code (语言起源与沟通) (LexiBlock 3D)",
+    "mode": "gimkit",
+    "count": 33,
+    "samples": [
+      "pronounce",
+      "native speaker",
+      "misunderstand",
+      "strong accent"
+    ]
+  },
+  {
+    "file": "th5-9-word.html",
+    "book": "th5",
+    "unit": "9",
+    "title": "THINK TH5 · 9: Unit 9 · Fairness matters (公平、正义与司法) (LexiBlock 3D)",
+    "mode": "gimkit",
+    "count": 23,
+    "samples": [
+      "the defence",
+      "the prosecution",
+      "witness",
+      "evident"
+    ]
+  },
+  {
+    "file": "th5-welcome-word.html",
+    "book": "th5",
+    "unit": "welcome",
+    "title": "THINK TH5 · WELCOME: Welcome · 关系、挑战与未来表达 (LexiBlock 3D)",
+    "mode": "gimkit",
+    "count": 7,
+    "samples": [
+      "through thick and thin",
+      "ups and downs",
+      "spill the beans",
+      "beat around the bush"
+    ]
+  }
+]

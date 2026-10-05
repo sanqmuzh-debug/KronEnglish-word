@@ -1,0 +1,24 @@
+{
+  "name": "kron-english-word",
+  "version": "1.0.0",
+  "description": "Tactile 3D LexiBlock Word Learning Engine with Total Phonics & Morpheme Chunking across 11 Cambridge Books (125 Units)",
+  "main": "server.py",
+  "scripts": {
+    "start": "python3 server.py",
+    "dev": "python3 server.py",
+    "audit": "python3 scripts/audit_all_words.py",
+    "compile": "python3 scripts/compile_all_books.py",
+    "refine": "python3 scripts/refine_all_words.py"
+  },
+  "keywords": [
+    "phonics",
+    "vocabulary",
+    "gamification",
+    "cambridge-think",
+    "cambridge-power-up",
+    "lexiblock",
+    "duolingo-ui"
+  ],
+  "author": "Google DeepMind Agentic Coding Team",
+  "license": "MIT"
+}

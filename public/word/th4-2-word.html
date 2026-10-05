@@ -1,0 +1,2825 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>THINK Level 4 · Unit 2: Going places (LexiBlock + Wordwall 环球公路漫游)</title>
+  <style>
+
+    :root {
+      --duo-green: #58CC02;
+      --duo-green-shadow: #46A302;
+      --duo-green-hover: #61E002;
+      --duo-blue: #1CB0F6;
+      --duo-blue-shadow: #1899D6;
+      --duo-gold: #FFC800;
+      --duo-gold-shadow: #E5A800;
+      --duo-coral: #FF7675;
+      --duo-coral-shadow: #D63031;
+      --duo-ocean: #0984E3;
+      --duo-ocean-shadow: #074B83;
+      --bg-light: #F7F7F9;
+      --bg-card: #FFFFFF;
+      --text-main: #1D1D1F;
+      --text-body: #4B4B4B;
+      --text-muted: #777777;
+      --text-sub: #AFAFAF;
+      --border-light: #E5E5E5;
+      --border-tile: #CECECE;
+      --radius-sm: 12px;
+      --radius-md: 16px;
+      --radius-lg: 24px;
+      --radius-pill: 999px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      user-select: none;
+      -webkit-tap-highlight-color: transparent;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", "Segoe UI", Roboto, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-light);
+      color: var(--text-body);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      transition: background-color 0.3s ease;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body.game-mode {
+      background-color: #081524;
+      color: #FFFFFF;
+    }
+
+    #app {
+      width: 100%;
+      max-width: 500px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 16px;
+      position: relative;
+    }
+
+    .duo-btn {
+      position: relative;
+      border-radius: 18px;
+      font-weight: 900;
+      cursor: pointer;
+      transition: all 0.08s ease;
+      text-align: center;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      user-select: none;
+      border: none;
+    }
+    .duo-btn:active {
+      transform: translateY(3px);
+      border-bottom-width: 2px !important;
+    }
+
+    .duo-btn-green {
+      background: var(--duo-green);
+      color: #FFFFFF;
+      border-bottom: 5px solid var(--duo-green-shadow);
+    }
+    .duo-btn-green:hover { background: var(--duo-green-hover); }
+
+    .duo-btn-ocean {
+      background: var(--duo-ocean);
+      color: #FFFFFF;
+      border-bottom: 5px solid var(--duo-ocean-shadow);
+    }
+
+    .duo-btn-gold {
+      background: var(--duo-gold);
+      color: #7A5200;
+      border-bottom: 5px solid var(--duo-gold-shadow);
+    }
+
+    .duo-btn-dark {
+      background: #102138;
+      color: #FFFFFF;
+      border: 2px solid #1E3B61;
+      border-bottom: 5px solid #0A1626;
+    }
+    .duo-btn-dark:hover { background: #172D4D; }
+
+    .duo-tile {
+      background-color: #FFFFFF;
+      color: var(--text-body);
+      border: 2px solid var(--border-light);
+      border-bottom: 4px solid var(--border-tile);
+      border-radius: 16px;
+      font-size: 20px;
+      font-weight: 900;
+      padding: 12px 18px;
+      cursor: pointer;
+      transition: all 0.08s ease-in-out;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      user-select: none;
+    }
+    .duo-tile:hover { background-color: #F8F8F8; }
+    .duo-tile:active {
+      transform: translateY(2px);
+      border-bottom-width: 2px;
+    }
+
+    .duo-tile-success {
+      background-color: var(--duo-green) !important;
+      color: #FFFFFF !important;
+      border-color: var(--duo-green) !important;
+      border-bottom-color: var(--duo-green-shadow) !important;
+      transform: scale(1.04);
+    }
+
+    .learn-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 12px;
+      gap: 12px;
+    }
+    .unit-tag {
+      background: #E3F2FD;
+      color: #1565C0;
+      font-size: 11px;
+      font-weight: 900;
+      padding: 4px 10px;
+      border-radius: 999px;
+      letter-spacing: 0.5px;
+      white-space: nowrap;
+    }
+    .progress-track {
+      flex: 1;
+      height: 14px;
+      background: #E5E5E5;
+      border-radius: var(--radius-pill);
+      overflow: hidden;
+      position: relative;
+    }
+    .progress-fill {
+      height: 100%;
+      background: var(--duo-green);
+      border-radius: var(--radius-pill);
+      transition: width 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+    .mode-switch-btn {
+      background: #FFF;
+      border: 2px solid #E5E5E5;
+      border-radius: var(--radius-pill);
+      padding: 6px 12px;
+      font-size: 12px;
+      font-weight: 800;
+      color: #777;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      transition: all 0.15s ease;
+      white-space: nowrap;
+    }
+    .mode-switch-btn:hover {
+      border-color: var(--duo-ocean);
+      color: var(--duo-ocean);
+    }
+
+    .word-header {
+      text-align: center;
+      margin-bottom: 16px;
+    }
+    .word-meaning {
+      font-size: 26px;
+      font-weight: 900;
+      color: var(--text-main);
+      margin-bottom: 6px;
+      letter-spacing: -0.5px;
+    }
+    .word-type-tag {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 800;
+      padding: 2px 8px;
+      border-radius: 6px;
+      margin-left: 6px;
+      vertical-align: middle;
+    }
+    .tag-adj { background: #EDE7F6; color: #512DA8; }
+    .tag-trip { background: #E1F5FE; color: #0288D1; }
+
+    .word-ipa-btn {
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      font-size: 15px;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      cursor: pointer;
+      padding: 4px 10px;
+      border-radius: var(--radius-pill);
+      transition: background 0.15s ease;
+    }
+    .word-ipa-btn:hover { background: #EDEDED; }
+
+    .slots-container {
+      min-height: 64px;
+      border-bottom: 2px dashed var(--border-tile);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 10px 0;
+      margin-bottom: 20px;
+    }
+    .tray-container {
+      min-height: 80px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    .empty-tip {
+      color: var(--text-sub);
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .kron-spark-card {
+      background: linear-gradient(135deg, #FFF9DB 0%, #FFF3BF 100%);
+      border: 2px solid #FFE066;
+      border-radius: 18px;
+      padding: 14px 16px;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      box-shadow: 0 4px 12px rgba(245, 159, 0, 0.08);
+    }
+    .kron-avatar {
+      font-size: 28px;
+      line-height: 1;
+      filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+    }
+    .kron-spark-content {
+      flex: 1;
+    }
+    .kron-spark-title {
+      font-size: 12px;
+      font-weight: 900;
+      color: #D9480F;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .kron-spark-text {
+      font-size: 14px;
+      color: #495057;
+      font-weight: 700;
+      line-height: 1.45;
+    }
+
+    .transfer-panel {
+      background: var(--bg-card);
+      border: 2px solid var(--border-light);
+      border-radius: 20px;
+      padding: 14px;
+      margin-top: 10px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.04);
+    }
+    .rule-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      margin-bottom: 12px;
+      line-height: 1.4;
+    }
+    .rule-badge {
+      background: #E8F5E9;
+      color: #2E7D32;
+      font-size: 11px;
+      font-weight: 900;
+      padding: 3px 8px;
+      border-radius: 6px;
+      white-space: nowrap;
+    }
+    .rule-desc {
+      font-size: 12px;
+      font-weight: 700;
+      color: #555;
+    }
+    .transfer-title {
+      font-size: 11px;
+      font-weight: 900;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 8px;
+    }
+    .transfer-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+    .transfer-tile {
+      background: #FAFAFA;
+      border: 1.5px solid var(--border-light);
+      border-radius: 12px;
+      padding: 8px 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+      transition: all 0.1s ease;
+    }
+    .transfer-tile:hover {
+      background: #F0FDF4;
+      border-color: var(--duo-green);
+    }
+    .transfer-word {
+      font-weight: 900;
+      font-size: 14px;
+      color: var(--text-main);
+    }
+    .transfer-cn {
+      font-size: 11px;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+    .hl-green {
+      color: var(--duo-green);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    @keyframes popIn {
+      0% { opacity: 0; transform: scale(0.92) translateY(8px); }
+      100% { opacity: 1; transform: scale(1) translateY(0); }
+    }
+    .animate-pop-in {
+      animation: popIn 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+    }
+
+    @keyframes shake {
+      0%, 100% { transform: translateX(0); }
+      20%, 60% { transform: translateX(-8px); }
+      40%, 80% { transform: translateX(8px); }
+    }
+    .animate-shake {
+      animation: shake 0.4s ease-in-out;
+    }
+
+    /* ================= Gimkit 海岛探险大富翁独立游戏 ================= */
+    
+.game-top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+    .timer-pill {
+      background: #20172B;
+      border: 2px solid #362847;
+      border-radius: var(--radius-pill);
+      padding: 6px 14px;
+      font-size: 14px;
+      font-weight: 900;
+      color: #AF52DE;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .alchemy-stats-row {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+    .alchemy-stat-card {
+      flex: 1;
+      background: #191222;
+      border: 1px solid #2B1E38;
+      border-radius: 16px;
+      padding: 10px 12px;
+      text-align: center;
+    }
+    .stat-label {
+      font-size: 11px;
+      color: #8C9BAE;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+    .stat-val {
+      font-size: 20px;
+      font-weight: 900;
+      color: #AF52DE;
+    }
+
+    .alchemy-stage {
+      background: #160F20;
+      border: 2px solid #2F1E40;
+      border-radius: 24px;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 14px;
+      min-height: 290px;
+      justify-content: center;
+    }
+
+    .alchemy-bubble {
+      background: #231733;
+      border: 2px solid #3F2B5A;
+      border-radius: 18px;
+      padding: 10px 16px;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      max-width: 90%;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+    }
+    .alchemy-tag {
+      font-size: 18px;
+      font-weight: 900;
+      color: #AF52DE;
+    }
+    .alchemy-avatar-box {
+      position: relative;
+      margin-bottom: 8px;
+    }
+    .alchemy-emoji {
+      font-size: 64px;
+      filter: drop-shadow(0 4px 8px rgba(0,0,0,0.4));
+      display: inline-block;
+      animation: rotateFlask 2s ease-in-out infinite alternate;
+    }
+    @keyframes rotateFlask {
+      0% { transform: rotate(-8deg) scale(1); }
+      100% { transform: rotate(8deg) scale(1.06); }
+    }
+    .alchemy-heat-bar {
+      width: 130px;
+      height: 8px;
+      background: #2F1E40;
+      border-radius: 999px;
+      overflow: hidden;
+      margin: 0 auto;
+    }
+    .alchemy-heat-fill {
+      height: 100%;
+      background: #AF52DE;
+      border-radius: 999px;
+      transition: width 0.1s linear, background-color 0.3s ease;
+    }
+
+    .game-opt-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      width: 100%;
+    }
+    .game-opt-btn {
+      padding: 14px 10px;
+      font-size: 15px;
+      line-height: 1.3;
+      border-radius: 16px;
+    }
+
+    .ticker-bar {
+      background: #191222;
+      border: 1px solid #2B1E38;
+      border-radius: var(--radius-pill);
+      padding: 6px 14px;
+      font-size: 12px;
+      color: #8DA1BA;
+      font-weight: 700;
+      margin-bottom: 12px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .leaderboard-mini {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 6px;
+      margin-bottom: 12px;
+    }
+    .lb-card {
+      background: #160F20;
+      border: 1px solid #2F1E40;
+      border-radius: 12px;
+      padding: 8px 6px;
+      text-align: center;
+      transition: all 0.2s ease;
+    }
+    .lb-card.is-me {
+      border-color: #AF52DE;
+      background: #231733;
+    }
+    .lb-name {
+      font-size: 11px;
+      color: #8C9BAE;
+      font-weight: 800;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .lb-gold {
+      font-size: 13px;
+      font-weight: 900;
+      color: #FFFFFF;
+    }
+
+    .market-drawer {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.75);
+      backdrop-filter: blur(8px);
+      z-index: 100;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .market-modal {
+      background: #130D1A;
+      border: 2px solid #AF52DE;
+      border-radius: 28px;
+      width: 100%;
+      max-width: 420px;
+      padding: 22px;
+      box-shadow: 0 20px 50px rgba(175,82,222,0.25);
+    }
+    .market-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #1F152A;
+      border: 1px solid #332344;
+      border-radius: 16px;
+      padding: 12px;
+      margin-bottom: 10px;
+    }
+
+    #confettiCanvas {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 999;
+    }
+  </style>
+</head>
+<body>
+
+  <canvas id="confettiCanvas"></canvas>
+
+  <div id="app">
+    
+    <!-- ==================== 视图 1：多邻国积木背单词 + Kron 脑洞场景 ==================== -->
+    <div id="learnView" style="display: flex; flex-direction: column; justify-content: space-between; min-height: calc(100vh - 32px);">
+      <header class="learn-header">
+        <span class="unit-tag">TH4 · UNIT 2</span>
+        <div class="progress-track">
+          <div class="progress-fill" id="progressBar" style="width: 0%;"></div>
+        </div>
+        <button class="mode-switch-btn" id="lockStatusBtn" onclick="trySwitchToGame()">
+          🔒 环球公路漫游 (需全通)
+        </button>
+      </header>
+      <!-- Aha! 生词本双向打通同步横幅 -->
+      <div id="ahaSyncBanner" style="display:none; align-items: center; justify-content: space-between; background: linear-gradient(135deg, rgba(88,204,2,0.12), rgba(28,176,246,0.12)); border: 1.5px solid #58CC02; border-radius: 14px; padding: 8px 12px; margin-bottom: 12px; font-size: 11px; font-weight: 800; color: #1D1D1F;">
+        <div style="display: flex; align-items: center; gap: 6px;">
+          <span>⚡</span>
+          <span>已成功打通并同步来自 <strong>Aha! 生词本</strong> 的 <span id="ahaSyncCount" style="color: #46A302; font-size: 13px;">0</span> 个重点词汇</span>
+        </div>
+        <button onclick="document.getElementById('ahaSyncBanner').style.display='none'" style="background:none; border:none; color:#888; cursor:pointer; font-size:12px; font-weight:bold;">✕</button>
+      </div>
+
+      <div style="margin: auto 0; padding: 12px 0;">
+        <div class="word-header">
+          <div class="word-meaning">
+            <span id="wordMeaning">...</span>
+            <span class="word-type-tag" id="wordTypeTag">Word</span>
+          </div>
+          <button class="word-ipa-btn" onclick="playCurrentWordAudio()">
+            <span id="wordIPA">...</span>
+            <span>🔊</span>
+          </button>
+        </div>
+
+        <div class="slots-container" id="slotsContainer"></div>
+        <div class="tray-container" id="trayContainer"></div>
+
+        <div id="successPanel" style="display: none;" class="animate-pop-in">
+          <div class="kron-spark-card">
+            <div class="kron-avatar">👨🏻‍🏫</div>
+            <div class="kron-spark-content">
+              <div class="kron-spark-title">⚡️ Kron 老师脑洞发问</div>
+              <div class="kron-spark-text" id="kronMindSpark">...</div>
+            </div>
+          </div>
+
+          <div class="transfer-panel">
+            <div class="rule-row">
+              <span class="rule-badge" id="ruleBadge">...</span>
+              <span class="rule-desc" id="ruleDesc">...</span>
+            </div>
+            <div class="transfer-title">举一反三单词积木（点击听纯正发音）</div>
+            <div class="transfer-grid" id="transferGrid"></div>
+          </div>
+        </div>
+      </div>
+
+      <div style="padding-top: 14px;">
+        <button class="duo-btn duo-btn-green" id="nextBtn" style="width: 100%; padding: 16px; font-size: 18px; display: none;" onclick="goNextWord()">
+          继续下一个单词 ➔
+        </button>
+        <div id="footerPlaceholder" style="text-align: center; color: #AFAFAF; font-size: 13px; font-weight: 700; height: 55px; line-height: 55px;">
+          点击下方发音积木完成拼装
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== 视图 2：环球公路漫游独立游戏 ==================== -->
+    <div id="gameView" style="display: none; flex-direction: column; justify-content: space-between; min-height: calc(100vh - 32px);">
+      <div>
+        <div class="game-top-bar">
+          <div class="timer-pill" id="timerDisplay">
+            <span>⚗️</span>
+            <span id="timeText">03:00</span>
+          </div>
+          <div style="display: flex; gap: 8px;">
+            <button class="duo-btn duo-btn-purple" style="padding: 6px 12px; font-size: 12px;" onclick="openMarket()">
+              🔮 探案档案
+            </button>
+            <button class="duo-btn duo-btn-dark" style="padding: 6px 12px; font-size: 12px;" onclick="switchToLearn()">
+              📖 返回复习
+            </button>
+          </div>
+        </div>
+
+        <div class="alchemy-stats-row">
+          <div class="alchemy-stat-card">
+            <div class="stat-label">贤者之石 (金币)</div>
+            <div class="stat-val" id="playerGoldText">🔮 0</div>
+          </div>
+          <div class="alchemy-stat-card">
+            <div class="stat-label">提纯素材</div>
+            <div class="stat-val" id="servedCountText">✨ 0</div>
+          </div>
+          <div class="alchemy-stat-card">
+            <div class="stat-label">连击倍率</div>
+            <div class="stat-val" id="comboText" style="color: #AF52DE;">⚡ x1</div>
+          </div>
+        </div>
+
+        <div class="ticker-bar" id="tickerMsg">
+          🛣️ 环球公路漫游准备就绪！识别旅行与文化词汇，全速冲刺终点！
+        </div>
+
+        <div class="leaderboard-mini" id="leaderboardGrid"></div>
+      </div>
+
+      <div class="alchemy-stage" id="alchemyStage">
+        
+        <div id="gameStartScreen" style="text-align: center; padding: 10px;">
+          <div style="font-size: 54px; margin-bottom: 8px;">🧪</div>
+          <h1 style="font-size: 22px; font-weight: 900; margin-bottom: 6px; color: #AF52DE;">
+            WORDWALL · 环球公路漫游
+          </h1>
+          <p style="font-size: 13px; color: #8C9BAE; line-height: 1.5; margin-bottom: 20px;">
+            已吃透 28 个人口流动、环球旅行与游牧文化核心词汇！<br/>高能挑战正源源不断袭来！<br/>看准题干秒速判定，斩获全场最高荣誉！
+          </p>
+          <button class="duo-btn duo-btn-purple" style="width: 100%; padding: 15px; font-size: 16px;" onclick="startBattle()">
+            开启炼金熔炉 ➔
+          </button>
+        </div>
+
+        <div id="gameOrderScreen" style="display: none; width: 100%; text-align: center;">
+          <div class="alchemy-avatar-box">
+            <div class="alchemy-emoji" id="custEmoji">🔮</div>
+          </div>
+          
+          <div class="alchemy-bubble" style="margin: 0 auto 12px auto;">
+            <span style="font-size: 18px;">💡</span>
+            <div style="text-align: left;">
+              <div style="font-size: 11px; color: #8DA1BA; font-weight: 800;" id="custName">炼金配方</div>
+              <div class="alchemy-tag" id="custOrderSpeech">“急需材质：「羊毛」！”</div>
+            </div>
+          </div>
+
+          <div style="margin-bottom: 12px;">
+            <div class="alchemy-heat-bar">
+              <div class="alchemy-heat-fill" id="patienceBar" style="width: 100%;"></div>
+            </div>
+          </div>
+
+          <div style="font-size: 13px; font-weight: 900; color: #E5E5E5; margin-bottom: 14px;" id="gameQuestionPrompt">
+            极速反应：选择正确的对应英文单词：
+          </div>
+
+          <div class="game-opt-grid" id="gameOptionGrid"></div>
+        </div>
+
+        <div id="gameDishDoneScreen" style="display: none; text-align: center;" class="animate-pop-in">
+          <div id="dishDoneIcon" style="font-size: 60px; margin-bottom: 8px;">✨🧪💎✨</div>
+          <h3 id="dishDoneTitle" style="font-size: 22px; font-weight: 900; color: #AF52DE; margin-bottom: 6px;">
+            合成成功！+340 🔮
+          </h3>
+          <p id="dishDoneDesc" style="font-size: 13px; color: #8DA1BA; margin-bottom: 18px;">
+            完美提纯！稀有材质凝结成闪烁光芒的晶体！
+          </p>
+          <button class="duo-btn duo-btn-purple" style="width: 100%; padding: 14px; font-size: 16px;" onclick="nextCustomer()">
+            提纯下一份配方 ➔
+          </button>
+        </div>
+
+        <div id="gameOverScreen" style="display: none; text-align: center; width: 100%;" class="animate-pop-in">
+          <div style="font-size: 56px; margin-bottom: 8px;" id="finalTrophy">👑</div>
+          <h2 style="font-size: 24px; font-weight: 900; color: #FFC800;" id="finalRankTitle">传奇大炼金术士！</h2>
+          <p style="font-size: 12px; color: #8C9BAE; margin-bottom: 16px;" id="finalRankDesc">贤者之石储备冠绝群伦！</p>
+          <div style="background: #1F152A; border-radius: 20px; padding: 14px; margin-bottom: 18px;" id="finalPodium"></div>
+          <button class="duo-btn duo-btn-purple" style="width: 100%; padding: 14px; font-size: 16px;" onclick="startBattle()">
+            再开一炉 🔄
+          </button>
+        </div>
+
+      </div>
+
+      <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 10px; font-size: 11px; font-weight: 800; color: #5B6F8E;">
+        <span>WORDWALL ALCHEMY · KRON 独家定制版</span>
+        <span id="playerBuffs">🔮 催化矩阵: 0级 | 🧪 提纯釜: 基础</span>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="market-drawer" id="marketDrawer">
+    <div class="market-modal">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+        <h3 style="font-size: 18px; font-weight: 900; color: #AF52DE;">🔮 赛博炼金升级矩阵</h3>
+        <button style="background: none; border: none; color: #8C9BAE; font-size: 22px; cursor: pointer;" onclick="closeMarket()">✕</button>
+      </div>
+
+      <div class="market-item">
+        <div>
+          <div style="font-weight: 900; font-size: 14px; color: #FFF;">⚡ 超导重离子催化剂</div>
+          <div style="font-size: 11px; color: #8C9BAE;">单次合成收益永久提升 50%</div>
+        </div>
+        <button class="duo-btn duo-btn-purple" style="padding: 8px 12px; font-size: 12px;" onclick="buyUpgrade('knife', 400)">
+          400 🔮
+        </button>
+      </div>
+
+      <div class="market-item">
+        <div>
+          <div style="font-weight: 900; font-size: 14px; color: #FFF;">🤖 自动分子提纯臂</div>
+          <div style="font-size: 11px; color: #8C9BAE;">每 3 秒自动入账 60 点贤者能量</div>
+        </div>
+        <button class="duo-btn duo-btn-purple" style="padding: 8px 12px; font-size: 12px;" onclick="buyUpgrade('autoCook', 600)">
+          600 🔮
+        </button>
+      </div>
+
+      <div class="market-item">
+        <div>
+          <div style="font-weight: 900; font-size: 14px; color: #FFF;">⏳ 时间膨胀沙漏</div>
+          <div style="font-size: 11px; color: #8C9BAE;">熔炉过热降温速度减缓 40%</div>
+        </div>
+        <button class="duo-btn duo-btn-purple" style="padding: 8px 12px; font-size: 12px;" onclick="buyUpgrade('bell', 350)">
+          350 🔮
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    /* ================= Unit 2: 28 词全量数据库 (人口流动、环球旅行与游牧文化) ================= */
+    const VOCABULARY = [
+      {
+            "word": "commuters",
+            "meaning": "通勤者（往返家与办公室的人）",
+            "IPA": "/kəˈmjuː.təz/",
+            "type": null,
+            "blocks": [
+                  "com",
+                  "mut",
+                  "ers"
+            ],
+            "mindSpark": "音节划分：com·mut·ers\n词理分析：前缀 com-（共同）+ mut（改变、交换，来自拉丁语 mutare）+ -er（人）+ -s（复数）。原指“使用月票共同出行的人”，引申为每天往返两地的通勤者。",
+            "rule": "词根 mut (改变/交换) + -er 人称后缀",
+            "ruleDesc": "com-（共同）+ mut（往返变换）+ -ers（人群）= 每天在两地间往返奔波的人。",
+            "transfers": [
+                  {
+                        "word": "commute",
+                        "hl": "com",
+                        "cn": "上下班通勤"
+                  },
+                  {
+                        "word": "mutation",
+                        "hl": "mut",
+                        "cn": "突变/变化"
+                  },
+                  {
+                        "word": "mutual",
+                        "hl": "mut",
+                        "cn": "相互的/共有的"
+                  }
+            ]
+      },
+      {
+            "word": "employees",
+            "meaning": "雇员 / 受雇员工",
+            "IPA": "/ɪmˈplɔɪ.iːz/",
+            "type": "noun",
+            "blocks": [
+                  "em",
+                  "ploy",
+                  "ees"
+            ],
+            "mindSpark": "音节划分：em·ploy·ees\n词理分析：employ（雇用）+ -ee（受动者后缀，指被雇的人）+ -s（复数）。被老板雇用来工作并领取薪水的人。",
+            "rule": "被动人称后缀 -ee",
+            "ruleDesc": "employ (雇用) + -ee (受雇者，被动承受动作的人)。",
+            "transfers": [
+                  {
+                        "word": "employer",
+                        "hl": "em",
+                        "cn": "雇主/老板"
+                  },
+                  {
+                        "word": "employee",
+                        "hl": "ploy",
+                        "cn": "雇员 / 职员"
+                  },
+                  {
+                        "word": "employers",
+                        "hl": "ploy",
+                        "cn": "雇主 / 老板机构"
+                  },
+                  {
+                        "word": "cheese",
+                        "hl": "ees",
+                        "cn": "芝士 / 奶酪 / 干酪"
+                  }
+            ]
+      },
+      {
+            "word": "employers",
+            "meaning": "雇主 / 老板机构",
+            "IPA": "/ɪmˈplɔɪ.əz/",
+            "type": "noun",
+            "blocks": [
+                  "em",
+                  "ploy",
+                  "ers"
+            ],
+            "mindSpark": "音节划分：em·ploy·ers\n词理分析：employ（雇用）+ -er（施动者后缀，指雇人的人）+ -s（复数）。出资并雇用别人工作的老板。",
+            "rule": "主动人称后缀 -er",
+            "ruleDesc": "employ (雇用) + -ers (雇佣他人的人或企业机构)。",
+            "transfers": [
+                  {
+                        "word": "employee",
+                        "hl": "ploy",
+                        "cn": "雇员 / 职员"
+                  },
+                  {
+                        "word": "employer",
+                        "hl": "ploy",
+                        "cn": "雇主 / 用人单位"
+                  },
+                  {
+                        "word": "employees",
+                        "hl": "ploy",
+                        "cn": "雇员 / 受雇员工"
+                  },
+                  {
+                        "word": "oversleep",
+                        "hl": "ers",
+                        "cn": "睡过头 / 起晚了"
+                  }
+            ]
+      },
+      {
+            "word": "immigrants",
+            "meaning": "移民（移居外国定居者）",
+            "IPA": "/ˈɪm.ɪ.grənts/",
+            "type": "noun",
+            "blocks": [
+                  "im",
+                  "mi",
+                  "grants"
+            ],
+            "mindSpark": "音节划分：im·mi·grants\n词理分析：前缀 im-（向内）+ migr（迁移）+ -ant（人）+ -s（复数）。从外部迁移“入”本国长期居住的人，即外来移民。",
+            "rule": "前缀 im- (向内) + 词根 migr (迁徙)",
+            "ruleDesc": "im- (into 进入) + migr (迁徙移动) + -ants (人群) = 迁入本国定居者。",
+            "transfers": [
+                  {
+                        "word": "migrate",
+                        "hl": "mi",
+                        "cn": "迁徙/移居"
+                  },
+                  {
+                        "word": "emigrant",
+                        "hl": "mi",
+                        "cn": "移居国外者(出境)"
+                  },
+                  {
+                        "word": "immigration",
+                        "hl": "im",
+                        "cn": "移民入境处"
+                  },
+                  {
+                        "word": "migratory",
+                        "hl": "mi",
+                        "cn": "候鸟迁徙的"
+                  }
+            ]
+      },
+      {
+            "word": "inhabitants",
+            "meaning": "居民 / 栖息者",
+            "IPA": "/ɪnˈhæb.ɪ.tənts/",
+            "type": "noun",
+            "blocks": [
+                  "in",
+                  "hab",
+                  "it",
+                  "ants"
+            ],
+            "mindSpark": "音节划分：in·hab·it·ants\n词理分析：前缀 in-（在内）+ habit（居住，来自拉丁语 habitare）+ -ant（人/物）+ -s（复数）。在某个地方长期居留的居民或栖息的动物。",
+            "rule": "词根 habit (居住/习惯) + -ants",
+            "ruleDesc": "in-（在内部）+ habit（居住）+ -ants（人或动物）= 某个地区的栖居者。",
+            "transfers": [
+                  {
+                        "word": "habitat",
+                        "hl": "hab",
+                        "cn": "栖息地"
+                  },
+                  {
+                        "word": "cohabit",
+                        "hl": "hab",
+                        "cn": "同居/共栖"
+                  },
+                  {
+                        "word": "inhabit",
+                        "hl": "in",
+                        "cn": "居住于"
+                  },
+                  {
+                        "word": "inside",
+                        "hl": "in",
+                        "cn": "在里面"
+                  }
+            ]
+      },
+      {
+            "word": "motorists",
+            "meaning": "汽车司机 / 机动车驾驶员",
+            "IPA": "/ˈməʊ.tər.ɪsts/",
+            "type": "noun",
+            "blocks": [
+                  "mo",
+                  "tor",
+                  "ists"
+            ],
+            "mindSpark": "音节划分：mo·tor·ists\n词理分析：motor（发动机、汽车）+ -ist（从事…的人）+ -s（复数）。驾驶带有发动机的车辆（汽车）的人，即驾车者。",
+            "rule": "motor (马达/机动车) + -ist 专业人员",
+            "ruleDesc": "motor (发动机/汽车) + -ists (开机动车行驶在路上的人)。",
+            "transfers": [
+                  {
+                        "word": "motorway",
+                        "hl": "mo",
+                        "cn": "高速公路"
+                  },
+                  {
+                        "word": "motorcycle",
+                        "hl": "mo",
+                        "cn": "摩托车"
+                  }
+            ]
+      },
+      {
+            "word": "pedestrians",
+            "meaning": "行人 / 步行者",
+            "IPA": "/pəˈdes.tri.ənz/",
+            "type": "noun",
+            "blocks": [
+                  "pe",
+                  "des",
+                  "tri",
+                  "ans"
+            ],
+            "mindSpark": "音节划分：pe·des·tri·ans\n词理分析：词根 ped-（脚）+ -estrian（相关的）+ -s（复数）。用“脚”在大街上行走的人，相对于坐车的人，指步行者。",
+            "rule": "词根 ped (脚/足) + -ian 人称后缀",
+            "ruleDesc": "源自拉丁语 ped- (脚)，用双脚走路的人就是行人；斑马线就是 pedestrian crossing！",
+            "transfers": [
+                  {
+                        "word": "pedal",
+                        "hl": "pe",
+                        "cn": "脚踏板"
+                  },
+                  {
+                        "word": "pedicure",
+                        "hl": "pe",
+                        "cn": "足部护理修脚"
+                  },
+                  {
+                        "word": "centipede",
+                        "hl": "pe",
+                        "cn": "蜈蚣(百足虫)"
+                  },
+                  {
+                        "word": "biped",
+                        "hl": "pe",
+                        "cn": "两足动物"
+                  }
+            ]
+      },
+      {
+            "word": "politicians",
+            "meaning": "政治家 / 政客",
+            "IPA": "/ˌpɒl.ɪˈtɪʃ.ənz/",
+            "type": "noun",
+            "blocks": [
+                  "pol",
+                  "i",
+                  "ti",
+                  "cians"
+            ],
+            "mindSpark": "音节划分：pol·i·ti·cians\n词理分析：polit（城市、政治，来自希腊语 polis）+ -ician（某领域的专家）。参与城市管理、国家治理的政治人物。",
+            "rule": "词根 polit (城市/国家治理) + -ician",
+            "ruleDesc": "源自古希腊语 polis (城邦/公民)，参与城邦治理的人就是政治家。",
+            "transfers": [
+                  {
+                        "word": "politics",
+                        "hl": "pol",
+                        "cn": "政治学"
+                  },
+                  {
+                        "word": "policy",
+                        "hl": "pol",
+                        "cn": "政策/方针"
+                  },
+                  {
+                        "word": "musician",
+                        "hl": "i",
+                        "cn": "音乐家"
+                  },
+                  {
+                        "word": "magician",
+                        "hl": "i",
+                        "cn": "魔术师"
+                  }
+            ]
+      },
+      {
+            "word": "refugees",
+            "meaning": "难民 / 避难者",
+            "IPA": "/ˌref.jʊˈdʒiːz/",
+            "type": "noun",
+            "blocks": [
+                  "ref",
+                  "u",
+                  "gees"
+            ],
+            "mindSpark": "音节划分：ref·u·gees\n词理分析：re-（回、避）+ fug（逃跑，来自拉丁语 fugere）+ -ee（承受者）+ -s（复数）。为了寻求安全而逃离家园避难的人，即难民。",
+            "rule": "前缀 re- (回/后退) + 词根 fug (逃跑)",
+            "ruleDesc": "re- (后退) + fug (逃难躲避) + -ees (承受者) = 逃离战乱寻求庇护的人。",
+            "transfers": [
+                  {
+                        "word": "refuge",
+                        "hl": "ref",
+                        "cn": "避难所/庇护"
+                  },
+                  {
+                        "word": "fugitive",
+                        "hl": "u",
+                        "cn": "逃犯/逃亡者"
+                  },
+                  {
+                        "word": "centrifugal",
+                        "hl": "u",
+                        "cn": "离心的/逃离中心的"
+                  }
+            ]
+      },
+      {
+            "word": "residents",
+            "meaning": "常住居民",
+            "IPA": "/ˈrez.ɪ.dənts/",
+            "type": null,
+            "blocks": [
+                  "res",
+                  "i",
+                  "dents"
+            ],
+            "mindSpark": "音节划分：res·i·dents\n词理分析：前缀 re-（往后、留下）+ sid（坐，来自拉丁语 sedere）+ -ent（人）+ -s（复数）。在某处“坐下”并安顿下来长期居住的人，即居民。",
+            "rule": "前缀 re- (回/静止) + 词根 sid (坐下/定居)",
+            "ruleDesc": "re- (静止安顿) + sid (坐稳留守) + -ents = 在固定地方安居乐业的人。",
+            "transfers": [
+                  {
+                        "word": "reside",
+                        "hl": "res",
+                        "cn": "居住/定居"
+                  },
+                  {
+                        "word": "president",
+                        "hl": "res",
+                        "cn": "总统/主席(坐在前面)"
+                  },
+                  {
+                        "word": "residence",
+                        "hl": "res",
+                        "cn": "住宅/宅邸"
+                  }
+            ]
+      },
+      {
+            "word": "the crew",
+            "meaning": "全体机组人员 / 船员乘务组",
+            "IPA": "/ðə ˈkruː/",
+            "type": "noun",
+            "blocks": [
+                  "th",
+                  "e",
+                  "cr",
+                  "ew"
+            ],
+            "mindSpark": "音节划分：the crew (单音节)\n词理分析：crew 来自古法语 creue（增长、增援）。原指“增援部队”，后引申为在船只、飞机或火车上协同工作的一整组工作人员。",
+            "rule": "ew 字母组合发 /uː/",
+            "ruleDesc": "crew 指飞机、轮船或电影剧组通力合作的整个专业工作团队。",
+            "transfers": [
+                  {
+                        "word": "flew",
+                        "hl": "ew",
+                        "cn": "飞(fly过去式)"
+                  },
+                  {
+                        "word": "drew",
+                        "hl": "ew",
+                        "cn": "画(draw过去式)"
+                  },
+                  {
+                        "word": "screw",
+                        "hl": "ew",
+                        "cn": "螺丝钉/旋紧"
+                  },
+                  {
+                        "word": "chew",
+                        "hl": "ew",
+                        "cn": "咀嚼"
+                  }
+            ]
+      },
+      {
+            "word": "the staff",
+            "meaning": "全体职员 / 员工团队",
+            "IPA": "/ðə ˈstɑːf/",
+            "type": "noun",
+            "blocks": [
+                  "th",
+                  "e",
+                  "st",
+                  "a",
+                  "ff"
+            ],
+            "mindSpark": "音节划分：the staff (单音节)\n词理分析：staff 原指支撑身体的木杖、拐杖。引申为支撑整个机构运转的支柱力量，即全体教职员工。",
+            "rule": "双写 ff 固化前元音短音 /ɑː/ 或 /æ/",
+            "ruleDesc": "原意为支撑行走的木杖，引申为支撑整个公司运转的骨干全体员工。",
+            "transfers": [
+                  {
+                        "word": "stiff",
+                        "hl": "st",
+                        "cn": "僵硬的"
+                  },
+                  {
+                        "word": "stuff",
+                        "hl": "st",
+                        "cn": "东西/填满"
+                  },
+                  {
+                        "word": "staffroom",
+                        "hl": "st",
+                        "cn": "教职员休息室"
+                  },
+                  {
+                        "word": "think",
+                        "hl": "th",
+                        "cn": "思考"
+                  }
+            ]
+      },
+      {
+            "word": "bring about",
+            "meaning": "引起导致 / 促成发生",
+            "IPA": "/brɪŋ əˈbaʊt/",
+            "type": "phrasal verb",
+            "blocks": [
+                  "br",
+                  "i",
+                  "ng",
+                  "a",
+                  "b",
+                  "o",
+                  "ut"
+            ],
+            "mindSpark": "音节划分：bring a·bout\n词理分析：bring（带来）+ about（在周围、转动）。使周围的事情发生转变或带来新的结果。",
+            "rule": "动副短语搭配 = cause to happen",
+            "ruleDesc": "bring（带来）+ about（周遭环绕）= 促使某事在周围生根发芽、引发变革。",
+            "transfers": [
+                  {
+                        "word": "bring up",
+                        "hl": "br",
+                        "cn": "抚养/提出议题"
+                  },
+                  {
+                        "word": "bring back",
+                        "hl": "br",
+                        "cn": "带回/恢复"
+                  },
+                  {
+                        "word": "come about",
+                        "hl": "a",
+                        "cn": "发生/产生"
+                  },
+                  {
+                        "word": "lead to",
+                        "hl": "a",
+                        "cn": "导致"
+                  }
+            ]
+      },
+      {
+            "word": "go through",
+            "meaning": "经受磨砺 / 经历（艰难困苦）",
+            "IPA": "/gəʊ ˈθruː/",
+            "type": "phrasal verb",
+            "blocks": [
+                  "go",
+                  "th",
+                  "ro",
+                  "ugh"
+            ],
+            "mindSpark": "音节划分：go through (单音节)\n词理分析：go（走）+ through（穿过）。字面意思是“从头走到尾穿过通道”，引申为完整地经历、度过一段艰难的时期。",
+            "rule": "through 中的 ough 发 /uː/",
+            "ruleDesc": "go（走过）+ through（穿透艰难隧道）= 渡过险关、经历风雨。",
+            "transfers": [
+                  {
+                        "word": "break through",
+                        "hl": "th",
+                        "cn": "突破"
+                  },
+                  {
+                        "word": "pass through",
+                        "hl": "th",
+                        "cn": "穿过/途经"
+                  },
+                  {
+                        "word": "go on",
+                        "hl": "go",
+                        "cn": "继续进行"
+                  },
+                  {
+                        "word": "go ahead",
+                        "hl": "go",
+                        "cn": "开始前进"
+                  }
+            ]
+      },
+      {
+            "word": "pick up",
+            "meaning": "顺便学会（语言/技能）",
+            "IPA": "/pɪk ˈʌp/",
+            "type": "phrasal verb",
+            "blocks": [
+                  "p",
+                  "i",
+                  "ck",
+                  "up"
+            ],
+            "mindSpark": "音节划分：pick up (单音节)\n词理分析：pick（捡起）+ up（向上）。字面意思是“在地上顺手捡起来”，引申为在生活中自然而然地“学会”一门语言或技能。",
+            "rule": "习得义项拓展 (learn informally)",
+            "ruleDesc": "原意从地上拾起捡起，在语言学习中特指在当地耳濡目染地顺手掌握！",
+            "transfers": [
+                  {
+                        "word": "pick out",
+                        "hl": "p",
+                        "cn": "挑选出"
+                  },
+                  {
+                        "word": "turn up",
+                        "hl": "up",
+                        "cn": "露面/调大音量"
+                  },
+                  {
+                        "word": "brush up",
+                        "hl": "up",
+                        "cn": "温习重温"
+                  },
+                  {
+                        "word": "soak up",
+                        "hl": "up",
+                        "cn": "吸收(文化知识)"
+                  }
+            ]
+      },
+      {
+            "word": "put up with",
+            "meaning": "容忍 / 忍受",
+            "IPA": "/pʊt ˈʌp wɪð/",
+            "type": "phrasal verb",
+            "blocks": [
+                  "p",
+                  "ut",
+                  "up",
+                  "w",
+                  "i",
+                  "th"
+            ],
+            "mindSpark": "音节划分：put up with (单音节)\n词理分析：put up（搭建、提供住宿）+ with（与…一起）。字面意思是“虽然嫌弃但还是跟某人同住一屋檐下”，引申为忍受、容忍不舒服的处境。",
+            "rule": "三词经典动词短语",
+            "ruleDesc": "put up（支起承受）+ with（与…一起）= 咬牙容忍讨厌的环境或人。",
+            "transfers": [
+                  {
+                        "word": "keep up with",
+                        "hl": "p",
+                        "cn": "跟上步调"
+                  },
+                  {
+                        "word": "pet",
+                        "hl": "p",
+                        "cn": "宠物"
+                  },
+                  {
+                        "word": "pen",
+                        "hl": "p",
+                        "cn": "钢笔"
+                  },
+                  {
+                        "word": "park",
+                        "hl": "p",
+                        "cn": "公园"
+                  }
+            ]
+      },
+      {
+            "word": "set out for",
+            "meaning": "动身出发前往（某地）",
+            "IPA": "/set ˈaʊt fə/",
+            "type": "phrasal verb",
+            "blocks": [
+                  "s",
+                  "et",
+                  "o",
+                  "ut",
+                  "f",
+                  "or"
+            ],
+            "mindSpark": "音节划分：set out for (单音节)\n词理分析：set（放置、定位）+ out（向外）+ for（前往目的地）。做好行装摆好姿势向外出发，意为“动身前往”。",
+            "rule": "介词 for 表方向目的地",
+            "ruleDesc": "set out (启程迈步) + for (奔着目标方向去) = 扬帆起航前往目的地。",
+            "transfers": [
+                  {
+                        "word": "head for",
+                        "hl": "o",
+                        "cn": "前往/朝向"
+                  },
+                  {
+                        "word": "leave for",
+                        "hl": "o",
+                        "cn": "动身去某地"
+                  },
+                  {
+                        "word": "set off",
+                        "hl": "s",
+                        "cn": "出发/启程"
+                  },
+                  {
+                        "word": "set up",
+                        "hl": "s",
+                        "cn": "建立/创立"
+                  }
+            ]
+      },
+      {
+            "word": "touch down",
+            "meaning": "（飞机）着陆 / 降落落地",
+            "IPA": "/tʌtʃ ˈdaʊn/",
+            "type": "phrasal verb",
+            "blocks": [
+                  "to",
+                  "u",
+                  "ch",
+                  "d",
+                  "o",
+                  "wn"
+            ],
+            "mindSpark": "音节划分：touch down (单音节)\n词理分析：touch（接触）+ down（向下）。飞机降落时车轮“向下接触”跑道的一瞬间，即着陆。",
+            "rule": "动作隐喻：触碰地面",
+            "ruleDesc": "touch（轻轻碰触）+ down（下方地面）= 飞机轮胎安全滑上跑道。",
+            "transfers": [
+                  {
+                        "word": "land",
+                        "hl": "d",
+                        "cn": "着陆/降落"
+                  },
+                  {
+                        "word": "countdown",
+                        "hl": "d",
+                        "cn": "倒计时"
+                  },
+                  {
+                        "word": "breakdown",
+                        "hl": "d",
+                        "cn": "故障抛锚"
+                  },
+                  {
+                        "word": "dog",
+                        "hl": "d",
+                        "cn": "小狗"
+                  }
+            ]
+      },
+      {
+            "word": "turn out",
+            "meaning": "结果是 / 原来竟是",
+            "IPA": "/tɜːn ˈaʊt/",
+            "type": "phrasal verb",
+            "blocks": [
+                  "t",
+                  "u",
+                  "rn",
+                  "o",
+                  "ut"
+            ],
+            "mindSpark": "音节划分：turn out (单音节)\n词理分析：turn（转动、转变）+ out（出来）。事情的发展方向往外反转，得出了一个出乎意料的“结果是”。",
+            "rule": "表意想不到的结果",
+            "ruleDesc": "turn (翻转转向) + out (向外显露) = 事情峰回路转、真相大白。",
+            "transfers": [
+                  {
+                        "word": "turn into",
+                        "hl": "t",
+                        "cn": "转变成"
+                  },
+                  {
+                        "word": "turn over",
+                        "hl": "t",
+                        "cn": "翻转/移交"
+                  },
+                  {
+                        "word": "find out",
+                        "hl": "t",
+                        "cn": "查明真相"
+                  },
+                  {
+                        "word": "work out",
+                        "hl": "t",
+                        "cn": "计算出/解决"
+                  }
+            ]
+      },
+      {
+            "word": "wear out",
+            "meaning": "使疲惫不堪 / 磨损失效",
+            "IPA": "/weər ˈaʊt/",
+            "type": "phrasal verb",
+            "blocks": [
+                  "w",
+                  "e",
+                  "ar",
+                  "o",
+                  "ut"
+            ],
+            "mindSpark": "音节划分：wear out (单音节)\n词理分析：wear（磨损、消耗）+ out（彻底）。衣物被反复穿到磨损彻底，引申为人的精力和体力被彻底消耗，“使筋疲力尽”。",
+            "rule": "wear 耗尽义项引申",
+            "ruleDesc": "wear（磨损消耗）+ out（彻底精光）= 精力消耗殆尽或衣物磨穿毁坏。",
+            "transfers": [
+                  {
+                        "word": "worn out",
+                        "hl": "w",
+                        "cn": "筋疲力竭的/破旧的"
+                  },
+                  {
+                        "word": "run out",
+                        "hl": "o",
+                        "cn": "耗尽用光"
+                  },
+                  {
+                        "word": "tire out",
+                        "hl": "o",
+                        "cn": "使精疲力竭"
+                  },
+                  {
+                        "word": "burn out",
+                        "hl": "o",
+                        "cn": "燃尽/精疲力竭"
+                  }
+            ]
+      },
+      {
+            "word": "borders",
+            "meaning": "国界线 / 边境边界",
+            "IPA": "/ˈbɔː.dəz/",
+            "type": "noun",
+            "blocks": [
+                  "bor",
+                  "ders"
+            ],
+            "mindSpark": "音节划分：bor·ders\n词理分析：board（木板、边缘）+ -er（名词后缀）+ -s（复数）。界限处的边缘线，即国家或地区的边界。",
+            "rule": "元音字母 or 发长元音 /ɔː/",
+            "ruleDesc": "bor-der 划分国家领土的边缘分界线。",
+            "transfers": [
+                  {
+                        "word": "cross-border",
+                        "hl": "bor",
+                        "cn": "跨国境的"
+                  },
+                  {
+                        "word": "shoulders",
+                        "hl": "ders",
+                        "cn": "双肩 / 肩膀"
+                  },
+                  {
+                        "word": "bored",
+                        "hl": "bor",
+                        "cn": "感到无聊的 / 厌烦的"
+                  },
+                  {
+                        "word": "boring",
+                        "hl": "bor",
+                        "cn": "枯燥的 / 乏味无趣的"
+                  }
+            ]
+      },
+      {
+            "word": "remain",
+            "meaning": "依然存在 / 保持停留",
+            "IPA": "/rɪˈmeɪn/",
+            "type": "verb",
+            "blocks": [
+                  "re",
+                  "main"
+            ],
+            "mindSpark": "音节划分：re·main\n词理分析：前缀 re-（往后、留下）+ main（留下，来自拉丁语 manere）。别人都走了，自己仍然“留在后方”继续存在。",
+            "rule": "前缀 re- (留存) + 词根 main (停留)",
+            "ruleDesc": "re- (在后方) + main (来自拉丁语 manere 逗留存续) = 历经风雨依然挺立。",
+            "transfers": [
+                  {
+                        "word": "remains",
+                        "hl": "main",
+                        "cn": "遗迹/废墟"
+                  },
+                  {
+                        "word": "maintain",
+                        "hl": "main",
+                        "cn": "保持/维护"
+                  },
+                  {
+                        "word": "recycle",
+                        "hl": "re",
+                        "cn": "回收"
+                  },
+                  {
+                        "word": "return",
+                        "hl": "re",
+                        "cn": "返回"
+                  }
+            ]
+      },
+      {
+            "word": "immunity",
+            "meaning": "免疫力 / 免除防护",
+            "IPA": "/ɪˈmjuː.nə.ti/",
+            "type": "noun",
+            "blocks": [
+                  "im",
+                  "mu",
+                  "ni",
+                  "ty"
+            ],
+            "mindSpark": "音节划分：im·mu·ni·ty\n词理分析：前缀 im-（不、免除）+ mun（公共责任、税收）+ -ity（名词后缀）。免除公共义务，医学上引申为免受病毒侵害的能力，即免疫力。",
+            "rule": "词根 mun (职责/服务) + 抽象名词后缀 -ity",
+            "ruleDesc": "im- (免除/免去) + mun (公共劳役) + -ity = 不受病痛侵袭的抵御防御力。",
+            "transfers": [
+                  {
+                        "word": "immune",
+                        "hl": "im",
+                        "cn": "有免疫力的"
+                  },
+                  {
+                        "word": "community",
+                        "hl": "mu",
+                        "cn": "社区/共同体"
+                  },
+                  {
+                        "word": "communicate",
+                        "hl": "mu",
+                        "cn": "交流分享"
+                  },
+                  {
+                        "word": "security",
+                        "hl": "ty",
+                        "cn": "安全"
+                  }
+            ]
+      },
+      {
+            "word": "destination",
+            "meaning": "目的地 / 行程终点",
+            "IPA": "/ˌdes.tɪˈneɪ.ʃən/",
+            "type": "noun",
+            "blocks": [
+                  "des",
+                  "ti",
+                  "na",
+                  "tion"
+            ],
+            "mindSpark": "音节划分：des·ti·na·tion\n词理分析：来自 destine（注定、确定）。-ation 为名词后缀。已经预先确定好要到达的终点，即目的地。",
+            "rule": "名词后缀 -ation 标注重音",
+            "ruleDesc": "词根 destin- (注定/目标) + -ation = 旅程最终锁定的预定到达点。",
+            "transfers": [
+                  {
+                        "word": "destiny",
+                        "hl": "des",
+                        "cn": "命运/注定宿命"
+                  },
+                  {
+                        "word": "destined",
+                        "hl": "des",
+                        "cn": "注定的/开往…的"
+                  },
+                  {
+                        "word": "station",
+                        "hl": "tion",
+                        "cn": "车站/驻地"
+                  },
+                  {
+                        "word": "location",
+                        "hl": "tion",
+                        "cn": "地点/位置"
+                  }
+            ]
+      },
+      {
+            "word": "annual",
+            "meaning": "每年的 / 年度的",
+            "IPA": "/ˈæn.ju.əl/",
+            "type": "adjective",
+            "blocks": [
+                  "an",
+                  "nu",
+                  "al"
+            ],
+            "mindSpark": "音节划分：an·nu·al\n词理分析：词根 ann（年，来自拉丁语 annus）+ -ual（形容词后缀）。每年发生一次的，一年度的。",
+            "rule": "拉丁词根 ann (年) + -al 形容词后缀",
+            "ruleDesc": "ann/enn 表示一年；双写 n 锁住前元音短促发音。",
+            "transfers": [
+                  {
+                        "word": "anniversary",
+                        "hl": "an",
+                        "cn": "周年纪念日"
+                  },
+                  {
+                        "word": "centennial",
+                        "hl": "al",
+                        "cn": "百年纪念"
+                  },
+                  {
+                        "word": "perennial",
+                        "hl": "al",
+                        "cn": "多年生的/长久的"
+                  },
+                  {
+                        "word": "annals",
+                        "hl": "an",
+                        "cn": "编年史"
+                  }
+            ]
+      },
+      {
+            "word": "clans",
+            "meaning": "氏族 / 宗族大部落",
+            "IPA": "/klænz/",
+            "type": "noun",
+            "blocks": [
+                  "cl",
+                  "ans"
+            ],
+            "mindSpark": "音节划分：clans (单音节)\n词理分析：源自苏格兰盖尔语 clann（后代、子孙）。指有共同祖先、血脉相连的庞大氏族家族。",
+            "rule": "源自凯尔特语 clann (后裔/家族)",
+            "ruleDesc": "特指苏格兰高地或古游牧部落中，源自同一祖先的血缘大家族联盟。",
+            "transfers": [
+                  {
+                        "word": "clan",
+                        "hl": "cl",
+                        "cn": "氏族单数"
+                  },
+                  {
+                        "word": "clock",
+                        "hl": "cl",
+                        "cn": "时钟"
+                  },
+                  {
+                        "word": "clean",
+                        "hl": "cl",
+                        "cn": "干净的"
+                  },
+                  {
+                        "word": "climb",
+                        "hl": "cl",
+                        "cn": "攀爬"
+                  }
+            ]
+      },
+      {
+            "word": "extinct",
+            "meaning": "灭绝的 / 绝种的",
+            "IPA": "/ɪkˈstɪŋkt/",
+            "type": "adjective",
+            "blocks": [
+                  "ex",
+                  "tinct"
+            ],
+            "mindSpark": "音节划分：ex·tinct\n词理分析：前缀 ex-（出、熄灭）+ stinct（刺、扑灭，与 extinguish 同源）。火被彻底扑灭不再燃烧，引申为物种彻底熄灭、灭绝。",
+            "rule": "前缀 ex- (出/灭) + 词根 tinct (扑灭/刺灭)",
+            "ruleDesc": "ex- (完全消失) + tinct (扑灭火焰) = 火种彻底熄灭，物种完全消亡。",
+            "transfers": [
+                  {
+                        "word": "extinction",
+                        "hl": "tinct",
+                        "cn": "物种灭绝"
+                  },
+                  {
+                        "word": "extinguish",
+                        "hl": "ex",
+                        "cn": "扑灭(火灾)"
+                  },
+                  {
+                        "word": "distinct",
+                        "hl": "tinct",
+                        "cn": "截然不同的"
+                  },
+                  {
+                        "word": "instinct",
+                        "hl": "tinct",
+                        "cn": "本能/直觉"
+                  }
+            ]
+      },
+      {
+            "word": "diet",
+            "meaning": "日常饮食 / 食物构成",
+            "IPA": "/ˈdaɪ.ət/",
+            "type": "noun",
+            "blocks": [
+                  "di",
+                  "et"
+            ],
+            "mindSpark": "音节划分：di·et\n词理分析：来自古希腊语 diaita“生活方式、饮食规程”。特指日常规律的食物搭配。",
+            "rule": "源自希腊语 diaita (生活方式/养生规范)",
+            "ruleDesc": "不仅指吃喝的食物类别，也包含健康平衡的日常食谱计划。",
+            "transfers": [
+                  {
+                        "word": "dietitian",
+                        "hl": "di",
+                        "cn": "营养饮食专家"
+                  },
+                  {
+                        "word": "dietary",
+                        "hl": "di",
+                        "cn": "饮食上的"
+                  },
+                  {
+                        "word": "healthy diet",
+                        "hl": "di",
+                        "cn": "健康均衡饮食"
+                  },
+                  {
+                        "word": "vegetarian",
+                        "hl": "et",
+                        "cn": "素食主义者"
+                  }
+            ]
+      }
+];
+
+    /* ================= 纯原生 Web Audio 触感音效引擎 (全功能版) ================= */
+    const audio = {
+      synth: window.speechSynthesis,
+      ctx: null,
+      getCtx() {
+        try {
+          if (!this.ctx) {
+            const Cls = window.AudioContext || window.webkitAudioContext;
+            if (Cls) this.ctx = new Cls();
+          }
+          if (this.ctx && this.ctx.state === "suspended") {
+            this.ctx.resume();
+          }
+          return this.ctx;
+        } catch (e) {
+          return null;
+        }
+      },
+      speak(text) {
+        try {
+          if (this.synth) {
+            this.synth.cancel();
+            const u = new SpeechSynthesisUtterance(text);
+            u.lang = "en-US";
+            u.rate = 0.9;
+            this.synth.speak(u);
+          }
+        } catch (e) {}
+      },
+      tap() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          const osc = c.createOscillator();
+          const gain = c.createGain();
+          osc.frequency.setValueAtTime(450, now);
+          osc.frequency.exponentialRampToValueAtTime(750, now + 0.04);
+          gain.gain.setValueAtTime(0.1, now);
+          gain.gain.exponentialRampToValueAtTime(0.001, now + 0.05);
+          osc.connect(gain);
+          gain.connect(c.destination);
+          osc.start(now);
+          osc.stop(now + 0.05);
+        } catch (e) {}
+      },
+      correct() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          [523.25, 659.25].forEach((f, i) => {
+            const osc = c.createOscillator();
+            const gain = c.createGain();
+            osc.frequency.setValueAtTime(f, now + i * 0.06);
+            gain.gain.setValueAtTime(0.1, now + i * 0.06);
+            gain.gain.exponentialRampToValueAtTime(0.001, now + i * 0.06 + 0.15);
+            osc.connect(gain);
+            gain.connect(c.destination);
+            osc.start(now + i * 0.06);
+            osc.stop(now + i * 0.06 + 0.16);
+          });
+        } catch (e) {}
+      },
+      bingo() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          [523.25, 659.25, 783.99, 1046.5].forEach((f, i) => {
+            const osc = c.createOscillator();
+            const gain = c.createGain();
+            osc.type = "triangle";
+            osc.frequency.setValueAtTime(f, now + i * 0.05);
+            gain.gain.setValueAtTime(0.12, now + i * 0.05);
+            gain.gain.exponentialRampToValueAtTime(0.001, now + i * 0.05 + 0.25);
+            osc.connect(gain);
+            gain.connect(c.destination);
+            osc.start(now + i * 0.05);
+            osc.stop(now + i * 0.05 + 0.28);
+          });
+        } catch (e) {}
+      },
+      wrong() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          const osc = c.createOscillator();
+          const gain = c.createGain();
+          osc.type = "sawtooth";
+          osc.frequency.setValueAtTime(140, now);
+          osc.frequency.linearRampToValueAtTime(80, now + 0.16);
+          gain.gain.setValueAtTime(0.15, now);
+          gain.gain.linearRampToValueAtTime(0.001, now + 0.16);
+          osc.connect(gain);
+          gain.connect(c.destination);
+          osc.start(now);
+          osc.stop(now + 0.18);
+        } catch (e) {}
+      },
+      chestOpen() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          [300, 450, 600, 900].forEach((f, i) => {
+            const osc = c.createOscillator();
+            const gain = c.createGain();
+            osc.frequency.setValueAtTime(f, now + i * 0.04);
+            gain.gain.setValueAtTime(0.09, now + i * 0.04);
+            gain.gain.exponentialRampToValueAtTime(0.001, now + i * 0.04 + 0.15);
+            osc.connect(gain);
+            gain.connect(c.destination);
+            osc.start(now + i * 0.04);
+            osc.stop(now + i * 0.04 + 0.16);
+          });
+        } catch (e) {}
+      },
+      steal() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          const osc = c.createOscillator();
+          const gain = c.createGain();
+          osc.type = "sine";
+          osc.frequency.setValueAtTime(800, now);
+          osc.frequency.linearRampToValueAtTime(300, now + 0.2);
+          gain.gain.setValueAtTime(0.15, now);
+          gain.gain.exponentialRampToValueAtTime(0.001, now + 0.22);
+          osc.connect(gain);
+          gain.connect(c.destination);
+          osc.start(now);
+          osc.stop(now + 0.22);
+        } catch (e) {}
+      },
+      bomb() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          const osc = c.createOscillator();
+          const gain = c.createGain();
+          osc.type = "sawtooth";
+          osc.frequency.setValueAtTime(90, now);
+          osc.frequency.linearRampToValueAtTime(40, now + 0.3);
+          gain.gain.setValueAtTime(0.2, now);
+          gain.gain.exponentialRampToValueAtTime(0.001, now + 0.32);
+          osc.connect(gain);
+          gain.connect(c.destination);
+          osc.start(now);
+          osc.stop(now + 0.32);
+        } catch (e) {}
+      },
+      swap() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          [350, 700, 500, 1000].forEach((f, i) => {
+            const osc = c.createOscillator();
+            const gain = c.createGain();
+            osc.frequency.setValueAtTime(f, now + i * 0.05);
+            gain.gain.setValueAtTime(0.1, now + i * 0.05);
+            gain.gain.exponentialRampToValueAtTime(0.001, now + i * 0.05 + 0.18);
+            osc.connect(gain);
+            gain.connect(c.destination);
+            osc.start(now + i * 0.05);
+            osc.stop(now + i * 0.05 + 0.2);
+          });
+        } catch (e) {}
+      },
+      cash() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          [987.77, 1318.51].forEach((f, i) => {
+            const osc = c.createOscillator();
+            const gain = c.createGain();
+            osc.frequency.setValueAtTime(f, now + i * 0.07);
+            gain.gain.setValueAtTime(0.12, now + i * 0.07);
+            gain.gain.exponentialRampToValueAtTime(0.001, now + i * 0.07 + 0.25);
+            osc.connect(gain);
+            gain.connect(c.destination);
+            osc.start(now + i * 0.07);
+            osc.stop(now + i * 0.07 + 0.28);
+          });
+        } catch (e) {}
+      },
+      sizzle() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          const osc = c.createOscillator();
+          const gain = c.createGain();
+          osc.type = "square";
+          osc.frequency.setValueAtTime(180, now);
+          osc.frequency.exponentialRampToValueAtTime(260, now + 0.15);
+          gain.gain.setValueAtTime(0.08, now);
+          gain.gain.exponentialRampToValueAtTime(0.001, now + 0.16);
+          osc.connect(gain);
+          gain.connect(c.destination);
+          osc.start(now);
+          osc.stop(now + 0.16);
+        } catch (e) {}
+      },
+      heal() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          [587.33, 880, 1174.66, 1760].forEach((f, i) => {
+            const osc = c.createOscillator();
+            const gain = c.createGain();
+            osc.frequency.setValueAtTime(f, now + i * 0.06);
+            gain.gain.setValueAtTime(0.12, now + i * 0.06);
+            gain.gain.exponentialRampToValueAtTime(0.001, now + i * 0.06 + 0.25);
+            osc.connect(gain);
+            gain.connect(c.destination);
+            osc.start(now + i * 0.06);
+            osc.stop(now + i * 0.06 + 0.28);
+          });
+        } catch (e) {}
+      },
+      laser() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          const osc = c.createOscillator();
+          const gain = c.createGain();
+          osc.frequency.setValueAtTime(900, now);
+          osc.frequency.exponentialRampToValueAtTime(150, now + 0.12);
+          gain.gain.setValueAtTime(0.12, now);
+          gain.gain.exponentialRampToValueAtTime(0.001, now + 0.12);
+          osc.connect(gain);
+          gain.connect(c.destination);
+          osc.start(now);
+          osc.stop(now + 0.13);
+        } catch (e) {}
+      },
+      sparkle() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          [784, 988, 1175, 1568].forEach((f, i) => {
+            const osc = c.createOscillator();
+            const gain = c.createGain();
+            osc.type = "sine";
+            osc.frequency.setValueAtTime(f, now + i * 0.04);
+            gain.gain.setValueAtTime(0.1, now + i * 0.04);
+            gain.gain.exponentialRampToValueAtTime(0.001, now + i * 0.04 + 0.2);
+            osc.connect(gain);
+            gain.connect(c.destination);
+            osc.start(now + i * 0.04);
+            osc.stop(now + i * 0.04 + 0.22);
+          });
+        } catch (e) {}
+      },
+      hack() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          [350, 700, 1050, 1400].forEach((f, i) => {
+            const osc = c.createOscillator();
+            const gain = c.createGain();
+            osc.type = "triangle";
+            osc.frequency.setValueAtTime(f, now + i * 0.03);
+            gain.gain.setValueAtTime(0.1, now + i * 0.03);
+            gain.gain.exponentialRampToValueAtTime(0.001, now + i * 0.03 + 0.12);
+            osc.connect(gain);
+            gain.connect(c.destination);
+            osc.start(now + i * 0.03);
+            osc.stop(now + i * 0.03 + 0.14);
+          });
+        } catch (e) {}
+      },
+      cheer() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          [523, 659, 784, 1046, 1318].forEach((f, i) => {
+            const osc = c.createOscillator();
+            const gain = c.createGain();
+            osc.type = "triangle";
+            osc.frequency.setValueAtTime(f, now + i * 0.05);
+            gain.gain.setValueAtTime(0.12, now + i * 0.05);
+            gain.gain.exponentialRampToValueAtTime(0.001, now + i * 0.05 + 0.25);
+            osc.connect(gain);
+            gain.connect(c.destination);
+            osc.start(now + i * 0.05);
+            osc.stop(now + i * 0.05 + 0.28);
+          });
+        } catch (e) {}
+      },
+      honk() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          const osc1 = c.createOscillator();
+          const osc2 = c.createOscillator();
+          const gain = c.createGain();
+          osc1.frequency.setValueAtTime(420, now);
+          osc2.frequency.setValueAtTime(530, now);
+          gain.gain.setValueAtTime(0.15, now);
+          gain.gain.exponentialRampToValueAtTime(0.001, now + 0.18);
+          osc1.connect(gain);
+          osc2.connect(gain);
+          gain.connect(c.destination);
+          osc1.start(now);
+          osc2.start(now);
+          osc1.stop(now + 0.2);
+          osc2.stop(now + 0.2);
+        } catch (e) {}
+      },
+      ocean() {
+        try {
+          const c = this.getCtx();
+          if (!c) return;
+          const now = c.currentTime;
+          [440, 554, 659, 880, 1108].forEach((f, i) => {
+            const osc = c.createOscillator();
+            const gain = c.createGain();
+            osc.type = "triangle";
+            osc.frequency.setValueAtTime(f, now + i * 0.05);
+            gain.gain.setValueAtTime(0.12, now + i * 0.05);
+            gain.gain.exponentialRampToValueAtTime(0.001, now + i * 0.05 + 0.25);
+            osc.connect(gain);
+            gain.connect(c.destination);
+            osc.start(now + i * 0.05);
+            osc.stop(now + i * 0.05 + 0.28);
+          });
+        } catch (e) {}
+      }
+    };
+
+
+    /* ================= 核心学习模式逻辑 ================= */
+    let currentIndex = 0;
+    let availableBlocks = [];
+    let selectedBlocks = [];
+    let isSuccess = false;
+    let hasCompletedAllWords = false;
+
+    
+    function syncFromAha() {
+      try {
+        const raw = localStorage.getItem('kron_word_current_unit_payload') || localStorage.getItem('kron_saved_words') || localStorage.getItem('kron:word:shared_vocab');
+        if (!raw) return;
+        const data = JSON.parse(raw);
+        const words = Array.isArray(data) ? data : (data.words || []);
+        if (!words || words.length === 0) return;
+
+        const savedMap = new Map();
+        words.forEach(w => {
+          if (w.word) savedMap.set(w.word.toLowerCase().trim(), w);
+        });
+
+        let matched = 0;
+        VOCABULARY.forEach(item => {
+          const wClean = item.word.toLowerCase().trim();
+          const hasDirect = savedMap.has(wClean);
+          const hasContained = Array.from(savedMap.keys()).some(k => k && (wClean.includes(k) || k.includes(wClean)));
+          if (hasDirect || hasContained) {
+            item.isAhaSaved = true;
+            matched++;
+          }
+        });
+
+        words.forEach(w => {
+          const wClean = (w.word || '').toLowerCase().trim();
+          const exists = VOCABULARY.some(v => {
+            const vClean = v.word.toLowerCase().trim();
+            return vClean === wClean || vClean.includes(wClean);
+          });
+          if (!exists && wClean) {
+            let blocks = [w.word];
+            if (wClean === 'instrument') {
+              blocks = ['in', 'stru', 'ment'];
+            } else if (wClean === 'play') {
+              blocks = ['pl', 'ay'];
+            } else if (wClean === 'play an instrument') {
+              blocks = ['pl', 'ay', 'an', 'in', 'stru', 'ment'];
+            } else {
+              const rawParts = w.word.split(/\s+/).filter(Boolean);
+              blocks = rawParts.length > 1 ? rawParts : [w.word];
+            }
+            VOCABULARY.push({
+              word: w.word,
+              meaning: w.translation || 'Aha! 重点词汇',
+              IPA: w.phonetic || `/${wClean}/`,
+              type: w.partOfSpeech || 'saved',
+              blocks,
+              mindSpark: '你在 Kron English Aha! 学习中亲手收藏的重点单词，快来拼出它吧！',
+              rule: 'Aha! 生词本同步词汇',
+              ruleDesc: '来自课堂实战提问与高频语境，属于你的专属记忆！',
+              transfers: [],
+              isAhaSaved: true
+            });
+            matched++;
+          }
+        });
+
+        const banner = document.getElementById('ahaSyncBanner');
+        const countEl = document.getElementById('ahaSyncCount');
+        if (banner && countEl && words.length > 0) {
+          countEl.innerText = words.length;
+          banner.style.display = 'flex';
+        }
+      } catch (e) {
+        console.warn('Aha sync notice:', e);
+      }
+    }
+
+    function initWord() {
+      isSuccess = false;
+      const item = VOCABULARY[currentIndex];
+
+      document.getElementById("wordMeaning").innerText = item.meaning;
+      document.getElementById("wordIPA").innerText = item.IPA;
+      
+      const tagEl = document.getElementById("wordTypeTag");
+      if (tagEl) {
+        tagEl.innerText = item.type ? item.type.toUpperCase() : "WORD";
+        tagEl.className = "word-type-tag " + (item.type ? `tag-${item.type}` : "tag-word");
+      }
+
+      document.getElementById("successPanel").style.display = "none";
+      document.getElementById("nextBtn").style.display = "none";
+      document.getElementById("footerPlaceholder").style.display = "block";
+
+      const pct = ((currentIndex + 1) / VOCABULARY.length) * 100;
+      document.getElementById("progressBar").style.width = `${pct}%`;
+
+      availableBlocks = item.blocks.map((text, idx) => ({
+        id: `${text}-${idx}-${Math.random()}`,
+        text
+      })).sort(() => Math.random() - 0.5);
+      selectedBlocks = [];
+
+      renderBlocks();
+    }
+
+    function renderBlocks() {
+      const slots = document.getElementById("slotsContainer");
+      const tray = document.getElementById("trayContainer");
+      slots.innerHTML = "";
+      tray.innerHTML = "";
+
+      if (selectedBlocks.length === 0) {
+        slots.innerHTML = '<span class="empty-tip">点击下方发音积木</span>';
+      } else {
+        selectedBlocks.forEach(b => {
+          const btn = document.createElement("button");
+          btn.className = `duo-tile ${isSuccess ? "duo-tile-success" : ""}`;
+          btn.innerText = b.text;
+          btn.onclick = () => {
+            if (isSuccess) return;
+            audio.tap();
+            selectedBlocks = selectedBlocks.filter(x => x.id !== b.id);
+            availableBlocks.push(b);
+            renderBlocks();
+          };
+          slots.appendChild(btn);
+        });
+      }
+
+      availableBlocks.forEach(b => {
+        const btn = document.createElement("button");
+        btn.className = "duo-tile";
+        btn.innerText = b.text;
+        btn.onclick = () => handlePickBlock(b);
+        tray.appendChild(btn);
+      });
+    }
+
+    function handlePickBlock(b) {
+      if (isSuccess) return;
+      audio.tap();
+      audio.speak(b.text);
+
+      selectedBlocks.push(b);
+      availableBlocks = availableBlocks.filter(x => x.id !== b.id);
+      renderBlocks();
+
+      if (availableBlocks.length === 0) {
+        const userStr = selectedBlocks.map(x => x.text).join("");
+        const realStr = VOCABULARY[currentIndex].blocks.join("");
+
+        if (userStr === realStr) {
+          isSuccess = true;
+          audio.bingo();
+          renderBlocks();
+          showWordKnowledge();
+        } else {
+          audio.wrong();
+          const slots = document.getElementById("slotsContainer");
+          slots.classList.add("animate-shake");
+          setTimeout(() => {
+            slots.classList.remove("animate-shake");
+            availableBlocks = VOCABULARY[currentIndex].blocks.map((text, idx) => ({ id: `${text}-${idx}-${Math.random()}`, text })).sort(() => Math.random() - 0.5);
+            selectedBlocks = [];
+            renderBlocks();
+          }, 450);
+        }
+      }
+    }
+
+    function showWordKnowledge() {
+      const item = VOCABULARY[currentIndex];
+      
+      document.getElementById("kronMindSpark").innerText = item.mindSpark;
+      document.getElementById("ruleBadge").innerText = `规律：${item.rule}`;
+      document.getElementById("ruleDesc").innerText = item.ruleDesc;
+
+      const grid = document.getElementById("transferGrid");
+      grid.innerHTML = "";
+      item.transfers.forEach(t => {
+        const tile = document.createElement("div");
+        tile.className = "transfer-tile";
+        tile.innerHTML = `
+          <div>
+            <div class="transfer-word">${renderHighlight(t.word, t.hl)}</div>
+            <div class="transfer-cn">${t.cn}</div>
+          </div>
+          <span style="font-size: 13px; color: #CECECE;">🔊</span>
+        `;
+        tile.onclick = () => {
+          audio.tap();
+          audio.speak(t.word);
+        };
+        grid.appendChild(tile);
+      });
+
+      document.getElementById("successPanel").style.display = "block";
+      document.getElementById("nextBtn").style.display = "block";
+      
+      const isLast = currentIndex === VOCABULARY.length - 1;
+      document.getElementById("nextBtn").innerText = isLast ? "🎓 本单元全部达成！解锁环球公路漫游 ➔" : "继续下一个单词 ➔";
+      document.getElementById("footerPlaceholder").style.display = "none";
+
+      if (isLast) {
+        hasCompletedAllWords = true;
+        const lockBtn = document.getElementById("lockStatusBtn");
+        lockBtn.innerText = "🎁 环球公路漫游 (已解锁)";
+        lockBtn.style.borderColor = "#0984E3";
+        lockBtn.style.color = "#0984E3";
+        triggerConfetti();
+        audio.bingo();
+      }
+    }
+
+    function renderHighlight(word, hl) {
+      if (!hl || !word.toLowerCase().includes(hl.toLowerCase())) return word;
+      const reg = new RegExp(`(${hl})`, "i");
+      return word.replace(reg, `<span class="hl-green">$1</span>`);
+    }
+
+    function playCurrentWordAudio() {
+      audio.speak(VOCABULARY[currentIndex].word);
+    }
+
+    function goNextWord() {
+      if (currentIndex < VOCABULARY.length - 1) {
+        currentIndex++;
+        syncFromAha();
+    initWord();
+      } else {
+        switchToGame();
+      }
+    }
+
+    function trySwitchToGame() {
+      if (!hasCompletedAllWords) {
+        alert("🔒 Kron 老师提醒：必须把本单元全部 " + VOCABULARY.length + " 个人口流动、环球旅行与游牧文化核心词汇拼完才能解锁环球公路漫游！");
+        return;
+      }
+      switchToGame();
+    }
+
+    window.addEventListener("keydown", (e) => {
+      const isLearnVisible = document.getElementById("learnView").style.display !== "none";
+      if (isSuccess && isLearnVisible && (e.key === "Enter" || e.key === " ")) {
+        e.preventDefault();
+        goNextWord();
+      }
+    });
+
+/* ================= 模块二：Wordwall 赛博炼金工坊游戏逻辑 ================= */
+    let timerSec = 180;
+    let timerInterval = null;
+    let botInterval = null;
+    let autoCookInterval = null;
+    let patienceInterval = null;
+
+    let playerGold = 0;
+    let servedCount = 0;
+    let combo = 1;
+    let currentCustomer = null;
+    let currentPatience = 100;
+
+    let upgrades = {
+      knifeLevel: 0,
+      autoCookLevel: 0,
+      bellLevel: 0
+    };
+
+    let cafePlayers = [
+      {
+            "id": "me",
+            "name": "你 (环球领航员)",
+            "gold": 0,
+            "isBot": false
+      },
+      {
+            "id": "cat",
+            "name": "🐱 柴犬探案馆",
+            "gold": 270,
+            "isBot": true
+      },
+      {
+            "id": "duo",
+            "name": "🦉 多邻国密室解谜",
+            "gold": 410,
+            "isBot": true
+      },
+      {
+            "id": "kron",
+            "name": "⚡️ Kron 贝克街传奇",
+            "gold": 570,
+            "isBot": true
+      }
+];
+
+    const RECIPE_ITEMS = [
+      {
+            "name": "66号公路加油驿站",
+            "emoji": "⛽",
+            "tipBonus": 1.2
+      },
+      {
+            "name": "横跨大陆探险房车",
+            "emoji": "🚐",
+            "tipBonus": 1.3
+      },
+      {
+            "name": "极光跨海特快列车",
+            "emoji": "🚆",
+            "tipBonus": 1.4
+      },
+      {
+            "name": "荒漠游牧部族绿洲",
+            "emoji": "🏕️",
+            "tipBonus": 1.1
+      },
+      {
+            "name": "边境护照海关哨卡",
+            "emoji": "🛂",
+            "tipBonus": 1.0
+      }
+];
+
+    function switchToGame() {
+      document.getElementById("learnView").style.display = "none";
+      document.getElementById("gameView").style.display = "flex";
+      document.body.classList.add("game-mode");
+      startBattle();
+    }
+
+    function switchToLearn() {
+      clearInterval(timerInterval);
+      clearInterval(botInterval);
+      clearInterval(autoCookInterval);
+      clearInterval(patienceInterval);
+      document.getElementById("gameView").style.display = "none";
+      document.getElementById("learnView").style.display = "flex";
+      document.body.classList.remove("game-mode");
+    }
+
+    function startBattle() {
+      audio.bingo();
+      playerGold = 0;
+      servedCount = 0;
+      combo = 1;
+      timerSec = 180;
+
+      cafePlayers.forEach(p => {
+        if (p.isBot) p.gold = Math.floor(Math.random() * 260 + 220);
+        else p.gold = 0;
+      });
+
+      updateStatsUI();
+      updateLeaderboard();
+
+      document.getElementById("gameStartScreen").style.display = "none";
+      document.getElementById("gameOverScreen").style.display = "none";
+      document.getElementById("gameDishDoneScreen").style.display = "none";
+
+      clearInterval(timerInterval);
+      clearInterval(botInterval);
+      clearInterval(autoCookInterval);
+
+      timerInterval = setInterval(() => {
+        timerSec--;
+        const m = String(Math.floor(timerSec / 60)).padStart(2, '0');
+        const s = String(timerSec % 60).padStart(2, '0');
+        document.getElementById("timeText").innerText = `${m}:${s}`;
+
+        if (timerSec <= 0) {
+          endGame();
+        }
+      }, 1000);
+
+      botInterval = setInterval(() => {
+        cafePlayers.forEach(p => {
+          if (p.isBot) {
+            const add = Math.floor(Math.random() * 80 + 30);
+            p.gold += add;
+          }
+        });
+        updateLeaderboard();
+      }, 2500);
+
+      nextCustomer();
+    }
+
+    function updateStatsUI() {
+      document.getElementById("playerGoldText").innerText = `🔮 ${playerGold}`;
+      document.getElementById("servedCountText").innerText = `✨ ${servedCount}`;
+      document.getElementById("comboText").innerText = `⚡ x${combo}`;
+      const me = cafePlayers.find(p => p.id === 'me');
+      if (me) me.gold = playerGold;
+      updateLeaderboard();
+    }
+
+    function nextCustomer() {
+      clearInterval(patienceInterval);
+      document.getElementById("gameDishDoneScreen").style.display = "none";
+      document.getElementById("gameOrderScreen").style.display = "block";
+
+      const pool = RECIPE_ITEMS;
+      const quest = pool[Math.floor(Math.random() * pool.length)];
+      const item = VOCABULARY[Math.floor(Math.random() * VOCABULARY.length)];
+
+      const orderSpeech = `“线索指引：当前挑战目标是「${item.meaning}」！”`;
+      const qPrompt = `极速反应：选择正确的对应英文单词：`;
+      const correctAns = item.word;
+
+      const otherWords = VOCABULARY.filter(w => w.word !== item.word).map(w => w.word).sort(() => Math.random() - 0.5);
+      const distractors = otherWords.slice(0, 3);
+
+      currentCustomer = {
+        name: quest.name,
+        emoji: quest.emoji,
+        tipBonus: quest.tipBonus,
+        targetWord: item,
+        ans: correctAns
+      };
+
+      const custEmojiEl = document.getElementById("custEmoji");
+      if (custEmojiEl) custEmojiEl.innerText = currentCustomer.emoji;
+      const custNameEl = document.getElementById("custName");
+      if (custNameEl) custNameEl.innerText = currentCustomer.name;
+      const custSpeechEl = document.getElementById("custOrderSpeech");
+      if (custSpeechEl) custSpeechEl.innerText = orderSpeech;
+      const qPromptEl = document.getElementById("gameQuestionPrompt");
+      if (qPromptEl) qPromptEl.innerText = qPrompt;
+
+      const opts = [correctAns, ...distractors].sort(() => Math.random() - 0.5);
+      const optGrid = document.getElementById("gameOptionGrid");
+      optGrid.innerHTML = "";
+
+      opts.forEach(opt => {
+        const btn = document.createElement("button");
+        btn.className = "duo-btn duo-btn-dark game-opt-btn";
+        btn.innerText = opt;
+        btn.onclick = () => handleOrderAnswer(opt);
+        optGrid.appendChild(btn);
+      });
+
+      currentPatience = 100;
+      const patienceSpeed = upgrades.bellLevel > 0 ? 0.9 : 1.5;
+      patienceInterval = setInterval(() => {
+        currentPatience -= patienceSpeed;
+        const pFill = document.getElementById("patienceBar");
+        if (pFill) {
+          pFill.style.width = `${Math.max(0, currentPatience)}%`;
+          if (currentPatience > 50) pFill.style.backgroundColor = "#58CC02";
+          else if (currentPatience > 25) pFill.style.backgroundColor = "#FF9600";
+          else pFill.style.backgroundColor = "#FF4B4B";
+        }
+
+        if (currentPatience <= 0) {
+          clearInterval(patienceInterval);
+          handleCustomerLeave();
+        }
+      }, 100);
+    }
+
+    function handleOrderAnswer(chosen) {
+      if (chosen === currentCustomer.ans) {
+        clearInterval(patienceInterval);
+        audio.sparkle();
+        servedCount++;
+        combo++;
+
+        let baseTip = Math.floor(190 * currentCustomer.tipBonus);
+        if (upgrades.knifeLevel > 0) baseTip = Math.floor(baseTip * 1.5);
+        const comboBonus = Math.floor(combo * 22);
+        const totalTip = baseTip + comboBonus;
+        playerGold += totalTip;
+
+        updateStatsUI();
+
+        document.getElementById("gameOrderScreen").style.display = "none";
+        document.getElementById("gameDishDoneScreen").style.display = "block";
+        document.getElementById("dishDoneIcon").innerText = `✨💎${currentCustomer.emoji}✨`;
+        document.getElementById("dishDoneTitle").innerText = `炼金大成！+${totalTip} 🔮`;
+        document.getElementById("dishDoneDesc").innerText = `${currentCustomer.name} 绽放出绝美流光！收获海量贤者能量（连击加成 +${comboBonus}）！`;
+
+        setTicker(`💎 奇迹！成功提纯 ${currentCustomer.name}，能量暴涨 +${totalTip} 点！`);
+      } else {
+        audio.wrong();
+        combo = 1;
+        updateStatsUI();
+        setTicker(`❌ 元素失衡！炼金熔炉冒出黑烟，连击重置！`);
+      }
+    }
+
+    function handleCustomerLeave() {
+      audio.wrong();
+      combo = 1;
+      updateStatsUI();
+      setTicker(`💨 熔炉冷却！${currentCustomer.name} 分子离散化，合成失败！`);
+      nextCustomer();
+    }
+
+    function setTicker(msg) {
+      document.getElementById("tickerMsg").innerText = msg;
+    }
+
+    function updateLeaderboard() {
+      const sorted = [...cafePlayers].sort((a, b) => b.gold - a.gold);
+      const grid = document.getElementById("leaderboardGrid");
+      grid.innerHTML = "";
+      sorted.forEach((p, idx) => {
+        const medal = idx === 0 ? "🥇 " : idx === 1 ? "🥈 " : idx === 2 ? "🥉 " : "#4 ";
+        const card = document.createElement("div");
+        card.className = `lb-card ${p.id === 'me' ? 'is-me' : ''}`;
+        card.innerHTML = `
+          <div class="lb-name">${medal}${p.name}</div>
+          <div class="lb-gold">${p.gold} 🔮</div>
+        `;
+        grid.appendChild(card);
+      });
+    }
+
+    function openMarket() {
+      document.getElementById("marketDrawer").style.display = "flex";
+    }
+    function closeMarket() {
+      document.getElementById("marketDrawer").style.display = "none";
+    }
+
+    function buyUpgrade(type, cost) {
+      if (playerGold < cost) {
+        alert("🔮 贤者之石不足，快去多提纯几份材质吧！");
+        return;
+      }
+      playerGold -= cost;
+      audio.sparkle();
+
+      if (type === 'knife') {
+        upgrades.knifeLevel++;
+        alert("⚡ 离子催化剂升级完成！单次合成收益提升 50%！");
+      } else if (type === 'autoCook') {
+        upgrades.autoCookLevel++;
+        if (!autoCookInterval) {
+          autoCookInterval = setInterval(() => {
+            playerGold += 60 * upgrades.autoCookLevel;
+            updateStatsUI();
+          }, 3000);
+        }
+        alert("🤖 自动分子提纯臂启动！每 3 秒自动产出贤者能量！");
+      } else if (type === 'bell') {
+        upgrades.bellLevel++;
+        alert("⏳ 时间膨胀沙漏开启！熔炉降温速度大幅减缓！");
+      }
+
+      updateStatsUI();
+      document.getElementById("playerBuffs").innerText = 
+        `🔮 催化矩阵: ${upgrades.autoCookLevel}级 | 🧪 提纯釜: +${upgrades.knifeLevel * 50}%`;
+      closeMarket();
+    }
+
+    function endGame() {
+      clearInterval(timerInterval);
+      clearInterval(botInterval);
+      clearInterval(autoCookInterval);
+      clearInterval(patienceInterval);
+
+      document.getElementById("gameOrderScreen").style.display = "none";
+      document.getElementById("gameDishDoneScreen").style.display = "none";
+      document.getElementById("gameOverScreen").style.display = "block";
+
+      const sorted = [...cafePlayers].sort((a, b) => b.gold - a.gold);
+      const myRank = sorted.findIndex(p => p.id === 'me') + 1;
+
+      if (myRank === 1) {
+        document.getElementById("finalTrophy").innerText = "👑";
+        document.getElementById("finalRankTitle").innerText = "赛博传奇大炼金术士！";
+        document.getElementById("finalRankDesc").innerText = `贤者之石高达 ${playerGold} 🔮！万物皆可由你炼化！`;
+        triggerConfetti();
+      } else {
+        document.getElementById("finalTrophy").innerText = "🥈";
+        document.getElementById("finalRankTitle").innerText = `荣获全城第 ${myRank} 名！`;
+        document.getElementById("finalRankDesc").innerText = `能量储备 ${playerGold} 🔮，距离至尊贤者仅一步之遥！`;
+      }
+
+      const podium = document.getElementById("finalPodium");
+      podium.innerHTML = "";
+      sorted.forEach((p, idx) => {
+        const row = document.createElement("div");
+        row.style.cssText = "display: flex; justify-content: space-between; padding: 6px 0; font-size: 13px; font-weight: 800;";
+        row.innerHTML = `
+          <span style="color: ${p.id === 'me' ? '#AF52DE' : '#FFF'};">${idx + 1}. ${p.name}</span>
+          <span style="color: #FFC800;">${p.gold} 🔮</span>
+        `;
+        podium.appendChild(row);
+      });
+    }
+
+function triggerConfetti() {
+      const canvas = document.getElementById("confettiCanvas");
+      const ctx = canvas.getContext("2d");
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+
+      const particles = [];
+      const colors = ["#0984E3", "#58CC02", "#FFC800", "#FF4757", "#AF52DE"];
+
+      for (let i = 0; i < 90; i++) {
+        particles.push({
+          x: canvas.width / 2,
+          y: canvas.height / 2,
+          vx: (Math.random() - 0.5) * 16,
+          vy: (Math.random() - 0.7) * 18,
+          size: Math.random() * 9 + 4,
+          color: colors[Math.floor(Math.random() * colors.length)],
+          rotation: Math.random() * 360,
+          vRot: (Math.random() - 0.5) * 12,
+          opacity: 1
+        });
+      }
+
+      let frames = 0;
+      function render() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        particles.forEach(p => {
+          p.x += p.vx;
+          p.y += p.vy;
+          p.vy += 0.35;
+          p.rotation += p.vRot;
+          p.opacity -= 0.01;
+
+          ctx.save();
+          ctx.translate(p.x, p.y);
+          ctx.rotate((p.rotation * Math.PI) / 180);
+          ctx.fillStyle = p.color;
+          ctx.globalAlpha = Math.max(0, p.opacity);
+          ctx.fillRect(-p.size / 2, -p.size / 2, p.size, p.size);
+          ctx.restore();
+        });
+
+        frames++;
+        if (frames < 100) {
+          requestAnimationFrame(render);
+        } else {
+          ctx.clearRect(0, 0, canvas.width, canvas.height);
+        }
+      }
+      render();
+    }
+    function fireConfetti() { triggerConfetti(); }
+
+    syncFromAha();
+    initWord();
+  </script>
+</body>
+</html>

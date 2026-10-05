@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Kron Word 记忆引擎 · 终极词汇探索控制台 (11本教材 · 125单元)</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+  <style>
+    :root {
+      --primary: #58CC02;
+      --primary-dark: #46A302;
+      --blue: #1CB0F6;
+      --blue-dark: #1899D6;
+      --gold: #FFC800;
+      --gold-dark: #E5A800;
+      --purple: #AF70FF;
+      --purple-dark: #8F4DE0;
+      --rose: #FF4B4B;
+      --rose-dark: #EA2B2B;
+      --bg: #F7F7F9;
+      --card-bg: #FFFFFF;
+      --text-main: #1D1D1F;
+      --text-muted: #6E6E73;
+      --border: #E5E5EA;
+      --shadow-sm: 0 2px 8px rgba(0,0,0,0.04);
+      --shadow-md: 0 8px 24px rgba(0,0,0,0.08);
+      --radius-sm: 10px;
+      --radius-md: 16px;
+      --radius-lg: 24px;
+      --font: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: var(--font);
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text-main);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Header Nav */
+    header {
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      padding: 16px 24px;
+    }
+
+    .header-inner {
+      max-width: 1400px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: var(--text-main);
+    }
+
+    .brand-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 14px;
+      background: linear-gradient(135deg, var(--primary), var(--blue));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      box-shadow: 0 4px 12px rgba(88, 204, 2, 0.3);
+    }
+
+    .brand-title {
+      font-size: 20px;
+      font-weight: 900;
+      letter-spacing: -0.5px;
+    }
+
+    .brand-subtitle {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .stats-row {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .stat-pill {
+      background: #F0F0F4;
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 800;
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .stat-pill strong {
+      color: var(--primary-dark);
+      font-size: 14px;
+    }
+
+    /* Main Container */
+    main {
+      max-width: 1400px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 24px;
+      flex: 1;
+    }
+
+    /* Hero / Banner */
+    .hero-banner {
+      background: linear-gradient(135deg, #1C1C1E 0%, #2C2C2E 100%);
+      color: white;
+      border-radius: var(--radius-lg);
+      padding: 32px 36px;
+      margin-bottom: 28px;
+      box-shadow: var(--shadow-md);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-banner::after {
+      content: "LEXIBLOCK";
+      position: absolute;
+      right: -20px;
+      bottom: -25px;
+      font-size: 110px;
+      font-weight: 900;
+      color: rgba(255, 255, 255, 0.04);
+      pointer-events: none;
+      user-select: none;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 12px;
+      border-radius: 999px;
+      background: rgba(88, 204, 2, 0.25);
+      border: 1px solid var(--primary);
+      color: #72F017;
+      font-size: 11px;
+      font-weight: 800;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .hero-title {
+      font-size: 32px;
+      font-weight: 900;
+      letter-spacing: -0.8px;
+      margin-bottom: 10px;
+      line-height: 1.2;
+    }
+
+    .hero-desc {
+      font-size: 14px;
+      color: #A1A1A6;
+      max-width: 780px;
+      line-height: 1.6;
+    }
+
+    /* Filter Controls */
+    .filter-section {
+      background: var(--card-bg);
+      border-radius: var(--radius-md);
+      padding: 18px 20px;
+      margin-bottom: 24px;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .search-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .search-input-wrap {
+      flex: 1;
+      position: relative;
+    }
+
+    .search-input-wrap span {
+      position: absolute;
+      left: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 16px;
+      color: var(--text-muted);
+    }
+
+    .search-input {
+      width: 100%;
+      height: 44px;
+      padding: 0 16px 0 42px;
+      border-radius: 12px;
+      border: 1.5px solid var(--border);
+      background: #F9F9FB;
+      font-size: 14px;
+      font-weight: 600;
+      outline: none;
+      transition: all 0.2s;
+    }
+
+    .search-input:focus {
+      border-color: var(--primary);
+      background: white;
+      box-shadow: 0 0 0 3px rgba(88, 204, 2, 0.15);
+    }
+
+    .chips-group {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .group-label {
+      font-size: 11px;
+      font-weight: 800;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-right: 4px;
+    }
+
+    .filter-chip {
+      padding: 6px 14px;
+      border-radius: 999px;
+      border: 1.5px solid var(--border);
+      background: white;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--text-muted);
+      cursor: pointer;
+      transition: all 0.15s ease;
+      user-select: none;
+    }
+
+    .filter-chip:hover {
+      border-color: #B0B0B8;
+      color: var(--text-main);
+    }
+
+    .filter-chip.active {
+      background: var(--text-main);
+      color: white;
+      border-color: var(--text-main);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+
+    .filter-chip.chip-think.active {
+      background: var(--blue);
+      border-color: var(--blue);
+    }
+
+    .filter-chip.chip-powerup.active {
+      background: var(--primary);
+      border-color: var(--primary);
+    }
+
+    /* Grid of Cards */
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 20px;
+    }
+
+    .unit-card {
+      background: var(--card-bg);
+      border-radius: var(--radius-md);
+      border: 1.5px solid var(--border);
+      padding: 20px;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 16px;
+      transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.2s ease, border-color 0.2s ease;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .unit-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+      border-color: #C0C0C8;
+    }
+
+    .card-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+    }
+
+    .book-tag {
+      font-size: 10px;
+      font-weight: 900;
+      padding: 4px 10px;
+      border-radius: 999px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .tag-think {
+      background: rgba(28, 176, 246, 0.12);
+      color: var(--blue-dark);
+      border: 1px solid rgba(28, 176, 246, 0.3);
+    }
+
+    .tag-powerup {
+      background: rgba(88, 204, 2, 0.12);
+      color: var(--primary-dark);
+      border: 1px solid rgba(88, 204, 2, 0.3);
+    }
+
+    .mode-pill {
+      font-size: 10px;
+      font-weight: 800;
+      padding: 3px 8px;
+      border-radius: 6px;
+      background: #F0F0F4;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .card-main h3 {
+      font-size: 16px;
+      font-weight: 800;
+      color: var(--text-main);
+      margin-bottom: 6px;
+      line-height: 1.35;
+    }
+
+    .sample-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+      margin-top: 10px;
+    }
+
+    .sample-chip {
+      font-size: 11px;
+      font-weight: 600;
+      padding: 2px 7px;
+      border-radius: 6px;
+      background: #F5F5F7;
+      color: var(--text-muted);
+    }
+
+    .card-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 12px;
+      border-top: 1px solid #F0F0F4;
+    }
+
+    .word-count-badge {
+      font-size: 12px;
+      font-weight: 800;
+      color: var(--text-muted);
+    }
+
+    .word-count-badge strong {
+      color: var(--text-main);
+      font-size: 14px;
+    }
+
+    .launch-btn {
+      padding: 8px 18px;
+      border-radius: 12px;
+      background: var(--primary);
+      color: white;
+      border: none;
+      font-size: 12px;
+      font-weight: 800;
+      box-shadow: 0 3px 0 var(--primary-dark);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.1s ease;
+    }
+
+    .launch-btn:hover {
+      filter: brightness(1.05);
+    }
+
+    .launch-btn:active {
+      transform: translateY(3px);
+      box-shadow: none;
+    }
+
+    /* Modal Sheet for embedded play */
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.6);
+      backdrop-filter: blur(8px);
+      z-index: 1000;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .modal-content {
+      background: white;
+      border-radius: var(--radius-lg);
+      width: 100%;
+      max-width: 1100px;
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      box-shadow: 0 24px 60px rgba(0,0,0,0.3);
+      border: 1px solid rgba(255,255,255,0.2);
+    }
+
+    .modal-header {
+      padding: 14px 20px;
+      background: #1C1C1E;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .modal-title-wrap {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .modal-actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .modal-btn {
+      background: rgba(255,255,255,0.15);
+      color: white;
+      border: none;
+      padding: 6px 12px;
+      border-radius: 8px;
+      font-size: 12px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+
+    .modal-btn:hover {
+      background: rgba(255,255,255,0.25);
+    }
+
+    .modal-close-btn {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.15);
+      color: white;
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .modal-close-btn:hover {
+      background: rgba(255,255,255,0.3);
+    }
+
+    .modal-iframe {
+      flex: 1;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    /* Empty state */
+    .empty-state {
+      grid-column: 1 / -1;
+      text-align: center;
+      padding: 80px 20px;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="header-inner">
+      <a href="#" class="brand">
+        <div class="brand-icon">⚡</div>
+        <div>
+          <div class="brand-title">Kron Word 记忆引擎</div>
+          <div class="brand-subtitle">Tactile 3D LexiBlock · 100% Total Phonics</div>
+        </div>
+      </a>
+
+      <div class="stats-row">
+        <div class="stat-pill">
+          <span>📚 教材总计:</span>
+          <strong>11 本</strong>
+        </div>
+        <div class="stat-pill">
+          <span>🧩 学习单元:</span>
+          <strong>125 个</strong>
+        </div>
+        <div class="stat-pill">
+          <span>🎯 核心词汇:</span>
+          <strong>2,577 词</strong>
+        </div>
+        <div class="stat-pill" style="background: rgba(88,204,2,0.12); color: var(--primary-dark);">
+          <span>✨ 全拆分达标率:</span>
+          <strong>100%</strong>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Banner -->
+    <div class="hero-banner">
+      <div class="hero-badge">🌟 全拆分自然拼读黄金法则 (Total Phonics Standard)</div>
+      <h1 class="hero-title">触觉三维积木 · 构词密码举一反三</h1>
+      <p class="hero-desc">
+        彻底告别机械死记！单音节词全拆为首音连缀（Onset: <code>pl-</code>, <code>gr-</code>, <code>str-</code>）与元音族（Rime: <code>-ay</code>, <code>-ass</code>, <code>-ield</code>）；多音节词全拆为前缀、词根与后缀。100% 同构咬合迁移，打通英语底层逻辑。
+      </p>
+    </div>
+
+    <!-- Filter & Search Controls -->
+    <div class="filter-section">
+      <div class="search-row">
+        <div class="search-input-wrap">
+          <span>🔍</span>
+          <input type="text" id="searchInput" class="search-input" placeholder="输入单词、单元名称、教材或游戏模式搜索..." />
+        </div>
+      </div>
+
+      <!-- Book Chips -->
+      <div class="chips-group">
+        <span class="group-label">教材体系:</span>
+        <button class="filter-chip active" data-filter="all">全部 (125)</button>
+        <button class="filter-chip chip-think" data-filter="think">Think 全系 (74)</button>
+        <button class="filter-chip chip-think" data-filter="th0">TH0 Starter</button>
+        <button class="filter-chip chip-think" data-filter="th1">TH1</button>
+        <button class="filter-chip chip-think" data-filter="th2">TH2</button>
+        <button class="filter-chip chip-think" data-filter="th3">TH3</button>
+        <button class="filter-chip chip-think" data-filter="th4">TH4</button>
+        <button class="filter-chip chip-think" data-filter="th5">TH5</button>
+        <span style="width: 1px; height: 16px; background: var(--border); margin: 0 4px;"></span>
+        <button class="filter-chip chip-powerup" data-filter="powerup">Power Up 全系 (51)</button>
+        <button class="filter-chip chip-powerup" data-filter="pu0">PU0</button>
+        <button class="filter-chip chip-powerup" data-filter="pu1">PU1</button>
+        <button class="filter-chip chip-powerup" data-filter="pu2">PU2</button>
+        <button class="filter-chip chip-powerup" data-filter="pu3">PU3</button>
+        <button class="filter-chip chip-powerup" data-filter="pu4">PU4</button>
+      </div>
+
+      <!-- Mode Chips -->
+      <div class="chips-group">
+        <span class="group-label">游戏引擎:</span>
+        <button class="filter-chip active" data-mode="all">全模式</button>
+        <button class="filter-chip" data-mode="blooket">🎮 Blooket 3D 开箱神偷</button>
+        <button class="filter-chip" data-mode="wordwall">⚡ Wordwall 3D 街机狂飙</button>
+        <button class="filter-chip" data-mode="gimkit">🛡️ Gimkit 3D 护盾争霸</button>
+      </div>
+    </div>
+
+    <!-- Cards Grid -->
+    <div class="grid-container" id="cardsGrid">
+      <!-- Injected by JavaScript -->
+    </div>
+  </main>
+
+  <!-- Embedded Modal Viewer -->
+  <div class="modal-backdrop" id="playModal" onclick="handleBackdropClick(event)">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <span style="font-size: 18px;">⚡</span>
+          <span id="modalTitle" style="font-weight: 800; font-size: 14px;">单元详情</span>
+        </div>
+        <div class="modal-actions">
+          <button class="modal-btn" onclick="openCurrentInNewTab()">在新窗口打开 ↗</button>
+          <button class="modal-close-btn" onclick="closeModal()">✕</button>
+        </div>
+      </div>
+      <iframe class="modal-iframe" id="modalIframe" src="about:blank"></iframe>
+    </div>
+  </div>
+
+  <script>
+    let UNITS_DATA = [];
+    let currentFilter = 'all';
+    let currentMode = 'all';
+    let currentSearch = '';
+    let activeUnitUrl = '';
+
+    // Load manifest
+    fetch('manifest.json')
+      .then(res => res.json())
+      .then(data => {
+        UNITS_DATA = data;
+        renderCards();
+      })
+      .catch(err => {
+        console.error('Failed to load manifest.json', err);
+      });
+
+    const searchInput = document.getElementById('searchInput');
+    searchInput.addEventListener('input', (e) => {
+      currentSearch = e.target.value.toLowerCase().trim();
+      renderCards();
+    });
+
+    // Book Filter Buttons
+    document.querySelectorAll('[data-filter]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('[data-filter]').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        currentFilter = btn.getAttribute('data-filter');
+        renderCards();
+      });
+    });
+
+    // Mode Filter Buttons
+    document.querySelectorAll('[data-mode]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('[data-mode]').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        currentMode = btn.getAttribute('data-mode');
+        renderCards();
+      });
+    });
+
+    function renderCards() {
+      const grid = document.getElementById('cardsGrid');
+      grid.innerHTML = '';
+
+      const filtered = UNITS_DATA.filter(u => {
+        // Book filter
+        if (currentFilter !== 'all') {
+          if (currentFilter === 'think' && !u.book.startsWith('th')) return false;
+          if (currentFilter === 'powerup' && !u.book.startsWith('pu')) return false;
+          if (!['think', 'powerup'].includes(currentFilter) && u.book !== currentFilter) return false;
+        }
+
+        // Mode filter
+        if (currentMode !== 'all' && u.mode !== currentMode) return false;
+
+        // Search query
+        if (currentSearch) {
+          const matchTitle = (u.title || '').toLowerCase().includes(currentSearch);
+          const matchBook = (u.book || '').toLowerCase().includes(currentSearch);
+          const matchFile = (u.file || '').toLowerCase().includes(currentSearch);
+          const matchSamples = (u.samples || []).some(s => s.toLowerCase().includes(currentSearch));
+          if (!matchTitle && !matchBook && !matchFile && !matchSamples) return false;
+        }
+
+        return true;
+      });
+
+      if (filtered.length === 0) {
+        grid.innerHTML = `
+          <div class="empty-state">
+            <div style="font-size: 40px; margin-bottom: 12px;">🔍</div>
+            <h3 style="font-weight: 800; font-size: 16px; margin-bottom: 4px;">未找到匹配的学习单元</h3>
+            <p style="font-size: 13px;">请尝试更换搜索关键词或筛选条件</p>
+          </div>
+        `;
+        return;
+      }
+
+      filtered.forEach(u => {
+        const isThink = u.book.startsWith('th');
+        const bookTagClass = isThink ? 'tag-think' : 'tag-powerup';
+        const bookDisplayName = isThink ? `THINK ${u.book.replace('th','').toUpperCase()}` : `POWER UP ${u.book.replace('pu','').toUpperCase()}`;
+        const unitDisplay = u.unit.replace('unit-', 'U').toUpperCase();
+
+        const modeIcon = u.mode === 'blooket' ? '🎮 Blooket 3D' : u.mode === 'wordwall' ? '⚡ Wordwall 3D' : '🛡️ Gimkit 3D';
+
+        const card = document.createElement('div');
+        card.className = 'unit-card';
+        card.onclick = () => openModal(`public/word/${u.file}`, `${bookDisplayName} · ${unitDisplay}: ${u.title}`);
+
+        const sampleChips = (u.samples || []).map(s => `<span class="sample-chip">${s}</span>`).join('');
+
+        card.innerHTML = `
+          <div>
+            <div class="card-top">
+              <span class="book-tag ${bookTagClass}">${bookDisplayName} · ${unitDisplay}</span>
+              <span class="mode-pill">${modeIcon}</span>
+            </div>
+            <div class="card-main" style="margin-top: 12px;">
+              <h3>${u.title.replace('(LexiBlock 3D)', '').replace(/THINK [A-Z0-9]+ · [A-Z0-9]+:\s*/, '')}</h3>
+              <div class="sample-chips">${sampleChips}</div>
+            </div>
+          </div>
+          <div class="card-bottom">
+            <span class="word-count-badge">收录 <strong>${u.count}</strong> 词汇</span>
+            <button class="launch-btn" onclick="event.stopPropagation(); window.open('public/word/${u.file}', '_blank')">
+              <span>开始学习</span>
+              <span>➔</span>
+            </button>
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+    }
+
+    function openModal(url, title) {
+      activeUnitUrl = url;
+      document.getElementById('modalTitle').innerText = title;
+      document.getElementById('modalIframe').src = url;
+      document.getElementById('playModal').style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+      document.getElementById('playModal').style.display = 'none';
+      document.getElementById('modalIframe').src = 'about:blank';
+      document.body.style.overflow = '';
+    }
+
+    function handleBackdropClick(e) {
+      if (e.target.id === 'playModal') {
+        closeModal();
+      }
+    }
+
+    function openCurrentInNewTab() {
+      if (activeUnitUrl) {
+        window.open(activeUnitUrl, '_blank');
+      }
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeModal();
+    });
+  </script>
+</body>
+</html>
