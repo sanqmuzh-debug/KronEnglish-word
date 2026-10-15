@@ -115,3 +115,16 @@ KronEnglish-word/
 ├── server.py                 # 极速轻量预览服务器
 └── package.json
 ```
+
+---
+
+## 🧪 新版轻量 Demo：传送带消消乐 (`demo/`)
+
+两版皮肤，同一套玩法，直接用浏览器打开即可（无需服务器）：
+
+- `demo/juicy.html` · 版本 A 果冻糖果
+- `demo/sticker.html` · 版本 B 黑金贴纸（直播间撞色卡包风）
+
+玩法：选词书、单元和本轮词数 → 顶部传送带送来彩色单词卡 → 点卡片后按音节拼积木（点积木听拼读）→ 拼对后展示整词、Kron 绕口令/例句和 Kron 插画 → 卡片收进底部卡槽，同色 3 张撞掉。
+
+数据由 `python3 scripts/build_demo_data.py` 从 `data/` 生成到 `demo/data.js`；手写绕口令放在 `demo/twisters.json`（按单词文本匹配，任何词书里的同名单词都会用上）。

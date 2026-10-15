@@ -1,0 +1,22 @@
+{
+  "apple":      {"en": "Happy Grandpa grabs a purple apple from the maple tree.", "cn": "开心的爷爷从枫树上摘下一个紫苹果。", "scene": "Kron 挂在枫树上，抱着一个紫色大苹果傻笑", "emoji": "🍎"},
+  "banana":     {"en": "Nana wears a banana bandana to the cabana.", "cn": "娜娜戴着香蕉头巾去海边小木屋。", "scene": "Kron 头顶香蕉头巾，在海边小木屋前扭起来", "emoji": "🍌"},
+  "grapes":     {"en": "Great grey apes grab green grapes.", "cn": "高大的灰猩猩抓起绿葡萄。", "scene": "三只灰猩猩和 Kron 抢最后一串葡萄", "emoji": "🍇"},
+  "orange":     {"en": "The orange ranger arranges oranges in a pyramid.", "cn": "橙色护林员把橙子摆成金字塔。", "scene": "Kron 穿护林员制服，小心翼翼地摆橙子金字塔", "emoji": "🍊"},
+  "watermelon": {"en": "Walter the waiter puts a melon on the water.", "cn": "服务员沃尔特把一个瓜放在水面上。", "scene": "Kron 当服务员，端着西瓜在泳池上漂", "emoji": "🍉"},
+  "beans":      {"en": "Big Ben means to eat beans in blue jeans.", "cn": "大本打算穿着蓝色牛仔裤吃豆子。", "scene": "Kron 穿着牛仔裤，用筷子一颗颗夹豆子", "emoji": "🫘"},
+  "burger":     {"en": "A burly burglar burns a burger with ginger.", "cn": "一个壮壮的小偷用姜把汉堡烤焦了。", "scene": "Kron 抓住了偷汉堡的小偷，汉堡还冒着黑烟", "emoji": "🍔"},
+  "carrot":     {"en": "The parrot in the car carves a carrot.", "cn": "车里的鹦鹉在雕胡萝卜。", "scene": "Kron 开车，副驾驶的鹦鹉在雕胡萝卜", "emoji": "🥕"},
+  "egg":        {"en": "Peggy puts eggs in Meg's leggings.", "cn": "佩吉把鸡蛋塞进梅格的打底裤里。", "scene": "Kron 一脸震惊地看着打底裤里滚出鸡蛋", "emoji": "🥚"},
+  "rice":       {"en": "Mice slice nice rice twice.", "cn": "老鼠把香喷喷的米饭切了两次。", "scene": "一群小老鼠拿着小刀，围着 Kron 的饭碗切米饭", "emoji": "🍚"},
+  "board game": {"en": "The board game came from the cupboard, same game, same name.", "cn": "桌游是从橱柜里拿出来的，同一个游戏，同一个名字。", "scene": "Kron 从橱柜里抱出一大摞桌游", "emoji": "🎲"},
+  "camera":     {"en": "Cameron's camel came to the camera camp.", "cn": "卡梅伦的骆驼来到了摄影营。", "scene": "骆驼对着 Kron 的相机摆 pose", "emoji": "📷"},
+  "doll":       {"en": "Dolly's doll rolls down the hill like a troll.", "cn": "多莉的娃娃像个小怪物一样滚下山坡。", "scene": "Kron 追着滚下山的洋娃娃狂奔", "emoji": "🪆"},
+  "teddy":      {"en": "Teddy's daddy is ready for a teddy party.", "cn": "泰迪的爸爸准备好参加泰迪熊派对了。", "scene": "Kron 戴派对帽，抱着一只巨大的泰迪熊", "emoji": "🧸"},
+  "train":      {"en": "The train in the rain brought a brain in a chain.", "cn": "雨中的火车运来一个拴着链子的大脑。", "scene": "Kron 站在雨中的站台，接到一个奇怪的包裹", "emoji": "🚂"},
+  "ball":       {"en": "A tall ball falls in the hall.", "cn": "一个高高弹起的球掉进了大厅。", "scene": "Kron 在大厅里跳起来接球", "emoji": "⚽"},
+  "balloon":    {"en": "A loony baboon flies a balloon over the saloon.", "cn": "一只疯狂的狒狒乘着气球飞过酒馆。", "scene": "Kron 和狒狒挤在同一个热气球里", "emoji": "🎈"},
+  "bike":       {"en": "Mike likes to hike with his bike.", "cn": "迈克喜欢推着自行车去徒步。", "scene": "Kron 扛着自行车爬山，气喘吁吁", "emoji": "🚲"},
+  "car":        {"en": "A star in a car eats a jar of caramel.", "cn": "车里的明星吃了一罐焦糖。", "scene": "Kron 戴墨镜坐在敞篷车里吃焦糖", "emoji": "🚗"},
+  "plane":      {"en": "Jane's plane lands in a lane of planets.", "cn": "简的飞机降落在一排星球中间。", "scene": "Kron 开着纸飞机穿过一排小星球", "emoji": "✈️"}
+}

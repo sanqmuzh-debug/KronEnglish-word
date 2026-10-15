@@ -1,0 +1,622 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Kron Word</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&display=swap">
+</head><body>
+<style>
+/* Layout: one-screen game column — conveyor belt on top, brick workbench in the middle, match tray at the bottom */
+:root{
+  --bg:#F3F4F8; --surface:#FFFFFF; --surface-2:#EDEFF4; --fg:#1B1D25; --muted:#6A6F80; --line:#DCDFE7;
+  --kron:#0A84FF; --kron-d:#0064D2;
+  --logo:#1D1D1F; --skin:#FFDCC0; --skin-d:#F4BE98; --hair:#2B2320; --frame:#1B1D25; --mouth:#8A2E1E;
+  --ok:#58CC02; --ok-d:#45A302; --bad:#FF4B4B;
+  --rail:#2A2E38; --rail-2:#363B48; --rail-edge:#191C23;
+  --berry:#FF3B7F; --berry-d:#C9295F; --sky:#1CB0F6; --sky-d:#0F87C0;
+  --grape:#9B5CF6; --grape-d:#7639D6; --mint:#00C2A8; --mint-d:#00937F;
+  --shadow:0 1px 0 rgba(20,24,40,.04), 0 14px 40px -20px rgba(20,24,40,.28);
+  --font-display:"Fredoka", ui-rounded, "SF Pro Rounded", "PingFang SC", system-ui, sans-serif;
+  --font-ui:-apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0F1116; --surface:#191C24; --surface-2:#232733; --fg:#F2F3F7; --muted:#9BA1B3; --line:#2D323F;
+  --rail:#0A0C10; --rail-2:#171A22; --rail-edge:#000; --logo:#FFFFFF;
+  --shadow:0 1px 0 rgba(255,255,255,.03), 0 14px 40px -20px rgba(0,0,0,.8); color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0F1116; --surface:#191C24; --surface-2:#232733; --fg:#F2F3F7; --muted:#9BA1B3; --line:#2D323F;
+  --rail:#0A0C10; --rail-2:#171A22; --rail-edge:#000; --logo:#FFFFFF;
+  --shadow:0 1px 0 rgba(255,255,255,.03), 0 14px 40px -20px rgba(0,0,0,.8); color-scheme:dark}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{background:var(--bg);color:var(--fg);font-family:var(--font-ui);overflow:hidden;-webkit-tap-highlight-color:transparent}
+button{font:inherit;color:inherit;cursor:pointer}
+button:focus-visible{outline:3px solid var(--sky);outline-offset:3px}
+.c-berry{--c:var(--berry);--cd:var(--berry-d)} .c-sky{--c:var(--sky);--cd:var(--sky-d)}
+.c-grape{--c:var(--grape);--cd:var(--grape-d)} .c-mint{--c:var(--mint);--cd:var(--mint-d)}
+
+.app{height:100%;max-width:620px;margin:0 auto;display:flex;flex-direction:column;gap:12px;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:12px}
+
+/* top bar */
+.top{display:flex;align-items:center;gap:12px}
+.brand{display:flex;align-items:center;gap:8px;font:700 21px var(--font-display);letter-spacing:-.01em;white-space:nowrap}
+.brand .kron{width:36px;height:36px}
+.progress{flex:1;height:16px;border-radius:99px;background:var(--surface-2);overflow:hidden}
+.progress i{display:block;height:100%;width:0;border-radius:99px;background:var(--ok);position:relative;transition:width .7s cubic-bezier(.34,1.5,.64,1)}
+.progress i::after{content:"";position:absolute;left:8px;right:8px;top:3px;height:4px;border-radius:9px;background:rgba(255,255,255,.4)}
+.count{font:600 15px var(--font-display);font-variant-numeric:tabular-nums;color:var(--muted);min-width:42px;text-align:right}
+.icon-btn{width:42px;height:42px;display:grid;place-items:center;border-radius:14px;background:var(--surface);border:2px solid var(--line);border-bottom-width:4px;color:var(--muted);transition:transform .08s}
+.icon-btn:active{transform:translateY(2px);border-bottom-width:2px}
+.icon-btn svg{width:20px;height:20px}
+
+/* conveyor belt */
+.belt-head,.tray-head{display:flex;justify-content:space-between;align-items:baseline;font-size:12.5px;color:var(--muted);padding:0 4px}
+.belt-head b,.tray-head b{font:600 13px var(--font-display);letter-spacing:.04em;color:var(--fg);margin-right:6px}
+.linkish{background:none;border:none;padding:0;color:var(--muted);text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--line)}
+.belt{--cw:90px;position:relative;height:calc(var(--cw) + 30px);border-radius:22px;background:var(--rail);overflow:hidden;
+  box-shadow:inset 0 -6px 0 var(--rail-edge), inset 0 2px 0 rgba(255,255,255,.06)}
+.belt::before{content:"";position:absolute;left:0;right:0;top:12px;bottom:18px;
+  background:repeating-linear-gradient(90deg,var(--rail-2) 0 16px,transparent 16px 32px);animation:tread 1.4s linear infinite;opacity:.9}
+@keyframes tread{from{background-position:0 0}to{background-position:-32px 0}}
+.roller{position:absolute;right:0;top:0;bottom:0;width:22px;z-index:3;background:linear-gradient(90deg,rgba(0,0,0,0),var(--rail-edge) 70%);}
+.roller::after{content:"";position:absolute;right:6px;top:10px;bottom:16px;width:8px;border-radius:8px;background:repeating-linear-gradient(0deg,var(--rail-2) 0 6px,var(--rail) 6px 12px)}
+.bcard{--y:0px;position:absolute;left:0;top:12px;width:var(--cw);height:var(--cw);border:none;border-radius:20px;padding:0;
+  background:var(--c);border-bottom:5px solid var(--cd);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;
+  transform:translateX(var(--x,1000px)) translateY(var(--y));transition:transform .75s cubic-bezier(.34,1.25,.64,1), box-shadow .3s;
+  box-shadow:inset 0 3px 0 rgba(255,255,255,.28)}
+.bcard:hover{--y:-4px}
+.bcard:active{--y:2px}
+.bc-emoji{font-size:30px;line-height:1}
+.bc-zh{font:600 14px var(--font-ui);letter-spacing:.02em;text-shadow:0 1px 0 rgba(0,0,0,.12)}
+.bc-dots{display:flex;gap:4px}.bc-dots i{width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.8)}
+.bcard.want{animation:want 1.6s ease-in-out infinite}
+.bcard.want2{animation:want 0.9s ease-in-out infinite}
+@keyframes want{0%,100%{box-shadow:inset 0 3px 0 rgba(255,255,255,.28),0 0 0 0 var(--c)}50%{box-shadow:inset 0 3px 0 rgba(255,255,255,.28),0 0 0 4px #fff,0 0 0 8px var(--c)}}
+.bcard.review::after{content:"复习";position:absolute;top:6px;right:6px;font:600 10px var(--font-ui);background:rgba(0,0,0,.22);padding:2px 6px;border-radius:99px}
+
+/* stage */
+.stage{flex:1;min-height:0;overflow:auto;background:var(--surface);border-radius:28px;box-shadow:var(--shadow);
+  padding:16px 16px 20px;display:flex;flex-direction:column;gap:14px;scrollbar-width:none}
+.coach{display:flex;gap:10px;align-items:flex-end}
+.coach .kron{width:62px;height:62px;flex:none}
+.bubble{position:relative;flex:1;min-width:0;background:var(--surface-2);border-radius:20px 20px 20px 6px;padding:10px 14px 11px;font-size:15px;line-height:1.55}
+.bubble small{display:block;font:600 11.5px var(--font-display);letter-spacing:.08em;color:var(--kron-d);margin-bottom:1px}
+.bubble.pop{animation:bubble .45s cubic-bezier(.34,1.6,.64,1)}
+@keyframes bubble{from{transform:scale(.92) translateY(4px);opacity:.3}to{transform:none;opacity:1}}
+
+.work{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:20px;min-height:280px}
+.meaning{display:flex;align-items:center;gap:10px;padding:8px 16px 8px 10px;border-radius:99px;background:var(--surface-2)}
+.meaning .m-emoji{font-size:28px;line-height:1}
+.meaning b{font:600 22px var(--font-ui)}
+.meaning .m-n{font-size:13px;color:var(--muted)}
+.slots{display:flex;gap:10px;padding:14px 12px 12px;border-radius:22px;background:var(--surface-2);transition:gap .35s cubic-bezier(.34,1.4,.64,1),background .3s;position:relative}
+.slot{min-width:76px;height:66px;border-radius:16px;border:2.5px dashed color-mix(in oklab,var(--c) 45%,var(--line));display:flex;transition:border-color .2s}
+.slot:has(.brick){border-color:transparent}
+.slots.shake{animation:shake .42s cubic-bezier(.36,.07,.19,.97)}
+@keyframes shake{20%,60%{transform:translateX(-8px)}40%,80%{transform:translateX(8px)}}
+.slots.merged{gap:0;background:transparent}
+.slots.merged .slot{min-width:0}
+.slots.merged .brick{border-radius:0;transition:border-radius .3s}
+.slots.merged .slot:first-child .brick{border-radius:16px 0 0 16px}
+.slots.merged .slot:last-child .brick{border-radius:0 16px 16px 0}
+.slots.merged .slot+.slot .brick{box-shadow:inset 0 3px 0 rgba(255,255,255,.3), inset 2px 0 0 rgba(255,255,255,.18)}
+.slots.merged::after{content:"";position:absolute;inset:14px 12px 12px;border-radius:16px;pointer-events:none;
+  background:linear-gradient(105deg,transparent 30%,rgba(255,255,255,.55) 45%,transparent 60%);background-size:250% 100%;animation:shine .9s .15s ease-out both}
+@keyframes shine{from{background-position:130% 0}to{background-position:-60% 0}}
+.slots.merged{animation:jump .5s cubic-bezier(.34,1.6,.64,1)}
+@keyframes jump{40%{transform:translateY(-10px) scale(1.05)}}
+
+.pool{display:flex;flex-wrap:wrap;justify-content:center;gap:12px 12px;max-width:460px;transition:opacity .3s}
+.cell{height:66px;border-radius:16px;background:var(--surface-2);display:flex}
+.brick{position:relative;min-width:76px;height:66px;padding:0 18px;border:none;border-radius:16px;background:var(--c);border-bottom:6px solid var(--cd);
+  color:#fff;font:600 28px var(--font-display);letter-spacing:.01em;text-shadow:0 1px 0 rgba(0,0,0,.14);box-shadow:inset 0 3px 0 rgba(255,255,255,.3);
+  transition:transform .08s, border-bottom-width .08s}
+.brick::before,.brick::after{content:"";position:absolute;top:-7px;width:16px;height:9px;border-radius:6px 6px 2px 2px;background:var(--c);box-shadow:inset 0 2px 0 rgba(255,255,255,.4)}
+.brick::before{left:14px}.brick::after{right:14px}
+.brick:active{transform:translateY(3px);border-bottom-width:3px}
+.pool .brick{animation:in .5s cubic-bezier(.34,1.6,.64,1) both;animation-delay:calc(var(--i) * 60ms + 200ms)}
+@keyframes in{from{transform:scale(.4) translateY(14px);opacity:0}}
+.brick.ping{animation:ping .4s cubic-bezier(.34,1.8,.64,1)}
+@keyframes ping{30%{transform:scale(1.12) rotate(-3deg)}}
+.work.done .pool,.work.done .actions{opacity:0;pointer-events:none}
+
+.actions{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;transition:opacity .3s}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:600 16px var(--font-display);letter-spacing:.02em;padding:12px 20px;border-radius:16px;
+  border:2px solid var(--line);border-bottom-width:4px;background:var(--surface);color:var(--muted);transition:transform .08s}
+.btn svg{width:18px;height:18px}
+.btn:active{transform:translateY(2px);border-bottom-width:2px}
+.btn.primary{background:var(--ok);border-color:var(--ok-d);color:#fff;text-transform:uppercase;letter-spacing:.06em}
+.btn.wide{width:100%;padding:15px}
+
+/* idle */
+.work.idle{color:var(--muted);text-align:center;gap:8px}
+.idle-art{width:64px;height:64px;color:var(--kron);animation:bob 1.4s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-8px)}}
+.idle-t{margin:0;font:600 20px var(--font-display);color:var(--fg)}
+.idle-s{margin:0;font-size:14px;max-width:30ch;line-height:1.5}
+
+/* reveal */
+.reveal{width:100%;display:grid;gap:14px;animation:rise .55s cubic-bezier(.34,1.35,.64,1)}
+@keyframes rise{from{transform:translateY(24px) scale(.97);opacity:0}}
+.scene{position:relative;aspect-ratio:16/8;max-width:100%;border-radius:22px;overflow:hidden;
+  background:linear-gradient(165deg,color-mix(in oklab,var(--c) 42%,var(--surface)),color-mix(in oklab,var(--c) 14%,var(--surface)))}
+.scene::before{content:"";position:absolute;left:-10%;right:-10%;bottom:-38%;height:62%;border-radius:50%;background:color-mix(in oklab,var(--c) 30%,var(--surface))}
+.scene-emoji{position:absolute;right:16%;top:50%;font-size:clamp(56px,14vw,86px);line-height:1;transform:translateY(-50%);animation:float 2.6s ease-in-out infinite;filter:drop-shadow(0 10px 8px rgba(0,0,0,.15))}
+@keyframes float{50%{transform:translateY(calc(-50% - 10px)) rotate(6deg)}}
+.scene .kron{position:absolute;left:10%;bottom:-6%;width:clamp(90px,26%,140px);height:auto;transform:rotate(-6deg);animation:peek .8s .1s cubic-bezier(.34,1.5,.64,1) both}
+@keyframes peek{from{transform:translateY(60%) rotate(-6deg)}}
+.scene-tag{position:absolute;right:10px;top:10px;font-size:11px;padding:4px 9px;border-radius:99px;background:rgba(255,255,255,.7);color:#3a3d48}
+.spark{position:absolute;width:10px;height:10px;border-radius:50%;background:#fff;opacity:.7;animation:twinkle 2s ease-in-out infinite}
+@keyframes twinkle{50%{transform:scale(.4);opacity:.2}}
+.rv-head{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.rv-word{font:700 clamp(36px,9vw,48px)/1 var(--font-display);letter-spacing:-.01em;display:flex;align-items:baseline;flex-wrap:wrap;min-width:0}
+.rv-word i{font-style:normal;color:var(--c);margin:0 .06em;opacity:.8}
+.rv-meta{display:flex;gap:12px;align-items:baseline;color:var(--muted);font-size:15px;margin-top:-6px}
+.rv-meta .zh{color:var(--fg);font-weight:600}
+.round{flex:none;width:52px;height:52px;border-radius:50%;display:grid;place-items:center;border:none;background:var(--c);border-bottom:4px solid var(--cd);color:#fff}
+.round svg{width:24px;height:24px}
+.round.sm{width:40px;height:40px}.round.sm svg{width:18px;height:18px}
+.round:active{transform:translateY(2px);border-bottom-width:2px}
+.rv-sent{display:flex;gap:12px;align-items:center;padding:12px 12px 12px 16px;border-radius:18px;background:var(--surface-2)}
+.rv-sent div{flex:1;min-width:0}
+.rv-sent small{display:block;font:600 11.5px var(--font-display);letter-spacing:.08em;color:var(--muted);margin-bottom:2px}
+.rv-sent p{margin:0;font:500 19px/1.45 var(--font-display)}
+.rv-sent mark{background:color-mix(in oklab,var(--c) 22%,transparent);color:inherit;border-radius:6px;padding:0 2px;font-weight:700}
+
+/* tray */
+.tray{display:grid;grid-template-columns:repeat(var(--n,6),1fr);gap:8px;padding:10px;border-radius:22px;background:var(--surface);box-shadow:var(--shadow)}
+.tslot{position:relative;aspect-ratio:1/1.08;border-radius:14px;background:var(--surface-2)}
+.tslot.over{background:color-mix(in oklab,var(--bad) 20%,var(--surface-2))}
+.tray.warn .tslot:not(:has(.tcard)){box-shadow:inset 0 0 0 2px color-mix(in oklab,var(--bad) 55%,transparent)}
+.tcard{position:absolute;inset:0;border-radius:14px;background:var(--c);border-bottom:4px solid var(--cd);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;
+  box-shadow:inset 0 2px 0 rgba(255,255,255,.3);overflow:hidden}
+.tc-e{font-size:clamp(18px,5vw,24px);line-height:1}
+.tc-w{font:600 clamp(10px,2.6vw,12.5px) var(--font-display);max-width:100%;padding:0 3px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.ring{position:fixed;width:20px;height:20px;margin:-10px 0 0 -10px;border-radius:50%;border:6px solid var(--c);pointer-events:none;z-index:60;animation:ring .55s ease-out forwards}
+@keyframes ring{to{transform:scale(9);opacity:0;border-width:1px}}
+
+/* toast, sheets */
+.toast{position:fixed;left:50%;top:calc(14px + env(safe-area-inset-top,0px));transform:translate(-50%,-140%);z-index:80;max-width:min(92vw,440px);
+  background:var(--fg);color:var(--bg);font-size:14px;padding:10px 16px;border-radius:14px;transition:transform .45s cubic-bezier(.34,1.4,.64,1)}
+.toast.show{transform:translate(-50%,0)}
+.toast:empty{display:none}
+.combo{position:fixed;z-index:70;pointer-events:none;font:700 30px var(--font-display);color:var(--fg);text-shadow:0 2px 0 var(--surface);animation:combo 1s ease-out forwards}
+@keyframes combo{0%{transform:translate(-50%,0) scale(.5);opacity:0}25%{transform:translate(-50%,-30px) scale(1.15);opacity:1}100%{transform:translate(-50%,-70px) scale(1);opacity:0}}
+.backdrop{position:fixed;inset:0;z-index:90;display:grid;place-items:center;padding:20px;background:rgba(10,12,20,.42);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);animation:fade .25s}
+@keyframes fade{from{opacity:0}}
+.sheet{width:min(100%,430px);max-height:100%;overflow:auto;background:var(--surface);border-radius:28px;padding:22px;display:grid;gap:16px;animation:pop .45s cubic-bezier(.34,1.5,.64,1)}
+@keyframes pop{from{transform:scale(.88) translateY(20px);opacity:0}}
+.sheet h2{margin:0;font:700 24px var(--font-display);text-wrap:balance}
+.sheet .sub{margin:-10px 0 0;color:var(--muted);font-size:14px}
+.field-label{font:600 12px var(--font-display);letter-spacing:.08em;color:var(--muted);margin-bottom:8px}
+.books{display:grid;gap:8px}
+.book{display:flex;align-items:center;gap:12px;text-align:left;padding:12px 14px;border-radius:16px;border:2px solid var(--line);border-bottom-width:4px;background:var(--surface)}
+.book[aria-pressed="true"]{border-color:var(--sky);background:color-mix(in oklab,var(--sky) 10%,var(--surface))}
+.book .bk-ic{font-size:26px}.book b{display:block;font-size:15px}.book span{font-size:12.5px;color:var(--muted)}
+.seg{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.seg button{padding:12px 0;border-radius:14px;border:2px solid var(--line);border-bottom-width:4px;background:var(--surface);font:600 18px var(--font-display);font-variant-numeric:tabular-nums}
+.seg button[aria-pressed="true"]{border-color:var(--sky);color:var(--sky-d);background:color-mix(in oklab,var(--sky) 10%,var(--surface))}
+.seg button:disabled{opacity:.4;cursor:not-allowed}
+.toggle-row{display:flex;justify-content:space-between;align-items:center;font-size:15px}
+.switch{width:52px;height:32px;border-radius:99px;border:none;background:var(--line);position:relative;transition:background .2s}
+.switch::after{content:"";position:absolute;left:3px;top:3px;width:26px;height:26px;border-radius:50%;background:#fff;box-shadow:0 2px 4px rgba(0,0,0,.2);transition:transform .25s cubic-bezier(.34,1.5,.64,1)}
+.switch[aria-checked="true"]{background:var(--ok)}.switch[aria-checked="true"]::after{transform:translateX(20px)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.stat{border-radius:16px;border:2px solid var(--line);padding:10px;text-align:center}
+.stat b{display:block;font:700 24px var(--font-display);font-variant-numeric:tabular-nums}
+.stat span{font-size:12px;color:var(--muted)}
+.win-kron{display:flex;justify-content:center}.win-kron .kron{width:110px;height:110px;animation:jump .8s cubic-bezier(.34,1.6,.64,1) infinite alternate}
+
+#fx{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:85}
+
+/* Kron */
+.kron{overflow:visible}
+.kron .kh-face{display:none}
+.kron.mood-idle .kh-face-idle,.kron.mood-thinking .kh-face-thinking,.kron.mood-correct .kh-face-correct,.kron.mood-wrong .kh-face-wrong{display:inline}
+.brand .kron-logo{width:30px;height:30px;color:var(--logo)}
+.coach .kron{transition:transform .3s cubic-bezier(.34,1.6,.64,1)}
+.coach .kron.mood-correct{transform:translateY(-6px) rotate(-6deg) scale(1.06)}
+.coach .kron.mood-wrong{animation:nope .5s}
+@keyframes nope{25%{transform:rotate(-8deg)}75%{transform:rotate(8deg)}}
+.scene-say{position:absolute;left:calc(10% + clamp(90px,26%,140px) - 12px);top:16%;font:700 16px var(--font-display);background:#fff;color:#1B1D25;padding:6px 12px;border-radius:16px 16px 16px 4px;box-shadow:0 4px 0 rgba(0,0,0,.08);animation:pop .5s .45s cubic-bezier(.34,1.6,.64,1) both}
+.kron .eye{transform-box:fill-box;transform-origin:center;animation:blink 5.5s infinite}
+@keyframes blink{0%,94%,100%{transform:scaleY(1)}96%{transform:scaleY(.1)}}
+
+@media (max-width:440px){
+  .belt{--cw:76px}
+  .bc-emoji{font-size:25px}.bc-zh{font-size:12.5px}
+  .brick{min-width:62px;height:58px;font-size:23px;padding:0 13px;border-bottom-width:5px}
+  .slot{min-width:62px;height:58px}.cell{height:58px}
+  .brand span{display:none}
+  .tray{gap:6px;padding:8px}
+  .coach .kron{width:52px;height:52px}
+  .bubble{font-size:14px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+}
+</style>
+
+<div class="app">
+  <header class="top">
+    <div class="brand" id="brandKron"><span>Kron Word</span></div>
+    <div class="progress" role="progressbar" aria-label="消除进度"><i id="bar"></i></div>
+    <div class="count" id="count">0/9</div>
+    <button class="icon-btn" id="openSettings" aria-label="设置">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M4 7h10M18 7h2M4 17h4M12 17h8"/><circle cx="16" cy="7" r="2.4"/><circle cx="10" cy="17" r="2.4"/></svg>
+    </button>
+  </header>
+
+  <section>
+    <div class="belt-head"><span><button class="linkish" id="bookName">小学核心</button></span><span id="beltCount"></span></div>
+    <div class="belt" id="belt"><div class="roller"></div></div>
+  </section>
+
+  <main class="stage" id="stage">
+    <div class="coach">
+      <div id="coachKron"></div>
+      <div class="bubble" id="bubble" aria-live="polite"><small>KRON</small><span id="bubbleText">嗨，我是 Kron！</span></div>
+    </div>
+    <div class="work idle" id="work"><p class="idle-t">挑一张</p></div>
+  </main>
+
+  <section>
+    <div class="tray-head"><span><b>托盘</b></span><span id="trayCount">0/6</span></div>
+    <div class="tray" id="tray"></div>
+  </section>
+</div>
+<div class="toast" id="toast" role="status"></div>
+<canvas id="fx"></canvas>
+
+<script>
+/* ---------- sample data (demo only — real books come from your library) ---------- */
+const BOOKS = {
+  kids:{name:'小学核心', icon:'🎒', desc:'动物、日常物品，12 词', words:[
+    {w:'banana',syl:['ba','na','na'],say:['buh','nah','nuh'],ipa:'/bəˈnɑːnə/',zh:'香蕉',e:'🍌',hint:'Kron 吃香蕉：ba 咬一口，na 再一口，na 最后一口，三口吃光！',s:'{Na}na\'s {ban}da{na} hides a {ba}{na}{na}.'},
+    {w:'tiger',syl:['ti','ger'],say:['tie','gurr'],ipa:'/ˈtaɪɡər/',zh:'老虎',e:'🐯',hint:'老虎踮着脚 ti-ti-ti 走过来，突然 ger——吼了一嗓子。',s:'{Ti}m the {ti}dy {ti}{ger} is ea{ger} to eat.'},
+    {w:'rabbit',syl:['rab','bit'],say:['rab','bit'],ipa:'/ˈræbɪt/',zh:'兔子',e:'🐰',hint:'兔子 rab 一下抓住胡萝卜，结果只啃了一小 bit。',s:'The {rab}{bit} g{rab}s a {bit} of carrot.'},
+    {w:'pencil',syl:['pen','cil'],say:['pen','sil'],ipa:'/ˈpensəl/',zh:'铅笔',e:'✏️',hint:'pen 是钢笔，屁股后面挂个 cil，钢笔就变成铅笔啦。',s:'{Pen}ny\'s {pen}{cil} draws a {pen}guin on a sten{cil}.'},
+    {w:'window',syl:['win','dow'],say:['win','doe'],ipa:'/ˈwɪndoʊ/',zh:'窗户',e:'🪟',hint:'Kron 赢了 win！开心得 dow 一声把窗户推开。',s:'{Win}nie opens the {win}{dow} and the {win}d blows {dow}n.'},
+    {w:'dinosaur',syl:['di','no','saur'],say:['die','no','sore'],ipa:'/ˈdaɪnəsɔːr/',zh:'恐龙',e:'🦕',hint:'恐龙摇头 di-no：不不不！然后 saur 一下飞上天。',s:'The {di}{no}{saur} says {no}, {di}ves, and {soar}s away.'},
+    {w:'elephant',syl:['el','e','phant'],say:['el','uh','fent'],ipa:'/ˈelɪfənt/',zh:'大象',e:'🐘',hint:'大象鼻子 el-e 绕两圈，最后 phant 喷出一大股水。',s:'{El}la\'s {el}{e}{phant} sees a {phant}om in the {el}evator.'},
+    {w:'robot',syl:['ro','bot'],say:['row','bot'],ipa:'/ˈroʊbɑːt/',zh:'机器人',e:'🤖',hint:'机器人 ro-ro 原地转圈，头顶还稳稳顶着一个 bot 瓶子。',s:'{Ro}sa\'s {ro}{bot} {ro}lls a {bot}tle home.'},
+    {w:'monkey',syl:['mon','key'],say:['mun','key'],ipa:'/ˈmʌŋki/',zh:'猴子',e:'🐵',hint:'猴子 mon 一口叼走了 Kron 的钥匙 key！',s:'On {Mon}day, the {mon}{key} lost his {key}.'},
+    {w:'butterfly',syl:['but','ter','fly'],say:['but','ter','fly'],ipa:'/ˈbʌtərflaɪ/',zh:'蝴蝶',e:'🦋',hint:'蝴蝶落在黄油 butter 上，脚一滑，fly 飞走啦。',s:'The {but}{ter}{fly} will {fly}, {but} not to the {but}{ter}.'},
+    {w:'pumpkin',syl:['pump','kin'],say:['pump','kin'],ipa:'/ˈpʌmpkɪn/',zh:'南瓜',e:'🎃',hint:'Kron 给南瓜 pump 打气，南瓜胀成了一个 kin 大胖子。',s:'{Pump} up the {pump}{kin}, {kin}d little Kron!'},
+    {w:'umbrella',syl:['um','brel','la'],say:['um','brell','luh'],ipa:'/ʌmˈbrelə/',zh:'雨伞',e:'☂️',hint:'um……下雨了？brel 撑开伞，la-la-la 转一圈。',s:'{Um}, Bel{la}\'s {um}{brel}{la} sings {la}-{la}-{la}.'}
+  ]},
+  think1:{name:'Think 1', icon:'📘', desc:'初中常用多音节词，9 词', words:[
+    {w:'adventure',syl:['ad','ven','ture'],say:['ad','ven','cher'],ipa:'/ədˈventʃər/',zh:'冒险',e:'🗺️',hint:'Kron 背上包：ad 出发！ven 一路狂奔，ture 是终点的欢呼。',s:'{Ad}am {ven}ts: my {ad}{ven}{ture} is the fu{ture}!'},
+    {w:'computer',syl:['com','pu','ter'],say:['kum','pew','ter'],ipa:'/kəmˈpjuːtər/',zh:'电脑',e:'💻',hint:'电脑打了个喷嚏：com-pu-ter！一个音一个音往外蹦。',s:'{Com}e, {com}{pu}{ter}, {pu}t the {ter}rible bug away.'},
+    {w:'fantastic',syl:['fan','tas','tic'],say:['fan','tass','tick'],ipa:'/fænˈtæstɪk/',zh:'极好的',e:'✨',hint:'风扇 fan 一转，tas-tic 滴答滴答，好得不得了！',s:'A {fan}{tas}{tic} {fan} {tas}tes a {tic}-tac.'},
+    {w:'problem',syl:['prob','lem'],say:['prob','lum'],ipa:'/ˈprɑːbləm/',zh:'问题',e:'❓',hint:'Kron 挠头：prob……lem……这道题酸得像柠檬。',s:'{Prob}ably the {prob}{lem} is the {lem}on.'},
+    {w:'weekend',syl:['week','end'],say:['week','end'],ipa:'/ˈwiːkend/',zh:'周末',e:'🛋️',hint:'一周 week 走到 end 尽头，就是周末！',s:'{Week} after {week}, my {week}{end}s never {end}.'},
+    {w:'yesterday',syl:['yes','ter','day'],say:['yes','ter','day'],ipa:'/ˈjestərdeɪ/',zh:'昨天',e:'📅',hint:'Kron 点头 yes，回头 ter 一看，那一天 day 就是昨天。',s:'{Yes}, {yes}{ter}{day} was a {ter}rific {day}.'},
+    {w:'important',syl:['im','por','tant'],say:['im','pore','tunt'],ipa:'/ɪmˈpɔːrtənt/',zh:'重要的',e:'⭐',hint:'im 进门，por 倒一碗粥，tant 拍桌子：这很重要！',s:'{Im}agine an {im}{por}{tant} {por}ridge {tant}rum.'},
+    {w:'hamburger',syl:['ham','bur','ger'],say:['ham','burr','gurr'],ipa:'/ˈhæmbɜːrɡər/',zh:'汉堡',e:'🍔',hint:'火腿 ham 夹进去，肚子 bur-ger 咕噜两声，汉堡好了。',s:'{Ham}my\'s {ham}{bur}{ger} makes him {bur}p. {Bur}{ger} time!'},
+    {w:'cartoon',syl:['car','toon'],say:['car','toon'],ipa:'/kɑːrˈtuːn/',zh:'卡通',e:'📺',hint:'一辆小车 car 哼着 toon 调子，开进了动画片。',s:'The {car}{toon} {car} hums a {tune}.'}
+  ]}
+};
+const COLORS=['berry','sky','grape','mint'];
+const COLOR_ZH={berry:'莓果粉',sky:'天空蓝',grape:'葡萄紫',mint:'薄荷绿'};
+const TRAY=6;
+const PRAISE=['拼上啦！','完美咬合！','Kron 给你鼓掌！','这块积木严丝合缝！','太顺了！'];
+
+const $=s=>document.querySelector(s);
+const wait=ms=>new Promise(r=>setTimeout(r,ms));
+const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const cssVar=n=>getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+function shuffle(a){a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.random()*(i+1)|0;[a[i],a[j]]=[a[j],a[i]]}return a}
+const S={book:'kids',count:9,muted:false};
+try{const p=JSON.parse(localStorage.getItem('kronword')||'{}');if(p.book&&BOOKS[p.book])S.book=p.book;if(p.count)S.count=p.count;if(p.muted)S.muted=true}catch(e){}
+function savePrefs(){try{localStorage.setItem('kronword',JSON.stringify({book:S.book,count:S.count,muted:S.muted}))}catch(e){}}
+
+/* ---------- icons + Kron ---------- */
+const IC={
+  speaker:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9.5h3.5L12 5v14l-4.5-4.5H4z" fill="currentColor"/><path d="M15.5 9a4 4 0 0 1 0 6M18 6.5a7.5 7.5 0 0 1 0 11"/></svg>',
+  undo:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 7 4 12l5 5"/><path d="M4 12h10a6 6 0 0 1 0 12"/></svg>',
+  up:'<svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"><path d="M32 52V14M16 28l16-16 16 16"/></svg>'
+};
+/* Kron 官方刺猬头像：几何和四种表情来自 kron-english-aha/engine/kron.js，刺的弹簧动画来自 kron-canonical-assets/kron-head.animation.js，外形不改。 */
+const KRON_DEFS=`<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"> <defs> <linearGradient id="kh-cream" x1="0" y1="82" x2="0" y2="300" gradientUnits="userSpaceOnUse"> <stop offset="0" stop-color="#FFF3E2"/><stop offset="1" stop-color="#EFC99F"/> </linearGradient> <linearGradient id="kh-quill" x1="150" y1="52" x2="350" y2="242" gradientUnits="userSpaceOnUse"> <stop offset="0" stop-color="#2b2f3a"/><stop offset="1" stop-color="#12151c"/> </linearGradient> </defs> </svg>`;
+const KRON_HEAD=`<g fill="url(#kh-quill)"> <ellipse class="quill" data-cx="169" data-cy="170" data-ry="53" data-rest="-54" cx="169" cy="170" rx="18" ry="53" transform="rotate(-54 169 170)"/> <ellipse class="quill" data-cx="181" data-cy="124" data-ry="59" data-rest="-34" cx="181" cy="124" rx="19" ry="59" transform="rotate(-34 181 124)"/> <ellipse class="quill" data-cx="219" data-cy="94" data-ry="64" data-rest="-15" cx="219" cy="94" rx="20" ry="64" transform="rotate(-15 219 94)"/> <ellipse class="quill" data-cx="258" data-cy="84" data-ry="68" data-rest="0" cx="258" cy="84" rx="21" ry="68"/> <ellipse class="quill" data-cx="298" data-cy="96" data-ry="64" data-rest="16" cx="298" cy="96" rx="20" ry="64" transform="rotate(16 298 96)"/> <ellipse class="quill" data-cx="333" data-cy="128" data-ry="59" data-rest="36" cx="333" cy="128" rx="19" ry="59" transform="rotate(36 333 128)"/> <ellipse class="quill" data-cx="345" data-cy="174" data-ry="53" data-rest="56" cx="345" cy="174" rx="18" ry="53" transform="rotate(56 345 174)"/> <ellipse class="quill" data-cx="139" data-cy="219" data-ry="48" data-rest="-78" cx="139" cy="219" rx="17" ry="48" transform="rotate(-78 139 219)"/> <ellipse class="quill" data-cx="373" data-cy="219" data-ry="48" data-rest="78" cx="373" cy="219" rx="17" ry="48" transform="rotate(78 373 219)"/> <ellipse cx="256" cy="191" rx="124" ry="112"/> </g> <path fill="url(#kh-cream)" d="M153 190 C153 125 194 89 256 89 C318 89 359 125 359 190 C359 251 319 289 256 289 C193 289 153 251 153 190 Z"/> <path fill="#FFFFFF" opacity=".24" d="M194 128 C213 105 248 99 282 108 C234 112 199 139 184 184 C178 164 181 143 194 128 Z"/> <g class="kh-face kh-face-idle"> <g fill="#FFFFFF" stroke="#1D1D1F" stroke-width="4.5"><circle cx="233" cy="180" r="23"/><circle cx="279" cy="180" r="23"/></g> <g fill="#1D1D1F"><circle cx="238" cy="185" r="4.6"/><circle cx="274" cy="185" r="4.6"/></g> <path d="M212.3 170 A23 23 0 0 1 253.7 170 Z" fill="url(#kh-cream)" stroke="#1D1D1F" stroke-width="4.5" stroke-linejoin="round"/> <path d="M258.3 170 A23 23 0 0 1 299.7 170 Z" fill="url(#kh-cream)" stroke="#1D1D1F" stroke-width="4.5" stroke-linejoin="round"/> <path d="M232 229 Q256 243 280 229" fill="none" stroke="#1D1D1F" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/> <path d="M227 224 Q229 229 233 231" fill="none" stroke="#1D1D1F" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/> <path d="M285 224 Q283 229 279 231" fill="none" stroke="#1D1D1F" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/> </g> <g class="kh-face kh-face-thinking"> <g fill="#FFFFFF" stroke="#1D1D1F" stroke-width="4.5"><circle cx="233" cy="180" r="23"/><circle cx="279" cy="180" r="23"/></g> <g fill="#1D1D1F"><circle cx="241" cy="188" r="4.6"/><circle cx="287" cy="174" r="4.6"/></g> <path d="M210.2 177 A23 23 0 0 1 255.8 177 Z" fill="url(#kh-cream)" stroke="#1D1D1F" stroke-width="4.5" stroke-linejoin="round"/> <path d="M211 162 Q231 157 251 163" fill="none" stroke="#1D1D1F" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/> <path d="M262 145 Q282 132 301 146" fill="none" stroke="#1D1D1F" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/> <path d="M240 233 Q257 237 272 226" fill="none" stroke="#1D1D1F" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/> <path d="M268 220 Q275 224 274 231" fill="none" stroke="#1D1D1F" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/> </g> <g class="kh-face kh-face-correct"> <g fill="#FFFFFF" stroke="#1D1D1F" stroke-width="4.5"><circle cx="233" cy="180" r="23"/><circle cx="279" cy="180" r="23"/></g> <g fill="#1D1D1F"><circle cx="238" cy="183" r="4.6"/><circle cx="274" cy="183" r="4.6"/></g> <path d="M212 148 Q231 138 249 146" fill="none" stroke="#1D1D1F" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/> <path d="M263 146 Q281 138 300 148" fill="none" stroke="#1D1D1F" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/> <path d="M209 213 Q256 224 303 213 Q301 273 256 273 Q211 273 209 213 Z" fill="#7A1B2A" stroke="#1D1D1F" stroke-width="4.5" stroke-linejoin="round"/> <path d="M215 219 Q256 229 297 219 L295 234 Q256 243 217 234 Z" fill="#FFFFFF" stroke="#1D1D1F" stroke-width="2.5" stroke-linejoin="round"/> <path d="M231 263 Q256 244 281 263 Q270 270 256 270 Q242 270 231 263 Z" fill="#F2788A"/> </g> <g class="kh-face kh-face-wrong"> <g fill="#FFFFFF" stroke="#1D1D1F" stroke-width="4.5"><circle cx="233" cy="180" r="23"/><circle cx="279" cy="180" r="23"/></g> <g fill="#1D1D1F"><circle cx="241" cy="188" r="3.6"/><circle cx="271" cy="188" r="3.6"/></g> <path d="M209 157 Q228 147 248 140" fill="none" stroke="#1D1D1F" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/> <path d="M264 140 Q284 147 303 157" fill="none" stroke="#1D1D1F" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/> <path d="M222 224 Q256 218 290 224 Q294 236 290 248 Q256 254 222 248 Q218 236 222 224 Z" fill="#FFFFFF" stroke="#1D1D1F" stroke-width="4.5" stroke-linejoin="round"/> <path d="M221 236 Q256 233 291 236" fill="none" stroke="#1D1D1F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/> <path d="M239 222 V251 M256 221 V252 M273 222 V251" fill="none" stroke="#1D1D1F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/> </g>`;
+const KRON_LOGO=`<svg class="kron-logo" viewBox="24 22 52 56" role="img" aria-label="快学英语 Kron English"><g fill="currentColor"> <path d="M29.58 44.32L35.42 30.68C36.29 28.65 38.8 27 41 27L68 27C70.2 27 71.29 28.65 70.42 30.68L64.58 44.32C63.71 46.35 61.2 48 59 48L32 48C29.8 48 28.71 46.35 29.58 44.32Z"/> <path d="M29.58 55.68L35.42 69.32C36.29 71.35 38.8 73 41 73L68 73C70.2 73 71.29 71.35 70.42 69.32L64.58 55.68C63.71 53.65 61.2 52 59 52L32 52C29.8 52 28.71 53.65 29.58 55.68Z"/> </g></svg>`;
+const MOOD_MAP={happy:'idle',idle:'idle',thinking:'thinking',wow:'correct',correct:'correct',oops:'wrong',wrong:'wrong'};
+document.body.insertAdjacentHTML('afterbegin',KRON_DEFS);
+function kronSVG(cls='',m='idle'){return `<svg class="kron kron-head ${cls} mood-${MOOD_MAP[m]||'idle'}" viewBox="80 -23 352 352" role="img" aria-label="Kron">${KRON_HEAD}</svg>`}
+function initKronHeads(root = document) {
+  root.querySelectorAll("svg.kron-head:not([data-kh])").forEach(svg => {
+    svg.setAttribute("data-kh", "1");
+    const HX=256, HY=191, K=150, ZE=0.30, STAG=42, KICK=190, D=2*ZE*Math.sqrt(K);
+    const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const qs=[...svg.querySelectorAll(".quill")].map(el=>{
+      const cx=+el.dataset.cx, cy=+el.dataset.cy, ry=+el.dataset.ry, rest=+el.dataset.rest, a=rest*Math.PI/180;
+      const e1={x:cx-ry*Math.sin(a), y:cy+ry*Math.cos(a)}, e2={x:cx+ry*Math.sin(a), y:cy-ry*Math.cos(a)};
+      const b = Math.hypot(e1.x-HX,e1.y-HY) < Math.hypot(e2.x-HX,e2.y-HY) ? e1 : e2;
+      return {el,cx,cy,rest,bx:b.x,by:b.y,th:0,om:0,kickAt:0,kicked:true,order:0};
+    });
+    qs.slice().sort((p,q)=>p.cx-q.cx).forEach((p,i)=>p.order=i);
+    let last=performance.now();
+    function trigger(){ const now=performance.now(); qs.forEach(q=>{ q.kickAt=now+q.order*STAG; q.kicked=false; }); }
+    svg._kick=trigger; svg.style.cursor="pointer";
+    svg.addEventListener("click",e=>{ e.stopPropagation(); trigger(); });
+    function frame(t){
+      if(!svg.isConnected) return;
+      let dt=(t-last)/1000; last=t; if(dt>0.05)dt=0.05;
+      const sub=5, h=dt/sub;
+      for(const q of qs){
+        if(!q.kicked && t>=q.kickAt){ q.om+=-KICK; q.kicked=true; }
+        for(let s=0;s<sub;s++){ const f=-K*q.th - D*q.om; q.om+=f*h; q.th+=q.om*h; }
+        const breeze = reduce?0:0.85*Math.sin(t/950 + q.order*0.6);
+        q.el.setAttribute("transform","rotate("+(q.th+breeze).toFixed(2)+" "+q.bx.toFixed(1)+" "+q.by.toFixed(1)+") rotate("+q.rest+" "+q.cx+" "+q.cy+")");
+      }
+      requestAnimationFrame(frame);
+    }
+    requestAnimationFrame(frame);
+    if(!reduce) trigger();
+  });
+}
+
+new MutationObserver(()=>initKronHeads()).observe(document.body,{childList:true,subtree:true});
+let baseMood='idle',moodT;
+function setCoach(m){const svg=document.querySelector('#coachKron svg.kron');if(!svg)return;svg.setAttribute('class','kron kron-head mood-'+MOOD_MAP[m]);if((m==='wow'||m==='correct')&&svg._kick)svg._kick()}
+function mood(m,ms=1400){setCoach(m);clearTimeout(moodT);if(MOOD_MAP[m]!==baseMood)moodT=setTimeout(()=>setCoach(baseMood),ms)}
+function setBaseMood(m){baseMood=MOOD_MAP[m];clearTimeout(moodT);setCoach(baseMood)}
+$('#brandKron').insertAdjacentHTML('afterbegin',KRON_LOGO);
+$('#coachKron').innerHTML=kronSVG();
+
+let px=innerWidth/2,py=innerHeight*0.3,eyeRaf=0;
+function trackEyes(){eyeRaf=0;document.querySelectorAll('svg.kron').forEach(svg=>{const r=svg.getBoundingClientRect();if(!r.width)return;const k=r.width/100;
+  svg.querySelectorAll('.eye').forEach(eye=>{const cx=r.left+eye.dataset.cx*k,cy=r.top+eye.dataset.cy*k,dx=px-cx,dy=py-cy,d=Math.hypot(dx,dy)||1,m=Math.min(3.2,d/40);
+  eye.querySelector('.pupil').setAttribute('transform',`translate(${(dx/d*m).toFixed(2)} ${(dy/d*m).toFixed(2)})`)})})}
+function lookAt(x,y){px=x;py=y;if(!eyeRaf)eyeRaf=requestAnimationFrame(trackEyes)}
+addEventListener('pointermove',e=>lookAt(e.clientX,e.clientY));
+addEventListener('pointerdown',e=>lookAt(e.clientX,e.clientY));
+
+/* ---------- sound ---------- */
+let AC;
+function ac(){if(!AC){try{AC=new(window.AudioContext||window.webkitAudioContext)()}catch(e){}}if(AC&&AC.state==='suspended')AC.resume();return AC}
+function tone(f,dur=.12,type='sine',vol=.14,slide=0,delay=0){const c=ac();if(!c||S.muted)return;const t=c.currentTime+delay,o=c.createOscillator(),g=c.createGain();
+  o.type=type;o.frequency.setValueAtTime(f,t);if(slide)o.frequency.exponentialRampToValueAtTime(f*slide,t+dur);
+  g.gain.setValueAtTime(.0001,t);g.gain.exponentialRampToValueAtTime(vol,t+.012);g.gain.exponentialRampToValueAtTime(.0001,t+dur);o.connect(g).connect(c.destination);o.start(t);o.stop(t+dur+.03)}
+const sfx={
+  place:()=>tone(330,.09,'sine',.1,1.7), back:()=>tone(440,.08,'sine',.08,.6),
+  wrong:()=>{tone(210,.15,'square',.05);tone(160,.2,'square',.045,1,.09)},
+  ding:()=>{tone(660,.14,'triangle',.13);tone(990,.26,'triangle',.13,1,.1)},
+  whoosh:()=>tone(220,.28,'sine',.06,3.2),
+  pop:k=>{tone(480+k*110,.13,'triangle',.16,2.3);tone(1180+k*110,.2,'sine',.08,1,.07)},
+  win:()=>[523,659,784,1046,1318].forEach((f,i)=>tone(f,.26,'triangle',.12,1,i*.1))
+};
+let voice=null;
+function pickVoice(){if(!('speechSynthesis' in window))return;const vs=speechSynthesis.getVoices();
+  voice=vs.find(v=>/en[-_]US/i.test(v.lang)&&/Samantha|Ava|Allison|Google US/i.test(v.name))||vs.find(v=>/en[-_]US/i.test(v.lang))||vs.find(v=>/^en/i.test(v.lang))||null}
+if('speechSynthesis' in window){pickVoice();speechSynthesis.onvoiceschanged=pickVoice}
+function say(text,rate=.85){if(!('speechSynthesis' in window)||S.muted)return;try{speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(text);u.lang='en-US';if(voice)u.voice=voice;u.rate=rate;u.pitch=1.05;speechSynthesis.speak(u)}catch(e){}}
+
+/* ---------- particles ---------- */
+const cv=$('#fx'),cx=cv.getContext('2d');let parts=[],running=false;
+function sizeCanvas(){const d=devicePixelRatio||1;cv.width=innerWidth*d;cv.height=innerHeight*d;cx.setTransform(d,0,0,d,0,0)}
+sizeCanvas();
+function burst(x,y,colors,n=36,power=1){if(reduced)n=Math.min(n,10);for(let i=0;i<n;i++){const a=Math.random()*Math.PI*2,sp=(3+Math.random()*6)*power;
+  parts.push({x,y,vx:Math.cos(a)*sp,vy:Math.sin(a)*sp-3*power,r:3+Math.random()*5,c:colors[i%colors.length],life:1,rot:Math.random()*6,vr:(Math.random()-.5)*.4,sh:i%3})}
+  if(!running){running=true;requestAnimationFrame(loop)}}
+function loop(){cx.clearRect(0,0,innerWidth,innerHeight);for(const p of parts){p.vy+=.28;p.vx*=.985;p.x+=p.vx;p.y+=p.vy;p.life-=.015;p.rot+=p.vr;
+  cx.save();cx.globalAlpha=Math.max(0,p.life);cx.fillStyle=p.c;cx.translate(p.x,p.y);cx.rotate(p.rot);
+  if(p.sh===0){cx.beginPath();cx.arc(0,0,p.r,0,7);cx.fill()}else if(p.sh===1){cx.fillRect(-p.r,-p.r/2,p.r*2,p.r)}else{cx.beginPath();cx.roundRect?cx.roundRect(-p.r,-p.r,p.r*2,p.r*2,p.r*.5):cx.rect(-p.r,-p.r,p.r*2,p.r*2);cx.fill()}cx.restore()}
+  parts=parts.filter(p=>p.life>0&&p.y<innerHeight+40);if(parts.length)requestAnimationFrame(loop);else{running=false;cx.clearRect(0,0,innerWidth,innerHeight)}}
+
+/* ---------- helpers ---------- */
+function flip(el,first,{d=420,e='cubic-bezier(.34,1.4,.64,1)'}={}){
+  const last=el.getBoundingClientRect();if(!first||reduced||!last.width)return Promise.resolve();
+  el.style.transformOrigin='0 0';
+  return el.animate([{transform:`translate(${first.left-last.left}px,${first.top-last.top}px) scale(${first.width/last.width},${first.height/last.height})`},{transform:'none'}],{duration:d,easing:e}).finished.catch(()=>{})}
+let toastT;
+function toast(msg){const t=$('#toast');t.textContent=msg;t.classList.add('show');clearTimeout(toastT);toastT=setTimeout(()=>t.classList.remove('show'),2600)}
+function coach(text,label='KRON'){const b=$('#bubble');b.querySelector('small').textContent=label;$('#bubbleText').textContent=text;b.classList.remove('pop');void b.offsetWidth;b.classList.add('pop')}
+function wiggle(el){el.animate([{rotate:'0deg'},{rotate:'-7deg'},{rotate:'6deg'},{rotate:'-3deg'},{rotate:'0deg'}],{duration:380,easing:'ease-out'})}
+function setProgress(){const done=S.total?S.total-S.queue.length-(S.current?1:0):0;$('#bar').style.width=(S.total?done/S.total*100:0)+'%';$('#count').textContent=`${done}/${S.total}`}
+
+/* ---------- game ---------- */
+function newGame(autoPick){
+  const book=BOOKS[S.book];const max=book.words.length-book.words.length%3;const n=Math.min(S.count,max);
+  const picked=shuffle(book.words).slice(0,n);const cols=shuffle(COLORS);
+  const items=picked.map((w,i)=>({id:'k'+Date.now().toString(36)+i,w,color:cols[Math.floor(i/3)%cols.length],review:false}));
+  Object.assign(S,{queue:shuffle(items),tray:[],cleared:0,total:n,current:null,mistakes:0,solved:0,listens:0,t0:Date.now(),popCombo:0,busy:false,locked:false});
+  $('#bookName').textContent=book.name;
+  document.querySelectorAll('#belt .bcard').forEach(el=>el.remove());
+  renderBelt(true);renderTray();setProgress();idle(true);
+  if(autoPick)setTimeout(()=>{const first=S.queue[0];const el=first&&$(`#belt [data-id="${first.id}"]`);if(el&&!S.current)pick(first,el,true)},Math.min(S.queue.length,6)*110+900);
+}
+
+function beltMetrics(){const belt=$('#belt');const W=belt.clientWidth;const cw=parseFloat(getComputedStyle(belt).getPropertyValue('--cw'))||90;const gap=10,pad=12;
+  return{W,cw,gap,pad,vis:Math.max(3,Math.floor((W-pad*2-14+gap)/(cw+gap)))}}
+function renderBelt(feed){
+  const belt=$('#belt'),m=beltMetrics();
+  belt.querySelectorAll('.bcard').forEach(el=>{if(!S.queue.some(q=>q.id===el.dataset.id))el.remove()});
+  S.queue.forEach((it,i)=>{
+    let el=belt.querySelector(`[data-id="${it.id}"]`);
+    if(!el){el=makeBeltCard(it);el.style.setProperty('--x',(m.W+30)+'px');belt.insertBefore(el,belt.querySelector('.roller'));void el.offsetWidth}
+    el.classList.toggle('review',it.review);
+    const x=i<m.vis?m.pad+i*(m.cw+m.gap):m.W+30+(i-m.vis)*(m.cw+m.gap);
+    el.style.transitionDelay=feed?(Math.min(i,m.vis)*110)+'ms':'0ms';
+    el.style.setProperty('--x',x+'px');el.tabIndex=i<m.vis?0:-1;
+  });
+  if(feed)setTimeout(()=>belt.querySelectorAll('.bcard').forEach(el=>el.style.transitionDelay='0ms'),1400);
+  $('#beltCount').textContent='';
+  updateHints();
+}
+function makeBeltCard(it){const b=document.createElement('button');b.className=`bcard c-${it.color}`;b.dataset.id=it.id;
+  b.setAttribute('aria-label',`${COLOR_ZH[it.color]}卡片：${it.w.zh}，${it.w.syl.length} 个音节`);
+  b.innerHTML=`<span class="bc-emoji">${it.w.e}</span><span class="bc-zh">${it.w.zh}</span><span class="bc-dots">${'<i></i>'.repeat(it.w.syl.length)}</span>`;
+  b.onclick=()=>{const q=S.queue.find(x=>x.id===it.id);if(q)pick(q,b)};return b}
+function trayCounts(){const c={};S.tray.forEach(t=>c[t.color]=(c[t.color]||0)+1);return c}
+function updateHints(){const c=trayCounts();document.querySelectorAll('#belt .bcard').forEach(el=>{const it=S.queue.find(q=>q.id===el.dataset.id);if(!it)return;
+  el.classList.toggle('want',c[it.color]===1);el.classList.toggle('want2',c[it.color]>=2)})}
+
+async function pick(it,el,auto){
+  ac();
+  if(S.busy||S.current||S.locked){wiggle(el);if(S.current){coach('先把手上这个词拼完，再拿下一张～');mood('oops',900)}return}
+  S.busy=true;if(!auto)sfx.whoosh();
+  const r=el.getBoundingClientRect();
+  const ghost=el.cloneNode(true);ghost.classList.remove('want','want2');
+  Object.assign(ghost.style,{position:'fixed',left:r.left+'px',top:r.top+'px',width:r.width+'px',height:r.height+'px',transform:'none',transition:'none',zIndex:50,margin:0});
+  document.body.appendChild(ghost);el.remove();
+  S.queue=S.queue.filter(q=>q!==it);renderBelt();
+  S.current=it;renderWork();
+  const t=$('#meaning').getBoundingClientRect();
+  await ghost.animate([{transform:'none',opacity:1},{transform:`translate(${t.left-r.left}px,${t.top-r.top}px) scale(.45) rotate(-10deg)`,opacity:0}],{duration:reduced?1:520,easing:'cubic-bezier(.55,0,.3,1)'}).finished.catch(()=>{});
+  ghost.remove();S.busy=false;
+}
+
+function distractor(w){const all=Object.values(BOOKS).flatMap(b=>b.words).filter(x=>x!==w);
+  const opts=[];all.forEach(x=>x.syl.forEach((s,i)=>{if(!w.syl.includes(s))opts.push({t:s,say:x.say[i]})}));return opts.length?[opts[Math.random()*opts.length|0]]:[]}
+
+function renderWork(){
+  const it=S.current,w=it.w,work=$('#work');
+  work.className=`work c-${it.color}`;
+  const pool=shuffle([...w.syl.map((s,i)=>({t:s,say:w.say[i]})),...distractor(w)]);
+  work.innerHTML=`<div class="meaning" id="meaning"><span class="m-emoji">${w.e}</span><b>${w.zh}</b></div>
+  <div class="slots" id="slots">${w.syl.map(()=>'<div class="slot"></div>').join('')}</div>
+  <div class="pool" id="pool">${pool.map((p,i)=>`<div class="cell"><button class="brick" style="--i:${i}" data-t="${p.t}" data-say="${p.say}" aria-label="积木 ${p.t}">${p.t}</button></div>`).join('')}</div>
+  <div class="actions"><button class="btn" id="hearWord">${IC.speaker}听整词</button><button class="btn" id="resetBricks">${IC.undo}全部放回</button></div>`;
+  work.querySelectorAll('.cell').forEach(c=>{const b=c.firstElementChild;c.style.width=b.offsetWidth+'px';b._home=c;b.onclick=()=>onBrick(b)});
+  $('#hearWord').onclick=()=>{ac();S.listens++;say(w.w,.7)};
+  $('#resetBricks').onclick=()=>{document.querySelectorAll('#slots .brick').forEach(b=>moveTo(b,b._home));sfx.back()};
+  coach(w.hint,'KRON');setBaseMood('thinking');
+}
+function moveTo(b,target){const f=b.getBoundingClientRect();target.appendChild(b);b.style.animation='none';flip(b,f)}
+function onBrick(b){
+  if(S.locked||!S.current)return;ac();
+  say(b.dataset.say,.72);if(!reduced)b.animate([{scale:'1'},{scale:'1.12',rotate:'-3deg',offset:.3},{scale:'1'}],{duration:380,easing:'cubic-bezier(.34,1.8,.64,1)'});
+  if(b.parentElement.classList.contains('slot')){moveTo(b,b._home);sfx.back();return}
+  const slot=[...document.querySelectorAll('#slots .slot')].find(s=>!s.firstElementChild);if(!slot)return;
+  moveTo(b,slot);sfx.place();
+  if([...document.querySelectorAll('#slots .slot')].every(s=>s.firstElementChild)){S.locked=true;setTimeout(check,560)}
+}
+async function check(){
+  const slots=[...document.querySelectorAll('#slots .slot')],w=S.current.w;
+  const got=slots.map(s=>s.firstElementChild&&s.firstElementChild.dataset.t);
+  if(got.every((t,i)=>t===w.syl[i]))return success();
+  S.mistakes++;sfx.wrong();const box=$('#slots');box.classList.remove('shake');void box.offsetWidth;box.classList.add('shake');
+  coach('差一点！点一点积木听听它的声音，再排一排～');mood('oops');
+  await wait(440);slots.forEach((s,i)=>{const b=s.firstElementChild;if(b&&b.dataset.t!==w.syl[i])moveTo(b,b._home)});S.locked=false;
+}
+async function success(){
+  const it=S.current;S.solved++;sfx.ding();
+  const work=$('#work'),box=$('#slots');work.classList.add('done');box.classList.add('merged');
+  setTimeout(()=>say(it.w.w,.8),200);
+  const r=box.getBoundingClientRect();burst(r.left+r.width/2,r.top+r.height/2,[cssVar('--'+it.color),cssVar('--kron'),'#ffffff'],30,.9);
+  coach(PRAISE[Math.random()*PRAISE.length|0]);mood('wow',1800);
+  await wait(reduced?300:1150);showReveal();S.locked=false;
+}
+function markSent(s){return s.replace(/\{([^}]+)\}/g,'<mark>$1</mark>')}
+function plainSent(s){return s.replace(/[{}]/g,'')}
+function showReveal(){
+  const it=S.current,w=it.w,work=$('#work');
+  work.className=`work c-${it.color}`;
+  const sparks=[[12,18],[30,10],[52,22],[86,64],[70,14],[92,30]].map(([x,y],i)=>`<i class="spark" style="left:${x}%;top:${y}%;animation-delay:${i*.3}s"></i>`).join('');
+  work.innerHTML=`<div class="reveal">
+    <div class="scene">${sparks}<span class="scene-emoji">${w.e}</span>${kronSVG('','wow')}<span class="scene-say">${w.w}!</span><span class="scene-tag">插画位 · Kron 主角场景</span></div>
+    <div class="rv-head"><div class="rv-word" aria-label="${w.w}">${w.syl.map(s=>`<span>${s}</span>`).join('<i>·</i>')}</div><button class="round" id="sayWord" aria-label="读单词">${IC.speaker}</button></div>
+    <div class="rv-meta"><span class="ipa">${w.ipa}</span><span class="zh">${w.zh}</span></div>
+    <div class="rv-sent"><div><small>绕口令例句</small><p>${markSent(w.s)}</p></div><button class="round sm" id="saySent" aria-label="读例句">${IC.speaker}</button></div>
+    <button class="btn primary wide" id="collect">收进托盘</button></div>`;
+  $('#sayWord').onclick=()=>{ac();say(w.w,.8)};
+  $('#saySent').onclick=()=>{ac();say(plainSent(w.s),.82)};
+  $('#collect').onclick=collect;
+  const tc=trayCounts()[it.color]||0;
+  coach(tc>=2?`托盘里已经有 ${tc} 张${COLOR_ZH[it.color]}，收进去就能撞掉！`:'听听例句，标亮的都是同一个音哦。读顺了就收进托盘。');
+  lookAt(innerWidth,innerHeight*.35);
+}
+async function collect(){
+  if(S.locked)return;S.locked=true;ac();
+  const it=S.current,from=$('.rv-word').getBoundingClientRect();
+  let idx=-1;for(let i=S.tray.length-1;i>=0;i--)if(S.tray[i].color===it.color){idx=i;break}
+  if(idx<0)S.tray.push(it);else S.tray.splice(idx+1,0,it);
+  sfx.whoosh();renderTray(it.id,from);
+  S.current=null;setProgress();setBaseMood('idle');idle();
+  await wait(reduced?50:600);await resolveTray();S.locked=false;
+}
+function renderTray(newId,newFrom){
+  const tray=$('#tray'),prev={};
+  tray.querySelectorAll('.tcard').forEach(el=>prev[el.dataset.id]=el.getBoundingClientRect());
+  const n=Math.max(TRAY,S.tray.length);tray.innerHTML='';tray.style.setProperty('--n',n);
+  for(let i=0;i<n;i++){const s=document.createElement('div');s.className='tslot'+(i>=TRAY?' over':'');const it=S.tray[i];
+    if(it){const c=document.createElement('div');c.className=`tcard c-${it.color}`;c.dataset.id=it.id;c.innerHTML=`<span class="tc-e">${it.w.e}</span><span class="tc-w">${it.w.w}</span>`;s.appendChild(c)}
+    tray.appendChild(s)}
+  tray.querySelectorAll('.tcard').forEach(el=>{const isNew=el.dataset.id===newId;flip(el,isNew?newFrom:prev[el.dataset.id],{d:isNew?650:380,e:isNew?'cubic-bezier(.3,1.25,.5,1)':undefined})});
+  tray.classList.toggle('warn',S.tray.length>=TRAY-1);
+  $('#trayCount').textContent=`${S.tray.length}/${TRAY}`;updateHints();
+}
+async function resolveTray(){
+  for(;;){
+    const c=trayCounts();const col=Object.keys(c).find(k=>c[k]>=3);if(!col)break;
+    const trio=S.tray.filter(t=>t.color===col).slice(0,3);
+    const els=trio.map(t=>$(`#tray [data-id="${t.id}"]`)),rects=els.map(e=>e.getBoundingClientRect()),mid=rects[1];
+    await Promise.all(els.map((el,i)=>{el.style.transformOrigin='50% 50%';el.style.zIndex=5;const dx=mid.left-rects[i].left;
+      return el.animate([{transform:'none'},{transform:`translate(${-dx*.18}px,-10px) scale(1.08) rotate(${(i-1)*-8}deg)`,offset:.4},{transform:`translate(${dx}px,0) scale(1.2)`}],
+        {duration:reduced?1:420,easing:'cubic-bezier(.6,0,.35,1)',fill:'forwards'}).finished.catch(()=>{})}));
+    const x=mid.left+mid.width/2,y=mid.top+mid.height/2;
+    sfx.pop(S.popCombo);burst(x,y,[cssVar('--'+col),cssVar('--'+col+'-d'),'#ffffff',cssVar('--kron')],52,1.25);
+    const ring=document.createElement('div');ring.className=`ring c-${col}`;ring.style.left=x+'px';ring.style.top=y+'px';document.body.appendChild(ring);setTimeout(()=>ring.remove(),600);
+    S.popCombo++;if(S.popCombo>1){const cb=document.createElement('div');cb.className='combo';cb.textContent=`连消 ×${S.popCombo}`;cb.style.left=x+'px';cb.style.top=(y-30)+'px';document.body.appendChild(cb);setTimeout(()=>cb.remove(),1000)}
+    S.tray=S.tray.filter(t=>!trio.includes(t));S.cleared+=3;
+    renderTray();setProgress();
+    coach(`砰！三张${COLOR_ZH[col]}撞掉了：${trio.map(t=>t.w.w).join('、')}`);mood('wow');
+    await wait(320);
+  }
+  if(S.tray.length>TRAY){
+    const out=S.tray.shift();out.review=true;S.queue.push(out);renderTray();renderBelt();setProgress();
+    toast(`托盘满了，「${out.w.w}」回到传送带，等下再拼一次`);
+  }
+  if(S.cleared>=S.total){setTimeout(win,600);return}
+}
+function idle(first){
+  const work=$('#work');work.className='work idle';
+  work.innerHTML=`<div class="idle-art">${IC.up}</div><p class="idle-t">挑一张</p>`;
+  if(first){coach('嗨，我是 Kron！把音节积木拼起来，单词就学会了。');return}
+  const c=trayCounts();const two=Object.keys(c).find(k=>c[k]===2);
+  if(two)coach(`托盘里有两张${COLOR_ZH[two]}了，再挑一张${COLOR_ZH[two]}卡片就能撞掉！闪光的就是。`);
+  else if(S.tray.length>=TRAY-1)coach('托盘快满了，挑和托盘同色的卡片吧～');
+  else coach('挑一张喜欢的卡片吧。想消得快，就挑和托盘同色的。');
+}
+function win(){
+  sfx.win();burst(innerWidth/2,innerHeight*.35,[cssVar('--berry'),cssVar('--sky'),cssVar('--grape'),cssVar('--mint'),cssVar('--kron')],90,1.5);
+  const sec=Math.round((Date.now()-S.t0)/1000),acc=Math.round(S.solved/(S.solved+S.mistakes)*100);
+  openSheet(`<div class="win-kron">${kronSVG('','wow')}</div><h2 style="text-align:center">全部撞掉啦！</h2>
+    <p class="sub" style="text-align:center;margin:0">这一轮学了 ${S.total} 个词，下一轮换一批？</p>
+    <div class="stats"><div class="stat"><b>${Math.floor(sec/60)}:${String(sec%60).padStart(2,'0')}</b><span>用时</span></div><div class="stat"><b>${acc}%</b><span>一次拼对</span></div><div class="stat"><b>${S.mistakes}</b><span>拼错次数</span></div></div>
+    <button class="btn primary wide" data-act="again">再来一轮</button><button class="btn wide" data-act="settings">换词书或数量</button>`,
+    {again:()=>{closeSheet();newGame(false)},settings:()=>{closeSheet();openSettings()}});
+}
+
+/* ---------- sheets ---------- */
+function openSheet(html,acts={}){closeSheet();const bd=document.createElement('div');bd.className='backdrop';bd.id='backdrop';
+  bd.innerHTML=`<div class="sheet" role="dialog" aria-modal="true">${html}</div>`;document.body.appendChild(bd);
+  bd.addEventListener('click',e=>{if(e.target===bd&&acts.dismiss!==false)closeSheet();const a=e.target.closest('[data-act]');if(a&&acts[a.dataset.act])acts[a.dataset.act](a)});
+  const f=bd.querySelector('button');f&&f.focus({preventScroll:true})}
+function closeSheet(){const b=$('#backdrop');b&&b.remove()}
+addEventListener('keydown',e=>{if(e.key==='Escape')closeSheet()});
+function openSettings(){
+  let book=S.book,count=S.count,muted=S.muted;
+  const draw=()=>{const max=BOOKS[book].words.length-BOOKS[book].words.length%3;if(count>max)count=max;
+    openSheet(`<h2>这一轮怎么背？</h2><p class="sub">选好词书和数量，传送带会重新上卡。</p>
+    <div><div class="field-label">词书</div><div class="books">${Object.entries(BOOKS).map(([k,b])=>`<button class="book" data-act="book" data-k="${k}" aria-pressed="${k===book}"><span class="bk-ic">${b.icon}</span><span><b>${b.name}</b><span>${b.desc}</span></span></button>`).join('')}</div></div>
+    <div><div class="field-label">本轮单词数</div><div class="seg">${[6,9,12].map(n=>`<button data-act="count" data-n="${n}" aria-pressed="${n===count}" ${n>max?'disabled':''}>${n}</button>`).join('')}</div></div>
+    <div class="toggle-row"><span>声音</span><button class="switch" role="switch" data-act="mute" aria-checked="${!muted}" aria-label="声音"></button></div>
+    <button class="btn primary wide" data-act="go">开始新一轮</button>`,
+    {book:a=>{book=a.dataset.k;draw()},count:a=>{count=+a.dataset.n;draw()},mute:()=>{muted=!muted;draw()},
+     go:()=>{S.book=book;S.count=count;S.muted=muted;savePrefs();closeSheet();newGame(false)}})};
+  draw();
+}
+$('#openSettings').onclick=openSettings;$('#bookName').onclick=openSettings;
+addEventListener('resize',()=>{sizeCanvas();renderBelt()});
+
+newGame(true);
+</script>
+
+</body></html>
