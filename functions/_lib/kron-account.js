@@ -11,6 +11,7 @@
 //   activation_codes          激活码：解锁哪些产品（products）、有效天数、绑定的账号、到期时间
 //   sessions                  和用户名密码登录共用的会话表
 //   login_failure_windows     和用户名密码登录共用的失败计数表
+//   entitlements              会员时段（邀请奖励等，见 0008_invites.sql），权限和激活码取并集
 
 export const SESSION_COOKIE = "__Host-ke_session";
 const DAY_MS = 86_400_000;
@@ -97,11 +98,11 @@ export function covers(products, want) {
 // ---------- 激活码登录 ----------
 const userColumns = "u.id, u.username, u.display_name, u.role, u.phone, u.is_active";
 
-async function getUserByPhone(db, phone) {
+export async function getUserByPhone(db, phone) {
   return db.prepare(`SELECT ${userColumns} FROM users u WHERE u.phone = ?1 LIMIT 1`).bind(phone).first();
 }
 
-async function createPhoneUser(db, phone, now) {
+export async function createPhoneUser(db, phone, now) {
   const id = crypto.randomUUID();
   const t = iso(now);
   // 激活码账号没有密码：password_* 留空，credential_digest 为 NULL，用户名密码登录永远对不上
@@ -154,16 +155,36 @@ export async function activeCodes(db, userId, now = Date.now()) {
   return (results || []).map(r => ({ code: r.code, products: r.products.split(","), expiresAt: r.expires_at }));
 }
 
+/** 账号还没结束的会员时段（entitlements：邀请奖励、活动赠送……），按开始时间排；顺延的时段可能还没开始 */
+export async function activeEntitlements(db, userId, now = Date.now()) {
+  const { results } = await db.prepare(
+    "SELECT products, starts_at, ends_at FROM entitlements WHERE user_id = ?1 AND revoked_at IS NULL AND ends_at > ?2 ORDER BY starts_at"
+  ).bind(userId, iso(now)).all();
+  return (results || []).map(r => ({ products: r.products.split(","), startsAt: r.starts_at, endsAt: r.ends_at }));
+}
+
+/** 账号此刻能用的全部产品：有效激活码 + 正在生效的会员时段 */
+export async function activeProducts(db, userId, now = Date.now()) {
+  const codes = (await activeCodes(db, userId, now)).flatMap(c => c.products);
+  const ents = (await activeEntitlements(db, userId, now)).filter(e => Date.parse(e.startsAt) <= now).flatMap(e => e.products);
+  return [...new Set([...codes, ...ents])];
+}
+
 /**
  * 账号对某个产品的权限：{ ok, expiresAt }。
- * owner（老师）和 kron 账号永远有权限；其余看有效激活码。expiresAt 取覆盖这个产品的激活码里最晚的那个，null = 永久。
+ * owner（老师）和 kron 账号永远有权限；其余看有效激活码和会员时段。
+ * expiresAt：激活码最晚到期日，再接上首尾相连的会员时段（顺延的邀请奖励）之后的结束时间；null = 永久。
  */
 export async function access(db, auth, product, now = Date.now()) {
   if (!auth) return { ok: false };
   if (auth.role === "owner" || auth.username === "kron") return { ok: true, expiresAt: null, owner: true };
   const hits = (await activeCodes(db, auth.userId, now)).filter(c => covers(c.products, product));
-  if (!hits.length) return { ok: false };
-  return { ok: true, expiresAt: hits.some(c => !c.expiresAt) ? null : hits.map(c => c.expiresAt).sort().pop() };
+  if (hits.some(c => !c.expiresAt)) return { ok: true, expiresAt: null };
+  let until = hits.length ? Math.max(...hits.map(c => Date.parse(c.expiresAt))) : now;
+  for (const e of await activeEntitlements(db, auth.userId, now)) {
+    if (covers(e.products, product) && Date.parse(e.startsAt) <= until && Date.parse(e.endsAt) > until) until = Date.parse(e.endsAt);
+  }
+  return until > now ? { ok: true, expiresAt: iso(until) } : { ok: false };
 }
 
 // ---------- 会话（和 kronenglish 用户名密码登录同一张 sessions 表） ----------
@@ -206,21 +227,21 @@ export async function revokeSession(db, tokenHash) {
 }
 
 // ---------- 防暴力尝试：同一网络 15 分钟内输错 20 次就先停 ----------
-const FAIL_WINDOW_S = 15 * 60, FAIL_LIMIT = 20;
-const ipOf = request => request.headers.get("CF-Connecting-IP") || "unknown";
-async function ipKey(request, env) {
-  return env.AUDIT_HASH_KEY ? hmac(`code-login:${ipOf(request)}`, env.AUDIT_HASH_KEY) : sha256(`code-login:${ipOf(request)}`);
+export const FAIL_WINDOW_S = 15 * 60, FAIL_LIMIT = 20;
+export const ipOf = request => request.headers.get("CF-Connecting-IP") || "unknown";
+export async function ipKey(request, env, scope = "code-login") {
+  return env.AUDIT_HASH_KEY ? hmac(`${scope}:${ipOf(request)}`, env.AUDIT_HASH_KEY) : sha256(`${scope}:${ipOf(request)}`);
 }
-async function failures(db, key, now) {
-  const r = await db.prepare("SELECT window_started_at, failure_count FROM login_failure_windows WHERE scope = 'code-network' AND key_hash = ?1").bind(key).first();
+export async function failures(db, key, now, scope = "code-network") {
+  const r = await db.prepare("SELECT window_started_at, failure_count FROM login_failure_windows WHERE scope = ?2 AND key_hash = ?1").bind(key, scope).first();
   return r && now / 1000 - r.window_started_at < FAIL_WINDOW_S ? r.failure_count : 0;
 }
-async function recordFailure(db, key, now) {
+export async function recordFailure(db, key, now, scope = "code-network") {
   const s = Math.floor(now / 1000);
-  const r = await db.prepare("SELECT window_started_at, failure_count FROM login_failure_windows WHERE scope = 'code-network' AND key_hash = ?1").bind(key).first();
+  const r = await db.prepare("SELECT window_started_at, failure_count FROM login_failure_windows WHERE scope = ?2 AND key_hash = ?1").bind(key, scope).first();
   const inWin = r && s - r.window_started_at < FAIL_WINDOW_S;
-  await db.prepare("INSERT INTO login_failure_windows (scope, key_hash, window_started_at, failure_count) VALUES ('code-network', ?1, ?2, ?3) ON CONFLICT(scope, key_hash) DO UPDATE SET window_started_at = excluded.window_started_at, failure_count = excluded.failure_count")
-    .bind(key, inWin ? r.window_started_at : s, inWin ? r.failure_count + 1 : 1).run();
+  await db.prepare("INSERT INTO login_failure_windows (scope, key_hash, window_started_at, failure_count) VALUES (?4, ?1, ?2, ?3) ON CONFLICT(scope, key_hash) DO UPDATE SET window_started_at = excluded.window_started_at, failure_count = excluded.failure_count")
+    .bind(key, inWin ? r.window_started_at : s, inWin ? r.failure_count + 1 : 1, scope).run();
 }
 
 /** 写操作只接受同源的 JSON 请求（防 CSRF） */
@@ -230,7 +251,7 @@ export function sameOriginJson(request) {
   if ((request.headers.get("Content-Type") || "").split(";")[0].trim().toLowerCase() !== "application/json") return json({ error: "Unsupported media type" }, 415);
   return null;
 }
-async function readJson(request, max = 4096) {
+export async function readJson(request, max = 4096) {
   const text = await request.text();
   if (enc.encode(text).byteLength > max) return null;
   try { return JSON.parse(text); } catch { return null; }
