@@ -45,9 +45,6 @@ def tts(text, key, voice, model, speed):
             raise
 
 
-PLAIN = False
-
-
 def phon(arpa):
     return f'<|phoneme_start|>{arpa}<|phoneme_end|>'
 
@@ -60,7 +57,6 @@ def main():
     ap.add_argument('--out', default=os.path.join(os.path.dirname(__file__), '..', 'demo', 'audio-fish'))
     ap.add_argument('--only', type=int, help='只跑前 N 个词（试听用）')
     ap.add_argument('--words', nargs='*', help='只跑这些词')
-    ap.add_argument('--plain', action='store_true', help='不用音标标签，直接送拼写（对比用）')
     ap.add_argument('--speed', type=float, default=0.9)
     a = ap.parse_args()
     key = api_key()
@@ -78,7 +74,8 @@ def main():
             path = os.path.join(a.out, name)
             if os.path.exists(path) and os.path.getsize(path) > 0:
                 continue
-            open(path, 'wb').write(tts(text, key, a.voice, a.model, a.speed)); made += 1
+            audio = tts(text, key, a.voice, a.model, a.speed)
+            open(path, 'wb').write(audio); made += 1
         print(f'{w}: {len(jobs)} 段', flush=True)
     print(f'新生成 {made} 段 → {a.out}')
 
