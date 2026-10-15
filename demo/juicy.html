@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kron Word 果冻版</title>
+<link rel="stylesheet" href="base.css">
+<style>
+  /* 版本 A · 果冻糖果：浅色、整张卡片是一颗果冻 */
+  :root {
+    --bg: #FFF8EE; --surface: #FFFFFF; --text: #1F2430; --sub: #8A8F9C; --accent: #FF7A45;
+    --track: #EFE7DA; --progress: linear-gradient(90deg, #7AE03A, #58CC02);
+    --belt: #3A3F4B; --belt-edge: #23262E; --belt-line: rgba(255,255,255,.08);
+    --tile-bg: #FFFFFF; --tile-text: #1F2430; --tile-edge: #E2D8C8; --tile-border: #EFE7DA;
+    --slot-zone: #F7EEDF; --slot-line: #DCCFBA;
+    --good-bg: #D7FFB8; --good-text: #2E7D00; --good-edge: #58A700; --bad-bg: #FFE1E1; --bad: #EA2B2B;
+    --mark-bg: #FFE27A; --mark-text: inherit;
+    --cta: #58CC02; --cta-text: #fff; --cta-edge: #46A302;
+    --tray-bg: rgba(255,255,255,.75); --tray-line: #EFE7DA; --tray-slot: #F3EADB;
+    --scene: radial-gradient(circle at 30% 30%, #FFF3C4, #FFD6E7 60%, #CDEBFF);
+    --pill-shadow: 0 2px 0 #EADFCC; --bubble-shadow: 0 3px 0 #EADFCC; --btn-shadow: 0 3px 0 #E2D8C8;
+    --c1: #FF4B6E; --c1e: #D62750; --c2: #1CB0F6; --c2e: #0E8AC7; --c3: #FFC21A; --c3e: #E29A00;
+    --confetti: #FF4B6E, #1CB0F6, #FFC21A, #58CC02, #CE82FF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #17151A; --surface: #24212A; --text: #F4F1EC; --sub: #9C97A6; --track: #332F3A;
+      --tile-bg: #2E2A35; --tile-text: #F4F1EC; --tile-edge: #15131A; --tile-border: #3A3542;
+      --slot-zone: #201D25; --slot-line: #4A4452; --tray-bg: rgba(30,27,35,.85); --tray-line: #332F3A; --tray-slot: #2A2630;
+      --pill-shadow: 0 2px 0 #0F0E12; --bubble-shadow: 0 3px 0 #0F0E12; --btn-shadow: 0 3px 0 #0F0E12;
+      --good-bg: #234012; --good-text: #A6F06B; --bad-bg: #4A1A1E; --mark-bg: #7A5A00;
+      --scene: radial-gradient(circle at 30% 30%, #4A3A1A, #3A2238 60%, #1A2E42);
+    }
+  }
+  :root[data-theme="dark"] { --bg: #17151A; --surface: #24212A; --text: #F4F1EC; --sub: #9C97A6; --track: #332F3A; }
+
+  .c1 { --cc: var(--c1); --ce: var(--c1e); } .c2 { --cc: var(--c2); --ce: var(--c2e); } .c3 { --cc: var(--c3); --ce: var(--c3e); }
+  .card, .flyer.card {
+    color: #fff; background: linear-gradient(180deg, color-mix(in srgb, var(--cc) 80%, #fff), var(--cc));
+    box-shadow: 0 6px 0 var(--ce), inset 0 -6px 10px rgba(0,0,0,.08);
+    text-shadow: 0 1px 0 rgba(0,0,0,.15);
+  }
+  .card::after, .flyer.card::after { content: ""; position: absolute; left: 12px; right: 12px; top: 6px; height: 16px; border-radius: 99px; background: rgba(255,255,255,.4); }
+  .card .dot { display: none; }
+  .tslot.full, .flyer.mini, .learned .mini { background: var(--cc); color: #fff; box-shadow: 0 4px 0 var(--ce); }
+  .tslot .dot, .learned .dot { display: none; }
+  .ring { color: var(--cc); }
+  .study, .reveal { --accent: var(--ce); }
+  .study .slots { box-shadow: inset 0 0 0 3px color-mix(in srgb, var(--cc) 35%, transparent); }
+</style>
+</head>
+<body data-tagline="版本 A · 果冻糖果 · 传送带消消乐">
+  <header id="hud"></header>
+  <section id="belt"><div class="tread"></div><div id="belt-cards"></div></section>
+  <main id="stage"></main>
+  <footer id="tray"></footer>
+  <div id="setup"></div><div id="end"></div><div id="toast"></div>
+  <script src="data.js"></script>
+  <script src="engine.js"></script>
+</body>
+</html>

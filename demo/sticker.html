@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kron Word 贴纸版</title>
+<link rel="stylesheet" href="base.css">
+<style>
+  /* 版本 B · 黑金贴纸：像直播间那种黑色卡包 + 彩色圆点贴纸 */
+  :root {
+    --bg: #0F0F11; --surface: #1C1C20; --text: #F5EBD6; --sub: #8E8778; --accent: #E8C77A;
+    --track: #2A2A2F; --progress: linear-gradient(90deg, #F7DD9B, #D9A94C);
+    --belt: #1A1A1D; --belt-edge: #C9A55B; --belt-line: rgba(232,199,122,.12);
+    --tile-bg: #232328; --tile-text: #F5EBD6; --tile-edge: #000; --tile-border: #3A372F;
+    --slot-zone: #17171A; --slot-line: #4A4535;
+    --good-bg: #2B2414; --good-text: #F7DD9B; --good-edge: #C9A55B; --bad-bg: #3A1418; --bad: #FF5A6A;
+    --mark-bg: #E8C77A; --mark-text: #111;
+    --cta: linear-gradient(180deg, #F7DD9B, #D9A94C); --cta-text: #1A1406; --cta-edge: #8C6A25;
+    --tray-bg: #141416; --tray-line: #2E2B24; --tray-slot: #1D1D21;
+    --scene: repeating-conic-gradient(from 45deg, #1D1D21 0 25%, #26262B 0 50%) 0 0 / 18px 18px;
+    --pill-shadow: 0 0 0 1px #2E2B24; --bubble-shadow: 0 0 0 1px #2E2B24; --btn-shadow: 0 0 0 1px #3A372F;
+    --c1: #FF5FC8; --c2: #2F7BFF; --c3: #FFE81A;
+    --confetti: #FF5FC8, #2F7BFF, #FFE81A, #E8C77A, #4BE36B;
+  }
+  :root[data-theme="light"] { --bg: #F4EFE4; --surface: #fff; --text: #1A1406; }
+  body {
+    background:
+      radial-gradient(ellipse at 50% -10%, rgba(232,199,122,.16), transparent 60%),
+      repeating-linear-gradient(45deg, rgba(255,255,255,.025) 0 6px, transparent 6px 12px),
+      var(--bg);
+  }
+  .c1 { --cc: var(--c1); } .c2 { --cc: var(--c2); } .c3 { --cc: var(--c3); }
+  .card, .flyer.card {
+    color: var(--text); background: linear-gradient(160deg, #26262B, #121214 70%);
+    border: 2px solid #C9A55B; box-shadow: 0 6px 14px rgba(0,0,0,.6), inset 0 1px 0 rgba(255,255,255,.08);
+    padding-top: 22px;
+  }
+  .dot { position: absolute; top: -8px; left: -6px; width: 30px; height: 30px; border-radius: 50%; background: var(--cc);
+    box-shadow: inset -3px -4px 0 rgba(0,0,0,.18), inset 3px 3px 0 rgba(255,255,255,.45), 0 2px 4px rgba(0,0,0,.5); }
+  .card .cn { color: #F7DD9B; }
+  .tslot.full, .flyer.mini, .learned .mini { background: linear-gradient(160deg, #26262B, #121214); color: #F7DD9B; border: 1.5px solid #C9A55B; overflow: visible; padding-top: 10px; }
+  .tslot .dot { width: 20px; height: 20px; top: -6px; left: 50%; margin-left: -10px; }
+  .learned .mini { padding-left: 26px; }
+  .learned .dot { width: 16px; height: 16px; top: 50%; left: 6px; margin-top: -8px; }
+  .ring { color: var(--cc); }
+  .study .slots { box-shadow: inset 0 0 0 2px color-mix(in srgb, var(--cc) 55%, transparent); }
+  .slot.filled, .tile { box-shadow: 0 4px 0 #000, inset 0 1px 0 rgba(255,255,255,.08); }
+  .reveal .word h2 { background: linear-gradient(180deg, #FFF1C9, #D9A94C); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .big-btn, .count.on, .howto b { background: var(--cta); }
+  #toast.good { background: var(--cta); color: #1A1406; }
+  .book::before { opacity: 1; box-shadow: inset -3px -4px 0 rgba(0,0,0,.18), inset 3px 3px 0 rgba(255,255,255,.4); }
+</style>
+</head>
+<body data-tagline="版本 B · 黑金贴纸 · 直播间同款撞色玩法">
+  <header id="hud"></header>
+  <section id="belt"><div class="tread"></div><div id="belt-cards"></div></section>
+  <main id="stage"></main>
+  <footer id="tray"></footer>
+  <div id="setup"></div><div id="end"></div><div id="toast"></div>
+  <script src="data.js"></script>
+  <script src="engine.js"></script>
+</body>
+</html>
