@@ -77,16 +77,21 @@ def main():
     ap.add_argument('--only', type=int, help='只跑前 N 个词（试听用）')
     ap.add_argument('--words', nargs='*', help='只跑这些词')
     ap.add_argument('--keys-file', help='每行一把 Fish 密钥')
+    ap.add_argument('--shard', default='0/1', help='并行跑：第 i 路 / 共 n 路，例如 2/4；第 i 路先用第 i 把密钥')
     ap.add_argument('--speed', type=float, default=0.9)
     a = ap.parse_args()
     if a.keys_file:
-        ring = KeyRing([l.strip() for l in open(os.path.expanduser(a.keys_file)) if l.strip()])
+        keys = [l.strip() for l in open(os.path.expanduser(a.keys_file)) if l.strip()]
+        si = int(a.shard.split('/')[0])
+        ring = KeyRing(keys[si % len(keys):] + keys[:si % len(keys)])
     else:
         ring = KeyRing([api_key()])
     words = json.load(open(a.syllables, encoding='utf-8'))['words']
     items = [(w, t) for w, t in words.items() if not a.words or w in a.words]
     if a.only:
         items = items[:a.only]
+    si, sn = map(int, a.shard.split('/'))
+    items = items[si::sn]
     os.makedirs(a.out, exist_ok=True)
     made = 0
     for w, toks in items:
