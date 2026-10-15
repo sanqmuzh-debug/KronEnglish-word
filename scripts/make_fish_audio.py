@@ -5,7 +5,7 @@
   密钥：--keys-file 指向一个每行一把密钥的文件（一把失效或额度用完自动换下一把），
         或环境变量 FISH_API_KEY，或 macOS 钥匙串里 service 为 FISH_AUDIO_API_KEY 的那条（都不要写进仓库）
   python3 scripts/make_fish_audio.py --voice <声音的 reference_id> [--model s2.1-pro-free] [--only 20] [--out demo/audio-fish]
-已经生成过的文件会跳过，断了可以接着跑。
+已经生成过的文件会跳过，断了可以接着跑。跑完用 scripts/trim_audio.sh 剪掉开头空白。
 """
 import argparse, json, os, re, ssl, subprocess, sys, time, urllib.request, urllib.error
 
