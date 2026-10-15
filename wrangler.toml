@@ -1,0 +1,10 @@
+# Cloudflare Pages 配置：网页（scripts/build-site.sh 拷进 dist/）+ functions/ 里的整站登录门禁
+# 账号用 Kron 账号（手机号 + 激活码），和 kronenglish 共用同一个 D1 数据库
+name = "kronword"
+pages_build_output_dir = "dist"
+compatibility_date = "2026-09-01"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "kronenglish-production"
+database_id = "b5891cdf-f1e6-4de8-b813-aa14faaacbc6"

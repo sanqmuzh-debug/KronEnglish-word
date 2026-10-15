@@ -128,3 +128,16 @@ KronEnglish-word/
 玩法：选词书、单元和本轮词数 → 顶部传送带送来彩色单词卡 → 点卡片后按音节拼积木（点积木听拼读）→ 拼对后展示整词、Kron 绕口令/例句和 Kron 插画 → 卡片收进底部卡槽，同色 3 张撞掉。
 
 数据由 `python3 scripts/build_demo_data.py` 从 `data/` 生成到 `demo/data.js`；手写绕口令放在 `demo/twisters.json`（按单词文本匹配，任何词书里的同名单词都会用上）。
+
+---
+
+## 上线与登录（kronword.pages.dev）
+
+整站要 Kron 账号登录、且激活码包含 Word。没登录或没开通会跳到 kronenglish.pages.dev 的登录页，登录后带一次性通行证跳回来（`functions/_middleware.js`）；词表数据没权限返回 401/403。账号库是 kronenglish 的 D1（`wrangler.toml` 绑定 `DB`）；`functions/_lib/kron-account.js`、`kron-handoff.js` 从 kronenglish 的 `worker/` 原样复制，不在这里改。流程见 kronenglish 仓库 `docs/kron-handoff.md`。
+
+发布（在仓库根目录运行，门禁才会一起上去）：
+
+```bash
+./scripts/build-site.sh
+npx wrangler pages deploy dist --project-name kronword --branch main
+```
