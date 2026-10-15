@@ -486,7 +486,7 @@ function renderWork(){
   work.querySelectorAll('.cell').forEach(c=>{const b=c.firstElementChild;c.style.width=b.offsetWidth+'px';b._home=c;b.onclick=()=>onBrick(b)});
   $('#hearWord').onclick=()=>{ac();S.listens++;say(w.w,.7)};
   $('#resetBricks').onclick=()=>{document.querySelectorAll('#slots .brick').forEach(b=>moveTo(b,b._home));sfx.back()};
-  coach(w.hint,'KRON 脑洞');setBaseMood('thinking');
+  coach(w.hint,'KRON');setBaseMood('thinking');
 }
 function moveTo(b,target){const f=b.getBoundingClientRect();target.appendChild(b);b.style.animation='none';flip(b,f)}
 function onBrick(b){
