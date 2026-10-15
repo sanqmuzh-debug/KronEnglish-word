@@ -259,6 +259,9 @@ button:focus-visible{outline:3px solid var(--sky);outline-offset:3px}
 .win-pg .pg{grid-column:1/-1;margin-top:4px;height:8px}
 .bk-back li button em s{text-decoration:none;color:var(--ok);font-size:16px}
 .bk-back li button.on em s{color:#fff}
+.auto-go{height:6px;border-radius:9px;background:var(--surface-2);overflow:hidden}
+.auto-go i{display:block;height:100%;width:0;border-radius:9px;background:var(--ok)}
+.reveal{cursor:pointer}
 .hm-go img{flex:none;height:52px;width:auto;border-radius:3px 5px 5px 3px;box-shadow:0 4px 10px -4px rgba(0,0,0,.4)}
 .hm-go span{flex:1;min-width:0;display:flex;flex-direction:column}
 .hm-go small{font-size:13px;color:var(--hs)}
@@ -356,7 +359,6 @@ button:focus-visible{outline:3px solid var(--sky);outline-offset:3px}
   </header>
 
   <section>
-    <div class="belt-head"><span></span><span id="beltCount"></span></div>
     <div class="belt" id="belt"><div class="roller"></div></div>
   </section>
 
@@ -369,7 +371,6 @@ button:focus-visible{outline:3px solid var(--sky);outline-offset:3px}
   </main>
 
   <section>
-    <div class="tray-head"><span><b>托盘</b></span><span id="trayCount">0/6</span></div>
     <div class="tray" id="tray"></div>
   </section>
 </div>
@@ -430,7 +431,7 @@ const unitDone=(bk,u)=>{const f=findBook(bk);return f?Math.min((PROG[bk]||{})[u]
 const bookDone=bk=>findBook(bk).b.units.reduce((n,_,u)=>n+unitDone(bk,u),0);
 const unitName=(bk,u)=>findBook(bk).b.units[u][0].replace('Welcome Unit','Welcome');
 const pickTitle=()=>bookTitle(S.pick.bk)+' · '+unitName(S.pick.bk,S.pick.u);
-function addProgress(){const{bk,u}=S.pick;(PROG[bk]=PROG[bk]||{})[u]=(PROG[bk][u]||0)+S.total;try{localStorage.setItem('kronword_prog',JSON.stringify(PROG))}catch(e){}}
+function addProgress(){const{bk,u}=S.pick;(PROG[bk]=PROG[bk]||{})[u]=(PROG[bk][u]||0)+S.total;try{localStorage.setItem('kronword_prog',JSON.stringify(PROG))}catch(e){}savePrefs()}
 function savePrefs(){S.saved=true;try{localStorage.setItem('kronword',JSON.stringify({pick:S.pick,count:S.count,muted:S.muted}))}catch(e){}}
 
 /* ---------- icons + Kron ---------- */
@@ -565,7 +566,6 @@ function renderBelt(feed){
     el.style.setProperty('--x',x+'px');el.tabIndex=i<m.vis?0:-1;
   });
   if(feed)setTimeout(()=>belt.querySelectorAll('.bcard').forEach(el=>el.style.transitionDelay='0ms'),1400);
-  $('#beltCount').textContent='';
   updateHints();
 }
 function makeBeltCard(it){const b=document.createElement('button');b.className=`bcard c-${it.color}`;b.dataset.id=it.id;
@@ -643,12 +643,15 @@ function showReveal(){
     <div class="rv-head"><div class="rv-word" aria-label="${w.w}">${w.syl.map(s=>`<span>${s}</span>`).join('<i>·</i>')}</div><button class="round" id="sayWord" aria-label="读单词">${IC.speaker}</button></div>
     <div class="rv-meta"><span class="ipa">${w.ipa}</span><span class="zh">${w.zh}</span></div>
     <div class="rv-sent"><div><small>绕口令例句</small><p>${markSent(w.s)}</p></div><button class="round sm" id="saySent" aria-label="读例句">${IC.speaker}</button></div>
-    <button class="btn primary wide" id="collect">收进托盘</button></div>`;
-  $('#sayWord').onclick=()=>{ac();say(w.w,.8)};
-  $('#saySent').onclick=()=>{ac();say(plainSent(w.s),.82)};
-  $('#collect').onclick=collect;
+    <div class="auto-go" aria-hidden="true"><i id="autoGo"></i></div></div>`;
+  const AUTO=reduced?1200:3600;let goT;
+  const arm=()=>{clearTimeout(goT);const b=$('#autoGo');if(b){b.style.transition='none';b.style.width='0';b.offsetWidth;b.style.transition=`width ${AUTO}ms linear`;b.style.width='100%'}goT=setTimeout(()=>{if(S.current===it)collect()},AUTO)};
+  $('#sayWord').onclick=e=>{e.stopPropagation();ac();say(w.w,.8);arm()};
+  $('#saySent').onclick=e=>{e.stopPropagation();ac();say(plainSent(w.s),.82);arm()};
+  work.querySelector('.reveal').onclick=()=>{clearTimeout(goT);if(S.current===it)collect()};
+  requestAnimationFrame(arm);
   const tc=trayCounts()[it.color]||0;
-  coach(tc>=2?`托盘里已经有 ${tc} 张${COLOR_ZH[it.color]}，收进去就能撞掉！`:'听听例句，标亮的都是同一个音哦。读顺了就收进托盘。');
+  coach(tc>=2?`托盘里已经有 ${tc} 张${COLOR_ZH[it.color]}，马上就能撞掉！`:'听听例句，标亮的都是同一个音哦。');
   lookAt(innerWidth,innerHeight*.35);
 }
 async function collect(){
@@ -669,7 +672,7 @@ function renderTray(newId,newFrom){
     tray.appendChild(s)}
   tray.querySelectorAll('.tcard').forEach(el=>{const isNew=el.dataset.id===newId;flip(el,isNew?newFrom:prev[el.dataset.id],{d:isNew?650:380,e:isNew?'cubic-bezier(.3,1.25,.5,1)':undefined})});
   tray.classList.toggle('warn',S.tray.length>=TRAY-1);
-  $('#trayCount').textContent=`${S.tray.length}/${TRAY}`;updateHints();
+  updateHints();
 }
 async function resolveTray(){
   for(;;){
@@ -740,7 +743,7 @@ function openSheet(html,acts={}){closeSheet();const bd=document.createElement('d
   bd.addEventListener('click',e=>{if(e.target===bd&&acts.dismiss!==false)closeSheet();const a=e.target.closest('[data-act]');if(a&&acts[a.dataset.act])acts[a.dataset.act](a)});
   const f=bd.querySelector('button');f&&f.focus({preventScroll:true})}
 function closeSheet(){const b=$('#backdrop');b&&b.remove()}
-addEventListener('keydown',e=>{if(e.key!=='Escape')return;if($('#bkStage'))$('#bkStage').click();else if($('#shelf')&&!$('#backdrop')){if(S.live)closeHome()}else closeSheet()});
+addEventListener('keydown',e=>{if(e.key!=='Escape')return;if($('#bkStage'))$('#bkStage').click();else if($('#shelf')&&!$('#backdrop')){}else closeSheet()});
 function openSettings(){
   let count=S.count,muted=S.muted;
   const draw=()=>{const max=BOOKS[S.book].words.length-BOOKS[S.book].words.length%3;if(count>max)count=max;
@@ -778,7 +781,7 @@ function openHome(){
   if($('#shelf'))return;
   const v=document.createElement('div');v.className='home';v.id='shelf';let tab='all';
   const last=S.saved&&findBook(S.pick.bk),lu=last&&last.b.units[S.pick.u];
-  v.innerHTML=`<header class="hm-bar"><div class="in"><div class="brand">${KRON_LOGO}<span>Kron Word</span></div>${S.live?`<button class="icon-btn" data-sh="close" aria-label="关闭"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>`:''}</div></header>
+  v.innerHTML=`<header class="hm-bar"><div class="in"><div class="brand">${KRON_LOGO}<span>Kron Word</span></div></div></header>
     <nav class="hm-tabs"><div class="pills"><i class="ind"></i>${HOME_TABS.map(([id,n])=>`<button data-tab="${id}">${n}</button>`).join('')}</div></nav>
     <div class="hm-rows"></div>
     <button class="hm-pause" data-sh="pause" aria-label="暂停">${PAUSE_IC}</button>
@@ -788,7 +791,6 @@ function openHome(){
   v.addEventListener('click',e=>{const t=e.target.closest('[data-tab],[data-sh],.hb');if(!t)return;
     if(t.dataset.tab){if(t.dataset.tab!==tab){tab=t.dataset.tab;drawHomeRows(v,tab,true)}return}
     const a=t.dataset.sh;
-    if(a==='close')return closeHome();
     if(a==='pause'){const p=v.classList.toggle('paused');t.innerHTML=p?PLAY_IC:PAUSE_IC;t.setAttribute('aria-label',p?'播放':'暂停');return}
     if(a==='go'){sfx.ding();closeHome();if(!S.live)newGame(true);return}
     pullBook(t)});
