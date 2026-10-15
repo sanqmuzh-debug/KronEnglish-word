@@ -259,7 +259,7 @@ button:focus-visible{outline:3px solid var(--sky);outline-offset:3px}
   <main class="stage" id="stage">
     <div class="coach">
       <div id="coachKron"></div>
-      <div class="bubble" id="bubble" aria-live="polite"><small>KRON 老师</small><span id="bubbleText">嗨，我是 Kron！</span></div>
+      <div class="bubble" id="bubble" aria-live="polite"><small>KRON</small><span id="bubbleText">嗨，我是 Kron！</span></div>
     </div>
     <div class="work idle" id="work"><p class="idle-t">挑一张</p></div>
   </main>
@@ -416,7 +416,7 @@ function flip(el,first,{d=420,e='cubic-bezier(.34,1.4,.64,1)'}={}){
   return el.animate([{transform:`translate(${first.left-last.left}px,${first.top-last.top}px) scale(${first.width/last.width},${first.height/last.height})`},{transform:'none'}],{duration:d,easing:e}).finished.catch(()=>{})}
 let toastT;
 function toast(msg){const t=$('#toast');t.textContent=msg;t.classList.add('show');clearTimeout(toastT);toastT=setTimeout(()=>t.classList.remove('show'),2600)}
-function coach(text,label='KRON 老师'){const b=$('#bubble');b.querySelector('small').textContent=label;$('#bubbleText').textContent=text;b.classList.remove('pop');void b.offsetWidth;b.classList.add('pop')}
+function coach(text,label='KRON'){const b=$('#bubble');b.querySelector('small').textContent=label;$('#bubbleText').textContent=text;b.classList.remove('pop');void b.offsetWidth;b.classList.add('pop')}
 function wiggle(el){el.animate([{rotate:'0deg'},{rotate:'-7deg'},{rotate:'6deg'},{rotate:'-3deg'},{rotate:'0deg'}],{duration:380,easing:'ease-out'})}
 function setProgress(){const done=S.total?S.total-S.queue.length-(S.current?1:0):0;$('#bar').style.width=(S.total?done/S.total*100:0)+'%';$('#count').textContent=`${done}/${S.total}`}
 
@@ -479,7 +479,7 @@ function renderWork(){
   const it=S.current,w=it.w,work=$('#work');
   work.className=`work c-${it.color}`;
   const pool=shuffle([...w.syl.map((s,i)=>({t:s,say:w.say[i]})),...distractor(w)]);
-  work.innerHTML=`<div class="meaning" id="meaning"><span class="m-emoji">${w.e}</span><b>${w.zh}</b><span class="m-n">${w.syl.length} 块积木</span></div>
+  work.innerHTML=`<div class="meaning" id="meaning"><span class="m-emoji">${w.e}</span><b>${w.zh}</b></div>
   <div class="slots" id="slots">${w.syl.map(()=>'<div class="slot"></div>').join('')}</div>
   <div class="pool" id="pool">${pool.map((p,i)=>`<div class="cell"><button class="brick" style="--i:${i}" data-t="${p.t}" data-say="${p.say}" aria-label="积木 ${p.t}">${p.t}</button></div>`).join('')}</div>
   <div class="actions"><button class="btn" id="hearWord">${IC.speaker}听整词</button><button class="btn" id="resetBricks">${IC.undo}全部放回</button></div>`;
@@ -578,7 +578,7 @@ async function resolveTray(){
 function idle(first){
   const work=$('#work');work.className='work idle';
   work.innerHTML=`<div class="idle-art">${IC.up}</div><p class="idle-t">挑一张</p>`;
-  if(first){coach('嗨，我是 Kron 老师！把音节积木拼起来，单词就学会了。');return}
+  if(first){coach('嗨，我是 Kron！把音节积木拼起来，单词就学会了。');return}
   const c=trayCounts();const two=Object.keys(c).find(k=>c[k]===2);
   if(two)coach(`托盘里有两张${COLOR_ZH[two]}了，再挑一张${COLOR_ZH[two]}卡片就能撞掉！闪光的就是。`);
   else if(S.tray.length>=TRAY-1)coach('托盘快满了，挑和托盘同色的卡片吧～');
