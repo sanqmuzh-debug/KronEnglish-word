@@ -1,0 +1,401 @@
+{
+  "_note": "自动对不齐、或者词典读音和拼读拆法冲突的词，在这里手写：每块 [字母, ARPAbet]。中间不发音的字母按「好拼写」的读法读（Wed|nes|day 读 wed-nes-day）。",
+  "oclock": [
+    [
+      "o",
+      "AH0"
+    ],
+    [
+      "clock",
+      "K L AA1 K"
+    ]
+  ],
+  "mr": [
+    [
+      "Mr",
+      "M IH1 S T ER0"
+    ]
+  ],
+  "mrs": [
+    [
+      "Mrs",
+      "M IH1 S IH0 Z"
+    ]
+  ],
+  "didnt": [
+    [
+      "did",
+      "D IH1 D"
+    ],
+    [
+      "nt",
+      "AH0 N T"
+    ]
+  ],
+  "youre": [
+    [
+      "youre",
+      "Y UH1 R"
+    ]
+  ],
+  "thats": [
+    [
+      "thats",
+      "DH AE1 T S"
+    ]
+  ],
+  "someones": [
+    [
+      "some",
+      "S AH1 M"
+    ],
+    [
+      "ones",
+      "W AH0 N Z"
+    ]
+  ],
+  "tongue": [
+    [
+      "tongue",
+      "T AH1 NG"
+    ]
+  ],
+  "daredevil": [
+    [
+      "dare",
+      "D EH1 R"
+    ],
+    [
+      "dev",
+      "D EH2 V"
+    ],
+    [
+      "il",
+      "AH0 L"
+    ]
+  ],
+  "business": [
+    [
+      "busi",
+      "B IH1 Z"
+    ],
+    [
+      "ness",
+      "N AH0 S"
+    ]
+  ],
+  "businessman": [
+    [
+      "busi",
+      "B IH1 Z"
+    ],
+    [
+      "ness",
+      "N AH0 S"
+    ],
+    [
+      "man",
+      "M AE2 N"
+    ]
+  ],
+  "businesswoman": [
+    [
+      "busi",
+      "B IH1 Z"
+    ],
+    [
+      "ness",
+      "N AH0 S"
+    ],
+    [
+      "wom",
+      "W UH2 M"
+    ],
+    [
+      "an",
+      "AH0 N"
+    ]
+  ],
+  "café": [
+    [
+      "ca",
+      "K AE0"
+    ],
+    [
+      "fé",
+      "F EY1"
+    ]
+  ],
+  "chocolate": [
+    [
+      "choc",
+      "CH AA1 K"
+    ],
+    [
+      "o",
+      "AH0"
+    ],
+    [
+      "late",
+      "L AH0 T"
+    ]
+  ],
+  "cupboard": [
+    [
+      "cup",
+      "K AH1 B"
+    ],
+    [
+      "board",
+      "B ER0 D"
+    ]
+  ],
+  "eighth": [
+    [
+      "eighth",
+      "EY1 T TH"
+    ]
+  ],
+  "february": [
+    [
+      "Feb",
+      "F EH1 B"
+    ],
+    [
+      "ru",
+      "R UW0"
+    ],
+    [
+      "ar",
+      "EH2 R"
+    ],
+    [
+      "y",
+      "IY0"
+    ]
+  ],
+  "graduate": [
+    [
+      "grad",
+      "G R AE1 JH"
+    ],
+    [
+      "u",
+      "UW0"
+    ],
+    [
+      "ate",
+      "AH0 T"
+    ]
+  ],
+  "insecure": [
+    [
+      "in",
+      "IH2 N"
+    ],
+    [
+      "se",
+      "S AH0"
+    ],
+    [
+      "cure",
+      "K Y UH1 R"
+    ]
+  ],
+  "island": [
+    [
+      "is",
+      "AY1"
+    ],
+    [
+      "land",
+      "L AH0 N D"
+    ]
+  ],
+  "laboratory": [
+    [
+      "lab",
+      "L AE1 B"
+    ],
+    [
+      "o",
+      "AH0"
+    ],
+    [
+      "ra",
+      "R AH0"
+    ],
+    [
+      "to",
+      "T AO2"
+    ],
+    [
+      "ry",
+      "R IY0"
+    ]
+  ],
+  "thirty": [
+    [
+      "thir",
+      "TH ER1"
+    ],
+    [
+      "ty",
+      "T IY0"
+    ]
+  ],
+  "valuable": [
+    [
+      "val",
+      "V AE1 L"
+    ],
+    [
+      "u",
+      "Y UW0"
+    ],
+    [
+      "a",
+      "AH0"
+    ],
+    [
+      "ble",
+      "B AH0 L"
+    ]
+  ],
+  "wednesday": [
+    [
+      "Wed",
+      "W EH1 D"
+    ],
+    [
+      "nes",
+      "N EH1 Z"
+    ],
+    [
+      "day",
+      "D EY2"
+    ]
+  ],
+  "quartz": [
+    [
+      "Quartz",
+      "K W AO1 R T S"
+    ]
+  ],
+  "centred": [
+    [
+      "cen",
+      "S EH1 N"
+    ],
+    [
+      "tred",
+      "T ER0 D"
+    ]
+  ],
+  "ageism": [
+    [
+      "age",
+      "EY1 JH"
+    ],
+    [
+      "ism",
+      "IH0 Z AH0 M"
+    ]
+  ],
+  "toothache": [
+    [
+      "tooth",
+      "T UW1 TH"
+    ],
+    [
+      "ache",
+      "EY2 K"
+    ]
+  ],
+  "sandcastle": [
+    [
+      "sand",
+      "S AE1 N D"
+    ],
+    [
+      "cas",
+      "K AE2 S"
+    ],
+    [
+      "tle",
+      "AH0 L"
+    ]
+  ],
+  "snowboarding": [
+    [
+      "snow",
+      "S N OW1"
+    ],
+    [
+      "board",
+      "B AO2 R D"
+    ],
+    [
+      "ing",
+      "IH0 NG"
+    ]
+  ],
+  "windsurfing": [
+    [
+      "wind",
+      "W IH1 N D"
+    ],
+    [
+      "surf",
+      "S ER2 F"
+    ],
+    [
+      "ing",
+      "IH0 NG"
+    ]
+  ],
+  "savoury": [
+    [
+      "sa",
+      "S EY1"
+    ],
+    [
+      "vour",
+      "V ER0"
+    ],
+    [
+      "y",
+      "IY0"
+    ]
+  ],
+  "omelette": [
+    [
+      "om",
+      "AA1 M"
+    ],
+    [
+      "lette",
+      "L AH0 T"
+    ]
+  ],
+  "yoghurt": [
+    [
+      "yo",
+      "Y OW1"
+    ],
+    [
+      "ghurt",
+      "G ER0 T"
+    ]
+  ],
+  "beyond": [
+    [
+      "be",
+      "B IH0"
+    ],
+    [
+      "yond",
+      "Y AA1 N D"
+    ]
+  ]
+}

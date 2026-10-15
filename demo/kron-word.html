@@ -381,7 +381,7 @@ button:focus-visible{outline:3px solid var(--sky);outline-offset:3px}
 /* ---------- sample data (demo only — real books come from your library) ---------- */
 const BOOKS = {
   kids:{name:'小学核心', icon:'🎒', desc:'动物、日常物品，12 词', words:[
-    {w:'banana',syl:['ba','na','na'],say:['buh','nah','nuh'],ipa:'/bəˈnɑːnə/',zh:'香蕉',e:'🍌',hint:'Kron 吃香蕉：ba 咬一口，na 再一口，na 最后一口，三口吃光！',s:'{Na}na\'s {ban}da{na} hides a {ba}{na}{na}.'},
+    {w:'banana',syl:['ba','na','na'],say:['buh','nah','nuh'],ipa:'/bəˈnænə/',zh:'香蕉',e:'🍌',hint:'Kron 吃香蕉：ba 咬一口，na 再一口，na 最后一口，三口吃光！',s:'{Na}na\'s {ban}da{na} hides a {ba}{na}{na}.'},
     {w:'tiger',syl:['ti','ger'],say:['tie','gurr'],ipa:'/ˈtaɪɡər/',zh:'老虎',e:'🐯',hint:'老虎踮着脚 ti-ti-ti 走过来，突然 ger——吼了一嗓子。',s:'{Ti}m the {ti}dy {ti}{ger} is ea{ger} to eat.'},
     {w:'rabbit',syl:['rab','bit'],say:['rab','bit'],ipa:'/ˈræbɪt/',zh:'兔子',e:'🐰',hint:'兔子 rab 一下抓住胡萝卜，结果只啃了一小 bit。',s:'The {rab}{bit} g{rab}s a {bit} of carrot.'},
     {w:'pencil',syl:['pen','cil'],say:['pen','sil'],ipa:'/ˈpensəl/',zh:'铅笔',e:'✏️',hint:'pen 是钢笔，屁股后面挂个 cil，钢笔就变成铅笔啦。',s:'{Pen}ny\'s {pen}{cil} draws a {pen}guin on a sten{cil}.'},
@@ -516,6 +516,14 @@ function pickVoice(){if(!('speechSynthesis' in window))return;const vs=speechSyn
   voice=vs.find(v=>/en[-_]US/i.test(v.lang)&&/Samantha|Ava|Allison|Google US/i.test(v.name))||vs.find(v=>/en[-_]US/i.test(v.lang))||vs.find(v=>/^en/i.test(v.lang))||null}
 if('speechSynthesis' in window){pickVoice();speechSynthesis.onvoiceschanged=pickVoice}
 function say(text,rate=.85){if(!('speechSynthesis' in window)||S.muted)return;try{speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(text);u.lang='en-US';if(voice)u.voice=voice;u.rate=rate;u.pitch=1.05;speechSynthesis.speak(u)}catch(e){}}
+/* recorded clips: audio/<word>.mp3 and audio/<word>-<n>.mp3 (scripts/make_syllable_audio.py); no clip falls back to the browser voice */
+const CLIPS={};let clipSrc=null,clipTurn=0;
+function clip(name){return CLIPS[name]||(CLIPS[name]=fetch(`audio/${name}.mp3`).then(r=>r.ok?r.arrayBuffer():Promise.reject()).then(b=>new Promise((ok,no)=>ac().decodeAudioData(b,ok,no))).catch(()=>null))}
+async function play(name,text,rate){if(S.muted)return;const turn=++clipTurn;try{speechSynthesis.cancel()}catch(e){}
+  if(clipSrc){try{clipSrc.stop()}catch(e){}clipSrc=null}
+  const c=ac(),buf=c&&await clip(name);if(turn!==clipTurn)return;if(!buf)return say(text,rate);
+  const src=c.createBufferSource();src.buffer=buf;src.connect(c.destination);src.start();clipSrc=src}
+const sayWord=(w,rate)=>play(w.w,w.w,rate);
 
 /* ---------- particles ---------- */
 const cv=$('#fx'),cx=cv.getContext('2d');let parts=[],running=false;
@@ -592,25 +600,26 @@ async function pick(it,el,auto){
 }
 
 function distractor(w){const all=Object.values(BOOKS).flatMap(b=>b.words).filter(x=>x!==w);
-  const opts=[];all.forEach(x=>x.syl.forEach((s,i)=>{if(!w.syl.includes(s))opts.push({t:s,say:x.say[i]})}));return opts.length?[opts[Math.random()*opts.length|0]]:[]}
+  const opts=[];all.forEach(x=>x.syl.forEach((s,i)=>{if(!w.syl.includes(s))opts.push({t:s,say:x.say[i],src:`${x.w}-${i}`})}));return opts.length?[opts[Math.random()*opts.length|0]]:[]}
 
 function renderWork(){
   const it=S.current,w=it.w,work=$('#work');
   work.className=`work c-${it.color}`;
-  const pool=shuffle([...w.syl.map((s,i)=>({t:s,say:w.say[i]})),...distractor(w)]);
+  const pool=shuffle([...w.syl.map((s,i)=>({t:s,say:w.say[i],src:`${w.w}-${i}`})),...distractor(w)]);
   work.innerHTML=`<div class="meaning" id="meaning"><span class="m-emoji">${w.e}</span><b>${w.zh}</b></div>
   <div class="slots" id="slots">${w.syl.map(()=>'<div class="slot"></div>').join('')}</div>
-  <div class="pool" id="pool">${pool.map((p,i)=>`<div class="cell"><button class="brick" style="--i:${i}" data-t="${p.t}" data-say="${p.say}" aria-label="积木 ${p.t}">${p.t}</button></div>`).join('')}</div>
+  <div class="pool" id="pool">${pool.map((p,i)=>`<div class="cell"><button class="brick" style="--i:${i}" data-t="${p.t}" data-say="${p.say}" data-src="${p.src}" aria-label="积木 ${p.t}">${p.t}</button></div>`).join('')}</div>
   <div class="actions"><button class="btn" id="hearWord">${IC.speaker}听整词</button><button class="btn" id="resetBricks">${IC.undo}全部放回</button></div>`;
+  clip(w.w);work.querySelectorAll('.brick').forEach(b=>clip(b.dataset.src));
   work.querySelectorAll('.cell').forEach(c=>{const b=c.firstElementChild;c.style.width=b.offsetWidth+'px';b._home=c;b.onclick=()=>onBrick(b)});
-  $('#hearWord').onclick=()=>{ac();S.listens++;say(w.w,.7)};
+  $('#hearWord').onclick=()=>{ac();S.listens++;sayWord(w,.7)};
   $('#resetBricks').onclick=()=>{document.querySelectorAll('#slots .brick').forEach(b=>moveTo(b,b._home));sfx.back()};
   coach(w.hint,'KRON');setBaseMood('thinking');
 }
 function moveTo(b,target){const f=b.getBoundingClientRect();target.appendChild(b);b.style.animation='none';flip(b,f)}
 function onBrick(b){
   if(S.locked||!S.current)return;ac();
-  say(b.dataset.say,.72);if(!reduced)b.animate([{scale:'1'},{scale:'1.12',rotate:'-3deg',offset:.3},{scale:'1'}],{duration:380,easing:'cubic-bezier(.34,1.8,.64,1)'});
+  play(b.dataset.src,b.dataset.say,.72);if(!reduced)b.animate([{scale:'1'},{scale:'1.12',rotate:'-3deg',offset:.3},{scale:'1'}],{duration:380,easing:'cubic-bezier(.34,1.8,.64,1)'});
   if(b.parentElement.classList.contains('slot')){moveTo(b,b._home);sfx.back();return}
   const slot=[...document.querySelectorAll('#slots .slot')].find(s=>!s.firstElementChild);if(!slot)return;
   moveTo(b,slot);sfx.place();
@@ -627,7 +636,7 @@ async function check(){
 async function success(){
   const it=S.current;S.solved++;sfx.ding();
   const work=$('#work'),box=$('#slots');work.classList.add('done');box.classList.add('merged');
-  setTimeout(()=>say(it.w.w,.8),200);
+  setTimeout(()=>sayWord(it.w,.8),200);
   const r=box.getBoundingClientRect();burst(r.left+r.width/2,r.top+r.height/2,[cssVar('--'+it.color),cssVar('--kron'),'#ffffff'],30,.9);
   coach(PRAISE[Math.random()*PRAISE.length|0]);mood('wow',1800);
   await wait(reduced?300:1150);showReveal();S.locked=false;
@@ -646,7 +655,7 @@ function showReveal(){
     <div class="auto-go" aria-hidden="true"><i id="autoGo"></i></div></div>`;
   const AUTO=reduced?1200:3600;let goT;
   const arm=()=>{clearTimeout(goT);const b=$('#autoGo');if(b){b.style.transition='none';b.style.width='0';b.offsetWidth;b.style.transition=`width ${AUTO}ms linear`;b.style.width='100%'}goT=setTimeout(()=>{if(S.current===it)collect()},AUTO)};
-  $('#sayWord').onclick=e=>{e.stopPropagation();ac();say(w.w,.8);arm()};
+  $('#sayWord').onclick=e=>{e.stopPropagation();ac();sayWord(w,.8);arm()};
   $('#saySent').onclick=e=>{e.stopPropagation();ac();say(plainSent(w.s),.82);arm()};
   work.querySelector('.reveal').onclick=()=>{clearTimeout(goT);if(S.current===it)collect()};
   requestAnimationFrame(arm);
