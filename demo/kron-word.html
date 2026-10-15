@@ -209,6 +209,36 @@ button:focus-visible{outline:3px solid var(--sky);outline-offset:3px}
 .stat{border-radius:16px;border:2px solid var(--line);padding:10px;text-align:center}
 .stat b{display:block;font:700 24px var(--font-display);font-variant-numeric:tabular-nums}
 .stat span{font-size:12px;color:var(--muted)}
+/* blind boxes after a round */
+.boxes{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;padding:6px 0 2px}
+.gbox{position:relative;border:0;background:none;padding:0;height:128px;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;cursor:pointer;
+  animation:boxDrop .7s cubic-bezier(.34,1.6,.64,1) var(--d) both}
+.gbox .gb-body{position:relative;width:84px;height:68px;border-radius:14px;background:var(--c);border-bottom:6px solid rgba(0,0,0,.22);display:grid;place-items:center;
+  box-shadow:inset 0 0 0 0 transparent;transition:transform .2s}
+.gbox .gb-body::before{content:"";position:absolute;inset:0 auto 0 50%;width:14px;margin-left:-7px;background:rgba(255,255,255,.55)}
+.gbox .gb-body b{position:relative;width:36px;height:36px;border-radius:50%;display:grid;place-items:center;background:#fff;color:var(--c);font:800 24px/1 var(--font-display);box-shadow:0 2px 0 rgba(0,0,0,.15);transition:opacity .2s}
+.gbox .gb-lid{position:absolute;bottom:66px;left:50%;width:96px;height:24px;margin-left:-48px;border-radius:10px;background:var(--c);filter:brightness(1.08);border-bottom:4px solid rgba(0,0,0,.18);z-index:2;transform-origin:20% 100%;transition:transform .5s cubic-bezier(.34,1.6,.64,1),opacity .5s}
+.gbox .gb-lid::before{content:"";position:absolute;inset:0 auto 0 50%;width:14px;margin-left:-7px;background:rgba(255,255,255,.55)}
+.gbox .gb-lid::after{content:"";position:absolute;left:50%;top:-14px;width:30px;height:16px;margin-left:-15px;border:5px solid rgba(255,255,255,.85);border-bottom:0;border-radius:16px 16px 0 0}
+.gbox .gb-name{position:absolute;left:50%;bottom:30px;transform:translate(-50%,0) scale(.3);opacity:0;white-space:nowrap;font:700 14px var(--font-display);color:var(--g);display:flex;flex-direction:column;align-items:center;gap:2px;transition:transform .55s cubic-bezier(.34,1.7,.64,1),opacity .3s;z-index:3}
+.gbox .gb-name i{font-style:normal;font-size:30px;line-height:1}
+.boxes:not(.picked) .gbox{animation:boxDrop .7s cubic-bezier(.34,1.6,.64,1) var(--d) both,boxIdle 2.4s ease-in-out calc(var(--d) + .8s) infinite}
+.boxes:not(.picked) .gbox:hover .gb-body,.boxes:not(.picked) .gbox:active .gb-body{transform:translateY(2px)}
+.gbox.chosen{animation:boxShake .5s ease-in-out both;z-index:2}
+.gbox.open .gb-lid{transform:translate(-18px,-40px) rotate(-38deg);opacity:0}
+.gbox.open .gb-name{transform:translate(-50%,-62px) scale(1);opacity:1}
+.gbox.open .gb-body b{opacity:0}
+.boxes.picked .gbox:not(.chosen){opacity:.45;filter:saturate(.6);transition:opacity .4s,filter .4s}
+.gbox.chosen.open .gb-body{transform:scale(1.06)}
+@keyframes boxDrop{from{transform:translateY(-60px) scale(.6);opacity:0}}
+@keyframes boxIdle{0%,80%,100%{transform:none}86%{transform:rotate(-6deg)}92%{transform:rotate(5deg)}}
+@keyframes boxShake{0%,100%{transform:none}20%{transform:rotate(-9deg) scale(1.05)}40%{transform:rotate(8deg) scale(1.08)}60%{transform:rotate(-6deg) scale(1.1)}80%{transform:rotate(4deg) scale(1.1)}}
+.arcade{position:fixed;inset:0;z-index:120;background:var(--bg);animation:arcIn .45s cubic-bezier(.2,.9,.3,1.1)}
+.arcade.out{animation:arcOut .28s ease-in forwards}
+.arcade iframe{width:100%;height:100%;border:0;display:block}
+@keyframes arcIn{from{transform:translateY(100%)}}
+@keyframes arcOut{to{transform:translateY(100%)}}
+@media (prefers-reduced-motion:reduce){.gbox,.gbox.chosen,.arcade{animation:none!important}}
 .win-kron{display:flex;justify-content:center}.win-kron .kron{width:110px;height:110px;animation:jump .8s cubic-bezier(.34,1.6,.64,1) infinite alternate}
 
 #fx{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:85}
@@ -425,7 +455,7 @@ function newGame(autoPick){
   const book=BOOKS[S.book];const max=book.words.length-book.words.length%3;const n=Math.min(S.count,max);
   const picked=shuffle(book.words).slice(0,n);const cols=shuffle(COLORS);
   const items=picked.map((w,i)=>({id:'k'+Date.now().toString(36)+i,w,color:cols[Math.floor(i/3)%cols.length],review:false}));
-  Object.assign(S,{queue:shuffle(items),tray:[],cleared:0,total:n,current:null,mistakes:0,solved:0,listens:0,t0:Date.now(),popCombo:0,busy:false,locked:false});
+  Object.assign(S,{round:picked,queue:shuffle(items),tray:[],cleared:0,total:n,current:null,mistakes:0,solved:0,listens:0,t0:Date.now(),popCombo:0,busy:false,locked:false});
   $('#bookName').textContent=book.name;
   document.querySelectorAll('#belt .bcard').forEach(el=>el.remove());
   renderBelt(true);renderTray();setProgress();idle(true);
@@ -584,15 +614,35 @@ function idle(first){
   else if(S.tray.length>=TRAY-1)coach('托盘快满了，挑和托盘同色的卡片吧～');
   else coach('挑一张喜欢的卡片吧。想消得快，就挑和托盘同色的。');
 }
-function win(){
-  sfx.win();burst(innerWidth/2,innerHeight*.35,[cssVar('--berry'),cssVar('--sky'),cssVar('--grape'),cssVar('--mint'),cssVar('--kron')],90,1.5);
+function win(again){
+  if(!again){sfx.win();burst(innerWidth/2,innerHeight*.35,[cssVar('--berry'),cssVar('--sky'),cssVar('--grape'),cssVar('--mint'),cssVar('--kron')],90,1.5)}
   const sec=Math.round((Date.now()-S.t0)/1000),acc=Math.round(S.solved/(S.solved+S.mistakes)*100);
+  const games=shuffle(ARCADE).slice(0,3),tints=shuffle(['--berry','--sky','--grape','--mint']);
   openSheet(`<div class="win-kron">${kronSVG('','wow')}</div><h2 style="text-align:center">全部撞掉啦！</h2>
-    <p class="sub" style="text-align:center;margin:0">这一轮学了 ${S.total} 个词，下一轮换一批？</p>
     <div class="stats"><div class="stat"><b>${Math.floor(sec/60)}:${String(sec%60).padStart(2,'0')}</b><span>用时</span></div><div class="stat"><b>${acc}%</b><span>一次拼对</span></div><div class="stat"><b>${S.mistakes}</b><span>拼错次数</span></div></div>
+    <div class="boxes" id="boxes">${games.map((g,i)=>`<button class="gbox" data-act="box" data-i="${i}" style="--c:var(${tints[i]});--g:${g.c};--d:${i*.12}s" aria-label="盲盒 ${i+1}"><span class="gb-lid"></span><span class="gb-body"><b>?</b></span><span class="gb-name"><i>${g.ic}</i>${g.name}</span></button>`).join('')}</div>
     <button class="btn primary wide" data-act="again">再来一轮</button><button class="btn wide" data-act="settings">换词书或数量</button>`,
-    {again:()=>{closeSheet();newGame(false)},settings:()=>{closeSheet();openSettings()}});
+    {again:()=>{closeSheet();newGame(false)},settings:()=>{closeSheet();openSettings()},dismiss:false,
+     box:a=>{const wrap=$('#boxes');if(wrap.classList.contains('picked'))return;wrap.classList.add('picked');a.classList.add('chosen');sfx.whoosh();
+       setTimeout(()=>{a.classList.add('open');sfx.win();const r=a.getBoundingClientRect();burst(r.left+r.width/2,r.top+r.height*.3,[games[+a.dataset.i].c,'#FFC800',cssVar('--kron')],40,1)},520);
+       setTimeout(()=>wrap.querySelectorAll('.gbox:not(.chosen)').forEach(b=>b.classList.add('open')),900);
+       setTimeout(()=>openArcade(games[+a.dataset.i].id),1700)}});
 }
+const ARCADE=[
+ {id:'match',name:'配对闪电战',ic:'⚡',c:'#1FAE6B'},{id:'gravity',name:'单词陨石',ic:'☄️',c:'#7A5CFA'},{id:'whack',name:'单词打地鼠',ic:'🔨',c:'#FF8A1F'},
+ {id:'sentence',name:'句子拼搭',ic:'🧩',c:'#0FA2E0'},{id:'quiz',name:'抢答冲刺',ic:'⏱️',c:'#FF4769'},{id:'lava',name:'岩浆逃生',ic:'🌋',c:'#EE4B2B'},
+ {id:'maze',name:'迷宫追逐',ic:'🌀',c:'#3949C9'},{id:'fish',name:'单词钓鱼',ic:'🎣',c:'#0FA39A'},{id:'race',name:'拼写赛车',ic:'🏎️',c:'#D6336C'},
+ {id:'balloon',name:'气球猜词',ic:'🎈',c:'#D98200'},{id:'gold',name:'宝箱淘金',ic:'💰',c:'#B8740A'},{id:'plane',name:'纸飞机穿云',ic:'✈️',c:'#1098AD'},
+ {id:'search',name:'单词寻宝',ic:'🔍',c:'#9C36B5'},{id:'memory',name:'翻翻乐',ic:'🃏',c:'#5C7CFA'},{id:'wordle',name:'五字母猜词',ic:'🔤',c:'#2B8A3E'}];
+function arcadeWords(){const pack=w=>({w:w.w,zh:w.zh,e:w.e,n:w.syl.length,s:(w.s||'').replace(/[{}]/g,'')});
+  const round=S.round||[],rest=shuffle(BOOKS[S.book].words.filter(w=>!round.includes(w)));
+  return[...round,...rest].slice(0,Math.max(12,round.length)).map(pack)}
+function openArcade(id){closeSheet();try{speechSynthesis.cancel()}catch(e){}
+  const ov=document.createElement('div');ov.className='arcade';ov.id='arcade';
+  ov.innerHTML=`<iframe title="Kron Arcade" src="kron-arcade.html#g=${id}&d=${encodeURIComponent(JSON.stringify(arcadeWords()))}"></iframe>`;
+  document.body.appendChild(ov);setTimeout(()=>{const f=ov.querySelector('iframe');f&&f.focus()},400)}
+function closeArcade(){const ov=$('#arcade');if(!ov)return;ov.classList.add('out');setTimeout(()=>{ov.remove();win(true)},280)}
+addEventListener('message',e=>{if(e.data&&e.data.kronArcade==='close')closeArcade()});
 
 /* ---------- sheets ---------- */
 function openSheet(html,acts={}){closeSheet();const bd=document.createElement('div');bd.className='backdrop';bd.id='backdrop';

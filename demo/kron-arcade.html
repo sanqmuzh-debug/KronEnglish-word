@@ -1,0 +1,917 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Kron Arcade</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@500;700;800&display=swap">
+<style>
+/* Layout: one hub (header + asymmetric 2/3 card grid) that swaps to a full-width game stage with a sticky HUD. Chunky, juicy, 3D-press buttons. */
+:root{
+  --bg:#F2F4FA; --surface:#FFFFFF; --sunk:#E7EAF4; --line:#DCE1EE;
+  --ink:#1C2033; --muted:#666D86; --on:#FFFFFF; --eye:#FFFFFF;
+  --kron:#2F6BF0;
+  --c-match:#1FAE6B; --c-gravity:#7A5CFA; --c-whack:#FF8A1F; --c-sentence:#0FA2E0; --c-quiz:#FF4769;
+  --ok:#1FAE6B; --bad:#EE3F57;
+  --sky1:#20164A; --sky2:#4B2FB0; --star:#FFFFFF; --dirt:#7A4A27; --grass:#7CCB4E;
+  --c-lava:#EE4B2B; --c-maze:#3949C9; --c-fish:#0FA39A; --c-race:#D6336C; --c-balloon:#D98200;
+  --cave1:#2A1E33; --cave2:#4A2A2A; --brick:#9AA3B5; --brick-d:#6E778A; --lava1:#FFB21A; --lava2:#E8341C;
+  --water1:#47C3D6; --water2:#0D5A8C; --sky-day:#CDEFFF; --fish:#FF7A45; --asphalt:#3A3F52;
+  --c-gold:#B8740A; --c-plane:#1098AD; --c-search:#9C36B5; --c-memory:#5C7CFA; --c-wordle:#2B8A3E;
+  --wood:#A0612B; --wood-d:#6E3F18; --cloud:#FFFFFF; --cloud-ink:#1C2033;
+  --q0:#E8384F; --q1:#2F6BF0; --q2:#F2A60C; --q3:#1FAE6B;
+  --f-display:'Baloo 2','PingFang SC','Microsoft YaHei',system-ui,sans-serif;
+  --f-body:'Nunito','PingFang SC','Microsoft YaHei',system-ui,sans-serif;
+  --r:18px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#10121B; --surface:#1A1D2A; --sunk:#232738; --line:#2C3145; --ink:#EDEFF8; --muted:#9CA2BA; --eye:#F4F6FF; color-scheme:dark }}
+:root[data-theme="dark"]{ --bg:#10121B; --surface:#1A1D2A; --sunk:#232738; --line:#2C3145; --ink:#EDEFF8; --muted:#9CA2BA; --eye:#F4F6FF; color-scheme:dark }
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{background:var(--bg);color:var(--ink);font:500 16px/1.5 var(--f-body);
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));-webkit-tap-highlight-color:transparent}
+.wrap{max-width:1040px;margin:0 auto;padding-block:20px 48px}
+h1,h2,h3{font-family:var(--f-display);line-height:1.05;margin:0;text-wrap:balance}
+button{font:inherit;color:inherit;cursor:pointer}
+button:focus-visible,input:focus-visible{outline:3px solid var(--kron);outline-offset:2px}
+
+/* Kron mascot (placeholder head — swap for the real kron-head SVG) */
+.kron{display:block}
+.kron .pupil{transition:transform .08s linear}
+
+/* Header */
+.top{display:flex;align-items:center;gap:12px}
+.top .kron{width:46px;height:46px}
+.brand{display:flex;flex-direction:column}
+.brand b{font:800 1.45rem/1 var(--f-display);letter-spacing:-.01em}
+.brand span{font-size:.8rem;color:var(--muted);letter-spacing:.06em}
+.xp{margin-left:auto;display:flex;gap:8px}
+.pill{display:inline-flex;align-items:center;gap:6px;padding:6px 12px;border-radius:999px;background:var(--surface);border:2px solid var(--line);font:800 .9rem var(--f-display);font-variant-numeric:tabular-nums;white-space:nowrap}
+
+.hero{display:grid;gap:8px;margin:34px 0 22px}
+.hero h1{font-size:clamp(2rem,5.5vw,3.4rem);font-weight:800;letter-spacing:-.02em}
+.hero h1 em{font-style:normal;color:var(--kron)}
+.hero p{color:var(--muted);max-width:60ch;margin:0}
+
+/* Game cards */
+.grid{display:grid;grid-template-columns:repeat(6,1fr);gap:16px}
+.card{grid-column:span 2;text-align:left;border:0;padding:0;background:none;display:flex}
+.card:nth-child(-n+2){grid-column:span 3}
+.card-in{flex:1;display:flex;flex-direction:column;gap:10px;background:var(--surface);border:2px solid var(--line);border-bottom-width:6px;border-radius:24px;padding:18px;transition:transform .15s,border-color .15s}
+.card:hover .card-in{transform:translateY(-3px);border-color:var(--c)}
+.card:active .card-in{transform:translateY(2px);border-bottom-width:3px;margin-top:3px}
+.card .tag{align-self:flex-start;font:800 .72rem var(--f-body);letter-spacing:.06em;color:var(--c);background:color-mix(in oklab,var(--c) 14%,transparent);padding:4px 10px;border-radius:999px}
+.card h2{font-size:1.55rem}
+.card h2 small{display:block;font:700 .82rem var(--f-body);color:var(--muted);letter-spacing:.04em;margin-top:4px}
+.card p{margin:0;color:var(--muted);font-size:.95rem}
+.card .meta{display:flex;justify-content:space-between;align-items:center;margin-top:auto;padding-top:6px;font-size:.82rem;color:var(--muted)}
+.card .go{font:800 .95rem var(--f-display);color:var(--on);background:var(--c);padding:6px 16px;border-radius:12px;box-shadow:0 3px 0 color-mix(in oklab,var(--c) 70%,black)}
+.prev{height:104px;border-radius:16px;background:color-mix(in oklab,var(--c) 10%,var(--sunk));position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;gap:8px;flex-wrap:wrap;padding:10px}
+.chip{background:var(--surface);border:2px solid var(--line);border-bottom-width:4px;border-radius:12px;padding:4px 10px;font:800 .9rem var(--f-display)}
+.chip.on{border-color:var(--c);color:var(--c)}
+.chip.ok{background:var(--c);border-color:var(--c);color:var(--on)}
+
+.notes{margin-top:36px;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px 24px;border-top:2px dashed var(--line);padding-top:22px}
+.notes h3{grid-column:1/-1;font-size:1.2rem}
+.notes div{min-width:0}
+.notes b{font-family:var(--f-display);font-size:1rem}
+.notes p{margin:2px 0 0;color:var(--muted);font-size:.9rem}
+
+/* Game screen */
+.game{--g:var(--kron)}
+.gbar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;display:flex;align-items:center;gap:10px;padding-block:12px;background:var(--bg)}
+.back{width:44px;height:44px;border-radius:14px;border:2px solid var(--line);border-bottom-width:4px;background:var(--surface);font:800 1.2rem var(--f-display);flex:none}
+.gtitle{min-width:0}
+.gtitle b{display:block;font:800 1.25rem/1.1 var(--f-display)}
+.gtitle span{font-size:.8rem;color:var(--muted)}
+#hud{margin-left:auto;display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end}
+#hud .pill{border-color:color-mix(in oklab,var(--g) 40%,var(--line))}
+.stage{padding-top:8px;max-width:720px;margin:0 auto}
+.lead{color:var(--muted);text-align:center;margin:4px 0 16px}
+
+.btn{--c:var(--g);border:0;border-radius:16px;padding:12px 22px;background:var(--c);color:var(--on);font:800 1.05rem var(--f-display);box-shadow:0 5px 0 color-mix(in oklab,var(--c) 70%,black);transition:transform .06s,box-shadow .06s}
+.btn:active{transform:translateY(4px);box-shadow:0 1px 0 color-mix(in oklab,var(--c) 70%,black)}
+.btn:disabled{--c:var(--line);color:var(--muted);cursor:default}
+.btn.ghost{--c:var(--surface);color:var(--ink);border:2px solid var(--line);box-shadow:0 4px 0 var(--line)}
+.wide{width:100%}
+
+.tile{border:2px solid var(--line);border-bottom-width:5px;border-radius:16px;background:var(--surface);padding:12px 14px;font:800 1.08rem var(--f-display);transition:transform .1s,background .15s,border-color .15s,opacity .25s;min-height:56px;display:flex;align-items:center;justify-content:center;gap:8px}
+.tile:active{transform:translateY(3px);border-bottom-width:2px}
+.tile.sel{border-color:var(--g);background:color-mix(in oklab,var(--g) 14%,var(--surface));color:var(--g)}
+.tile.ok{border-color:var(--ok);background:var(--ok);color:var(--on);animation:pop .3s}
+.tile.gone{opacity:0;transform:scale(.8);pointer-events:none}
+.tile.bad{border-color:var(--bad);color:var(--bad);animation:shake .35s}
+.em{font-size:1.25em}
+
+/* 1 Match */
+.match{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.match .col{display:grid;gap:10px;min-width:0}
+
+/* 2 Gravity */
+.sky{position:relative;height:min(58vh,520px);border-radius:24px;overflow:hidden;background:radial-gradient(120% 90% at 50% 0%,var(--sky2),var(--sky1));}
+.sky::before{content:"";position:absolute;inset:0;background-image:radial-gradient(1.5px 1.5px at 20% 30%,var(--star),transparent),radial-gradient(1px 1px at 70% 20%,var(--star),transparent),radial-gradient(1.5px 1.5px at 40% 70%,var(--star),transparent),radial-gradient(1px 1px at 85% 60%,var(--star),transparent),radial-gradient(1px 1px at 10% 80%,var(--star),transparent);opacity:.7}
+.ground{position:absolute;left:0;right:0;bottom:0;height:34px;background:linear-gradient(var(--grass),color-mix(in oklab,var(--grass) 60%,black))}
+.rock{position:absolute;top:0;width:118px;text-align:center;background:var(--surface);color:var(--ink);border:3px solid var(--c-gravity);border-bottom-width:6px;border-radius:40% 46% 42% 48%;padding:10px 6px;will-change:transform}
+.rock b{display:block;font:800 1.15rem/1.1 var(--f-display)}
+.rock small{font:700 .85rem var(--f-body);letter-spacing:.12em;color:var(--muted)}
+.rock.boom{animation:boom .35s forwards}
+.rock.crash{border-color:var(--bad);background:var(--bad);color:var(--on);animation:crash .7s forwards}
+.typebar{display:flex;gap:10px;margin-top:14px}
+.typebar input{flex:1;min-width:0;font:800 1.1rem var(--f-display);padding:12px 16px;border-radius:16px;border:2px solid var(--line);border-bottom-width:5px;background:var(--surface);color:var(--ink)}
+.typebar input.bad{border-color:var(--bad);animation:shake .3s}
+
+/* 3 Whack */
+.target{text-align:center;margin:0 0 14px;font:800 1.3rem var(--f-display)}
+.target em{font-style:normal;color:var(--on);background:var(--c-whack);padding:2px 12px;border-radius:12px;margin:0 4px}
+.target span{color:var(--muted);font-size:.9rem;letter-spacing:.08em;text-transform:uppercase}
+.target.flash{animation:pop .45s}
+.yard{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;background:color-mix(in oklab,var(--grass) 30%,var(--sunk));padding:16px;border-radius:24px}
+.hole{position:relative;aspect-ratio:1/0.9;max-width:100%;overflow:hidden;border-radius:0 0 40% 40%}
+.hole::after{content:"";position:absolute;left:6%;right:6%;bottom:4%;height:26%;border-radius:50%;background:var(--dirt);z-index:0}
+.mole{position:absolute;left:12%;right:12%;bottom:6%;border:0;background:none;padding:0;transform:translateY(105%);transition:transform .16s ease-out;z-index:1;display:flex;flex-direction:column;align-items:center}
+.mole .kron{width:70%;height:auto}
+.hole.up .mole{transform:translateY(0)}
+.sign{margin-top:-10px;background:var(--surface);border:2px solid var(--line);border-radius:10px;padding:2px 8px;font:800 clamp(.8rem,3.2vw,1rem) var(--f-display);white-space:nowrap;max-width:100%;overflow:hidden;text-overflow:ellipsis}
+.hole.bonk .sign{background:var(--ok);border-color:var(--ok);color:var(--on)}
+.hole.oops .sign{background:var(--bad);border-color:var(--bad);color:var(--on)}
+.hole.bonk .mole,.hole.oops .mole{animation:squash .25s}
+
+/* 4 Sentence */
+.bubble-row{display:flex;align-items:flex-end;gap:12px;margin-bottom:18px}
+.bubble-row .kron{width:72px;height:72px;flex:none}
+.bubble{position:relative;flex:1;min-width:0;background:var(--surface);border:2px solid var(--line);border-radius:18px;padding:12px 16px}
+.bubble small{color:var(--muted);font-weight:800;font-size:.75rem;letter-spacing:.08em}
+.bubble p{margin:2px 0 0;font:700 1.3rem var(--f-body)}
+.answer{min-height:122px;display:flex;flex-wrap:wrap;align-content:flex-start;gap:8px;padding:10px 0;background:repeating-linear-gradient(transparent 0 58px,var(--line) 58px 60px)}
+.bank{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:18px 0 22px}
+.word{min-height:48px;padding:8px 14px;font-size:1.05rem}
+.word.ghost{background:var(--sunk);color:transparent;border-color:var(--sunk);pointer-events:none}
+.sheet{position:fixed;left:0;right:0;bottom:0;z-index:20;padding:18px max(16px,env(safe-area-inset-right,0px)) calc(18px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px));animation:up .22s ease-out}
+.sheet.good{background:color-mix(in oklab,var(--ok) 18%,var(--surface))}
+.sheet.no{background:color-mix(in oklab,var(--bad) 16%,var(--surface))}
+.sheet-in{max-width:720px;margin:0 auto;display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+.sheet-in div{flex:1;min-width:200px}
+.sheet h3{font-size:1.4rem}
+.sheet.good h3{color:var(--ok)} .sheet.no h3{color:var(--bad)}
+.sheet p{margin:2px 0 0}
+.sheet .btn{--c:var(--ok)} .sheet.no .btn{--c:var(--bad)}
+.prog{height:14px;border-radius:99px;background:var(--sunk);overflow:hidden;width:120px}
+.prog i{display:block;height:100%;background:var(--g);border-radius:99px;transition:width .3s}
+
+/* 5 Quiz */
+.q-card{text-align:center;background:var(--surface);border:2px solid var(--line);border-radius:24px;padding:18px}
+.q-em{font-size:clamp(4rem,16vw,6rem);line-height:1.1}
+.q-word{font:800 clamp(2.4rem,9vw,3.6rem)/1.1 var(--f-display);letter-spacing:-.01em}
+.q-card p{margin:4px 0 10px;color:var(--muted)}
+.listen{border:2px solid var(--line);border-bottom-width:4px;background:var(--sunk);border-radius:12px;padding:6px 14px;font:800 .9rem var(--f-display)}
+.timebar{height:10px;border-radius:99px;background:var(--sunk);margin:14px 0;overflow:hidden}
+.timebar i{display:block;height:100%;width:100%;background:var(--g);border-radius:99px}
+.opts{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.opt{--c:var(--q0);border:0;border-radius:16px;min-height:76px;padding:10px 12px;display:flex;align-items:center;gap:10px;background:var(--c);color:var(--on);font:800 1.15rem var(--f-display);text-align:left;box-shadow:0 5px 0 color-mix(in oklab,var(--c) 68%,black);transition:transform .06s,opacity .2s}
+.opt:active{transform:translateY(4px);box-shadow:0 1px 0 color-mix(in oklab,var(--c) 68%,black)}
+.o1{--c:var(--q1)} .o2{--c:var(--q2)} .o3{--c:var(--q3)}
+.sh{font-size:1.2rem;opacity:.85;flex:none}
+.opt.dim{opacity:.28}
+.opt.right{outline:4px solid var(--ink);outline-offset:3px;animation:pop .3s}
+.opt.wrong{animation:shake .35s}
+.streak{text-align:center;font:800 1rem var(--f-display);color:var(--c-quiz);min-height:1.6em;margin-top:10px}
+
+/* Results */
+.result{position:fixed;inset:0;z-index:30;display:flex;align-items:center;justify-content:center;background:color-mix(in oklab,var(--bg) 80%,transparent);backdrop-filter:blur(6px);padding:max(16px,env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) max(16px,env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px))}
+.result-in{width:min(380px,100%);background:var(--surface);border:2px solid var(--line);border-bottom-width:6px;border-radius:28px;padding:24px;text-align:center;animation:pop .35s}
+.result .kron{width:84px;height:84px;margin:0 auto}
+.stars{font-size:2.2rem;letter-spacing:.1em;color:var(--q2);margin:6px 0}
+.stars .off{color:var(--line)}
+.result h2{font-size:1.8rem}
+.result .big{font:800 2.6rem/1 var(--f-display);color:var(--g);font-variant-numeric:tabular-nums;margin:8px 0}
+.result p{color:var(--muted);margin:0 0 4px}
+.result .row{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:18px}
+
+.float{position:fixed;z-index:40;pointer-events:none;font:800 1.3rem var(--f-display);animation:floatUp .8s forwards;transform:translate(-50%,-50%)}
+.float.plus{color:var(--ok)} .float.minus{color:var(--bad)}
+#fx{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:35}
+
+/* ===== batch 2 ===== */
+.sec{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;font-size:1.3rem;margin:30px 0 12px}
+.sec span{font:700 .85rem var(--f-body);color:var(--muted)}
+.prev-lava{position:absolute;left:0;right:0;bottom:0;height:26px;background:linear-gradient(var(--lava1),var(--lava2))}
+.qp-card{background:var(--surface);border:2px solid var(--line);border-radius:20px;padding:12px 14px;text-align:center}
+.qp-card b{font:800 1.1rem var(--f-body)}
+.qp-card p{margin:2px 0 0;color:var(--muted);font-size:.88rem}
+.mq-em{font-size:clamp(2.6rem,10vw,3.6rem);line-height:1.15}
+.mq-word{font:800 clamp(1.8rem,7vw,2.5rem)/1.15 var(--f-display);letter-spacing:.02em}
+.mq-word u{text-decoration:none;color:var(--g);padding:0 .1em}
+.opts.sm{margin-top:12px}
+.opts.sm .opt{min-height:58px;font-size:1.05rem}
+.duo{display:grid;gap:14px}
+@media (min-width:760px){.duo{grid-template-columns:1fr 1fr;align-items:start}}
+
+/* 6 lava */
+.scene{position:relative;height:min(50vh,420px);border-radius:24px;overflow:hidden;background:linear-gradient(var(--cave1),var(--cave2))}
+.scene.hurt{animation:shake .35s}
+.world{position:absolute;left:0;right:0;bottom:0;height:0}
+.tower{position:absolute;bottom:0;left:50%;width:86px;margin-left:-43px;display:flex;flex-direction:column}
+.tower i{height:26px;background:var(--brick);border:2px solid var(--brick-d);border-radius:6px;animation:pop .25s}
+.lk{position:absolute;left:50%;width:58px;margin-left:-29px;bottom:0;transition:bottom .25s cubic-bezier(.3,1.6,.6,1)}
+.lk.burn{filter:grayscale(1) brightness(.6);transition:filter .4s}
+.lava{position:absolute;left:0;right:0;bottom:0;background:linear-gradient(var(--lava1),var(--lava2))}
+.lava::before{content:"";position:absolute;left:0;right:0;top:-10px;height:12px;background:radial-gradient(circle at 10px 12px,var(--lava1) 9px,transparent 10px) 0 0/20px 12px repeat-x;animation:wave 1.1s linear infinite}
+.lmeter{position:absolute;top:10px;left:10px}
+.lmeter.danger{color:var(--on);background:var(--bad);border-color:var(--bad);animation:pop .5s infinite}
+
+/* 7 maze */
+.maze{position:relative;display:grid;grid-template-columns:repeat(11,1fr);aspect-ratio:11/9;width:min(100%,calc(46vh*11/9),560px);max-width:100%;margin:12px auto;border-radius:16px;overflow:hidden;background:color-mix(in oklab,var(--g) 80%,black);border:4px solid color-mix(in oklab,var(--g) 80%,black)}
+.cell{background:var(--surface);position:relative}
+.cell.w{background:color-mix(in oklab,var(--g) 80%,black)}
+.cell.dot::after{content:"";position:absolute;left:50%;top:50%;width:4px;height:4px;margin:-2px;border-radius:50%;background:var(--line)}
+.cell.z{display:flex;align-items:center;justify-content:center;background:var(--c);color:var(--on);font:800 1.2rem var(--f-display)}
+.sprite{position:absolute;width:calc(100%/11);height:calc(100%/9);display:flex;align-items:center;justify-content:center;transition:left .12s linear,top .12s linear;pointer-events:none}
+.sprite .kron{width:84%;height:auto}
+.sprite.blink{animation:blink .2s 6}
+.legend{display:grid;grid-template-columns:1fr 1fr;gap:8px;width:min(100%,560px);margin:0 auto}
+.lg{display:flex;align-items:center;gap:8px;padding:8px 12px;border-radius:12px;background:var(--c);color:var(--on);font:800 1.02rem var(--f-display);min-width:0}
+.dpad{display:grid;grid-template-columns:repeat(3,58px);grid-template-rows:repeat(2,52px);gap:6px;justify-content:center;margin-top:14px;touch-action:none}
+.dpad button{border:2px solid var(--line);border-bottom-width:4px;border-radius:14px;background:var(--surface);font:800 1.2rem var(--f-display)}
+.dpad [data-d="0,-1"]{grid-column:2} .dpad [data-d="-1,0"]{grid-column:1;grid-row:2} .dpad [data-d="0,1"]{grid-column:2;grid-row:2} .dpad [data-d="1,0"]{grid-column:3;grid-row:2}
+.keyhint{text-align:center;color:var(--muted);font-size:.82rem;margin:6px 0 0}
+
+/* 8 fishing */
+.fprompt{display:flex;align-items:center;justify-content:center;gap:10px;font:800 1.35rem var(--f-display);margin-bottom:12px}
+.fprompt b{color:var(--g)}
+.pond{position:relative;height:min(52vh,440px);border-radius:24px;overflow:hidden;background:linear-gradient(var(--sky-day) 0 58px,var(--water1) 58px,var(--water2))}
+.boat{position:absolute;top:6px;left:50%;width:54px;transform:translateX(-50%);transition:left .22s ease-out;z-index:2}
+.line{position:absolute;top:50px;left:50%;width:2px;height:0;background:var(--ink);transition:height .2s ease-in;z-index:1}
+.fishy{position:absolute;left:0;top:0;border:0;background:none;padding:0;display:flex;flex-direction:column;align-items:center;color:var(--fish);will-change:transform}
+.fishy svg{width:64px;height:32px}
+.fishy.r svg{transform:scaleX(-1)}
+.fishy span{background:var(--surface);color:var(--ink);border-radius:8px;padding:0 7px;font:800 .92rem var(--f-display);margin-top:-2px}
+.fishy.gold{color:var(--q2)}
+.fishy.gold span{outline:2px solid var(--q2)}
+.fishy.caught{transition:transform .45s ease-in,opacity .45s;opacity:0}
+
+/* 9 race */
+.track{display:grid;gap:8px;background:var(--asphalt);padding:10px;border-radius:22px;margin-bottom:14px}
+.lane{position:relative;height:56px;border-radius:12px;background:color-mix(in oklab,var(--asphalt) 82%,white);overflow:hidden}
+.lane.me{box-shadow:inset 0 0 0 3px var(--g)}
+.lane .car{position:absolute;top:4px;left:0;width:52px}
+.lane.me .car{transition:left .35s cubic-bezier(.2,1.4,.5,1)}
+.car.boost{filter:drop-shadow(-10px 0 0 color-mix(in oklab,var(--g) 50%,transparent))}
+.car.stall{animation:shake .4s}
+.flag{position:absolute;right:0;top:0;bottom:0;width:12px;background:repeating-conic-gradient(var(--ink) 0 25%,var(--surface) 0 50%) 0 0/12px 12px}
+.lname{position:absolute;right:18px;top:50%;transform:translateY(-50%);font:800 .8rem var(--f-display);color:var(--on);opacity:.75}
+
+/* 10 balloon */
+.bal-scene{position:relative;height:230px;overflow:hidden;display:flex;justify-content:center}
+.balsvg{width:210px;height:230px;overflow:visible}
+.bal circle{transition:transform .18s;transform-box:fill-box;transform-origin:center}
+.bal.popped circle,.bal.popped ellipse{transform:scale(0)}
+.bal.popped line{opacity:0}
+#kg{transform:translate(68px,150px);transition:transform .9s cubic-bezier(.55,0,1,.45)}
+.bal-scene.fall #kg{transform:translate(68px,440px)}
+.hint{text-align:center;font:800 1.25rem var(--f-display)}
+.slots{display:flex;justify-content:center;gap:6px;margin:12px 0 16px;flex-wrap:wrap}
+.slot{width:34px;height:46px;border-bottom:4px solid var(--line);font:800 1.7rem/46px var(--f-display);text-align:center}
+.slot.show{border-color:var(--g);animation:pop .25s}
+.slot.miss{color:var(--bad)}
+.keys{display:flex;flex-wrap:wrap;justify-content:center;gap:6px;max-width:520px;margin:0 auto}
+.key{width:40px;height:46px;padding:0;border:2px solid var(--line);border-bottom-width:4px;border-radius:10px;background:var(--surface);font:800 1.15rem var(--f-display)}
+.key:active{transform:translateY(2px)}
+.key.hit{background:var(--ok);border-color:var(--ok);color:var(--on)}
+.key.miss{background:var(--sunk);border-color:var(--sunk);color:var(--muted)}
+
+/* ===== batch 3 ===== */
+/* 11 gold quest */
+.board{background:var(--surface);border:2px solid var(--line);border-radius:20px;padding:14px;display:grid;gap:8px;align-content:start}
+.board h3{font:800 .95rem var(--f-body);color:var(--muted)}
+.brow{display:flex;align-items:center;gap:10px;font:800 1.05rem var(--f-display)}
+.brow .kron{width:32px;height:auto}
+.brow b{margin-left:auto;font-variant-numeric:tabular-nums}
+.brow.me{color:var(--g)}
+.gq-msg{text-align:center;font:800 1.25rem var(--f-display);margin:12px 0}
+.chests{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.chest{border:0;background:none;padding:0;display:flex;flex-direction:column;align-items:center;gap:8px;font:800 1.05rem var(--f-display);transition:opacity .3s}
+.chest .box{position:relative;width:100%;max-width:120px;aspect-ratio:1/.85;transition:transform .15s}
+.chest:hover .box{transform:translateY(-4px) rotate(-2deg)}
+.chest .lid{position:absolute;left:0;right:0;top:4%;height:40%;background:var(--wood);border:3px solid var(--wood-d);border-radius:16px 16px 4px 4px;transform-origin:8% 100%;transition:transform .35s cubic-bezier(.3,1.6,.6,1);z-index:1}
+.chest .body{position:absolute;left:0;right:0;bottom:0;height:58%;background:var(--wood);border:3px solid var(--wood-d);border-radius:4px 4px 14px 14px}
+.chest .body::after{content:"";position:absolute;left:50%;top:-10px;width:18px;height:22px;margin-left:-9px;background:var(--q2);border:2px solid var(--wood-d);border-radius:5px}
+.chest.open .lid{transform:rotate(-38deg)}
+.chest .out{min-height:1.5em}
+.chest.open .out{animation:pop .35s}
+.chest.dim{opacity:.3;pointer-events:none}
+
+/* 12 plane */
+.air{position:relative;height:min(46vh,380px);border-radius:24px;overflow:hidden;background:linear-gradient(var(--sky-day),color-mix(in oklab,var(--sky-day) 55%,var(--water1)));touch-action:none;margin-top:12px;cursor:pointer}
+.plane{position:absolute;left:20px;width:78px;height:52px;margin-top:-26px;top:50%;transition:top .18s ease-out;z-index:2}
+.plane::before{content:"";position:absolute;left:0;right:6px;top:52%;height:12px;background:var(--g);border-radius:8px 30px 30px 8px}
+.plane::after{content:"";position:absolute;left:0;top:18%;width:14px;height:26px;background:var(--g);border-radius:4px}
+.plane .kron{position:absolute;left:18px;top:0;width:48px;height:auto}
+.plane.hurt{animation:shake .4s}
+.cloud{position:absolute;left:0;top:0;min-width:104px;padding:12px 18px;text-align:center;background:var(--cloud);color:var(--cloud-ink);border-radius:999px;font:800 1.08rem var(--f-display);box-shadow:0 4px 0 color-mix(in oklab,var(--cloud) 80%,var(--water2))}
+.cloud::before{content:"";position:absolute;left:22%;top:-14px;width:40px;height:30px;border-radius:50%;background:var(--cloud);z-index:-1}
+.cloud.good{background:var(--ok);color:var(--on)} .cloud.bad{background:var(--bad);color:var(--on)}
+
+/* 13 word search */
+.wlist{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:0 0 14px}
+.witem{background:var(--surface);border:2px solid var(--line);border-radius:12px;padding:4px 10px;font:800 .95rem var(--f-display)}
+.witem small{color:var(--muted);font-weight:700}
+.witem.done{background:var(--fc);border-color:var(--fc);color:var(--on)}
+.witem.done small{color:var(--on)}
+.ws{display:grid;grid-template-columns:repeat(var(--n),1fr);gap:3px;width:min(100%,460px);margin:0 auto;touch-action:none;user-select:none;-webkit-user-select:none;background:var(--surface);border:2px solid var(--line);border-bottom-width:5px;border-radius:18px;padding:8px}
+.ws span{aspect-ratio:1;display:flex;align-items:center;justify-content:center;font:800 clamp(1rem,4.6vw,1.35rem) var(--f-display);border-radius:8px;cursor:pointer}
+.ws span.f{background:var(--fc);color:var(--on)}
+.ws span.sel{background:var(--g);color:var(--on)}
+
+/* 14 memory */
+.mem{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;max-width:500px;margin:0 auto}
+.card3{aspect-ratio:3/4;perspective:700px;border:0;background:none;padding:0}
+.card3 .in{position:relative;display:block;width:100%;height:100%;transition:transform .35s;transform-style:preserve-3d}
+.card3.up .in{transform:rotateY(180deg)}
+.card3 .b,.card3 .f{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:14px;display:flex;align-items:center;justify-content:center}
+.card3 .b{background:var(--g);box-shadow:inset 0 -5px 0 color-mix(in oklab,var(--g) 70%,black)}
+.card3 .b .kron{width:52%;height:auto;opacity:.9}
+.card3 .f{transform:rotateY(180deg);background:var(--surface);border:2px solid var(--line);border-bottom-width:5px;font:800 clamp(.95rem,4vw,1.3rem) var(--f-display)}
+.card3 .f .em{font-size:clamp(2rem,9vw,2.8rem)}
+.card3.done .f{border-color:var(--ok);background:color-mix(in oklab,var(--ok) 14%,var(--surface))}
+.card3.done{animation:pop .35s}
+
+/* 15 wordle */
+.wd-top{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-bottom:12px}
+.wd{display:grid;gap:6px;width:min(100%,300px);margin:0 auto}
+.wd-row{display:grid;grid-template-columns:repeat(5,1fr);gap:6px}
+.wd-row.shake{animation:shake .35s}
+.wd-row span{aspect-ratio:1;border:2px solid var(--line);border-radius:10px;display:flex;align-items:center;justify-content:center;font:800 1.7rem var(--f-display);text-transform:uppercase}
+.wd-row span.fill{border-color:var(--muted);animation:pop .12s}
+.wd-row span.flip{animation:flip .4s}
+.g{background:var(--ok)!important;border-color:var(--ok)!important;color:var(--on)!important}
+.y{background:var(--q2)!important;border-color:var(--q2)!important;color:var(--on)!important}
+.x{background:var(--muted)!important;border-color:var(--muted)!important;color:var(--on)!important}
+.kb{display:grid;gap:6px;margin:14px auto 0;max-width:520px}
+.kb div{display:flex;justify-content:center;gap:5px}
+.kb button{flex:1;max-width:42px;height:52px;padding:0;border:0;border-radius:8px;background:var(--sunk);font:800 1rem var(--f-display);text-transform:uppercase}
+.kb button.wide{max-width:68px;flex:1.6;font-size:.8rem}
+
+@keyframes flip{50%{transform:rotateX(90deg)}}
+@keyframes wave{to{background-position:20px 0}}
+@keyframes blink{50%{opacity:.2}}
+@keyframes pop{0%{transform:scale(.85)}60%{transform:scale(1.06)}100%{transform:scale(1)}}
+@keyframes shake{20%,60%{transform:translateX(-6px)}40%,80%{transform:translateX(6px)}}
+@keyframes boom{to{opacity:0;scale:1.5;filter:blur(2px)}}
+@keyframes crash{30%{scale:1.08}100%{opacity:0;scale:.9}}
+@keyframes squash{50%{scale:1.12 .85}}
+@keyframes up{from{transform:translateY(100%)}}
+@keyframes floatUp{to{opacity:0;transform:translate(-50%,-140%)}}
+
+@media (max-width:720px){
+  .grid{grid-template-columns:1fr}
+  .card,.card:nth-child(-n+2){grid-column:auto}
+  .xp .pill:first-child{display:none}
+}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+.solo #hub{display:none}.solo .top{display:none}.solo .wrap{padding-top:12px}
+.say-btn{border:0;font:inherit;color:inherit;text-align:left;cursor:pointer}
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <span id="logoKron"></span>
+    <div class="brand"><b>Kron Arcade</b><span>快学英语 · 游戏练词</span></div>
+    <div class="xp"><span class="pill" id="playsPill">0 局</span><span class="pill" id="xpPill">0 XP</span></div>
+  </header>
+
+  <main id="hub">
+    <section class="hero">
+      <h1>十个小游戏，<em>一局一分钟</em></h1>
+      <p>每个玩法都对标一款口碑最好的游戏化学英语产品，换上 Kron 的词库和手感。点开任意一张卡就能玩，声音在第一次点击后开启。</p>
+    </section>
+    <h2 class="sec">第一批 · 词汇快练<span>认词、拼写、分类、造句、抢答</span></h2>
+    <section class="grid" id="grid1"></section>
+    <h2 class="sec">第二批 · 闯关对战<span>有压力、有对手、有收集</span></h2>
+    <section class="grid" id="grid2"></section>
+    <h2 class="sec">第三批 · 益智与运气<span>翻牌、找词、猜词、开宝箱</span></h2>
+    <section class="grid" id="grid3"></section>
+    <section class="notes">
+      <h3>从对标产品里借来的手法</h3>
+      <div><b>秒级反馈</b><p>Duolingo 和 Quizlet 每一次点击都有声音和动效，对错在 0.3 秒内知道。</p></div>
+      <div><b>速度即分数</b><p>Kahoot! 按答题剩余时间给分，Quizlet Match 比最佳用时，制造“再来一局”的冲动。</p></div>
+      <div><b>连击加成</b><p>Blooket 和 Gimkit 的连对倍率，让孩子愿意专注地连续答下去。</p></div>
+      <div><b>生存压力</b><p>Gimkit 的 The Floor is Lava 让岩浆一直上涨，答题变成唯一的活路。</p></div>
+      <div><b>看得见的对手</b><p>Blooket Racing 把进度画成赛道，落后一个车身就想多答一题。</p></div>
+      <div><b>运气和选择</b><p>Blooket Gold Quest 答对才能开宝箱，开出来可能翻倍也可能被偷，排名一直在变。</p></div>
+      <div><b>收集与稀有度</b><p>Blooket Fishing Frenzy 的鱼有重量和稀有金鱼，每一竿都有点期待。</p></div>
+      <div><b>产出而不只是识别</b><p>Gravity 要求打出拼写，Duolingo 词块要求排出语序，比选择题记得更牢。</p></div>
+    </section>
+  </main>
+
+  <main id="game" class="game" hidden>
+    <div class="gbar">
+      <button class="back" id="backBtn" aria-label="返回大厅">←</button>
+      <div class="gtitle"><b id="gName"></b></div>
+      <div id="hud"></div>
+    </div>
+    <div class="stage" id="stage"></div>
+  </main>
+</div>
+<canvas id="fx"></canvas>
+<div class="result" id="result" hidden></div>
+
+<script>
+/* ---------- data ---------- */
+const shuffle=a=>{a=[...a];for(let i=a.length-1;i>0;i--){const j=Math.random()*(i+1)|0;[a[i],a[j]]=[a[j],a[i]]}return a};
+const ROUND=(()=>{try{const m=location.hash.match(/[#&]d=([^&]*)/);if(m)return JSON.parse(decodeURIComponent(m[1]))}catch(e){}return null})()||[
+ {w:'banana',zh:'香蕉',e:'🍌',n:3,s:"Nana's bandana hides a banana."},{w:'tiger',zh:'老虎',e:'🐯',n:2,s:'Tim the tidy tiger is eager to eat.'},
+ {w:'rabbit',zh:'兔子',e:'🐰',n:2,s:'The rabbit grabs a bit of carrot.'},{w:'pencil',zh:'铅笔',e:'✏️',n:2,s:"Penny's pencil draws a penguin on a stencil."},
+ {w:'window',zh:'窗户',e:'🪟',n:2,s:'Winnie opens the window and the wind blows down.'},{w:'dinosaur',zh:'恐龙',e:'🦕',n:3,s:'The dinosaur says no, dives, and soars away.'},
+ {w:'elephant',zh:'大象',e:'🐘',n:3,s:"Ella's elephant sees a phantom in the elevator."},{w:'robot',zh:'机器人',e:'🤖',n:2,s:"Rosa's robot rolls a bottle home."},
+ {w:'monkey',zh:'猴子',e:'🐵',n:2,s:'On Monday, the monkey lost his key.'},{w:'butterfly',zh:'蝴蝶',e:'🦋',n:3,s:'The butterfly will fly, but not to the butter.'},
+ {w:'pumpkin',zh:'南瓜',e:'🎃',n:2,s:'Pump up the pumpkin, kind little Kron!'},{w:'umbrella',zh:'雨伞',e:'☂️',n:3,s:"Um, Bella's umbrella sings la-la-la."}];
+const NUMZH=['','一','两','三','四','五','六'];
+const VOCAB=ROUND.map(r=>({en:r.w.toLowerCase(),zh:r.zh,e:r.e,cat:'s'+r.n}));
+const CATS={};for(const v of VOCAB){const n=+v.cat.slice(1);CATS[v.cat]={zh:(NUMZH[n]||n)+'个音节',en:n+(n>1?' syllables':' syllable')}}
+const SENTS=ROUND.filter(r=>r.s).map(r=>{const t=r.s.trim(),m=t.match(/[.!?]$/),body=(m?t.slice(0,-1):t).replace(/,/g,'');const words=body.split(/\s+/);const others=shuffle(ROUND.filter(o=>o!==r).map(o=>o.w)).filter(w=>!words.includes(w)).slice(0,2);return{zh:r.e,en:body,end:m?m[0]:'',extra:others}});
+const META=[
+ {id:'match',name:'配对闪电战',en:'Match Blitz',bench:'对标 Quizlet Match · Duolingo 配对',skill:'练：词义速认',desc:'6 对英汉词卡，点对就消，比谁用时最短。',c:'var(--c-match)',
+  prev:'<span class="chip on">apple</span><span class="chip">猫</span><span class="chip ok">苹果</span><span class="chip">tiger</span>'},
+ {id:'gravity',name:'单词陨石',en:'Word Meteors',bench:'对标 Quizlet Gravity',skill:'练：拼写输出',desc:'中文陨石往下掉，打出英文单词把它击碎。',c:'var(--c-gravity)',
+  prev:'<span class="chip">熊猫<br><small>p _ _ _ _</small></span><span class="chip on">pand|</span>'},
+ {id:'whack',name:'单词打地鼠',en:'Word Whack',bench:'对标 Wordwall Whack-a-mole',skill:'练：词汇分类',desc:'只打指定类别的词，每 10 秒换一次目标。',c:'var(--c-whack)',
+  prev:'<span class="chip ok">tiger</span><span class="chip">bread</span><span class="chip ok">panda</span><span class="chip">snow</span>'},
+ {id:'sentence',name:'句子拼搭',en:'Sentence Builder',bench:'对标 Duolingo 词块造句',skill:'练：语序与语法',desc:'看中文，用词块拼出英文句子，小心干扰词。',c:'var(--c-sentence)',
+  prev:'<span class="chip ok">She</span><span class="chip ok">likes</span><span class="chip">like</span><span class="chip">playing</span>'},
+ {id:'quiz',name:'抢答冲刺',en:'Speed Quiz',bench:'对标 Kahoot! · Blooket',skill:'练：听音与反应',desc:'四色抢答，答得越快分越高，连对三题有加成。',c:'var(--c-quiz)',
+  prev:'<span class="chip" style="background:var(--q0);color:var(--on);border-color:var(--q0)">▲ rain</span><span class="chip" style="background:var(--q1);color:var(--on);border-color:var(--q1)">◆ sun</span><span class="chip" style="background:var(--q2);color:var(--on);border-color:var(--q2)">● snow</span><span class="chip" style="background:var(--q3);color:var(--on);border-color:var(--q3)">■ wind</span>'}
+,
+ {batch:2,id:'lava',name:'岩浆逃生',en:'Floor is Lava',bench:'对标 Gimkit The Floor is Lava',skill:'练：综合词汇',desc:'岩浆一直往上涨，答对一题加一层砖，连对三题一次加两层。撑满 60 秒。',c:'var(--c-lava)',
+  prev:'<span class="chip">离岩浆 2.4 米</span><span class="chip ok">+2 层</span><i class="prev-lava"></i>'},
+ {batch:2,id:'maze',name:'迷宫追逐',en:'Maze Chase',bench:'对标 Wordwall Maze Chase',skill:'练：词义判断',desc:'看题目，走进正确答案所在的角落，别被红色 Kron 抓住。',c:'var(--c-maze)',
+  prev:'<span class="chip" style="background:var(--q0);color:var(--on);border-color:var(--q0)">▲ tiger</span><span class="chip" style="background:var(--q1);color:var(--on);border-color:var(--q1)">◆ horse</span><span class="chip" style="background:var(--q2);color:var(--on);border-color:var(--q2)">● panda</span>'},
+ {batch:2,id:'fish',name:'单词钓鱼',en:'Fishing Frenzy',bench:'对标 Blooket Fishing Frenzy',skill:'练：听音辨词',desc:'听发音、看中文，钓起写着对应单词的鱼。按重量计分，偶尔会有金鱼。',c:'var(--c-fish)',
+  prev:'<span class="chip on">钓起 熊猫</span><span class="chip ok">panda · 2.3 kg</span>'},
+ {batch:2,id:'race',name:'拼写赛车',en:'Spelling Race',bench:'对标 Blooket Racing',skill:'练：拼写辨析',desc:'选出正确拼写或补上缺的字母，每答对一题车就往前冲，和两个机器人比谁先到终点。',c:'var(--c-race)',
+  prev:'<span class="chip">el<b>_</b>phant</span><span class="chip ok">e</span><span class="chip">第 1 名</span>'},
+ {batch:2,id:'balloon',name:'气球猜词',en:'Balloon Hangman',bench:'对标 Wordwall Hangman',skill:'练：字母拼写',desc:'看图和中文猜字母。猜错一次飞走一个气球，六个全飞走 Kron 就掉下去了。',c:'var(--c-balloon)',
+  prev:'<span class="chip ok">r</span><span class="chip">_</span><span class="chip ok">i</span><span class="chip ok">n</span><span class="chip">🌧️ 雨</span>'}
+,
+ {batch:3,id:'gold',name:'宝箱淘金',en:'Gold Quest',bench:'对标 Blooket Gold Quest',skill:'练：综合词汇',desc:'答对一题就能开一个宝箱，可能翻倍，可能偷走对手的金币，也可能是空箱子。10 轮后比金币。',c:'var(--c-gold)',
+  prev:'<span class="chip">Mia 120</span><span class="chip ok">×2</span><span class="chip">偷 25%</span>'},
+ {batch:3,id:'plane',name:'纸飞机穿云',en:'Airplane',bench:'对标 Wordwall Airplane',skill:'练：词义判断',desc:'三朵云各写一个答案，换高度飞进正确的那朵。越飞越快。',c:'var(--c-plane)',
+  prev:'<span class="chip">cloud</span><span class="chip ok">rabbit</span><span class="chip">clock</span>'},
+ {batch:3,id:'search',name:'单词寻宝',en:'Word Search',bench:'对标 Wordwall Wordsearch',skill:'练：拼写再认',desc:'只给图和中文，在字母格里找出对应的英文，横、竖、斜着划。',c:'var(--c-search)',
+  prev:'<span class="chip">🐼 熊猫 · 5</span><span class="chip ok">p a n d a</span>'},
+ {batch:3,id:'memory',name:'翻翻乐',en:'Matching Pairs',bench:'对标 Wordwall Matching Pairs',skill:'练：图词记忆',desc:'12 张牌背面朝上，翻出图和英文配成对。步数越少分越高。',c:'var(--c-memory)',
+  prev:'<span class="chip ok">🍌</span><span class="chip ok">banana</span><span class="chip">?</span><span class="chip">?</span>'},
+ {batch:3,id:'wordle',name:'五字母猜词',en:'Kron Wordle',bench:'对标 NYT Wordle',skill:'练：拼写推理',desc:'六次机会猜一个五字母单词。绿色位置对，黄色字母对位置错。',c:'var(--c-wordle)',
+  prev:'<span class="chip" style="background:var(--ok);color:var(--on);border-color:var(--ok)">T</span><span class="chip" style="background:var(--q2);color:var(--on);border-color:var(--q2)">R</span><span class="chip">A</span><span class="chip" style="background:var(--ok);color:var(--on);border-color:var(--ok)">I</span><span class="chip">N</span>'}
+];
+const SH=['▲','◆','●','■'];
+
+/* ---------- utils ---------- */
+const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>[...r.querySelectorAll(s)];
+const store={get(k,d){try{const v=localStorage.getItem('kronarcade.'+k);return v==null?d:JSON.parse(v)}catch(e){return d}},set(k,v){try{localStorage.setItem('kronarcade.'+k,JSON.stringify(v))}catch(e){}}};
+const kronSVG=(fill='var(--kron)')=>`<svg class="kron" viewBox="0 0 64 60" aria-hidden="true">${kronInner(fill)}</svg>`;
+const kronInner=(fill)=>`<rect x="4" y="6" width="56" height="50" rx="22" fill="${fill}"/><circle cx="23" cy="28" r="9.5" fill="var(--eye)"/><circle cx="41" cy="28" r="9.5" fill="var(--eye)"/><circle class="pupil" cx="23" cy="29" r="4.6" fill="var(--ink)"/><circle class="pupil" cx="41" cy="29" r="4.6" fill="var(--ink)"/><path d="M27 43 q5 4 10 0" stroke="var(--ink)" stroke-width="3" fill="none" stroke-linecap="round"/>`;
+
+/* sound */
+let AC=null;
+function ac(){if(!AC){try{AC=new (window.AudioContext||window.webkitAudioContext)()}catch(e){}}if(AC&&AC.state==='suspended')AC.resume();return AC}
+function tone(f,d,type='triangle',v=.14,w=0){const c=ac();if(!c)return;const t=c.currentTime+w,o=c.createOscillator(),g=c.createGain();o.type=type;o.frequency.setValueAtTime(f,t);g.gain.setValueAtTime(v,t);g.gain.exponentialRampToValueAtTime(.001,t+d);o.connect(g).connect(c.destination);o.start(t);o.stop(t+d+.02)}
+const sfx={good(){tone(660,.09);tone(990,.14,'triangle',.14,.08)},bad(){tone(200,.2,'sawtooth',.06);tone(150,.22,'sawtooth',.05,.08)},pop(){tone(520,.05,'square',.05)},tick(){tone(880,.03,'square',.03)},win(){[523,659,784,1047].forEach((f,i)=>tone(f,.18,'triangle',.14,i*.11))}};
+function speak(t){try{if(!('speechSynthesis' in window))return;speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(t);u.lang='en-US';u.rate=.9;speechSynthesis.speak(u)}catch(e){}}
+
+/* floating score + confetti */
+function floatAt(el,text,cls='plus'){const r=el.getBoundingClientRect();const f=document.createElement('div');f.className='float '+cls;f.textContent=text;f.style.left=(r.left+r.width/2)+'px';f.style.top=(r.top+r.height/3)+'px';document.body.append(f);setTimeout(()=>f.remove(),850)}
+const fx=$('#fx'),ctx=fx.getContext('2d');let parts=[],fxOn=false;
+function sizeFx(){fx.width=innerWidth*devicePixelRatio;fx.height=innerHeight*devicePixelRatio}
+addEventListener('resize',sizeFx);sizeFx();
+function burst(el,n=18){if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;const r=el.getBoundingClientRect(),cs=getComputedStyle(document.documentElement);const cols=['--c-match','--c-gravity','--c-whack','--c-sentence','--c-quiz','--q2'].map(v=>cs.getPropertyValue(v).trim());for(let i=0;i<n;i++){const a=Math.random()*Math.PI*2,s=3+Math.random()*5;parts.push({x:r.left+r.width/2,y:r.top+r.height/2,vx:Math.cos(a)*s,vy:Math.sin(a)*s-3,life:1,c:cols[i%cols.length],s:4+Math.random()*4})}if(!fxOn){fxOn=true;requestAnimationFrame(drawFx)}}
+function drawFx(){const d=devicePixelRatio;ctx.clearRect(0,0,fx.width,fx.height);parts=parts.filter(p=>p.life>0);for(const p of parts){p.x+=p.vx;p.y+=p.vy;p.vy+=.25;p.life-=.022;ctx.globalAlpha=Math.max(0,p.life);ctx.fillStyle=p.c;ctx.fillRect(p.x*d,p.y*d,p.s*d,p.s*d)}if(parts.length)requestAnimationFrame(drawFx);else{fxOn=false;ctx.clearRect(0,0,fx.width,fx.height)}}
+
+/* eye tracking for every Kron on the page */
+addEventListener('pointermove',e=>{for(const svg of $$('svg.kron')){const r=svg.getBoundingClientRect();if(!r.width)continue;const dx=e.clientX-(r.left+r.width/2),dy=e.clientY-(r.top+r.height/2),m=Math.hypot(dx,dy)||1,k=Math.min(1,m/300)*3.6;for(const p of svg.querySelectorAll('.pupil'))p.style.transform=`translate(${dx/m*k}px,${dy/m*k}px)`}},{passive:true});
+
+/* ---------- shell ---------- */
+let cleanup=null,current=null;
+const hud=h=>{$('#hud').innerHTML=h};
+const P=(t)=>`<span class="pill">${t}</span>`;
+function renderTotals(){$('#xpPill').textContent=store.get('xp',0)+' XP';$('#playsPill').textContent=store.get('plays',0)+' 局'}
+$('#logoKron').innerHTML=kronSVG();
+const cardHTML=m=>`<button class="card" data-id="${m.id}" style="--c:${m.c}"><div class="card-in"><span class="tag">${m.bench}</span><div class="prev">${m.prev}</div><h2>${m.name}<small>${m.en}</small></h2><p>${m.desc}</p><div class="meta"><span>${m.skill}</span><span class="go">开始</span></div></div></button>`;
+$('#grid1').innerHTML=META.filter(m=>(m.batch||1)===1).map(cardHTML).join('');
+$('#grid2').innerHTML=META.filter(m=>m.batch===2).map(cardHTML).join('');
+$('#grid3').innerHTML=META.filter(m=>m.batch===3).map(cardHTML).join('');
+$('#hub').addEventListener('click',e=>{const c=e.target.closest('.card');if(c){ac();openGame(c.dataset.id)}});
+$('#backBtn').addEventListener('click',()=>showHub());
+
+function openGame(id){
+  stopGame();current=id;const m=META.find(x=>x.id===id);
+  $('#hub').hidden=true;$('#result').hidden=true;$('#game').hidden=false;
+  $('#game').style.setProperty('--g',m.c);$('#gName').textContent=m.name;
+  hud('');scrollTo(0,0);cleanup=GAMES[id]($('#stage'))||null;
+}
+function stopGame(){if(cleanup){cleanup();cleanup=null}$('#stage').innerHTML='';const s=$('.sheet');if(s)s.remove()}
+function showHub(){if(parent!==window){parent.postMessage({kronArcade:'close'},'*');return}stopGame();current=null;$('#game').hidden=true;$('#result').hidden=true;$('#hub').hidden=false;renderTotals()}
+function finish({score,stars,title,lines}){
+  if(cleanup){cleanup();cleanup=null}
+  store.set('xp',store.get('xp',0)+Math.round(score/10));store.set('plays',store.get('plays',0)+1);renderTotals();
+  sfx.win();const m=META.find(x=>x.id===current);
+  const r=$('#result');r.style.setProperty('--g',m.c);
+  r.innerHTML=`<div class="result-in">${kronSVG(m.c)}<div class="stars">${[1,2,3].map(i=>`<span class="${i<=stars?'':'off'}">★</span>`).join('')}</div><h2>${title}</h2><div class="big">${score}</div>${lines.map(l=>`<p>${l}</p>`).join('')}<p>+${Math.round(score/10)} XP</p><div class="row"><button class="btn ghost" id="rHub">回去</button><button class="btn" id="rAgain">再来一局</button></div></div>`;
+  r.hidden=false;burst($('.stars',r),30);
+  $('#rAgain').onclick=()=>openGame(current);$('#rHub').onclick=showHub;$('#rAgain').focus();
+}
+
+/* ---------- games ---------- */
+const GAMES={};
+
+/* 1 · Match Blitz */
+GAMES.match=st=>{
+  const set=shuffle(VOCAB).slice(0,6);let sel=null,done=0,miss=0,over=false;const t0=performance.now();
+  st.innerHTML=`<div class="match"><div class="col"></div><div class="col"></div></div>`;
+  const [L,R]=$$('.col',st);
+  shuffle(set).forEach(w=>L.insertAdjacentHTML('beforeend',`<button class="tile" data-id="${w.en}" data-side="en">${w.en}</button>`));
+  shuffle(set).forEach(w=>R.insertAdjacentHTML('beforeend',`<button class="tile" data-id="${w.en}" data-side="zh"><span class="em">${w.e}</span>${w.zh}</button>`));
+  const secs=()=>(performance.now()-t0)/1000+miss*2;
+  const best=store.get('best.match',null);
+  const draw=()=>hud(P('⏱ '+secs().toFixed(1)+'s')+P(done+'/6')+(best?P('最佳 '+best.toFixed(1)+'s'):''));
+  const iv=setInterval(draw,100);draw();
+  st.addEventListener('click',e=>{
+    const b=e.target.closest('.tile');if(!b||over||b.classList.contains('ok'))return;
+    if(!sel||sel.dataset.side===b.dataset.side){if(sel)sel.classList.remove('sel');sel=b;b.classList.add('sel');sfx.pop();if(b.dataset.side==='en')speak(b.dataset.id);return}
+    const a=sel;sel=null;a.classList.remove('sel');
+    if(a.dataset.id===b.dataset.id){
+      [a,b].forEach(x=>{x.classList.add('ok');setTimeout(()=>x.classList.add('gone'),380)});
+      sfx.good();burst(b,12);if(b.dataset.side==='zh')speak(b.dataset.id);done++;
+      if(done===6){over=true;const s=secs();const nb=!best||s<best;if(nb)store.set('best.match',s);
+        setTimeout(()=>finish({score:Math.max(100,Math.round(1500-s*35)),stars:s<16?3:s<26?2:1,title:nb?'新纪录！':'全部配对',lines:[`用时 ${s.toFixed(1)} 秒，配错 ${miss} 次`]}),500)}
+    }else{miss++;sfx.bad();[a,b].forEach(x=>{x.classList.add('bad');setTimeout(()=>x.classList.remove('bad'),400)});floatAt(b,'+2s','minus')}
+  });
+  return()=>clearInterval(iv);
+};
+
+/* 2 · Word Meteors */
+GAMES.gravity=st=>{
+  st.innerHTML=`<div class="sky"><div class="ground"></div></div><form class="typebar"><input id="gIn" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" placeholder="打出英文，回车发射" aria-label="输入英文单词"><button class="btn">发射</button></form>`;
+  const sky=$('.sky',st),inp=$('#gIn',st);const pool=shuffle(VOCAB);let pi=0;
+  let rocks=[],lives=3,cleared=0,score=0,combo=0,speed=30,gap=2600,since=2000,last=performance.now(),raf,alive=true;const GOAL=20;
+  const draw=()=>hud(P('♥'.repeat(lives)+'♡'.repeat(3-lives))+P(cleared+'/'+GOAL)+P(score+' 分'));draw();
+  function spawn(){const w=pool[pi++%pool.length];const el=document.createElement('div');el.className='rock';el.innerHTML=`<b>${w.zh}</b><small>${w.en[0]}${' _'.repeat(w.en.length-1)}</small>`;el.style.left=`calc(${4+Math.random()*70}% )`;el.style.transform='translateY(-90px)';sky.append(el);rocks.push({w,el,y:-90})}
+  function end(win){alive=false;cancelAnimationFrame(raf);setTimeout(()=>finish({score,stars:cleared>=GOAL?3:cleared>=12?2:1,title:win?'守住了地面！':'陨石落地了',lines:[`击碎 ${cleared} 颗，最高连击 ${maxCombo}`]}),600)}
+  let maxCombo=0;
+  function loop(t){const dt=Math.min(.05,(t-last)/1000);last=t;since+=dt*1000;if(since>gap){since=0;spawn()}
+    const H=sky.clientHeight;
+    for(const r of [...rocks]){r.y+=speed*dt;r.el.style.transform=`translateY(${r.y}px)`;
+      if(r.y>H-34-r.el.offsetHeight){rocks.splice(rocks.indexOf(r),1);r.el.innerHTML=`<b>${r.w.en}</b><small>${r.w.zh}</small>`;r.el.classList.add('crash');setTimeout(()=>r.el.remove(),700);lives--;combo=0;sfx.bad();draw();if(lives<=0){end(false);return}}}
+    if(alive)raf=requestAnimationFrame(loop)}
+  raf=requestAnimationFrame(loop);
+  $('form',st).addEventListener('submit',e=>{e.preventDefault();if(!alive)return;const v=inp.value.trim().toLowerCase();if(!v)return;
+    const hit=rocks.filter(r=>r.w.en===v).sort((a,b)=>b.y-a.y)[0];
+    if(hit){rocks.splice(rocks.indexOf(hit),1);combo++;maxCombo=Math.max(maxCombo,combo);const pts=10*Math.min(combo,5);score+=pts;cleared++;floatAt(hit.el,'+'+pts);burst(hit.el,16);hit.el.classList.add('boom');setTimeout(()=>hit.el.remove(),360);
+      sfx.good();speak(hit.w.en);speed+=2.4;gap=Math.max(1100,gap*.94);inp.value='';draw();if(cleared>=GOAL)end(true)}
+    else{combo=0;sfx.bad();inp.classList.add('bad');setTimeout(()=>inp.classList.remove('bad'),320)}
+  });
+  setTimeout(()=>inp.focus({preventScroll:true}),50);
+  return()=>{alive=false;cancelAnimationFrame(raf)};
+};
+
+/* 3 · Word Whack */
+GAMES.whack=st=>{
+  const ck=shuffle(Object.keys(CATS)),cats=[0,1,2].map(i=>ck[i%ck.length]);
+  st.innerHTML=`<div class="target" id="wT"></div><div class="yard">${Array(9).fill(`<div class="hole"><button class="mole" tabindex="-1">${kronSVG('var(--c-whack)')}<span class="sign"></span></button></div>`).join('')}</div>`;
+  const holes=$$('.hole',st),T=$('#wT',st);let left=30,score=0,hits=0,wrongs=0,phase=-1,alive=true;const timers=new Set();
+  const later=(f,ms)=>{const id=setTimeout(()=>{timers.delete(id);f()},ms);timers.add(id)};
+  const cur=()=>cats[Math.min(2,Math.floor((30-left)/10))];
+  const draw=()=>hud(P('⏱ '+left+'s')+P(score+' 分'));
+  function setPhase(){const p=Math.min(2,Math.floor((30-left)/10));if(p===phase)return;phase=p;const c=CATS[cats[p]];T.innerHTML=`只打<em>${c.zh}</em><span>${c.en}</span>`;T.classList.remove('flash');void T.offsetWidth;T.classList.add('flash');sfx.pop()}
+  function down(h){h.classList.remove('up','bonk','oops')}
+  function pop(){if(!alive)return;const free=holes.filter(h=>!h.classList.contains('up'));if(free.length){const h=free[Math.random()*free.length|0];const want=Math.random()<.55;let list=VOCAB.filter(w=>want?w.cat===cur():w.cat!==cur());if(!list.length)list=VOCAB.filter(w=>w.cat===cur());const w=list[Math.random()*list.length|0];
+      h.dataset.en=w.en;h.dataset.cat=w.cat;h.dataset.zh=w.zh;$('.sign',h).textContent=w.en;h.classList.add('up');const stay=Math.max(800,1400-(30-left)*18);later(()=>{if(!h.classList.contains('bonk')&&!h.classList.contains('oops'))down(h)},stay)}
+    later(pop,520+Math.random()*380)}
+  st.addEventListener('pointerdown',e=>{const h=e.target.closest('.hole');if(!h||!alive||!h.classList.contains('up')||h.classList.contains('bonk')||h.classList.contains('oops'))return;
+    if(h.dataset.cat===cur()){score+=10;hits++;h.classList.add('bonk');sfx.good();speak(h.dataset.en);floatAt(h,'+10');burst(h,10)}
+    else{score=Math.max(0,score-5);wrongs++;h.classList.add('oops');sfx.bad();floatAt(h,h.dataset.zh+' −5','minus')}
+    draw();later(()=>down(h),260)});
+  setPhase();draw();later(pop,400);
+  const iv=setInterval(()=>{left--;if(left<=0){clearInterval(iv);alive=false;holes.forEach(down);finish({score,stars:hits>=15?3:hits>=9?2:1,title:'时间到',lines:[`打对 ${hits} 个，打错 ${wrongs} 个`]});return}if(left<=5)sfx.tick();setPhase();draw()},1000);
+  return()=>{alive=false;clearInterval(iv);timers.forEach(clearTimeout)};
+};
+
+/* 4 · Sentence Builder */
+GAMES.sentence=st=>{
+  const list=shuffle(SENTS).slice(0,5),SN=list.length;let i=0,right=0;
+  const draw=()=>hud(`<span class="pill"><span class="prog"><i style="width:${i/SN*100}%"></i></span></span>`+P(right+' 句对'));
+  function render(){
+    const s=list[i];const words=s.en.split(' ');const bank=shuffle([...words,...s.extra]);let ans=[];
+    st.innerHTML=`<div class="bubble-row">${kronSVG('var(--c-sentence)')}<button class="bubble say-btn" id="sS"><small>KRON</small><p>🔊 ${s.zh}</p></button></div><div class="answer" id="sA"></div><div class="bank" id="sB">${bank.map((t,k)=>`<button class="tile word" data-k="${k}">${t}</button>`).join('')}</div><button class="btn wide" id="sC" disabled>检查</button>`;
+    const A=$('#sA',st),B=$('#sB',st),C=$('#sC',st);$('#sS',st).onclick=()=>speak(s.en);speak(s.en);
+    const sync=()=>{A.innerHTML=ans.map(k=>`<button class="tile word" data-k="${k}">${bank[k]}</button>`).join('');$$('.word',B).forEach(b=>b.classList.toggle('ghost',ans.includes(+b.dataset.k)));C.disabled=!ans.length};
+    B.addEventListener('click',e=>{const b=e.target.closest('.word');if(!b)return;ans.push(+b.dataset.k);sfx.pop();speak(bank[+b.dataset.k]);sync()});
+    A.addEventListener('click',e=>{const b=e.target.closest('.word');if(!b)return;ans=ans.filter(k=>k!==+b.dataset.k);sfx.pop();sync()});
+    C.addEventListener('click',()=>{
+      const built=ans.map(k=>bank[k]).join(' ');const ok=built.toLowerCase()===s.en.toLowerCase();if(ok){right++;sfx.good();burst(C,16)}else sfx.bad();
+      speak(s.en);C.disabled=true;$$('.word',st).forEach(b=>b.style.pointerEvents='none');
+      const sh=document.createElement('div');sh.className='sheet '+(ok?'good':'no');
+      sh.innerHTML=`<div class="sheet-in"><div><h3>${ok?'完全正确！':'差一点'}</h3><p>${ok?'':'正确答案：'}<b>${s.en}${s.end}</b></p></div><button class="btn">继续</button></div>`;
+      document.body.append(sh);i++;draw();
+      $('.btn',sh).onclick=()=>{sh.remove();if(i>=SN)finish({score:right*200,stars:right>=SN?3:right>=Math.ceil(SN/2)?2:1,title:right>=SN-1?'语序达人':'继续加油',lines:[`${SN} 句里拼对 ${right} 句`]});else render()};
+      $('.btn',sh).focus();
+    });
+  }
+  draw();render();
+  return()=>{const s=$('.sheet');if(s)s.remove()};
+};
+
+/* 5 · Speed Quiz */
+GAMES.quiz=st=>{
+  const qs=shuffle(VOCAB).slice(0,8).map((w,n)=>({w,type:n%2?'zh':'pic'}));const SH=['▲','◆','●','■'],TL=10;
+  let i=0,score=0,streak=0,correct=0,raf,to,alive=true,lock=false,t0=0;
+  const draw=()=>hud(P((i+1>8?8:i+1)+'/8')+P(score+' 分'));
+  function render(){
+    const q=qs[i];lock=false;draw();
+    const opts=shuffle([q.w,...shuffle(VOCAB.filter(v=>v.en!==q.w.en&&(q.type==='zh'||v.cat!==q.w.cat||Math.random()<.5))).slice(0,3)]);
+    st.innerHTML=`<div class="q-card">${q.type==='pic'?`<div class="q-em">${q.w.e}</div><p>这是什么？选出英文</p>`:`<div class="q-word">${q.w.en}</div><p>选出它的中文意思</p>`}<button class="listen" id="qL">🔊 听发音</button></div><div class="timebar"><i id="qT"></i></div><div class="opts">${opts.map((o,k)=>`<button class="opt o${k}" data-en="${o.en}"><span class="sh">${SH[k]}</span>${q.type==='pic'?o.en:o.zh}</button>`).join('')}</div><div class="streak" id="qS">${streak>=3?'连对 '+streak+' 题 · 分数 ×1.5':''}</div>`;
+    $('#qL',st).onclick=()=>speak(q.w.en);if(q.type==='zh')speak(q.w.en);
+    t0=performance.now();const bar=$('#qT',st);
+    const tickBar=()=>{const r=1-(performance.now()-t0)/1000/TL;bar.style.width=Math.max(0,r*100)+'%';if(r>0&&!lock&&alive)raf=requestAnimationFrame(tickBar)};tickBar();
+    to=setTimeout(()=>answer(null),TL*1000);
+    $('.opts',st).onclick=e=>{const b=e.target.closest('.opt');if(b)answer(b)};
+  }
+  function answer(b){if(lock||!alive)return;lock=true;clearTimeout(to);cancelAnimationFrame(raf);const q=qs[i];
+    const ok=b&&b.dataset.en===q.w.en;const rem=Math.max(0,1-(performance.now()-t0)/1000/TL);
+    $$('.opt',st).forEach(o=>{if(o.dataset.en===q.w.en)o.classList.add('right');else if(o===b)o.classList.add('wrong');else o.classList.add('dim')});
+    if(ok){streak++;correct++;const pts=Math.round((500+500*rem)*(streak>=3?1.5:1));score+=pts;floatAt(b,'+'+pts);burst(b,14);sfx.good();if(q.type==='pic')speak(q.w.en)}
+    else{streak=0;sfx.bad();if(!b)floatAt($('.timebar',st),'时间到','minus')}
+    $('#qS',st).textContent=streak>=3?'连对 '+streak+' 题 · 分数 ×1.5':ok?'':q.w.en+' = '+q.w.zh;
+    draw();setTimeout(()=>{if(!alive)return;i++;if(i>=8)finish({score,stars:correct>=7?3:correct>=5?2:1,title:correct>=7?'反应神速':'抢答结束',lines:[`8 题答对 ${correct} 题`]});else render()},1200)}
+  render();
+  return()=>{alive=false;clearTimeout(to);cancelAnimationFrame(raf)};
+};
+
+/* ---------- batch 2 helpers ---------- */
+function misspell(word,n){const out=new Set(),V='aeiou';let g=0;while(out.size<n&&g++<300){const a=word.split('');const r=Math.random()*4|0;const i=1+(Math.random()*(a.length-1)|0);
+  if(r===0&&i<a.length-1){[a[i],a[i+1]]=[a[i+1],a[i]]}else if(r===1){a.splice(i,0,a[i])}else if(r===2&&a.length>3){a.splice(i,1)}
+  else{const vs=a.map((c,k)=>V.includes(c)?k:-1).filter(k=>k>=0);if(vs.length){const k=vs[Math.random()*vs.length|0];const alt=V.replace(a[k],'');a[k]=alt[Math.random()*alt.length|0]}}
+  const s=a.join('');if(s!==word)out.add(s)}return[...out]}
+function mcq(kind){const w=VOCAB[Math.random()*VOCAB.length|0];const others=shuffle(VOCAB.filter(v=>v!==w)).slice(0,3);
+  if(kind==='zh')return{w,say:1,html:`<div class="mq-word">${w.en}</div>`,sub:'选出中文意思',opts:shuffle([w,...others]).map(o=>({t:o.zh,ok:o===w}))};
+  if(kind==='spell')return{w,html:`<div class="mq-em">${w.e}</div><b>${w.zh}</b>`,sub:'哪个拼写是对的？',opts:shuffle([w.en,...misspell(w.en,3)]).map(t=>({t,ok:t===w.en}))};
+  if(kind==='gap'){const i=1+(Math.random()*(w.en.length-1)|0),c=w.en[i];const pool=shuffle('abcdefghijklmnopqrstuvwxyz'.replace(c,'').split('')).slice(0,3);
+    return{w,html:`<div class="mq-word">${w.en.slice(0,i)}<u>_</u>${w.en.slice(i+1)}</div><b>${w.e} ${w.zh}</b>`,sub:'缺了哪个字母？',opts:shuffle([c,...pool]).map(t=>({t,ok:t===c}))}}
+  return{w,html:`<div class="mq-em">${w.e}</div>`,sub:'这是什么？选出英文',opts:shuffle([w,...others]).map(o=>({t:o.en,ok:o===w}))}}
+function quizPanel(el,kinds,onAns){let stopped=false,lock=false;
+  function next(){if(stopped)return;const q=mcq(kinds[Math.random()*kinds.length|0]);lock=false;
+    el.innerHTML=`<div class="qp-card">${q.html}<p>${q.sub}</p></div><div class="opts sm">${q.opts.map((o,k)=>`<button class="opt o${k}" data-k="${k}"><span class="sh">${SH[k]}</span>${o.t}</button>`).join('')}</div>`;
+    if(q.say)speak(q.w.en);
+    $('.opts',el).onclick=e=>{const b=e.target.closest('.opt');if(!b||lock||stopped)return;lock=true;const ok=q.opts[+b.dataset.k].ok;
+      $$('.opt',el).forEach((o,k)=>{if(q.opts[k].ok)o.classList.add('right');else if(o===b)o.classList.add('wrong');else o.classList.add('dim')});
+      onAns(ok,b,q);setTimeout(next,ok?320:900)}}
+  next();return{stop(){stopped=true}}}
+
+/* 6 · Floor is Lava */
+GAMES.lava=st=>{
+  st.innerHTML=`<div class="duo"><div class="scene" id="lS"><div class="world" id="lW"><div class="tower" id="lT"></div><div class="lk" id="lK">${kronSVG('var(--c-lava)')}</div></div><div class="lava" id="lL"></div><span class="pill lmeter" id="lM"></span></div><div id="lQ"></div></div>`;
+  const BH=26,S=$('#lS',st),W=$('#lW',st),T=$('#lT',st),K=$('#lK',st),L=$('#lL',st),M=$('#lM',st),GOAL=60;
+  let blocks=0,lava=0,t=0,streak=0,correct=0,alive=true,raf,last=performance.now(),cam=0,hudT=0;
+  const add=n=>{for(let k=0;k<n;k++)T.insertAdjacentHTML('afterbegin','<i></i>');blocks+=n;K.style.bottom=blocks*BH+'px'};add(3);
+  const qp=quizPanel($('#lQ',st),['pic','zh','spell'],(ok,b)=>{if(!alive)return;
+    if(ok){streak++;correct++;const n=streak>=3?2:1;add(n);floatAt(b,'+'+n+' 层');sfx.good()}
+    else{streak=0;lava+=BH*1.2;S.classList.remove('hurt');void S.offsetWidth;S.classList.add('hurt');floatAt(S,'岩浆涨了！','minus');sfx.bad()}});
+  function end(win){alive=false;cancelAnimationFrame(raf);qp.stop();setTimeout(()=>finish({score:blocks*100+Math.round(t)*10,stars:win?(blocks>=30?3:2):1,title:win?'活下来了！':'被岩浆追上了',lines:[`坚持 ${Math.round(t)} 秒，塔高 ${blocks} 米，答对 ${correct} 题`]}),win?300:900)}
+  function loop(now){const dt=Math.min(.05,(now-last)/1000);last=now;t+=dt;lava+=(5+t*.16)*dt;
+    const H=S.clientHeight,top=blocks*BH;cam+=(Math.max(0,top-H*.5)-cam)*Math.min(1,dt*6);
+    W.style.transform=`translateY(${cam}px)`;L.style.height=Math.max(0,lava-cam)+'px';
+    const gap=(top-lava)/BH;M.textContent=`离岩浆 ${Math.max(0,gap).toFixed(1)} 米`;M.classList.toggle('danger',gap<1.5);
+    if(now-hudT>200){hudT=now;hud(P('⏱ '+Math.max(0,Math.ceil(GOAL-t))+'s')+P('塔高 '+blocks+' 米'))}
+    if(lava>=top){K.classList.add('burn');sfx.bad();end(false);return}
+    if(t>=GOAL){end(true);return}
+    raf=requestAnimationFrame(loop)}
+  raf=requestAnimationFrame(loop);
+  return()=>{alive=false;cancelAnimationFrame(raf);qp.stop()};
+};
+
+/* 7 · Maze Chase */
+GAMES.maze=st=>{
+  const MAP=['###########','#A...#...B#','#.##.#.##.#','#.........#','#.##.#.##.#','#.........#','#.##.#.##.#','#C...#...D#','###########'];
+  const COLS=11,ROWS=9,Z='ABCD',GOAL=8;
+  st.innerHTML=`<div class="qp-card" id="mQ"></div><div class="maze" id="mZ">${MAP.map(row=>[...row].map(ch=>{const zi=Z.indexOf(ch);return zi>=0?`<div class="cell z" style="--c:var(--q${zi})">${SH[zi]}</div>`:`<div class="cell${ch==='#'?' w':' dot'}"></div>`}).join('')).join('')}<div class="sprite" id="mK">${kronSVG('var(--c-maze)')}</div><div class="sprite foe">${kronSVG('var(--bad)')}</div><div class="sprite foe">${kronSVG('var(--bad)')}</div></div><div class="legend" id="mL"></div><div class="dpad"><button data-d="0,-1" aria-label="上">↑</button><button data-d="-1,0" aria-label="左">←</button><button data-d="0,1" aria-label="下">↓</button><button data-d="1,0" aria-label="右">→</button></div>`;
+  const at=(x,y)=>MAP[y]&&MAP[y][x],open=(x,y)=>!!at(x,y)&&at(x,y)!=='#';
+  const K=$('#mK',st),F=$$('.foe',st),MZ=$('#mZ',st);
+  let me={x:5,y:5},foes=[{x:1,y:3},{x:9,y:3}],lives=3,score=0,correct=0,q,alive=true,inv=0,rep=null,run=null;
+  const put=(el,p)=>{el.style.left=p.x/COLS*100+'%';el.style.top=p.y/ROWS*100+'%'};
+  const draw=()=>hud(P('♥'.repeat(Math.max(0,lives))+'♡'.repeat(3-Math.max(0,lives)))+P(correct+'/'+GOAL)+P(score+' 分'));
+  function newQ(){q=mcq(Math.random()<.5?'pic':'zh');$('#mQ',st).innerHTML=`${q.html}<p>${q.sub}</p>`;$('#mL',st).innerHTML=q.opts.map((o,k)=>`<div class="lg" style="--c:var(--q${k})"><span class="sh">${SH[k]}</span>${o.t}</div>`).join('');if(q.say)speak(q.w.en)}
+  function home(){me={x:5,y:5};put(K,me);stopRun()}
+  function hurt(force){if(!force&&performance.now()<inv)return;lives--;inv=performance.now()+1500;K.classList.remove('blink');void K.offsetWidth;K.classList.add('blink');sfx.bad();home();draw();if(lives<=0)end()}
+  const touch=()=>{if(foes.some(f=>f.x===me.x&&f.y===me.y)){floatAt(K,'被抓住了','minus');hurt()}};
+  function move(dx,dy){if(!alive)return false;const nx=me.x+dx,ny=me.y+dy;if(!open(nx,ny))return false;me={x:nx,y:ny};put(K,me);touch();
+    const zi=Z.indexOf(at(nx,ny));if(zi>=0){if(q.opts[zi].ok){correct++;score+=100;sfx.good();burst(K,16);floatAt(K,'+100');speak(q.w.en);inv=performance.now()+800;home();draw();if(correct>=GOAL)end();else newQ()}else{floatAt(K,'不是 '+q.opts[zi].t,'minus');hurt(true)}return false}return true}
+  function stopRun(){if(run){clearInterval(run);run=null}}
+  function startRun(d){stopRun();if(!move(...d))return;run=setInterval(()=>{if(!move(...d))stopRun()},130)}
+  const iv=setInterval(()=>{if(!alive)return;foes.forEach((f,i)=>{const dirs=[[1,0],[-1,0],[0,1],[0,-1]].filter(([dx,dy])=>open(f.x+dx,f.y+dy)&&Z.indexOf(at(f.x+dx,f.y+dy))<0);if(!dirs.length)return;let d;
+    if(Math.random()<.55){dirs.sort((a,b)=>(Math.abs(f.x+a[0]-me.x)+Math.abs(f.y+a[1]-me.y))-(Math.abs(f.x+b[0]-me.x)+Math.abs(f.y+b[1]-me.y)));d=dirs[0]}else d=dirs[Math.random()*dirs.length|0];
+    f.x+=d[0];f.y+=d[1];put(F[i],f)});touch()},470);
+  const kd=e=>{const m={ArrowUp:[0,-1],ArrowDown:[0,1],ArrowLeft:[-1,0],ArrowRight:[1,0],w:[0,-1],s:[0,1],a:[-1,0],d:[1,0]}[e.key];if(m){e.preventDefault();stopRun();move(...m)}};
+  addEventListener('keydown',kd);
+  const dp=$('.dpad',st);
+  dp.addEventListener('pointerdown',e=>{const b=e.target.closest('button');if(!b)return;e.preventDefault();const d=b.dataset.d.split(',').map(Number);stopRun();move(...d);clearInterval(rep);rep=setInterval(()=>move(...d),150)});
+  ['pointerup','pointercancel','pointerleave'].forEach(ev=>dp.addEventListener(ev,()=>clearInterval(rep)));
+  let sx=0,sy=0;MZ.style.touchAction='none';
+  MZ.addEventListener('pointerdown',e=>{sx=e.clientX;sy=e.clientY});
+  MZ.addEventListener('pointerup',e=>{const dx=e.clientX-sx,dy=e.clientY-sy;if(Math.max(Math.abs(dx),Math.abs(dy))<20)return;startRun(Math.abs(dx)>Math.abs(dy)?[Math.sign(dx),0]:[0,Math.sign(dy)])});
+  function end(){if(!alive)return;alive=false;finish({score:score+Math.max(0,lives)*100,stars:correct>=GOAL?(lives===3?3:2):1,title:correct>=GOAL?'走出迷宫！':'被抓住了',lines:[`答对 ${correct} 题，剩 ${Math.max(0,lives)} 条命`]})}
+  put(K,me);foes.forEach((f,i)=>put(F[i],f));newQ();draw();
+  return()=>{alive=false;clearInterval(iv);clearInterval(rep);stopRun();removeEventListener('keydown',kd)};
+};
+
+/* 8 · Fishing Frenzy */
+GAMES.fish=st=>{
+  st.innerHTML=`<div class="fprompt" id="fP"></div><div class="pond" id="fD"><div class="boat" id="fB">${kronSVG('var(--c-fish)')}</div><i class="line" id="fL"></i></div>`;
+  const D=$('#fD',st),B=$('#fB',st),Ln=$('#fL',st),Pp=$('#fP',st);
+  const SVG=`<svg viewBox="0 0 60 30" aria-hidden="true"><path d="M44 15 L60 3 L57 15 L60 27Z" fill="currentColor"/><ellipse cx="25" cy="15" rx="22" ry="12" fill="currentColor"/><circle cx="12" cy="12" r="3" fill="var(--eye)"/><circle cx="11" cy="12" r="1.6" fill="var(--ink)"/></svg>`;
+  let fish=[],target=null,left=45,kg=0,caught=0,score=0,alive=true,busy=false,raf,last=performance.now();
+  const draw=()=>hud(P('⏱ '+left+'s')+P(kg.toFixed(1)+' kg')+P(score+' 分'));
+  function spawn(w){const Wd=D.clientWidth,H=D.clientHeight,dir=Math.random()<.5?1:-1,gold=Math.random()<.12;const el=document.createElement('button');el.className='fishy'+(gold?' gold':'')+(dir>0?' r':'');el.innerHTML=SVG+`<span>${w.en}</span>`;D.append(el);
+    const f={w,el,dir,gold,x:dir>0?-80:Wd+10,y:76+Math.random()*Math.max(40,H-140),v:28+Math.random()*40};fish.push(f);pos(f);return f}
+  const pos=f=>{f.el.style.transform=`translate(${f.x}px,${f.y}px)`};
+  function fill(){while(fish.length<6){let w,g=0;do{w=VOCAB[Math.random()*VOCAB.length|0]}while(fish.some(f=>f.w===w)&&g++<50);const f=spawn(w);f.x=Math.random()*(D.clientWidth-70);pos(f)}}
+  function pickTarget(){const w=VOCAB[Math.random()*VOCAB.length|0];target=w;if(!fish.some(f=>f.w===w))spawn(w);Pp.innerHTML=`<button class="listen" id="fS" aria-label="再听一遍">🔊</button><span>钓起 <b>${w.zh}</b></span>`;$('#fS',Pp).onclick=()=>speak(w.en);speak(w.en)}
+  function loop(now){const dt=Math.min(.05,(now-last)/1000);last=now;const Wd=D.clientWidth;
+    for(const f of [...fish]){f.x+=f.dir*f.v*dt;pos(f);if(f.x<-100||f.x>Wd+30){fish.splice(fish.indexOf(f),1);f.el.remove();if(f.w===target&&alive)spawn(target)}}
+    if(fish.length<6)fill();if(alive)raf=requestAnimationFrame(loop)}
+  D.addEventListener('click',e=>{const el=e.target.closest('.fishy');if(!el||busy||!alive)return;const f=fish.find(x=>x.el===el);if(!f)return;busy=true;
+    const x=f.x+32;B.style.left=x+'px';Ln.style.left=x+'px';Ln.style.height=Math.max(0,f.y-44)+'px';
+    setTimeout(()=>{Ln.style.height='0px';
+      if(f.w===target){const w=+((0.3+Math.random()*2.7)*(f.gold?3:1)).toFixed(1);kg+=w;caught++;const pts=Math.round(w*100);score+=pts;floatAt(el,(f.gold?'金鱼 ':'')+'+'+w+' kg');burst(el,f.gold?28:14);sfx.good();
+        fish.splice(fish.indexOf(f),1);el.classList.add('caught');el.style.transform=`translate(${f.x}px,10px)`;setTimeout(()=>el.remove(),480);pickTarget()}
+      else{left=Math.max(0,left-3);floatAt(el,f.w.zh+' · −3s','minus');sfx.bad();f.v*=4}
+      busy=false;draw()},260)});
+  const iv=setInterval(()=>{left--;if(left<=5&&left>0)sfx.tick();draw();if(left<=0){clearInterval(iv);alive=false;cancelAnimationFrame(raf);finish({score,stars:caught>=10?3:caught>=6?2:1,title:'收竿！',lines:[`钓到 ${caught} 条，共 ${kg.toFixed(1)} kg`]})}},1000);
+  requestAnimationFrame(()=>{fill();pickTarget();draw();raf=requestAnimationFrame(loop)});
+  return()=>{alive=false;clearInterval(iv);cancelAnimationFrame(raf)};
+};
+
+/* 9 · Spelling Race */
+GAMES.race=st=>{
+  const R=[{n:'你',c:'var(--c-race)',p:0,me:1},{n:'Mia',c:'var(--q1)',p:0,v:100/(36+Math.random()*8)},{n:'Leo',c:'var(--q3)',p:0,v:100/(40+Math.random()*8)}];
+  st.innerHTML=`<div class="track">${R.map(r=>`<div class="lane${r.me?' me':''}"><span class="lname">${r.n}</span><div class="car">${kronSVG(r.c)}</div><i class="flag"></i></div>`).join('')}</div><div id="rQ"></div>`;
+  const cars=$$('.car',st);let alive=true,raf,last=performance.now(),t=0,streak=0,correct=0,done=[],hudT=0;
+  const place=()=>1+R.filter(r=>!r.me&&r.p>R[0].p).length;
+  const qp=quizPanel($('#rQ',st),['spell','gap','spell','pic'],(ok,b)=>{if(!alive)return;
+    if(ok){streak++;correct++;const d=streak>=3?12:9;R[0].p=Math.min(100,R[0].p+d);cars[0].classList.add('boost');setTimeout(()=>cars[0].classList.remove('boost'),450);floatAt(b,streak>=3?'冲刺 +'+d+'%':'+'+d+'%');sfx.good()}
+    else{streak=0;cars[0].classList.remove('stall');void cars[0].offsetWidth;cars[0].classList.add('stall');sfx.bad()}});
+  function loop(now){const dt=Math.min(.05,(now-last)/1000);last=now;t+=dt;
+    R.forEach((r,i)=>{if(!r.me&&r.p<100)r.p=Math.min(100,r.p+r.v*dt*(.75+Math.random()*.5));if(r.p>=100&&!done.includes(i))done.push(i);cars[i].style.left=`calc(${r.p*.92}% - ${r.p/100*40}px)`});
+    if(now-hudT>200){hudT=now;hud(P('第 '+place()+' 名')+P(Math.round(R[0].p)+'%'))}
+    const mine=done.indexOf(0);
+    if(mine>=0||done.length>=2){alive=false;qp.stop();const rank=mine>=0?mine+1:3;if(rank===1)burst(cars[0],30);setTimeout(()=>finish({score:correct*120+(4-rank)*300,stars:4-rank,title:['','冠军！','第二名','第三名'][rank],lines:[`用时 ${t.toFixed(1)} 秒，答对 ${correct} 题`]}),700);return}
+    raf=requestAnimationFrame(loop)}
+  raf=requestAnimationFrame(loop);
+  return()=>{alive=false;cancelAnimationFrame(raf);qp.stop()};
+};
+
+/* 10 · Balloon Hangman */
+GAMES.balloon=st=>{
+  const words=shuffle(VOCAB.filter(w=>w.en.length>=4)).slice(0,5);let i=0,solved=0,score=0,onKey=null,timer=null;
+  const BAL=[[40,46],[78,24],[122,24],[160,46],[62,80],[138,80]],BC=['var(--q0)','var(--q1)','var(--q2)','var(--q3)','var(--c-race)','var(--c-fish)'];
+  function render(){const w=words[i],letters=new Set(w.en),found=new Set();let miss=0,over=false;
+    st.innerHTML=`<div class="bal-scene" id="bS"><svg class="kron balsvg" viewBox="0 0 200 230" aria-hidden="true">${BAL.map(([x,y],k)=>`<g class="bal"><line x1="${x}" y1="${y+20}" x2="100" y2="156" stroke="var(--muted)" stroke-width="1.5"/><circle cx="${x}" cy="${y}" r="20" fill="${BC[k]}"/><ellipse cx="${x-6}" cy="${y-7}" rx="4" ry="6" fill="var(--eye)" opacity=".5"/></g>`).join('')}<g id="kg">${kronInner('var(--c-balloon)')}</g></svg></div>
+      <div class="hint"><span class="em">${w.e}</span> ${w.zh}</div><div class="slots">${[...w.en].map(c=>`<span class="slot" data-c="${c}"></span>`).join('')}</div><div class="keys">${[...'abcdefghijklmnopqrstuvwxyz'].map(c=>`<button class="key" data-c="${c}">${c}</button>`).join('')}</div>`;
+    const draw=()=>hud(P((i+1)+'/5')+P('气球 '+(6-miss))+P(score+' 分'));draw();
+    function guess(c){if(over)return;const k=$(`.key[data-c="${c}"]`,st);if(!k||k.disabled)return;k.disabled=true;
+      if(letters.has(c)){found.add(c);k.classList.add('hit');$$(`.slot[data-c="${c}"]`,st).forEach(s=>{s.textContent=c;s.classList.add('show')});sfx.good();
+        if([...letters].every(l=>found.has(l))){over=true;solved++;const pts=100+(6-miss)*50;score+=pts;speak(w.en);burst($('.slots',st),20);floatAt($('.slots',st),'+'+pts);draw();timer=setTimeout(nextWord,1100)}}
+      else{k.classList.add('miss');const rem=$$('.bal:not(.popped)',st);rem[Math.random()*rem.length|0].classList.add('popped');miss++;sfx.pop();sfx.bad();draw();
+        if(miss>=6){over=true;$('#bS',st).classList.add('fall');$$('.slot',st).forEach(s=>{if(!s.textContent){s.textContent=s.dataset.c;s.classList.add('miss')}});speak(w.en);timer=setTimeout(nextWord,1700)}}}
+    $('.keys',st).onclick=e=>{const k=e.target.closest('.key');if(k)guess(k.dataset.c)};
+    onKey=e=>{if(e.metaKey||e.ctrlKey||e.altKey)return;const c=(e.key||'').toLowerCase();if(/^[a-z]$/.test(c))guess(c)}}
+  function nextWord(){i++;if(i>=5)finish({score,stars:solved>=5?3:solved>=3?2:1,title:solved>=4?'Kron 安全着陆':'气球不够用了',lines:[`5 个词猜出 ${solved} 个`]});else render()}
+  const kd=e=>onKey&&onKey(e);addEventListener('keydown',kd);render();
+  return()=>{clearTimeout(timer);removeEventListener('keydown',kd)};
+};
+
+/* ---------- batch 3 ---------- */
+const qHTML=q=>`<div class="qp-card">${q.html}<p>${q.sub}</p></div><div class="opts sm">${q.opts.map((o,k)=>`<button class="opt o${k}" data-k="${k}"><span class="sh">${SH[k]}</span>${o.t}</button>`).join('')}</div>`;
+function markOpts(el,q,b){$$('.opt',el).forEach((o,k)=>{if(q.opts[k].ok)o.classList.add('right');else if(o===b)o.classList.add('wrong');else o.classList.add('dim')})}
+
+/* 11 · Gold Quest */
+GAMES.gold=st=>{
+  const PL=[{n:'你',c:'var(--c-gold)',g:0,me:1},{n:'Mia',c:'var(--q1)',g:0},{n:'Leo',c:'var(--q3)',g:0}],ROUNDS=10;let r=0,correct=0,alive=true,tm=null;
+  st.innerHTML=`<div class="duo"><div id="gA"></div><div class="board" id="gB"></div></div>`;
+  const A=$('#gA',st),Bd=$('#gB',st),later=(f,ms)=>{tm=setTimeout(f,ms)};
+  const board=()=>{const s=[...PL].sort((a,b)=>b.g-a.g);Bd.innerHTML=`<h3>金币榜 · 第 ${Math.min(r+1,ROUNDS)}/${ROUNDS} 轮</h3>`+s.map((p,k)=>`<div class="brow${p.me?' me':''}"><span>${k+1}</span>${kronSVG(p.c)}${p.n}<b>${Math.round(p.g)}</b></div>`).join('');hud(P(Math.round(PL[0].g)+' 金币')+P((r+1>ROUNDS?ROUNDS:r+1)+'/'+ROUNDS))};
+  const bots=()=>PL.slice(1).forEach(b=>{const x=Math.random();if(x<.22)return;b.g=x<.86?b.g+[10,20,30,40][Math.random()*4|0]:Math.round(b.g*1.5)});
+  const OUT=[{w:4,t:'+10',f:g=>g+10},{w:4,t:'+20',f:g=>g+20},{w:3,t:'+30',f:g=>g+30},{w:2,t:'+50',f:g=>g+50},{w:1.5,t:'×2',f:g=>g*2},{w:1,t:'×3',f:g=>g*3},{w:1.3,steal:1},{w:1.5,t:'丢掉 25%',f:g=>Math.round(g*.75),bad:1},{w:.8,swap:1},{w:1,t:'空箱子',f:g=>g,bad:1}];
+  const roll=()=>{let s=OUT.reduce((a,o)=>a+o.w,0)*Math.random();for(const o of OUT){s-=o.w;if(s<=0)return o}return OUT[0]};
+  function ask(){if(!alive)return;board();const q=mcq(['pic','zh','spell'][Math.random()*3|0]);let lock=false;A.innerHTML=qHTML(q);if(q.say)speak(q.w.en);
+    $('.opts',A).onclick=e=>{const b=e.target.closest('.opt');if(!b||lock)return;lock=true;const ok=q.opts[+b.dataset.k].ok;markOpts(A,q,b);
+      if(ok){correct++;sfx.good();later(chests,500)}else{sfx.bad();A.insertAdjacentHTML('beforeend','<p class="gq-msg">答错了，这一轮的宝箱打不开</p>');later(()=>{bots();next()},1300)}}}
+  function chests(){let picked=false;A.innerHTML=`<p class="gq-msg">挑一个</p><div class="chests">${[0,1,2].map(()=>`<button class="chest"><span class="box"><i class="lid"></i><i class="body"></i></span><span class="out">?</span></button>`).join('')}</div>`;sfx.pop();
+    $('.chests',A).onclick=e=>{const c=e.target.closest('.chest');if(!c||picked)return;picked=true;const o=roll(),me=PL[0],lead=PL.slice(1).sort((a,b)=>b.g-a.g)[0];let txt=o.t,bad=o.bad;
+      if(o.steal){const take=Math.round(lead.g*.25);if(take>0){lead.g-=take;me.g+=take;txt=`偷走 ${lead.n} ${take}`}else{me.g+=15;txt='+15'}}
+      else if(o.swap){if(lead.g>me.g){[lead.g,me.g]=[me.g,lead.g];txt=`和 ${lead.n} 交换`}else{me.g+=15;txt='+15'}}
+      else me.g=o.f(me.g);
+      c.classList.add('open');$('.out',c).textContent=txt;$$('.chest',A).forEach(x=>{if(x!==c)x.classList.add('dim')});
+      if(bad)sfx.bad();else{sfx.good();burst(c,22)}bots();board();later(next,1400)}}
+  function next(){r++;if(r>=ROUNDS){alive=false;const s=[...PL].sort((a,b)=>b.g-a.g),rank=s.indexOf(PL[0])+1;finish({score:Math.round(PL[0].g)*3,stars:4-rank,title:rank===1?'金币王！':`第 ${rank} 名`,lines:[`${Math.round(PL[0].g)} 金币，答对 ${correct}/${ROUNDS} 题`]})}else ask()}
+  ask();return()=>{alive=false;clearTimeout(tm)};
+};
+
+/* 12 · Airplane */
+GAMES.plane=st=>{
+  st.innerHTML=`<div class="qp-card" id="pQ"></div><div class="air" id="pA"><div class="plane" id="pP">${kronSVG('var(--c-plane)')}</div></div>`;
+  const A=$('#pA',st),PLN=$('#pP',st),GOAL=10;let lane=1,lives=3,correct=0,score=0,alive=true,raf,last=performance.now(),speed=140,col=null;
+  const laneY=l=>A.clientHeight*(l*2+1)/6,setLane=l=>{lane=Math.max(0,Math.min(2,l));PLN.style.top=laneY(lane)+'px'};
+  const draw=()=>hud(P('♥'.repeat(lives)+'♡'.repeat(3-lives))+P(correct+'/'+GOAL));
+  function spawn(){const q=mcq(Math.random()<.5?'pic':'zh');const opts=shuffle([q.opts.find(o=>o.ok),...shuffle(q.opts.filter(o=>!o.ok)).slice(0,2)]);
+    $('#pQ',st).innerHTML=`${q.html}<p>${q.sub}</p>`;if(q.say)speak(q.w.en);
+    const els=opts.map((o,k)=>{const el=document.createElement('div');el.className='cloud';el.textContent=o.t;el.style.top=laneY(k)+'px';A.append(el);return el});col={q,opts,els,x:A.clientWidth+20,done:false}}
+  function end(){alive=false;cancelAnimationFrame(raf);setTimeout(()=>finish({score:score+lives*50,stars:correct>=GOAL?(lives===3?3:2):1,title:correct>=GOAL?'安全降落':'飞机迫降了',lines:[`穿过 ${correct} 朵正确的云，剩 ${lives} 条命`]}),600)}
+  function loop(now){const dt=Math.min(.05,(now-last)/1000);last=now;if(!col)spawn();col.x-=speed*dt;col.els.forEach(el=>el.style.transform=`translate(${col.x}px,-50%)`);
+    if(!col.done&&col.x<=86){col.done=true;const o=col.opts[lane],el=col.els[lane];
+      if(o.ok){correct++;score+=100;el.classList.add('good');sfx.good();burst(el,14);speak(col.q.w.en);speed+=12}
+      else{lives--;el.classList.add('bad');sfx.bad();PLN.classList.remove('hurt');void PLN.offsetWidth;PLN.classList.add('hurt');const right=col.opts.find(x=>x.ok);floatAt(el,'应该是 '+right.t,'minus')}
+      draw();if(lives<=0||correct>=GOAL){end();return}}
+    if(col.x<-180){col.els.forEach(el=>el.remove());col=null}
+    if(alive)raf=requestAnimationFrame(loop)}
+  const kd=e=>{if(['ArrowUp','w','W'].includes(e.key)){e.preventDefault();setLane(lane-1)}else if(['ArrowDown','s','S'].includes(e.key)){e.preventDefault();setLane(lane+1)}};
+  addEventListener('keydown',kd);
+  A.addEventListener('pointerdown',e=>{const r=A.getBoundingClientRect();setLane(e.clientY-r.top<laneY(lane)?lane-1:lane+1)});
+  requestAnimationFrame(()=>{setLane(1);draw();raf=requestAnimationFrame(loop)});
+  return()=>{alive=false;cancelAnimationFrame(raf);removeEventListener('keydown',kd)};
+};
+
+/* 13 · Word Search */
+GAMES.search=st=>{
+  const N=9,D3=[[1,0],[0,1],[1,1]],G=Array.from({length:N},()=>Array(N).fill('')),placed=[];
+  for(const w of shuffle(VOCAB.filter(v=>v.en.length>=3&&v.en.length<=8))){if(placed.length>=6)break;const L=w.en.length;
+    for(let t=0;t<100;t++){const[dx,dy]=D3[Math.random()*3|0];const x0=Math.random()*(N-dx*(L-1))|0,y0=Math.random()*(N-dy*(L-1))|0;const cells=[...w.en].map((c,k)=>[x0+dx*k,y0+dy*k]);
+      if(cells.every(([x,y],k)=>!G[y][x]||G[y][x]===w.en[k])){cells.forEach(([x,y],k)=>G[y][x]=w.en[k]);placed.push({w,cells});break}}}
+  const AB='abcdefghijklmnopqrstuvwxyz';for(const row of G)for(let x=0;x<N;x++)if(!row[x])row[x]=AB[Math.random()*26|0];
+  const FC=['var(--q0)','var(--q1)','var(--q2)','var(--q3)','var(--c-race)','var(--c-fish)'];
+  st.innerHTML=`<div class="wlist">${placed.map((p,k)=>`<span class="witem" data-k="${k}" style="--fc:${FC[k]}">${p.w.e} ${p.w.zh} <small>· ${p.w.en.length} 个字母</small></span>`).join('')}</div><div class="ws" id="wsG" style="--n:${N}">${G.map((row,y)=>row.map((c,x)=>`<span data-x="${x}" data-y="${y}">${c}</span>`).join('')).join('')}</div>`;
+  const WS=$('#wsG',st),cell=(x,y)=>WS.children[y*N+x];let start=null,path=[],found=0;const t0=performance.now();
+  const iv=setInterval(()=>hud(P('⏱ '+Math.round((performance.now()-t0)/1000)+'s')+P(found+'/'+placed.length)),250);
+  const clear=()=>path.forEach(([x,y])=>cell(x,y).classList.remove('sel'));
+  function to(el){if(!start||!el||!el.dataset||el.dataset.x==null)return;const ex=+el.dataset.x,ey=+el.dataset.y,dx=ex-start[0],dy=ey-start[1];
+    if(dx&&dy&&Math.abs(dx)!==Math.abs(dy))return;const n=Math.max(Math.abs(dx),Math.abs(dy)),sx=Math.sign(dx),sy=Math.sign(dy);clear();path=[];for(let k=0;k<=n;k++)path.push([start[0]+sx*k,start[1]+sy*k]);path.forEach(([x,y])=>cell(x,y).classList.add('sel'))}
+  WS.addEventListener('pointerdown',e=>{const el=e.target.closest('span');if(!el)return;e.preventDefault();start=[+el.dataset.x,+el.dataset.y];path=[start];el.classList.add('sel');sfx.tick()});
+  addEventListener('pointermove',pm);addEventListener('pointerup',pu);
+  function pm(e){if(start)to(document.elementFromPoint(e.clientX,e.clientY))}
+  function pu(){if(!start)return;const word=path.map(([x,y])=>G[y][x]).join('');clear();
+    const k=placed.findIndex(p=>!p.done&&(word===p.w.en||[...word].reverse().join('')===p.w.en)&&path.length===p.cells.length);
+    if(k>=0){const p=placed[k];p.done=true;found++;path.forEach(([x,y])=>{const c=cell(x,y);c.classList.add('f');c.style.setProperty('--fc',FC[k])});const it=$(`.witem[data-k="${k}"]`,st);it.classList.add('done');it.innerHTML=`${p.w.e} ${p.w.en}`;sfx.good();burst(it,14);speak(p.w.en);
+      if(found===placed.length){const s=Math.round((performance.now()-t0)/1000);setTimeout(()=>finish({score:Math.max(200,1500-s*12),stars:s<70?3:s<130?2:1,title:'全部找到！',lines:[`用时 ${s} 秒找到 ${found} 个词`]}),500)}}
+    else if(path.length>1)sfx.bad();start=null;path=[]}
+  return()=>{clearInterval(iv);removeEventListener('pointermove',pm);removeEventListener('pointerup',pu)};
+};
+
+/* 14 · Matching Pairs */
+GAMES.memory=st=>{
+  const set=shuffle(VOCAB).slice(0,6),cards=shuffle(set.flatMap(w=>[{w,face:`<span class="em">${w.e}</span>`},{w,face:w.en,en:1}]));
+  st.innerHTML=`<div class="mem">${cards.map((c,k)=>`<button class="card3" data-k="${k}" aria-label="第 ${k+1} 张牌"><span class="in"><span class="b">${kronSVG('color-mix(in oklab,var(--g) 55%,black)')}</span><span class="f">${c.face}</span></span></button>`).join('')}</div>`;
+  let open=[],moves=0,pairs=0,lock=false,tm;const t0=performance.now();
+  const secs=()=>Math.round((performance.now()-t0)/1000);
+  const iv=setInterval(()=>hud(P('⏱ '+secs()+'s')+P(moves+' 步')+P(pairs+'/6')),250);
+  $('.mem',st).addEventListener('click',e=>{const b=e.target.closest('.card3');if(!b||lock||b.classList.contains('up'))return;const c=cards[+b.dataset.k];b.classList.add('up');sfx.pop();if(c.en)speak(c.w.en);open.push(b);
+    if(open.length===2){moves++;const[a,d]=open;open=[];
+      if(cards[+a.dataset.k].w===cards[+d.dataset.k].w){pairs++;setTimeout(()=>{a.classList.add('done');d.classList.add('done');sfx.good();burst(d,12)},300);
+        if(pairs===6){const s=secs();setTimeout(()=>finish({score:Math.max(200,1600-moves*60-s*8),stars:moves<=9?3:moves<=13?2:1,title:'全部配对！',lines:[`${moves} 步，用时 ${s} 秒`]}),900)}}
+      else{lock=true;tm=setTimeout(()=>{a.classList.remove('up');d.classList.remove('up');lock=false},850)}}});
+  return()=>{clearInterval(iv);clearTimeout(tm)};
+};
+
+/* 15 · Kron Wordle */
+const W5=[...VOCAB.filter(w=>w.en.length===5),...[['water','水','💧'],['happy','开心的','😄'],['green','绿色','🟩'],['house','房子','🏠'],['music','音乐','🎵'],['train','火车','🚆'],['beach','海滩','🏖️'],['plant','植物','🪴'],['smile','微笑','😊'],['sweet','甜的','🍬']].map(([en,zh,e])=>({en,zh,e,cat:'common'}))];
+GAMES.wordle=st=>{
+  const words=shuffle(W5).slice(0,3);let wi=0,score=0,solved=0,tm=null,onKey=null;
+  function play(){const w=words[wi],ans=w.en;let row=0,cur='',hint=false,over=false;const ks={};
+    const KB=['qwertyuiop','asdfghjkl','+zxcvbnm-'];
+    st.innerHTML=`<div class="wd-top"><span class="pill">第 ${wi+1}/3 词</span><button class="pill" id="wH">看提示 −50 分</button></div><div class="wd">${Array(6).fill(`<div class="wd-row">${'<span></span>'.repeat(5)}</div>`).join('')}</div><p class="gq-msg" id="wM"></p><div class="kb">${KB.map(r=>`<div>${[...r].map(c=>c==='+'?'<button class="wide" data-k="enter">确定</button>':c==='-'?'<button class="wide" data-k="back">⌫</button>':`<button data-k="${c}">${c}</button>`).join('')}</div>`).join('')}</div>`;
+    const rows=$$('.wd-row',st),M=$('#wM',st);
+    hud(P(score+' 分')+P(solved+' 个猜中'));
+    $('#wH',st).onclick=e=>{if(hint||over)return;hint=true;e.currentTarget.textContent=`${w.e} ${w.zh}`;sfx.pop()};
+    const paint=()=>[...rows[row].children].forEach((s,i)=>{s.textContent=cur[i]||'';s.classList.toggle('fill',!!cur[i])});
+    function submit(){if(cur.length<5){rows[row].classList.remove('shake');void rows[row].offsetWidth;rows[row].classList.add('shake');sfx.bad();return}
+      const res=Array(5).fill('x'),rest={};for(let i=0;i<5;i++){if(cur[i]===ans[i])res[i]='g';else rest[ans[i]]=(rest[ans[i]]||0)+1}
+      for(let i=0;i<5;i++)if(res[i]!=='g'&&rest[cur[i]]){res[i]='y';rest[cur[i]]--}
+      const tiles=[...rows[row].children],guess=cur;over=true;
+      tiles.forEach((s,i)=>{setTimeout(()=>{s.classList.add('flip');setTimeout(()=>s.classList.add(res[i]),200)},i*140)});
+      setTimeout(()=>{guess.split('').forEach((c,i)=>{const rank={x:1,y:2,g:3};if(!ks[c]||rank[res[i]]>rank[ks[c]])ks[c]=res[i]});
+        $$('.kb button',st).forEach(b=>{const k=b.dataset.k;b.classList.remove('g','y','x');if(ks[k])b.classList.add(ks[k])});
+        if(guess===ans){solved++;const pts=(7-row)*100-(hint?50:0);score+=pts;M.textContent=`${w.e} ${ans} · ${w.zh}  +${pts}`;sfx.good();burst(M,24);speak(ans);hud(P(score+' 分')+P(solved+' 个猜中'));tm=setTimeout(next,1800)}
+        else if(row===5){M.textContent=`答案是 ${ans}（${w.zh}）`;sfx.bad();speak(ans);tm=setTimeout(next,2200)}
+        else{row++;cur='';over=false;sfx.pop()}},5*140+250)}
+    onKey=k=>{if(over)return;if(k==='enter')submit();else if(k==='back'){cur=cur.slice(0,-1);paint()}else if(/^[a-z]$/.test(k)&&cur.length<5){cur+=k;paint();sfx.tick()}};
+    $('.kb',st).onclick=e=>{const b=e.target.closest('button');if(b)onKey(b.dataset.k)};
+  }
+  function next(){wi++;if(wi>=3)finish({score,stars:solved===3?3:solved===2?2:1,title:solved===3?'全部猜中！':'猜词结束',lines:[`3 个词猜中 ${solved} 个`]});else play()}
+  const kd=e=>{if(!onKey||e.metaKey||e.ctrlKey||e.altKey)return;if(e.key==='Enter'){e.preventDefault();onKey('enter')}else if(e.key==='Backspace')onKey('back');else if(/^[a-zA-Z]$/.test(e.key))onKey(e.key.toLowerCase())};
+  addEventListener('keydown',kd);play();
+  return()=>{clearTimeout(tm);removeEventListener('keydown',kd)};
+};
+
+renderTotals();
+
+(function(){const m=location.hash.match(/[#&]g=(\w+)/);if(m&&GAMES[m[1]]){document.documentElement.classList.add('solo');openGame(m[1])}})();
+</script>
+
+</body></html>
