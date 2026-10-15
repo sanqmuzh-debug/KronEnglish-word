@@ -74,6 +74,7 @@ def main():
     ap.add_argument('--model', default='s2.1-pro-free')
     ap.add_argument('--syllables', default=os.path.join(os.path.dirname(__file__), '..', 'data', 'syllables.json'))
     ap.add_argument('--out', default=os.path.join(os.path.dirname(__file__), '..', 'demo', 'audio-fish'))
+    ap.add_argument('--table', help='改用 scripts/syllable_phonemes.json 这种手写音标表（学习页的示范词）')
     ap.add_argument('--only', type=int, help='只跑前 N 个词（试听用）')
     ap.add_argument('--words', nargs='*', help='只跑这些词')
     ap.add_argument('--keys-file', help='每行一把 Fish 密钥')
@@ -86,7 +87,16 @@ def main():
         ring = KeyRing(keys[si % len(keys):] + keys[:si % len(keys)])
     else:
         ring = KeyRing([api_key()])
-    words = json.load(open(a.syllables, encoding='utf-8'))['words']
+    if a.table:
+        sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+        from syllabify import ipa_to_arpa
+        tab = {k: v for k, v in json.load(open(a.table, encoding='utf-8')).items() if not k.startswith('_')}
+        # 单独读一块时给它重音，读得清楚
+        words = {w: [[{'arpa': ' '.join(ipa_to_arpa(s if 'ˈ' in s else 'ˈ' + s))} for s in e['syl']]] for w, e in tab.items()}
+        whole = {w: ' '.join(ipa_to_arpa(e['word'])) for w, e in tab.items()}
+    else:
+        words = json.load(open(a.syllables, encoding='utf-8'))['words']
+        whole = {}
     items = [(w, t) for w, t in words.items() if not a.words or w in a.words]
     if a.only:
         items = items[:a.only]
@@ -96,7 +106,7 @@ def main():
     made = 0
     for w, toks in items:
         slug = re.sub(r'[^a-z0-9]+', '-', w.lower()).strip('-')
-        jobs = [(f'{slug}.mp3', ' '.join(phon(' '.join(x['arpa'] for x in t)) for t in toks))]
+        jobs = [(f'{slug}.mp3', phon(whole[w]) if w in whole else ' '.join(phon(' '.join(x['arpa'] for x in t)) for t in toks))]
         jobs += [(f'{slug}-{i}.mp3', phon(x['arpa'])) for i, x in enumerate(x for t in toks for x in t)]
         for name, text in jobs:
             path = os.path.join(a.out, name)

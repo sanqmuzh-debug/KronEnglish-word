@@ -56,7 +56,10 @@ IPA2ARPA = [('aɪ', 'AY'), ('aʊ', 'AW'), ('eɪ', 'EY'), ('oʊ', 'OW'), ('ɔɪ',
 
 
 def espeak_arpa(word):
-    ps = _espeak().phonemize([word], strip=True)[0].replace('ː', 'ː')
+    return ipa_to_arpa(_espeak().phonemize([word], strip=True)[0])
+
+
+def ipa_to_arpa(ps):
     out, stress, i = [], '0', 0
     while i < len(ps):
         if ps[i] in 'ˈˌ':
