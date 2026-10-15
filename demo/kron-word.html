@@ -232,7 +232,7 @@ button:focus-visible{outline:3px solid var(--sky);outline-offset:3px}
 .mq{--h:230px;overflow:hidden;animation:hmIn .9s cubic-bezier(.2,.8,.2,1) var(--d,0s) both}
 .mq.big{--h:290px}
 .mq-track{display:flex;width:max-content;animation:mq var(--dur,60s) linear var(--off,0s) infinite}
-.home.paused .mq-track,.home.hold .mq-track,.mq:hover .mq-track{animation-play-state:paused}
+.home.hold .mq-track,.mq:hover .mq-track{animation-play-state:paused}
 @keyframes mq{to{transform:translateX(-50%)}}
 @keyframes hmIn{from{opacity:0;transform:translateX(90px)}}
 @keyframes hmUp{from{opacity:0;transform:translateY(14px)}}
@@ -245,9 +245,6 @@ button:focus-visible{outline:3px solid var(--sky);outline-offset:3px}
 .hb.out .cov{opacity:0}
 .hb b{display:block;margin-top:12px;font:600 19px/1.25 var(--font-display);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .hb small{display:block;margin-top:2px;font:400 15px/1.3 var(--font-ui);color:var(--hs);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.hm-pause{position:fixed;right:max(18px,env(safe-area-inset-right));bottom:calc(104px + env(safe-area-inset-bottom));z-index:4;width:42px;height:42px;border-radius:14px;border:2px solid var(--line);border-bottom-width:4px;background:var(--surface);color:var(--muted);display:grid;place-items:center}
-.hm-pause:active{transform:translateY(2px);border-bottom-width:2px}
-.hm-pause svg{width:14px;height:14px}
 .hm-go{position:fixed;left:50%;bottom:calc(16px + env(safe-area-inset-bottom));z-index:4;width:min(560px,calc(100% - 32px));transform:translateX(-50%);display:flex;align-items:center;gap:14px;padding:10px 10px 10px 12px;border-radius:22px;border:2px solid var(--line);border-bottom-width:5px;background:var(--surface);box-shadow:var(--shadow);color:var(--hk);text-align:left;animation:hmGo .7s cubic-bezier(.3,1.3,.5,1) .5s both}
 @keyframes hmGo{from{opacity:0;transform:translate(-50%,40px)}}
 .pg{display:block;height:6px;border-radius:9px;background:var(--surface-2);overflow:hidden;margin-top:6px}
@@ -763,8 +760,6 @@ function openSettings(){
   draw();
 }
 const coverHTML=(f)=>`<img class="bk-img" src="covers/${f.b.id}.jpg" alt="${f.sr.name} ${f.b.lvl}" draggable="false">`;
-const PAUSE_IC='<svg viewBox="0 0 14 14" fill="currentColor"><rect x="2.5" y="1.5" width="3" height="11" rx="1"/><rect x="8.5" y="1.5" width="3" height="11" rx="1"/></svg>',
-  PLAY_IC='<svg viewBox="0 0 14 14" fill="currentColor"><path d="M3.5 1.8v10.4c0 .6.6.9 1.1.6l8-5.2c.5-.3.5-.9 0-1.2l-8-5.2c-.5-.3-1.1 0-1.1.6z"/></svg>';
 const HOME_TABS=[['all','全部'],...SHELF.map(sr=>[sr.id,sr.name])];
 const bookWords=b=>b.units.reduce((n,u)=>n+u[2],0);
 function homeRow(books,big,k,off){
@@ -791,14 +786,11 @@ function openHome(){
   v.innerHTML=`<header class="hm-bar"><div class="in"><div class="brand">${KRON_LOGO}<span>Kron Word</span></div></div></header>
     <nav class="hm-tabs"><div class="pills"><i class="ind"></i>${HOME_TABS.map(([id,n])=>`<button data-tab="${id}">${n}</button>`).join('')}</div></nav>
     <div class="hm-rows"></div>
-    <button class="hm-pause" data-sh="pause" aria-label="暂停">${PAUSE_IC}</button>
     ${last?`<button class="hm-go" data-sh="go"><img src="covers/${last.b.id}.jpg" alt=""><span><small>继续上次</small><b>${pickTitle()}</b><span class="pg"><i style="width:${bookDone(last.b.id)/bookWords(last.b)*100}%"></i></span></span><em>继续</em></button>`:''}`;
-  if(!last)v.querySelector('.hm-pause').style.bottom='calc(20px + env(safe-area-inset-bottom))';
   document.body.appendChild(v);drawHomeRows(v,tab);
   v.addEventListener('click',e=>{const t=e.target.closest('[data-tab],[data-sh],.hb');if(!t)return;
     if(t.dataset.tab){if(t.dataset.tab!==tab){tab=t.dataset.tab;drawHomeRows(v,tab,true)}return}
     const a=t.dataset.sh;
-    if(a==='pause'){const p=v.classList.toggle('paused');t.innerHTML=p?PLAY_IC:PAUSE_IC;t.setAttribute('aria-label',p?'播放':'暂停');return}
     if(a==='go'){sfx.ding();closeHome();if(!S.live)newGame(true);return}
     pullBook(t)});
   let rt;v._rs=()=>{clearTimeout(rt);rt=setTimeout(()=>drawHomeRows(v,tab),200)};addEventListener('resize',v._rs);
