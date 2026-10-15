@@ -7651,8 +7651,8 @@
         }
       },
       {
-        "id": "th2-u08-mircroscope-noun",
-        "text": "mircroscope",
+        "id": "th2-u08-microscope-noun",
+        "text": "microscope",
         "ipa": "/ˈmaɪ.krə.skəʊp/",
         "translation": "显微镜",
         "pos": "noun",
@@ -7674,7 +7674,7 @@
         ],
         "kronTip": "利用弧形光学透镜或电子束将微观肉眼难辨物体成倍放大的科研利器。",
         "transfer": {
-          "q": "'mircroscope' 在中文里的准确含义是？",
+          "q": "'microscope' 在中文里的准确含义是？",
           "options": [
             "显微镜",
             "安静的公园",
@@ -7682,7 +7682,7 @@
             "古老的城堡"
           ],
           "correct": 0,
-          "exp": "太棒了！'mircroscope' 的核心含义正是 '显微镜'！记忆技巧：利用弧形光学透镜或电子束将微观肉眼难辨物体成倍放大的科研利器。..."
+          "exp": "太棒了！'microscope' 的核心含义正是 '显微镜'！记忆技巧：利用弧形光学透镜或电子束将微观肉眼难辨物体成倍放大的科研利器。..."
         }
       },
       {

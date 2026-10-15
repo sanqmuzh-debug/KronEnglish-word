@@ -77,6 +77,7 @@ def main():
     ap.add_argument('--table', help='改用 scripts/syllable_phonemes.json 这种手写音标表（学习页的示范词）')
     ap.add_argument('--only', type=int, help='只跑前 N 个词（试听用）')
     ap.add_argument('--words', nargs='*', help='只跑这些词')
+    ap.add_argument('--words-file', help='只跑这个 JSON 列表里的词（改了拆法后重跑用）')
     ap.add_argument('--keys-file', help='每行一把 Fish 密钥')
     ap.add_argument('--shard', default='0/1', help='并行跑：第 i 路 / 共 n 路，例如 2/4；第 i 路先用第 i 把密钥')
     ap.add_argument('--speed', type=float, default=0.9)
@@ -97,6 +98,8 @@ def main():
     else:
         words = json.load(open(a.syllables, encoding='utf-8'))['words']
         whole = {}
+    if a.words_file:
+        a.words = json.load(open(a.words_file, encoding='utf-8'))
     items = [(w, t) for w, t in words.items() if not a.words or w in a.words]
     if a.only:
         items = items[:a.only]

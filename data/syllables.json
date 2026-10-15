@@ -331,14 +331,14 @@
 "(three) o'clock.": [
 [
 {
-"t": "oc",
-"arpa": "AA1 K",
-"ipa": "ˈɑːk"
+"t": "o",
+"arpa": "AH0",
+"ipa": "ə"
 },
 {
-"t": "lock",
-"arpa": "L AA0 K",
-"ipa": "lɑːk"
+"t": "clock",
+"arpa": "K L AA1 K",
+"ipa": "klˈɑːk"
 }
 ]
 ],
@@ -513,8 +513,8 @@
 [
 {
 "t": "a",
-"arpa": "AH0",
-"ipa": "ə"
+"arpa": "EY1",
+"ipa": "ˈeɪ"
 }
 ],
 [
@@ -734,8 +734,8 @@
 [
 {
 "t": "A",
-"arpa": "AH0",
-"ipa": "ə"
+"arpa": "EY1",
+"ipa": "ˈeɪ"
 }
 ],
 [
@@ -750,8 +750,8 @@
 [
 {
 "t": "a",
-"arpa": "AH0",
-"ipa": "ə"
+"arpa": "EY1",
+"ipa": "ˈeɪ"
 }
 ],
 [
@@ -1172,14 +1172,14 @@
 "ageism": [
 [
 {
-"t": "a",
-"arpa": "EY1",
-"ipa": "ˈeɪ"
+"t": "age",
+"arpa": "EY1 JH",
+"ipa": "ˈeɪdʒ"
 },
 {
-"t": "geism",
-"arpa": "JH IH0 Z AH0 M",
-"ipa": "dʒɪzəm"
+"t": "ism",
+"arpa": "IH0 Z AH0 M",
+"ipa": "ɪzəm"
 }
 ]
 ],
@@ -4136,8 +4136,8 @@
 },
 {
 "t": "yond",
-"arpa": "AA1 N D",
-"ipa": "ˈɑːnd"
+"arpa": "Y AA1 N D",
+"ipa": "jˈɑːnd"
 }
 ],
 [
@@ -5292,16 +5292,41 @@
 "businessman / businesswoman": [
 [
 {
-"t": "businessman",
-"arpa": "B IH1 Z N AH0 S M AE2 N",
-"ipa": "bˈɪznəsmˌæn"
+"t": "busi",
+"arpa": "B IH1 Z",
+"ipa": "bˈɪz"
+},
+{
+"t": "ness",
+"arpa": "N AH0 S",
+"ipa": "nəs"
+},
+{
+"t": "man",
+"arpa": "M AE2 N",
+"ipa": "mˌæn"
 }
 ],
 [
 {
-"t": "businesswoman",
-"arpa": "B IH1 Z N IH0 S W UH2 M AH0 N",
-"ipa": "bˈɪznɪswˌʊmən"
+"t": "busi",
+"arpa": "B IH1 Z",
+"ipa": "bˈɪz"
+},
+{
+"t": "ness",
+"arpa": "N AH0 S",
+"ipa": "nəs"
+},
+{
+"t": "wom",
+"arpa": "W UH2 M",
+"ipa": "wˌʊm"
+},
+{
+"t": "an",
+"arpa": "AH0 N",
+"ipa": "ən"
 }
 ]
 ],
@@ -5587,9 +5612,14 @@
 "café": [
 [
 {
-"t": "café",
-"arpa": "K AE0 F EY1",
-"ipa": "kæfˈeɪ"
+"t": "ca",
+"arpa": "K AE0",
+"ipa": "kæ"
+},
+{
+"t": "fé",
+"arpa": "F EY1",
+"ipa": "fˈeɪ"
 }
 ]
 ],
@@ -6624,9 +6654,19 @@
 "chocolate": [
 [
 {
-"t": "chocolate",
-"arpa": "CH AO1 K L AH0 T",
-"ipa": "tʃˈɔːklət"
+"t": "choc",
+"arpa": "CH AA1 K",
+"ipa": "tʃˈɑːk"
+},
+{
+"t": "o",
+"arpa": "AH0",
+"ipa": "ə"
+},
+{
+"t": "late",
+"arpa": "L AH0 T",
+"ipa": "lət"
 }
 ]
 ],
@@ -7661,12 +7701,12 @@
 "crayon": [
 [
 {
-"t": "cra",
+"t": "cray",
 "arpa": "K R EY1",
 "ipa": "kɹˈeɪ"
 },
 {
-"t": "yon",
+"t": "on",
 "arpa": "AA2 N",
 "ipa": "ˌɑːn"
 }
@@ -7831,9 +7871,14 @@
 "cupboard": [
 [
 {
-"t": "cupboard",
-"arpa": "K AH1 B ER0 D",
-"ipa": "kˈʌbɚd"
+"t": "cup",
+"arpa": "K AH1 B",
+"ipa": "kˈʌb"
+},
+{
+"t": "board",
+"arpa": "B ER0 D",
+"ipa": "bɚd"
 }
 ]
 ],
@@ -7987,12 +8032,12 @@
 "daredevil": [
 [
 {
-"t": "dar",
+"t": "dare",
 "arpa": "D EH1 R",
 "ipa": "dˈɛɹ"
 },
 {
-"t": "edev",
+"t": "dev",
 "arpa": "D EH2 V",
 "ipa": "dˌɛv"
 },
@@ -8584,9 +8629,14 @@
 "didn't have a clue": [
 [
 {
-"t": "didnt",
-"arpa": "D IH1 D N T",
-"ipa": "dˈɪdnt"
+"t": "did",
+"arpa": "D IH1 D",
+"ipa": "dˈɪd"
+},
+{
+"t": "nt",
+"arpa": "AH0 N T",
+"ipa": "ənt"
 }
 ],
 [
@@ -9393,8 +9443,8 @@
 [
 {
 "t": "youre",
-"arpa": "Y AO1 R",
-"ipa": "jˈɔːɹ"
+"arpa": "Y UH1 R",
+"ipa": "jˈʊɹ"
 }
 ],
 [
@@ -10332,12 +10382,12 @@
 "ipa": "ɛm"
 },
 {
-"t": "plo",
+"t": "ploy",
 "arpa": "P L OY1",
 "ipa": "plˈɔɪ"
 },
 {
-"t": "yee",
+"t": "ee",
 "arpa": "IY0",
 "ipa": "i"
 }
@@ -10351,12 +10401,12 @@
 "ipa": "ɛm"
 },
 {
-"t": "plo",
+"t": "ploy",
 "arpa": "P L OY1",
 "ipa": "plˈɔɪ"
 },
 {
-"t": "yees",
+"t": "ees",
 "arpa": "IY0 Z",
 "ipa": "iz"
 }
@@ -10370,12 +10420,12 @@
 "ipa": "ɛm"
 },
 {
-"t": "plo",
+"t": "ploy",
 "arpa": "P L OY1",
 "ipa": "plˈɔɪ"
 },
 {
-"t": "yer",
+"t": "er",
 "arpa": "ER0",
 "ipa": "ɚ"
 }
@@ -10389,12 +10439,12 @@
 "ipa": "ɛm"
 },
 {
-"t": "plo",
+"t": "ploy",
 "arpa": "P L OY1",
 "ipa": "plˈɔɪ"
 },
 {
-"t": "yers",
+"t": "ers",
 "arpa": "ER0 Z",
 "ipa": "ɚz"
 }
@@ -11564,9 +11614,24 @@
 "February": [
 [
 {
-"t": "February",
-"arpa": "F EH1 B Y AH0 W EH2 R IY0",
-"ipa": "fˈɛbjəwˌɛɹi"
+"t": "Feb",
+"arpa": "F EH1 B",
+"ipa": "fˈɛb"
+},
+{
+"t": "ru",
+"arpa": "R UW0",
+"ipa": "ɹuː"
+},
+{
+"t": "ar",
+"arpa": "EH2 R",
+"ipa": "ˌɛɹ"
+},
+{
+"t": "y",
+"arpa": "IY0",
+"ipa": "i"
 }
 ]
 ],
@@ -12999,10 +13064,10 @@
 }
 ]
 ],
-"Geography": [
+"geography": [
 [
 {
-"t": "Ge",
+"t": "ge",
 "arpa": "JH IY0",
 "ipa": "dʒi"
 },
@@ -13023,10 +13088,10 @@
 }
 ]
 ],
-"geography": [
+"Geography": [
 [
 {
-"t": "ge",
+"t": "Ge",
 "arpa": "JH IY0",
 "ipa": "dʒi"
 },
@@ -14953,12 +15018,12 @@
 ],
 [
 {
-"t": "sa",
+"t": "say",
 "arpa": "S EY1",
 "ipa": "sˈeɪ"
 },
 {
-"t": "ying",
+"t": "ing",
 "arpa": "IH0 NG",
 "ipa": "ɪŋ"
 }
@@ -15119,9 +15184,19 @@
 "GPS": [
 [
 {
-"t": "GPS",
-"arpa": "G IY1 P IY0 EH1 S",
-"ipa": "ɡˈiːpiˈɛs"
+"t": "G",
+"arpa": "JH IY1",
+"ipa": "dʒˈiː"
+},
+{
+"t": "P",
+"arpa": "P IY1",
+"ipa": "pˈiː"
+},
+{
+"t": "S",
+"arpa": "EH1 S",
+"ipa": "ˈɛs"
 }
 ]
 ],
@@ -15142,9 +15217,19 @@
 "graduate": [
 [
 {
-"t": "graduate",
-"arpa": "G R AE1 JH AH0 W AH0 T",
-"ipa": "ɡɹˈædʒəwət"
+"t": "grad",
+"arpa": "G R AE1 JH",
+"ipa": "ɡɹˈædʒ"
+},
+{
+"t": "u",
+"arpa": "UW0",
+"ipa": "uː"
+},
+{
+"t": "ate",
+"arpa": "AH0 T",
+"ipa": "ət"
 }
 ]
 ],
@@ -15968,7 +16053,7 @@
 }
 ]
 ],
-"have a high diposable income": [
+"have a high disposable income": [
 [
 {
 "t": "have",
@@ -15992,14 +16077,14 @@
 ],
 [
 {
-"t": "dip",
-"arpa": "D IH1 P",
-"ipa": "dˈɪp"
+"t": "dis",
+"arpa": "D IH0 S",
+"ipa": "dɪs"
 },
 {
-"t": "o",
-"arpa": "OW0",
-"ipa": "oʊ"
+"t": "po",
+"arpa": "P OW1",
+"ipa": "pˈoʊ"
 },
 {
 "t": "sa",
@@ -16970,9 +17055,14 @@
 ],
 [
 {
-"t": "DJ",
-"arpa": "D IY1 JH EY1",
-"ipa": "dˈiːdʒˈeɪ"
+"t": "D",
+"arpa": "D IY1",
+"ipa": "dˈiː"
+},
+{
+"t": "J",
+"arpa": "JH EY1",
+"ipa": "dʒˈeɪ"
 }
 ]
 ],
@@ -17484,9 +17574,19 @@
 "ICT (Information and Communication Technology)": [
 [
 {
-"t": "ICT",
-"arpa": "AY1 K T",
-"ipa": "ˈaɪkt"
+"t": "I",
+"arpa": "AY1",
+"ipa": "ˈaɪ"
+},
+{
+"t": "C",
+"arpa": "S IY1",
+"ipa": "sˈiː"
+},
+{
+"t": "T",
+"arpa": "T IY1",
+"ipa": "tˈiː"
 }
 ]
 ],
@@ -18809,9 +18909,19 @@
 "insecure": [
 [
 {
-"t": "insecure",
-"arpa": "IH1 N S AH0 K Y ER0",
-"ipa": "ˈɪnsəkjɚ"
+"t": "in",
+"arpa": "IH2 N",
+"ipa": "ˌɪn"
+},
+{
+"t": "se",
+"arpa": "S AH0",
+"ipa": "sə"
+},
+{
+"t": "cure",
+"arpa": "K Y UH1 R",
+"ipa": "kjˈʊɹ"
 }
 ]
 ],
@@ -19151,18 +19261,28 @@
 "island": [
 [
 {
-"t": "island",
-"arpa": "AY1 L AH0 N D",
-"ipa": "ˈaɪlənd"
+"t": "is",
+"arpa": "AY1",
+"ipa": "ˈaɪ"
+},
+{
+"t": "land",
+"arpa": "L AH0 N D",
+"ipa": "lənd"
 }
 ]
 ],
 "IT": [
 [
 {
-"t": "IT",
-"arpa": "IH1 T",
-"ipa": "ˈɪt"
+"t": "I",
+"arpa": "AY1",
+"ipa": "ˈaɪ"
+},
+{
+"t": "T",
+"arpa": "T IY1",
+"ipa": "tˈiː"
 }
 ]
 ],
@@ -20157,9 +20277,29 @@
 "laboratory": [
 [
 {
-"t": "laboratory",
-"arpa": "L AE1 B R AH0 T AO2 R IY0",
-"ipa": "lˈæbɹətˌɔːɹi"
+"t": "lab",
+"arpa": "L AE1 B",
+"ipa": "lˈæb"
+},
+{
+"t": "o",
+"arpa": "AH0",
+"ipa": "ə"
+},
+{
+"t": "ra",
+"arpa": "R AH0",
+"ipa": "ɹə"
+},
+{
+"t": "to",
+"arpa": "T AO2",
+"ipa": "tˌɔː"
+},
+{
+"t": "ry",
+"arpa": "R IY0",
+"ipa": "ɹi"
 }
 ]
 ],
@@ -20496,9 +20636,14 @@
 ],
 [
 {
-"t": "business",
-"arpa": "B IH1 Z N AH0 S",
-"ipa": "bˈɪznəs"
+"t": "busi",
+"arpa": "B IH1 Z",
+"ipa": "bˈɪz"
+},
+{
+"t": "ness",
+"arpa": "N AH0 S",
+"ipa": "nəs"
 }
 ]
 ],
@@ -22909,6 +23054,25 @@
 }
 ]
 ],
+"microscope": [
+[
+{
+"t": "mi",
+"arpa": "M AY1",
+"ipa": "mˈaɪ"
+},
+{
+"t": "cros",
+"arpa": "K R AH0 S",
+"ipa": "kɹəs"
+},
+{
+"t": "cope",
+"arpa": "K OW2 P",
+"ipa": "kˌoʊp"
+}
+]
+],
 "midday": [
 [
 {
@@ -23056,25 +23220,6 @@
 "t": "cle",
 "arpa": "K AH0 L",
 "ipa": "kəl"
-}
-]
-],
-"mircroscope": [
-[
-{
-"t": "mir",
-"arpa": "M ER1",
-"ipa": "mˈɜː"
-},
-{
-"t": "cros",
-"arpa": "K R AH0 S",
-"ipa": "kɹəs"
-},
-{
-"t": "cope",
-"arpa": "K OW2 P",
-"ipa": "kˌoʊp"
 }
 ]
 ],
@@ -23477,19 +23622,24 @@
 "MP3 player": [
 [
 {
-"t": "MP",
-"arpa": "EH2 M P IY1",
-"ipa": "ˌɛmpˈiː"
+"t": "M",
+"arpa": "EH1 M",
+"ipa": "ˈɛm"
+},
+{
+"t": "P",
+"arpa": "P IY1",
+"ipa": "pˈiː"
 }
 ],
 [
 {
-"t": "pla",
+"t": "play",
 "arpa": "P L EY1",
 "ipa": "plˈeɪ"
 },
 {
-"t": "yer",
+"t": "er",
 "arpa": "ER0",
 "ipa": "ɚ"
 }
@@ -24562,7 +24712,7 @@
 "omelette": [
 [
 {
-"t": "ome",
+"t": "om",
 "arpa": "AA1 M",
 "ipa": "ˈɑːm"
 },
@@ -25847,9 +25997,14 @@
 "PE (Physical Education)": [
 [
 {
-"t": "PE",
+"t": "P",
 "arpa": "P IY1",
 "ipa": "pˈiː"
+},
+{
+"t": "E",
+"arpa": "IY1",
+"ipa": "ˈiː"
 }
 ]
 ],
@@ -29159,12 +29314,12 @@
 "royalties": [
 [
 {
-"t": "ro",
+"t": "roy",
 "arpa": "R OY1",
 "ipa": "ɹˈɔɪ"
 },
 {
-"t": "yal",
+"t": "al",
 "arpa": "AH0 L",
 "ipa": "əl"
 },
@@ -29565,14 +29720,14 @@
 "ipa": "sˈænd"
 },
 {
-"t": "ca",
-"arpa": "K AE0",
-"ipa": "kæ"
+"t": "cas",
+"arpa": "K AE2 S",
+"ipa": "kˌæs"
 },
 {
-"t": "stle",
-"arpa": "S AH0 L",
-"ipa": "səl"
+"t": "tle",
+"arpa": "AH0 L",
+"ipa": "əl"
 }
 ]
 ],
@@ -29691,14 +29846,14 @@
 "ipa": "sˈeɪ"
 },
 {
-"t": "vou",
+"t": "vour",
 "arpa": "V ER0",
 "ipa": "vɚ"
 },
 {
-"t": "ry",
-"arpa": "R IY0",
-"ipa": "ɹi"
+"t": "y",
+"arpa": "IY0",
+"ipa": "i"
 }
 ]
 ],
@@ -30120,9 +30275,14 @@
 ],
 [
 {
-"t": "centred",
-"arpa": "S EH1 N T AH0 D",
-"ipa": "sˈɛntəd"
+"t": "cen",
+"arpa": "S EH1 N",
+"ipa": "sˈɛn"
+},
+{
+"t": "tred",
+"arpa": "T ER0 D",
+"ipa": "tɚd"
 }
 ]
 ],
@@ -30958,14 +31118,14 @@
 ],
 [
 {
-"t": "oc",
-"arpa": "AA1 K",
-"ipa": "ˈɑːk"
+"t": "o",
+"arpa": "AH0",
+"ipa": "ə"
 },
 {
-"t": "lock",
-"arpa": "L AA0 K",
-"ipa": "lɑːk"
+"t": "clock",
+"arpa": "K L AA1 K",
+"ipa": "klˈɑːk"
 }
 ]
 ],
@@ -31315,14 +31475,14 @@
 "ipa": "snˈoʊ"
 },
 {
-"t": "boar",
-"arpa": "B AO0 R",
-"ipa": "bɔːɹ"
+"t": "board",
+"arpa": "B AO2 R D",
+"ipa": "bˌɔːɹd"
 },
 {
-"t": "ding",
-"arpa": "D IH0 NG",
-"ipa": "dɪŋ"
+"t": "ing",
+"arpa": "IH0 NG",
+"ipa": "ɪŋ"
 }
 ]
 ],
@@ -34392,7 +34552,7 @@
 "That's why …": [
 [
 {
-"t": "Thats",
+"t": "thats",
 "arpa": "DH AE1 T S",
 "ipa": "ðˈæts"
 }
@@ -34732,9 +34892,14 @@
 ],
 [
 {
-"t": "UK",
-"arpa": "Y UW2 K EY1",
-"ipa": "jˌuːkˈeɪ"
+"t": "U",
+"arpa": "Y UW1",
+"ipa": "jˈuː"
+},
+{
+"t": "K",
+"arpa": "K EY1",
+"ipa": "kˈeɪ"
 }
 ]
 ],
@@ -34748,9 +34913,14 @@
 ],
 [
 {
-"t": "US",
-"arpa": "AH1 S",
-"ipa": "ˈʌs"
+"t": "U",
+"arpa": "Y UW1",
+"ipa": "jˈuː"
+},
+{
+"t": "S",
+"arpa": "EH1 S",
+"ipa": "ˈɛs"
 }
 ]
 ],
@@ -34989,9 +35159,14 @@
 "thirty-first": [
 [
 {
-"t": "thirty",
-"arpa": "TH ER1 D IY2",
-"ipa": "θˈɜːdˌiː"
+"t": "thir",
+"arpa": "TH ER1",
+"ipa": "θˈɜː"
+},
+{
+"t": "ty",
+"arpa": "T IY0",
+"ipa": "ti"
 }
 ],
 [
@@ -35478,14 +35653,14 @@
 "toothache": [
 [
 {
-"t": "too",
-"arpa": "T UW1",
-"ipa": "tˈuː"
+"t": "tooth",
+"arpa": "T UW1 TH",
+"ipa": "tˈuːθ"
 },
 {
-"t": "thache",
-"arpa": "TH EY0 K",
-"ipa": "θeɪk"
+"t": "ache",
+"arpa": "EY2 K",
+"ipa": "ˌeɪk"
 }
 ]
 ],
@@ -37015,9 +37190,19 @@
 "USB port": [
 [
 {
-"t": "USB",
-"arpa": "Y UW1 EH1 S B IY1",
-"ipa": "jˈuːˈɛsbˈiː"
+"t": "U",
+"arpa": "Y UW1",
+"ipa": "jˈuː"
+},
+{
+"t": "S",
+"arpa": "EH1 S",
+"ipa": "ˈɛs"
+},
+{
+"t": "B",
+"arpa": "B IY1",
+"ipa": "bˈiː"
 }
 ],
 [
@@ -37078,9 +37263,24 @@
 "valuable": [
 [
 {
-"t": "valuable",
-"arpa": "V AE1 L Y AH0 B AH0 L",
-"ipa": "vˈæljəbəl"
+"t": "val",
+"arpa": "V AE1 L",
+"ipa": "vˈæl"
+},
+{
+"t": "u",
+"arpa": "Y UW0",
+"ipa": "juː"
+},
+{
+"t": "a",
+"arpa": "AH0",
+"ipa": "ə"
+},
+{
+"t": "ble",
+"arpa": "B AH0 L",
+"ipa": "bəl"
 }
 ]
 ],
@@ -37194,7 +37394,7 @@
 }
 ]
 ],
-"villian": [
+"villain": [
 [
 {
 "t": "vil",
@@ -37202,14 +37402,9 @@
 "ipa": "vˈɪl"
 },
 {
-"t": "li",
-"arpa": "L IY0",
-"ipa": "li"
-},
-{
-"t": "an",
-"arpa": "AH0 N",
-"ipa": "ən"
+"t": "lain",
+"arpa": "L AH0 N",
+"ipa": "lən"
 }
 ]
 ],
@@ -37322,9 +37517,14 @@
 "VR headset": [
 [
 {
-"t": "VR",
-"arpa": "V IY2 AA1 R",
-"ipa": "vˌiːˈɑːɹ"
+"t": "V",
+"arpa": "V IY1",
+"ipa": "vˈiː"
+},
+{
+"t": "R",
+"arpa": "AA1 R",
+"ipa": "ˈɑːɹ"
 }
 ],
 [
@@ -37700,9 +37900,19 @@
 "Wednesday": [
 [
 {
-"t": "Wednesday",
-"arpa": "W EH1 N Z D IY0",
-"ipa": "wˈɛnzdi"
+"t": "Wed",
+"arpa": "W EH1 D",
+"ipa": "wˈɛd"
+},
+{
+"t": "nes",
+"arpa": "N EH1 Z",
+"ipa": "nˈɛz"
+},
+{
+"t": "day",
+"arpa": "D EY2",
+"ipa": "dˌeɪ"
 }
 ]
 ],
@@ -38005,14 +38215,14 @@
 "ipa": "wˈɪnd"
 },
 {
-"t": "sur",
-"arpa": "S ER0",
-"ipa": "sɚ"
+"t": "surf",
+"arpa": "S ER2 F",
+"ipa": "sˌɜːf"
 },
 {
-"t": "fing",
-"arpa": "F IH0 NG",
-"ipa": "fɪŋ"
+"t": "ing",
+"arpa": "IH0 NG",
+"ipa": "ɪŋ"
 }
 ]
 ],
@@ -38734,54 +38944,6 @@
 },
 "review": [
 {
-"word": "(three) o'clock.",
-"token": "oclock",
-"why": "词典里没有（英式拼写或拼错了？），用 espeak 推的音标",
-"phones": "AA1 K L AA0 K"
-},
-{
-"word": "a dirty T-shirt",
-"token": "T",
-"why": "字母和音标对不上",
-"phones": "T IY1"
-},
-{
-"word": "a.m.",
-"token": "m",
-"why": "字母和音标对不上",
-"phones": "EH1 M"
-},
-{
-"word": "ageism",
-"token": "ageism",
-"why": "词典里没有（英式拼写或拼错了？），用 espeak 推的音标",
-"phones": "EY1 JH IH0 Z AH0 M"
-},
-{
-"word": "bite (my/your …) tongue",
-"token": "tongue",
-"why": "读音比拼写少音节（中间有字母不发音）",
-"split": "tongue"
-},
-{
-"word": "businessman / businesswoman",
-"token": "businessman",
-"why": "字母和音标对不上",
-"phones": "B IH1 Z N AH0 S M AE2 N"
-},
-{
-"word": "businessman / businesswoman",
-"token": "businesswoman",
-"why": "字母和音标对不上",
-"phones": "B IH1 Z N IH0 S W UH2 M AH0 N"
-},
-{
-"word": "café",
-"token": "café",
-"why": "字母和音标对不上",
-"phones": "K AE0 F EY1"
-},
-{
 "word": "catalogue",
 "token": "catalogue",
 "why": "读音比拼写少音节（中间有字母不发音）",
@@ -38792,12 +38954,6 @@
 "token": "chilli",
 "why": "词典里没有（英式拼写或拼错了？），用 espeak 推的音标",
 "phones": "CH IH1 L IY0"
-},
-{
-"word": "chocolate",
-"token": "chocolate",
-"why": "字母和音标对不上",
-"phones": "CH AO1 K L AH0 T"
 },
 {
 "word": "connect to the wi-fi",
@@ -38812,46 +38968,10 @@
 "phones": "K R IH1 T IH0 S AY2 Z"
 },
 {
-"word": "cupboard",
-"token": "cupboard",
-"why": "字母和音标对不上",
-"phones": "K AH1 B ER0 D"
-},
-{
-"word": "daredevil",
-"token": "daredevil",
-"why": "读音比拼写少音节（中间有字母不发音）",
-"split": "dar|edev|il"
-},
-{
 "word": "dialogue",
 "token": "dialogue",
 "why": "读音比拼写少音节（中间有字母不发音）",
 "split": "di|a|logue"
-},
-{
-"word": "didn't have a clue",
-"token": "didnt",
-"why": "词典里没有（英式拼写或拼错了？），用 espeak 推的音标",
-"phones": "D IH1 D N T"
-},
-{
-"word": "do what you’re told",
-"token": "youre",
-"why": "词典里没有（英式拼写或拼错了？），用 espeak 推的音标",
-"phones": "Y AO1 R"
-},
-{
-"word": "eighth",
-"token": "eighth",
-"why": "字母和音标对不上",
-"phones": "EY1 T TH"
-},
-{
-"word": "February",
-"token": "February",
-"why": "字母和音标对不上",
-"phones": "F EH1 B Y AH0 W EH2 R IY0"
 },
 {
 "word": "funfair",
@@ -38864,60 +38984,6 @@
 "token": "goosebumps",
 "why": "词典里没有（英式拼写或拼错了？），用 espeak 推的音标",
 "phones": "G UW1 S B AH0 M P S"
-},
-{
-"word": "GPS",
-"token": "GPS",
-"why": "字母和音标对不上",
-"phones": "G IY1 P IY0 EH1 S"
-},
-{
-"word": "graduate",
-"token": "graduate",
-"why": "字母和音标对不上",
-"phones": "G R AE1 JH AH0 W AH0 T"
-},
-{
-"word": "have a high diposable income",
-"token": "diposable",
-"why": "词典里没有（英式拼写或拼错了？），用 espeak 推的音标",
-"phones": "D IH1 P OW0 Z AH0 B AH0 L"
-},
-{
-"word": "hire a DJ",
-"token": "DJ",
-"why": "字母和音标对不上",
-"phones": "D IY1 JH EY1"
-},
-{
-"word": "ICT (Information and Communication Technology)",
-"token": "ICT",
-"why": "词典里没有（英式拼写或拼错了？），用 espeak 推的音标",
-"phones": "AY1 K T"
-},
-{
-"word": "insecure",
-"token": "insecure",
-"why": "字母和音标对不上",
-"phones": "IH1 N S AH0 K Y ER0"
-},
-{
-"word": "island",
-"token": "island",
-"why": "字母和音标对不上",
-"phones": "AY1 L AH0 N D"
-},
-{
-"word": "laboratory",
-"token": "laboratory",
-"why": "字母和音标对不上",
-"phones": "L AE1 B R AH0 T AO2 R IY0"
-},
-{
-"word": "launch your own business",
-"token": "business",
-"why": "字母和音标对不上",
-"phones": "B IH1 Z N AH0 S"
 },
 {
 "word": "Maths",
@@ -38938,40 +39004,10 @@
 "phones": "M IH1 N IH0 M AY2 Z"
 },
 {
-"word": "mircroscope",
-"token": "mircroscope",
-"why": "词典里没有（英式拼写或拼错了？），用 espeak 推的音标",
-"phones": "M ER1 K R AH0 S K OW2 P"
-},
-{
 "word": "motorway / highway",
 "token": "motorway",
 "why": "词典里没有（英式拼写或拼错了？），用 espeak 推的音标",
 "phones": "M OW1 T ER0 W EY2"
-},
-{
-"word": "MP3 player",
-"token": "MP",
-"why": "字母和音标对不上",
-"phones": "EH2 M P IY1"
-},
-{
-"word": "Mr Friendly",
-"token": "Mr",
-"why": "字母和音标对不上",
-"phones": "M IH1 S T ER0"
-},
-{
-"word": "Mrs Friendly",
-"token": "Mrs",
-"why": "字母和音标对不上",
-"phones": "M IH1 S IH0 Z"
-},
-{
-"word": "omelette",
-"token": "omelette",
-"why": "词典里没有（英式拼写或拼错了？），用 espeak 推的音标",
-"phones": "AA1 M L AH0 T"
 },
 {
 "word": "organise food and drinks",
@@ -38986,28 +39022,10 @@
 "phones": "AO1 R G AH0 N AY2 Z D"
 },
 {
-"word": "p.m.",
-"token": "p",
-"why": "字母和音标对不上",
-"phones": "P IY1"
-},
-{
-"word": "p.m.",
-"token": "m",
-"why": "字母和音标对不上",
-"phones": "EH1 M"
-},
-{
 "word": "papyrus",
 "token": "papyrus",
 "why": "词典里没有（英式拼写或拼错了？），用 espeak 推的音标",
 "phones": "P AH0 P AY1 R AH0 S"
-},
-{
-"word": "PE (Physical Education)",
-"token": "PE",
-"why": "词典里没有（英式拼写或拼错了？），用 espeak 推的音标",
-"phones": "P IY1"
 },
 {
 "word": "pyjamas",
@@ -39022,40 +39040,10 @@
 "phones": "R IH0 T W IY1 T"
 },
 {
-"word": "Rose Quartz",
-"token": "Quartz",
-"why": "字母和音标对不上",
-"phones": "K W AO1 R T S"
-},
-{
-"word": "sandcastle",
-"token": "sandcastle",
-"why": "词典里没有（英式拼写或拼错了？），用 espeak 推的音标",
-"phones": "S AE1 N D K AE0 S AH0 L"
-},
-{
 "word": "satnav",
 "token": "satnav",
 "why": "词典里没有（英式拼写或拼错了？），用 espeak 推的音标",
 "phones": "S AE1 T N AE0 V"
-},
-{
-"word": "save someone's life",
-"token": "someones",
-"why": "词典里没有（英式拼写或拼错了？），用 espeak 推的音标",
-"phones": "S AH1 M W AH0 N Z"
-},
-{
-"word": "savoury",
-"token": "savoury",
-"why": "词典里没有（英式拼写或拼错了？），用 espeak 推的音标",
-"phones": "S EY1 V ER0 R IY0"
-},
-{
-"word": "self-centred",
-"token": "centred",
-"why": "字母和音标对不上",
-"phones": "S EH1 N T AH0 D"
 },
 {
 "word": "shortlist (someone)",
@@ -39064,106 +39052,10 @@
 "phones": "SH AO1 R T L IH0 S T"
 },
 {
-"word": "six o'clock",
-"token": "oclock",
-"why": "词典里没有（英式拼写或拼错了？），用 espeak 推的音标",
-"phones": "AA1 K L AA0 K"
-},
-{
-"word": "snowboarding",
-"token": "snowboarding",
-"why": "词典里没有（英式拼写或拼错了？），用 espeak 推的音标",
-"phones": "S N OW1 B AO0 R D IH0 NG"
-},
-{
-"word": "So that's the reason …",
-"token": "thats",
-"why": "词典里没有（英式拼写或拼错了？），用 espeak 推的音标",
-"phones": "DH AE1 T S"
-},
-{
-"word": "T-shirt",
-"token": "T",
-"why": "字母和音标对不上",
-"phones": "T IY1"
-},
-{
-"word": "That's why …",
-"token": "Thats",
-"why": "词典里没有（英式拼写或拼错了？），用 espeak 推的音标",
-"phones": "DH AE1 T S"
-},
-{
-"word": "the UK",
-"token": "UK",
-"why": "字母和音标对不上",
-"phones": "Y UW2 K EY1"
-},
-{
-"word": "thirty-first",
-"token": "thirty",
-"why": "字母和音标对不上",
-"phones": "TH ER1 D IY2"
-},
-{
-"word": "tongue",
-"token": "tongue",
-"why": "读音比拼写少音节（中间有字母不发音）",
-"split": "tongue"
-},
-{
-"word": "toothache",
-"token": "toothache",
-"why": "词典里没有（英式拼写或拼错了？），用 espeak 推的音标",
-"phones": "T UW1 TH EY0 K"
-},
-{
-"word": "USB port",
-"token": "USB",
-"why": "字母和音标对不上",
-"phones": "Y UW1 EH1 S B IY1"
-},
-{
-"word": "valuable",
-"token": "valuable",
-"why": "字母和音标对不上",
-"phones": "V AE1 L Y AH0 B AH0 L"
-},
-{
-"word": "villian",
-"token": "villian",
-"why": "词典里没有（英式拼写或拼错了？），用 espeak 推的音标",
-"phones": "V IH1 L IY0 AH0 N"
-},
-{
-"word": "VR headset",
-"token": "VR",
-"why": "字母和音标对不上",
-"phones": "V IY2 AA1 R"
-},
-{
 "word": "webcam",
 "token": "webcam",
 "why": "词典里没有（英式拼写或拼错了？），用 espeak 推的音标",
 "phones": "W EH1 B K AE0 M"
-},
-{
-"word": "Wednesday",
-"token": "Wednesday",
-"why": "字母和音标对不上",
-"phones": "W EH1 N Z D IY0"
-},
-{
-"word": "windsurfing",
-"token": "windsurfing",
-"why": "词典里没有（英式拼写或拼错了？），用 espeak 推的音标",
-"phones": "W IH1 N D S ER0 F IH0 NG"
-},
-{
-"word": "yoghurt",
-"token": "yoghurt",
-"why": "词典里没有（英式拼写或拼错了？），用 espeak 推的音标",
-"phones": "Y OW1 G ER0 T"
 }
 ]
 }

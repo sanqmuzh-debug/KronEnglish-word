@@ -122,7 +122,7 @@ def align(word, phones):
                     if ch[-1] == 'e' and len(ch) > 1 and ch[-2] == 'r' and i + L != n:
                         continue  # are/ire/ore 只在词尾
                     has_r = 'r' in ch[1:]
-                    go(L, 1, 1.0 + 0.3 * (L - 1) + (0.8 if has_r and base[j] != 'ER' else 0))
+                    go(L, 1, 1.0 + 0.3 * (L - 1) + (0.8 if has_r and base[j] != 'ER' else 0) + (0.3 if ch[0] == 'y' and L > 1 else 0))  # play|er 不是 pla|yer
                     if has_r and j + 1 < m and base[j + 1] == 'R':
                         go(L, 2, 1.1 + 0.3 * (L - 1))
             if j < m and base[j] == 'ER':  # hurry、arrest 的 urr/arr，centre 的词尾 re
@@ -267,12 +267,28 @@ def to_ipa(phones):
     return out
 
 
+LETTERS = dict(zip('ABCDEFGHIJKLMNOPQRSTUVWXYZ', ['EY1', 'B IY1', 'S IY1', 'D IY1', 'IY1', 'EH1 F', 'JH IY1', 'EY1 CH', 'AY1', 'JH EY1',
+    'K EY1', 'EH1 L', 'EH1 M', 'EH1 N', 'OW1', 'P IY1', 'K Y UW1', 'AA1 R', 'EH1 S', 'T IY1', 'Y UW1', 'V IY1', 'D AH1 B AH0 L Y UW0', 'EH1 K S', 'W AY1', 'Z IY1']))
+
+
+@functools.lru_cache(None)
+def overrides():
+    p = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'syllable_overrides.json')
+    return {k: v for k, v in json.load(open(p, encoding='utf-8')).items() if not k.startswith('_')}
+
+
 def run_word(word, d, review):
     toks = re.findall(r"[A-Za-zÀ-ÿ]+", APOS.sub('', re.sub(r'\(.*?\)', ' ', word)))
     res = []
+    after_dot = re.search(r'\b[ap]\.m\.', word)
     for t in toks:
         key = t.lower()
         src = 'cmu'
+        if key in overrides():  # 手写的拆法
+            res.append([{'t': x, 'arpa': ar, 'ipa': to_ipa(ar.split())} for x, ar in overrides()[key]]); continue
+        if (t.isupper() and len(t) <= 4 and t not in ('I', 'A')) or (len(t) == 1 and (after_dot or '-' in word)):
+            # 缩写一个字母一块，读字母名：G|P|S、T-shirt 的 T、p.m.
+            res.append([{'t': c, 'arpa': LETTERS[c.upper()], 'ipa': to_ipa(LETTERS[c.upper()].split())} for c in t]); continue
         if key in d:
             # 有几种读法时挑音节数最接近拼写的（interesting 读 in-ter-est-ing 而不是 in-trest-ing）
             groups = len(re.findall(r'[aeiouy]+', re.sub(r'e$', '', key))) or 1
