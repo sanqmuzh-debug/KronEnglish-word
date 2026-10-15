@@ -2,15 +2,15 @@
 <title>Kron Arcade</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@500;700;800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&display=swap">
 <style>
 /* Layout: one hub (header + asymmetric 2/3 card grid) that swaps to a full-width game stage with a sticky HUD. Chunky, juicy, 3D-press buttons. */
 :root{
-  --bg:#F2F4FA; --surface:#FFFFFF; --sunk:#E7EAF4; --line:#DCE1EE;
-  --ink:#1C2033; --muted:#666D86; --on:#FFFFFF; --eye:#FFFFFF;
-  --kron:#2F6BF0;
+  --bg:#F3F4F8; --surface:#FFFFFF; --sunk:#EDEFF4; --line:#DCDFE7;
+  --ink:#1B1D25; --muted:#6A6F80; --on:#FFFFFF; --eye:#FFFFFF;
+  --kron:#30C25B;
   --c-match:#1FAE6B; --c-gravity:#7A5CFA; --c-whack:#FF8A1F; --c-sentence:#0FA2E0; --c-quiz:#FF4769;
-  --ok:#1FAE6B; --bad:#EE3F57;
+  --ok:#30C25B; --bad:#EE3F57;
   --sky1:#20164A; --sky2:#4B2FB0; --star:#FFFFFF; --dirt:#7A4A27; --grass:#7CCB4E;
   --c-lava:#EE4B2B; --c-maze:#3949C9; --c-fish:#0FA39A; --c-race:#D6336C; --c-balloon:#D98200;
   --cave1:#2A1E33; --cave2:#4A2A2A; --brick:#9AA3B5; --brick-d:#6E778A; --lava1:#FFB21A; --lava2:#E8341C;
@@ -19,13 +19,13 @@
   --c-tower:#5F3DC4; --c-snake:#2F9E44; --c-jump:#F76707; --c-duel:#C92A2A;
   --wood:#A0612B; --wood-d:#6E3F18; --cloud:#FFFFFF; --cloud-ink:#1C2033;
   --q0:#E8384F; --q1:#2F6BF0; --q2:#F2A60C; --q3:#1FAE6B;
-  --f-display:'Baloo 2','PingFang SC','Microsoft YaHei',system-ui,sans-serif;
-  --f-body:'Nunito','PingFang SC','Microsoft YaHei',system-ui,sans-serif;
+  --f-display:'Fredoka',ui-rounded,'SF Pro Rounded','PingFang SC','Microsoft YaHei',system-ui,sans-serif;
+  --f-body:-apple-system,BlinkMacSystemFont,'SF Pro Text','PingFang SC','Hiragino Sans GB','Microsoft YaHei',system-ui,sans-serif;
   --r:18px;
 }
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
-  --bg:#10121B; --surface:#1A1D2A; --sunk:#232738; --line:#2C3145; --ink:#EDEFF8; --muted:#9CA2BA; --eye:#F4F6FF; color-scheme:dark }}
-:root[data-theme="dark"]{ --bg:#10121B; --surface:#1A1D2A; --sunk:#232738; --line:#2C3145; --ink:#EDEFF8; --muted:#9CA2BA; --eye:#F4F6FF; color-scheme:dark }
+  --bg:#0F1116; --surface:#191C24; --sunk:#232733; --line:#2D323F; --ink:#F2F3F7; --muted:#9BA1B3; --eye:#F4F6FF; color-scheme:dark }}
+:root[data-theme="dark"]{ --bg:#0F1116; --surface:#191C24; --sunk:#232733; --line:#2D323F; --ink:#F2F3F7; --muted:#9BA1B3; --eye:#F4F6FF; color-scheme:dark }
 
 *{box-sizing:border-box}
 html,body{height:100%}
@@ -986,11 +986,11 @@ GAMES.tower=st=>{
   function draw(){c.setTransform(k,0,0,k,0,0);c.fillStyle=CL.grass;c.fillRect(0,0,LW,LH);
     c.strokeStyle=CL.path;c.lineWidth=36;c.lineJoin='round';c.beginPath();PATH.forEach(([x,y],i)=>i?c.lineTo(x,y):c.moveTo(x,y));c.stroke();
     c.fillStyle=CL.bad;c.fillRect(578,276,6,34);c.beginPath();c.moveTo(584,276);c.lineTo(600,284);c.lineTo(584,292);c.fill();
-    for(const s of SL){if(!s.lv){c.setLineDash([5,5]);c.strokeStyle=CL.sur;c.lineWidth=3;c.beginPath();c.arc(s.x,s.y,22,0,7);c.stroke();c.setLineDash([]);c.fillStyle=CL.sur;c.font='800 22px "Baloo 2",sans-serif';c.textAlign='center';c.textBaseline='middle';c.fillText('+',s.x,s.y+1)}
-      else{drawKron(c,s.x,s.y,s.lv===1?40:48,CL.g);c.fillStyle=CL.gold;c.font='800 13px "Baloo 2",sans-serif';c.textAlign='center';c.fillText('★'.repeat(s.lv),s.x,s.y+28)}}
+    for(const s of SL){if(!s.lv){c.setLineDash([5,5]);c.strokeStyle=CL.sur;c.lineWidth=3;c.beginPath();c.arc(s.x,s.y,22,0,7);c.stroke();c.setLineDash([]);c.fillStyle=CL.sur;c.font='800 22px "Fredoka",sans-serif';c.textAlign='center';c.textBaseline='middle';c.fillText('+',s.x,s.y+1)}
+      else{drawKron(c,s.x,s.y,s.lv===1?40:48,CL.g);c.fillStyle=CL.gold;c.font='800 13px "Fredoka",sans-serif';c.textAlign='center';c.fillText('★'.repeat(s.lv),s.x,s.y+28)}}
     c.strokeStyle=CL.gold;c.lineWidth=3;for(const s of shots){c.beginPath();c.moveTo(s.x1,s.y1);c.lineTo(s.x2,s.y2);c.stroke()}
     for(const e of en){const[x,y]=posAt(e.d);drawKron(c,x,y,24,CL.bad,1,0);c.fillStyle=CL.ink;c.fillRect(x-12,y-18,24,4);c.fillStyle=CL.gold;c.fillRect(x-12,y-18,24*e.hp/e.max,4)}
-    if(!left&&!en.length&&wave<WAVES&&alive){c.fillStyle=CL.ink;c.globalAlpha=.75;rr(c,170,150,260,56,14);c.fill();c.globalAlpha=1;c.fillStyle=CL.on;c.font='800 20px "Baloo 2",sans-serif';c.textAlign='center';c.textBaseline='middle';c.fillText(wave?`第 ${wave+1} 波 · ${Math.ceil(pause)} 秒后`:`先答题攒金币 · ${Math.ceil(pause)}`,300,178)}}
+    if(!left&&!en.length&&wave<WAVES&&alive){c.fillStyle=CL.ink;c.globalAlpha=.75;rr(c,170,150,260,56,14);c.fill();c.globalAlpha=1;c.fillStyle=CL.on;c.font='800 20px "Fredoka",sans-serif';c.textAlign='center';c.textBaseline='middle';c.fillText(wave?`第 ${wave+1} 波 · ${Math.ceil(pause)} 秒后`:`先答题攒金币 · ${Math.ceil(pause)}`,300,178)}}
   function loop(now){const dt=Math.min(.05,(now-last)/1000);last=now;update(dt);if(!alive)return;draw();
     if(now-hudT>200){hudT=now;hud(P('♥ '+hp)+P('🪙 '+coins)+P('第 '+Math.max(1,wave)+'/'+WAVES+' 波'))}raf=requestAnimationFrame(loop)}
   raf=requestAnimationFrame(loop);
@@ -1021,7 +1021,7 @@ GAMES.snake=st=>{
     else snake.pop();
     draw0();render();tm=setTimeout(step,Math.max(105,175-done*12))}
   function render(){c.setTransform(k,0,0,k,0,0);for(let y=0;y<N;y++)for(let x=0;x<N;x++){c.fillStyle=(x+y)%2?CL.a:CL.b;c.fillRect(x*30,y*30,30,30)}
-    c.font='800 18px "Baloo 2",sans-serif';c.textAlign='center';c.textBaseline='middle';
+    c.font='800 18px "Fredoka",sans-serif';c.textAlign='center';c.textBaseline='middle';
     for(const i of items){c.fillStyle=CL.a;c.strokeStyle=CL.line;c.lineWidth=2;rr(c,i.x*30+3,i.y*30+3,24,24,7);c.fill();c.stroke();c.fillStyle=CL.ink;c.fillText(i.c,i.x*30+15,i.y*30+16)}
     snake.forEach((s,n)=>{if(n===0)return;c.fillStyle=CL.g;c.globalAlpha=1-n/(snake.length+6);rr(c,s.x*30+3,s.y*30+3,24,24,8);c.fill()});c.globalAlpha=1;
     drawKron(c,snake[0].x*30+15,snake[0].y*30+15,30,CL.g,dir[0],dir[1])}
@@ -1060,7 +1060,7 @@ GAMES.jump=st=>{
     if(p.y-cam>LH+30){lives--;sfx.bad();floatAt(C,'−1 ♥','minus');if(lives<=0){end(false);return}p.y=cam+LH;p.vy=-900}
     showQ()}
   function draw(){c.setTransform(k,0,0,k,0,0);const gr=c.createLinearGradient(0,0,0,LH);gr.addColorStop(0,CL.sky);gr.addColorStop(1,CL.w1);c.fillStyle=gr;c.fillRect(0,0,LW,LH);
-    c.textAlign='center';c.textBaseline='middle';c.font='800 15px "Baloo 2",sans-serif';
+    c.textAlign='center';c.textBaseline='middle';c.font='800 15px "Fredoka",sans-serif';
     for(const r of rows){const sy=r.y-cam;if(sy<-40||sy>LH+400)continue;for(const pl of r.plats){if(pl.gone)continue;const y=sy+(pl.fall||0);
       const fill=pl.broken?CL.bad:pl.done?CL.ok:pl.label!=null?CL.q[pl.col]:CL.plat;c.fillStyle=fill;c.globalAlpha=pl.broken?Math.max(0,1-pl.fall/300):1;rr(c,pl.x,y,pl.w,pl.label!=null?26:14,7);c.fill();
       if(pl.label!=null){c.fillStyle=CL.on;c.fillText(pl.label,pl.x+pl.w/2,y+14)}c.globalAlpha=1}}

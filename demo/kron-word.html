@@ -11,9 +11,9 @@
 /* Layout: one-screen game column — conveyor belt on top, brick workbench in the middle, match tray at the bottom */
 :root{
   --bg:#F3F4F8; --surface:#FFFFFF; --surface-2:#EDEFF4; --fg:#1B1D25; --muted:#6A6F80; --line:#DCDFE7;
-  --kron:#0A84FF; --kron-d:#0064D2;
+  --kron:#30C25B; --kron-d:#23964A;
   --logo:#1D1D1F; --skin:#FFDCC0; --skin-d:#F4BE98; --hair:#2B2320; --frame:#1B1D25; --mouth:#8A2E1E;
-  --ok:#58CC02; --ok-d:#45A302; --bad:#FF4B4B;
+  --ok:#30C25B; --ok-d:#23964A; --bad:#FF4B4B;
   --rail:#2A2E38; --rail-2:#363B48; --rail-edge:#191C23;
   --berry:#FF3B7F; --berry-d:#C9295F; --sky:#1CB0F6; --sky-d:#0F87C0;
   --grape:#9B5CF6; --grape-d:#7639D6; --mint:#00C2A8; --mint-d:#00937F;
@@ -45,7 +45,9 @@ button:focus-visible{outline:3px solid var(--sky);outline-offset:3px}
 .top{display:flex;align-items:center;gap:12px}
 .brand{display:flex;align-items:center;gap:8px;font:700 21px var(--font-display);letter-spacing:-.01em;white-space:nowrap}
 .brand .kron{width:36px;height:36px}
-.progress{flex:1;height:16px;border-radius:99px;background:var(--surface-2);overflow:hidden}
+.top-mid{flex:1;min-width:0;display:flex;flex-direction:column;gap:6px}
+.top-mid b{font:700 15px/1.1 var(--font-display);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.progress{height:14px;border-radius:99px;background:var(--surface-2);overflow:hidden}
 .progress i{display:block;height:100%;width:0;border-radius:99px;background:var(--ok);position:relative;transition:width .7s cubic-bezier(.34,1.5,.64,1)}
 .progress i::after{content:"";position:absolute;left:8px;right:8px;top:3px;height:4px;border-radius:9px;background:rgba(255,255,255,.4)}
 .count{font:600 15px var(--font-display);font-variant-numeric:tabular-nums;color:var(--muted);min-width:42px;text-align:right}
@@ -147,7 +149,7 @@ button:focus-visible{outline:3px solid var(--sky);outline-offset:3px}
 .scene::before{content:"";position:absolute;left:-10%;right:-10%;bottom:-38%;height:62%;border-radius:50%;background:color-mix(in oklab,var(--c) 30%,var(--surface))}
 .scene-emoji{position:absolute;right:16%;top:50%;font-size:clamp(56px,14vw,86px);line-height:1;transform:translateY(-50%);animation:float 2.6s ease-in-out infinite;filter:drop-shadow(0 10px 8px rgba(0,0,0,.15))}
 @keyframes float{50%{transform:translateY(calc(-50% - 10px)) rotate(6deg)}}
-.scene .kron{position:absolute;left:10%;bottom:-6%;width:clamp(90px,26%,140px);height:auto;transform:rotate(-6deg);animation:peek .8s .1s cubic-bezier(.34,1.5,.64,1) both}
+.scene .kron{position:absolute;left:10%;bottom:-6%;width:clamp(90px,26%,140px);height:auto;transform:rotate(-6deg)}
 @keyframes peek{from{transform:translateY(60%) rotate(-6deg)}}
 .scene-tag{position:absolute;right:10px;top:10px;font-size:11px;padding:4px 9px;border-radius:99px;background:rgba(255,255,255,.7);color:#3a3d48}
 .spark{position:absolute;width:10px;height:10px;border-radius:50%;background:#fff;opacity:.7;animation:twinkle 2s ease-in-out infinite}
@@ -199,7 +201,7 @@ button:focus-visible{outline:3px solid var(--sky);outline-offset:3px}
 .book .bk-ic{font-size:26px}.book b{display:block;font-size:15px}.book span{font-size:12.5px;color:var(--muted)}
 .seg{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
 .seg button{padding:12px 0;border-radius:14px;border:2px solid var(--line);border-bottom-width:4px;background:var(--surface);font:600 18px var(--font-display);font-variant-numeric:tabular-nums}
-.seg button[aria-pressed="true"]{border-color:var(--sky);color:var(--sky-d);background:color-mix(in oklab,var(--sky) 10%,var(--surface))}
+.seg button[aria-pressed="true"]{border-color:var(--ok);color:var(--ok-d);background:color-mix(in oklab,var(--ok) 10%,var(--surface))}
 .seg button:disabled{opacity:.4;cursor:not-allowed}
 .toggle-row{display:flex;justify-content:space-between;align-items:center;font-size:15px}
 .switch{width:52px;height:32px;border-radius:99px;border:none;background:var(--line);position:relative;transition:background .2s}
@@ -213,24 +215,18 @@ button:focus-visible{outline:3px solid var(--sky);outline-offset:3px}
 .book .bk-mini{flex:none;width:36px;height:auto;border-radius:3px 5px 5px 3px;box-shadow:0 2px 6px rgba(0,0,0,.18)}
 .book{width:100%}.book .chev{margin-left:auto;font-size:22px;color:var(--muted)}
 /* home: Apple Books style storefront */
-.home{--hb:#FFFFFF;--hs:#6E6E73;--hl:rgba(0,0,0,.1);--hp:#EDEDF0;--hbar:rgba(255,255,255,.78);--hk:#1D1D1F;--hk-fg:#fff;
+.home{--hb:var(--bg);--hs:var(--muted);--hl:var(--line);--hp:var(--surface-2);--hbar:color-mix(in oklab,var(--bg) 84%,transparent);--hk:var(--fg);--hk-fg:var(--bg);
   position:fixed;inset:0;z-index:95;background:var(--hb);color:var(--hk);overflow-y:auto;overflow-x:hidden;font-family:var(--font-ui);animation:fade .3s}
-:root[data-theme="dark"] .home{--hb:#000;--hs:#A1A1A6;--hl:rgba(255,255,255,.14);--hp:#1D1D1F;--hbar:rgba(22,22,23,.78);--hk:#F5F5F7;--hk-fg:#000}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .home{--hb:#000;--hs:#A1A1A6;--hl:rgba(255,255,255,.14);--hp:#1D1D1F;--hbar:rgba(22,22,23,.78);--hk:#F5F5F7;--hk-fg:#000}}
 .home.out{animation:fadeOut .26s forwards}
 @keyframes fadeOut{to{opacity:0}}
-.hm-bar{position:sticky;top:0;z-index:3;background:var(--hbar);-webkit-backdrop-filter:saturate(180%) blur(20px);backdrop-filter:saturate(180%) blur(20px);border-bottom:1px solid var(--hl);padding-top:env(safe-area-inset-top)}
-.hm-bar .in{max-width:1024px;margin:0 auto;height:52px;display:flex;align-items:center;justify-content:space-between;padding:0 16px}
+.hm-bar{position:sticky;top:0;z-index:3;background:var(--hbar);-webkit-backdrop-filter:saturate(180%) blur(20px);backdrop-filter:saturate(180%) blur(20px);padding-top:env(safe-area-inset-top)}
+.hm-bar .in{max-width:620px;margin:0 auto;height:66px;display:flex;align-items:center;justify-content:space-between;padding:0 max(16px,env(safe-area-inset-left,0px))}
 .hm-bar .brand span{display:inline}
-.hm-bar .brand{font:600 21px var(--font-ui);letter-spacing:-.02em;color:var(--hk)}
-.hm-bar .brand .kron-logo{width:24px;height:24px;color:var(--hk)}
-.hm-x{width:32px;height:32px;border-radius:50%;border:0;background:var(--hp);color:var(--hs);display:grid;place-items:center}
-.hm-x svg{width:14px;height:14px}
 .hm-tabs{display:flex;justify-content:center;padding:32px 16px 0;animation:hmUp .7s cubic-bezier(.2,.8,.2,1) .05s both}
 .pills{position:relative;display:inline-flex;padding:5px;border-radius:99px;background:var(--hp)}
-.pills button{position:relative;z-index:1;border:0;background:none;padding:10px 20px;border-radius:99px;font:500 16px var(--font-ui);color:var(--hk);white-space:nowrap;transition:color .35s}
-.pills button[aria-pressed="true"]{color:var(--hk-fg)}
-.pills .ind{position:absolute;top:5px;bottom:5px;left:0;width:0;border-radius:99px;background:var(--hk);transition:transform .45s cubic-bezier(.3,1.2,.5,1),width .45s cubic-bezier(.3,1.2,.5,1)}
+.pills button{position:relative;z-index:1;border:0;background:none;padding:10px 20px;border-radius:99px;font:600 16px var(--font-display);letter-spacing:.01em;color:var(--hk);white-space:nowrap;transition:color .35s}
+.pills button[aria-pressed="true"]{color:#fff}
+.pills .ind{position:absolute;top:5px;bottom:5px;left:0;width:0;border-radius:99px;background:var(--ok);box-shadow:inset 0 -3px 0 var(--ok-d);transition:transform .45s cubic-bezier(.3,1.2,.5,1),width .45s cubic-bezier(.3,1.2,.5,1)}
 .hm-rows{display:flex;flex-direction:column;gap:40px;padding:44px 0 150px}
 .hm-rows.swap{animation:hmSwap .5s cubic-bezier(.2,.8,.2,1)}
 .mq{--h:230px;overflow:hidden;animation:hmIn .9s cubic-bezier(.2,.8,.2,1) var(--d,0s) both}
@@ -247,19 +243,29 @@ button:focus-visible{outline:3px solid var(--sky);outline-offset:3px}
 .hb:active .cov{transform:scale(.97)}
 .hb .bk-img{width:100%;height:100%;object-fit:cover;border-radius:4px 8px 8px 4px;box-shadow:0 1px 2px rgba(0,0,0,.08),0 12px 24px -10px rgba(0,0,0,.35)}
 .hb.out .cov{opacity:0}
-.hb b{display:block;margin-top:12px;font:400 19px/1.25 var(--font-ui);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.hb small{display:block;font:400 17px/1.3 var(--font-ui);color:var(--hs);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.hm-pause{position:fixed;right:max(18px,env(safe-area-inset-right));bottom:calc(96px + env(safe-area-inset-bottom));z-index:4;width:36px;height:36px;border-radius:50%;border:1.5px solid var(--hs);background:var(--hb);color:var(--hk);display:grid;place-items:center;opacity:.85}
+.hb b{display:block;margin-top:12px;font:600 19px/1.25 var(--font-display);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.hb small{display:block;margin-top:2px;font:400 15px/1.3 var(--font-ui);color:var(--hs);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.hm-pause{position:fixed;right:max(18px,env(safe-area-inset-right));bottom:calc(104px + env(safe-area-inset-bottom));z-index:4;width:42px;height:42px;border-radius:14px;border:2px solid var(--line);border-bottom-width:4px;background:var(--surface);color:var(--muted);display:grid;place-items:center}
+.hm-pause:active{transform:translateY(2px);border-bottom-width:2px}
 .hm-pause svg{width:14px;height:14px}
-.hm-go{position:fixed;left:50%;bottom:calc(16px + env(safe-area-inset-bottom));z-index:4;width:min(560px,calc(100% - 32px));transform:translateX(-50%);display:flex;align-items:center;gap:14px;padding:10px 10px 10px 12px;border-radius:22px;border:1px solid var(--hl);background:var(--hbar);-webkit-backdrop-filter:saturate(180%) blur(20px);backdrop-filter:saturate(180%) blur(20px);box-shadow:0 14px 40px -16px rgba(0,0,0,.35);color:var(--hk);text-align:left;animation:hmGo .7s cubic-bezier(.3,1.3,.5,1) .5s both}
+.hm-go{position:fixed;left:50%;bottom:calc(16px + env(safe-area-inset-bottom));z-index:4;width:min(560px,calc(100% - 32px));transform:translateX(-50%);display:flex;align-items:center;gap:14px;padding:10px 10px 10px 12px;border-radius:22px;border:2px solid var(--line);border-bottom-width:5px;background:var(--surface);box-shadow:var(--shadow);color:var(--hk);text-align:left;animation:hmGo .7s cubic-bezier(.3,1.3,.5,1) .5s both}
 @keyframes hmGo{from{opacity:0;transform:translate(-50%,40px)}}
+.pg{display:block;height:6px;border-radius:9px;background:var(--surface-2);overflow:hidden;margin-top:6px}
+.pg i{display:block;height:100%;border-radius:9px;background:var(--ok)}
+.hb .pg{width:100%}
+.hm-go .pg{max-width:200px}
+.win-pg{display:grid;grid-template-columns:1fr auto;gap:2px 10px;align-items:baseline;font-size:13px;color:var(--muted)}
+.win-pg b{font:600 14px var(--font-display);color:var(--fg);font-variant-numeric:tabular-nums}
+.win-pg .pg{grid-column:1/-1;margin-top:4px;height:8px}
+.bk-back li button em s{text-decoration:none;color:var(--ok);font-size:16px}
+.bk-back li button.on em s{color:#fff}
 .hm-go img{flex:none;height:52px;width:auto;border-radius:3px 5px 5px 3px;box-shadow:0 4px 10px -4px rgba(0,0,0,.4)}
 .hm-go span{flex:1;min-width:0;display:flex;flex-direction:column}
 .hm-go small{font-size:13px;color:var(--hs)}
-.hm-go b{font:600 17px var(--font-ui);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.hm-go em{font-style:normal;flex:none;padding:11px 22px;border-radius:99px;background:var(--hk);color:var(--hk-fg);font:600 16px var(--font-ui)}
-.hm-go:active em{transform:scale(.96)}
-@media (max-width:600px){.mq{--h:180px}.mq.big{--h:230px}.hb{margin-right:16px}.hb b{font-size:16px;margin-top:10px}.hb small{font-size:14px}.pills button{padding:9px 15px;font-size:15px}.hm-rows{gap:30px;padding-top:34px}}
+.hm-go b{font:600 18px var(--font-display);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.hm-go em{font-style:normal;flex:none;padding:12px 24px;border-radius:16px;background:var(--ok);border-bottom:4px solid var(--ok-d);color:#fff;font:600 16px var(--font-display);letter-spacing:.06em}
+.hm-go:active em{transform:translateY(2px);border-bottom-width:2px}
+@media (max-width:600px){.mq{--h:180px}.mq.big{--h:230px}.hb{margin-right:16px}.hb b{font-size:16px;margin-top:10px}.hb small{font-size:13px}.pills button{padding:9px 15px;font-size:15px}.hm-rows{gap:30px;padding-top:34px}}
 @media (prefers-reduced-motion:reduce){.mq-track{animation:none}.mq{overflow-x:auto}}
 .bk-stage{position:fixed;inset:0;z-index:96;background:rgba(10,12,20,0);transition:background .35s;perspective:1400px}
 .bk-stage.in{background:rgba(10,12,20,.45);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
@@ -310,7 +316,7 @@ button:focus-visible{outline:3px solid var(--sky);outline-offset:3px}
 @keyframes arcIn{from{transform:translateY(100%)}}
 @keyframes arcOut{to{transform:translateY(100%)}}
 @media (prefers-reduced-motion:reduce){.gbox,.gbox.chosen,.arcade{animation:none!important}}
-.win-kron{display:flex;justify-content:center}.win-kron .kron{width:110px;height:110px;animation:jump .8s cubic-bezier(.34,1.6,.64,1) infinite alternate}
+.win-kron{display:flex;justify-content:center}.win-kron .kron{width:110px;height:110px}
 
 #fx{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:85}
 
@@ -319,9 +325,6 @@ button:focus-visible{outline:3px solid var(--sky);outline-offset:3px}
 .kron .kh-face{display:none}
 .kron.mood-idle .kh-face-idle,.kron.mood-thinking .kh-face-thinking,.kron.mood-correct .kh-face-correct,.kron.mood-wrong .kh-face-wrong{display:inline}
 .brand .kron-logo{width:30px;height:30px;color:var(--logo)}
-.coach .kron{transition:transform .3s cubic-bezier(.34,1.6,.64,1)}
-.coach .kron.mood-correct{transform:translateY(-6px) rotate(-6deg) scale(1.06)}
-.coach .kron.mood-wrong{animation:nope .5s}
 @keyframes nope{25%{transform:rotate(-8deg)}75%{transform:rotate(8deg)}}
 .scene-say{position:absolute;left:calc(10% + clamp(90px,26%,140px) - 12px);top:16%;font:700 16px var(--font-display);background:#fff;color:#1B1D25;padding:6px 12px;border-radius:16px 16px 16px 4px;box-shadow:0 4px 0 rgba(0,0,0,.08);animation:pop .5s .45s cubic-bezier(.34,1.6,.64,1) both}
 .kron .eye{transform-box:fill-box;transform-origin:center;animation:blink 5.5s infinite}
@@ -344,8 +347,8 @@ button:focus-visible{outline:3px solid var(--sky);outline-offset:3px}
 
 <div class="app">
   <header class="top">
-    <div class="brand" id="brandKron"><span>Kron Word</span></div>
-    <div class="progress" role="progressbar" aria-label="消除进度"><i id="bar"></i></div>
+    <button class="icon-btn" id="goHome" aria-label="回书架"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg></button>
+    <div class="top-mid"><b id="bookName"></b><div class="progress" role="progressbar" aria-label="消除进度"><i id="bar"></i></div></div>
     <div class="count" id="count">0/9</div>
     <button class="icon-btn" id="openSettings" aria-label="设置">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M4 7h10M18 7h2M4 17h4M12 17h8"/><circle cx="16" cy="7" r="2.4"/><circle cx="10" cy="17" r="2.4"/></svg>
@@ -353,7 +356,7 @@ button:focus-visible{outline:3px solid var(--sky);outline-offset:3px}
   </header>
 
   <section>
-    <div class="belt-head"><span><button class="linkish" id="bookName">小学核心</button></span><span id="beltCount"></span></div>
+    <div class="belt-head"><span></span><span id="beltCount"></span></div>
     <div class="belt" id="belt"><div class="roller"></div></div>
   </section>
 
@@ -422,6 +425,12 @@ const sampleFor=id=>{const f=findBook(id);return f&&f.sr.id==='think'&&f.b.mark!
 const S={pick:{bk:'pu1',u:0},book:'kids',count:9,muted:false};
 try{const p=JSON.parse(localStorage.getItem('kronword')||'{}');if(p.pick&&findBook(p.pick.bk)){S.pick=p.pick;S.saved=true}if(p.count)S.count=p.count;if(p.muted)S.muted=true}catch(e){}
 S.book=sampleFor(S.pick.bk);
+const PROG=(()=>{try{return JSON.parse(localStorage.getItem('kronword_prog')||'{}')}catch(e){return{}}})();
+const unitDone=(bk,u)=>{const f=findBook(bk);return f?Math.min((PROG[bk]||{})[u]||0,f.b.units[u][2]):0};
+const bookDone=bk=>findBook(bk).b.units.reduce((n,_,u)=>n+unitDone(bk,u),0);
+const unitName=(bk,u)=>findBook(bk).b.units[u][0].replace('Welcome Unit','Welcome');
+const pickTitle=()=>bookTitle(S.pick.bk)+' · '+unitName(S.pick.bk,S.pick.u);
+function addProgress(){const{bk,u}=S.pick;(PROG[bk]=PROG[bk]||{})[u]=(PROG[bk][u]||0)+S.total;try{localStorage.setItem('kronword_prog',JSON.stringify(PROG))}catch(e){}}
 function savePrefs(){S.saved=true;try{localStorage.setItem('kronword',JSON.stringify({pick:S.pick,count:S.count,muted:S.muted}))}catch(e){}}
 
 /* ---------- icons + Kron ---------- */
@@ -450,15 +459,16 @@ function initKronHeads(root = document) {
     });
     qs.slice().sort((p,q)=>p.cx-q.cx).forEach((p,i)=>p.order=i);
     let last=performance.now();
-    function trigger(){ const now=performance.now(); qs.forEach(q=>{ q.kickAt=now+q.order*STAG; q.kicked=false; }); }
+    function trigger(p=1){ const now=performance.now(); qs.forEach(q=>{ q.kickAt=now+q.order*STAG; q.kicked=false; q.kp=p; }); }
     svg._kick=trigger; svg.style.cursor="pointer";
     svg.addEventListener("click",e=>{ e.stopPropagation(); trigger(); });
+    if(svg.closest('.win-kron')){const iv=setInterval(()=>{if(!svg.isConnected)return clearInterval(iv);trigger(.8)},1600)}
     function frame(t){
       if(!svg.isConnected) return;
       let dt=(t-last)/1000; last=t; if(dt>0.05)dt=0.05;
       const sub=5, h=dt/sub;
       for(const q of qs){
-        if(!q.kicked && t>=q.kickAt){ q.om+=-KICK; q.kicked=true; }
+        if(!q.kicked && t>=q.kickAt){ q.om+=-KICK*(q.kp||1); q.kicked=true; }
         for(let s=0;s<sub;s++){ const f=-K*q.th - D*q.om; q.om+=f*h; q.th+=q.om*h; }
         const breeze = reduce?0:0.85*Math.sin(t/950 + q.order*0.6);
         q.el.setAttribute("transform","rotate("+(q.th+breeze).toFixed(2)+" "+q.bx.toFixed(1)+" "+q.by.toFixed(1)+") rotate("+q.rest+" "+q.cx+" "+q.cy+")");
@@ -472,10 +482,10 @@ function initKronHeads(root = document) {
 
 new MutationObserver(()=>initKronHeads()).observe(document.body,{childList:true,subtree:true});
 let baseMood='idle',moodT;
-function setCoach(m){const svg=document.querySelector('#coachKron svg.kron');if(!svg)return;svg.setAttribute('class','kron kron-head mood-'+MOOD_MAP[m]);if((m==='wow'||m==='correct')&&svg._kick)svg._kick()}
+function setCoach(m){const svg=document.querySelector('#coachKron svg.kron');if(!svg)return;svg.setAttribute('class','kron kron-head mood-'+MOOD_MAP[m]);if(svg._kick&&m!=='idle'&&m!=='happy')svg._kick(m==='wow'||m==='correct'?1:m==='thinking'?.35:.55)}
 function mood(m,ms=1400){setCoach(m);clearTimeout(moodT);if(MOOD_MAP[m]!==baseMood)moodT=setTimeout(()=>setCoach(baseMood),ms)}
 function setBaseMood(m){baseMood=MOOD_MAP[m];clearTimeout(moodT);setCoach(baseMood)}
-$('#brandKron').insertAdjacentHTML('afterbegin',KRON_LOGO);
+
 $('#coachKron').innerHTML=kronSVG();
 
 let px=innerWidth/2,py=innerHeight*0.3,eyeRaf=0;
@@ -535,7 +545,7 @@ function newGame(autoPick){
   const picked=shuffle(book.words).slice(0,n);const cols=shuffle(COLORS);
   const items=picked.map((w,i)=>({id:'k'+Date.now().toString(36)+i,w,color:cols[Math.floor(i/3)%cols.length],review:false}));
   Object.assign(S,{live:true,round:picked,queue:shuffle(items),tray:[],cleared:0,total:n,current:null,mistakes:0,solved:0,listens:0,t0:Date.now(),popCombo:0,busy:false,locked:false});
-  $('#bookName').textContent=bookTitle(S.pick.bk);
+  $('#bookName').textContent=pickTitle();
   document.querySelectorAll('#belt .bcard').forEach(el=>el.remove());
   renderBelt(true);renderTray();setProgress();idle(true);
   if(autoPick)setTimeout(()=>{const first=S.queue[0];const el=first&&$(`#belt [data-id="${first.id}"]`);if(el&&!S.current)pick(first,el,true)},Math.min(S.queue.length,6)*110+900);
@@ -694,14 +704,14 @@ function idle(first){
   else coach('挑一张喜欢的卡片吧。想消得快，就挑和托盘同色的。');
 }
 function win(again){
-  if(!again){sfx.win();burst(innerWidth/2,innerHeight*.35,[cssVar('--berry'),cssVar('--sky'),cssVar('--grape'),cssVar('--mint'),cssVar('--kron')],90,1.5)}
+  if(!again){addProgress();sfx.win();burst(innerWidth/2,innerHeight*.35,[cssVar('--berry'),cssVar('--sky'),cssVar('--grape'),cssVar('--mint'),cssVar('--kron')],90,1.5)}
   const sec=Math.round((Date.now()-S.t0)/1000),acc=Math.round(S.solved/(S.solved+S.mistakes)*100);
   const games=shuffle(ARCADE).slice(0,3),tints=shuffle(['--berry','--sky','--grape','--mint']);
-  openSheet(`<div class="win-kron">${kronSVG('','wow')}</div><h2 style="text-align:center">全部撞掉啦！</h2>
+  openSheet(`<div class="win-kron">${kronSVG('','wow')}</div><h2 style="text-align:center">全部撞掉啦！</h2><div class="win-pg"><span>${pickTitle()}</span><b>${unitDone(S.pick.bk,S.pick.u)}/${findBook(S.pick.bk).b.units[S.pick.u][2]}</b><div class="pg"><i style="width:${unitDone(S.pick.bk,S.pick.u)/findBook(S.pick.bk).b.units[S.pick.u][2]*100}%"></i></div></div>
     <div class="stats"><div class="stat"><b>${Math.floor(sec/60)}:${String(sec%60).padStart(2,'0')}</b><span>用时</span></div><div class="stat"><b>${acc}%</b><span>一次拼对</span></div><div class="stat"><b>${S.mistakes}</b><span>拼错次数</span></div></div>
     <div class="boxes" id="boxes">${games.map((g,i)=>`<button class="gbox" data-act="box" data-i="${i}" style="--c:var(${tints[i]});--g:${g.c};--d:${i*.12}s" aria-label="盲盒 ${i+1}"><span class="gb-lid"></span><span class="gb-body"><b>?</b></span><span class="gb-name"><i>${g.ic}</i>${g.name}</span></button>`).join('')}</div>
-    <button class="btn primary wide" data-act="again">再来一轮</button><button class="btn wide" data-act="settings">换词书或数量</button>`,
-    {again:()=>{closeSheet();newGame(false)},settings:()=>{closeSheet();openSettings()},dismiss:false,
+    <button class="btn primary wide" data-act="again">再来一轮</button><button class="btn wide" data-act="home">回书架</button>`,
+    {again:()=>{closeSheet();newGame(false)},home:()=>{closeSheet();S.live=false;openHome()},dismiss:false,
      box:a=>{const wrap=$('#boxes');if(wrap.classList.contains('picked'))return;wrap.classList.add('picked');a.classList.add('chosen');sfx.whoosh();
        setTimeout(()=>{a.classList.add('open');sfx.win();const r=a.getBoundingClientRect();burst(r.left+r.width/2,r.top+r.height*.3,[games[+a.dataset.i].c,'#FFC800',cssVar('--kron')],40,1)},520);
        setTimeout(()=>wrap.querySelectorAll('.gbox:not(.chosen)').forEach(b=>b.classList.add('open')),900);
@@ -735,11 +745,10 @@ function openSettings(){
   let count=S.count,muted=S.muted;
   const draw=()=>{const max=BOOKS[S.book].words.length-BOOKS[S.book].words.length%3;if(count>max)count=max;
     openSheet(`<h2>这一轮怎么背？</h2>
-    <button class="book" data-act="shelf"><img class="bk-mini" src="covers/${S.pick.bk}.jpg" alt=""><span><b>${bookTitle(S.pick.bk)}</b><span>${findBook(S.pick.bk).b.units[S.pick.u][0]}</span></span><span class="chev">›</span></button>
-    <div><div class="field-label">本轮单词数</div><div class="seg">${[6,9,12].map(n=>`<button data-act="count" data-n="${n}" aria-pressed="${n===count}" ${n>max?'disabled':''}>${n}</button>`).join('')}</div></div>
+        <div><div class="field-label">本轮单词数</div><div class="seg">${[6,9,12].map(n=>`<button data-act="count" data-n="${n}" aria-pressed="${n===count}" ${n>max?'disabled':''}>${n}</button>`).join('')}</div></div>
     <div class="toggle-row"><span>声音</span><button class="switch" role="switch" data-act="mute" aria-checked="${!muted}" aria-label="声音"></button></div>
     <button class="btn primary wide" data-act="go">开始新一轮</button>`,
-    {shelf:()=>{closeSheet();openHome()},count:a=>{count=+a.dataset.n;draw()},mute:()=>{muted=!muted;draw()},
+    {count:a=>{count=+a.dataset.n;draw()},mute:()=>{muted=!muted;draw()},
      go:()=>{S.count=count;S.muted=muted;savePrefs();closeSheet();newGame(false)}})};
   draw();
 }
@@ -752,7 +761,7 @@ function homeRow(books,big,k,off){
   const h=innerWidth<=600?(big?230:180):(big?290:230),m=innerWidth<=600?16:22;
   const half=books.reduce((w,f)=>w+h*f.ar+m,0),reps=Math.max(1,Math.ceil(innerWidth*1.15/half));
   const one=Array.from({length:reps},()=>books).flat();
-  const item=f=>`<button class="hb" data-bk="${f.b.id}" style="--ar:${f.ar}" aria-label="${f.sr.name} ${f.b.lvl}"><div class="cov">${coverHTML(f)}</div><b>${f.sr.name} ${f.b.lvl}</b><small>${f.b.units.length} 单元 · ${bookWords(f.b)} 词</small></button>`;
+  const item=f=>`<button class="hb" data-bk="${f.b.id}" style="--ar:${f.ar}" aria-label="${f.sr.name} ${f.b.lvl}"><div class="cov">${coverHTML(f)}</div><b>${f.sr.name} ${f.b.lvl}</b>${(d=>d?`<small>已背 ${d}/${bookWords(f.b)} 词</small><span class="pg"><i style="width:${d/bookWords(f.b)*100}%"></i></span>`:`<small>${f.b.units.length} 单元 · ${bookWords(f.b)} 词</small>`)(bookDone(f.b.id))}</button>`;
   const dur=half*reps/34;
   return`<div class="mq${big?' big':''}" style="--d:${.12+k*.14}s;--dur:${dur}s;--off:${-dur*off}s"><div class="mq-track">${one.map(item).join('')}${one.map(item).join('').replaceAll('<button class="hb"','<button tabindex="-1" aria-hidden="true" class="hb"')}</div></div>`;
 }
@@ -769,11 +778,11 @@ function openHome(){
   if($('#shelf'))return;
   const v=document.createElement('div');v.className='home';v.id='shelf';let tab='all';
   const last=S.saved&&findBook(S.pick.bk),lu=last&&last.b.units[S.pick.u];
-  v.innerHTML=`<header class="hm-bar"><div class="in"><div class="brand">${KRON_LOGO}<span>Kron Word</span></div>${S.live?`<button class="hm-x" data-sh="close" aria-label="关闭"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>`:''}</div></header>
+  v.innerHTML=`<header class="hm-bar"><div class="in"><div class="brand">${KRON_LOGO}<span>Kron Word</span></div>${S.live?`<button class="icon-btn" data-sh="close" aria-label="关闭"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>`:''}</div></header>
     <nav class="hm-tabs"><div class="pills"><i class="ind"></i>${HOME_TABS.map(([id,n])=>`<button data-tab="${id}">${n}</button>`).join('')}</div></nav>
     <div class="hm-rows"></div>
     <button class="hm-pause" data-sh="pause" aria-label="暂停">${PAUSE_IC}</button>
-    ${last?`<button class="hm-go" data-sh="go"><img src="covers/${last.b.id}.jpg" alt=""><span><small>继续上次</small><b>${bookTitle(last.b.id)} · ${lu[0].replace('Welcome Unit','Welcome')}</b></span><em>继续</em></button>`:''}`;
+    ${last?`<button class="hm-go" data-sh="go"><img src="covers/${last.b.id}.jpg" alt=""><span><small>继续上次</small><b>${pickTitle()}</b><span class="pg"><i style="width:${bookDone(last.b.id)/bookWords(last.b)*100}%"></i></span></span><em>继续</em></button>`:''}`;
   if(!last)v.querySelector('.hm-pause').style.bottom='calc(20px + env(safe-area-inset-bottom))';
   document.body.appendChild(v);drawHomeRows(v,tab);
   v.addEventListener('click',e=>{const t=e.target.closest('[data-tab],[data-sh],.hb');if(!t)return;
@@ -792,7 +801,7 @@ function pullBook(btn){
   const st=document.createElement('div');st.className='bk-stage';st.id='bkStage';
   const curU=S.pick.bk===f.b.id?S.pick.u:-1;
   st.innerHTML=`<div class="bk-fly" style="left:${L}px;top:${T}px;width:${W}px;height:${H}px"><div class="bk-flip"><div class="bk-front">${coverHTML(f)}</div>
-    <div class="bk-back" style="--b:${f.c}"><header><b>${f.sr.name} ${f.b.lvl}</b></header><ol>${f.b.units.map((u,k)=>`<li><button data-u="${k}" class="${k===curU?'on':''}"><i>${k+1}</i><span><b>${u[0].replace('Welcome Unit','Welcome')}</b>${u[1]?`<small>${u[1]}</small>`:''}</span><em>${u[2]}</em></button></li>`).join('')}</ol></div></div></div>`;
+    <div class="bk-back" style="--b:${f.c}"><header><b>${f.sr.name} ${f.b.lvl}</b></header><ol>${f.b.units.map((u,k)=>`<li><button data-u="${k}" class="${k===curU?'on':''}"><i>${k+1}</i><span><b>${u[0].replace('Welcome Unit','Welcome')}</b>${u[1]?`<small>${u[1]}</small>`:''}</span><em>${(d=>d>=u[2]?'<s>✓</s>':d?d+'/'+u[2]:u[2])(unitDone(f.b.id,k))}</em></button></li>`).join('')}</ol></div></div></div>`;
   document.body.appendChild(st);btn.classList.add('out');
   const fly=st.querySelector('.bk-fly');
   const home=()=>`translate(${r.left-L}px,${r.top-T}px) scale(${r.width/W},${r.height/H})`;
@@ -805,7 +814,7 @@ function pullBook(btn){
       setTimeout(()=>{st.remove();closeHome();newGame(true)},320);return}
     if(!e.target.closest('.bk-back'))putBack()});
 }
-$('#openSettings').onclick=openSettings;$('#bookName').onclick=openHome;
+$('#openSettings').onclick=openSettings;$('#goHome').onclick=openHome;
 addEventListener('resize',()=>{sizeCanvas();renderBelt()});
 
 openHome();
