@@ -252,7 +252,7 @@ button:focus-visible{outline:3px solid var(--sky);outline-offset:3px}
   </header>
 
   <section>
-    <div class="belt-head"><span><b>单词传送带</b><button class="linkish" id="bookName">小学核心 · 示例</button></span><span id="beltCount"></span></div>
+    <div class="belt-head"><span><button class="linkish" id="bookName">小学核心</button></span><span id="beltCount"></span></div>
     <div class="belt" id="belt"><div class="roller"></div></div>
   </section>
 
@@ -275,7 +275,7 @@ button:focus-visible{outline:3px solid var(--sky);outline-offset:3px}
 <script>
 /* ---------- sample data (demo only — real books come from your library) ---------- */
 const BOOKS = {
-  kids:{name:'小学核心 · 示例', icon:'🎒', desc:'动物、日常物品，12 词', words:[
+  kids:{name:'小学核心', icon:'🎒', desc:'动物、日常物品，12 词', words:[
     {w:'banana',syl:['ba','na','na'],say:['buh','nah','nuh'],ipa:'/bəˈnɑːnə/',zh:'香蕉',e:'🍌',hint:'Kron 吃香蕉：ba 咬一口，na 再一口，na 最后一口，三口吃光！',s:'{Na}na\'s {ban}da{na} hides a {ba}{na}{na}.'},
     {w:'tiger',syl:['ti','ger'],say:['tie','gurr'],ipa:'/ˈtaɪɡər/',zh:'老虎',e:'🐯',hint:'老虎踮着脚 ti-ti-ti 走过来，突然 ger——吼了一嗓子。',s:'{Ti}m the {ti}dy {ti}{ger} is ea{ger} to eat.'},
     {w:'rabbit',syl:['rab','bit'],say:['rab','bit'],ipa:'/ˈræbɪt/',zh:'兔子',e:'🐰',hint:'兔子 rab 一下抓住胡萝卜，结果只啃了一小 bit。',s:'The {rab}{bit} g{rab}s a {bit} of carrot.'},
@@ -289,7 +289,7 @@ const BOOKS = {
     {w:'pumpkin',syl:['pump','kin'],say:['pump','kin'],ipa:'/ˈpʌmpkɪn/',zh:'南瓜',e:'🎃',hint:'Kron 给南瓜 pump 打气，南瓜胀成了一个 kin 大胖子。',s:'{Pump} up the {pump}{kin}, {kin}d little Kron!'},
     {w:'umbrella',syl:['um','brel','la'],say:['um','brell','luh'],ipa:'/ʌmˈbrelə/',zh:'雨伞',e:'☂️',hint:'um……下雨了？brel 撑开伞，la-la-la 转一圈。',s:'{Um}, Bel{la}\'s {um}{brel}{la} sings {la}-{la}-{la}.'}
   ]},
-  think1:{name:'Think 1 · 示例', icon:'📘', desc:'初中常用多音节词，9 词', words:[
+  think1:{name:'Think 1', icon:'📘', desc:'初中常用多音节词，9 词', words:[
     {w:'adventure',syl:['ad','ven','ture'],say:['ad','ven','cher'],ipa:'/ədˈventʃər/',zh:'冒险',e:'🗺️',hint:'Kron 背上包：ad 出发！ven 一路狂奔，ture 是终点的欢呼。',s:'{Ad}am {ven}ts: my {ad}{ven}{ture} is the fu{ture}!'},
     {w:'computer',syl:['com','pu','ter'],say:['kum','pew','ter'],ipa:'/kəmˈpjuːtər/',zh:'电脑',e:'💻',hint:'电脑打了个喷嚏：com-pu-ter！一个音一个音往外蹦。',s:'{Com}e, {com}{pu}{ter}, {pu}t the {ter}rible bug away.'},
     {w:'fantastic',syl:['fan','tas','tic'],say:['fan','tass','tick'],ipa:'/fænˈtæstɪk/',zh:'极好的',e:'✨',hint:'风扇 fan 一转，tas-tic 滴答滴答，好得不得了！',s:'A {fan}{tas}{tic} {fan} {tas}tes a {tic}-tac.'},
