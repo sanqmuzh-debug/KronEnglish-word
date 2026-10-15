@@ -209,6 +209,77 @@ button:focus-visible{outline:3px solid var(--sky);outline-offset:3px}
 .stat{border-radius:16px;border:2px solid var(--line);padding:10px;text-align:center}
 .stat b{display:block;font:700 24px var(--font-display);font-variant-numeric:tabular-nums}
 .stat span{font-size:12px;color:var(--muted)}
+/* bookshelf */
+.book .bk-mini{flex:none;width:36px;height:auto;border-radius:3px 5px 5px 3px;box-shadow:0 2px 6px rgba(0,0,0,.18)}
+.book{width:100%}.book .chev{margin-left:auto;font-size:22px;color:var(--muted)}
+/* home: Apple Books style storefront */
+.home{--hb:#FFFFFF;--hs:#6E6E73;--hl:rgba(0,0,0,.1);--hp:#EDEDF0;--hbar:rgba(255,255,255,.78);--hk:#1D1D1F;--hk-fg:#fff;
+  position:fixed;inset:0;z-index:95;background:var(--hb);color:var(--hk);overflow-y:auto;overflow-x:hidden;font-family:var(--font-ui);animation:fade .3s}
+:root[data-theme="dark"] .home{--hb:#000;--hs:#A1A1A6;--hl:rgba(255,255,255,.14);--hp:#1D1D1F;--hbar:rgba(22,22,23,.78);--hk:#F5F5F7;--hk-fg:#000}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .home{--hb:#000;--hs:#A1A1A6;--hl:rgba(255,255,255,.14);--hp:#1D1D1F;--hbar:rgba(22,22,23,.78);--hk:#F5F5F7;--hk-fg:#000}}
+.home.out{animation:fadeOut .26s forwards}
+@keyframes fadeOut{to{opacity:0}}
+.hm-bar{position:sticky;top:0;z-index:3;background:var(--hbar);-webkit-backdrop-filter:saturate(180%) blur(20px);backdrop-filter:saturate(180%) blur(20px);border-bottom:1px solid var(--hl);padding-top:env(safe-area-inset-top)}
+.hm-bar .in{max-width:1024px;margin:0 auto;height:52px;display:flex;align-items:center;justify-content:space-between;padding:0 16px}
+.hm-bar .brand span{display:inline}
+.hm-bar .brand{font:600 21px var(--font-ui);letter-spacing:-.02em;color:var(--hk)}
+.hm-bar .brand .kron-logo{width:24px;height:24px;color:var(--hk)}
+.hm-x{width:32px;height:32px;border-radius:50%;border:0;background:var(--hp);color:var(--hs);display:grid;place-items:center}
+.hm-x svg{width:14px;height:14px}
+.hm-tabs{display:flex;justify-content:center;padding:32px 16px 0;animation:hmUp .7s cubic-bezier(.2,.8,.2,1) .05s both}
+.pills{position:relative;display:inline-flex;padding:5px;border-radius:99px;background:var(--hp)}
+.pills button{position:relative;z-index:1;border:0;background:none;padding:10px 20px;border-radius:99px;font:500 16px var(--font-ui);color:var(--hk);white-space:nowrap;transition:color .35s}
+.pills button[aria-pressed="true"]{color:var(--hk-fg)}
+.pills .ind{position:absolute;top:5px;bottom:5px;left:0;width:0;border-radius:99px;background:var(--hk);transition:transform .45s cubic-bezier(.3,1.2,.5,1),width .45s cubic-bezier(.3,1.2,.5,1)}
+.hm-rows{display:flex;flex-direction:column;gap:40px;padding:44px 0 150px}
+.hm-rows.swap{animation:hmSwap .5s cubic-bezier(.2,.8,.2,1)}
+.mq{--h:230px;overflow:hidden;animation:hmIn .9s cubic-bezier(.2,.8,.2,1) var(--d,0s) both}
+.mq.big{--h:290px}
+.mq-track{display:flex;width:max-content;animation:mq var(--dur,60s) linear var(--off,0s) infinite}
+.home.paused .mq-track,.home.hold .mq-track,.mq:hover .mq-track{animation-play-state:paused}
+@keyframes mq{to{transform:translateX(-50%)}}
+@keyframes hmIn{from{opacity:0;transform:translateX(90px)}}
+@keyframes hmUp{from{opacity:0;transform:translateY(14px)}}
+@keyframes hmSwap{from{opacity:0;transform:translateY(16px)}}
+.hb{flex:none;margin-right:22px;border:0;padding:0;background:none;text-align:left;color:var(--hk);cursor:pointer;width:calc(var(--h) * var(--ar))}
+.hb .cov{position:relative;height:var(--h);transition:transform .35s cubic-bezier(.3,1.4,.5,1)}
+.hb:hover .cov{transform:translateY(-6px)}
+.hb:active .cov{transform:scale(.97)}
+.hb .bk-img{width:100%;height:100%;object-fit:cover;border-radius:4px 8px 8px 4px;box-shadow:0 1px 2px rgba(0,0,0,.08),0 12px 24px -10px rgba(0,0,0,.35)}
+.hb.out .cov{opacity:0}
+.hb b{display:block;margin-top:12px;font:400 19px/1.25 var(--font-ui);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.hb small{display:block;font:400 17px/1.3 var(--font-ui);color:var(--hs);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.hm-pause{position:fixed;right:max(18px,env(safe-area-inset-right));bottom:calc(96px + env(safe-area-inset-bottom));z-index:4;width:36px;height:36px;border-radius:50%;border:1.5px solid var(--hs);background:var(--hb);color:var(--hk);display:grid;place-items:center;opacity:.85}
+.hm-pause svg{width:14px;height:14px}
+.hm-go{position:fixed;left:50%;bottom:calc(16px + env(safe-area-inset-bottom));z-index:4;width:min(560px,calc(100% - 32px));transform:translateX(-50%);display:flex;align-items:center;gap:14px;padding:10px 10px 10px 12px;border-radius:22px;border:1px solid var(--hl);background:var(--hbar);-webkit-backdrop-filter:saturate(180%) blur(20px);backdrop-filter:saturate(180%) blur(20px);box-shadow:0 14px 40px -16px rgba(0,0,0,.35);color:var(--hk);text-align:left;animation:hmGo .7s cubic-bezier(.3,1.3,.5,1) .5s both}
+@keyframes hmGo{from{opacity:0;transform:translate(-50%,40px)}}
+.hm-go img{flex:none;height:52px;width:auto;border-radius:3px 5px 5px 3px;box-shadow:0 4px 10px -4px rgba(0,0,0,.4)}
+.hm-go span{flex:1;min-width:0;display:flex;flex-direction:column}
+.hm-go small{font-size:13px;color:var(--hs)}
+.hm-go b{font:600 17px var(--font-ui);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.hm-go em{font-style:normal;flex:none;padding:11px 22px;border-radius:99px;background:var(--hk);color:var(--hk-fg);font:600 16px var(--font-ui)}
+.hm-go:active em{transform:scale(.96)}
+@media (max-width:600px){.mq{--h:180px}.mq.big{--h:230px}.hb{margin-right:16px}.hb b{font-size:16px;margin-top:10px}.hb small{font-size:14px}.pills button{padding:9px 15px;font-size:15px}.hm-rows{gap:30px;padding-top:34px}}
+@media (prefers-reduced-motion:reduce){.mq-track{animation:none}.mq{overflow-x:auto}}
+.bk-stage{position:fixed;inset:0;z-index:96;background:rgba(10,12,20,0);transition:background .35s;perspective:1400px}
+.bk-stage.in{background:rgba(10,12,20,.45);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+.bk-fly{position:absolute;transform-origin:0 0;transition:transform .42s cubic-bezier(.2,.9,.25,1.05)}
+.bk-flip{position:relative;width:100%;height:100%;transform-style:preserve-3d;transition:transform .55s cubic-bezier(.3,1.25,.5,1)}
+.bk-stage.flipped .bk-flip{transform:rotateY(180deg)}
+.bk-front,.bk-back{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:5px 12px 12px 5px;overflow:hidden;box-shadow:0 24px 50px rgba(0,0,0,.35)}
+.bk-front::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,rgba(0,0,0,.22) 0,rgba(255,255,255,.28) 1.6%,rgba(0,0,0,.12) 3.2%,transparent 6%)}
+.bk-front .bk-img{width:100%;height:100%;border-radius:inherit;box-shadow:none}
+.bk-back{transform:rotateY(180deg);background:var(--surface);display:flex;flex-direction:column}
+.bk-back header{padding:16px 18px;color:#fff;background:linear-gradient(150deg,var(--b),color-mix(in oklab,var(--b) 62%,#000));font:700 18px var(--font-display)}
+.bk-back ol{list-style:none;margin:0;padding:6px 0;overflow-y:auto;flex:1}
+.bk-back li button{width:100%;display:flex;align-items:center;gap:12px;padding:11px 18px;border:0;background:none;text-align:left;color:var(--fg);border-bottom:1px solid var(--line)}
+.bk-back li:last-child button{border-bottom:0}
+.bk-back li button i{font-style:normal;width:18px;color:var(--muted);font:600 13px var(--font-display);font-variant-numeric:tabular-nums}
+.bk-back li button span{flex:1;min-width:0;display:flex;flex-direction:column}
+.bk-back li button b{font:700 15px var(--font-display)}
+.bk-back li button small{font-size:12px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bk-back li button em{font-style:normal;font:600 13px var(--font-display);color:var(--muted);font-variant-numeric:tabular-nums}
+.bk-back li button.on{background:var(--b);color:#fff}.bk-back li button.on i,.bk-back li button.on small,.bk-back li button.on em{color:rgba(255,255,255,.85)}
 /* blind boxes after a round */
 .boxes{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;padding:6px 0 2px}
 .gbox{position:relative;border:0;background:none;padding:0;height:128px;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;cursor:pointer;
@@ -341,9 +412,17 @@ const wait=ms=>new Promise(r=>setTimeout(r,ms));
 const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
 const cssVar=n=>getComputedStyle(document.documentElement).getPropertyValue(n).trim();
 function shuffle(a){a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.random()*(i+1)|0;[a[i],a[j]]=[a[j],a[i]]}return a}
-const S={book:'kids',count:9,muted:false};
-try{const p=JSON.parse(localStorage.getItem('kronword')||'{}');if(p.book&&BOOKS[p.book])S.book=p.book;if(p.count)S.count=p.count;if(p.muted)S.muted=true}catch(e){}
-function savePrefs(){try{localStorage.setItem('kronword',JSON.stringify({book:S.book,count:S.count,muted:S.muted}))}catch(e){}}
+/* ---------- bookshelf: real books and units; rounds still use the sample words above ---------- */
+const SHELF=[{"id":"think","name":"Think","books":[{"id":"th0","lvl":"Starter","mark":"S","units":[["Welcome Unit","启航与破冰",4],["Unit 1","All together (大家在一起)",12],["Unit 2","Away from home (出门在外)",18],["Unit 3","Home sweet home (温馨小家)",27],["Unit 4","It's a big world (大千世界)",21],["Unit 5","Around town (小镇生活)",9],["Unit 6","Family and friends (好友与外貌)",27],["Unit 7","You can do it (挑战潜能)",36],["Unit 8","What are you doing? (正在发生)",17],["Unit 9","My favourite food (舌尖美味)",28],["Unit 10","Out of the past (时光印记)",15],["Unit 11","Amazing animals (神奇动物)",24],["Unit 12","Moving about (出行天下)",20]]},{"id":"th1","lvl":"1","mark":"1","units":[["Unit 1","闲暇生活与爱好",12],["Unit 2","潮流服饰与购物",26],["Unit 3","美食美味与超市食材",32],["Unit 4","家庭成员与性格情绪",24],["Unit 5","家居居室与生活空间",22],["Unit 6","珍贵友谊与性格特质",19],["Unit 7","科技智能与数码生活",24],["Unit 8","运动竞技与体坛争锋",22],["Unit 9","自然旷野与极境生灵",33],["Unit 10","城市地标与方向指引",22],["Unit 11","身体健康与生化器官",14],["Unit 12","环球旅行与交通探险",26]]},{"id":"th2","lvl":"2","mark":"2","units":[["Unit 1","Incredible people (难忘人物与品质)",8],["Unit 2","A good education (学校日常与教育)",29],["Unit 3","On the screen (影视荧幕与娱乐)",18],["Unit 4","Online life (数字生活与沟通)",11],["Unit 5","Music to my ears (音乐之旅与乐器)",8],["Unit 6","No planet B (地球家园与环保)",24],["Unit 8","Science and us (科技探索与实验)",15],["Unit 9","Working week (职业职场与发展)",4],["Unit 10","Mind and body (健康活力与习惯)",12],["Unit 11","Breaking news (乐善好施与社会新闻)",12],["Unit 12","Rules and regulations (规矩规则与准则)",6]]},{"id":"think-l3","lvl":"3","mark":"3","units":[["Unit 1","Life plans",8],["Unit 2","Hard times",16],["Unit 3","What's in a name?",10],["Unit 4","Dilemmas",7],["Unit 5","What a story!",16],["Unit 6","How do they do that?",14],["Unit 7","All the same",11],["Unit 8","It's a crime",21],["Unit 9","What happened?",8],["Unit 10","Money",17],["Unit 11","Help!",21],["Unit 12","A word of advice",5]]},{"id":"th4","lvl":"4","mark":"4","units":[["Unit 1","极限生存与动作感知",20],["Unit 2","行在路上与多元文化",28],["Unit 3","少年时代与角色变幻",27],["Unit 4","思维艺术与性格画像",25],["Unit 5","智能时代与数字生活",26],["Unit 6","携手同行与深层社交",28],["Unit 7","乐观棱镜与未来愿景",21],["Unit 8","清单思维与地球奇观",21],["Unit 9","人生抉择与职场尊严",24],["Unit 10","传媒风云与事实辨析",23],["Unit 11","仰望星空与电影视界",22],["Unit 12","秘境探险与荒野科考",28]]},{"id":"th5","lvl":"5","mark":"5","units":[["Welcome","关系、挑战与未来表达",4],["Unit 1","Family matters (家庭与人际)",11],["Unit 2","Sweet dreams (睡眠与梦境)",10],["Unit 3","Lucky for some? (运气与机遇)",1],["Unit 4","Having a laugh (幽默与笑语)",7],["Unit 5","What a thrill! (挑战极限与冒险)",13],["Unit 6","Famous lives (名望与名利场)",10],["Unit 7","A thing of beauty? (审美潮流与情感反应)",9],["Unit 8","Cracking the code (语言起源与沟通)",29],["Unit 9","Fairness matters (公平、正义与司法)",5],["Unit 10","Learning for life (高等教育与学术深造)",5],["Unit 11","The modern world (现代生活与情绪管理)",13],["Unit 12","Celebrating heroes (英雄表彰、成败与梦想)",3]]}]},{"id":"pu","name":"Power Up","books":[{"id":"pu0","lvl":"Start Smart","mark":"S","units":[["Welcome","快乐启航与新朋友",25],["Unit 1","My family (我的温馨家庭)",10],["Unit 2","At school (快乐校园与教室)",10],["Unit 3","Delicious food (美味水果与可口食物)",10],["Unit 4","Home sweet home (温馨小家与房间)",10],["Unit 5","All about me (身体部位与外貌)",10],["Unit 6","Toys and transport (趣味玩具与交通工具)",10],["Unit 7","Action time (活力动作与运动技能)",10],["Unit 8","Holiday fun (假日海滩与大自然)",10],["Unit 9","Clothes and animals (漂亮衣服与农场动物)",10]]},{"id":"pu1","lvl":"1","mark":"1","units":[["Welcome","认识友好探索小分队",8],["Unit 1","校园探索与书包文具",20],["Unit 2","亲爱家人与奇妙身体",22],["Unit 3","动物朋友与喜怒哀乐",16],["Unit 4","美食伙伴与可口午餐",20],["Unit 5","生日派对与益智玩具",18],["Unit 6","户外探险与城镇动物园",23],["Unit 7","活力运动与竞技爱好",19],["Unit 8","温馨家园与居家陈设",17],["Unit 9","阳光假日与沙滩拾贝",24]]},{"id":"pu2","lvl":"2","mark":"2","units":[["Welcome","快乐农场与新朋友 (Meet the Friends)",12],["Unit 1","A day on the farm (农场一日与田园风光)",18],["Unit 2","My week (一周生活与课外爱好)",15],["Unit 3","Look at us! (多元职业与外貌打扮)",21],["Unit 4","Home sweet home (温馨家庭与楼宇空间)",21],["Unit 5","Animal world (野生动物与自然律动)",19],["Unit 6","Weather and clothes (四季天气与着装搭配)",16],["Unit 7","Food and cooking (美味佳肴与厨房烹饪)",19],["Unit 8","In the city (城市漫游与街区建筑)",20],["Unit 9","Big adventures (情绪心境与奇妙历险)",18]]},{"id":"pu3","lvl":"3","mark":"3","units":[["Welcome","Welcome to Diversicus",8],["Unit 1","Practice time",13],["Unit 2","What’s for breakfast?",22],["Unit 3","A healthy body",19],["Unit 4","Fun in the jungle",19],["Unit 5","Behind the scenes",18],["Unit 6","Classroom stars",21],["Unit 7","When I grow up ...",19],["Unit 8","City break",19],["Unit 9","Let’s travel!",17]]},{"id":"pu4","lvl":"4","mark":"4","units":[["Welcome","Welcome to Diversicus (马戏团初见与角色介绍)",8],["Unit 1","This year’s trip (年度旅行与交通)",20],["Unit 2","Our beautiful planet (美丽星球与神奇生物)",20],["Unit 3","Let’s celebrate! (盛大狂欢与赛事旋律)",25],["Unit 4","Time of our lives (生活时刻与日常承诺)",19],["Unit 5","Let it snow! (冰雪严冬与季节气象)",17],["Unit 6","Working together (携手同心与职场世界)",18],["Unit 7","Then and now (古今家居与岁月变迁)",21],["Unit 8","Space travel (星际远航与太空探索)",22],["Unit 9","Great bakers (天才烘焙家与厨房美食)",21]]}]}];
+const SHELF_TINT={think:['#C2412D','#3F6FD1','#8A4FD0','#B8901E','#2B9C8F','#B03A2E'],pu:['#E5A100','#4FA62A','#2E8FD6','#D9433A','#EE8420']};
+const COVER_AR={think:.703,pu:.79};
+const findBook=id=>{for(const sr of SHELF){const i=sr.books.findIndex(b=>b.id===id);if(i>=0)return{sr,b:sr.books[i],i,c:SHELF_TINT[sr.id][i],ar:COVER_AR[sr.id]}}return null};
+const bookTitle=id=>{const f=findBook(id);return f?f.sr.name+' '+f.b.lvl:''};
+const sampleFor=id=>{const f=findBook(id);return f&&f.sr.id==='think'&&f.b.mark!=='S'?'think1':'kids'};
+const S={pick:{bk:'pu1',u:0},book:'kids',count:9,muted:false};
+try{const p=JSON.parse(localStorage.getItem('kronword')||'{}');if(p.pick&&findBook(p.pick.bk)){S.pick=p.pick;S.saved=true}if(p.count)S.count=p.count;if(p.muted)S.muted=true}catch(e){}
+S.book=sampleFor(S.pick.bk);
+function savePrefs(){S.saved=true;try{localStorage.setItem('kronword',JSON.stringify({pick:S.pick,count:S.count,muted:S.muted}))}catch(e){}}
 
 /* ---------- icons + Kron ---------- */
 const IC={
@@ -455,8 +534,8 @@ function newGame(autoPick){
   const book=BOOKS[S.book];const max=book.words.length-book.words.length%3;const n=Math.min(S.count,max);
   const picked=shuffle(book.words).slice(0,n);const cols=shuffle(COLORS);
   const items=picked.map((w,i)=>({id:'k'+Date.now().toString(36)+i,w,color:cols[Math.floor(i/3)%cols.length],review:false}));
-  Object.assign(S,{round:picked,queue:shuffle(items),tray:[],cleared:0,total:n,current:null,mistakes:0,solved:0,listens:0,t0:Date.now(),popCombo:0,busy:false,locked:false});
-  $('#bookName').textContent=book.name;
+  Object.assign(S,{live:true,round:picked,queue:shuffle(items),tray:[],cleared:0,total:n,current:null,mistakes:0,solved:0,listens:0,t0:Date.now(),popCombo:0,busy:false,locked:false});
+  $('#bookName').textContent=bookTitle(S.pick.bk);
   document.querySelectorAll('#belt .bcard').forEach(el=>el.remove());
   renderBelt(true);renderTray();setProgress();idle(true);
   if(autoPick)setTimeout(()=>{const first=S.queue[0];const el=first&&$(`#belt [data-id="${first.id}"]`);if(el&&!S.current)pick(first,el,true)},Math.min(S.queue.length,6)*110+900);
@@ -650,23 +729,85 @@ function openSheet(html,acts={}){closeSheet();const bd=document.createElement('d
   bd.addEventListener('click',e=>{if(e.target===bd&&acts.dismiss!==false)closeSheet();const a=e.target.closest('[data-act]');if(a&&acts[a.dataset.act])acts[a.dataset.act](a)});
   const f=bd.querySelector('button');f&&f.focus({preventScroll:true})}
 function closeSheet(){const b=$('#backdrop');b&&b.remove()}
-addEventListener('keydown',e=>{if(e.key==='Escape')closeSheet()});
+addEventListener('keydown',e=>{if(e.key!=='Escape')return;if($('#bkStage'))$('#bkStage').click();else if($('#shelf')&&!$('#backdrop')){if(S.live)closeHome()}else closeSheet()});
 function openSettings(){
-  let book=S.book,count=S.count,muted=S.muted;
-  const draw=()=>{const max=BOOKS[book].words.length-BOOKS[book].words.length%3;if(count>max)count=max;
-    openSheet(`<h2>这一轮怎么背？</h2><p class="sub">选好词书和数量，传送带会重新上卡。</p>
-    <div><div class="field-label">词书</div><div class="books">${Object.entries(BOOKS).map(([k,b])=>`<button class="book" data-act="book" data-k="${k}" aria-pressed="${k===book}"><span class="bk-ic">${b.icon}</span><span><b>${b.name}</b><span>${b.desc}</span></span></button>`).join('')}</div></div>
+  let count=S.count,muted=S.muted;
+  const draw=()=>{const max=BOOKS[S.book].words.length-BOOKS[S.book].words.length%3;if(count>max)count=max;
+    openSheet(`<h2>这一轮怎么背？</h2>
+    <button class="book" data-act="shelf"><img class="bk-mini" src="covers/${S.pick.bk}.jpg" alt=""><span><b>${bookTitle(S.pick.bk)}</b><span>${findBook(S.pick.bk).b.units[S.pick.u][0]}</span></span><span class="chev">›</span></button>
     <div><div class="field-label">本轮单词数</div><div class="seg">${[6,9,12].map(n=>`<button data-act="count" data-n="${n}" aria-pressed="${n===count}" ${n>max?'disabled':''}>${n}</button>`).join('')}</div></div>
     <div class="toggle-row"><span>声音</span><button class="switch" role="switch" data-act="mute" aria-checked="${!muted}" aria-label="声音"></button></div>
     <button class="btn primary wide" data-act="go">开始新一轮</button>`,
-    {book:a=>{book=a.dataset.k;draw()},count:a=>{count=+a.dataset.n;draw()},mute:()=>{muted=!muted;draw()},
-     go:()=>{S.book=book;S.count=count;S.muted=muted;savePrefs();closeSheet();newGame(false)}})};
+    {shelf:()=>{closeSheet();openHome()},count:a=>{count=+a.dataset.n;draw()},mute:()=>{muted=!muted;draw()},
+     go:()=>{S.count=count;S.muted=muted;savePrefs();closeSheet();newGame(false)}})};
   draw();
 }
-$('#openSettings').onclick=openSettings;$('#bookName').onclick=openSettings;
+const coverHTML=(f)=>`<img class="bk-img" src="covers/${f.b.id}.jpg" alt="${f.sr.name} ${f.b.lvl}" draggable="false">`;
+const PAUSE_IC='<svg viewBox="0 0 14 14" fill="currentColor"><rect x="2.5" y="1.5" width="3" height="11" rx="1"/><rect x="8.5" y="1.5" width="3" height="11" rx="1"/></svg>',
+  PLAY_IC='<svg viewBox="0 0 14 14" fill="currentColor"><path d="M3.5 1.8v10.4c0 .6.6.9 1.1.6l8-5.2c.5-.3.5-.9 0-1.2l-8-5.2c-.5-.3-1.1 0-1.1.6z"/></svg>';
+const HOME_TABS=[['all','全部'],...SHELF.map(sr=>[sr.id,sr.name])];
+const bookWords=b=>b.units.reduce((n,u)=>n+u[2],0);
+function homeRow(books,big,k,off){
+  const h=innerWidth<=600?(big?230:180):(big?290:230),m=innerWidth<=600?16:22;
+  const half=books.reduce((w,f)=>w+h*f.ar+m,0),reps=Math.max(1,Math.ceil(innerWidth*1.15/half));
+  const one=Array.from({length:reps},()=>books).flat();
+  const item=f=>`<button class="hb" data-bk="${f.b.id}" style="--ar:${f.ar}" aria-label="${f.sr.name} ${f.b.lvl}"><div class="cov">${coverHTML(f)}</div><b>${f.sr.name} ${f.b.lvl}</b><small>${f.b.units.length} 单元 · ${bookWords(f.b)} 词</small></button>`;
+  const dur=half*reps/34;
+  return`<div class="mq${big?' big':''}" style="--d:${.12+k*.14}s;--dur:${dur}s;--off:${-dur*off}s"><div class="mq-track">${one.map(item).join('')}${one.map(item).join('').replaceAll('<button class="hb"','<button tabindex="-1" aria-hidden="true" class="hb"')}</div></div>`;
+}
+function drawHomeRows(v,tab,swap){
+  const all=tab==='all';let rows=SHELF.filter(sr=>all||sr.id===tab).map(sr=>sr.books.map(b=>findBook(b.id)));
+  if(!all){const r=rows[0],h=Math.ceil(r.length/2);rows=[r,r.slice(h).concat(r.slice(0,h))]}
+  const box=v.querySelector('.hm-rows');box.innerHTML=rows.map((r,k)=>homeRow(r,false,k,all&&k?.37:0)).join('');
+  if(swap){box.classList.remove('swap');box.offsetWidth;box.classList.add('swap')}
+  v.querySelectorAll('.pills button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.tab===tab));
+  const on=v.querySelector(`.pills button[data-tab="${tab}"]`),ind=v.querySelector('.pills .ind');
+  ind.style.width=on.offsetWidth+'px';ind.style.transform=`translateX(${on.offsetLeft}px)`;
+}
+function openHome(){
+  if($('#shelf'))return;
+  const v=document.createElement('div');v.className='home';v.id='shelf';let tab='all';
+  const last=S.saved&&findBook(S.pick.bk),lu=last&&last.b.units[S.pick.u];
+  v.innerHTML=`<header class="hm-bar"><div class="in"><div class="brand">${KRON_LOGO}<span>Kron Word</span></div>${S.live?`<button class="hm-x" data-sh="close" aria-label="关闭"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>`:''}</div></header>
+    <nav class="hm-tabs"><div class="pills"><i class="ind"></i>${HOME_TABS.map(([id,n])=>`<button data-tab="${id}">${n}</button>`).join('')}</div></nav>
+    <div class="hm-rows"></div>
+    <button class="hm-pause" data-sh="pause" aria-label="暂停">${PAUSE_IC}</button>
+    ${last?`<button class="hm-go" data-sh="go"><img src="covers/${last.b.id}.jpg" alt=""><span><small>继续上次</small><b>${bookTitle(last.b.id)} · ${lu[0].replace('Welcome Unit','Welcome')}</b></span><em>继续</em></button>`:''}`;
+  if(!last)v.querySelector('.hm-pause').style.bottom='calc(20px + env(safe-area-inset-bottom))';
+  document.body.appendChild(v);drawHomeRows(v,tab);
+  v.addEventListener('click',e=>{const t=e.target.closest('[data-tab],[data-sh],.hb');if(!t)return;
+    if(t.dataset.tab){if(t.dataset.tab!==tab){tab=t.dataset.tab;drawHomeRows(v,tab,true)}return}
+    const a=t.dataset.sh;
+    if(a==='close')return closeHome();
+    if(a==='pause'){const p=v.classList.toggle('paused');t.innerHTML=p?PLAY_IC:PAUSE_IC;t.setAttribute('aria-label',p?'播放':'暂停');return}
+    if(a==='go'){sfx.ding();closeHome();if(!S.live)newGame(true);return}
+    pullBook(t)});
+  let rt;v._rs=()=>{clearTimeout(rt);rt=setTimeout(()=>drawHomeRows(v,tab),200)};addEventListener('resize',v._rs);
+}
+function closeHome(){const v=$('#shelf');if(!v)return;removeEventListener('resize',v._rs);v.classList.add('out');setTimeout(()=>v.remove(),260)}
+function pullBook(btn){
+  if($('#bkStage'))return;const f=findBook(btn.dataset.bk),r=(btn.querySelector('.bk-img')||btn).getBoundingClientRect(),hm=$('#shelf');hm&&hm.classList.add('hold');
+  let H=Math.min(470,innerHeight-120),W=H*f.ar;if(W>innerWidth-48){W=innerWidth-48;H=W/f.ar}const L=(innerWidth-W)/2,T=(innerHeight-H)/2;
+  const st=document.createElement('div');st.className='bk-stage';st.id='bkStage';
+  const curU=S.pick.bk===f.b.id?S.pick.u:-1;
+  st.innerHTML=`<div class="bk-fly" style="left:${L}px;top:${T}px;width:${W}px;height:${H}px"><div class="bk-flip"><div class="bk-front">${coverHTML(f)}</div>
+    <div class="bk-back" style="--b:${f.c}"><header><b>${f.sr.name} ${f.b.lvl}</b></header><ol>${f.b.units.map((u,k)=>`<li><button data-u="${k}" class="${k===curU?'on':''}"><i>${k+1}</i><span><b>${u[0].replace('Welcome Unit','Welcome')}</b>${u[1]?`<small>${u[1]}</small>`:''}</span><em>${u[2]}</em></button></li>`).join('')}</ol></div></div></div>`;
+  document.body.appendChild(st);btn.classList.add('out');
+  const fly=st.querySelector('.bk-fly');
+  const home=()=>`translate(${r.left-L}px,${r.top-T}px) scale(${r.width/W},${r.height/H})`;
+  fly.style.transform=home();fly.getBoundingClientRect();
+  requestAnimationFrame(()=>{st.classList.add('in');fly.style.transform='none'});sfx.whoosh();
+  setTimeout(()=>st.classList.add('flipped'),reduced?0:430);
+  const putBack=()=>{st.classList.remove('flipped');setTimeout(()=>{st.classList.remove('in');fly.style.transform=home();setTimeout(()=>{btn.classList.remove('out');st.remove();hm&&hm.classList.remove('hold')},420)},reduced?0:380)};
+  st.addEventListener('click',e=>{const u=e.target.closest('[data-u]');
+    if(u){u.classList.add('on');sfx.ding();S.pick={bk:f.b.id,u:+u.dataset.u};S.book=sampleFor(f.b.id);savePrefs();
+      setTimeout(()=>{st.remove();closeHome();newGame(true)},320);return}
+    if(!e.target.closest('.bk-back'))putBack()});
+}
+$('#openSettings').onclick=openSettings;$('#bookName').onclick=openHome;
 addEventListener('resize',()=>{sizeCanvas();renderBelt()});
 
-newGame(true);
+openHome();
 </script>
 
 </body></html>
