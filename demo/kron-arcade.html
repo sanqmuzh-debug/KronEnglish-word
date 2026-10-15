@@ -16,6 +16,7 @@
   --cave1:#2A1E33; --cave2:#4A2A2A; --brick:#9AA3B5; --brick-d:#6E778A; --lava1:#FFB21A; --lava2:#E8341C;
   --water1:#47C3D6; --water2:#0D5A8C; --sky-day:#CDEFFF; --fish:#FF7A45; --asphalt:#3A3F52;
   --c-gold:#B8740A; --c-plane:#1098AD; --c-search:#9C36B5; --c-memory:#5C7CFA; --c-wordle:#2B8A3E;
+  --c-tower:#5F3DC4; --c-snake:#2F9E44; --c-jump:#F76707; --c-duel:#C92A2A;
   --wood:#A0612B; --wood-d:#6E3F18; --cloud:#FFFFFF; --cloud-ink:#1C2033;
   --q0:#E8384F; --q1:#2F6BF0; --q2:#F2A60C; --q3:#1FAE6B;
   --f-display:'Baloo 2','PingFang SC','Microsoft YaHei',system-ui,sans-serif;
@@ -351,6 +352,29 @@ button:focus-visible,input:focus-visible{outline:3px solid var(--kron);outline-o
 .kb button{flex:1;max-width:42px;height:52px;padding:0;border:0;border-radius:8px;background:var(--sunk);font:800 1rem var(--f-display);text-transform:uppercase}
 .kb button.wide{max-width:68px;flex:1.6;font-size:.8rem}
 
+/* ===== batch 4 ===== */
+.grid.four .card{grid-column:span 3}
+.cv{display:block;width:100%;border-radius:22px;touch-action:none;background:var(--sunk);user-select:none;-webkit-user-select:none}
+.cv.sq{width:min(100%,46vh,440px);margin:0 auto;aspect-ratio:1}
+.cv.tall{width:min(100%,calc(58vh*2/3),400px);margin:0 auto;aspect-ratio:2/3}
+.snake-word{display:flex;justify-content:center;gap:6px;margin:10px 0}
+.sw{width:32px;height:42px;border-bottom:4px solid var(--line);font:800 1.5rem/42px var(--f-display);text-align:center}
+.sw.on{border-color:var(--g);color:var(--g)}
+.sw.next{border-color:var(--g);animation:blink 1s infinite}
+.vs{display:grid;gap:10px}
+.side{background:var(--surface);border:2px solid var(--line);border-top:6px solid var(--pc);border-radius:22px;padding:12px;display:grid;gap:10px}
+.side h3{display:flex;justify-content:space-between;font-size:1.15rem;color:var(--pc)}
+.side .opt:disabled{opacity:.28}
+.side .qp-card{padding:8px 12px}
+.side .mq-em{font-size:2.6rem}
+@media (pointer:coarse){.side.p2{transform:rotate(180deg)}}
+.rope{position:relative;height:62px;border-radius:16px;background:linear-gradient(90deg,color-mix(in oklab,var(--q1) 30%,var(--surface)),color-mix(in oklab,var(--q0) 30%,var(--surface)));overflow:hidden}
+.rope::before{content:"";position:absolute;left:50%;top:8px;bottom:8px;width:3px;margin-left:-1.5px;background:var(--ink);opacity:.25;border-radius:2px}
+.rope::after{content:"";position:absolute;left:12px;right:12px;top:50%;height:6px;margin-top:-3px;background:var(--wood);border-radius:3px}
+.rope .end{position:absolute;top:50%;transform:translateY(-50%);font:800 .9rem var(--f-display);z-index:1}
+.rope .end.l{left:10px;color:var(--q1)} .rope .end.r{right:10px;color:var(--q0)}
+.rk{position:absolute;top:50%;left:50%;width:50px;transform:translate(-50%,-50%);transition:left .4s cubic-bezier(.3,1.5,.6,1);z-index:2}
+
 @keyframes flip{50%{transform:rotateX(90deg)}}
 @keyframes wave{to{background-position:20px 0}}
 @keyframes blink{50%{opacity:.2}}
@@ -390,6 +414,8 @@ button:focus-visible,input:focus-visible{outline:3px solid var(--kron);outline-o
     <section class="grid" id="grid2"></section>
     <h2 class="sec">第三批 · 益智与运气<span>翻牌、找词、猜词、开宝箱</span></h2>
     <section class="grid" id="grid3"></section>
+    <h2 class="sec">第四批 · 动作与对战<span>塔防、贪吃蛇、跳跃、双人 PK</span></h2>
+    <section class="grid four" id="grid4"></section>
     <section class="notes">
       <h3>从对标产品里借来的手法</h3>
       <div><b>秒级反馈</b><p>Duolingo 和 Quizlet 每一次点击都有声音和动效，对错在 0.3 秒内知道。</p></div>
@@ -462,6 +488,15 @@ const META=[
   prev:'<span class="chip ok">🍌</span><span class="chip ok">banana</span><span class="chip">?</span><span class="chip">?</span>'},
  {batch:3,id:'wordle',name:'五字母猜词',en:'Kron Wordle',bench:'对标 NYT Wordle',skill:'练：拼写推理',desc:'六次机会猜一个五字母单词。绿色位置对，黄色字母对位置错。',c:'var(--c-wordle)',
   prev:'<span class="chip" style="background:var(--ok);color:var(--on);border-color:var(--ok)">T</span><span class="chip" style="background:var(--q2);color:var(--on);border-color:var(--q2)">R</span><span class="chip">A</span><span class="chip" style="background:var(--ok);color:var(--on);border-color:var(--ok)">I</span><span class="chip">N</span>'}
+,
+ {batch:4,id:'tower',name:'单词塔防',en:'Tower Defense',bench:'对标 Blooket Tower Defense',skill:'练：综合词汇',desc:'答题赚金币，在路边建塔、升级，挡住五波小怪。答得越多，塔越硬。',c:'var(--c-tower)',
+  prev:'<span class="chip">🪙 75</span><span class="chip ok">建塔 −50</span><span class="chip">第 3/5 波</span>'},
+ {batch:4,id:'snake',name:'贪吃蛇拼词',en:'Spelling Snake',bench:'对标 经典贪吃蛇 × 拼写练习',skill:'练：字母顺序',desc:'按拼写顺序吃字母，吃错、撞墙、咬到自己都会掉命。',c:'var(--c-snake)',
+  prev:'<span class="chip ok">t</span><span class="chip ok">i</span><span class="chip on">g</span><span class="chip">e</span><span class="chip">r</span>'},
+ {batch:4,id:'jump',name:'跳跳 Kron',en:"Don't Look Down",bench:'对标 Gimkit Don\'t Look Down',skill:'练：词义判断',desc:'一路往上跳，每隔几层有一排答案平台，跳上错的会碎掉。',c:'var(--c-jump)',
+  prev:'<span class="chip">monkey</span><span class="chip ok">horse</span><span class="chip">bread</span>'},
+ {batch:4,id:'duel',name:'双人拔河',en:'Tug of War',bench:'对标 课堂拔河 PK · Gimkit 团队对抗',skill:'练：反应与准确',desc:'两人面对面共用一台平板，同一道题谁先答对谁拉一格，拉到底就赢。',c:'var(--c-duel)',
+  prev:'<span class="chip" style="color:var(--q1)">蓝队</span><span class="chip ok">◀ ▶</span><span class="chip" style="color:var(--q0)">红队</span>'}
 ];
 const SH=['▲','◆','●','■'];
 
@@ -499,6 +534,7 @@ const cardHTML=m=>`<button class="card" data-id="${m.id}" style="--c:${m.c}"><di
 $('#grid1').innerHTML=META.filter(m=>(m.batch||1)===1).map(cardHTML).join('');
 $('#grid2').innerHTML=META.filter(m=>m.batch===2).map(cardHTML).join('');
 $('#grid3').innerHTML=META.filter(m=>m.batch===3).map(cardHTML).join('');
+$('#grid4').innerHTML=META.filter(m=>m.batch===4).map(cardHTML).join('');
 $('#hub').addEventListener('click',e=>{const c=e.target.closest('.card');if(c){ac();openGame(c.dataset.id)}});
 $('#backBtn').addEventListener('click',()=>showHub());
 
@@ -907,6 +943,157 @@ GAMES.wordle=st=>{
   const kd=e=>{if(!onKey||e.metaKey||e.ctrlKey||e.altKey)return;if(e.key==='Enter'){e.preventDefault();onKey('enter')}else if(e.key==='Backspace')onKey('back');else if(/^[a-zA-Z]$/.test(e.key))onKey(e.key.toLowerCase())};
   addEventListener('keydown',kd);play();
   return()=>{clearTimeout(tm);removeEventListener('keydown',kd)};
+};
+
+/* ---------- batch 4 helpers ---------- */
+const cssv=n=>getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+function rr(c,x,y,w,h,r){c.beginPath();c.moveTo(x+r,y);c.arcTo(x+w,y,x+w,y+h,r);c.arcTo(x+w,y+h,x,y+h,r);c.arcTo(x,y+h,x,y,r);c.arcTo(x,y,x+w,y,r);c.closePath()}
+function drawKron(c,cx,cy,s,fill,lx=0,ly=0){const eye=cssv('--eye'),ink=cssv('--ink');c.fillStyle=fill;rr(c,cx-s/2,cy-s*.42,s,s*.84,s*.36);c.fill();
+  for(const ex of[-.2,.2]){c.fillStyle=eye;c.beginPath();c.arc(cx+ex*s,cy-s*.06,s*.15,0,7);c.fill();c.fillStyle=ink;c.beginPath();c.arc(cx+ex*s+lx*s*.06,cy-s*.05+ly*s*.06,s*.075,0,7);c.fill()}}
+function fitCanvas(C,LW,LH){const w=C.clientWidth||LW,h=w*LH/LW;C.width=Math.round(w*devicePixelRatio);C.height=Math.round(h*devicePixelRatio);return C.width/LW}
+function dirControls(st,el,onDir){const kd=e=>{const m={ArrowUp:[0,-1],ArrowDown:[0,1],ArrowLeft:[-1,0],ArrowRight:[1,0],w:[0,-1],s:[0,1],a:[-1,0],d:[1,0]}[e.key];if(m){e.preventDefault();onDir(m)}};addEventListener('keydown',kd);
+  const dp=$('.dpad',st);if(dp)dp.addEventListener('pointerdown',e=>{const b=e.target.closest('button');if(!b)return;e.preventDefault();onDir(b.dataset.d.split(',').map(Number))});
+  let sx=0,sy=0;el.addEventListener('pointerdown',e=>{sx=e.clientX;sy=e.clientY});el.addEventListener('pointerup',e=>{const dx=e.clientX-sx,dy=e.clientY-sy;if(Math.max(Math.abs(dx),Math.abs(dy))<18)return;onDir(Math.abs(dx)>Math.abs(dy)?[Math.sign(dx),0]:[0,Math.sign(dy)])});
+  return()=>removeEventListener('keydown',kd)}
+const DPAD=`<div class="dpad"><button data-d="0,-1" aria-label="上">↑</button><button data-d="-1,0" aria-label="左">←</button><button data-d="0,1" aria-label="下">↓</button><button data-d="1,0" aria-label="右">→</button></div>`;
+
+/* 16 · Tower Defense */
+GAMES.tower=st=>{
+  st.innerHTML=`<div class="duo"><div><canvas class="cv" id="tC"></canvas></div><div id="tQ"></div></div>`;
+  const C=$('#tC',st),c=C.getContext('2d'),LW=600,LH=380,WAVES=5;
+  const PATH=[[0,60],[480,60],[480,190],[120,190],[120,310],[600,310]];
+  const SEG=[];let TOTAL=0;for(let i=1;i<PATH.length;i++){const[a,b]=[PATH[i-1],PATH[i]],L=Math.hypot(b[0]-a[0],b[1]-a[1]);SEG.push({a,b,L,s:TOTAL});TOTAL+=L}
+  const posAt=d=>{for(const g of SEG)if(d<=g.s+g.L){const t=(d-g.s)/g.L;return[g.a[0]+(g.b[0]-g.a[0])*t,g.a[1]+(g.b[1]-g.a[1])*t]}return PATH[PATH.length-1]};
+  const SL=[[210,125],[370,125],[555,130],[50,250],[270,250],[420,250]].map(([x,y])=>({x,y,lv:0,cd:0}));
+  const CL={grass:cssv('--grass'),path:cssv('--wood'),bad:cssv('--bad'),g:cssv('--c-tower'),gold:cssv('--q2'),eye:cssv('--eye'),ink:cssv('--ink'),on:cssv('--on'),sur:cssv('--surface')};
+  let k=fitCanvas(C,LW,LH),coins=50,hp=10,wave=0,kills=0,en=[],shots=[],left=0,spawnT=0,pause=6,alive=true,raf,last=performance.now(),hudT=0;
+  const rs=()=>{k=fitCanvas(C,LW,LH)};addEventListener('resize',rs);
+  const qp=quizPanel($('#tQ',st),['pic','zh','spell'],(ok,b)=>{if(ok){coins+=25;floatAt(b,'+25 金币');sfx.good()}else sfx.bad()});
+  C.addEventListener('pointerdown',e=>{if(!alive)return;const r=C.getBoundingClientRect(),lx=(e.clientX-r.left)/r.width*LW,ly=(e.clientY-r.top)/r.height*LH;
+    const s=SL.find(s=>Math.hypot(s.x-lx,s.y-ly)<36);if(!s)return;const cost=[50,75][s.lv];
+    if(cost==null){floatAt(C,'已经满级了','minus');return}if(coins<cost){floatAt(C,'金币不够，先去答题','minus');sfx.bad();return}
+    coins-=cost;s.lv++;sfx.pop();sfx.good()});
+  function end(win){alive=false;cancelAnimationFrame(raf);qp.stop();setTimeout(()=>finish({score:kills*20+hp*50+(win?500:0),stars:win?(hp>=8?3:2):1,title:win?'守住了！':'基地被攻破',lines:[`消灭 ${kills} 只小怪，基地剩 ${hp} 点血`]}),500)}
+  function update(dt){
+    if(!left&&!en.length){if(wave>=WAVES){end(true);return}pause-=dt;if(pause<=0){wave++;left=5+wave*2;spawnT=0;pause=4}}
+    if(left){spawnT-=dt;if(spawnT<=0){en.push({d:0,hp:1+wave*2,max:1+wave*2,v:38+wave*6});left--;spawnT=1}}
+    for(const e of [...en]){e.d+=e.v*dt;if(e.d>=TOTAL){en.splice(en.indexOf(e),1);hp--;sfx.bad();if(hp<=0){end(false);return}}}
+    for(const s of SL){if(!s.lv)continue;s.cd-=dt;if(s.cd>0)continue;const R=s.lv===1?110:140;let best=null;
+      for(const e of en){const[ex,ey]=posAt(e.d);if(Math.hypot(ex-s.x,ey-s.y)<=R&&(!best||e.d>best.d))best=e}
+      if(best){best.hp-=s.lv;const[ex,ey]=posAt(best.d);shots.push({x1:s.x,y1:s.y,x2:ex,y2:ey,t:.12});s.cd=s.lv===1?.9:.55;
+        if(best.hp<=0){en.splice(en.indexOf(best),1);kills++;coins+=5}}}
+    shots=shots.filter(s=>(s.t-=dt)>0)}
+  function draw(){c.setTransform(k,0,0,k,0,0);c.fillStyle=CL.grass;c.fillRect(0,0,LW,LH);
+    c.strokeStyle=CL.path;c.lineWidth=36;c.lineJoin='round';c.beginPath();PATH.forEach(([x,y],i)=>i?c.lineTo(x,y):c.moveTo(x,y));c.stroke();
+    c.fillStyle=CL.bad;c.fillRect(578,276,6,34);c.beginPath();c.moveTo(584,276);c.lineTo(600,284);c.lineTo(584,292);c.fill();
+    for(const s of SL){if(!s.lv){c.setLineDash([5,5]);c.strokeStyle=CL.sur;c.lineWidth=3;c.beginPath();c.arc(s.x,s.y,22,0,7);c.stroke();c.setLineDash([]);c.fillStyle=CL.sur;c.font='800 22px "Baloo 2",sans-serif';c.textAlign='center';c.textBaseline='middle';c.fillText('+',s.x,s.y+1)}
+      else{drawKron(c,s.x,s.y,s.lv===1?40:48,CL.g);c.fillStyle=CL.gold;c.font='800 13px "Baloo 2",sans-serif';c.textAlign='center';c.fillText('★'.repeat(s.lv),s.x,s.y+28)}}
+    c.strokeStyle=CL.gold;c.lineWidth=3;for(const s of shots){c.beginPath();c.moveTo(s.x1,s.y1);c.lineTo(s.x2,s.y2);c.stroke()}
+    for(const e of en){const[x,y]=posAt(e.d);drawKron(c,x,y,24,CL.bad,1,0);c.fillStyle=CL.ink;c.fillRect(x-12,y-18,24,4);c.fillStyle=CL.gold;c.fillRect(x-12,y-18,24*e.hp/e.max,4)}
+    if(!left&&!en.length&&wave<WAVES&&alive){c.fillStyle=CL.ink;c.globalAlpha=.75;rr(c,170,150,260,56,14);c.fill();c.globalAlpha=1;c.fillStyle=CL.on;c.font='800 20px "Baloo 2",sans-serif';c.textAlign='center';c.textBaseline='middle';c.fillText(wave?`第 ${wave+1} 波 · ${Math.ceil(pause)} 秒后`:`先答题攒金币 · ${Math.ceil(pause)}`,300,178)}}
+  function loop(now){const dt=Math.min(.05,(now-last)/1000);last=now;update(dt);if(!alive)return;draw();
+    if(now-hudT>200){hudT=now;hud(P('♥ '+hp)+P('🪙 '+coins)+P('第 '+Math.max(1,wave)+'/'+WAVES+' 波'))}raf=requestAnimationFrame(loop)}
+  raf=requestAnimationFrame(loop);
+  return()=>{alive=false;cancelAnimationFrame(raf);qp.stop();removeEventListener('resize',rs)};
+};
+
+/* 17 · Spelling Snake */
+GAMES.snake=st=>{
+  const N=14;st.innerHTML=`<div class="qp-card" id="sP"></div><div class="snake-word" id="sW"></div><canvas class="cv sq" id="sC"></canvas>${DPAD}`;
+  const C=$('#sC',st),c=C.getContext('2d'),LW=N*30;let k=fitCanvas(C,LW,LW);const rs=()=>{k=fitCanvas(C,LW,LW)};addEventListener('resize',rs);
+  const CL={a:cssv('--surface'),b:cssv('--sunk'),g:cssv('--c-snake'),ink:cssv('--ink'),line:cssv('--line')};
+  let snake,dir,nd,items=[],w,idx,lives=3,done=0,score=0,alive=true,tm,wait=true;const GOAL=5,used=new Set();
+  const draw0=()=>hud(P('♥'.repeat(lives)+'♡'.repeat(3-lives))+P(done+'/'+GOAL)+P(score+' 分'));
+  const reset=()=>{snake=[{x:5,y:7},{x:4,y:7},{x:3,y:7}];dir=[1,0];nd=[1,0]};
+  const free=()=>{let p,g=0;do{p={x:Math.random()*N|0,y:Math.random()*N|0}}while(g++<500&&(snake.some(s=>s.x===p.x&&s.y===p.y)||items.some(i=>i.x===p.x&&i.y===p.y)||(p.y===snake[0].y&&Math.abs(p.x-snake[0].x)<3)));return p};
+  function slots(){$('#sW',st).innerHTML=[...w.en].map((ch,i)=>`<span class="sw${i<idx?' on':i===idx?' next':''}">${i<idx?ch:''}</span>`).join('')}
+  function newWord(){{const ok=v=>/^[a-z]+$/.test(v.en)&&v.en.length<=7;let pool=VOCAB.filter(v=>ok(v)&&!used.has(v.en));if(!pool.length){used.clear();pool=VOCAB.filter(ok)}if(!pool.length)pool=VOCAB.filter(v=>/^[a-z]+$/.test(v.en));if(!pool.length)pool=VOCAB;w=pool[Math.random()*pool.length|0]}used.add(w.en);idx=0;items=[];
+    [...w.en].forEach(ch=>items.push({...free(),c:ch}));const ab=[...'abcdefghijklmnopqrstuvwxyz'].filter(ch=>!w.en.includes(ch));for(let i=0;i<3;i++)items.push({...free(),c:ab[Math.random()*ab.length|0]});
+    $('#sP',st).innerHTML=`<div class="mq-em">${w.e}</div><b>${w.zh}</b>`;slots()}
+  function hurt(msg){lives--;sfx.bad();floatAt(C,msg,'minus');draw0();if(lives<=0){end();return true}return false}
+  function step(){if(!alive)return;if(wait){tm=setTimeout(step,150);return}
+    if(nd[0]!==-dir[0]||nd[1]!==-dir[1])dir=nd;const h={x:snake[0].x+dir[0],y:snake[0].y+dir[1]};
+    if(h.x<0||h.y<0||h.x>=N||h.y>=N||snake.slice(0,-1).some(s=>s.x===h.x&&s.y===h.y)){if(hurt('撞到了'))return;reset();wait=true;render();tm=setTimeout(step,170);return}
+    snake.unshift(h);const it=items.find(i=>i.x===h.x&&i.y===h.y);
+    if(it){if(it.c===w.en[idx]){items.splice(items.indexOf(it),1);idx++;score+=10;sfx.good();slots();
+        if(idx>=w.en.length){done++;score+=50;speak(w.en);burst($('#sW',st),18);items=[];draw0();if(done>=GOAL){end();return}setTimeout(()=>{if(alive){newWord();render()}},500)}}
+      else{snake.pop();if(snake.length>3)snake.pop();Object.assign(it,free());if(hurt('要先吃 '+w.en[idx]))return}}
+    else snake.pop();
+    draw0();render();tm=setTimeout(step,Math.max(105,175-done*12))}
+  function render(){c.setTransform(k,0,0,k,0,0);for(let y=0;y<N;y++)for(let x=0;x<N;x++){c.fillStyle=(x+y)%2?CL.a:CL.b;c.fillRect(x*30,y*30,30,30)}
+    c.font='800 18px "Baloo 2",sans-serif';c.textAlign='center';c.textBaseline='middle';
+    for(const i of items){c.fillStyle=CL.a;c.strokeStyle=CL.line;c.lineWidth=2;rr(c,i.x*30+3,i.y*30+3,24,24,7);c.fill();c.stroke();c.fillStyle=CL.ink;c.fillText(i.c,i.x*30+15,i.y*30+16)}
+    snake.forEach((s,n)=>{if(n===0)return;c.fillStyle=CL.g;c.globalAlpha=1-n/(snake.length+6);rr(c,s.x*30+3,s.y*30+3,24,24,8);c.fill()});c.globalAlpha=1;
+    drawKron(c,snake[0].x*30+15,snake[0].y*30+15,30,CL.g,dir[0],dir[1])}
+  function end(){if(!alive)return;alive=false;clearTimeout(tm);finish({score,stars:done>=GOAL?(lives===3?3:2):done>=2?2:1,title:done>=GOAL?'拼词大蟒':'游戏结束',lines:[`拼出 ${done} 个词`]})}
+  const off=dirControls(st,C,d=>{nd=d;if(wait){if(d[0]===-1&&dir[0]===1)return;wait=false}});
+  reset();newWord();render();draw0();tm=setTimeout(step,200);
+  floatAt(C,'按方向键开始');
+  return()=>{alive=false;clearTimeout(tm);off();removeEventListener('resize',rs)};
+};
+
+/* 18 · Don't Look Down */
+GAMES.jump=st=>{
+  st.innerHTML=`<div class="qp-card" id="jQ"></div><canvas class="cv tall" id="jC" style="margin-top:12px"></canvas>`;
+  const C=$('#jC',st),c=C.getContext('2d'),LW=360,LH=540,GAP=110,GOAL=6;let k=fitCanvas(C,LW,LH);const rs=()=>{k=fitCanvas(C,LW,LH)};addEventListener('resize',rs);
+  const CL={sky:cssv('--sky-day'),w1:cssv('--water1'),plat:cssv('--brick'),pd:cssv('--brick-d'),g:cssv('--c-jump'),ok:cssv('--ok'),bad:cssv('--bad'),on:cssv('--on'),ink:cssv('--ink'),q:[cssv('--q0'),cssv('--q1'),cssv('--q3')]};
+  const rows=[];let top=0;
+  function addRow(){const i=rows.length,y=500-i*GAP;let r;
+    if(i===0)r={y,plats:[{x:0,w:LW}]};
+    else if(i%4===3){const q=mcq(Math.random()<.5?'pic':'zh');const opts=shuffle([q.opts.find(o=>o.ok),...shuffle(q.opts.filter(o=>!o.ok)).slice(0,2)]);r={y,gate:q,plats:opts.map((o,j)=>({x:12+j*118,w:100,label:o.t,ok:o.ok,col:j}))}}
+    else{const n=Math.random()<.5?1:2;r={y,plats:Array.from({length:n},(_,j)=>({x:n===1?20+Math.random()*250:(j?190:10)+Math.random()*80,w:84}))}}
+    rows.push(r)}
+  for(let i=0;i<8;i++)addRow();
+  let p={x:180,y:500,vx:0,vy:-760},cam=0,lives=3,correct=0,wrong=0,score=0,alive=true,raf,last=performance.now(),dirX=0,shownGate=null,hudT=0;
+  const gateAbove=()=>rows.find(r=>r.gate&&!r.solved&&r.y<p.y+4);
+  function showQ(){const g=gateAbove();if(g&&g!==shownGate){shownGate=g;$('#jQ',st).innerHTML=`${g.gate.html}<p>${g.gate.sub}</p>`;if(g.gate.say)speak(g.gate.w.en)}}
+  function end(win){alive=false;cancelAnimationFrame(raf);setTimeout(()=>finish({score:score+lives*80,stars:win?(wrong<=1?3:2):1,title:win?'登顶！':'掉下去了',lines:[`答对 ${correct} 道平台题，踩碎 ${wrong} 块`]}),400)}
+  function update(dt){p.vx=dirX*270;p.x+=p.vx*dt;if(p.x<-14)p.x=LW+14;if(p.x>LW+14)p.x=-14;
+    const prev=p.y;p.vy+=1500*dt;p.y+=p.vy*dt;
+    const g=gateAbove();if(g&&p.y<g.y-72&&p.vy<0){p.y=g.y-72;p.vy=40}
+    if(p.vy>0)for(const r of rows){if(prev>r.y||p.y<r.y)continue;for(const pl of r.plats){if(pl.gone||pl.broken)continue;if(p.x<pl.x-12||p.x>pl.x+pl.w+12)continue;
+      if(r.gate&&!r.solved){if(pl.ok){r.solved=true;correct++;score+=100;sfx.good();speak(r.gate.w.en);r.plats.forEach(o=>{if(o!==pl)o.gone=true});pl.done=true;floatAt(C,'+100');if(correct>=GOAL){p.y=r.y;p.vy=-760;end(true);return}}
+        else{pl.broken=true;pl.fall=0;wrong++;score=Math.max(0,score-30);sfx.bad();floatAt(C,'不是 '+pl.label,'minus');continue}}
+      p.y=r.y;p.vy=-760;sfx.tick();break}}
+    for(const r of rows)for(const pl of r.plats)if(pl.broken)pl.fall+=dt*400;
+    cam=Math.min(cam,p.y-LH*.5);while(rows[rows.length-1].y>cam-200)addRow();
+    if(p.y-cam>LH+30){lives--;sfx.bad();floatAt(C,'−1 ♥','minus');if(lives<=0){end(false);return}p.y=cam+LH;p.vy=-900}
+    showQ()}
+  function draw(){c.setTransform(k,0,0,k,0,0);const gr=c.createLinearGradient(0,0,0,LH);gr.addColorStop(0,CL.sky);gr.addColorStop(1,CL.w1);c.fillStyle=gr;c.fillRect(0,0,LW,LH);
+    c.textAlign='center';c.textBaseline='middle';c.font='800 15px "Baloo 2",sans-serif';
+    for(const r of rows){const sy=r.y-cam;if(sy<-40||sy>LH+400)continue;for(const pl of r.plats){if(pl.gone)continue;const y=sy+(pl.fall||0);
+      const fill=pl.broken?CL.bad:pl.done?CL.ok:pl.label!=null?CL.q[pl.col]:CL.plat;c.fillStyle=fill;c.globalAlpha=pl.broken?Math.max(0,1-pl.fall/300):1;rr(c,pl.x,y,pl.w,pl.label!=null?26:14,7);c.fill();
+      if(pl.label!=null){c.fillStyle=CL.on;c.fillText(pl.label,pl.x+pl.w/2,y+14)}c.globalAlpha=1}}
+    drawKron(c,p.x,p.y-20,38,CL.g,dirX,p.vy>0?1:-1)}
+  function loop(now){const dt=Math.min(.033,(now-last)/1000);last=now;update(dt);if(!alive)return;draw();
+    if(now-hudT>200){hudT=now;hud(P('♥'.repeat(lives)+'♡'.repeat(3-lives))+P(correct+'/'+GOAL)+P(score+' 分'))}raf=requestAnimationFrame(loop)}
+  const keys={};const kd=e=>{if(['ArrowLeft','ArrowRight','a','d','A','D'].includes(e.key)){e.preventDefault();keys[e.key.toLowerCase()]=e.type==='keydown';dirX=(keys.arrowright||keys.d?1:0)-(keys.arrowleft||keys.a?1:0)}};
+  addEventListener('keydown',kd);addEventListener('keyup',kd);
+  const pd=e=>{const r=C.getBoundingClientRect();dirX=e.clientX-r.left<r.width/2?-1:1};
+  C.addEventListener('pointerdown',e=>{C.setPointerCapture(e.pointerId);pd(e)});C.addEventListener('pointermove',e=>{if(e.buttons)pd(e)});['pointerup','pointercancel'].forEach(ev=>C.addEventListener(ev,()=>dirX=0));
+  showQ();raf=requestAnimationFrame(loop);
+  return()=>{alive=false;cancelAnimationFrame(raf);removeEventListener('keydown',kd);removeEventListener('keyup',kd);removeEventListener('resize',rs)};
+};
+
+/* 19 · Tug of War */
+GAMES.duel=st=>{
+  const PS=[{n:'红队',keys:['1','2','3','4']},{n:'蓝队',keys:['7','8','9','0']}],WIN=4,MAXQ=15;
+  st.innerHTML=`<div class="vs"><div class="side p2" id="d1" style="--pc:var(--q1)"></div><div class="rope"><span class="end l">蓝队</span><span class="end r">红队</span><span class="rk" id="dK">${kronSVG('var(--c-duel)')}</span></div><div class="side" id="d0" style="--pc:var(--q0)"></div></div>`;
+  const PN=[$('#d0',st),$('#d1',st)],K=$('#dK',st);let pos=0,qn=0,q,locked,over,tm,wins=[0,0],alive=true;
+  function render(){q=mcq(Math.random()<.5?'pic':'zh');locked=[false,false];over=false;qn++;
+    PN.forEach((el,p)=>{el.innerHTML=`<h3><span>${PS[p].n}</span><span>${wins[p]} 分</span></h3><div class="qp-card">${q.html}<p>${q.sub}</p></div><div class="opts sm">${q.opts.map((o,j)=>`<button class="opt o${j}" data-k="${j}"><span class="sh">${SH[j]}</span>${o.t}</button>`).join('')}</div>`;
+      $('.opts',el).onclick=e=>{const b=e.target.closest('.opt');if(b)answer(p,+b.dataset.k)}});
+    hud(P('第 '+qn+' 题')+P('红 '+wins[0]+' : '+wins[1]+' 蓝'));if(q.say)speak(q.w.en)}
+  function reveal(){PN.forEach(el=>$$('.opt',el).forEach((o,j)=>{if(q.opts[j].ok)o.classList.add('right');else o.classList.add('dim')}))}
+  function answer(p,j){if(over||locked[p]||!alive)return;const b=$$('.opt',PN[p])[j];
+    if(q.opts[j].ok){over=true;wins[p]++;pos+=p===0?1:-1;K.style.left=(50+pos*11)+'%';reveal();sfx.good();burst(b,16);floatAt(b,PS[p].n+' 拉一格');
+      if(Math.abs(pos)>=WIN||qn>=MAXQ){alive=false;tm=setTimeout(done,900)}else tm=setTimeout(render,1100)}
+    else{locked[p]=true;b.classList.add('wrong');$$('.opt',PN[p]).forEach(o=>o.disabled=true);sfx.bad();
+      if(locked[0]&&locked[1]){over=true;reveal();if(qn>=MAXQ){alive=false;tm=setTimeout(done,900)}else tm=setTimeout(render,1300)}}}
+  function done(){const w=pos>0?0:pos<0?1:-1;finish({score:300+Math.max(...wins)*50,stars:w<0?2:3,title:w<0?'平局':PS[w].n+'赢了！',lines:[`红队 ${wins[0]} : ${wins[1]} 蓝队，共 ${qn} 题`]})}
+  const kd=e=>{const a=PS[0].keys.indexOf(e.key),b=PS[1].keys.indexOf(e.key);if(a>=0)answer(0,a);else if(b>=0)answer(1,b)};
+  addEventListener('keydown',kd);render();
+  return()=>{alive=false;clearTimeout(tm);removeEventListener('keydown',kd)};
 };
 
 renderTotals();
