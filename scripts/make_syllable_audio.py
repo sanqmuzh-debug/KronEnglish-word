@@ -6,7 +6,7 @@
   pip install onnxruntime numpy soundfile;  ffmpeg 要在 PATH 里
   python3 scripts/make_syllable_audio.py --model <kokoro-int8-en-v0_19 目录> [--voice af_bella] [--out demo/audio]
 """
-import argparse, json, os, subprocess, tempfile
+import argparse, json, os, re, subprocess, tempfile
 import numpy as np, onnxruntime as ort, soundfile as sf
 
 NAMES = 'af,af_bella,af_nicole,af_sarah,af_sky,am_adam,am_michael,bf_emma,bf_isabella,bm_george,bm_lewis'.split(',')
@@ -68,12 +68,19 @@ def main():
     ap.add_argument('--voice', default='af_bella')
     ap.add_argument('--out', default=os.path.join(os.path.dirname(__file__), '..', 'demo', 'audio'))
     ap.add_argument('--table', default=os.path.join(os.path.dirname(__file__), 'syllable_phonemes.json'))
+    ap.add_argument('--syllables', help='用 scripts/syllabify.py 生成的 data/syllables.json 批量跑整本词库')
     ap.add_argument('--word-speed', type=float, default=0.85)
     ap.add_argument('--syl-speed', type=float, default=0.8)
     a = ap.parse_args()
     tts = Kokoro(a.model)
     os.makedirs(a.out, exist_ok=True)
-    table = {k: v for k, v in json.load(open(a.table, encoding='utf-8')).items() if not k.startswith('_')}
+    if a.syllables:
+        table = {}
+        for w, toks in json.load(open(a.syllables, encoding='utf-8'))['words'].items():
+            syl = [x['ipa'].replace('ˌ', '').replace('ˈ', '') for t in toks for x in t]
+            table[re.sub(r'[^a-z0-9]+', '-', w.lower()).strip('-')] = {'word': ' '.join(''.join(x['ipa'] for x in t) for t in toks), 'syl': syl}
+    else:
+        table = {k: v for k, v in json.load(open(a.table, encoding='utf-8')).items() if not k.startswith('_')}
     for w, e in table.items():
         save_mp3(tidy(tts(e['word'], a.voice, a.word_speed)), os.path.join(a.out, f'{w}.mp3'))
         for i, s in enumerate(e['syl']):
