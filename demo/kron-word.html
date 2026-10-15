@@ -261,11 +261,11 @@ button:focus-visible{outline:3px solid var(--sky);outline-offset:3px}
       <div id="coachKron"></div>
       <div class="bubble" id="bubble" aria-live="polite"><small>KRON 老师</small><span id="bubbleText">嗨，我是 Kron！</span></div>
     </div>
-    <div class="work idle" id="work"><p class="idle-t">从传送带挑一张卡片</p></div>
+    <div class="work idle" id="work"><p class="idle-t">挑一张</p></div>
   </main>
 
   <section>
-    <div class="tray-head"><span><b>托盘</b>同色 3 张会撞掉</span><span id="trayCount">0/6</span></div>
+    <div class="tray-head"><span><b>托盘</b></span><span id="trayCount">0/6</span></div>
     <div class="tray" id="tray"></div>
   </section>
 </div>
@@ -418,7 +418,7 @@ let toastT;
 function toast(msg){const t=$('#toast');t.textContent=msg;t.classList.add('show');clearTimeout(toastT);toastT=setTimeout(()=>t.classList.remove('show'),2600)}
 function coach(text,label='KRON 老师'){const b=$('#bubble');b.querySelector('small').textContent=label;$('#bubbleText').textContent=text;b.classList.remove('pop');void b.offsetWidth;b.classList.add('pop')}
 function wiggle(el){el.animate([{rotate:'0deg'},{rotate:'-7deg'},{rotate:'6deg'},{rotate:'-3deg'},{rotate:'0deg'}],{duration:380,easing:'ease-out'})}
-function setProgress(){$('#bar').style.width=(S.total?S.cleared/S.total*100:0)+'%';$('#count').textContent=`${S.cleared}/${S.total}`}
+function setProgress(){const done=S.total?S.total-S.queue.length-(S.current?1:0):0;$('#bar').style.width=(S.total?done/S.total*100:0)+'%';$('#count').textContent=`${done}/${S.total}`}
 
 /* ---------- game ---------- */
 function newGame(autoPick){
@@ -446,7 +446,7 @@ function renderBelt(feed){
     el.style.setProperty('--x',x+'px');el.tabIndex=i<m.vis?0:-1;
   });
   if(feed)setTimeout(()=>belt.querySelectorAll('.bcard').forEach(el=>el.style.transitionDelay='0ms'),1400);
-  $('#beltCount').textContent=S.queue.length?`还有 ${S.queue.length} 张`:'传送带空了';
+  $('#beltCount').textContent='';
   updateHints();
 }
 function makeBeltCard(it){const b=document.createElement('button');b.className=`bcard c-${it.color}`;b.dataset.id=it.id;
@@ -538,7 +538,7 @@ async function collect(){
   let idx=-1;for(let i=S.tray.length-1;i>=0;i--)if(S.tray[i].color===it.color){idx=i;break}
   if(idx<0)S.tray.push(it);else S.tray.splice(idx+1,0,it);
   sfx.whoosh();renderTray(it.id,from);
-  S.current=null;setBaseMood('idle');idle();
+  S.current=null;setProgress();setBaseMood('idle');idle();
   await wait(reduced?50:600);await resolveTray();S.locked=false;
 }
 function renderTray(newId,newFrom){
@@ -570,14 +570,14 @@ async function resolveTray(){
     await wait(320);
   }
   if(S.tray.length>TRAY){
-    const out=S.tray.shift();out.review=true;S.queue.push(out);renderTray();renderBelt();
+    const out=S.tray.shift();out.review=true;S.queue.push(out);renderTray();renderBelt();setProgress();
     toast(`托盘满了，「${out.w.w}」回到传送带，等下再拼一次`);
   }
   if(S.cleared>=S.total){setTimeout(win,600);return}
 }
 function idle(first){
   const work=$('#work');work.className='work idle';
-  work.innerHTML=`<div class="idle-art">${IC.up}</div><p class="idle-t">从传送带挑一张卡片</p><p class="idle-s">学会的单词进托盘，同色凑齐 3 张就会撞掉。</p>`;
+  work.innerHTML=`<div class="idle-art">${IC.up}</div><p class="idle-t">挑一张</p>`;
   if(first){coach('嗨，我是 Kron 老师！把音节积木拼起来，单词就学会了。');return}
   const c=trayCounts();const two=Object.keys(c).find(k=>c[k]===2);
   if(two)coach(`托盘里有两张${COLOR_ZH[two]}了，再挑一张${COLOR_ZH[two]}卡片就能撞掉！闪光的就是。`);
