@@ -7,7 +7,7 @@
 /* Layout: one hub (header + asymmetric 2/3 card grid) that swaps to a full-width game stage with a sticky HUD. Chunky, juicy, 3D-press buttons. */
 :root{
   --bg:#F3F4F8; --surface:#FFFFFF; --sunk:#EDEFF4; --line:#DCDFE7;
-  --ink:#1B1D25; --muted:#6A6F80; --on:#FFFFFF; --eye:#FFFFFF;
+  --ink:#1B1D25; --muted:#6A6F80; --on:#FFFFFF; --eye:#FFFFFF; --pupil:#1B1D25;
   --kron:#30C25B;
   --c-match:#1FAE6B; --c-gravity:#7A5CFA; --c-whack:#FF8A1F; --c-sentence:#0FA2E0; --c-quiz:#FF4769;
   --ok:#30C25B; --bad:#EE3F57;
@@ -504,7 +504,7 @@ const SH=['▲','◆','●','■'];
 const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>[...r.querySelectorAll(s)];
 const store={get(k,d){try{const v=localStorage.getItem('kronarcade.'+k);return v==null?d:JSON.parse(v)}catch(e){return d}},set(k,v){try{localStorage.setItem('kronarcade.'+k,JSON.stringify(v))}catch(e){}}};
 const kronSVG=(fill='var(--kron)')=>`<svg class="kron" viewBox="0 0 64 60" aria-hidden="true">${kronInner(fill)}</svg>`;
-const kronInner=(fill)=>`<rect x="4" y="6" width="56" height="50" rx="22" fill="${fill}"/><circle cx="23" cy="28" r="9.5" fill="var(--eye)"/><circle cx="41" cy="28" r="9.5" fill="var(--eye)"/><circle class="pupil" cx="23" cy="29" r="4.6" fill="var(--ink)"/><circle class="pupil" cx="41" cy="29" r="4.6" fill="var(--ink)"/><path d="M27 43 q5 4 10 0" stroke="var(--ink)" stroke-width="3" fill="none" stroke-linecap="round"/>`;
+const kronInner=(fill)=>`<rect x="4" y="6" width="56" height="50" rx="22" fill="${fill}"/><circle cx="23" cy="28" r="9.5" fill="var(--eye)"/><circle cx="41" cy="28" r="9.5" fill="var(--eye)"/><circle class="pupil" cx="23" cy="29" r="4.6" fill="var(--pupil)"/><circle class="pupil" cx="41" cy="29" r="4.6" fill="var(--pupil)"/><path d="M27 43 q5 4 10 0" stroke="var(--pupil)" stroke-width="3" fill="none" stroke-linecap="round"/>`;
 
 /* sound */
 let AC=null;
@@ -762,7 +762,7 @@ GAMES.maze=st=>{
 GAMES.fish=st=>{
   st.innerHTML=`<div class="fprompt" id="fP"></div><div class="pond" id="fD"><div class="boat" id="fB">${kronSVG('var(--c-fish)')}</div><i class="line" id="fL"></i></div>`;
   const D=$('#fD',st),B=$('#fB',st),Ln=$('#fL',st),Pp=$('#fP',st);
-  const SVG=`<svg viewBox="0 0 60 30" aria-hidden="true"><path d="M44 15 L60 3 L57 15 L60 27Z" fill="currentColor"/><ellipse cx="25" cy="15" rx="22" ry="12" fill="currentColor"/><circle cx="12" cy="12" r="3" fill="var(--eye)"/><circle cx="11" cy="12" r="1.6" fill="var(--ink)"/></svg>`;
+  const SVG=`<svg viewBox="0 0 60 30" aria-hidden="true"><path d="M44 15 L60 3 L57 15 L60 27Z" fill="currentColor"/><ellipse cx="25" cy="15" rx="22" ry="12" fill="currentColor"/><circle cx="12" cy="12" r="3" fill="var(--eye)"/><circle cx="11" cy="12" r="1.6" fill="var(--pupil)"/></svg>`;
   let fish=[],target=null,left=45,kg=0,caught=0,score=0,alive=true,busy=false,raf,last=performance.now();
   const draw=()=>hud(P('⏱ '+left+'s')+P(kg.toFixed(1)+' kg')+P(score+' 分'));
   function spawn(w){const Wd=D.clientWidth,H=D.clientHeight,dir=Math.random()<.5?1:-1,gold=Math.random()<.12;const el=document.createElement('button');el.className='fishy'+(gold?' gold':'')+(dir>0?' r':'');el.innerHTML=SVG+`<span>${w.en}</span>`;D.append(el);
