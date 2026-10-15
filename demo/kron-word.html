@@ -219,6 +219,11 @@ button:focus-visible{outline:3px solid var(--sky);outline-offset:3px}
   position:fixed;inset:0;z-index:95;background:var(--hb);color:var(--hk);overflow-y:auto;overflow-x:hidden;font-family:var(--font-ui);animation:fade .3s}
 .home.out{animation:fadeOut .26s forwards}
 @keyframes fadeOut{to{opacity:0}}
+/* 右上角「邀请」+「登录」，和 Kron Aha 首页一样 */
+.hm-acts{display:flex;align-items:center;gap:8px;flex:none}
+.hm-invite,.hm-me{padding:7px 14px;border-radius:999px;font:600 14px/1.2 var(--font-ui);text-decoration:none;white-space:nowrap}
+.hm-invite{background:var(--hk);color:var(--hk-fg)}
+.hm-me{background:var(--hp);color:var(--hs);font-variant-numeric:tabular-nums}
 .hm-bar{position:sticky;top:0;z-index:3;background:var(--hbar);-webkit-backdrop-filter:saturate(180%) blur(20px);backdrop-filter:saturate(180%) blur(20px);padding-top:env(safe-area-inset-top)}
 .hm-bar .in{max-width:620px;margin:0 auto;height:66px;display:flex;align-items:center;justify-content:space-between;padding:0 max(16px,env(safe-area-inset-left,0px))}
 .hm-bar .brand span{display:inline}
@@ -783,11 +788,12 @@ function openHome(){
   if($('#shelf'))return;
   const v=document.createElement('div');v.className='home';v.id='shelf';let tab='all';
   const last=S.saved&&findBook(S.pick.bk),lu=last&&last.b.units[S.pick.u];
-  v.innerHTML=`<header class="hm-bar"><div class="in"><div class="brand">${KRON_LOGO}<span>Kron Word</span></div></div></header>
+  v.innerHTML=`<header class="hm-bar"><div class="in"><div class="brand">${KRON_LOGO}<span>Kron Word</span></div><div class="hm-acts"><a class="hm-invite" href="https://kronenglish.pages.dev/invite" title="邀请朋友，你们俩都多 3 天全部课程">邀请</a><a class="hm-me" href="/login/">登录</a></div></div></header>
     <nav class="hm-tabs"><div class="pills"><i class="ind"></i>${HOME_TABS.map(([id,n])=>`<button data-tab="${id}">${n}</button>`).join('')}</div></nav>
     <div class="hm-rows"></div>
     ${last?`<button class="hm-go" data-sh="go"><img src="covers/${last.b.id}.jpg" alt=""><span><small>继续上次</small><b>${pickTitle()}</b><span class="pg"><i style="width:${bookDone(last.b.id)/bookWords(last.b)*100}%"></i></span></span><em>继续</em></button>`:''}`;
   document.body.appendChild(v);drawHomeRows(v,tab);
+  fetch('/api/auth/me',{cache:'no-store'}).then(r=>r.ok?r.json():null).then(d=>{const m=v.querySelector('.hm-me');if(d&&d.authenticated&&m)m.textContent=d.user.phone||d.user.displayName}).catch(()=>{});
   v.addEventListener('click',e=>{const t=e.target.closest('[data-tab],[data-sh],.hb');if(!t)return;
     if(t.dataset.tab){if(t.dataset.tab!==tab){tab=t.dataset.tab;drawHomeRows(v,tab,true)}return}
     const a=t.dataset.sh;
