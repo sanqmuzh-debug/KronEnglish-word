@@ -47,9 +47,14 @@ slug = lambda s: re.sub(r'[^a-z0-9]+', '-', s.lower()).strip('-')
 clean = lambda s: re.sub(r'\s+', ' ', (s or '').strip())
 
 
+def strip_pos(zh):
+    """去掉考纲释义里的词性：「adj. 介绍性的」→「介绍性的」。"""
+    return re.sub(r'\b(?:n|v|vt|vi|adj|adv|prep|conj|pron|num|art|int|aux|abbr)\.\s*', '', clean(zh)).strip()
+
+
 def short_zh(zh):
     """卡片上只放第一个意思：「丰富的， 富裕的； 大量的」→「丰富的」。"""
-    z = re.split(r'[；;]', clean(zh))[0].strip()
+    z = re.split(r'[；;]', strip_pos(zh))[0].strip()
     if len(z) > 8: z = re.split(r'[，,/、]', z)[0].strip() or z
     return z
 
@@ -88,10 +93,10 @@ def main():
         if slug(text) + '.mp3' not in have:  # 没有 alex 录音的词：记下来给 make_fish_audio.py，录好放 R2，网页走 /au/
             todo[text] = toks
         bricks = [x for t in toks for x in t]
-        w = {'w': text, 'syl': [x['t'] for x in bricks], 'ipa': ipa or '/' + ' '.join('·'.join(x['ipa'] for x in t) for t in toks).replace('·', '') + '/',
+        w = {'w': text, 'syl': [x['t'] for x in bricks], 'ipa': ipa or '/' + ' '.join(''.join(x['ipa'] for x in t) for t in toks).replace('ɹ', 'r') + '/',
              'zh': short_zh(zh), 'a': slug(text)}
         if slug(text) + '.mp3' not in have: w['r'] = 1
-        if clean(zh) != w['zh']: w['zf'] = clean(zh)
+        if strip_pos(zh) != w['zh']: w['zf'] = strip_pos(zh)
         if r and PLACEHOLDER in (r.get('sentence') or ''):  # 老版约 1500 词只有模板占位句，不拿来用
             if not img and r.get('image'): img = os.path.basename(r['image'])
             r = None

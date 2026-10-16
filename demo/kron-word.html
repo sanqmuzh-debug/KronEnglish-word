@@ -168,14 +168,15 @@ button:focus-visible{outline:3px solid var(--sky);outline-offset:3px}
 .rv-sent div{flex:1;min-width:0}
 .rv-sent small{display:block;font:600 11.5px var(--font-display);letter-spacing:.08em;color:var(--muted);margin-bottom:2px}
 .rv-sent p{margin:0;font:500 19px/1.45 var(--font-display)}
+.rv-sent.long p{font-size:16px}.rv-sent.long p.sc{font-size:13px}
 .rv-sent p.sc{font:400 14px/1.5 var(--font-ui);color:var(--muted);margin-top:4px}
 .scene.photo{aspect-ratio:16/9;background:var(--surface-2)}.scene.photo::before{display:none}
 .scene.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .bc-img{width:78%;aspect-ratio:16/9;object-fit:cover;border-radius:10px;box-shadow:0 2px 0 rgba(0,0,0,.12)}
 .m-img{height:40px;aspect-ratio:16/9;object-fit:cover;border-radius:12px}
 .bk-img.gen{display:flex;flex-direction:column;justify-content:flex-end;gap:6px;padding:14% 12%;background:var(--b);color:#fff;text-align:left}
-.bk-img.gen small{font:600 11px var(--font-display);letter-spacing:.1em;text-transform:uppercase;opacity:.8}
-.bk-img.gen b{font:700 clamp(20px,3.4vw,30px)/1.15 var(--font-display)}
+.bk-img.gen small{font:600 11px var(--font-display);letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.85)}
+.bk-img.gen b{font:700 clamp(17px,2.6vw,26px)/1.15 var(--font-display);overflow-wrap:anywhere}
 .rv-sent mark{background:color-mix(in oklab,var(--c) 22%,transparent);color:inherit;border-radius:6px;padding:0 2px;font-weight:700}
 
 /* tray */
@@ -677,7 +678,7 @@ function showReveal(){
     ${w.img?`<div class="scene photo"><img src="${IMG(w.img)}" alt="${w.w}" draggable="false"></div>`:`<div class="scene">${sparks}<span class="scene-emoji">${w.e}</span>${kronSVG('','wow')}<span class="scene-say">${w.w}!</span></div>`}
     <div class="rv-head"><div class="rv-word" aria-label="${w.w}">${w.syl.map(s=>`<span>${s}</span>`).join('<i>·</i>')}</div><button class="round" id="sayWord" aria-label="读单词">${IC.speaker}</button></div>
     <div class="rv-meta"><span class="ipa">${w.ipa}</span><span class="zh">${w.zf||w.zh}</span></div>
-    ${w.s?`<div class="rv-sent"><div><p>${markSent(w.s,w)}</p>${w.sc?`<p class="sc">${w.sc}</p>`:''}</div><button class="round sm" id="saySent" aria-label="读例句">${IC.speaker}</button></div>`:''}
+    ${w.s?`<div class="rv-sent${w.s.length>110?' long':''}"><div><p>${markSent(w.s,w)}</p>${w.sc?`<p class="sc">${w.sc}</p>`:''}</div><button class="round sm" id="saySent" aria-label="读例句">${IC.speaker}</button></div>`:''}
     <div class="auto-go" aria-hidden="true"><i id="autoGo"></i></div></div>`;
   const AUTO=reduced?1200:3600;let goT;
   const arm=()=>{clearTimeout(goT);const b=$('#autoGo');if(b){b.style.transition='none';b.style.width='0';b.offsetWidth;b.style.transition=`width ${AUTO}ms linear`;b.style.width='100%'}goT=setTimeout(()=>{if(S.current===it)collect()},AUTO)};
