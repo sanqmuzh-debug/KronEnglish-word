@@ -85,6 +85,7 @@ button:focus-visible{outline:3px solid var(--sky);outline-offset:3px}
   padding:16px 16px 20px;display:flex;flex-direction:column;gap:14px;scrollbar-width:none}
 .coach{display:flex;gap:10px;align-items:flex-end}
 .coach .kron{width:62px;height:62px;flex:none}
+.stage:has(.reveal) .coach{display:none}
 .bubble{position:relative;flex:1;min-width:0;background:var(--surface-2);border-radius:20px 20px 20px 6px;padding:10px 14px 11px;font-size:15px;line-height:1.55}
 .bubble small{display:block;font:600 11.5px var(--font-display);letter-spacing:.08em;color:var(--kron-d);margin-bottom:1px}
 .bubble.pop{animation:bubble .45s cubic-bezier(.34,1.6,.64,1)}
