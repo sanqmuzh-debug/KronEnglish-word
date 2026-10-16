@@ -10,7 +10,9 @@ for n in sys.argv[1:]:
     if [x['w'] for x in got] != todo: print(n, '词表对不上'); bad += 1
     for x in got:
         p = []
-        if x['w'].lower().rstrip('.?!') not in x['tw'].lower(): p.append('缺目标词')
+        # 词头带 OCR 残留时写 "say"：句子里实际用的干净说法；带 ... 的词块逐段检查
+        t = (x.get('say') or x['w']).lower().rstrip('.?!')
+        if not all(seg.strip() in x['tw'].lower() for seg in re.split(r'\.{2,}|…', t) if seg.strip()): p.append('缺目标词')
         k = len(re.findall(r"[A-Za-z']+", x['tw']))
         if not 8 <= k <= 18: p.append(f'{k}词')
         if len(x['twc']) > 32: p.append(f'twc{len(x["twc"])}')

@@ -85,7 +85,7 @@ m16 tables turned：Kron 整别人反被整
 ```
 
 ## 词头有问题时
-个别词头带 OCR 残留（如 complexity n、2ussian、1 / one）：w 原样照抄不改，按显然的本意写（complexity、Russian、one），并在 notes-<段号>.txt 里记一行「批号 词头 → 本意」。
+个别词头带 OCR 残留（如 complexity n、2ussian、1 / one）：w 原样照抄不改，按显然的本意写（complexity、Russian、one），在这一条里加 "say": "本意"（check.py 会用它检查），并在 notes-<段号>.txt 里记一行「批号 词头 → 本意」。带省略号的词块（bring... under control）照常写成完整句子，check.py 会分段检查，不用加 say。
 
 ## 输出
 每批一个文件 data/twisters/NNN.json（对应 todo-NNN.json），JSON 数组，顺序同 todo，每项 {"w","meme","tw","twc","hint","prompt"}，w 原样照抄 todo。
