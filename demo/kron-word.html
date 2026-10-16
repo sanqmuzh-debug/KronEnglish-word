@@ -46,11 +46,12 @@ button:focus-visible{outline:3px solid var(--sky);outline-offset:3px}
 .brand{display:flex;align-items:center;gap:8px;font:700 21px var(--font-display);letter-spacing:-.01em;white-space:nowrap}
 .brand .kron{width:36px;height:36px}
 .top-mid{flex:1;min-width:0;display:flex;flex-direction:column;gap:6px}
-.top-mid b{font:700 15px/1.1 var(--font-display);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tm-row{display:flex;align-items:baseline;gap:10px}
+.top-mid b{flex:1;min-width:0;font:700 15px/1.1 var(--font-display);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .progress{height:14px;border-radius:99px;background:var(--surface-2);overflow:hidden}
 .progress i{display:block;height:100%;width:0;border-radius:99px;background:var(--ok);position:relative;transition:width .7s cubic-bezier(.34,1.5,.64,1)}
 .progress i::after{content:"";position:absolute;left:8px;right:8px;top:3px;height:4px;border-radius:9px;background:rgba(255,255,255,.4)}
-.count{font:600 15px var(--font-display);font-variant-numeric:tabular-nums;color:var(--muted);min-width:42px;text-align:right}
+.count{font:600 14px/1.1 var(--font-display);font-variant-numeric:tabular-nums;color:var(--muted);text-align:right}
 .icon-btn{width:42px;height:42px;display:grid;place-items:center;border-radius:14px;background:var(--surface);border:2px solid var(--line);border-bottom-width:4px;color:var(--muted);transition:transform .08s}
 .icon-btn:active{transform:translateY(2px);border-bottom-width:2px}
 .icon-btn svg{width:20px;height:20px}
@@ -73,7 +74,7 @@ button:focus-visible{outline:3px solid var(--sky);outline-offset:3px}
 .bcard:hover{--y:-4px}
 .bcard:active{--y:2px}
 .bc-emoji{font-size:30px;line-height:1}
-.bc-zh{font:600 14px var(--font-ui);letter-spacing:.02em;text-shadow:0 1px 0 rgba(0,0,0,.12)}
+.bc-zh{max-width:88%;font:600 14px var(--font-ui);letter-spacing:.02em;text-shadow:0 1px 0 rgba(0,0,0,.12);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .bc-dots{display:flex;gap:4px}.bc-dots i{width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.8)}
 .bcard.want{animation:want 1.6s ease-in-out infinite}
 .bcard.want2{animation:want 0.9s ease-in-out infinite}
@@ -361,8 +362,7 @@ button:focus-visible{outline:3px solid var(--sky);outline-offset:3px}
 <div class="app">
   <header class="top">
     <button class="icon-btn" id="goHome" aria-label="回书架"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg></button>
-    <div class="top-mid"><b id="bookName"></b><div class="progress" role="progressbar" aria-label="消除进度"><i id="bar"></i></div></div>
-    <div class="count" id="count">0/9</div>
+    <div class="top-mid"><div class="tm-row"><b id="bookName"></b><span class="count" id="count">0/9</span></div><div class="progress" role="progressbar" aria-label="消除进度"><i id="bar"></i></div></div>
     <button class="icon-btn" id="openSettings" aria-label="设置">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M4 7h10M18 7h2M4 17h4M12 17h8"/><circle cx="16" cy="7" r="2.4"/><circle cx="10" cy="17" r="2.4"/></svg>
     </button>
@@ -632,12 +632,10 @@ function renderWork(){
   const pool=shuffle([...w.syl.map((s,i)=>({t:s,say:w.say[i],src:brickSrc(w,i)})),...distractor(w)]);
   work.innerHTML=`<div class="meaning" id="meaning">${pic(w,'m')}<b>${w.zh}</b></div>
   <div class="slots" id="slots">${w.syl.map(()=>'<div class="slot"></div>').join('')}</div>
-  <div class="pool" id="pool">${pool.map((p,i)=>`<div class="cell"><button class="brick" style="--i:${i}" data-t="${p.t}" data-say="${p.say}" data-src="${p.src}" aria-label="积木 ${p.t}">${p.t}</button></div>`).join('')}</div>
-  <div class="actions"><button class="btn" id="hearWord">${IC.speaker}听整词</button><button class="btn" id="resetBricks">${IC.undo}全部放回</button></div>`;
+  <div class="pool" id="pool">${pool.map((p,i)=>`<div class="cell"><button class="brick" style="--i:${i}" data-t="${p.t}" data-say="${p.say}" data-src="${p.src}" aria-label="积木 ${p.t}">${p.t}</button></div>`).join('')}</div>`;
   clip(w.clip||w.w);work.querySelectorAll('.brick').forEach(b=>clip(b.dataset.src));
   work.querySelectorAll('.cell').forEach(c=>{const b=c.firstElementChild;c.style.width=b.offsetWidth+'px';b._home=c;b.onclick=()=>onBrick(b)});
-  $('#hearWord').onclick=()=>{ac();S.listens++;sayWord(w,.7)};
-  $('#resetBricks').onclick=()=>{document.querySelectorAll('#slots .brick').forEach(b=>moveTo(b,b._home));sfx.back()};
+  setTimeout(()=>{if(S.current===it)sayWord(w,.7)},420);  // 拿到卡片就自动读整词
   coach(w.hint||'点一点积木听听，再按顺序拼起来。','KRON');setBaseMood('thinking');
 }
 function moveTo(b,target){const f=b.getBoundingClientRect();target.appendChild(b);b.style.animation='none';flip(b,f)}

@@ -122,8 +122,12 @@ def main():
                 ws = []
                 for x in u['words']:
                     s = slug(x['text'])
-                    r = r_by.get((pre, s)) or r_word.get(x['text'].lower())
-                    img = img_by.get((pre, s))
+                    r, img = r_by.get((pre, s)), img_by.get((pre, s))
+                    if not r and x['text'].lower() in r_word:
+                        # 教材里没写句子的词借用考纲词的长句：图也跟着用那张，图和句子才是同一个画面
+                        r = r_word[x['text'].lower()]
+                        kimg = os.path.basename(r.get('image') or '')
+                        if kimg in images and PLACEHOLDER not in (r.get('sentence') or ''): img = kimg
                     ws.append(make(x['text'], x.get('translation'), x.get('ipa'), x.get('kronTip'), x.get('example') or x.get('sentence'),
                                    x.get('exampleTranslation') or x.get('sentenceZh'), r, img))
                 name = u.get('unitName') or key
