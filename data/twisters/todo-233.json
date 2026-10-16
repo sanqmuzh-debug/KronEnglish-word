@@ -1,0 +1,122 @@
+[
+{
+"w": "proficiency",
+"syl": "pro·fi·cien·cy",
+"zh": "熟练",
+"lvl": "pep"
+},
+{
+"w": "cage",
+"syl": "cage",
+"zh": "笼子vt. 关在笼子里",
+"lvl": "pep"
+},
+{
+"w": "collar",
+"syl": "col·lar",
+"zh": "颈圈",
+"lvl": "pep"
+},
+{
+"w": "flea collar",
+"syl": "flea·col·lar",
+"zh": "灭蚤颈圈",
+"lvl": "pep"
+},
+{
+"w": "finance",
+"syl": "fi·nance",
+"zh": "资金",
+"lvl": "pep"
+},
+{
+"w": "receipt",
+"syl": "re·ceipt",
+"zh": "收据",
+"lvl": "pep"
+},
+{
+"w": "certificate",
+"syl": "cer·tif·i·cate",
+"zh": "合格证书",
+"lvl": "pep"
+},
+{
+"w": "employer",
+"syl": "em·ploy·er",
+"zh": "雇主",
+"lvl": "pep"
+},
+{
+"w": "acquire",
+"syl": "ac·qui·re",
+"zh": "获得",
+"lvl": "pep"
+},
+{
+"w": "olivia",
+"syl": "o·liv·i·a",
+"zh": "奥利维娅",
+"lvl": "pep"
+},
+{
+"w": "PETS",
+"syl": "P·E·T·S",
+"zh": "全国英语等级考试",
+"lvl": "pep"
+},
+{
+"w": "i'm",
+"syl": "im",
+"zh": "",
+"lvl": "bnu"
+},
+{
+"w": "hello",
+"syl": "hel·lo",
+"zh": "喂，你好很高兴",
+"lvl": "bnu"
+},
+{
+"w": "Nice to meet you",
+"syl": "Nice·to·meet·you",
+"zh": "认识你！你叫什么",
+"lvl": "bnu"
+},
+{
+"w": "What's your name",
+"syl": "Whats·your·name",
+"zh": "名字？我的",
+"lvl": "bnu"
+},
+{
+"w": "my",
+"syl": "my",
+"zh": "我的",
+"lvl": "bnu"
+},
+{
+"w": "this",
+"syl": "this",
+"zh": "这，这个那，那个",
+"lvl": "bnu"
+},
+{
+"w": "that",
+"syl": "that",
+"zh": "爸爸",
+"lvl": "bnu"
+},
+{
+"w": "and",
+"syl": "and",
+"zh": "妈妈",
+"lvl": "bnu"
+},
+{
+"w": "no",
+"syl": "no",
+"zh": "不，不行",
+"lvl": "bnu"
+}
+]

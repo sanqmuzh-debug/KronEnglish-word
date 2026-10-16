@@ -1,0 +1,122 @@
+[
+{
+"w": "catching",
+"syl": "catch·ing",
+"zh": "接球",
+"lvl": "pu"
+},
+{
+"w": "hitting",
+"syl": "hit·ting",
+"zh": "击打",
+"lvl": "pu"
+},
+{
+"w": "kicking",
+"syl": "kick·ing",
+"zh": "踢中",
+"lvl": "pu"
+},
+{
+"w": "running",
+"syl": "run·ning",
+"zh": "奔跑",
+"lvl": "pu"
+},
+{
+"w": "throwing",
+"syl": "throw·ing",
+"zh": "投掷",
+"lvl": "pu"
+},
+{
+"w": "rug",
+"syl": "rug",
+"zh": "小地毯 / 垫子",
+"lvl": "pu"
+},
+{
+"w": "jellyfish",
+"syl": "jel·ly·fish",
+"zh": "水母 / 海蜇",
+"lvl": "pu"
+},
+{
+"w": "Grandma Friendly",
+"syl": "Grand·ma·Friend·ly",
+"zh": "弗兰德利奶奶 (慈祥和蔼的奶奶)",
+"lvl": "pu"
+},
+{
+"w": "Grandpa Friendly",
+"syl": "Grand·pa·Friend·ly",
+"zh": "弗兰德利爷爷 (智慧风趣的爷爷)",
+"lvl": "pu"
+},
+{
+"w": "leaf / leaves",
+"syl": "leaf·leaves",
+"zh": "树叶 (单数",
+"lvl": "pu"
+},
+{
+"w": "tractor",
+"syl": "trac·tor",
+"zh": "拖拉机 (农场大型动力作业车)",
+"lvl": "pu"
+},
+{
+"w": "have a shower",
+"syl": "have·a·show·er",
+"zh": "冲凉",
+"lvl": "pu"
+},
+{
+"w": "listen to music",
+"syl": "list·en·to·mu·sic",
+"zh": "听音乐",
+"lvl": "pu"
+},
+{
+"w": "play video games",
+"syl": "play·vid·e·o·games",
+"zh": "玩电子游戏",
+"lvl": "pu"
+},
+{
+"w": "practise basketball",
+"syl": "prac·tise·bas·ket·ball",
+"zh": "练习打篮球",
+"lvl": "pu"
+},
+{
+"w": "read a comic / comic book",
+"syl": "read·a·com·ic·com·ic·book",
+"zh": "读漫画书",
+"lvl": "pu"
+},
+{
+"w": "watch a film",
+"syl": "watch·a·film",
+"zh": "看电影",
+"lvl": "pu"
+},
+{
+"w": "write an email",
+"syl": "write·an·e·mail",
+"zh": "写电子邮件",
+"lvl": "pu"
+},
+{
+"w": "film star",
+"syl": "film·star",
+"zh": "电影明星",
+"lvl": "pu"
+},
+{
+"w": "pop star",
+"syl": "pop·star",
+"zh": "流行歌星",
+"lvl": "pu"
+}
+]

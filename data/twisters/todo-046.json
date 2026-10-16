@@ -1,0 +1,122 @@
+[
+{
+"w": "notice",
+"syl": "no·tice",
+"zh": "通知",
+"lvl": "pep"
+},
+{
+"w": "locker",
+"syl": "lock·er",
+"zh": "储物柜，锁柜",
+"lvl": "pep"
+},
+{
+"w": "drawer",
+"syl": "drawer",
+"zh": "抽屉",
+"lvl": "pep"
+},
+{
+"w": "at the back",
+"syl": "at·the·back",
+"zh": "在 后面",
+"lvl": "pep"
+},
+{
+"w": "corner",
+"syl": "cor·ner",
+"zh": "角",
+"lvl": "pep"
+},
+{
+"w": "bookcase",
+"syl": "book·case",
+"zh": "书架",
+"lvl": "pep"
+},
+{
+"w": "screen",
+"syl": "screen",
+"zh": "屏幕",
+"lvl": "pep"
+},
+{
+"w": "at school",
+"syl": "at·school",
+"zh": "在学校",
+"lvl": "pep"
+},
+{
+"w": "different from",
+"syl": "dif·fe·rent·from",
+"zh": "与・・・・不一样",
+"lvl": "pep"
+},
+{
+"w": "modern",
+"syl": "mod·ern",
+"zh": "现代的",
+"lvl": "pep"
+},
+{
+"w": "do exercises",
+"syl": "do·ex·er·ci·ses",
+"zh": "做体操",
+"lvl": "pep"
+},
+{
+"w": "raise",
+"syl": "raise",
+"zh": "使升高",
+"lvl": "pep"
+},
+{
+"w": "flag",
+"syl": "flag",
+"zh": "旗",
+"lvl": "pep"
+},
+{
+"w": "most",
+"syl": "most",
+"zh": "大多数",
+"lvl": "pep"
+},
+{
+"w": "change",
+"syl": "change",
+"zh": "改变",
+"lvl": "pep"
+},
+{
+"w": "seat",
+"syl": "seat",
+"zh": "座位",
+"lvl": "pep"
+},
+{
+"w": "How about..",
+"syl": "How·a·bout",
+"zh": "怎么样？",
+"lvl": "pep"
+},
+{
+"w": "similar",
+"syl": "sim·i·lar",
+"zh": "相似的， 类似的",
+"lvl": "pep"
+},
+{
+"w": "similar to",
+"syl": "sim·i·lar·to",
+"zh": "和・・・・相似",
+"lvl": "pep"
+},
+{
+"w": "Dye for now",
+"syl": "Dye·for·now",
+"zh": "再见",
+"lvl": "pep"
+}
+]

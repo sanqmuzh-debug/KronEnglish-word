@@ -1,0 +1,122 @@
+[
+{
+"w": "shoes",
+"syl": "shoes",
+"zh": "太，过分",
+"lvl": "bnu"
+},
+{
+"w": "socks",
+"syl": "socks",
+"zh": "袜子 (复数)",
+"lvl": "bnu"
+},
+{
+"w": "gone",
+"syl": "gone",
+"zh": "桌子，台子",
+"lvl": "bnu"
+},
+{
+"w": "get... back",
+"syl": "get·back",
+"zh": "拿回某物在⋯⋯后面",
+"lvl": "bnu"
+},
+{
+"w": "train station",
+"syl": "train·sta·tion",
+"zh": "劳驾（用于",
+"lvl": "bnu"
+},
+{
+"w": "dancer",
+"syl": "dan·cer",
+"zh": "舞蹈演员",
+"lvl": "bnu"
+},
+{
+"w": "again",
+"syl": "a·gain",
+"zh": "又，再一次",
+"lvl": "bnu"
+},
+{
+"w": "week",
+"syl": "week",
+"zh": "周，星期",
+"lvl": "bnu"
+},
+{
+"w": "night",
+"syl": "night",
+"zh": "下午，午后",
+"lvl": "bnu"
+},
+{
+"w": "morning",
+"syl": "mor·ning",
+"zh": "早晨，上午太空",
+"lvl": "bnu"
+},
+{
+"w": "question",
+"syl": "ques·tion",
+"zh": "什么时候",
+"lvl": "bnu"
+},
+{
+"w": "let's",
+"syl": "lets",
+"zh": "让我们…⋯吧",
+"lvl": "bnu"
+},
+{
+"w": "free",
+"syl": "free",
+"zh": "乘公共汽车",
+"lvl": "bnu"
+},
+{
+"w": "by bike",
+"syl": "by·bike",
+"zh": "买，购买",
+"lvl": "bnu"
+},
+{
+"w": "by car",
+"syl": "by·car",
+"zh": "步行",
+"lvl": "bnu"
+},
+{
+"w": "by taxi",
+"syl": "by·tax·i",
+"zh": "",
+"lvl": "bnu"
+},
+{
+"w": "weather report",
+"syl": "weath·er·re·port",
+"zh": "害怕",
+"lvl": "bnu"
+},
+{
+"w": "last night",
+"syl": "last·night",
+"zh": "",
+"lvl": "bnu"
+},
+{
+"w": "are",
+"syl": "are",
+"zh": "空气",
+"lvl": "bnu"
+},
+{
+"w": "Earth",
+"syl": "Earth",
+"zh": "昨天",
+"lvl": "bnu"
+}
+]

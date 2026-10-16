@@ -1,0 +1,122 @@
+[
+{
+"w": "farmland",
+"syl": "farm·land",
+"zh": "耕地",
+"lvl": "pep"
+},
+{
+"w": "lack",
+"syl": "lack",
+"zh": "缺乏",
+"lvl": "pep"
+},
+{
+"w": "bush",
+"syl": "bush",
+"zh": "灌木",
+"lvl": "pep"
+},
+{
+"w": "root",
+"syl": "root",
+"zh": "根",
+"lvl": "pep"
+},
+{
+"w": "soil",
+"syl": "soil",
+"zh": "土壤",
+"lvl": "pep"
+},
+{
+"w": "support",
+"syl": "sup·port",
+"zh": "支持",
+"lvl": "pep"
+},
+{
+"w": "corn",
+"syl": "corn",
+"zh": "玉米",
+"lvl": "pep"
+},
+{
+"w": "high-tech",
+"syl": "high·tech",
+"zh": "高科技",
+"lvl": "pep"
+},
+{
+"w": "greenhouse",
+"syl": "green·house",
+"zh": "温室",
+"lvl": "pep"
+},
+{
+"w": "highway",
+"syl": "high·way",
+"zh": "公路",
+"lvl": "pep"
+},
+{
+"w": "attraction",
+"syl": "a·ttrac·tion",
+"zh": "向在的地方",
+"lvl": "pep"
+},
+{
+"w": "product",
+"syl": "prod·uct",
+"zh": "产品",
+"lvl": "pep"
+},
+{
+"w": "greatly",
+"syl": "great·ly",
+"zh": "大大地",
+"lvl": "pep"
+},
+{
+"w": "socialist",
+"syl": "so·cia·list",
+"zh": "社会主义n. 社会主义者",
+"lvl": "pep"
+},
+{
+"w": "e-payment",
+"syl": "e·pay·ment",
+"zh": "电子支付",
+"lvl": "pep"
+},
+{
+"w": "housing",
+"syl": "hou·sing",
+"zh": "住房",
+"lvl": "pep"
+},
+{
+"w": "digital",
+"syl": "dig·i·tal",
+"zh": "数字",
+"lvl": "pep"
+},
+{
+"w": "audio",
+"syl": "au·di·o",
+"zh": "音频的 音频",
+"lvl": "pep"
+},
+{
+"w": "dirt",
+"syl": "dirt",
+"zh": "泥土",
+"lvl": "pep"
+},
+{
+"w": "track",
+"syl": "track",
+"zh": "小路",
+"lvl": "pep"
+}
+]

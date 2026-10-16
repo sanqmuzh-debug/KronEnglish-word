@@ -1,0 +1,122 @@
+[
+{
+"w": "wrap",
+"syl": "wrap",
+"zh": "包、裏",
+"lvl": "pep"
+},
+{
+"w": "bathtub",
+"syl": "bath·tub",
+"zh": "浴缸",
+"lvl": "pep"
+},
+{
+"w": "slip",
+"syl": "slip",
+"zh": "滑倒",
+"lvl": "pep"
+},
+{
+"w": "mosquito",
+"syl": "mos·qui·to",
+"zh": "蚊子",
+"lvl": "pep"
+},
+{
+"w": "elderly",
+"syl": "el·der·ly",
+"zh": "年纪较大的",
+"lvl": "pep"
+},
+{
+"w": "carpet",
+"syl": "car·pet",
+"zh": "地毯",
+"lvl": "pep"
+},
+{
+"w": "operator",
+"syl": "op·e·ra·tor",
+"zh": "电话接线员",
+"lvl": "pep"
+},
+{
+"w": "ambulance",
+"syl": "am·bu·lance",
+"zh": "救护车",
+"lvl": "pep"
+},
+{
+"w": "delay",
+"syl": "de·lay",
+"zh": "推迟",
+"lvl": "pep"
+},
+{
+"w": "needle",
+"syl": "ne·edle",
+"zh": "针",
+"lvl": "pep"
+},
+{
+"w": "id needle",
+"syl": "id·ne·edle",
+"zh": "静脉注射针",
+"lvl": "pep"
+},
+{
+"w": "vital sign",
+"syl": "vi·tal·sign",
+"zh": "生命体征",
+"lvl": "pep"
+},
+{
+"w": "ward",
+"syl": "ward",
+"zh": "病房",
+"lvl": "pep"
+},
+{
+"w": "sprain",
+"syl": "sprain",
+"zh": "扭伤 扭伤",
+"lvl": "pep"
+},
+{
+"w": "ankle",
+"syl": "an·kle",
+"zh": "踝",
+"lvl": "pep"
+},
+{
+"w": "bleeding",
+"syl": "bleed·ing",
+"zh": "流血",
+"lvl": "pep"
+},
+{
+"w": "bleed",
+"syl": "bleed",
+"zh": "流血",
+"lvl": "pep"
+},
+{
+"w": "panic",
+"syl": "pan·ic",
+"zh": "惊慌n. 惊恐",
+"lvl": "pep"
+},
+{
+"w": "interrupt",
+"syl": "in·ter·rupt",
+"zh": "打断",
+"lvl": "pep"
+},
+{
+"w": "scream",
+"syl": "scream",
+"zh": "尖叫",
+"lvl": "pep"
+}
+]

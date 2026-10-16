@@ -1,0 +1,122 @@
+[
+{
+"w": "railway station / train station",
+"syl": "rail·way·sta·tion·train·sta·tion",
+"zh": "火车站",
+"lvl": "pu"
+},
+{
+"w": "hill(s)",
+"syl": "hill",
+"zh": "小山 / 丘陵",
+"lvl": "pu"
+},
+{
+"w": "land (n)",
+"syl": "land",
+"zh": "陆地 / 土地",
+"lvl": "pu"
+},
+{
+"w": "wood(s)",
+"syl": "wood",
+"zh": "树林 / 森林",
+"lvl": "pu"
+},
+{
+"w": "beetle",
+"syl": "bee·tle",
+"zh": "甲虫",
+"lvl": "pu"
+},
+{
+"w": "octopus",
+"syl": "oc·to·pus",
+"zh": "章鱼",
+"lvl": "pu"
+},
+{
+"w": "tortoise / turtle",
+"syl": "tor·toise·tur·tle",
+"zh": "乌龟",
+"lvl": "pu"
+},
+{
+"w": "match / game",
+"syl": "match·game",
+"zh": "比赛 / 赛事",
+"lvl": "pu"
+},
+{
+"w": "quiz",
+"syl": "quiz",
+"zh": "知识竞答",
+"lvl": "pu"
+},
+{
+"w": "surf (v)",
+"syl": "surf",
+"zh": "冲浪",
+"lvl": "pu"
+},
+{
+"w": "instrument(s)",
+"syl": "ins·tru·ment",
+"zh": "乐器",
+"lvl": "pu"
+},
+{
+"w": "tune / song",
+"syl": "tune·song",
+"zh": "曲调",
+"lvl": "pu"
+},
+{
+"w": "fetch / get",
+"syl": "fetch·get",
+"zh": "去拿来 / 取来",
+"lvl": "pu"
+},
+{
+"w": "look after / take care of",
+"syl": "look·af·ter·take·care·of",
+"zh": "照顾 / 照看",
+"lvl": "pu"
+},
+{
+"w": "tidy / clean",
+"syl": "ti·dy·clean",
+"zh": "整理 / 打扫",
+"lvl": "pu"
+},
+{
+"w": "five past three / five after three",
+"syl": "five·past·three·five·af·ter·three",
+"zh": "三点零五分 (3:05)",
+"lvl": "pu"
+},
+{
+"w": "ten past three / ten after three",
+"syl": "ten·past·three·ten·af·ter·three",
+"zh": "三点十分 (3:10)",
+"lvl": "pu"
+},
+{
+"w": "quarter past three / a quarter after three",
+"syl": "quar·ter·past·three·a·quar·ter·af·ter·three",
+"zh": "三点一刻 (3:15)",
+"lvl": "pu"
+},
+{
+"w": "twenty past three / twenty after three",
+"syl": "twen·ty·past·three·twen·ty·af·ter·three",
+"zh": "三点二十分 (3:20)",
+"lvl": "pu"
+},
+{
+"w": "twenty-five past three / twenty-five after three",
+"syl": "twen·ty·five·past·three·twen·ty·five·af·ter·three",
+"zh": "三点二十五分 (3:25)",
+"lvl": "pu"
+}
+]

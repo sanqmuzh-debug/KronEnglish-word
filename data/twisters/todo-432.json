@@ -1,0 +1,122 @@
+[
+{
+"w": "It's a good thing",
+"syl": "Its·a·good·thing",
+"zh": "幸亏",
+"lvl": "think"
+},
+{
+"w": "in secret",
+"syl": "in·se·cret",
+"zh": "秘密地",
+"lvl": "think"
+},
+{
+"w": "in a panic",
+"syl": "in·a·pan·ic",
+"zh": "惊慌失措地",
+"lvl": "think"
+},
+{
+"w": "in private",
+"syl": "in·pri·vate",
+"zh": "私下里",
+"lvl": "think"
+},
+{
+"w": "on purpose",
+"syl": "on·pur·pose",
+"zh": "故意地",
+"lvl": "think"
+},
+{
+"w": "adaptor",
+"syl": "a·dap·tor",
+"zh": "电源转换插头",
+"lvl": "think"
+},
+{
+"w": "'at' symbol",
+"syl": "at·sym·bol",
+"zh": "@ 符号（艾特符）",
+"lvl": "think"
+},
+{
+"w": "charger",
+"syl": "char·ger",
+"zh": "充电器",
+"lvl": "think"
+},
+{
+"w": "power lead",
+"syl": "pow·er·lead",
+"zh": "电源线",
+"lvl": "think"
+},
+{
+"w": "protective case",
+"syl": "pro·tec·tive·case",
+"zh": "保护壳",
+"lvl": "think"
+},
+{
+"w": "USB port",
+"syl": "U·S·B·port",
+"zh": "USB 端口",
+"lvl": "think"
+},
+{
+"w": "wireless router",
+"syl": "wire·less·rou·ter",
+"zh": "无线路由器",
+"lvl": "think"
+},
+{
+"w": "browse the Internet",
+"syl": "browse·the·In·ter·net",
+"zh": "浏览互联网",
+"lvl": "think"
+},
+{
+"w": "connect to the wi-fi",
+"syl": "con·nect·to·the·wi·fi",
+"zh": "连接无线网络",
+"lvl": "think"
+},
+{
+"w": "plug (something) in",
+"syl": "plug·in",
+"zh": "把…插入电源插座接通",
+"lvl": "think"
+},
+{
+"w": "post an update",
+"syl": "post·an·up·date",
+"zh": "发布动态更新",
+"lvl": "think"
+},
+{
+"w": "sync devices",
+"syl": "sync·de·vi·ces",
+"zh": "同步多设备数据",
+"lvl": "think"
+},
+{
+"w": "sensors",
+"syl": "sen·sors",
+"zh": "传感器",
+"lvl": "think"
+},
+{
+"w": "congestion",
+"syl": "con·ges·tion",
+"zh": "（交通）拥堵",
+"lvl": "think"
+},
+{
+"w": "hub",
+"syl": "hub",
+"zh": "核心枢纽",
+"lvl": "think"
+}
+]

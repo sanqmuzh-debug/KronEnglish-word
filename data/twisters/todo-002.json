@@ -1,0 +1,122 @@
+[
+{
+"w": "grandmother",
+"syl": "grand·moth·er",
+"zh": "（外）祖母",
+"lvl": "pep"
+},
+{
+"w": "mother",
+"syl": "moth·er",
+"zh": "母系",
+"lvl": "pep"
+},
+{
+"w": "father",
+"syl": "fa·ther",
+"zh": "父亲",
+"lvl": "pep"
+},
+{
+"w": "me",
+"syl": "me",
+"zh": "我",
+"lvl": "pep"
+},
+{
+"w": "sister",
+"syl": "sis·ter",
+"zh": "姐",
+"lvl": "pep"
+},
+{
+"w": "family",
+"syl": "fam·i·ly",
+"zh": "家",
+"lvl": "pep"
+},
+{
+"w": "have",
+"syl": "have",
+"zh": "有",
+"lvl": "pep"
+},
+{
+"w": "big",
+"syl": "big",
+"zh": "大",
+"lvl": "pep"
+},
+{
+"w": "cousin",
+"syl": "cous·in",
+"zh": "堂 兄弟",
+"lvl": "pep"
+},
+{
+"w": "brother",
+"syl": "broth·er",
+"zh": "哥",
+"lvl": "pep"
+},
+{
+"w": "baby",
+"syl": "ba·by",
+"zh": "婴儿",
+"lvl": "pep"
+},
+{
+"w": "uncle",
+"syl": "un·cle",
+"zh": "伯父",
+"lvl": "pep"
+},
+{
+"w": "aunt",
+"syl": "aunt",
+"zh": "伯母",
+"lvl": "pep"
+},
+{
+"w": "small",
+"syl": "small",
+"zh": "小",
+"lvl": "pep"
+},
+{
+"w": "like",
+"syl": "like",
+"zh": "喜欢",
+"lvl": "pep"
+},
+{
+"w": "dog",
+"syl": "dog",
+"zh": "狗",
+"lvl": "pep"
+},
+{
+"w": "pet",
+"syl": "pet",
+"zh": "宠物",
+"lvl": "pep"
+},
+{
+"w": "cat",
+"syl": "cat",
+"zh": "猫",
+"lvl": "pep"
+},
+{
+"w": "fish",
+"syl": "fish",
+"zh": "鱼",
+"lvl": "pep"
+},
+{
+"w": "bird",
+"syl": "bird",
+"zh": "乌",
+"lvl": "pep"
+}
+]

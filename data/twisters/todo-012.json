@@ -1,0 +1,122 @@
+[
+{
+"w": "doctor",
+"syl": "doc·tor",
+"zh": "医生",
+"lvl": "pep"
+},
+{
+"w": "farmer",
+"syl": "far·mer",
+"zh": "农场主",
+"lvl": "pep"
+},
+{
+"w": "nurse",
+"syl": "nurse",
+"zh": "护士",
+"lvl": "pep"
+},
+{
+"w": "office",
+"syl": "of·fice",
+"zh": "公司职员",
+"lvl": "pep"
+},
+{
+"w": "factory",
+"syl": "fac·to·ry",
+"zh": "工厂工人",
+"lvl": "pep"
+},
+{
+"w": "busy",
+"syl": "bus·y",
+"zh": "忙碌",
+"lvl": "pep"
+},
+{
+"w": "tired",
+"syl": "tir·ed",
+"zh": "疲倦",
+"lvl": "pep"
+},
+{
+"w": "chore",
+"syl": "chore",
+"zh": "家庭杂务",
+"lvl": "pep"
+},
+{
+"w": "cook",
+"syl": "cook",
+"zh": "烹饪",
+"lvl": "pep"
+},
+{
+"w": "clean",
+"syl": "clean",
+"zh": "打扫",
+"lvl": "pep"
+},
+{
+"w": "room",
+"syl": "room",
+"zh": "房间",
+"lvl": "pep"
+},
+{
+"w": "look after",
+"syl": "look·af·ter",
+"zh": "照顾",
+"lvl": "pep"
+},
+{
+"w": "sweep",
+"syl": "sweep",
+"zh": "扫",
+"lvl": "pep"
+},
+{
+"w": "floor",
+"syl": "floor",
+"zh": "地板",
+"lvl": "pep"
+},
+{
+"w": "together",
+"syl": "to·geth·er",
+"zh": "在一起",
+"lvl": "pep"
+},
+{
+"w": "people",
+"syl": "peo·ple",
+"zh": "人",
+"lvl": "pep"
+},
+{
+"w": "child",
+"syl": "child",
+"zh": "复数children",
+"lvl": "pep"
+},
+{
+"w": "his",
+"syl": "his",
+"zh": "他",
+"lvl": "pep"
+},
+{
+"w": "strong",
+"syl": "strong",
+"zh": "强壮",
+"lvl": "pep"
+},
+{
+"w": "hair",
+"syl": "hair",
+"zh": "头发",
+"lvl": "pep"
+}
+]

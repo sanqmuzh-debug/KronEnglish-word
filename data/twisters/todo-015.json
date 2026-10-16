@@ -1,0 +1,122 @@
+[
+{
+"w": "ms",
+"syl": "ms",
+"zh": "用于女子姓氏或姓名前",
+"lvl": "pep"
+},
+{
+"w": "speak",
+"syl": "speak",
+"zh": "说话",
+"lvl": "pep"
+},
+{
+"w": "weather",
+"syl": "weath·er",
+"zh": "天气",
+"lvl": "pep"
+},
+{
+"w": "hot",
+"syl": "hot",
+"zh": "热",
+"lvl": "pep"
+},
+{
+"w": "bad",
+"syl": "bad",
+"zh": "今人不快",
+"lvl": "pep"
+},
+{
+"w": "cold",
+"syl": "cold",
+"zh": "冷",
+"lvl": "pep"
+},
+{
+"w": "windy",
+"syl": "win·dy",
+"zh": "多风",
+"lvl": "pep"
+},
+{
+"w": "cloudy",
+"syl": "clou·dy",
+"zh": "多云",
+"lvl": "pep"
+},
+{
+"w": "rainy",
+"syl": "rai·ny",
+"zh": "阴雨",
+"lvl": "pep"
+},
+{
+"w": "snowy",
+"syl": "snow·y",
+"zh": "多雪",
+"lvl": "pep"
+},
+{
+"w": "warm",
+"syl": "warm",
+"zh": "温暖",
+"lvl": "pep"
+},
+{
+"w": "tomorrow",
+"syl": "to·mor·row",
+"zh": "在明天",
+"lvl": "pep"
+},
+{
+"w": "rain",
+"syl": "rain",
+"zh": "下雨",
+"lvl": "pep"
+},
+{
+"w": "closed",
+"syl": "closed",
+"zh": "关闭",
+"lvl": "pep"
+},
+{
+"w": "kim",
+"syl": "kim",
+"zh": "电影",
+"lvl": "pep"
+},
+{
+"w": "idea",
+"syl": "i·de·a",
+"zh": "想法",
+"lvl": "pep"
+},
+{
+"w": "fly",
+"syl": "fly",
+"zh": "操纵",
+"lvl": "pep"
+},
+{
+"w": "kite",
+"syl": "kite",
+"zh": "风筝",
+"lvl": "pep"
+},
+{
+"w": "snowman",
+"syl": "snow·man",
+"zh": "雪人",
+"lvl": "pep"
+},
+{
+"w": "fun",
+"syl": "fun",
+"zh": "享乐",
+"lvl": "pep"
+}
+]

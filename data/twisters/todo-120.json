@@ -1,0 +1,122 @@
+[
+{
+"w": "e-book",
+"syl": "e·book",
+"zh": "电子书",
+"lvl": "pep"
+},
+{
+"w": "schoolwork",
+"syl": "school·work",
+"zh": "学校作业",
+"lvl": "pep"
+},
+{
+"w": "recent",
+"syl": "re·cent",
+"zh": "最近",
+"lvl": "pep"
+},
+{
+"w": "frank",
+"syl": "frank",
+"zh": "弗兰克",
+"lvl": "pep"
+},
+{
+"w": "terry",
+"syl": "ter·ry",
+"zh": "特里",
+"lvl": "pep"
+},
+{
+"w": "position",
+"syl": "po·si·tion",
+"zh": "位置",
+"lvl": "pep"
+},
+{
+"w": "sadness",
+"syl": "sad·ness",
+"zh": "悲伤",
+"lvl": "pep"
+},
+{
+"w": "lecture",
+"syl": "lec·ture",
+"zh": "讲座",
+"lvl": "pep"
+},
+{
+"w": "react",
+"syl": "re·act",
+"zh": "作出反应",
+"lvl": "pep"
+},
+{
+"w": "mix-up",
+"syl": "mix·up",
+"zh": "混淆",
+"lvl": "pep"
+},
+{
+"w": "put sth to good use",
+"syl": "put·sth·to·good·use",
+"zh": "有效使用（或利用）某物",
+"lvl": "pep"
+},
+{
+"w": "brain",
+"syl": "brain",
+"zh": "脑",
+"lvl": "pep"
+},
+{
+"w": "chain",
+"syl": "chain",
+"zh": "链条",
+"lvl": "pep"
+},
+{
+"w": "stable",
+"syl": "sta·ble",
+"zh": "稳定的",
+"lvl": "pep"
+},
+{
+"w": "retell",
+"syl": "re·tell",
+"zh": "复述",
+"lvl": "pep"
+},
+{
+"w": "memorize",
+"syl": "mem·o·rize",
+"zh": "记住",
+"lvl": "pep"
+},
+{
+"w": "tick",
+"syl": "tick",
+"zh": "给⋯⋯打钩n. 对号",
+"lvl": "pep"
+},
+{
+"w": "grandson",
+"syl": "grand·son",
+"zh": "孙子",
+"lvl": "pep"
+},
+{
+"w": "ngo through",
+"syl": "ngo·through",
+"zh": "经历",
+"lvl": "pep"
+},
+{
+"w": "happen to",
+"syl": "hap·pen·to",
+"zh": "发生于",
+"lvl": "pep"
+}
+]

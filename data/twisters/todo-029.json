@@ -1,0 +1,122 @@
+[
+{
+"w": "twenty-third",
+"syl": "twen·ty·third",
+"zh": "第二十三（）",
+"lvl": "pep"
+},
+{
+"w": "thirtieth",
+"syl": "thir·ti·eth",
+"zh": "第三十（）",
+"lvl": "pep"
+},
+{
+"w": "other",
+"syl": "oth·er",
+"zh": "其他",
+"lvl": "pep"
+},
+{
+"w": "special",
+"syl": "spe·cial",
+"zh": "特殊",
+"lvl": "pep"
+},
+{
+"w": "show",
+"syl": "show",
+"zh": "展览",
+"lvl": "pep"
+},
+{
+"w": "festival",
+"syl": "fes·ti·val",
+"zh": "节日",
+"lvl": "pep"
+},
+{
+"w": "kitten",
+"syl": "kit·ten",
+"zh": "小猫",
+"lvl": "pep"
+},
+{
+"w": "diary",
+"syl": "dia·ry",
+"zh": "日记",
+"lvl": "pep"
+},
+{
+"w": "noise",
+"syl": "noise",
+"zh": "声音",
+"lvl": "pep"
+},
+{
+"w": "fur",
+"syl": "fur",
+"zh": "浓密软毛",
+"lvl": "pep"
+},
+{
+"w": "open",
+"syl": "o·pen",
+"zh": "开着",
+"lvl": "pep"
+},
+{
+"w": "hers",
+"syl": "hers",
+"zh": "她",
+"lvl": "pep"
+},
+{
+"w": "theirs",
+"syl": "theirs",
+"zh": "他们",
+"lvl": "pep"
+},
+{
+"w": "ours",
+"syl": "ours",
+"zh": "我们",
+"lvl": "pep"
+},
+{
+"w": "climbing",
+"syl": "climb·ing",
+"zh": "-ing形式）（正在）攀登",
+"lvl": "pep"
+},
+{
+"w": "eating",
+"syl": "eat·ing",
+"zh": "（正在）吃",
+"lvl": "pep"
+},
+{
+"w": "playing",
+"syl": "play·ing",
+"zh": "（正在）玩耍",
+"lvl": "pep"
+},
+{
+"w": "jumping",
+"syl": "jump·ing",
+"zh": "-ing形式）（正在）跳",
+"lvl": "pep"
+},
+{
+"w": "drinking",
+"syl": "drink·ing",
+"zh": "形式）（正在）喝（水）",
+"lvl": "pep"
+},
+{
+"w": "sleeping",
+"syl": "sleep·ing",
+"zh": "-ing形式）（正在）睡觉",
+"lvl": "pep"
+}
+]

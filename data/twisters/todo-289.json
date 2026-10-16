@@ -1,0 +1,122 @@
+[
+{
+"w": "mould",
+"syl": "mould",
+"zh": "霉，霉菌",
+"lvl": "bnu"
+},
+{
+"w": "accuracy",
+"syl": "accuracy",
+"zh": "准确性",
+"lvl": "bnu"
+},
+{
+"w": "propose",
+"syl": "pro·pose",
+"zh": "建议， 提议",
+"lvl": "bnu"
+},
+{
+"w": "coincidence",
+"syl": "co·in·ci·dence",
+"zh": "运气",
+"lvl": "bnu"
+},
+{
+"w": "clueless",
+"syl": "clue·less",
+"zh": "一无所知的",
+"lvl": "bnu"
+},
+{
+"w": "incubation",
+"syl": "in·cu·ba·tion",
+"zh": "孵化",
+"lvl": "bnu"
+},
+{
+"w": "evaluation",
+"syl": "e·val·u·a·tion",
+"zh": "评估，评价",
+"lvl": "bnu"
+},
+{
+"w": "theoretical",
+"syl": "the·o·ret·i·cal",
+"zh": "理论的",
+"lvl": "bnu"
+},
+{
+"w": "PhD",
+"syl": "PhD",
+"zh": "博士学位",
+"lvl": "bnu"
+},
+{
+"w": "cosmology",
+"syl": "cos·mo·lo·gy",
+"zh": "宇宙论，宇宙学*",
+"lvl": "bnu"
+},
+{
+"w": "improvement",
+"syl": "im·prove·ment",
+"zh": "改善，改进",
+"lvl": "bnu"
+},
+{
+"w": "revolution",
+"syl": "rev·o·lu·tion",
+"zh": "革命，变革",
+"lvl": "bnu"
+},
+{
+"w": "availability",
+"syl": "a·vail·a·bil·i·ty",
+"zh": "可能性",
+"lvl": "bnu"
+},
+{
+"w": "regulate",
+"syl": "reg·u·late",
+"zh": "控制，管理",
+"lvl": "bnu"
+},
+{
+"w": "specifically",
+"syl": "specifically",
+"zh": "特别地， 特定地",
+"lvl": "bnu"
+},
+{
+"w": "to",
+"syl": "to",
+"zh": "用于动词",
+"lvl": "wy"
+},
+{
+"w": "hi",
+"syl": "hi",
+"zh": "嘿，喂，你好 我",
+"lvl": "wy"
+},
+{
+"w": "be",
+"syl": "be",
+"zh": "是",
+"lvl": "wy"
+},
+{
+"w": "what",
+"syl": "what",
+"zh": "什么",
+"lvl": "wy"
+},
+{
+"w": "your",
+"syl": "your",
+"zh": "你的",
+"lvl": "wy"
+}
+]

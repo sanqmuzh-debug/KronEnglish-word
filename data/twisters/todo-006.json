@@ -1,0 +1,122 @@
+[
+{
+"w": "nine",
+"syl": "nine",
+"zh": "九",
+"lvl": "pep"
+},
+{
+"w": "o'clock",
+"syl": "o·clock",
+"zh": "……⋯点钟",
+"lvl": "pep"
+},
+{
+"w": "cut",
+"syl": "cut",
+"zh": "切块",
+"lvl": "pep"
+},
+{
+"w": "eat",
+"syl": "eat",
+"zh": "吃",
+"lvl": "pep"
+},
+{
+"w": "cake",
+"syl": "cake",
+"zh": "蛋糕",
+"lvl": "pep"
+},
+{
+"w": "where",
+"syl": "where",
+"zh": "在…的地方",
+"lvl": "pep"
+},
+{
+"w": "from",
+"syl": "from",
+"zh": "来目，从⋯来",
+"lvl": "pep"
+},
+{
+"w": "about",
+"syl": "a·bout",
+"zh": "关于",
+"lvl": "pep"
+},
+{
+"w": "today",
+"syl": "to·day",
+"zh": "今天",
+"lvl": "pep"
+},
+{
+"w": "teacher",
+"syl": "tea·cher",
+"zh": "教师",
+"lvl": "pep"
+},
+{
+"w": "student",
+"syl": "stu·dent",
+"zh": "学生",
+"lvl": "pep"
+},
+{
+"w": "after",
+"syl": "af·ter",
+"zh": "在⋯・后面",
+"lvl": "pep"
+},
+{
+"w": "who",
+"syl": "who",
+"zh": "谁",
+"lvl": "pep"
+},
+{
+"w": "girl",
+"syl": "girl",
+"zh": "女孩",
+"lvl": "pep"
+},
+{
+"w": "neighbour",
+"syl": "neigh·bour",
+"zh": "邻居",
+"lvl": "pep"
+},
+{
+"w": "boy",
+"syl": "boy",
+"zh": "男孩",
+"lvl": "pep"
+},
+{
+"w": "woman",
+"syl": "wom·an",
+"zh": "成年女子",
+"lvl": "pep"
+},
+{
+"w": "man",
+"syl": "man",
+"zh": "成年男子",
+"lvl": "pep"
+},
+{
+"w": "mr",
+"syl": "Mr",
+"zh": "用于男子姓氏或姓名前）先生",
+"lvl": "pep"
+},
+{
+"w": "classmate",
+"syl": "class·mate",
+"zh": "同班同学",
+"lvl": "pep"
+}
+]

@@ -1,0 +1,122 @@
+[
+{
+"w": "flew",
+"syl": "flew",
+"zh": "飞了",
+"lvl": "pu"
+},
+{
+"w": "hopped",
+"syl": "hopped",
+"zh": "单脚跳了",
+"lvl": "pu"
+},
+{
+"w": "kicked",
+"syl": "kicked",
+"zh": "踢了 (kick 的过去式)",
+"lvl": "pu"
+},
+{
+"w": "learnt",
+"syl": "learnt",
+"zh": "学会了",
+"lvl": "pu"
+},
+{
+"w": "sailed",
+"syl": "sailed",
+"zh": "航行了",
+"lvl": "pu"
+},
+{
+"w": "skipped",
+"syl": "skipped",
+"zh": "轻快跳跃了",
+"lvl": "pu"
+},
+{
+"w": "threw",
+"syl": "threw",
+"zh": "扔了",
+"lvl": "pu"
+},
+{
+"w": "spots",
+"syl": "spots",
+"zh": "斑点 / 圆点",
+"lvl": "pu"
+},
+{
+"w": "spotted",
+"syl": "spot·ted",
+"zh": "有斑点的",
+"lvl": "pu"
+},
+{
+"w": "stripes",
+"syl": "stripes",
+"zh": "条纹 / 斑纹",
+"lvl": "pu"
+},
+{
+"w": "striped",
+"syl": "striped",
+"zh": "有条纹的",
+"lvl": "pu"
+},
+{
+"w": "rucksack",
+"syl": "ruck·sack",
+"zh": "双肩背包",
+"lvl": "pu"
+},
+{
+"w": "straight on",
+"syl": "straight·on",
+"zh": "笔直向前",
+"lvl": "pu"
+},
+{
+"w": "ice rink",
+"syl": "ice·rink",
+"zh": "溜冰场",
+"lvl": "pu"
+},
+{
+"w": "parking lot",
+"syl": "par·king·lot",
+"zh": "停车场",
+"lvl": "pu"
+},
+{
+"w": "pharmacy",
+"syl": "phar·ma·cy",
+"zh": "药房 / 药店",
+"lvl": "pu"
+},
+{
+"w": "skate park",
+"syl": "skate·park",
+"zh": "滑板公园",
+"lvl": "pu"
+},
+{
+"w": "cab",
+"syl": "cab",
+"zh": "出租车",
+"lvl": "pu"
+},
+{
+"w": "pyjamas",
+"syl": "py·ja·mas",
+"zh": "睡衣裤",
+"lvl": "pu"
+},
+{
+"w": "motorway / highway",
+"syl": "mo·tor·way·high·way",
+"zh": "高速公路",
+"lvl": "pu"
+}
+]

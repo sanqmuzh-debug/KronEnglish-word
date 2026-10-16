@@ -1,0 +1,122 @@
+[
+{
+"w": "kind",
+"syl": "kind",
+"zh": "友好",
+"lvl": "pep"
+},
+{
+"w": "quiet",
+"syl": "qui·et",
+"zh": "文静",
+"lvl": "pep"
+},
+{
+"w": "best",
+"syl": "best",
+"zh": "最好",
+"lvl": "pep"
+},
+{
+"w": "read",
+"syl": "read",
+"zh": "阅读",
+"lvl": "pep"
+},
+{
+"w": "chinese",
+"syl": "chi·nese",
+"zh": "中文",
+"lvl": "pep"
+},
+{
+"w": "play",
+"syl": "play",
+"zh": "玩耍",
+"lvl": "pep"
+},
+{
+"w": "game",
+"syl": "game",
+"zh": "游戏",
+"lvl": "pep"
+},
+{
+"w": "football",
+"syl": "foot·ball",
+"zh": "足球运动",
+"lvl": "pep"
+},
+{
+"w": "basketball",
+"syl": "bas·ket·ball",
+"zh": "篮球运动",
+"lvl": "pep"
+},
+{
+"w": "always",
+"syl": "al·ways",
+"zh": "总是",
+"lvl": "pep"
+},
+{
+"w": "afternoon",
+"syl": "af·ter·noon",
+"zh": "下午",
+"lvl": "pep"
+},
+{
+"w": "there",
+"syl": "there",
+"zh": "表示存在或发生）",
+"lvl": "pep"
+},
+{
+"w": "playground",
+"syl": "play·ground",
+"zh": "游乐场",
+"lvl": "pep"
+},
+{
+"w": "park",
+"syl": "park",
+"zh": "公园",
+"lvl": "pep"
+},
+{
+"w": "over",
+"syl": "o·ver",
+"zh": "在⋯⋯远端（或对面）",
+"lvl": "pep"
+},
+{
+"w": "hospital",
+"syl": "hos·pit·al",
+"zh": "医院",
+"lvl": "pep"
+},
+{
+"w": "shop",
+"syl": "shop",
+"zh": "商店",
+"lvl": "pep"
+},
+{
+"w": "toilet",
+"syl": "toi·let",
+"zh": "厕所",
+"lvl": "pep"
+},
+{
+"w": "bus",
+"syl": "bus",
+"zh": "公共汽车站",
+"lvl": "pep"
+},
+{
+"w": "library",
+"syl": "li·bra·ry",
+"zh": "图书馆",
+"lvl": "pep"
+}
+]

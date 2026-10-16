@@ -1,0 +1,122 @@
+[
+{
+"w": "outer",
+"syl": "ou·ter",
+"zh": "外围",
+"lvl": "pep"
+},
+{
+"w": "outer space",
+"syl": "ou·ter·space",
+"zh": "太空",
+"lvl": "pep"
+},
+{
+"w": "worse",
+"syl": "worse",
+"zh": "更差的",
+"lvl": "pep"
+},
+{
+"w": "take over",
+"syl": "take·o·ver",
+"zh": "接替",
+"lvl": "pep"
+},
+{
+"w": "sci-fi",
+"syl": "sci·fi",
+"zh": "科幻小说（或影片等）",
+"lvl": "pep"
+},
+{
+"w": "ticket",
+"syl": "tick·et",
+"zh": "票",
+"lvl": "pep"
+},
+{
+"w": "positive",
+"syl": "pos·i·tive",
+"zh": "积极乐观的",
+"lvl": "pep"
+},
+{
+"w": "video",
+"syl": "vid·e·o",
+"zh": "视频",
+"lvl": "pep"
+},
+{
+"w": "transport",
+"syl": "trans·port",
+"zh": "交通运输系统",
+"lvl": "pep"
+},
+{
+"w": "system",
+"syl": "sys·tem",
+"zh": "系统",
+"lvl": "pep"
+},
+{
+"w": "efficient",
+"syl": "ef·fi·cient",
+"zh": "效率高的",
+"lvl": "pep"
+},
+{
+"w": "education",
+"syl": "ed·u·ca·tion",
+"zh": "教育",
+"lvl": "pep"
+},
+{
+"w": "length",
+"syl": "length",
+"zh": "时长",
+"lvl": "pep"
+},
+{
+"w": "topic",
+"syl": "top·ic",
+"zh": "话题",
+"lvl": "pep"
+},
+{
+"w": "partner",
+"syl": "part·ner",
+"zh": "搭档",
+"lvl": "pep"
+},
+{
+"w": "pass",
+"syl": "pass",
+"zh": "及格",
+"lvl": "pep"
+},
+{
+"w": "winner",
+"syl": "win·ner",
+"zh": "优胜者",
+"lvl": "pep"
+},
+{
+"w": "cure",
+"syl": "cure",
+"zh": "葯物",
+"lvl": "pep"
+},
+{
+"w": "cancer",
+"syl": "can·cer",
+"zh": "福症",
+"lvl": "pep"
+},
+{
+"w": "concert",
+"syl": "con·cert",
+"zh": "音乐会",
+"lvl": "pep"
+}
+]
