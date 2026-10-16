@@ -1,5 +1,5 @@
 You are producing word-card pictures for Kron Word, an English vocabulary app.
-The attached image is Kron's official character sheet. Kron is a 25 cm plush toy: in every picture keep Kron exactly as on the sheet (proportions, colours, face, quills) and always use this sheet as the character reference.
+The attached image is Kron's official character sheet. Kron is a 25 cm plush toy: always use this sheet as the character reference and keep who Kron is exactly as on the sheet (body shape, proportions, colours, face design, quills). Kron may wear outfits and costumes, hold props, take any pose and pull big expressions to fit each scene.
 Style for every picture: real photography, a live-action film still with the plush Kron placed in a real scene. Not 3D render, not illustration.
 Every picture: Nano Banana 2.1, landscape 4:3, 1 output, no text, captions or watermarks.
 Use each prompt exactly as given; do not rewrite, shorten or merge prompts.
