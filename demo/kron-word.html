@@ -437,10 +437,10 @@ const sampleFor=id=>{const f=findBook(id);return f&&f.sr.id==='think'&&f.b.mark!
 const S={pick:{bk:'pu1',u:0},book:'kids',count:9,muted:false};
 try{const p=JSON.parse(localStorage.getItem('kronword')||'{}');if(p.pick&&findBook(p.pick.bk)){S.pick=p.pick;S.saved=true}if(p.count)S.count=p.count;if(p.muted)S.muted=true}catch(e){}
 S.book=sampleFor(S.pick.bk);
-/* real words: demo/books/<book>.json (scripts/import_legacy.py); pictures from R2 via /img/; clips in audio-fish/ */
+/* real words: demo/books/<book>.json (scripts/import_legacy.py); pictures from R2 via /img/; clips in audio-fish/, newer ones (r:1) from R2 via /au/ */
 const BOOK_DATA={};
 const IMG=n=>'/img/'+encodeURIComponent(n);
-const realWord=x=>({...x,say:x.syl,e:'',clip:'audio-fish/'+x.a,bricks:x.syl.map((_,i)=>`audio-fish/${x.a}-${i}`)});
+const realWord=x=>{const d=x.r?'/au/':'audio-fish/';return{...x,say:x.syl,e:'',clip:d+x.a,bricks:x.syl.map((_,i)=>`${d}${x.a}-${i}`)}};
 function loadBook(id){return BOOK_DATA[id]||(BOOK_DATA[id]=fetch(`books/${id}.json`).then(r=>r.ok?r.json():Promise.reject(r.status)).then(d=>d.units.map(u=>u.w.map(realWord))).catch(e=>{delete BOOK_DATA[id];throw e}))}
 async function unitPool(){const{bk,u}=S.pick;
   try{const units=await loadBook(bk);let pool=units[u]||units[0];for(let k=1;pool.length<6&&k<units.length;k++)pool=pool.concat(units[(u+k)%units.length]);S.pool=pool}

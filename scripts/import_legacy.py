@@ -80,12 +80,17 @@ def main():
 
     d = syllabify.cmu()
     review = []
+    have = set(os.listdir(os.path.join(ROOT, 'demo', 'audio-fish')))
+    todo = {}
 
     def make(text, zh, ipa, hint, sent, sent_cn, r, img):
         toks = syllabify.run_word(text, d, review)
+        if slug(text) + '.mp3' not in have:  # 没有 alex 录音的词：记下来给 make_fish_audio.py，录好放 R2，网页走 /au/
+            todo[text] = toks
         bricks = [x for t in toks for x in t]
         w = {'w': text, 'syl': [x['t'] for x in bricks], 'ipa': ipa or '/' + ' '.join('·'.join(x['ipa'] for x in t) for t in toks).replace('·', '') + '/',
              'zh': short_zh(zh), 'a': slug(text)}
+        if slug(text) + '.mp3' not in have: w['r'] = 1
         if clean(zh) != w['zh']: w['zf'] = clean(zh)
         if r and PLACEHOLDER in (r.get('sentence') or ''):  # 老版约 1500 词只有模板占位句，不拿来用
             if not img and r.get('image'): img = os.path.basename(r['image'])
@@ -153,6 +158,8 @@ def main():
         fp.write('/* scripts/import_legacy.py 生成，别手改 */\nwindow.KRON_SHELF=')
         json.dump(shelf, fp, ensure_ascii=False, separators=(',', ':'))
         fp.write(';\n')
+    json.dump({'words': todo}, open(os.path.join(ROOT, 'data', 'syllables-todo.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=0)
+    print(f'{len(todo)} 个词还没有 alex 录音 → data/syllables-todo.json')
     print('书      词数  有图  有长句  有脑洞')
     for s in stats: print('%-10s %5d %5d %6d %6d' % s)
     print(f'{len(review)} 处拆音节要人看（syllabify 的 review）')
