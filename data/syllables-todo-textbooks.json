@@ -20681,34 +20681,6 @@
 }
 ]
 ],
-"Being roast luck": [
-[
-{
-"t": "Be",
-"arpa": "B IY1",
-"ipa": "bˈiː"
-},
-{
-"t": "ing",
-"arpa": "IH0 NG",
-"ipa": "ɪŋ"
-}
-],
-[
-{
-"t": "roast",
-"arpa": "R OW1 S T",
-"ipa": "ɹˈoʊst"
-}
-],
-[
-{
-"t": "luck",
-"arpa": "L AH1 K",
-"ipa": "lˈʌk"
-}
-]
-],
 "heavy coat": [
 [
 {
@@ -20956,7 +20928,7 @@
 }
 ]
 ],
-"have a cola": [
+"have a headache": [
 [
 {
 "t": "have",
@@ -20969,34 +20941,6 @@
 "t": "a",
 "arpa": "AH0",
 "ipa": "ə"
-}
-],
-[
-{
-"t": "co",
-"arpa": "K OW1",
-"ipa": "kˈoʊ"
-},
-{
-"t": "la",
-"arpa": "L AH0",
-"ipa": "lə"
-}
-]
-],
-"have d headache": [
-[
-{
-"t": "have",
-"arpa": "HH AE1 V",
-"ipa": "hˈæv"
-}
-],
-[
-{
-"t": "d",
-"arpa": "D IY1",
-"ipa": "dˈiː"
 }
 ],
 [
@@ -52544,34 +52488,6 @@
 "t": "less",
 "arpa": "L AH0 S",
 "ipa": "ləs"
-}
-]
-],
-"have a headache": [
-[
-{
-"t": "have",
-"arpa": "HH AE1 V",
-"ipa": "hˈæv"
-}
-],
-[
-{
-"t": "a",
-"arpa": "AH0",
-"ipa": "ə"
-}
-],
-[
-{
-"t": "head",
-"arpa": "HH EH1 D",
-"ipa": "hˈɛd"
-},
-{
-"t": "ache",
-"arpa": "EY2 K",
-"ipa": "ˌeɪk"
 }
 ]
 ],
