@@ -83,6 +83,9 @@ m16 tables turned：Kron 整别人反被整
 }
 ```
 
+## 词头有问题时
+个别词头带 OCR 残留（如 complexity n、2ussian、1 / one）：w 原样照抄不改，按显然的本意写（complexity、Russian、one），并在 notes-<段号>.txt 里记一行「批号 词头 → 本意」。
+
 ## 输出
 每批一个文件 data/twisters/NNN.json（对应 todo-NNN.json），JSON 数组，顺序同 todo，每项 {"w","meme","tw","twc","hint","prompt"}，w 原样照抄 todo。
 写完自查：tw 里含目标词、词数 8–16、twc ≤30 字、hint ≤15 字、prompt 恰好 7 行且首行末行是固定句、meme 合法。
