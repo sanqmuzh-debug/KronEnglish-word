@@ -8,3 +8,8 @@ compatibility_date = "2026-09-01"
 binding = "DB"
 database_name = "kronenglish-production"
 database_id = "b5891cdf-f1e6-4de8-b813-aa14faaacbc6"
+
+# 词卡插画（老版 17110 张，functions/img/[[path]].js 读）
+[[r2_buckets]]
+binding = "IMG"
+bucket_name = "kronword-images"
