@@ -2,7 +2,7 @@
 """把绕口令和新图写进词书（demo/books/*.json）。在 import_legacy.py / import_textbooks.py 之后跑。
 
 绕口令来源：data/twister-samples.json（20 个样张）和 data/twisters/NNN.json（每批 20 条）。
-图：data/tw-images.txt 里列着已经传进 R2（kronword-images）的 tw-<slug>.webp，有图的词才换图。
+图：data/tw-images.txt 里列着已经传进 R2（kronword-images）的 tw-<slug>.webp，图到了的词才整套换上。
 同一个词在哪本书里都换成同一套：s=绕口令，sc=中文，hint=脑洞，img=tw-<slug>.webp。
 
   python3 scripts/apply_twisters.py
@@ -24,9 +24,8 @@ for f in sorted(glob.glob(os.path.join(ROOT, 'demo', 'books', '*.json'))):
     for u in b['units']:
         for w in u['w']:
             it = tw.get(w['w'].lower())
-            if not it: continue
-            w['s'], w['sc'], w['hint'] = it['tw'], it['twc'], it['hint']
-            if f"tw-{slug(it['w'])}.webp" in have: w['img'] = f"tw-{slug(it['w'])}.webp"
+            if not it or f"tw-{slug(it['w'])}.webp" not in have: continue  # 图到了才换，免得绕口令配着旧图
+            w['s'], w['sc'], w['hint'], w['img'] = it['tw'], it['twc'], it['hint'], f"tw-{slug(it['w'])}.webp"
             hit = True; n += 1
     if hit:
         with open(f, 'w', encoding='utf-8') as fp: json.dump(b, fp, ensure_ascii=False, separators=(',', ':'))

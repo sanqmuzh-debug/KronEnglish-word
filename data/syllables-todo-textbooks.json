@@ -69,15 +69,6 @@
 }
 ]
 ],
-"kim": [
-[
-{
-"t": "kim",
-"arpa": "K IH1 M",
-"ipa": "kˈɪm"
-}
-]
-],
 "get together": [
 [
 {
@@ -21076,6 +21067,15 @@
 "t": "back",
 "arpa": "B AE1 K",
 "ipa": "bˈæk"
+}
+]
+],
+"kim": [
+[
+{
+"t": "kim",
+"arpa": "K IH1 M",
+"ipa": "kˈɪm"
 }
 ]
 ],
