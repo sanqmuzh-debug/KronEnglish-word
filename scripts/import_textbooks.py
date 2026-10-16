@@ -4,11 +4,11 @@
 词表来源：国家中小学智慧教育平台的电子课本，每册书后的词汇表页 OCR 出来再人工清洗
 （人名地名、英文释义续行、识别错字已去掉）。每册一本书，单元照课本。
 
-同一个词在别的书里已经有了（Think、Power Up、IELTS、考纲词书或前面的教材），就直接用那一条：
+同一个词在别的书里已经有了（Think、Power Up、IELTS、考纲词书或前面的教材），就直接用那一条（释义也用原来的）：
 同一个词共用一句绕口令、一张图、一套录音。没有的词新拆音节，记进 data/syllables-todo-textbooks.json，
 录好 alex 音频放 R2（au/），网页走 /au/。
 
-先跑 scripts/import_legacy.py，再跑这个；它把教材系列追加进 demo/shelf.js。
+先跑 scripts/import_legacy.py，再跑这个；它把教材系列追加进 demo/shelf.js。最后跑 scripts/apply_twisters.py 换上绕口令和新图。
 
   python3 scripts/import_textbooks.py
 """
@@ -62,12 +62,7 @@ def main():
     def make(text, zh):
         old = known.get(text.lower())
         if old:
-            w = dict(old)
-            if zh:  # 释义用这本课本自己的
-                w['zh'] = short_zh(zh)
-                if strip_pos(zh) != w['zh']: w['zf'] = strip_pos(zh)
-                else: w.pop('zf', None)
-            return w
+            return dict(old)  # 已有的词沿用原来的释义：OCR 出来的中文常带脏字，不拿来覆盖
         toks = syllabify.run_word(text, d, review)
         bricks = [x for t in toks for x in t]
         w = {'w': text, 'syl': [x['t'] for x in bricks],
