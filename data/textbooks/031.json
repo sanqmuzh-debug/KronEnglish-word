@@ -1,0 +1,1627 @@
+{
+ "pub": "北师大",
+ "stage": "初中",
+ "grade": "八年级",
+ "vol": "下册",
+ "id": "98165b99-7f4d-4534-a016-00f82526fc4d",
+ "title": "（根据2022年版课程标准修订）义务教育教科书·英语八年级下册",
+ "created": "2022-09-29",
+ "units": [
+  {
+   "n": "Unit 1",
+   "t": "",
+   "words": [
+    {
+     "w": "technology",
+     "zh": "科技"
+    },
+    {
+     "w": "future",
+     "zh": "未来，将来"
+    },
+    {
+     "w": "electronic",
+     "zh": "电子的"
+    },
+    {
+     "w": "pocket",
+     "zh": "日袋，衣袋"
+    },
+    {
+     "w": "keyboard",
+     "zh": "键盘"
+    },
+    {
+     "w": "smartphone",
+     "zh": "智能手机"
+    },
+    {
+     "w": "robot",
+     "zh": "机人"
+    },
+    {
+     "w": "telephone",
+     "zh": "电话，电话机"
+    },
+    {
+     "w": "screen",
+     "zh": "屏幕；银幕"
+    },
+    {
+     "w": "touch screen",
+     "zh": "触摸屏"
+    },
+    {
+     "w": "lesson",
+     "zh": "课，课程"
+    },
+    {
+     "w": "smart",
+     "zh": "智能的；聪明的"
+    },
+    {
+     "w": "ID",
+     "zh": "身份证明"
+    },
+    {
+     "w": "mark",
+     "zh": "成绩；记号"
+    },
+    {
+     "w": "e-book",
+     "zh": "电子书"
+    },
+    {
+     "w": "invention",
+     "zh": "发明，创意"
+    },
+    {
+     "w": "product",
+     "zh": "产品；产物"
+    },
+    {
+     "w": "development",
+     "zh": "发展"
+    },
+    {
+     "w": "software",
+     "zh": "软件"
+    },
+    {
+     "w": "traditional",
+     "zh": "传统的，习俗的"
+    },
+    {
+     "w": "LCD",
+     "zh": "液晶显示器"
+    },
+    {
+     "w": "already",
+     "zh": "已经，早已"
+    },
+    {
+     "w": "store",
+     "zh": "存储；保存n.百货商店"
+    },
+    {
+     "w": "progress",
+     "zh": "进步，进展"
+    },
+    {
+     "w": "closely",
+     "zh": "紧密地"
+    },
+    {
+     "w": "system",
+     "zh": "系统；体系"
+    },
+    {
+     "w": "allow",
+     "zh": "允许"
+    },
+    {
+     "w": "teach",
+     "zh": "教说明：未做标记角词汇为课标词汇、根据构词法可以推导角词汇和短语。加*词汇为"
+    },
+    {
+     "w": "come true",
+     "zh": "实现；成为现实"
+    },
+    {
+     "w": "card",
+     "zh": "卡片"
+    },
+    {
+     "w": "make use of",
+     "zh": "使用；利用"
+    },
+    {
+     "w": "book",
+     "zh": "预订n.书"
+    },
+    {
+     "w": "ticket",
+     "zh": "票，劵"
+    },
+    {
+     "w": "chat",
+     "zh": "聊天，交谈"
+    },
+    {
+     "w": "medical",
+     "zh": "医疗"
+    },
+    {
+     "w": "professor",
+     "zh": "教授"
+    },
+    {
+     "w": "president",
+     "zh": "总经理，总裁；总统，国家主席"
+    },
+    {
+     "w": "connect",
+     "zh": "连接"
+    },
+    {
+     "w": "e-ticket",
+     "zh": "电子票"
+    },
+    {
+     "w": "elderly",
+     "zh": "年纪较大的，上了年纪"
+    },
+    {
+     "w": "social",
+     "zh": "社交的；社会"
+    },
+    {
+     "w": "media",
+     "zh": "传媒"
+    },
+    {
+     "w": "social media",
+     "zh": "社群媒体"
+    },
+    {
+     "w": "ill",
+     "zh": "有病，不舒服"
+    },
+    {
+     "w": "x-ray",
+     "zh": "射线检查；X光"
+    },
+    {
+     "w": "in person",
+     "zh": "亲自；亲身"
+    },
+    {
+     "w": "opinion",
+     "zh": "意见，想法"
+    },
+    {
+     "w": "almost",
+     "zh": "几乎；差不多"
+    },
+    {
+     "w": "company",
+     "zh": "公司"
+    },
+    {
+     "w": "choice",
+     "zh": "选择"
+    },
+    {
+     "w": "whole",
+     "zh": "全部的，所有的；整体的n. 整体"
+    },
+    {
+     "w": "fixed",
+     "zh": "固定的，不变的"
+    },
+    {
+     "w": "develop",
+     "zh": "发展；加强"
+    },
+    {
+     "w": "present",
+     "zh": "现在的，当前的；出席的"
+    },
+    {
+     "w": "on the other hand",
+     "zh": "另一方面"
+    },
+    {
+     "w": "increasing",
+     "zh": "渐增，越来越多的"
+    },
+    {
+     "w": "sell",
+     "zh": "出售，实"
+    },
+    {
+     "w": "service",
+     "zh": "服务"
+    },
+    {
+     "w": "instead",
+     "zh": "反而；代替"
+    },
+    {
+     "w": "instead of",
+     "zh": "代替，作为⋯的替换"
+    },
+    {
+     "w": "work from home",
+     "zh": "在家工作"
+    },
+    {
+     "w": "imagine",
+     "zh": "想象，设想"
+    },
+    {
+     "w": "college",
+     "zh": "学院；大学"
+    },
+    {
+     "w": "manager",
+     "zh": "经理"
+    },
+    {
+     "w": "purpose",
+     "zh": "目的；意图"
+    },
+    {
+     "w": "compare",
+     "zh": "比较；对比"
+    },
+    {
+     "w": "require",
+     "zh": "需要"
+    },
+    {
+     "w": "include",
+     "zh": "包括"
+    },
+    {
+     "w": "decision-making",
+     "zh": "做决策的n. 做决策"
+    },
+    {
+     "w": "problem-solving",
+     "zh": "解决问题的n. 解决问题"
+    },
+    {
+     "w": "express",
+     "zh": "表达"
+    },
+    {
+     "w": "at the same time",
+     "zh": "同时；然而"
+    },
+    {
+     "w": "listener",
+     "zh": "倾听者"
+    },
+    {
+     "w": "plan",
+     "zh": "计划，打算n. 计划；方案"
+    },
+    {
+     "w": "decision",
+     "zh": "决定"
+    },
+    {
+     "w": "deal",
+     "zh": "经营 n. 协议"
+    },
+    {
+     "w": "deal with",
+     "zh": "处理；解决"
+    },
+    {
+     "w": "situation",
+     "zh": "情况；形势；位置"
+    },
+    {
+     "w": "rather",
+     "zh": "相反，而是；相当；稍微"
+    },
+    {
+     "w": "rather than",
+     "zh": "而不是"
+    },
+    {
+     "w": "conclusion",
+     "zh": "结尾；结论"
+    },
+    {
+     "w": "spare",
+     "zh": "空闲的；闲置的"
+    },
+    {
+     "w": "introduction",
+     "zh": "言；介绍"
+    },
+    {
+     "w": "successful",
+     "zh": "获得成功的，有成就的"
+    },
+    {
+     "w": "businessman",
+     "zh": "商界人 士；企业家"
+    },
+    {
+     "w": "set",
+     "zh": "放置M.一组，一套"
+    },
+    {
+     "w": "set up",
+     "zh": "建立；创立"
+    },
+    {
+     "w": "surf",
+     "zh": "浏览；冲浪"
+    },
+    {
+     "w": "net",
+     "zh": "网络；网"
+    },
+    {
+     "w": "according to",
+     "zh": "根据，依据"
+    },
+    {
+     "w": "pool",
+     "zh": "游泳池；池塘"
+    }
+   ]
+  },
+  {
+   "n": "Unit 2",
+   "t": "",
+   "words": [
+    {
+     "w": "blog",
+     "zh": "博客，网络日志面对面"
+    },
+    {
+     "w": "face-to-face",
+     "zh": ""
+    },
+    {
+     "w": "sign",
+     "zh": "手势；还象"
+    },
+    {
+     "w": "s go language",
+     "zh": "手势语"
+    },
+    {
+     "w": "text message",
+     "zh": "短信"
+    },
+    {
+     "w": "ant faint",
+     "zh": "蚂蚁"
+    },
+    {
+     "w": "wag",
+     "zh": "摇"
+    },
+    {
+     "w": "tail",
+     "zh": "尾巴"
+    },
+    {
+     "w": "interested",
+     "zh": "感兴趣的"
+    },
+    {
+     "w": "missing",
+     "zh": "失踪的；丢失"
+    },
+    {
+     "w": "landmine",
+     "zh": "地雷"
+    },
+    {
+     "w": "discover",
+     "zh": "发现"
+    },
+    {
+     "w": "frog",
+     "zh": "蛙，青蛙"
+    },
+    {
+     "w": "insect",
+     "zh": "昆虫"
+    },
+    {
+     "w": "gentleman",
+     "zh": "先生；绅士"
+    },
+    {
+     "w": "invite",
+     "zh": "邀请"
+    },
+    {
+     "w": "lady",
+     "zh": "女士"
+    },
+    {
+     "w": "as well",
+     "zh": "也"
+    },
+    {
+     "w": "mad",
+     "zh": "很生气的；疯的"
+    },
+    {
+     "w": "area",
+     "zh": "地区；领城"
+    },
+    {
+     "w": "knowledge",
+     "zh": "知识，学问"
+    },
+    {
+     "w": "since",
+     "zh": "目⋯•⋯以来"
+    },
+    {
+     "w": "bark",
+     "zh": "狗吠n. 呎声"
+    },
+    {
+     "w": "trainer",
+     "zh": "驯兽师，教练员；运効鞋"
+    },
+    {
+     "w": "hide",
+     "zh": "躲藏；隐藏"
+    },
+    {
+     "w": "culture",
+     "zh": "文化"
+    },
+    {
+     "w": "decorate",
+     "zh": "装饰"
+    },
+    {
+     "w": "themselves",
+     "zh": "他（她、它）们自己"
+    },
+    {
+     "w": "formal",
+     "zh": "正式的"
+    },
+    {
+     "w": "perhaps",
+     "zh": "可能，大概"
+    },
+    {
+     "w": "anybody",
+     "zh": "任何人"
+    },
+    {
+     "w": "shy",
+     "zh": "羞怯的，腼腆的"
+    },
+    {
+     "w": "correct",
+     "zh": "正确的；恰当时"
+    },
+    {
+     "w": "adult",
+     "zh": "成年人"
+    },
+    {
+     "w": "though",
+     "zh": "可是，然而"
+    },
+    {
+     "w": "treat",
+     "zh": "对待；处理"
+    },
+    {
+     "w": "myself",
+     "zh": "我自己"
+    },
+    {
+     "w": "ourselves",
+     "zh": "我们自己"
+    },
+    {
+     "w": "yourself",
+     "zh": "你自己"
+    },
+    {
+     "w": "yourselves",
+     "zh": "你们自己"
+    },
+    {
+     "w": "himself",
+     "zh": "他自己"
+    },
+    {
+     "w": "herself",
+     "zh": "她自己"
+    },
+    {
+     "w": "itself",
+     "zh": "它自己"
+    },
+    {
+     "w": "local",
+     "zh": "本地的；当地的；地方"
+    },
+    {
+     "w": "generation",
+     "zh": "一代；一代人"
+    },
+    {
+     "w": "teenager",
+     "zh": "至岁之间的）青少年"
+    },
+    {
+     "w": "american",
+     "zh": "美国的"
+    },
+    {
+     "w": "teenage",
+     "zh": "十几岁的，青少年的"
+    },
+    {
+     "w": "increase",
+     "zh": "增长，增多"
+    },
+    {
+     "w": "rapidly",
+     "zh": "迅速地，快速地"
+    },
+    {
+     "w": "monthly",
+     "zh": "每月的"
+    },
+    {
+     "w": "per",
+     "zh": "每"
+    },
+    {
+     "w": "end",
+     "zh": "结尾；终结；末尾终止；结束"
+    },
+    {
+     "w": "at the end of",
+     "zh": "在••结尾；在•⋯・末端"
+    },
+    {
+     "w": "value",
+     "zh": "用途；价值"
+    },
+    {
+     "w": "private",
+     "zh": "私人时；秘密"
+    },
+    {
+     "w": "convenient",
+     "zh": "便利的，方便"
+    },
+    {
+     "w": "such",
+     "zh": "这样，那样的，类似的"
+    },
+    {
+     "w": "such as",
+     "zh": "例如"
+    },
+    {
+     "w": "lead to",
+     "zh": "导致"
+    },
+    {
+     "w": "against",
+     "zh": "违反，反对"
+    },
+    {
+     "w": "law",
+     "zh": "法律"
+    },
+    {
+     "w": "deliver",
+     "zh": "递送，传送"
+    },
+    {
+     "w": "urgent",
+     "zh": "紧急"
+    },
+    {
+     "w": "telegram",
+     "zh": "电报"
+    },
+    {
+     "w": "inconvenient",
+     "zh": "不方便的；引起麻烦的"
+    },
+    {
+     "w": "granny",
+     "zh": "奶奶"
+    },
+    {
+     "w": "wherever",
+     "zh": "在任何地方"
+    },
+    {
+     "w": "interrupt",
+     "zh": "打扰"
+    },
+    {
+     "w": "especially",
+     "zh": "尤其，特别"
+    }
+   ]
+  },
+  {
+   "n": "Unit 3",
+   "t": "",
+   "words": [
+    {
+     "w": "thanksgiving",
+     "zh": "感恩节"
+    },
+    {
+     "w": "dragon",
+     "zh": "龙"
+    },
+    {
+     "w": "dragon Boat Festival",
+     "zh": "端午节"
+    },
+    {
+     "w": "mid-autumn Festival",
+     "zh": "中秋节"
+    },
+    {
+     "w": "firework",
+     "zh": "烟花，烟火"
+    },
+    {
+     "w": "eve",
+     "zh": "前夜"
+    },
+    {
+     "w": "decoration",
+     "zh": "装饰品"
+    },
+    {
+     "w": "luck",
+     "zh": "运气"
+    },
+    {
+     "w": "tofu",
+     "zh": "豆腐"
+    },
+    {
+     "w": "fry",
+     "zh": "油炸"
+    },
+    {
+     "w": "peace",
+     "zh": "和平"
+    },
+    {
+     "w": "fact",
+     "zh": "事实；现实"
+    },
+    {
+     "w": "wish",
+     "zh": "祝愿；希望n. 愿望"
+    },
+    {
+     "w": "midnight",
+     "zh": "午夜，子夜"
+    },
+    {
+     "w": "million",
+     "zh": "一百万"
+    },
+    {
+     "w": "millions of",
+     "zh": "大量"
+    },
+    {
+     "w": "bright",
+     "zh": "明亮的；聪明的"
+    },
+    {
+     "w": "cheer",
+     "zh": "欢呼，喝彩"
+    },
+    {
+     "w": "picnic",
+     "zh": "野"
+    },
+    {
+     "w": "bean",
+     "zh": "豆"
+    },
+    {
+     "w": "biscuit",
+     "zh": "饼干"
+    },
+    {
+     "w": "corn",
+     "zh": "玉米；谷物"
+    },
+    {
+     "w": "fork",
+     "zh": "餐叉"
+    },
+    {
+     "w": "knife",
+     "zh": "刀"
+    },
+    {
+     "w": "plate",
+     "zh": "盘子，碟子"
+    },
+    {
+     "w": "sausage",
+     "zh": "香肠，腊肠"
+    },
+    {
+     "w": "spoon",
+     "zh": "勺，匙"
+    },
+    {
+     "w": "strawberry",
+     "zh": "草莓"
+    },
+    {
+     "w": "a couple of",
+     "zh": "几个"
+    },
+    {
+     "w": "remind",
+     "zh": "提醒，使想起"
+    },
+    {
+     "w": "uniform",
+     "zh": "制服，校服"
+    },
+    {
+     "w": "gate",
+     "zh": "大门"
+    },
+    {
+     "w": "deadline",
+     "zh": "最后期限，截止日期"
+    },
+    {
+     "w": "turkey",
+     "zh": "火鸡；火鸡肉"
+    },
+    {
+     "w": "pumpkin",
+     "zh": "南瓜"
+    },
+    {
+     "w": "pie",
+     "zh": "馅饼；派"
+    },
+    {
+     "w": "nearly",
+     "zh": "几乎，差不多"
+    },
+    {
+     "w": "expect",
+     "zh": "期待；预料"
+    },
+    {
+     "w": "oven",
+     "zh": "烤稍，烤炉"
+    },
+    {
+     "w": "heat",
+     "zh": "加热，变热 n. 热"
+    },
+    {
+     "w": "voice",
+     "zh": "说话声，嗓音"
+    },
+    {
+     "w": "failure",
+     "zh": "失败"
+    },
+    {
+     "w": "worried",
+     "zh": "担忧的"
+    },
+    {
+     "w": "pizza",
+     "zh": "比萨饼"
+    },
+    {
+     "w": "nothing",
+     "zh": "没有什么，没有一件东西"
+    },
+    {
+     "w": "awful",
+     "zh": "很坏的，极讨厌"
+    },
+    {
+     "w": "forward",
+     "zh": "向前"
+    },
+    {
+     "w": "look forward to",
+     "zh": "期望，盼望"
+    },
+    {
+     "w": "sweet",
+     "zh": "甜的，含糖的；惹人喜爱的，可爱的n.糖果"
+    },
+    {
+     "w": "salty",
+     "zh": "咸的，含盐的"
+    },
+    {
+     "w": "prefer",
+     "zh": "更喜欢"
+    },
+    {
+     "w": "beat",
+     "zh": "敲打，击打；击败；心脏跳动n.（心脏的）跳动；击鼓声"
+    },
+    {
+     "w": "enjoyable",
+     "zh": "令人愉快"
+    },
+    {
+     "w": "lantern",
+     "zh": "灯箋"
+    },
+    {
+     "w": "riddle",
+     "zh": "迷，谜语"
+    },
+    {
+     "w": "mooncake",
+     "zh": "月饼"
+    },
+    {
+     "w": "starfruit",
+     "zh": "杨桃"
+    }
+   ]
+  },
+  {
+   "n": "Unit 4",
+   "t": "",
+   "words": [
+    {
+     "w": "difficulty",
+     "zh": "困难，难题"
+    },
+    {
+     "w": "unhappy",
+     "zh": "不快乐的"
+    },
+    {
+     "w": "advise led vary",
+     "zh": "建议，劝告"
+    },
+    {
+     "w": "lonely",
+     "zh": "孤单的，寂寞的"
+    },
+    {
+     "w": "relaxed",
+     "zh": "放松的"
+    },
+    {
+     "w": "satisfied",
+     "zh": "满意，满足"
+    },
+    {
+     "w": "upset",
+     "zh": "难过的，沮丧的"
+    },
+    {
+     "w": "offer",
+     "zh": "提供；提出"
+    },
+    {
+     "w": "control",
+     "zh": "克制；控制"
+    },
+    {
+     "w": "mood",
+     "zh": "情绪，心情"
+    },
+    {
+     "w": "stupid",
+     "zh": "愚蠢的，笨"
+    },
+    {
+     "w": "manage",
+     "zh": "完成 ；应付（困难局面等）"
+    },
+    {
+     "w": "from time to time",
+     "zh": "不时；偶尔"
+    },
+    {
+     "w": "everyday",
+     "zh": "每天的，日常"
+    },
+    {
+     "w": "break the ice",
+     "zh": "打破僵局"
+    },
+    {
+     "w": "stranger",
+     "zh": "陌生人"
+    },
+    {
+     "w": "unless",
+     "zh": "除非"
+    },
+    {
+     "w": "trust",
+     "zh": "相信"
+    },
+    {
+     "w": "achieve",
+     "zh": "达到，元成"
+    },
+    {
+     "w": "produce",
+     "zh": "使产生；生产"
+    },
+    {
+     "w": "spirit",
+     "zh": "情绪；精神"
+    },
+    {
+     "w": "unhealthy",
+     "zh": "不健康的"
+    },
+    {
+     "w": "succeed",
+     "zh": "成功，达到日标"
+    },
+    {
+     "w": "stick to",
+     "zh": "坚持，维持"
+    },
+    {
+     "w": "fail",
+     "zh": "失败；考试不及格"
+    },
+    {
+     "w": "even though",
+     "zh": "即使；纵然；虽然"
+    },
+    {
+     "w": "honest",
+     "zh": "诚实"
+    },
+    {
+     "w": "quarrel",
+     "zh": "爭吵，日角"
+    },
+    {
+     "w": "forgive",
+     "zh": "原谅；宽恕"
+    },
+    {
+     "w": "impolite",
+     "zh": "不礼貌的"
+    },
+    {
+     "w": "circle",
+     "zh": "圈出；画圈 n. 圆圈"
+    },
+    {
+     "w": "amount",
+     "zh": "数量"
+    },
+    {
+     "w": "article",
+     "zh": "文章，报道"
+    },
+    {
+     "w": "attract",
+     "zh": "吸引"
+    },
+    {
+     "w": "suppose",
+     "zh": "认为，推断；设想"
+    },
+    {
+     "w": "limit",
+     "zh": "限量；限制，.限制"
+    },
+    {
+     "w": "somewhere",
+     "zh": "在某处"
+    },
+    {
+     "w": "gap",
+     "zh": "同腸；袋日"
+    },
+    {
+     "w": "generation gap",
+     "zh": "代沟"
+    },
+    {
+     "w": "housework",
+     "zh": "家务劳动"
+    },
+    {
+     "w": "add",
+     "zh": "增加"
+    },
+    {
+     "w": "on one's own",
+     "zh": "独自，单独"
+    },
+    {
+     "w": "enter",
+     "zh": "输入；进入"
+    },
+    {
+     "w": "password",
+     "zh": "密码，日令"
+    },
+    {
+     "w": "praise",
+     "zh": "赞扬，称赞"
+    },
+    {
+     "w": "lazy",
+     "zh": "懒惰的"
+    },
+    {
+     "w": "strict",
+     "zh": "严格昀，严厉时"
+    },
+    {
+     "w": "care",
+     "zh": "关心；在意n. 照料，照顾"
+    },
+    {
+     "w": "care about",
+     "zh": "关心"
+    },
+    {
+     "w": "boss",
+     "zh": "老板；领导"
+    },
+    {
+     "w": "grow up",
+     "zh": "长大"
+    },
+    {
+     "w": "pretty",
+     "zh": "相当，十分"
+    },
+    {
+     "w": "except",
+     "zh": "除・・⋯之外"
+    },
+    {
+     "w": "mess",
+     "zh": "杂乱，不整洁"
+    },
+    {
+     "w": "whenever",
+     "zh": "无论何时"
+    },
+    {
+     "w": "fair",
+     "zh": "公平的"
+    },
+    {
+     "w": "get along with",
+     "zh": "和⋯・・・・・相处"
+    },
+    {
+     "w": "positive",
+     "zh": "积极乐观的"
+    },
+    {
+     "w": "sympathy",
+     "zh": "同情"
+    },
+    {
+     "w": "greeting",
+     "zh": "问候；打招呼"
+    },
+    {
+     "w": "signature",
+     "zh": "签名，签字"
+    },
+    {
+     "w": "scold",
+     "zh": "批评，训斥"
+    }
+   ]
+  },
+  {
+   "n": "Unit 5",
+   "t": "",
+   "words": [
+    {
+     "w": "memorable",
+     "zh": "难忘的"
+    },
+    {
+     "w": "influence",
+     "zh": "影响，作用"
+    },
+    {
+     "w": "confident",
+     "zh": "自信"
+    },
+    {
+     "w": "poem",
+     "zh": "诗"
+    },
+    {
+     "w": "mention",
+     "zh": "提到，说到"
+    },
+    {
+     "w": "pity",
+     "zh": "同情，怜悯"
+    },
+    {
+     "w": "thousands of",
+     "zh": "成千上万的"
+    },
+    {
+     "w": "happiness",
+     "zh": "幸福"
+    },
+    {
+     "w": "mostly",
+     "zh": "主要地；一般地"
+    },
+    {
+     "w": "childhood",
+     "zh": "童年，幼年"
+    },
+    {
+     "w": "count",
+     "zh": "订数；数数"
+    },
+    {
+     "w": "fill",
+     "zh": "充满，填满"
+    },
+    {
+     "w": "judge",
+     "zh": "评价，判断"
+    },
+    {
+     "w": "good-looking",
+     "zh": "漂亮的，好看"
+    },
+    {
+     "w": "great-grandpa",
+     "zh": "曾祖父，外曾祖父"
+    },
+    {
+     "w": "prime minister",
+     "zh": "首相；总理"
+    },
+    {
+     "w": "war",
+     "zh": "战争"
+    },
+    {
+     "w": "curtain",
+     "zh": "窗帘"
+    },
+    {
+     "w": "german",
+     "zh": "德国时"
+    },
+    {
+     "w": "bomb",
+     "zh": "轰炸 n. 炸弹"
+    },
+    {
+     "w": "luckily",
+     "zh": "幸运地"
+    },
+    {
+     "w": "marry",
+     "zh": "结婚"
+    },
+    {
+     "w": "great-grandma",
+     "zh": "曾祖母，外曾祖母"
+    },
+    {
+     "w": "army",
+     "zh": "军队"
+    },
+    {
+     "w": "enemy",
+     "zh": "敌人"
+    },
+    {
+     "w": "available",
+     "zh": "可获得"
+    },
+    {
+     "w": "machine",
+     "zh": "机器"
+    },
+    {
+     "w": "air conditioner",
+     "zh": "空调"
+    },
+    {
+     "w": "cooker",
+     "zh": "炊具，厨灶"
+    },
+    {
+     "w": "dishwasher",
+     "zh": "洗碗机"
+    },
+    {
+     "w": "record player",
+     "zh": "唱机"
+    },
+    {
+     "w": "tiny",
+     "zh": "极小的，微小"
+    },
+    {
+     "w": "central",
+     "zh": "中央的；主要的"
+    },
+    {
+     "w": "central heating",
+     "zh": "中央供暖"
+    },
+    {
+     "w": "wet",
+     "zh": "潮的，湿的"
+    },
+    {
+     "w": "used to",
+     "zh": "过去常常"
+    },
+    {
+     "w": "mainly",
+     "zh": "大部分；主要地"
+    },
+    {
+     "w": "round",
+     "zh": "周围 adi.圆形的"
+    },
+    {
+     "w": "come round",
+     "zh": "短暂拜访"
+    },
+    {
+     "w": "lemon",
+     "zh": "柠檬"
+    },
+    {
+     "w": "second-hand",
+     "zh": "二手的，旧的"
+    },
+    {
+     "w": "weekday",
+     "zh": "工作日"
+    },
+    {
+     "w": "theatre",
+     "zh": "剧院；电影院；戏剧"
+    },
+    {
+     "w": "unforgettable",
+     "zh": "难以忘怀"
+    },
+    {
+     "w": "run into",
+     "zh": "撞上；偶然遇见"
+    },
+    {
+     "w": "bleed",
+     "zh": "流血"
+    },
+    {
+     "w": "frightened",
+     "zh": "受惊的；害怕"
+    },
+    {
+     "w": "pain",
+     "zh": "疼痛"
+    },
+    {
+     "w": "ambulance",
+     "zh": "救护车"
+    },
+    {
+     "w": "take care of",
+     "zh": "照顾"
+    }
+   ]
+  },
+  {
+   "n": "Unit 6",
+   "t": "",
+   "words": [
+    {
+     "w": "detective",
+     "zh": "侦探，營探"
+    },
+    {
+     "w": "british",
+     "zh": "英国人"
+    },
+    {
+     "w": "observe",
+     "zh": "观察"
+    },
+    {
+     "w": "humorous",
+     "zh": "滑稽有趣的，有幽默感的"
+    },
+    {
+     "w": "degree",
+     "zh": "学位；度数；程度"
+    },
+    {
+     "w": "detective story",
+     "zh": "侦探小说"
+    },
+    {
+     "w": "wise",
+     "zh": "充满智慧的"
+    },
+    {
+     "w": "solution",
+     "zh": "解决方法"
+    },
+    {
+     "w": "unclear",
+     "zh": "不清楚"
+    },
+    {
+     "w": "clue",
+     "zh": "线索"
+    },
+    {
+     "w": "mystery",
+     "zh": "神秘的事物，谜"
+    },
+    {
+     "w": "setting",
+     "zh": "情节背景；环境"
+    },
+    {
+     "w": "hall",
+     "zh": "门厅，走廊"
+    },
+    {
+     "w": "truth",
+     "zh": "真相"
+    },
+    {
+     "w": "parlour",
+     "zh": "客厅ord /o:d/n. 大人；阁下；领主"
+    },
+    {
+     "w": "least",
+     "zh": "最少"
+    },
+    {
+     "w": "at least",
+     "zh": "至少"
+    },
+    {
+     "w": "dead",
+     "zh": "死的"
+    },
+    {
+     "w": "pass away",
+     "zh": "过世；逝世"
+    },
+    {
+     "w": "recently",
+     "zh": "最近"
+    },
+    {
+     "w": "doubt",
+     "zh": "疑惑，疑问v怀疑"
+    },
+    {
+     "w": "nobody",
+     "zh": "没人"
+    },
+    {
+     "w": "whether",
+     "zh": "是否"
+    },
+    {
+     "w": "alive",
+     "zh": "活着，在世"
+    },
+    {
+     "w": "death",
+     "zh": "死，死亡"
+    },
+    {
+     "w": "reappear",
+     "zh": "再次出现"
+    },
+    {
+     "w": "claim",
+     "zh": "索取，认领；宣称"
+    },
+    {
+     "w": "valuable",
+     "zh": "贵重的；宝贵"
+    },
+    {
+     "w": "inheritance",
+     "zh": "遗产"
+    },
+    {
+     "w": "impossible",
+     "zh": "不可能"
+    },
+    {
+     "w": "exactly",
+     "zh": "确切地；准确地"
+    },
+    {
+     "w": "ahead",
+     "zh": "向前面；提早"
+    },
+    {
+     "w": "thirsty",
+     "zh": "渴"
+    },
+    {
+     "w": "sadly",
+     "zh": "不幸地"
+    },
+    {
+     "w": "a little",
+     "zh": "少量，一些"
+    },
+    {
+     "w": "sleeve",
+     "zh": "袖子"
+    },
+    {
+     "w": "silk",
+     "zh": "丝绸；蚕丝"
+    },
+    {
+     "w": "evidence",
+     "zh": "证据，证明"
+    },
+    {
+     "w": "create",
+     "zh": "创作；创造"
+    },
+    {
+     "w": "billion",
+     "zh": "十亿"
+    },
+    {
+     "w": "translate",
+     "zh": "翻译"
+    },
+    {
+     "w": "actress",
+     "zh": "女演员"
+    },
+    {
+     "w": "perform",
+     "zh": "表演"
+    },
+    {
+     "w": "wealthy",
+     "zh": "富有的，富裕"
+    },
+    {
+     "w": "pupil",
+     "zh": "学生， 小学生"
+    },
+    {
+     "w": "education",
+     "zh": "教育"
+    },
+    {
+     "w": "cleverly",
+     "zh": "聪明地"
+    },
+    {
+     "w": "guilty",
+     "zh": "犯罪的；感到内疚的"
+    },
+    {
+     "w": "fear",
+     "zh": "俱怕"
+    },
+    {
+     "w": "intelligence",
+     "zh": "智力，才智"
+    },
+    {
+     "w": "crime",
+     "zh": "犯罪活动；罪行"
+    },
+    {
+     "w": "career",
+     "zh": "生涯，职业"
+    },
+    {
+     "w": "print",
+     "zh": "印刷；打印"
+    },
+    {
+     "w": "sales",
+     "zh": "销售量"
+    },
+    {
+     "w": "fiction",
+     "zh": "小说；虚构的事"
+    },
+    {
+     "w": "murder",
+     "zh": "谋杀"
+    },
+    {
+     "w": "dressmaker",
+     "zh": "裁缝"
+    },
+    {
+     "w": "murderer",
+     "zh": "杀人凶手"
+    },
+    {
+     "w": "calm",
+     "zh": "镇靜的；沉看的"
+    },
+    {
+     "w": "pin",
+     "zh": "胸针"
+    },
+    {
+     "w": "policeman",
+     "zh": "警察"
+    },
+    {
+     "w": "heroine",
+     "zh": "女主人公；女英雄"
+    },
+    {
+     "w": "ending",
+     "zh": "结尾；结局"
+    },
+    {
+     "w": "surprising",
+     "zh": "令人吃惊的"
+    },
+    {
+     "w": "case",
+     "zh": "案件北师大版"
+    }
+   ]
+  }
+ ]
+}

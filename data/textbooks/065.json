@@ -1,0 +1,611 @@
+{
+ "pub": "沪教",
+ "stage": "小学",
+ "grade": "六年级",
+ "vol": "上册",
+ "id": "b25139ad-009e-4537-afe7-f393a5e43ef1",
+ "title": "（根据2022年版课程标准修订）义务教育教科书•英语 六年级上册",
+ "created": "2022-09-29",
+ "units": [
+  {
+   "n": "Unit 1",
+   "t": "",
+   "words": [
+    {
+     "w": "month",
+     "zh": "一个月时间；月份"
+    },
+    {
+     "w": "cute",
+     "zh": "可爱"
+    },
+    {
+     "w": "pretty",
+     "zh": "漂亮"
+    },
+    {
+     "w": "handsome",
+     "zh": "英俊；帅气"
+    },
+    {
+     "w": "turtle",
+     "zh": "乌龟"
+    },
+    {
+     "w": "catch",
+     "zh": "逮住；捕捉"
+    },
+    {
+     "w": "fly",
+     "zh": "苍蝇"
+    },
+    {
+     "w": "grow up",
+     "zh": "长大；成长"
+    },
+    {
+     "w": "junior high school",
+     "zh": "初级中学（be） born 出生"
+    }
+   ]
+  },
+  {
+   "n": "Unit 2",
+   "t": "",
+   "words": [
+    {
+     "w": "famous",
+     "zh": "著名；出名"
+    },
+    {
+     "w": "during",
+     "zh": "在⋯⋯期间"
+    },
+    {
+     "w": "spend",
+     "zh": "度过"
+    },
+    {
+     "w": "everyone",
+     "zh": "每个人；所有人"
+    },
+    {
+     "w": "countryside",
+     "zh": "乡村；农村"
+    },
+    {
+     "w": "pick",
+     "zh": "采摘"
+    },
+    {
+     "w": "summer holiday",
+     "zh": "暑假"
+    }
+   ]
+  },
+  {
+   "n": "Unit 3",
+   "t": "",
+   "words": [
+    {
+     "w": "healthy",
+     "zh": "健康；有益于健康"
+    },
+    {
+     "w": "unhealthy",
+     "zh": "不健康的；损害健康"
+    },
+    {
+     "w": "hamburger",
+     "zh": "汉堡包"
+    },
+    {
+     "w": "cola",
+     "zh": "可乐"
+    },
+    {
+     "w": "yesterday",
+     "zh": "昨天"
+    },
+    {
+     "w": "fruit",
+     "zh": "水果"
+    },
+    {
+     "w": "pie",
+     "zh": "馅饼"
+    },
+    {
+     "w": "pizza",
+     "zh": "比萨饼"
+    },
+    {
+     "w": "sandwich",
+     "zh": "三明治"
+    },
+    {
+     "w": "vegetable",
+     "zh": "蔬菜"
+    },
+    {
+     "w": "chicken",
+     "zh": "鸡肉"
+    },
+    {
+     "w": "chocolate",
+     "zh": "巧克力"
+    },
+    {
+     "w": "a little",
+     "zh": "少量"
+    },
+    {
+     "w": "fish ana chips",
+     "zh": "炸鱼薯条"
+    }
+   ]
+  },
+  {
+   "n": "Unit 4",
+   "t": "",
+   "words": [
+    {
+     "w": "neighbour",
+     "zh": "邻居"
+    },
+    {
+     "w": "son",
+     "zh": "儿子"
+    },
+    {
+     "w": "daughter",
+     "zh": "女儿"
+    },
+    {
+     "w": "noisy",
+     "zh": "吵闹"
+    },
+    {
+     "w": "own",
+     "zh": "猫头鹰"
+    },
+    {
+     "w": "big",
+     "zh": "挖 ，掘"
+    },
+    {
+     "w": "make noise",
+     "zh": "制造噪音"
+    }
+   ]
+  },
+  {
+   "n": "Unit 5",
+   "t": "",
+   "words": [
+    {
+     "w": "thousand",
+     "zh": "一千"
+    },
+    {
+     "w": "hundred",
+     "zh": "一百"
+    },
+    {
+     "w": "wild",
+     "zh": "野生环境；野生"
+    },
+    {
+     "w": "south China tiger",
+     "zh": "华南虎"
+    },
+    {
+     "w": "blue whale",
+     "zh": "蓝鲸"
+    },
+    {
+     "w": "way",
+     "zh": "路；方式；万法"
+    },
+    {
+     "w": "die",
+     "zh": "死；死亡"
+    },
+    {
+     "w": "rhino",
+     "zh": "犀牛"
+    },
+    {
+     "w": "learn",
+     "zh": "学会；学习"
+    },
+    {
+     "w": "send",
+     "zh": "安排去；寄；送"
+    },
+    {
+     "w": "in danger",
+     "zh": "面临危险"
+    },
+    {
+     "w": "in the past",
+     "zh": "在过去"
+    },
+    {
+     "w": "take care of",
+     "zh": "照顾；照料"
+    },
+    {
+     "w": "go for a walk",
+     "zh": "去散步"
+    },
+    {
+     "w": "drive away",
+     "zh": "赶走"
+    }
+   ]
+  },
+  {
+   "n": "Unit 6",
+   "t": "",
+   "words": [
+    {
+     "w": "e-friend",
+     "zh": "网友"
+    },
+    {
+     "w": "country",
+     "zh": "国家"
+    },
+    {
+     "w": "other",
+     "zh": "其他"
+    },
+    {
+     "w": "team",
+     "zh": "队"
+    },
+    {
+     "w": "hobby",
+     "zh": "业余爱好"
+    },
+    {
+     "w": "grade",
+     "zh": "年级"
+    },
+    {
+     "w": "yourself",
+     "zh": "你自己"
+    },
+    {
+     "w": "would like",
+     "zh": ""
+    }
+   ]
+  },
+  {
+   "n": "Unit 7",
+   "t": "",
+   "words": [
+    {
+     "w": "shall",
+     "zh": "应"
+    },
+    {
+     "w": "princess",
+     "zh": "公主"
+    },
+    {
+     "w": "police",
+     "zh": "警方；警察部门"
+    },
+    {
+     "w": "exciting",
+     "zh": "令人激动；使人兴奋"
+    },
+    {
+     "w": "brave",
+     "zh": "男敢"
+    },
+    {
+     "w": "policeman",
+     "zh": "警察"
+    },
+    {
+     "w": "boring",
+     "zh": "没趣；令人厌倦"
+    },
+    {
+     "w": "queen",
+     "zh": "王后"
+    },
+    {
+     "w": "mirror",
+     "zh": "镜子"
+    },
+    {
+     "w": "fairest",
+     "zh": "最美丽"
+    },
+    {
+     "w": "kill",
+     "zh": "杀死"
+    },
+    {
+     "w": "asleep",
+     "zh": "睡着"
+    },
+    {
+     "w": "next time",
+     "zh": "下次"
+    },
+    {
+     "w": "once upon a time",
+     "zh": "从前"
+    },
+    {
+     "w": "fall asleep",
+     "zh": "睡着"
+    }
+   ]
+  },
+  {
+   "n": "Unit 8",
+   "t": "",
+   "words": [
+    {
+     "w": "bee",
+     "zh": "蜜蜂"
+    },
+    {
+     "w": "insect",
+     "zh": "昆虫"
+    },
+    {
+     "w": "ant",
+     "zh": "蚂蚁"
+    },
+    {
+     "w": "anything",
+     "zh": "任何东西"
+    },
+    {
+     "w": "kind",
+     "zh": "种类"
+    },
+    {
+     "w": "finger",
+     "zh": "手指"
+    },
+    {
+     "w": "dancer",
+     "zh": "跳舞者；舞蹈演员"
+    },
+    {
+     "w": "insect museum",
+     "zh": "昆虫博物馆"
+    },
+    {
+     "w": "car museum",
+     "zh": "汽车博物馆"
+    },
+    {
+     "w": "model car",
+     "zh": "汽车模型"
+    },
+    {
+     "w": "science museum",
+     "zh": "科学博物馆"
+    },
+    {
+     "w": "many kinds of",
+     "zh": "各种各样"
+    }
+   ]
+  },
+  {
+   "n": "Unit 9",
+   "t": "",
+   "words": [
+    {
+     "w": "capital",
+     "zh": "首都"
+    },
+    {
+     "w": "north",
+     "zh": "北；北部"
+    },
+    {
+     "w": "east",
+     "zh": "东：东部"
+    },
+    {
+     "w": "west",
+     "zh": "西；西部"
+    },
+    {
+     "w": "south",
+     "zh": "南；南部"
+    },
+    {
+     "w": "palace",
+     "zh": "王宫；宫殿"
+    },
+    {
+     "w": "most",
+     "zh": "大多数"
+    },
+    {
+     "w": "tourist",
+     "zh": "游客"
+    },
+    {
+     "w": "building",
+     "zh": "建筑物；楼房"
+    },
+    {
+     "w": "sushi",
+     "zh": "寿司"
+    },
+    {
+     "w": "in the north of",
+     "zh": "在⋯⋯北部"
+    },
+    {
+     "w": "in the east of",
+     "zh": "在⋯⋯东部"
+    }
+   ]
+  },
+  {
+   "n": "Unit 10",
+   "t": "",
+   "words": [
+    {
+     "w": "air",
+     "zh": "空气"
+    },
+    {
+     "w": "everywhere",
+     "zh": "处处；到处"
+    },
+    {
+     "w": "alive",
+     "zh": "活着"
+    },
+    {
+     "w": "balloon",
+     "zh": "气球"
+    },
+    {
+     "w": "factory",
+     "zh": "工厂 / 制造厂"
+    },
+    {
+     "w": "smoke",
+     "zh": "烟"
+    },
+    {
+     "w": "dirty",
+     "zh": "脏干净；洁净"
+    },
+    {
+     "w": "clean",
+     "zh": "打扫 / 干净的"
+    },
+    {
+     "w": "hurt",
+     "zh": "感到痛"
+    },
+    {
+     "w": "fresh",
+     "zh": "清新的"
+    },
+    {
+     "w": "plant",
+     "zh": "种植"
+    },
+    {
+     "w": "keep... alive",
+     "zh": "让⋯活着"
+    },
+    {
+     "w": "plant trees",
+     "zh": "植树"
+    }
+   ]
+  },
+  {
+   "n": "Unit 11",
+   "t": "",
+   "words": [
+    {
+     "w": "wood",
+     "zh": "木头；木材"
+    },
+    {
+     "w": "cool",
+     "zh": "使变凉"
+    },
+    {
+     "w": "match",
+     "zh": "火柴"
+    },
+    {
+     "w": "miss",
+     "zh": "想念"
+    },
+    {
+     "w": "have to",
+     "zh": "不得不"
+    },
+    {
+     "w": "cut... down",
+     "zh": "把⋯⋯砍倒"
+    },
+    {
+     "w": "Took for",
+     "zh": "寻找"
+    }
+   ]
+  },
+  {
+   "n": "Unit 12",
+   "t": "",
+   "words": [
+    {
+     "w": "earth",
+     "zh": "地球"
+    },
+    {
+     "w": "part",
+     "zh": "地区；区域"
+    },
+    {
+     "w": "forest",
+     "zh": "森杯"
+    },
+    {
+     "w": "land",
+     "zh": "陆地"
+    },
+    {
+     "w": "ocean",
+     "zh": "海洋"
+    },
+    {
+     "w": "rubbish",
+     "zh": "垃圾"
+    },
+    {
+     "w": "sick",
+     "zh": "生病"
+    },
+    {
+     "w": "recycle",
+     "zh": "回收利用；再利用"
+    },
+    {
+     "w": "glass",
+     "zh": "玻璃制品，玻璃"
+    },
+    {
+     "w": "so many",
+     "zh": "这么多"
+    },
+    {
+     "w": "pick up",
+     "zh": "捡起；拾起"
+    },
+    {
+     "w": "shopping bag",
+     "zh": "购物袋"
+    },
+    {
+     "w": "plastic bag",
+     "zh": "塑料袋"
+    }
+   ]
+  }
+ ]
+}

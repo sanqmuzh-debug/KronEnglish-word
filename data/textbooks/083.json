@@ -1,0 +1,527 @@
+{
+ "pub": "译林",
+ "stage": "小学",
+ "grade": "四年级",
+ "vol": "下册",
+ "id": "a4fb0c8b-ebd6-4db9-bca0-705fca8126e4",
+ "title": "（根据2022年版课程标准修订）义务教育教科书·英语 四年级下册",
+ "created": "2022-09-29",
+ "units": [
+  {
+   "n": "Unit 1",
+   "t": "",
+   "words": [
+    {
+     "w": "school",
+     "zh": "学校"
+    },
+    {
+     "w": "subject",
+     "zh": "课程"
+    },
+    {
+     "w": "Welcome back to",
+     "zh": "欢迎回到⋯•⋯•"
+    },
+    {
+     "w": "see",
+     "zh": "看见，看到"
+    },
+    {
+     "w": "timetable",
+     "zh": "课程表；时间表语文（课）"
+    },
+    {
+     "w": "chinese",
+     "zh": "中文，汉语"
+    },
+    {
+     "w": "maths",
+     "zh": "数学"
+    },
+    {
+     "w": "art",
+     "zh": "美术"
+    },
+    {
+     "w": "PE",
+     "zh": "体育"
+    },
+    {
+     "w": "music",
+     "zh": "音乐"
+    },
+    {
+     "w": "science",
+     "zh": "科学"
+    },
+    {
+     "w": "fun",
+     "zh": "乐趣，快乐"
+    },
+    {
+     "w": "go to",
+     "zh": "去⋯⋯"
+    },
+    {
+     "w": "playground",
+     "zh": "操场"
+    },
+    {
+     "w": "lesson",
+     "zh": "课"
+    },
+    {
+     "w": "monday",
+     "zh": "星期一"
+    },
+    {
+     "w": "afternoon",
+     "zh": "下午"
+    }
+   ]
+  },
+  {
+   "n": "Unit 2",
+   "t": "",
+   "words": [
+    {
+     "w": "after school",
+     "zh": "放学后"
+    },
+    {
+     "w": "go",
+     "zh": "去"
+    },
+    {
+     "w": "What day is it today",
+     "zh": "今天星期几？"
+    },
+    {
+     "w": "wednesday",
+     "zh": "星期三"
+    },
+    {
+     "w": "match",
+     "zh": "比赛"
+    },
+    {
+     "w": "today",
+     "zh": "今天"
+    },
+    {
+     "w": "what a pity",
+     "zh": "真遗憾！"
+    },
+    {
+     "w": "saturday",
+     "zh": "星期六好的。"
+    },
+    {
+     "w": "all right",
+     "zh": ""
+    },
+    {
+     "w": "sunday",
+     "zh": "星期日"
+    },
+    {
+     "w": "tuesday",
+     "zh": "星期二"
+    },
+    {
+     "w": "thursday",
+     "zh": "星期四"
+    },
+    {
+     "w": "friday",
+     "zh": "星期五起床"
+    },
+    {
+     "w": "get up",
+     "zh": "起床 (离开床铺站起来)"
+    },
+    {
+     "w": "when",
+     "zh": "什么时候"
+    },
+    {
+     "w": "every",
+     "zh": "每个"
+    },
+    {
+     "w": "day",
+     "zh": "天"
+    }
+   ]
+  },
+  {
+   "n": "Unit 3",
+   "t": "",
+   "words": [
+    {
+     "w": "usually",
+     "zh": "通常，常常"
+    },
+    {
+     "w": "go to school",
+     "zh": "上学"
+    },
+    {
+     "w": "in the morning",
+     "zh": "在上午"
+    },
+    {
+     "w": "have lunch",
+     "zh": "吃午饭"
+    },
+    {
+     "w": "in the afternoon",
+     "zh": "在下午"
+    },
+    {
+     "w": "play football",
+     "zh": "踢足球"
+    },
+    {
+     "w": "go home",
+     "zh": "回家"
+    },
+    {
+     "w": "homework",
+     "zh": "家庭作业"
+    },
+    {
+     "w": "have dinner",
+     "zh": "吃晚饭"
+    },
+    {
+     "w": "watch TV",
+     "zh": "看电视"
+    },
+    {
+     "w": "go to bed",
+     "zh": "睡觉"
+    },
+    {
+     "w": "in the evening",
+     "zh": "在晚上"
+    },
+    {
+     "w": "at night",
+     "zh": "在里"
+    }
+   ]
+  },
+  {
+   "n": "Unit 4",
+   "t": "",
+   "words": [
+    {
+     "w": "drawing",
+     "zh": "画画"
+    },
+    {
+     "w": "park",
+     "zh": "公园"
+    },
+    {
+     "w": "draw",
+     "zh": "画"
+    },
+    {
+     "w": "Good idea",
+     "zh": "好主意！"
+    },
+    {
+     "w": "flower",
+     "zh": "花，花朵他们；她们；它们"
+    },
+    {
+     "w": "them",
+     "zh": "他们"
+    },
+    {
+     "w": "easy",
+     "zh": "容易，简单的"
+    },
+    {
+     "w": "boat",
+     "zh": "小船"
+    },
+    {
+     "w": "river",
+     "zh": "问；江"
+    },
+    {
+     "w": "difficult",
+     "zh": "难的，困难"
+    },
+    {
+     "w": "try",
+     "zh": "试"
+    },
+    {
+     "w": "hill",
+     "zh": "小山，山丘"
+    },
+    {
+     "w": "lake",
+     "zh": "湖，湖泊"
+    },
+    {
+     "w": "again",
+     "zh": "再一次，又一次"
+    }
+   ]
+  },
+  {
+   "n": "Unit 5",
+   "t": "",
+   "words": [
+    {
+     "w": "season",
+     "zh": "季节春天，春季"
+    },
+    {
+     "w": "spring",
+     "zh": "春季 / 春天"
+    },
+    {
+     "w": "warm",
+     "zh": "温暖的，暖和"
+    },
+    {
+     "w": "fly",
+     "zh": "放"
+    },
+    {
+     "w": "kite",
+     "zh": "风筝"
+    },
+    {
+     "w": "go boating",
+     "zh": "去划船"
+    },
+    {
+     "w": "summer",
+     "zh": "夏天，夏季"
+    },
+    {
+     "w": "hot",
+     "zh": "热的，炎热"
+    },
+    {
+     "w": "go swimming",
+     "zh": "去游泳"
+    },
+    {
+     "w": "autumn",
+     "zh": "秋天，秋季"
+    },
+    {
+     "w": "cool",
+     "zh": "凉爽的，凉快"
+    },
+    {
+     "w": "picnic",
+     "zh": "野督"
+    },
+    {
+     "w": "go climbing",
+     "zh": "去爬山"
+    },
+    {
+     "w": "winter",
+     "zh": "冬天，冬季"
+    },
+    {
+     "w": "cold",
+     "zh": "冷的，寒冷"
+    },
+    {
+     "w": "go skating",
+     "zh": "去溜冰；去滑冰"
+    },
+    {
+     "w": "fine",
+     "zh": "晴朗"
+    },
+    {
+     "w": "hey",
+     "zh": "嘿，喂"
+    },
+    {
+     "w": "whose",
+     "zh": "谁的"
+    }
+   ]
+  },
+  {
+   "n": "Unit 6",
+   "t": "",
+   "words": [
+    {
+     "w": "dress",
+     "zh": "连衣裙"
+    },
+    {
+     "w": "too",
+     "zh": "太，过于"
+    },
+    {
+     "w": "trousers",
+     "zh": "裤子"
+    },
+    {
+     "w": "party",
+     "zh": "聚会，派对"
+    },
+    {
+     "w": "glove",
+     "zh": "手套"
+    },
+    {
+     "w": "so",
+     "zh": "如此，这么"
+    },
+    {
+     "w": "coat",
+     "zh": "外衣，外套"
+    },
+    {
+     "w": "shirt",
+     "zh": "衬衫毛衣；绒衣"
+    },
+    {
+     "w": "sweater",
+     "zh": "毛衣"
+    },
+    {
+     "w": "jeans",
+     "zh": "午仔裤"
+    },
+    {
+     "w": "shorts",
+     "zh": "短裤错的，错误"
+    },
+    {
+     "w": "wrong",
+     "zh": "坏事"
+    },
+    {
+     "w": "move",
+     "zh": "移动"
+    },
+    {
+     "w": "I think so",
+     "zh": "我想是。怎么了？"
+    },
+    {
+     "w": "What's the matter",
+     "zh": ""
+    },
+    {
+     "w": "hand",
+     "zh": "手感到疼痛"
+    },
+    {
+     "w": "nuts",
+     "zh": ""
+    }
+   ]
+  },
+  {
+   "n": "Unit 7",
+   "t": "",
+   "words": [
+    {
+     "w": "thirsty",
+     "zh": "渴，口渴"
+    },
+    {
+     "w": "water",
+     "zh": "水生病累的，疲劳"
+    },
+    {
+     "w": "tired",
+     "zh": "疲倦的"
+    },
+    {
+     "w": "good night",
+     "zh": "晚安。"
+    },
+    {
+     "w": "dear",
+     "zh": "亲爱"
+    },
+    {
+     "w": "happy",
+     "zh": "快乐的，高兴"
+    },
+    {
+     "w": "mrs",
+     "zh": "夫人，太太"
+    },
+    {
+     "w": "speak",
+     "zh": "说话，讲话"
+    }
+   ]
+  },
+  {
+   "n": "Unit 8",
+   "t": "",
+   "words": [
+    {
+     "w": "may",
+     "zh": "可以"
+    },
+    {
+     "w": "come to school",
+     "zh": "来学校"
+    },
+    {
+     "w": "fever",
+     "zh": "发烧"
+    },
+    {
+     "w": "hear",
+     "zh": "听到，听见"
+    },
+    {
+     "w": "take care",
+     "zh": "保重"
+    },
+    {
+     "w": "I'm fine thank you",
+     "zh": "我很好，谢谢。"
+    },
+    {
+     "w": "See you tomorrow",
+     "zh": "明天见。"
+    },
+    {
+     "w": "see you",
+     "zh": "再见。"
+    },
+    {
+     "w": "cough",
+     "zh": "咳嗽"
+    },
+    {
+     "w": "headache",
+     "zh": "头疼，头痛"
+    },
+    {
+     "w": "Not so good",
+     "zh": "不太好。"
+    },
+    {
+     "w": "at school",
+     "zh": "在上学；在学校"
+    }
+   ]
+  }
+ ]
+}

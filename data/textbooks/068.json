@@ -1,0 +1,1247 @@
+{
+ "pub": "沪教",
+ "stage": "初中",
+ "grade": "七年级",
+ "vol": "下册",
+ "id": "65a59980-6e5c-7f76-82e8-ab16222baafb",
+ "title": "（根据2022年版课程标准修订）义务教育教科书·英语七年级下册",
+ "created": "2026-02-14",
+ "units": [
+  {
+   "n": "Unit 1",
+   "t": "",
+   "words": [
+    {
+     "w": "advice",
+     "zh": "建议"
+    },
+    {
+     "w": "encourage",
+     "zh": "鼓励；激励"
+    },
+    {
+     "w": "retire",
+     "zh": "退职；（使）退休"
+    },
+    {
+     "w": "cheerful",
+     "zh": "快乐的；高兴"
+    },
+    {
+     "w": "community",
+     "zh": "社区"
+    },
+    {
+     "w": "medical",
+     "zh": "医学；医疗"
+    },
+    {
+     "w": "fried",
+     "zh": "油炸的；油煎；油炒"
+    },
+    {
+     "w": "wherever",
+     "zh": "各处；处处"
+    },
+    {
+     "w": "future",
+     "zh": "将来；未来"
+    },
+    {
+     "w": "soon",
+     "zh": "很快；马上；不久"
+    },
+    {
+     "w": "smart",
+     "zh": "聪明的；机敏的"
+    },
+    {
+     "w": "attention",
+     "zh": "专心；注意力"
+    },
+    {
+     "w": "seldom",
+     "zh": "不常；很少；难得"
+    },
+    {
+     "w": "bored",
+     "zh": "厌倦的；烦闷"
+    },
+    {
+     "w": "strict",
+     "zh": "要求严格；严历"
+    },
+    {
+     "w": "relative",
+     "zh": "亲戚；亲属"
+    },
+    {
+     "w": "uniform",
+     "zh": "制服；校服"
+    },
+    {
+     "w": "personality",
+     "zh": "性格；个性"
+    },
+    {
+     "w": "characteristic",
+     "zh": "特点；品质"
+    },
+    {
+     "w": "topic",
+     "zh": "话题；标题"
+    },
+    {
+     "w": "active",
+     "zh": "忙碌的；活跃"
+    },
+    {
+     "w": "smartphone",
+     "zh": "智能手机"
+    },
+    {
+     "w": "wisely",
+     "zh": "聪明地；明智地"
+    },
+    {
+     "w": "competition",
+     "zh": "比赛；竞赛"
+    },
+    {
+     "w": "shower",
+     "zh": "淋浴"
+    },
+    {
+     "w": "online",
+     "zh": "在线"
+    },
+    {
+     "w": "site",
+     "zh": "建筑工地"
+    },
+    {
+     "w": "narrow",
+     "zh": "狭窄；窄小"
+    },
+    {
+     "w": "superman",
+     "zh": "超人"
+    },
+    {
+     "w": "give up",
+     "zh": "认输；放弃"
+    },
+    {
+     "w": "used to",
+     "zh": "曾经"
+    },
+    {
+     "w": "in the future",
+     "zh": "在未来"
+    },
+    {
+     "w": "be strict about",
+     "zh": "对⋯・要求严格"
+    },
+    {
+     "w": "be worried about",
+     "zh": "担心"
+    }
+   ]
+  },
+  {
+   "n": "Unit 2",
+   "t": "",
+   "words": [
+    {
+     "w": "wine",
+     "zh": "葡萄酒"
+    },
+    {
+     "w": "match",
+     "zh": "配对"
+    },
+    {
+     "w": "rich",
+     "zh": "丰富多彩"
+    },
+    {
+     "w": "lie",
+     "zh": "位于；坐落在"
+    },
+    {
+     "w": "cafe",
+     "zh": "咖啡馆；小餐馆"
+    },
+    {
+     "w": "excellent",
+     "zh": "优秀；极好"
+    },
+    {
+     "w": "coast",
+     "zh": "海岸；海滨"
+    },
+    {
+     "w": "perfect",
+     "zh": "正合适"
+    },
+    {
+     "w": "mostly",
+     "zh": "主要地；通常"
+    },
+    {
+     "w": "receive",
+     "zh": "接待；招待"
+    },
+    {
+     "w": "key",
+     "zh": "主要；关键时"
+    },
+    {
+     "w": "remain",
+     "zh": "仍然是；保持不变"
+    },
+    {
+     "w": "lift",
+     "zh": "电样；升降机"
+    },
+    {
+     "w": "step",
+     "zh": "台阶"
+    },
+    {
+     "w": "stair",
+     "zh": "楼样"
+    },
+    {
+     "w": "motorcycle",
+     "zh": "摩托车"
+    },
+    {
+     "w": "sightseeing",
+     "zh": "观光；游览"
+    },
+    {
+     "w": "imagine",
+     "zh": "想象；设想"
+    },
+    {
+     "w": "destination",
+     "zh": "目地；终点"
+    },
+    {
+     "w": "address",
+     "zh": "住址；地址"
+    },
+    {
+     "w": "government",
+     "zh": "政府"
+    },
+    {
+     "w": "unique",
+     "zh": "独特的；罕见"
+    },
+    {
+     "w": "endangered",
+     "zh": "濒危"
+    },
+    {
+     "w": "stretch",
+     "zh": "延伸；绵延"
+    },
+    {
+     "w": "huge",
+     "zh": "巨大的；极多"
+    },
+    {
+     "w": "wild",
+     "zh": "野的；野生n. 自然环境；野生状态"
+    },
+    {
+     "w": "discover",
+     "zh": "了解到；查明"
+    },
+    {
+     "w": "volcano",
+     "zh": "火山"
+    },
+    {
+     "w": "range",
+     "zh": "山脉"
+    },
+    {
+     "w": "snowmobile",
+     "zh": "雪地机动车"
+    },
+    {
+     "w": "wolf",
+     "zh": "狼百货商店"
+    },
+    {
+     "w": "department store",
+     "zh": "更喜欢"
+    },
+    {
+     "w": "prefer to",
+     "zh": ""
+    },
+    {
+     "w": "by hand",
+     "zh": "用手工"
+    },
+    {
+     "w": "go sightseeing",
+     "zh": "：去观光去旅行"
+    },
+    {
+     "w": "goon trip",
+     "zh": ""
+    },
+    {
+     "w": "setup",
+     "zh": "建立"
+    },
+    {
+     "w": "giant panda",
+     "zh": "大熊猫"
+    },
+    {
+     "w": "in the wild",
+     "zh": "在野外"
+    },
+    {
+     "w": "all year round",
+     "zh": "全年"
+    },
+    {
+     "w": "golden monkey",
+     "zh": "金丝猴"
+    },
+    {
+     "w": "go hiking",
+     "zh": "去远足"
+    },
+    {
+     "w": "hot spring",
+     "zh": "温泉"
+    }
+   ]
+  },
+  {
+   "n": "Unit 3",
+   "t": "",
+   "words": [
+    {
+     "w": "branch",
+     "zh": "树枝"
+    },
+    {
+     "w": "root",
+     "zh": "根；根茎"
+    },
+    {
+     "w": "silent",
+     "zh": "不说话的；沉默的"
+    },
+    {
+     "w": "overlook",
+     "zh": "忽略"
+    },
+    {
+     "w": "human",
+     "zh": "人"
+    },
+    {
+     "w": "oxygen",
+     "zh": "氧；氧气"
+    },
+    {
+     "w": "create",
+     "zh": "创造"
+    },
+    {
+     "w": "environment",
+     "zh": "自然环境"
+    },
+    {
+     "w": "convenient",
+     "zh": "便利；方便"
+    },
+    {
+     "w": "furniture",
+     "zh": "家具"
+    },
+    {
+     "w": "wood",
+     "zh": "木；本头"
+    },
+    {
+     "w": "treat",
+     "zh": "以…⋯态度对待；以⋯⋯方式对待"
+    },
+    {
+     "w": "communicate",
+     "zh": "交流；沟通"
+    },
+    {
+     "w": "species",
+     "zh": "种；物种"
+    },
+    {
+     "w": "product",
+     "zh": "产品；制品"
+    },
+    {
+     "w": "side",
+     "zh": "一面"
+    },
+    {
+     "w": "borrow",
+     "zh": "借；借用"
+    },
+    {
+     "w": "dig",
+     "zh": "掘 ；凿 ；挖（土）"
+    },
+    {
+     "w": "hole",
+     "zh": "洞；孔；坑"
+    },
+    {
+     "w": "stick",
+     "zh": "棍；条"
+    },
+    {
+     "w": "accident",
+     "zh": "意外；偶然事"
+    },
+    {
+     "w": "knowledge",
+     "zh": "知识；学间"
+    },
+    {
+     "w": "character",
+     "zh": "文字"
+    },
+    {
+     "w": "spread",
+     "zh": "传播"
+    },
+    {
+     "w": "translation",
+     "zh": "译文；译本"
+    },
+    {
+     "w": "take in",
+     "zh": "吸收；摄入"
+    },
+    {
+     "w": "greenhouse gas",
+     "zh": "温室气体"
+    },
+    {
+     "w": "to begin with",
+     "zh": "首先；第一点来自"
+    },
+    {
+     "w": "come from",
+     "zh": "环视；环顾；四下祭看"
+    },
+    {
+     "w": "look around",
+     "zh": ""
+    },
+    {
+     "w": "be made of",
+     "zh": "由・・・・・•制成"
+    },
+    {
+     "w": "for example",
+     "zh": "例如；譬如"
+    },
+    {
+     "w": "communicate with",
+     "zh": "与⋯・・・・海通号召；动员；要求"
+    },
+    {
+     "w": "call on",
+     "zh": "短暂地)访问；要求(某人讲话等)；正式邀请"
+    },
+    {
+     "w": "according to",
+     "zh": "据 ；按（⋯⋯所报道）偶然；意外地"
+    },
+    {
+     "w": "by accident",
+     "zh": "偶然地"
+    }
+   ]
+  },
+  {
+   "n": "Unit 4",
+   "t": "",
+   "words": [
+    {
+     "w": "dolphin",
+     "zh": "海豚"
+    },
+    {
+     "w": "hen",
+     "zh": "母鸡"
+    },
+    {
+     "w": "blind",
+     "zh": "瞎的；失明"
+    },
+    {
+     "w": "wool",
+     "zh": "毛"
+    },
+    {
+     "w": "sir",
+     "zh": "先生"
+    },
+    {
+     "w": "receptionist",
+     "zh": "接待员"
+    },
+    {
+     "w": "allow",
+     "zh": "允许进入（或出去、通过）"
+    },
+    {
+     "w": "apologize",
+     "zh": "道歉"
+    },
+    {
+     "w": "asleep",
+     "zh": "睡着"
+    },
+    {
+     "w": "smoke",
+     "zh": "烟"
+    },
+    {
+     "w": "fireman",
+     "zh": "消防队员"
+    },
+    {
+     "w": "type",
+     "zh": "类型；种类"
+    },
+    {
+     "w": "search-and-rescue",
+     "zh": "搜索救援"
+    },
+    {
+     "w": "service",
+     "zh": "服务"
+    },
+    {
+     "w": "disaster",
+     "zh": "灾难；灾害"
+    },
+    {
+     "w": "guest",
+     "zh": "旅各；房答"
+    },
+    {
+     "w": "team",
+     "zh": "组；班"
+    },
+    {
+     "w": "transport",
+     "zh": "运输；运送"
+    },
+    {
+     "w": "guard",
+     "zh": "守卫；保卫"
+    },
+    {
+     "w": "honey",
+     "zh": "蜂蜜"
+    },
+    {
+     "w": "material",
+     "zh": "材料；原料"
+    },
+    {
+     "w": "either",
+     "zh": "也"
+    },
+    {
+     "w": "shark lark",
+     "zh": "鲨鱼"
+    },
+    {
+     "w": "scared",
+     "zh": "害怕；恐惧"
+    },
+    {
+     "w": "grey",
+     "zh": "灰色"
+    },
+    {
+     "w": "somewhere",
+     "zh": "在某处；到某处"
+    },
+    {
+     "w": "probably",
+     "zh": "很可能；大概"
+    },
+    {
+     "w": "source",
+     "zh": "来源；出处"
+    },
+    {
+     "w": "sometime",
+     "zh": "在某时"
+    },
+    {
+     "w": "extinct",
+     "zh": "已灭绝的；绝种"
+    },
+    {
+     "w": "effort",
+     "zh": "艰难的尝试；试图"
+    },
+    {
+     "w": "lead to",
+     "zh": "带着 到"
+    },
+    {
+     "w": "fall asleep",
+     "zh": "人睡；睡着"
+    },
+    {
+     "w": "get down",
+     "zh": "俯身；趴下；跪下消防车"
+    },
+    {
+     "w": "fire engine",
+     "zh": "消防车"
+    }
+   ]
+  },
+  {
+   "n": "Unit 5",
+   "t": "",
+   "words": [
+    {
+     "w": "everyday",
+     "zh": "每天；日常"
+    },
+    {
+     "w": "form",
+     "zh": "类型；形态"
+    },
+    {
+     "w": "journey",
+     "zh": "旅行"
+    },
+    {
+     "w": "drop",
+     "zh": "滴；水珠"
+    },
+    {
+     "w": "tap",
+     "zh": "水龙头"
+    },
+    {
+     "w": "voice",
+     "zh": "说话声"
+    },
+    {
+     "w": "eventually",
+     "zh": "最后；终于"
+    },
+    {
+     "w": "pipe",
+     "zh": "管子；管道"
+    },
+    {
+     "w": "return",
+     "zh": "回去；返回"
+    },
+    {
+     "w": "rush",
+     "zh": "迅速移动"
+    },
+    {
+     "w": "bath",
+     "zh": "洗澡；洗浴"
+    },
+    {
+     "w": "salt",
+     "zh": "含盐的；咸"
+    },
+    {
+     "w": "brain",
+     "zh": "脑"
+    },
+    {
+     "w": "fix",
+     "zh": "修理"
+    },
+    {
+     "w": "public",
+     "zh": "公共；公开"
+    },
+    {
+     "w": "population",
+     "zh": "人口"
+    },
+    {
+     "w": "agriculture",
+     "zh": "农业"
+    },
+    {
+     "w": "trade",
+     "zh": "贸易；买卖"
+    },
+    {
+     "w": "industry",
+     "zh": "工业；生产制造"
+    },
+    {
+     "w": "role",
+     "zh": "作用"
+    },
+    {
+     "w": "goods",
+     "zh": "商品；货品"
+    },
+    {
+     "w": "overseas",
+     "zh": "在国外；向海外"
+    },
+    {
+     "w": "global",
+     "zh": "全球；全世界"
+    },
+    {
+     "w": "income",
+     "zh": "收入；收益；所得"
+    },
+    {
+     "w": "nearly",
+     "zh": "几乎；差不多；将近"
+    },
+    {
+     "w": "business",
+     "zh": "买卖；生意"
+    },
+    {
+     "w": "leisure",
+     "zh": "闲暇；空闲；休闲"
+    },
+    {
+     "w": "throughout",
+     "zh": "自始至终；贯穿整个时期"
+    },
+    {
+     "w": "duty",
+     "zh": "责任；义务"
+    },
+    {
+     "w": "habit",
+     "zh": "有点儿；稍微"
+    },
+    {
+     "w": "at once",
+     "zh": "立即；马上饮用水"
+    },
+    {
+     "w": "drinking water",
+     "zh": ""
+    },
+    {
+     "w": "play a role in",
+     "zh": "在…•起作用蒸汽机"
+    },
+    {
+     "w": "steam engine",
+     "zh": ""
+    },
+    {
+     "w": "as result",
+     "zh": "作为结果；因此"
+    },
+    {
+     "w": "make sure",
+     "zh": "确保；设法保证"
+    }
+   ]
+  },
+  {
+   "n": "Unit 6",
+   "t": "",
+   "words": [
+    {
+     "w": "battery",
+     "zh": "电池"
+    },
+    {
+     "w": "electricity",
+     "zh": "电；电能"
+    },
+    {
+     "w": "switch-off",
+     "zh": "关闭（电灯、机器等）"
+    },
+    {
+     "w": "task",
+     "zh": "任务；活动"
+    },
+    {
+     "w": "while",
+     "zh": "一段时间；一会儿"
+    },
+    {
+     "w": "tablet",
+     "zh": "平板电脑"
+    },
+    {
+     "w": "fridge",
+     "zh": "冰"
+    },
+    {
+     "w": "yogurt",
+     "zh": "酸奶"
+    },
+    {
+     "w": "apartment",
+     "zh": "公寓套房"
+    },
+    {
+     "w": "household",
+     "zh": "家庭"
+    },
+    {
+     "w": "against",
+     "zh": "紧靠；碰；撞"
+    },
+    {
+     "w": "speed",
+     "zh": "速度；速率"
+    },
+    {
+     "w": "safety",
+     "zh": "安全；平安"
+    },
+    {
+     "w": "instruction",
+     "zh": "用法说明；操作指南"
+    },
+    {
+     "w": "connect",
+     "zh": "连接"
+    },
+    {
+     "w": "device",
+     "zh": "装置；设备"
+    },
+    {
+     "w": "rule",
+     "zh": "规则；条例"
+    },
+    {
+     "w": "climate",
+     "zh": "气候"
+    },
+    {
+     "w": "amount",
+     "zh": "数量；数额"
+    },
+    {
+     "w": "power",
+     "zh": "驱动；推动（机器或车辆）"
+    },
+    {
+     "w": "television set",
+     "zh": "电视机"
+    },
+    {
+     "w": "landmark",
+     "zh": "地标"
+    },
+    {
+     "w": "have something in common",
+     "zh": "有相同特征（或特点等）"
+    },
+    {
+     "w": "light bulb",
+     "zh": "电灯泡"
+    },
+    {
+     "w": "air conditioner",
+     "zh": "空调机；空调设备"
+    },
+    {
+     "w": "video game",
+     "zh": "电子游戏"
+    },
+    {
+     "w": "run out of",
+     "zh": "用完；耗尽"
+    },
+    {
+     "w": "ngo bad",
+     "zh": "变质"
+    },
+    {
+     "w": "electric car",
+     "zh": "电动汽车"
+    },
+    {
+     "w": "electrical appliance",
+     "zh": "电器"
+    },
+    {
+     "w": "care about",
+     "zh": "关注；担忧"
+    },
+    {
+     "w": "climate change",
+     "zh": "气候变化"
+    },
+    {
+     "w": "join in",
+     "zh": "参加；加入"
+    }
+   ]
+  },
+  {
+   "n": "Unit 7",
+   "t": "",
+   "words": [
+    {
+     "w": "contribution",
+     "zh": "贡献"
+    },
+    {
+     "w": "hero",
+     "zh": "英雄"
+    },
+    {
+     "w": "pioneer",
+     "zh": "先锋；先驱"
+    },
+    {
+     "w": "technology",
+     "zh": "科技"
+    },
+    {
+     "w": "award",
+     "zh": "奖"
+    },
+    {
+     "w": "engineering",
+     "zh": "工程学"
+    },
+    {
+     "w": "education",
+     "zh": "教育"
+    },
+    {
+     "w": "spend",
+     "zh": "花 ；度过"
+    },
+    {
+     "w": "research",
+     "zh": "研究；调查"
+    },
+    {
+     "w": "achieve",
+     "zh": "达到（某目标、地位、标准）"
+    },
+    {
+     "w": "well-respected",
+     "zh": "受尊敬的"
+    },
+    {
+     "w": "found",
+     "zh": "建立"
+    },
+    {
+     "w": "eager",
+     "zh": "热切；渴望"
+    },
+    {
+     "w": "raise",
+     "zh": "增加；提高"
+    },
+    {
+     "w": "mission",
+     "zh": "使命"
+    },
+    {
+     "w": "honour",
+     "zh": "荣誉；名誉"
+    },
+    {
+     "w": "approval",
+     "zh": "赞成；同意"
+    },
+    {
+     "w": "praise",
+     "zh": "赞扬；称赞；赞美"
+    },
+    {
+     "w": "society",
+     "zh": "社会"
+    },
+    {
+     "w": "female",
+     "zh": "女；女性的"
+    },
+    {
+     "w": "admire",
+     "zh": "钦佩；仰慕"
+    },
+    {
+     "w": "inspire",
+     "zh": "激励；鼓舞"
+    },
+    {
+     "w": "regular",
+     "zh": "通常；平常的"
+    },
+    {
+     "w": "feed",
+     "zh": "养活；提供食物"
+    },
+    {
+     "w": "smokejumper",
+     "zh": "空降消防员"
+    },
+    {
+     "w": "thick",
+     "zh": "茂密"
+    },
+    {
+     "w": "certain",
+     "zh": "某个；特定"
+    },
+    {
+     "w": "kill",
+     "zh": "余死；导致死亡"
+    },
+    {
+     "w": "tool",
+     "zh": "工具"
+    },
+    {
+     "w": "dead",
+     "zh": "失去生命的；枯萎"
+    },
+    {
+     "w": "brave",
+     "zh": "勇敢；无畏"
+    },
+    {
+     "w": "tough",
+     "zh": "健壮；坚韧不拔"
+    },
+    {
+     "w": "fit",
+     "zh": "健壮；健康"
+    },
+    {
+     "w": "otherwise",
+     "zh": "否则；不然"
+    },
+    {
+     "w": "survive",
+     "zh": "生存；存活"
+    },
+    {
+     "w": "proud",
+     "zh": "骄傲；自豪"
+    },
+    {
+     "w": "role model",
+     "zh": "楷模；行为榜样"
+    },
+    {
+     "w": "in the field of",
+     "zh": "在⋯⋯领域"
+    },
+    {
+     "w": "devote oneself to",
+     "zh": "献身；致力"
+    },
+    {
+     "w": "college entrance examination",
+     "zh": "大学人学考试"
+    },
+    {
+     "w": "look up to",
+     "zh": "敬仰；钦佩"
+    },
+    {
+     "w": "sugar pill",
+     "zh": "糖丸"
+    },
+    {
+     "w": "chief engineer",
+     "zh": "总工程师"
+    },
+    {
+     "w": "put out",
+     "zh": "熄灭；扑灭"
+    },
+    {
+     "w": "be able to",
+     "zh": "能够"
+    },
+    {
+     "w": "be proud of",
+     "zh": "为・・・・・而目豪"
+    }
+   ]
+  },
+  {
+   "n": "Unit 8",
+   "t": "",
+   "words": [
+    {
+     "w": "possible",
+     "zh": "可能"
+    },
+    {
+     "w": "athlete",
+     "zh": "运动员"
+    },
+    {
+     "w": "biologist",
+     "zh": "生物学家"
+    },
+    {
+     "w": "instrument",
+     "zh": "乐器；仪器"
+    },
+    {
+     "w": "interest",
+     "zh": "兴趣；业余爱好"
+    },
+    {
+     "w": "career",
+     "zh": "生涯；职业"
+    },
+    {
+     "w": "lifetime",
+     "zh": "一生；终身"
+    },
+    {
+     "w": "diamond",
+     "zh": "钻石"
+    },
+    {
+     "w": "belt",
+     "zh": "腰帯"
+    },
+    {
+     "w": "shoot",
+     "zh": "冲；奔；飞驰"
+    },
+    {
+     "w": "extremely",
+     "zh": "极其；极端；非常"
+    },
+    {
+     "w": "curious",
+     "zh": "求知欲强的；好奇"
+    },
+    {
+     "w": "increase",
+     "zh": "增长；增多；增加"
+    },
+    {
+     "w": "host",
+     "zh": "主持"
+    },
+    {
+     "w": "beyond",
+     "zh": "在另一边；在（或向）更远处"
+    },
+    {
+     "w": "audience",
+     "zh": "观众；听众"
+    },
+    {
+     "w": "lively",
+     "zh": "充满趣味；令人兴奋"
+    },
+    {
+     "w": "actually",
+     "zh": "事实上"
+    },
+    {
+     "w": "sail",
+     "zh": "驾驶帆船航行"
+    },
+    {
+     "w": "ability",
+     "zh": "才能；本领"
+    },
+    {
+     "w": "review",
+     "zh": "评论"
+    },
+    {
+     "w": "perform",
+     "zh": "演出；表演"
+    },
+    {
+     "w": "kiss",
+     "zh": "吻"
+    },
+    {
+     "w": "hug",
+     "zh": "拥抱；搂抱"
+    },
+    {
+     "w": "method",
+     "zh": "方法；办法"
+    },
+    {
+     "w": "compare",
+     "zh": "将⋯⋯比作"
+    },
+    {
+     "w": "nowadays",
+     "zh": "现今；现在；目前"
+    },
+    {
+     "w": "human being",
+     "zh": "人"
+    },
+    {
+     "w": "lecture",
+     "zh": "讲座；讲课；演讲"
+    },
+    {
+     "w": "ngo outside",
+     "zh": "外出"
+    },
+    {
+     "w": "more and more",
+     "zh": "越釆越多肢体语言"
+    },
+    {
+     "w": "body language",
+     "zh": "肢体语言"
+    },
+    {
+     "w": "dream of",
+     "zh": "梦想"
+    },
+    {
+     "w": "come true",
+     "zh": "实现；成为现实"
+    }
+   ]
+  }
+ ]
+}

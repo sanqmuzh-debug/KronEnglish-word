@@ -1,0 +1,619 @@
+{
+ "pub": "人教",
+ "stage": "小学",
+ "grade": "六年级",
+ "vol": "上册",
+ "id": "9e2878bf-964d-47fb-85ba-937cf61159a5",
+ "title": "（根据2022年版课程标准修订）义务教育教科书•英语 六年级上册",
+ "created": "2022-09-29",
+ "units": [
+  {
+   "n": "Unit 1",
+   "t": "",
+   "words": [
+    {
+     "w": "science",
+     "zh": "科学"
+    },
+    {
+     "w": "museum",
+     "zh": "博物馆"
+    },
+    {
+     "w": "post office",
+     "zh": "邮局"
+    },
+    {
+     "w": "bookstore",
+     "zh": "书店"
+    },
+    {
+     "w": "cinema",
+     "zh": "电影院"
+    },
+    {
+     "w": "hospital",
+     "zh": "医院"
+    },
+    {
+     "w": "crossing",
+     "zh": "十字路口"
+    },
+    {
+     "w": "turn",
+     "zh": "转弯"
+    },
+    {
+     "w": "left",
+     "zh": "左"
+    },
+    {
+     "w": "straight",
+     "zh": "笔直地"
+    },
+    {
+     "w": "right",
+     "zh": "右"
+    },
+    {
+     "w": "ask",
+     "zh": "问"
+    },
+    {
+     "w": "sir",
+     "zh": "先生"
+    },
+    {
+     "w": "interesting",
+     "zh": "有趣"
+    },
+    {
+     "w": "italian",
+     "zh": "意大利"
+    },
+    {
+     "w": "restaurant",
+     "zh": "餐馆"
+    },
+    {
+     "w": "pizza",
+     "zh": "比萨饼"
+    },
+    {
+     "w": "street",
+     "zh": "大街；街道"
+    },
+    {
+     "w": "get",
+     "zh": "到达"
+    },
+    {
+     "w": "bus",
+     "zh": "北斗卫星导航系统"
+    },
+    {
+     "w": "gave",
+     "zh": "提供；交给"
+    },
+    {
+     "w": "feature",
+     "zh": "特点"
+    },
+    {
+     "w": "follow",
+     "zh": "跟着"
+    },
+    {
+     "w": "far",
+     "zh": "远"
+    },
+    {
+     "w": "tell",
+     "zh": "告诉"
+    }
+   ]
+  },
+  {
+   "n": "Unit 2",
+   "t": "",
+   "words": [
+    {
+     "w": "on foot",
+     "zh": "步行"
+    },
+    {
+     "w": "by",
+     "zh": "乘"
+    },
+    {
+     "w": "plane",
+     "zh": "飞机"
+    },
+    {
+     "w": "taxi",
+     "zh": "出租汽车"
+    },
+    {
+     "w": "ship",
+     "zh": "船"
+    },
+    {
+     "w": "subway",
+     "zh": "地铁"
+    },
+    {
+     "w": "train",
+     "zh": "火车"
+    },
+    {
+     "w": "slow",
+     "zh": "放慢速度；慢的"
+    },
+    {
+     "w": "down",
+     "zh": "减少；降低"
+    },
+    {
+     "w": "slow down",
+     "zh": "慢下来"
+    },
+    {
+     "w": "stop",
+     "zh": "停下"
+    },
+    {
+     "w": "mrs",
+     "zh": "天人"
+    },
+    {
+     "w": "early",
+     "zh": "早到"
+    },
+    {
+     "w": "helmet",
+     "zh": "头盔"
+    },
+    {
+     "w": "must",
+     "zh": "必须"
+    },
+    {
+     "w": "wear",
+     "zh": "戴"
+    },
+    {
+     "w": "attention",
+     "zh": "注意"
+    },
+    {
+     "w": "pay attention to",
+     "zh": "注意"
+    },
+    {
+     "w": "traffic",
+     "zh": "交通"
+    },
+    {
+     "w": "traffic lights",
+     "zh": "交通信号灯"
+    },
+    {
+     "w": "munich",
+     "zh": "慕尼黑（德国城市）"
+    },
+    {
+     "w": "germany",
+     "zh": "德国"
+    },
+    {
+     "w": "alaska",
+     "zh": "州名）"
+    },
+    {
+     "w": "sled",
+     "zh": "雪橇"
+    },
+    {
+     "w": "fast",
+     "zh": "快"
+    },
+    {
+     "w": "ferry",
+     "zh": "轮渡"
+    },
+    {
+     "w": "scotland",
+     "zh": "苏格兰"
+    }
+   ]
+  },
+  {
+   "n": "Unit 3",
+   "t": "",
+   "words": [
+    {
+     "w": "visit",
+     "zh": "拜访"
+    },
+    {
+     "w": "film",
+     "zh": "电影"
+    },
+    {
+     "w": "see a film",
+     "zh": "看电影"
+    },
+    {
+     "w": "trip",
+     "zh": "旅行"
+    },
+    {
+     "w": "take a trip",
+     "zh": "去旅行"
+    },
+    {
+     "w": "supermarket",
+     "zh": "超市"
+    },
+    {
+     "w": "evening",
+     "zh": "晚上；傍晚"
+    },
+    {
+     "w": "tonight",
+     "zh": "在今晚"
+    },
+    {
+     "w": "tomorrow",
+     "zh": "明天"
+    },
+    {
+     "w": "next week",
+     "zh": "下周"
+    },
+    {
+     "w": "dictionary",
+     "zh": "词典"
+    },
+    {
+     "w": "comic",
+     "zh": "滑稽"
+    },
+    {
+     "w": "comic book",
+     "zh": "连环画册"
+    },
+    {
+     "w": "word",
+     "zh": "单词"
+    },
+    {
+     "w": "word book",
+     "zh": "单词书"
+    },
+    {
+     "w": "postcard",
+     "zh": "明信片"
+    },
+    {
+     "w": "lesson",
+     "zh": "课"
+    },
+    {
+     "w": "space",
+     "zh": "太空"
+    },
+    {
+     "w": "travel",
+     "zh": "旅行"
+    },
+    {
+     "w": "half",
+     "zh": "一半"
+    },
+    {
+     "w": "price",
+     "zh": "价格"
+    },
+    {
+     "w": "mid-autumn Festival",
+     "zh": "/mid 'o:tom 'festrvl/中秋节"
+    },
+    {
+     "w": "together",
+     "zh": "一起"
+    },
+    {
+     "w": "get together",
+     "zh": "聚会"
+    },
+    {
+     "w": "mooncake",
+     "zh": "月饼"
+    },
+    {
+     "w": "poem",
+     "zh": "诗"
+    },
+    {
+     "w": "moon",
+     "zh": "月亮"
+    }
+   ]
+  },
+  {
+   "n": "Unit 4",
+   "t": "",
+   "words": [
+    {
+     "w": "studies",
+     "zh": "第三人称单数形式）学习"
+    },
+    {
+     "w": "puzzle",
+     "zh": "谜"
+    },
+    {
+     "w": "hiking",
+     "zh": "远足"
+    },
+    {
+     "w": "pen pal",
+     "zh": "笔友"
+    },
+    {
+     "w": "hobby",
+     "zh": "业余爱好"
+    },
+    {
+     "w": "jasmine",
+     "zh": "茉莉"
+    },
+    {
+     "w": "idea",
+     "zh": "想法；主意"
+    },
+    {
+     "w": "canberra",
+     "zh": "堪培拉（澳大利亚首都）"
+    },
+    {
+     "w": "amazing",
+     "zh": "令人惊奇"
+    },
+    {
+     "w": "shall",
+     "zh": "表示征求意见"
+    },
+    {
+     "w": "goal",
+     "zh": "射门"
+    },
+    {
+     "w": "join",
+     "zh": "加入"
+    },
+    {
+     "w": "club",
+     "zh": "俱乐部"
+    },
+    {
+     "w": "share",
+     "zh": "分享"
+    }
+   ]
+  },
+  {
+   "n": "Unit 5",
+   "t": "",
+   "words": [
+    {
+     "w": "factory",
+     "zh": "工厂"
+    },
+    {
+     "w": "worker",
+     "zh": "工人"
+    },
+    {
+     "w": "postman",
+     "zh": "邮递员"
+    },
+    {
+     "w": "businessman",
+     "zh": "商人；企业家"
+    },
+    {
+     "w": "police officer",
+     "zh": "警察"
+    },
+    {
+     "w": "fisherman",
+     "zh": "渔民"
+    },
+    {
+     "w": "scientist",
+     "zh": "科学家"
+    },
+    {
+     "w": "pilot",
+     "zh": "飞行员"
+    },
+    {
+     "w": "coach",
+     "zh": "教练"
+    },
+    {
+     "w": "country",
+     "zh": "国家"
+    },
+    {
+     "w": "head teacher",
+     "zh": "校长"
+    },
+    {
+     "w": "sea",
+     "zh": "大海"
+    },
+    {
+     "w": "stay",
+     "zh": "保持"
+    },
+    {
+     "w": "university",
+     "zh": "大学"
+    },
+    {
+     "w": "gym",
+     "zh": "体育馆叶/if/如果"
+    },
+    {
+     "w": "reporter",
+     "zh": "记者"
+    },
+    {
+     "w": "use quiz",
+     "zh": "使用"
+    },
+    {
+     "w": "type",
+     "zh": "打字"
+    },
+    {
+     "w": "quickly",
+     "zh": "迅速地"
+    },
+    {
+     "w": "secretary",
+     "zh": "秘书"
+    }
+   ]
+  },
+  {
+   "n": "Unit 6",
+   "t": "",
+   "words": [
+    {
+     "w": "angry",
+     "zh": "生气"
+    },
+    {
+     "w": "afraid",
+     "zh": "害怕"
+    },
+    {
+     "w": "sad",
+     "zh": "难过"
+    },
+    {
+     "w": "worried",
+     "zh": "担心的；发愁"
+    },
+    {
+     "w": "happy",
+     "zh": "高兴"
+    },
+    {
+     "w": "see a doctor",
+     "zh": "看病"
+    },
+    {
+     "w": "more",
+     "zh": "更多"
+    },
+    {
+     "w": "deep",
+     "zh": "深"
+    },
+    {
+     "w": "breath",
+     "zh": "呼吸"
+    },
+    {
+     "w": "take a deep breath",
+     "zh": "深深吸一口气"
+    },
+    {
+     "w": "count",
+     "zh": "数数"
+    },
+    {
+     "w": "count to ten",
+     "zh": "数到十"
+    },
+    {
+     "w": "chase",
+     "zh": "追赶"
+    },
+    {
+     "w": "mice",
+     "zh": "老鼠"
+    },
+    {
+     "w": "bad",
+     "zh": "邪恶；坏"
+    },
+    {
+     "w": "hurt",
+     "zh": "受伤"
+    },
+    {
+     "w": "ill",
+     "zh": "有病；不舒服"
+    },
+    {
+     "w": "wrong",
+     "zh": "有毛病"
+    },
+    {
+     "w": "should",
+     "zh": "应该"
+    },
+    {
+     "w": "feel",
+     "zh": "觉得；感到"
+    },
+    {
+     "w": "well",
+     "zh": "健康；身体好"
+    },
+    {
+     "w": "sit",
+     "zh": "坐"
+    },
+    {
+     "w": "grass",
+     "zh": "草坪"
+    },
+    {
+     "w": "hear",
+     "zh": "听见"
+    },
+    {
+     "w": "ant",
+     "zh": "蚂蚁"
+    },
+    {
+     "w": "worry",
+     "zh": "担心；担忧"
+    },
+    {
+     "w": "stuck",
+     "zh": "陷住；无法移动"
+    },
+    {
+     "w": "mud",
+     "zh": "泥"
+    },
+    {
+     "w": "pull",
+     "zh": "拉；拽"
+    },
+    {
+     "w": "everyone",
+     "zh": "每人"
+    }
+   ]
+  }
+ ]
+}

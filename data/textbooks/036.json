@@ -1,0 +1,1269 @@
+{
+ "pub": "北师大",
+ "stage": "高中",
+ "grade": "选择性必修 第一册",
+ "vol": "",
+ "id": "f875a73c-bc44-4759-914c-6ee190f37360",
+ "title": "普通高中教科书·英语选择性必修 第一册",
+ "created": "2022-09-29",
+ "units": [
+  {
+   "n": "Unit 1",
+   "t": "Relationships",
+   "words": [
+    {
+     "w": "trait",
+     "zh": "特性，品质"
+    },
+    {
+     "w": "niece",
+     "zh": "侄女，外甥女"
+    },
+    {
+     "w": "nephew",
+     "zh": "侄子，外甥"
+    },
+    {
+     "w": "humour",
+     "zh": "幽默感"
+    },
+    {
+     "w": "passionate",
+     "zh": "热爱，酷爱的；具有强烈信念的"
+    },
+    {
+     "w": "outgoing",
+     "zh": "外向的"
+    },
+    {
+     "w": "flu",
+     "zh": "流行性感冒，流感"
+    },
+    {
+     "w": "host",
+     "zh": "主办；做…的东道主n. 主人；主持人"
+    },
+    {
+     "w": "incredible",
+     "zh": "不能相信的"
+    },
+    {
+     "w": "occasionally",
+     "zh": "偶然地"
+    },
+    {
+     "w": "emotional",
+     "zh": "情感（上）的"
+    },
+    {
+     "w": "extremely",
+     "zh": "极度，极其"
+    },
+    {
+     "w": "grateful",
+     "zh": "感激时，感谢时"
+    },
+    {
+     "w": "lesson",
+     "zh": "课，课程"
+    },
+    {
+     "w": "practical",
+     "zh": "务实的"
+    },
+    {
+     "w": "angle",
+     "zh": "角"
+    },
+    {
+     "w": "triangle",
+     "zh": "三角形"
+    },
+    {
+     "w": "for the first time",
+     "zh": "初次，第一次带*号的词为 《普通高中英语课程标准（年版年修订）》必修和选择性必修以外词汇。"
+    },
+    {
+     "w": "hydrogen",
+     "zh": "氢"
+    },
+    {
+     "w": "rocket",
+     "zh": "火箭"
+    },
+    {
+     "w": "pour",
+     "zh": "灌，注，倒"
+    },
+    {
+     "w": "pour into",
+     "zh": "投入 ⋯.⋯于某物"
+    },
+    {
+     "w": "fuel",
+     "zh": "燃料"
+    },
+    {
+     "w": "lack",
+     "zh": "缺乏"
+    },
+    {
+     "w": "presentation",
+     "zh": "提供， 显示"
+    },
+    {
+     "w": "couple of",
+     "zh": "一些，几个；一双，一对"
+    },
+    {
+     "w": "used to",
+     "zh": "过去经常，胃经"
+    },
+    {
+     "w": "behaviour",
+     "zh": "行为，举止"
+    },
+    {
+     "w": "drag",
+     "zh": "拖，拉"
+    },
+    {
+     "w": "acid",
+     "zh": "酸"
+    },
+    {
+     "w": "onion",
+     "zh": "洋葱"
+    },
+    {
+     "w": "access",
+     "zh": "进入；接触的机会"
+    },
+    {
+     "w": "worthwhile",
+     "zh": "值得付出的"
+    },
+    {
+     "w": "educationalist",
+     "zh": "教育（学）家"
+    },
+    {
+     "w": "feedback",
+     "zh": "反馈意见"
+    },
+    {
+     "w": "preference",
+     "zh": "偏爱，偏好"
+    },
+    {
+     "w": "handle",
+     "zh": "柄，把手"
+    },
+    {
+     "w": "upset",
+     "zh": "烦恼的，心烦意乱的"
+    },
+    {
+     "w": "ashamed",
+     "zh": "羞愧的"
+    },
+    {
+     "w": "intention",
+     "zh": "意图"
+    },
+    {
+     "w": "demanding",
+     "zh": "高要求的"
+    },
+    {
+     "w": "effective",
+     "zh": "有效"
+    },
+    {
+     "w": "raise",
+     "zh": "提出，提起"
+    },
+    {
+     "w": "highlight",
+     "zh": "标出；突出显示"
+    },
+    {
+     "w": "tense",
+     "zh": "时态"
+    },
+    {
+     "w": "manner",
+     "zh": "方式，方法"
+    },
+    {
+     "w": "sensitive",
+     "zh": "敏感的"
+    },
+    {
+     "w": "social networking",
+     "zh": "社交网络"
+    },
+    {
+     "w": "socialise",
+     "zh": "交友，交谊"
+    },
+    {
+     "w": "laptop",
+     "zh": "笔记本电脑，便携式电脑"
+    },
+    {
+     "w": "constantly",
+     "zh": "持续不断地"
+    },
+    {
+     "w": "app",
+     "zh": "应用程序"
+    },
+    {
+     "w": "dorm",
+     "zh": "寝室，学生宿舍"
+    },
+    {
+     "w": "flow",
+     "zh": "流动；v. 流，流动"
+    },
+    {
+     "w": "associate",
+     "zh": "与某人交往"
+    },
+    {
+     "w": "associate with",
+     "zh": "与某人交往"
+    },
+    {
+     "w": "barely",
+     "zh": "几乎不"
+    },
+    {
+     "w": "reserved",
+     "zh": "含蓄；内敛"
+    },
+    {
+     "w": "wired",
+     "zh": "联网的；极其兴奋时"
+    },
+    {
+     "w": "distracted",
+     "zh": "心烦意乱的"
+    },
+    {
+     "w": "reality",
+     "zh": "现实；真实"
+    },
+    {
+     "w": "million",
+     "zh": "百万"
+    },
+    {
+     "w": "obsess",
+     "zh": "使迷恋"
+    },
+    {
+     "w": "obsess over",
+     "zh": "对⋯•⋯过分担心"
+    },
+    {
+     "w": "mate",
+     "zh": "朋友，伙伴"
+    },
+    {
+     "w": "dominate",
+     "zh": "支配，占优势"
+    },
+    {
+     "w": "deadline",
+     "zh": "截止日期，最后期限"
+    },
+    {
+     "w": "scroll",
+     "zh": "上下滚动"
+    },
+    {
+     "w": "inch",
+     "zh": "英丁"
+    },
+    {
+     "w": "stimulation",
+     "zh": "刺激"
+    },
+    {
+     "w": "chase",
+     "zh": "努力赢得n. 追逐，追赶"
+    },
+    {
+     "w": "desperate",
+     "zh": "拼命；绝望"
+    },
+    {
+     "w": "intense",
+     "zh": "强烈的"
+    },
+    {
+     "w": "depressed",
+     "zh": "不开心的"
+    },
+    {
+     "w": "delay",
+     "zh": "推迟，延期"
+    },
+    {
+     "w": "chatter",
+     "zh": "陽叨，喋味不休"
+    },
+    {
+     "w": "chatter away",
+     "zh": "喋喋不休"
+    },
+    {
+     "w": "bend",
+     "zh": "弯腰；俯身"
+    },
+    {
+     "w": "extraordinary",
+     "zh": "非同寻常的"
+    },
+    {
+     "w": "rude",
+     "zh": "无礼的"
+    },
+    {
+     "w": "complain",
+     "zh": "抱怨， 诉苦"
+    },
+    {
+     "w": "appointment",
+     "zh": "约定；约会"
+    },
+    {
+     "w": "alcoholic",
+     "zh": "酗酒者，嗜酒成瘾者"
+    },
+    {
+     "w": "booze",
+     "zh": "酒"
+    },
+    {
+     "w": "hard-wired",
+     "zh": "硬件控制的；天生的"
+    },
+    {
+     "w": "invitation",
+     "zh": "邀请"
+    },
+    {
+     "w": "organise",
+     "zh": "组织，筹划"
+    },
+    {
+     "w": "behalf",
+     "zh": "代表⋯•"
+    },
+    {
+     "w": "on behalf of sb",
+     "zh": "代表某人"
+    },
+    {
+     "w": "topic",
+     "zh": "话题，题目"
+    },
+    {
+     "w": "innovation",
+     "zh": "革新，创新"
+    },
+    {
+     "w": "competitor",
+     "zh": "选手，参赛者"
+    },
+    {
+     "w": "clarity",
+     "zh": "清楚，清晰"
+    },
+    {
+     "w": "fluency",
+     "zh": "流畅，熟练"
+    },
+    {
+     "w": "progression",
+     "zh": "发展，变化"
+    },
+    {
+     "w": "engagement",
+     "zh": "参与"
+    },
+    {
+     "w": "take up",
+     "zh": "占据"
+    },
+    {
+     "w": "sincerely",
+     "zh": "真诚地"
+    }
+   ]
+  },
+  {
+   "n": "Unit 2",
+   "t": "Success",
+   "words": [
+    {
+     "w": "persistent",
+     "zh": "固执的，坚持的"
+    },
+    {
+     "w": "determined",
+     "zh": "坚决的"
+    },
+    {
+     "w": "optimistic",
+     "zh": "乐观的"
+    },
+    {
+     "w": "add",
+     "zh": "乐观的，乐观主义的"
+    },
+    {
+     "w": "astronaut",
+     "zh": "写航员"
+    },
+    {
+     "w": "committed",
+     "zh": "忠诚的，忠实的"
+    },
+    {
+     "w": "disciplined",
+     "zh": "遵守纪律"
+    },
+    {
+     "w": "enthusiastic",
+     "zh": "满腔热情的"
+    },
+    {
+     "w": "ambitious",
+     "zh": "有雄心的"
+    },
+    {
+     "w": "appreciative",
+     "zh": "感激"
+    },
+    {
+     "w": "belong",
+     "zh": "应在 ；适应"
+    },
+    {
+     "w": "belong to",
+     "zh": "是⋯⋯的成员；属于"
+    },
+    {
+     "w": "approval",
+     "zh": "赞许；同意"
+    },
+    {
+     "w": "defend",
+     "zh": "保护，保卫"
+    },
+    {
+     "w": "principle",
+     "zh": "原则；行为准则"
+    },
+    {
+     "w": "unmotivated",
+     "zh": "不积极的，不主动的"
+    },
+    {
+     "w": "politics",
+     "zh": "政治，政洽活动"
+    },
+    {
+     "w": "contrast",
+     "zh": "差异，差别"
+    },
+    {
+     "w": "in contrast to",
+     "zh": "和⋯⋯对比"
+    },
+    {
+     "w": "motivation",
+     "zh": "动力，积极性"
+    },
+    {
+     "w": "make sense",
+     "zh": "有意义；解释得通"
+    },
+    {
+     "w": "injury",
+     "zh": "伤，损害"
+    },
+    {
+     "w": "career",
+     "zh": "职业，事业"
+    },
+    {
+     "w": "cooperation",
+     "zh": "合作，协作"
+    },
+    {
+     "w": "employee",
+     "zh": "雇员"
+    },
+    {
+     "w": "millionaire",
+     "zh": "百万富翁"
+    },
+    {
+     "w": "comfortably",
+     "zh": "舒服地"
+    },
+    {
+     "w": "symbol",
+     "zh": "象征，标志"
+    },
+    {
+     "w": "ultimate",
+     "zh": "最后的，最终的"
+    },
+    {
+     "w": "professor",
+     "zh": "教授"
+    },
+    {
+     "w": "fortune",
+     "zh": "大笔钱，巨款"
+    },
+    {
+     "w": "dormitory",
+     "zh": "宿舍"
+    },
+    {
+     "w": "furniture",
+     "zh": "家具"
+    },
+    {
+     "w": "appreciate",
+     "zh": "欣赏；赏识"
+    },
+    {
+     "w": "hunger",
+     "zh": "饥饿，饥荒"
+    },
+    {
+     "w": "get on",
+     "zh": "发迹；出人头地"
+    },
+    {
+     "w": "guilty",
+     "zh": "内疚的，羞愧"
+    },
+    {
+     "w": "drop out",
+     "zh": "退出，脱离；辍学"
+    },
+    {
+     "w": "hybrid",
+     "zh": "杂交的"
+    },
+    {
+     "w": "influential",
+     "zh": "极具影响力的"
+    },
+    {
+     "w": "devote",
+     "zh": "将…奉献给"
+    },
+    {
+     "w": "devote... to",
+     "zh": "致力于"
+    },
+    {
+     "w": "production",
+     "zh": "生产；产量"
+    },
+    {
+     "w": "vision",
+     "zh": "远见卓识"
+    },
+    {
+     "w": "telecommunications",
+     "zh": "电信，电讯"
+    },
+    {
+     "w": "minimum",
+     "zh": "最少量；最小数；最低限度"
+    },
+    {
+     "w": "championship",
+     "zh": "锦标赛"
+    },
+    {
+     "w": "publisher",
+     "zh": "出版商"
+    },
+    {
+     "w": "reject",
+     "zh": "拒绝接受"
+    },
+    {
+     "w": "contract",
+     "zh": "合同；契约"
+    },
+    {
+     "w": "motivating",
+     "zh": "起激励作用的；激发(人)的"
+    },
+    {
+     "w": "limit",
+     "zh": "限制，限定"
+    },
+    {
+     "w": "distraction",
+     "zh": "使人分心的事物"
+    },
+    {
+     "w": "convince",
+     "zh": "使确信"
+    },
+    {
+     "w": "extreme",
+     "zh": "极端"
+    },
+    {
+     "w": "strive",
+     "zh": "努力；奋斗"
+    },
+    {
+     "w": "encyclopaedia",
+     "zh": "百科全书"
+    },
+    {
+     "w": "entry",
+     "zh": "条目"
+    },
+    {
+     "w": "academic",
+     "zh": "学术"
+    },
+    {
+     "w": "ruin",
+     "zh": "毁掉，糟蹋，毁坏"
+    },
+    {
+     "w": "skip",
+     "zh": "不做 ；蹦跳着走"
+    },
+    {
+     "w": "defensive",
+     "zh": "戒备的，自卫"
+    },
+    {
+     "w": "element",
+     "zh": "基本部分；要素"
+    },
+    {
+     "w": "workout",
+     "zh": "训练，锻炼（"
+    },
+    {
+     "w": "intensity",
+     "zh": "强度；强烈"
+    },
+    {
+     "w": "selfish",
+     "zh": "自私的， 利己的"
+    },
+    {
+     "w": "sacrifice",
+     "zh": "牺牲"
+    },
+    {
+     "w": "countless",
+     "zh": "无数的"
+    },
+    {
+     "w": "hire",
+     "zh": "租用"
+    },
+    {
+     "w": "triathlete",
+     "zh": "铁人三项运动员"
+    },
+    {
+     "w": "boil",
+     "zh": "沸腾，煮沸"
+    },
+    {
+     "w": "boil down to sth",
+     "zh": "归结为；要点是"
+    },
+    {
+     "w": "enormous",
+     "zh": "庞大无比的"
+    },
+    {
+     "w": "stay in",
+     "zh": "待在家里（"
+    },
+    {
+     "w": "length",
+     "zh": "长度"
+    },
+    {
+     "w": "rugby",
+     "zh": "橄榄球"
+    },
+    {
+     "w": "apply oneself to sth",
+     "zh": "努力；专心致志于某事"
+    },
+    {
+     "w": "apart",
+     "zh": "分开；散开"
+    },
+    {
+     "w": "set sb",
+     "zh": "便与众不同"
+    },
+    {
+     "w": "platform",
+     "zh": "舞合；月合"
+    },
+    {
+     "w": "injured",
+     "zh": "受伤"
+    },
+    {
+     "w": "outstanding",
+     "zh": "突出的， 杰出的"
+    },
+    {
+     "w": "average",
+     "zh": "平庸的，普通n. 平均水平；平均数"
+    },
+    {
+     "w": "normal",
+     "zh": "正常的，平常的"
+    },
+    {
+     "w": "iron",
+     "zh": "铁；熨斗"
+    },
+    {
+     "w": "hammer",
+     "zh": "椰头；锤子"
+    },
+    {
+     "w": "recognised",
+     "zh": "公认的；经过检验的"
+    },
+    {
+     "w": "contribute",
+     "zh": "增进；捐献；促成"
+    },
+    {
+     "w": "style",
+     "zh": "方式，特点"
+    },
+    {
+     "w": "retire",
+     "zh": "退休；退职"
+    },
+    {
+     "w": "retire from",
+     "zh": "从・・退休"
+    },
+    {
+     "w": "leadership",
+     "zh": "领导；领导地位"
+    },
+    {
+     "w": "devotion",
+     "zh": "奉献；忠心"
+    },
+    {
+     "w": "Reading club",
+     "zh": ""
+    },
+    {
+     "w": "advanced",
+     "zh": "先进的"
+    }
+   ]
+  },
+  {
+   "n": "Unit 3",
+   "t": "Conservation",
+   "words": [
+    {
+     "w": "conservation",
+     "zh": "保护"
+    },
+    {
+     "w": "destroy",
+     "zh": "破坏；毁掉"
+    },
+    {
+     "w": "plastic",
+     "zh": "塑料制时"
+    },
+    {
+     "w": "mining",
+     "zh": "米矿业"
+    },
+    {
+     "w": "item",
+     "zh": "一项，条"
+    },
+    {
+     "w": "recycle",
+     "zh": "回收利用"
+    },
+    {
+     "w": "unrecyclable",
+     "zh": "不可回收的"
+    },
+    {
+     "w": "informative",
+     "zh": "干货满满提供丰富信息的"
+    },
+    {
+     "w": "forwards",
+     "zh": "向前"
+    },
+    {
+     "w": "collapse",
+     "zh": "突然倒下；倒塌"
+    },
+    {
+     "w": "reference",
+     "zh": "提到， 论及"
+    },
+    {
+     "w": "faith",
+     "zh": "相信；信任"
+    },
+    {
+     "w": "discipline",
+     "zh": "自制力"
+    },
+    {
+     "w": "found",
+     "zh": "创立；创建"
+    },
+    {
+     "w": "rejection",
+     "zh": "嬚弃；拒绝接受"
+    },
+    {
+     "w": "fashion",
+     "zh": "时尚"
+    },
+    {
+     "w": "designer",
+     "zh": "设计师，设计者"
+    },
+    {
+     "w": "bitterly",
+     "zh": "痛苦地；愤恨地"
+    },
+    {
+     "w": "promotion",
+     "zh": "提升，背升"
+    },
+    {
+     "w": "bridal",
+     "zh": "婚礼；新娘"
+    },
+    {
+     "w": "label",
+     "zh": "标签，标记vt. 贴标签于"
+    },
+    {
+     "w": "entrance",
+     "zh": "进入许可；入日"
+    },
+    {
+     "w": "income",
+     "zh": "收入；收益"
+    },
+    {
+     "w": "threat",
+     "zh": "威胁；（灾难等坏事）发生可能"
+    },
+    {
+     "w": "switch",
+     "zh": "转换，改变"
+    },
+    {
+     "w": "have role",
+     "zh": "起某种作用"
+    },
+    {
+     "w": "do one's part",
+     "zh": "尽自己的职责"
+    },
+    {
+     "w": "rhino",
+     "zh": "犀牛"
+    },
+    {
+     "w": "illegally",
+     "zh": "非法地，违法地"
+    },
+    {
+     "w": "hunt",
+     "zh": "猜取，猜杀"
+    },
+    {
+     "w": "horn",
+     "zh": "角"
+    },
+    {
+     "w": "extinct",
+     "zh": "灭绝，绝种"
+    },
+    {
+     "w": "incredibly",
+     "zh": "极其不可思议地"
+    },
+    {
+     "w": "fully",
+     "zh": "非常地，极端地"
+    },
+    {
+     "w": "urgent",
+     "zh": "紧急，急迫"
+    },
+    {
+     "w": "die out",
+     "zh": "消失；绝迹，灭绝"
+    },
+    {
+     "w": "species",
+     "zh": "物种，种"
+    },
+    {
+     "w": "wipe",
+     "zh": "擦；拭"
+    },
+    {
+     "w": "wipe out",
+     "zh": "彻底毁灭"
+    },
+    {
+     "w": "unusual",
+     "zh": "不寻常的"
+    },
+    {
+     "w": "mass",
+     "zh": "大量的"
+    },
+    {
+     "w": "varied",
+     "zh": "各种各样的"
+    },
+    {
+     "w": "asteroid",
+     "zh": "小行星"
+    },
+    {
+     "w": "decrease",
+     "zh": "减少；减少量"
+    },
+    {
+     "w": "blame",
+     "zh": "贡怪，指贡"
+    },
+    {
+     "w": "be to blame",
+     "zh": "负有责任"
+    },
+    {
+     "w": "affect",
+     "zh": "影响"
+    },
+    {
+     "w": "be at risk",
+     "zh": "处境危险，受到威胁"
+    },
+    {
+     "w": "endangered",
+     "zh": "濒危"
+    },
+    {
+     "w": "solar",
+     "zh": "太阳光"
+    },
+    {
+     "w": "hatch",
+     "zh": "孵化"
+    },
+    {
+     "w": "restore",
+     "zh": "恢复"
+    },
+    {
+     "w": "packet",
+     "zh": "小包，小盒"
+    },
+    {
+     "w": "set out",
+     "zh": "开始做某事，看手进行"
+    },
+    {
+     "w": "packaging",
+     "zh": "包装盒（瓶、袋），包装材料"
+    },
+    {
+     "w": "coconut",
+     "zh": "椰子"
+    },
+    {
+     "w": "consumer",
+     "zh": "消费者"
+    },
+    {
+     "w": "wasteful",
+     "zh": "浪费的；挥雀的"
+    },
+    {
+     "w": "wrap",
+     "zh": "包，裹"
+    },
+    {
+     "w": "shell",
+     "zh": "売；贝売"
+    },
+    {
+     "w": "transportation",
+     "zh": "交通运输系统，运输方式（L）"
+    },
+    {
+     "w": "dirt",
+     "zh": "灰尘，尘士"
+    },
+    {
+     "w": "swallow",
+     "zh": "燕子"
+    },
+    {
+     "w": "realistic",
+     "zh": "现实的，实际"
+    },
+    {
+     "w": "innovative",
+     "zh": "推陈出新革新的"
+    },
+    {
+     "w": "refillable",
+     "zh": "可再填充"
+    },
+    {
+     "w": "aware",
+     "zh": "意识到的，明白时"
+    },
+    {
+     "w": "collection",
+     "zh": "收集；收藏品；专辑"
+    },
+    {
+     "w": "bin",
+     "zh": "垃圾"
+    },
+    {
+     "w": "anxious",
+     "zh": "焦虑时，不安的"
+    },
+    {
+     "w": "reusable",
+     "zh": "可以再度使用的"
+    },
+    {
+     "w": "carton",
+     "zh": "硬纸盒；塑料盒"
+    },
+    {
+     "w": "cutlery",
+     "zh": "餐具"
+    },
+    {
+     "w": "chopsticks",
+     "zh": "筷子"
+    },
+    {
+     "w": "council",
+     "zh": "委员会；理事会"
+    },
+    {
+     "w": "destruction",
+     "zh": "破坏，毁坏"
+    },
+    {
+     "w": "stuck",
+     "zh": "卡住时，无法移动时"
+    },
+    {
+     "w": "jam",
+     "zh": "拥挤，堵塞；果酱"
+    },
+    {
+     "w": "traffic jam",
+     "zh": "交通堵塞"
+    },
+    {
+     "w": "annoyed",
+     "zh": "烦恼，生气时"
+    },
+    {
+     "w": "stressed out",
+     "zh": "焦虑"
+    },
+    {
+     "w": "roadwork",
+     "zh": "道路施工"
+    },
+    {
+     "w": "anger",
+     "zh": "愤怒；怒气"
+    },
+    {
+     "w": "decade",
+     "zh": "十年，十年期"
+    },
+    {
+     "w": "gas",
+     "zh": "气，气体"
+    },
+    {
+     "w": "cancer",
+     "zh": "醬症"
+    },
+    {
+     "w": "relate",
+     "zh": "相联系，有关联"
+    },
+    {
+     "w": "be related to",
+     "zh": "与⋯・有关联"
+    },
+    {
+     "w": "regular",
+     "zh": "是期的，有规律的"
+    },
+    {
+     "w": "suit",
+     "zh": "适合；n. 套装"
+    },
+    {
+     "w": "essay",
+     "zh": "论说文；散文"
+    },
+    {
+     "w": "organic",
+     "zh": "有机的"
+    },
+    {
+     "w": "involve",
+     "zh": "包含，需要"
+    },
+    {
+     "w": "institute",
+     "zh": "机构；研究院"
+    },
+    {
+     "w": "poultry",
+     "zh": "家禽肉，家禽"
+    },
+    {
+     "w": "billion",
+     "zh": "十亿"
+    },
+    {
+     "w": "opponent",
+     "zh": "反对者；对手，敌于"
+    },
+    {
+     "w": "cruel",
+     "zh": "残忍"
+    },
+    {
+     "w": "instance",
+     "zh": "例子，实例"
+    },
+    {
+     "w": "for instance",
+     "zh": "例如"
+    },
+    {
+     "w": "claim",
+     "zh": "声称；断言；主张n. 声称；（根据权力而提出的）要求"
+    },
+    {
+     "w": "chemical",
+     "zh": "化学品"
+    },
+    {
+     "w": "drug",
+     "zh": "绮物，绮材；毒品"
+    },
+    {
+     "w": "sum",
+     "zh": "概括，总结n. 金额，款项；总数"
+    },
+    {
+     "w": "sum up",
+     "zh": "概括，总结"
+    },
+    {
+     "w": "committee",
+     "zh": "委员会"
+    },
+    {
+     "w": "temple",
+     "zh": "庙宇，寺院"
+    },
+    {
+     "w": "confucius",
+     "zh": "孔子"
+    },
+    {
+     "w": "memorial",
+     "zh": "纪念的，悼念的"
+    },
+    {
+     "w": "carve",
+     "zh": "雕，刻"
+    },
+    {
+     "w": "valley",
+     "zh": "谷，山谷"
+    },
+    {
+     "w": "scenic",
+     "zh": "景色优美"
+    },
+    {
+     "w": "historic",
+     "zh": "历史上著名的"
+    },
+    {
+     "w": "thunderstorm",
+     "zh": "雷暴"
+    },
+    {
+     "w": "typhoon",
+     "zh": "台风"
+    },
+    {
+     "w": "agricultural",
+     "zh": "农业"
+    },
+    {
+     "w": "atlantic",
+     "zh": "大西洋北师大"
+    }
+   ]
+  }
+ ]
+}

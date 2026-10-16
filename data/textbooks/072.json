@@ -1,0 +1,787 @@
+{
+ "pub": "沪教",
+ "stage": "初中",
+ "grade": "九年级",
+ "vol": "下册",
+ "id": "8a9962e7-f8e6-4f5f-8e2a-df9bf874bf0c",
+ "title": "义务教育教科书·英语九年级下册",
+ "created": "2022-09-29",
+ "units": [
+  {
+   "n": "Unit 1",
+   "t": "",
+   "words": [
+    {
+     "w": "voyage",
+     "zh": "航行"
+    },
+    {
+     "w": "repetition",
+     "zh": "重复"
+    },
+    {
+     "w": "american",
+     "zh": "美洲"
+    },
+    {
+     "w": "continent",
+     "zh": "大陆"
+    },
+    {
+     "w": "route",
+     "zh": "路线"
+    },
+    {
+     "w": "discovery",
+     "zh": "发现"
+    },
+    {
+     "w": "rise",
+     "zh": "变得更加成功（或重要、强大等）"
+    },
+    {
+     "w": "official",
+     "zh": "官员"
+    },
+    {
+     "w": "develop",
+     "zh": "增强；加强"
+    },
+    {
+     "w": "relation",
+     "zh": "关系；交往"
+    },
+    {
+     "w": "trade",
+     "zh": "贸易"
+    },
+    {
+     "w": "foreign",
+     "zh": "外国"
+    },
+    {
+     "w": "fleet",
+     "zh": "船队；机群"
+    },
+    {
+     "w": "africa",
+     "zh": "非F狮"
+    },
+    {
+     "w": "nowhere",
+     "zh": "无处；哪里都不"
+    },
+    {
+     "w": "silk",
+     "zh": "丝织物；丝绸"
+    },
+    {
+     "w": "giraffe",
+     "zh": "长颈鹿"
+    },
+    {
+     "w": "besides",
+     "zh": "除⋯•之外（还）"
+    },
+    {
+     "w": "development",
+     "zh": "发展；壮大"
+    },
+    {
+     "w": "region",
+     "zh": "地区"
+    },
+    {
+     "w": "pioneer",
+     "zh": "先锋；先驱"
+    },
+    {
+     "w": "people",
+     "zh": "民族；种族"
+    },
+    {
+     "w": "wealth",
+     "zh": "财富"
+    },
+    {
+     "w": "spread",
+     "zh": "传播说明：本词汇表音标根据《牛津高阶英汉双解词典》（第版）标注。标*单词只要求理解。"
+    },
+    {
+     "w": "open up",
+     "zh": "开辟"
+    },
+    {
+     "w": "go on a trip",
+     "zh": "去旅行"
+    },
+    {
+     "w": "set up",
+     "zh": "建立，设立"
+    },
+    {
+     "w": "set sail",
+     "zh": "起航（be） known as 被称为"
+    },
+    {
+     "w": "as wells",
+     "zh": "也；还"
+    },
+    {
+     "w": "lead to",
+     "zh": "导致"
+    },
+    {
+     "w": "compare... with",
+     "zh": "把…⋯与……对比"
+    }
+   ]
+  },
+  {
+   "n": "Unit 2",
+   "t": "",
+   "words": [
+    {
+     "w": "culture shock",
+     "zh": "文化冲击，文化休克"
+    },
+    {
+     "w": "camp",
+     "zh": "度假营"
+    },
+    {
+     "w": "firework",
+     "zh": "烟火；烟花"
+    },
+    {
+     "w": "turkey",
+     "zh": "火鸡"
+    },
+    {
+     "w": "international",
+     "zh": "国际"
+    },
+    {
+     "w": "admit",
+     "zh": "承认"
+    },
+    {
+     "w": "spare",
+     "zh": "空闲；空余"
+    },
+    {
+     "w": "degree",
+     "zh": "程度"
+    },
+    {
+     "w": "fail",
+     "zh": "失败；未能"
+    },
+    {
+     "w": "manage",
+     "zh": "完成 ，勉力完成"
+    },
+    {
+     "w": "idiom",
+     "zh": "习语；惯用语"
+    },
+    {
+     "w": "everyday",
+     "zh": "每天；日常"
+    },
+    {
+     "w": "uniform",
+     "zh": "校服"
+    },
+    {
+     "w": "whatever",
+     "zh": "一切事物"
+    },
+    {
+     "w": "pink",
+     "zh": "粉红色"
+    },
+    {
+     "w": "purple",
+     "zh": "紫色"
+    },
+    {
+     "w": "anyway",
+     "zh": "无论如何；反正"
+    },
+    {
+     "w": "especially",
+     "zh": "尤其；特别"
+    },
+    {
+     "w": "baseball",
+     "zh": "棒球运动"
+    },
+    {
+     "w": "education",
+     "zh": "有教益经历"
+    },
+    {
+     "w": "state",
+     "zh": "州"
+    },
+    {
+     "w": "national",
+     "zh": "国家；民族的；全国"
+    },
+    {
+     "w": "president",
+     "zh": "总统"
+    },
+    {
+     "w": "vacation",
+     "zh": "假期"
+    },
+    {
+     "w": "schedule",
+     "zh": "日程安排"
+    },
+    {
+     "w": "set off",
+     "zh": "使 爆炸"
+    },
+    {
+     "w": "take off",
+     "zh": "脱下"
+    },
+    {
+     "w": "in one's spare time",
+     "zh": "在某人前空闲时间里"
+    },
+    {
+     "w": "to a certain degree",
+     "zh": "在某种程度上"
+    },
+    {
+     "w": "get used to",
+     "zh": "习惯于，适应"
+    },
+    {
+     "w": "under the weather",
+     "zh": "略有不适；不得劲"
+    }
+   ]
+  },
+  {
+   "n": "Unit 3",
+   "t": "",
+   "words": [
+    {
+     "w": "concern",
+     "zh": "担心；忧虑"
+    },
+    {
+     "w": "atmosphere",
+     "zh": "大气层"
+    },
+    {
+     "w": "temperature",
+     "zh": "温度；气温"
+    },
+    {
+     "w": "consumer",
+     "zh": "消费者"
+    },
+    {
+     "w": "guess",
+     "zh": "猜测"
+    },
+    {
+     "w": "green",
+     "zh": "环境保护；赞成环境保护"
+    },
+    {
+     "w": "lifeless",
+     "zh": "无生命的；无生物生长"
+    },
+    {
+     "w": "fuel",
+     "zh": "燃料"
+    },
+    {
+     "w": "coal",
+     "zh": "煤"
+    },
+    {
+     "w": "result",
+     "zh": "结果"
+    },
+    {
+     "w": "increase",
+     "zh": "增长；增多；增加"
+    },
+    {
+     "w": "sea level",
+     "zh": "海平面"
+    },
+    {
+     "w": "destroy",
+     "zh": "摧毀，毁灭"
+    },
+    {
+     "w": "nature",
+     "zh": "自然界，大自然"
+    },
+    {
+     "w": "surface",
+     "zh": "表面；表层"
+    },
+    {
+     "w": "soil",
+     "zh": "土壤"
+    },
+    {
+     "w": "flood",
+     "zh": "洪水；水灾"
+    },
+    {
+     "w": "habit",
+     "zh": "习惯"
+    },
+    {
+     "w": "proper",
+     "zh": "正确时；恰当"
+    },
+    {
+     "w": "friendly",
+     "zh": "无害"
+    },
+    {
+     "w": "recycle",
+     "zh": "回收利用"
+    },
+    {
+     "w": "purpose",
+     "zh": "目；用途"
+    },
+    {
+     "w": "solution",
+     "zh": "解决办法；处理手段"
+    },
+    {
+     "w": "government",
+     "zh": "政府"
+    },
+    {
+     "w": "role model",
+     "zh": "档模；行为榜样"
+    },
+    {
+     "w": "greenhouse effect",
+     "zh": "温室效应"
+    },
+    {
+     "w": "in danger",
+     "zh": "在危险中"
+    },
+    {
+     "w": "as a result of",
+     "zh": "由于"
+    },
+    {
+     "w": "result in",
+     "zh": "造成；导致"
+    },
+    {
+     "w": "mountains of",
+     "zh": "许多，大量"
+    },
+    {
+     "w": "take action",
+     "zh": "采取行动"
+    },
+    {
+     "w": "make a difference",
+     "zh": "有作用；有影响"
+    },
+    {
+     "w": "act as",
+     "zh": "充当"
+    }
+   ]
+  },
+  {
+   "n": "Unit 4",
+   "t": "",
+   "words": [
+    {
+     "w": "asteroid",
+     "zh": "小行星"
+    },
+    {
+     "w": "typhoon",
+     "zh": "台风"
+    },
+    {
+     "w": "earthquake",
+     "zh": "地震"
+    },
+    {
+     "w": "melt",
+     "zh": "熔化； 融化"
+    },
+    {
+     "w": "badly",
+     "zh": "严重地；厉害地"
+    },
+    {
+     "w": "alive",
+     "zh": "活着；在世"
+    },
+    {
+     "w": "pool",
+     "zh": "水坑；水塘"
+    },
+    {
+     "w": "object",
+     "zh": "物体；物品"
+    },
+    {
+     "w": "coach",
+     "zh": "长途汽车"
+    },
+    {
+     "w": "pass",
+     "zh": "通过"
+    },
+    {
+     "w": "line",
+     "zh": "电话线路"
+    },
+    {
+     "w": "dead",
+     "zh": "不运行；不转动时"
+    },
+    {
+     "w": "boss",
+     "zh": "老板"
+    },
+    {
+     "w": "deaf",
+     "zh": "聋"
+    },
+    {
+     "w": "stare",
+     "zh": "盯着看，凝视，注视"
+    },
+    {
+     "w": "screen",
+     "zh": "屏幕；荧光屏"
+    },
+    {
+     "w": "notice",
+     "zh": "看 到；在意到，意识到"
+    },
+    {
+     "w": "awake",
+     "zh": "（使）醒来"
+    },
+    {
+     "w": "immediately",
+     "zh": "立即；马上，即刻"
+    },
+    {
+     "w": "missing",
+     "zh": "失踪"
+    },
+    {
+     "w": "fellow",
+     "zh": "同类；同伴"
+    },
+    {
+     "w": "natural disaster",
+     "zh": "自然灾害"
+    },
+    {
+     "w": "pass by",
+     "zh": "通过，经过"
+    },
+    {
+     "w": "stick with",
+     "zh": "持续；坚持"
+    },
+    {
+     "w": "sit around",
+     "zh": "无所事事地消磨时间；闲坐"
+    },
+    {
+     "w": "have no time to do",
+     "zh": "不愿为⋯花时间；没有时间做⋯⋯"
+    },
+    {
+     "w": "fall on deaf ears",
+     "zh": "不被理睬；不被注意"
+    },
+    {
+     "w": "stare at",
+     "zh": "盯着看；凝视；注视"
+    },
+    {
+     "w": "in surprise",
+     "zh": "惊讶地"
+    },
+    {
+     "w": "for now",
+     "zh": "暂时"
+    },
+    {
+     "w": "survival kit",
+     "zh": "救生包（装有食物、医疗用品和工具）"
+    }
+   ]
+  },
+  {
+   "n": "Unit 5",
+   "t": "",
+   "words": [
+    {
+     "w": "announcement",
+     "zh": "公告；迪告"
+    },
+    {
+     "w": "passport",
+     "zh": "护照"
+    },
+    {
+     "w": "the Pacific",
+     "zh": "太平洋"
+    },
+    {
+     "w": "canada",
+     "zh": "加拿大"
+    },
+    {
+     "w": "resort",
+     "zh": "旅游胜地；度假胜地"
+    },
+    {
+     "w": "canadian",
+     "zh": "加拿大"
+    },
+    {
+     "w": "slope",
+     "zh": "斜坡；坡地"
+    },
+    {
+     "w": "opposite",
+     "zh": "与⋯⋯相对；在⋯⋯对面"
+    },
+    {
+     "w": "glove",
+     "zh": "手套"
+    },
+    {
+     "w": "couple",
+     "zh": "夫妻，情侣"
+    },
+    {
+     "w": "gentle",
+     "zh": "平缓"
+    },
+    {
+     "w": "honest",
+     "zh": "坦率，坦诚"
+    },
+    {
+     "w": "rope",
+     "zh": "绳索"
+    },
+    {
+     "w": "rapid",
+     "zh": "迅速；快速"
+    },
+    {
+     "w": "over",
+     "zh": "结束"
+    },
+    {
+     "w": "shame",
+     "zh": "令人惋惜事；让人遗憾事"
+    },
+    {
+     "w": "fee",
+     "zh": "费用"
+    },
+    {
+     "w": "enter",
+     "zh": "报名参加"
+    },
+    {
+     "w": "semi-final",
+     "zh": "半决赛"
+    },
+    {
+     "w": "final",
+     "zh": "决赛"
+    },
+    {
+     "w": "badminton",
+     "zh": "羽毛球运动"
+    },
+    {
+     "w": "stress",
+     "zh": "精神压力；紧张（be） dying to （do sth.） 渴望（做某事）；极想（做某事）"
+    },
+    {
+     "w": "check in",
+     "zh": "登记；报到"
+    },
+    {
+     "w": "can't wait to",
+     "zh": "迫不及待想（做某事）"
+    },
+    {
+     "w": "to be honest",
+     "zh": "说实在"
+    },
+    {
+     "w": "fall over",
+     "zh": "跌倒；摔倒；被⋯绊倒"
+    },
+    {
+     "w": "keep one's balance",
+     "zh": "保持平衡"
+    },
+    {
+     "w": "build up",
+     "zh": "建立"
+    }
+   ]
+  },
+  {
+   "n": "Unit 6",
+   "t": "",
+   "words": [
+    {
+     "w": "conduct",
+     "zh": "实施；执行"
+    },
+    {
+     "w": "lifestyle",
+     "zh": "生活方式"
+    },
+    {
+     "w": "quarrel",
+     "zh": "争吵"
+    },
+    {
+     "w": "focus",
+     "zh": "集中（注意力、精力等）于"
+    },
+    {
+     "w": "peer",
+     "zh": "同龄人；同辈"
+    },
+    {
+     "w": "pressure",
+     "zh": "压力"
+    },
+    {
+     "w": "whether",
+     "zh": "是否"
+    },
+    {
+     "w": "risk",
+     "zh": "风险"
+    },
+    {
+     "w": "guard",
+     "zh": "守卫；保卫"
+    },
+    {
+     "w": "positive",
+     "zh": "积极乐观；自信"
+    },
+    {
+     "w": "cancel",
+     "zh": "取消；撒销；终止"
+    },
+    {
+     "w": "bright",
+     "zh": "有希望"
+    },
+    {
+     "w": "force",
+     "zh": "强迫；迫使（某人做某事）"
+    },
+    {
+     "w": "concert",
+     "zh": "音乐会；演奏会"
+    },
+    {
+     "w": "private",
+     "zh": "私人"
+    },
+    {
+     "w": "silent",
+     "zh": "不说话；沉默前"
+    },
+    {
+     "w": "musical instrument",
+     "zh": "乐器"
+    },
+    {
+     "w": "enemy",
+     "zh": "危害物；大敌"
+    },
+    {
+     "w": "regular",
+     "zh": "有规律；定时"
+    },
+    {
+     "w": "cheer",
+     "zh": "鼓励；鼓舞"
+    },
+    {
+     "w": "low",
+     "zh": "沮丧；消沉；无精打采"
+    },
+    {
+     "w": "eyesight",
+     "zh": "视力"
+    },
+    {
+     "w": "dentist",
+     "zh": "牙科医生"
+    },
+    {
+     "w": "recovery",
+     "zh": "恢复；痊愈"
+    },
+    {
+     "w": "deal with",
+     "zh": "解决；处理；应付"
+    },
+    {
+     "w": "guard against",
+     "zh": "防止；提防"
+    },
+    {
+     "w": "cancel out",
+     "zh": "抵消；对消"
+    },
+    {
+     "w": "look on the bright side",
+     "zh": "对不好状态） 持乐观态度"
+    },
+    {
+     "w": "take up",
+     "zh": "学着做；开始做（be） busy with 忙于做⋯•"
+    },
+    {
+     "w": "leave... behind",
+     "zh": "把⋯⋯抛在后面"
+    },
+    {
+     "w": "cheer... up",
+     "zh": "变得更高兴；（使）振奋起来"
+    }
+   ]
+  }
+ ]
+}

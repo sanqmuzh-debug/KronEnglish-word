@@ -238,8 +238,9 @@ button:focus-visible{outline:3px solid var(--sky);outline-offset:3px}
 .hm-bar{position:sticky;top:0;z-index:3;background:var(--hbar);-webkit-backdrop-filter:saturate(180%) blur(20px);backdrop-filter:saturate(180%) blur(20px);padding-top:env(safe-area-inset-top)}
 .hm-bar .in{max-width:620px;margin:0 auto;height:66px;display:flex;align-items:center;justify-content:space-between;padding:0 max(16px,env(safe-area-inset-left,0px))}
 .hm-bar .brand span{display:inline}
-.hm-tabs{display:flex;justify-content:center;padding:32px 16px 0;animation:hmUp .7s cubic-bezier(.2,.8,.2,1) .05s both}
-.pills{position:relative;display:inline-flex;padding:5px;border-radius:99px;background:var(--hp)}
+.hm-tabs{display:flex;padding:32px 16px 0;overflow-x:auto;scrollbar-width:none;animation:hmUp .7s cubic-bezier(.2,.8,.2,1) .05s both}
+.hm-tabs::-webkit-scrollbar{display:none}
+.pills{position:relative;display:inline-flex;flex:none;margin:0 auto;padding:5px;border-radius:99px;background:var(--hp)}
 .pills button{position:relative;z-index:1;border:0;background:none;padding:10px 20px;border-radius:99px;font:600 16px var(--font-display);letter-spacing:.01em;color:var(--hk);white-space:nowrap;transition:color .35s}
 .pills button[aria-pressed="true"]{color:#fff}
 .pills .ind{position:absolute;top:5px;bottom:5px;left:0;width:0;border-radius:99px;background:var(--ok);box-shadow:inset 0 -3px 0 var(--ok-d);transition:transform .45s cubic-bezier(.3,1.2,.5,1),width .45s cubic-bezier(.3,1.2,.5,1)}
@@ -431,7 +432,7 @@ function shuffle(a){a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.rando
 const SHELF=window.KRON_SHELF; // demo/shelf.js，scripts/import_legacy.py 生成
 const SHELF_TINT={think:['#C2412D','#3F6FD1','#8A4FD0','#B8901E','#2B9C8F','#B03A2E'],pu:['#E5A100','#4FA62A','#2E8FD6','#D9433A','#EE8420'],ielts:['#B4232F','#1D3F73'],exam:['#30C25B','#2E8FD6','#E5A100','#D9433A','#8A4FD0','#2B9C8F','#1D1D1F']};
 const COVER_AR={think:.703,pu:.79,ielts:.72,exam:.72};
-const findBook=id=>{for(const sr of SHELF){const i=sr.books.findIndex(b=>b.id===id);if(i>=0)return{sr,b:sr.books[i],i,c:SHELF_TINT[sr.id][i],ar:COVER_AR[sr.id]}}return null};
+const findBook=id=>{for(const sr of SHELF){const i=sr.books.findIndex(b=>b.id===id);if(i>=0)return{sr,b:sr.books[i],i,c:(SHELF_TINT[sr.id]||SHELF_TINT.exam)[i%7],ar:COVER_AR[sr.id]||.706}}return null};
 const bkName=f=>f.sr.id==='exam'?f.b.lvl+'词汇':f.sr.name+' '+f.b.lvl;
 const bookTitle=id=>{const f=findBook(id);return f?bkName(f):''};
 const sampleFor=id=>{const f=findBook(id);return f&&f.sr.id==='think'&&f.b.mark!=='S'?'think1':'kids'};

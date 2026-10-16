@@ -1,0 +1,1459 @@
+{
+ "pub": "人教",
+ "stage": "高中",
+ "grade": "必修 第一册",
+ "vol": "",
+ "id": "8e62f140-1990-411e-8831-59a69bb53c1d",
+ "title": "普通高中教科书·英语必修 第一册",
+ "created": "2022-09-29",
+ "units": [
+  {
+   "n": "Welcome Unit",
+   "t": "",
+   "words": [
+    {
+     "w": "exchange",
+     "zh": "交换"
+    },
+    {
+     "w": "lecture",
+     "zh": "讲座；讲课；教训"
+    },
+    {
+     "w": "registration",
+     "zh": "登记；注册；挂号"
+    },
+    {
+     "w": "register",
+     "zh": "登记；注册"
+    },
+    {
+     "w": "sex",
+     "zh": "性别"
+    },
+    {
+     "w": "female",
+     "zh": "女 ；雌的n. 雌性动（植）物；女子"
+    },
+    {
+     "w": "male",
+     "zh": "男 ；雄n. 雄性动（植）物；男子"
+    },
+    {
+     "w": "nationality",
+     "zh": "国籍；民族"
+    },
+    {
+     "w": "nation",
+     "zh": "国家；民族；国民"
+    },
+    {
+     "w": "designer",
+     "zh": "设计者"
+    },
+    {
+     "w": "design",
+     "zh": "设计；设计万案"
+    },
+    {
+     "w": "campus",
+     "zh": "校园；校区"
+    },
+    {
+     "w": "formal",
+     "zh": "正式的；正规"
+    },
+    {
+     "w": "anxious",
+     "zh": "焦虑的；不安的"
+    },
+    {
+     "w": "annoyed",
+     "zh": "恼怒的；生气"
+    },
+    {
+     "w": "annoy",
+     "zh": "使恼怒；打扰"
+    },
+    {
+     "w": "frightened",
+     "zh": "惊吓的；害怕"
+    },
+    {
+     "w": "senior",
+     "zh": "级别 高n. 较年长的人"
+    },
+    {
+     "w": "senior high school",
+     "zh": "高中"
+    },
+    {
+     "w": "at Last",
+     "zh": "终于；最终"
+    },
+    {
+     "w": "outgoing",
+     "zh": "爱交际的；外向的"
+    },
+    {
+     "w": "impression",
+     "zh": "印象；感想"
+    },
+    {
+     "w": "impress",
+     "zh": "给人印象"
+    },
+    {
+     "w": "make an impression",
+     "zh": "留下好印象"
+    },
+    {
+     "w": "what if",
+     "zh": "要是⋯⋯会怎么样呢？"
+    },
+    {
+     "w": "guy",
+     "zh": "小伙子；男人；家伙"
+    },
+    {
+     "w": "concentrate",
+     "zh": "集中精力"
+    },
+    {
+     "w": "concentrate on",
+     "zh": "集中精力于"
+    },
+    {
+     "w": "experiment",
+     "zh": "实验；试验"
+    },
+    {
+     "w": "leave... alone",
+     "zh": "不打扰；不惊动"
+    },
+    {
+     "w": "awkward",
+     "zh": "令人尴尬的；难对付的"
+    },
+    {
+     "w": "junior",
+     "zh": "年少的"
+    },
+    {
+     "w": "junior high school",
+     "zh": "初级中学"
+    },
+    {
+     "w": "explore",
+     "zh": "探索；勘探"
+    },
+    {
+     "w": "confident",
+     "zh": "自信的；有把握昀"
+    },
+    {
+     "w": "confidence",
+     "zh": "信心；信任"
+    },
+    {
+     "w": "forward",
+     "zh": "（also forwards） 向前；前进"
+    },
+    {
+     "w": "look forward to",
+     "zh": "盼望；期待"
+    },
+    {
+     "w": "take notes",
+     "zh": "记笔记"
+    },
+    {
+     "w": "flash",
+     "zh": "光；信号vt. 使闪耀；发出（信号）"
+    },
+    {
+     "w": "flash card",
+     "zh": "教学卡片；识字卡"
+    },
+    {
+     "w": "organise",
+     "zh": "组织"
+    },
+    {
+     "w": "organisation",
+     "zh": "p:gonar'zerjn/n.组织；团体；机构"
+    },
+    {
+     "w": "goal",
+     "zh": "目标；球门；射门"
+    },
+    {
+     "w": "strategy",
+     "zh": "策略；策划"
+    },
+    {
+     "w": "partner",
+     "zh": "同伴；配偶；合伙人"
+    },
+    {
+     "w": "improve",
+     "zh": "改进；改善"
+    },
+    {
+     "w": "curious",
+     "zh": "好奇的；求知欲强"
+    },
+    {
+     "w": "company",
+     "zh": "公司；商行；陪伴"
+    },
+    {
+     "w": "personality",
+     "zh": "性格；个性"
+    },
+    {
+     "w": "style",
+     "zh": "方式；作风"
+    },
+    {
+     "w": "revise",
+     "zh": "修改；修订；复习"
+    }
+   ]
+  },
+  {
+   "n": "Unit 1",
+   "t": "",
+   "words": [
+    {
+     "w": "teenage",
+     "zh": "青少年时期"
+    },
+    {
+     "w": "teenager",
+     "zh": "青少年"
+    },
+    {
+     "w": "ballet",
+     "zh": "芭蕾舞"
+    },
+    {
+     "w": "volunteer",
+     "zh": "志愿者"
+    },
+    {
+     "w": "debate",
+     "zh": "辩论；争论"
+    },
+    {
+     "w": "prefer",
+     "zh": "较喜欢"
+    },
+    {
+     "w": "prefer... to",
+     "zh": "喜欢⋯多于⋯⋯"
+    },
+    {
+     "w": "content",
+     "zh": "内容；［pl.］目录；（书、讲话、节目等）主题"
+    },
+    {
+     "w": "movement",
+     "zh": "动作；运动；活动"
+    },
+    {
+     "w": "greenhouse",
+     "zh": "溫室；暖房"
+    },
+    {
+     "w": "clean up",
+     "zh": "打扫 干净"
+    },
+    {
+     "w": "suitable",
+     "zh": "合适的；适用"
+    },
+    {
+     "w": "suitable for",
+     "zh": "对・・・适合"
+    },
+    {
+     "w": "actually",
+     "zh": "事实上；的确"
+    },
+    {
+     "w": "challenge",
+     "zh": "挑战；艰巨任务vt. 怀疑；向⋯挑战"
+    },
+    {
+     "w": "title",
+     "zh": "名称；标题；职称；头衔"
+    },
+    {
+     "w": "topic",
+     "zh": "话题；标题"
+    },
+    {
+     "w": "freshman",
+     "zh": "（大学或高中）一年级新生"
+    },
+    {
+     "w": "confusing",
+     "zh": "难以理解的；不清楚"
+    },
+    {
+     "w": "confuse",
+     "zh": "使糊涂；使迷惑"
+    },
+    {
+     "w": "confused",
+     "zh": "糊涂的；迷惑"
+    },
+    {
+     "w": "fluent",
+     "zh": "流利的；熟练"
+    },
+    {
+     "w": "graduate",
+     "zh": "毕业；获得学位/'gredsuat/n.毕业生"
+    },
+    {
+     "w": "recommend",
+     "zh": "建议；推荐；介绍"
+    },
+    {
+     "w": "sign up for",
+     "zh": "报名"
+    },
+    {
+     "w": "advanced",
+     "zh": "先进的"
+    },
+    {
+     "w": "advance",
+     "zh": "前进；发展vi. 前进；发展vt. 发展；促进"
+    },
+    {
+     "w": "literature",
+     "zh": "文学；文学作品"
+    },
+    {
+     "w": "extra-curricular",
+     "zh": "课外的；课程以外的"
+    },
+    {
+     "w": "extra",
+     "zh": "额外的；附加"
+    },
+    {
+     "w": "obviously",
+     "zh": "显然；明显地"
+    },
+    {
+     "w": "quit",
+     "zh": "停止；戒掉；离开（工作职位、学校等）"
+    },
+    {
+     "w": "responsible",
+     "zh": "负责的；有责任的"
+    },
+    {
+     "w": "responsibility",
+     "zh": "责任；义务"
+    },
+    {
+     "w": "be responsible for",
+     "zh": "对⋯・・负责"
+    },
+    {
+     "w": "solution",
+     "zh": "解决办法；答案"
+    },
+    {
+     "w": "schedule",
+     "zh": "工作计划；日程安排"
+    },
+    {
+     "w": "editor",
+     "zh": "主编；编辑；编者"
+    },
+    {
+     "w": "plate",
+     "zh": "盘子；碟子"
+    },
+    {
+     "w": "adventure",
+     "zh": "冒险；奇遇"
+    },
+    {
+     "w": "youth",
+     "zh": "青年时期；青春"
+    },
+    {
+     "w": "survival",
+     "zh": "生存；幸存；幸存事物"
+    },
+    {
+     "w": "expert",
+     "zh": "专家；行家"
+    },
+    {
+     "w": "behaviour",
+     "zh": "行为；举止"
+    },
+    {
+     "w": "generation",
+     "zh": "一代"
+    },
+    {
+     "w": "attract",
+     "zh": "吸引；引起⋯…的注意"
+    },
+    {
+     "w": "be attracted to",
+     "zh": "喜爱"
+    },
+    {
+     "w": "focus",
+     "zh": "中心；重点；焦点"
+    },
+    {
+     "w": "focus on",
+     "zh": "集中；特别关注"
+    },
+    {
+     "w": "addicted",
+     "zh": "有癮的；上瘾的；入迷的"
+    },
+    {
+     "w": "addict",
+     "zh": "对⋯入迷的人；吸毒成瘾的人"
+    },
+    {
+     "w": "addicted to",
+     "zh": "对⋯⋯很入迷"
+    },
+    {
+     "w": "adult",
+     "zh": "成年人"
+    },
+    {
+     "w": "chicago",
+     "zh": "芝加哥"
+    },
+    {
+     "w": "seoul",
+     "zh": "首尔"
+    }
+   ]
+  },
+  {
+   "n": "Unit 2",
+   "t": "",
+   "words": [
+    {
+     "w": "castle",
+     "zh": "城堡；堡垒"
+    },
+    {
+     "w": "apply",
+     "zh": "申请；请求vt. 应用；涂（油漆、乳剂）"
+    },
+    {
+     "w": "apply for",
+     "zh": "甲请"
+    },
+    {
+     "w": "visa",
+     "zh": "签证"
+    },
+    {
+     "w": "rent",
+     "zh": "租用；出租vi. 租用；租金为n. 租金"
+    },
+    {
+     "w": "pack",
+     "zh": "收拾vt. 包装"
+    },
+    {
+     "w": "amazing",
+     "zh": "令人惊奇的；令人惊喜"
+    },
+    {
+     "w": "amazed",
+     "zh": "惊奇的；惊喜"
+    },
+    {
+     "w": "arrangement",
+     "zh": "安排；筹备"
+    },
+    {
+     "w": "extremely",
+     "zh": "极其；非常"
+    },
+    {
+     "w": "source",
+     "zh": "来源；出处"
+    },
+    {
+     "w": "narrow",
+     "zh": "狭窄"
+    },
+    {
+     "w": "flat",
+     "zh": "半坦；扁半n. 公寓；单元房"
+    },
+    {
+     "w": "powerful",
+     "zh": "强大的"
+    },
+    {
+     "w": "empire",
+     "zh": "帝国"
+    },
+    {
+     "w": "emperor",
+     "zh": "呈帝"
+    },
+    {
+     "w": "site",
+     "zh": "地点；位置；现场"
+    },
+    {
+     "w": "take control of",
+     "zh": "控制；接管"
+    },
+    {
+     "w": "official",
+     "zh": "官方的；正式；公务n. 官员；要员"
+    },
+    {
+     "w": "recognise",
+     "zh": "认出 / 辨认出"
+    },
+    {
+     "w": "type",
+     "zh": "类型；种类"
+    },
+    {
+     "w": "flight",
+     "zh": "空中航行；航班；航程"
+    },
+    {
+     "w": "accommodation",
+     "zh": "住处；停留处：膳宿"
+    },
+    {
+     "w": "unique",
+     "zh": "唯一的；独特的；特有"
+    },
+    {
+     "w": "path",
+     "zh": "小路；路线；道路"
+    },
+    {
+     "w": "destination",
+     "zh": "目的地；终点"
+    },
+    {
+     "w": "other than",
+     "zh": "除・・・・・以外"
+    },
+    {
+     "w": "admire",
+     "zh": "钦佩；赞赏"
+    },
+    {
+     "w": "architecture",
+     "zh": "建筑设计；建筑学"
+    },
+    {
+     "w": "architect",
+     "zh": "建筑设计师"
+    },
+    {
+     "w": "brochure",
+     "zh": "资料（或广告）手册"
+    },
+    {
+     "w": "package",
+     "zh": "包裹；包装盒vt. 将⋯包装好"
+    },
+    {
+     "w": "package tour",
+     "zh": "包价旅游"
+    },
+    {
+     "w": "contact",
+     "zh": "联络；联系n. 联系；接触"
+    },
+    {
+     "w": "civilisation",
+     "zh": "文明；文明世界"
+    },
+    {
+     "w": "make up",
+     "zh": "构成；形成"
+    },
+    {
+     "w": "soldier",
+     "zh": "土兵；军人"
+    },
+    {
+     "w": "transport",
+     "zh": "（NAmE usually transportation）交通运输系统/traen'spo:t/ vt.运输；运送"
+    },
+    {
+     "w": "hike",
+     "zh": "徒步旅行vt. 去⋯⋯远足"
+    },
+    {
+     "w": "economy",
+     "zh": "经济；节约"
+    },
+    {
+     "w": "economic",
+     "zh": "经济的"
+    },
+    {
+     "w": "credit",
+     "zh": "借款；信用；称赞；学分"
+    },
+    {
+     "w": "credit card",
+     "zh": "信用卡"
+    },
+    {
+     "w": "detail",
+     "zh": "细节；详情；细微之处"
+    },
+    {
+     "w": "check in",
+     "zh": "登记"
+    },
+    {
+     "w": "check out",
+     "zh": "结账离开"
+    },
+    {
+     "w": "request",
+     "zh": "要求；请求"
+    },
+    {
+     "w": "view",
+     "zh": "视野；景色；看法"
+    },
+    {
+     "w": "sight",
+     "zh": "景象；视野；视力"
+    },
+    {
+     "w": "statue",
+     "zh": "雕塑；雕像"
+    },
+    {
+     "w": "bye",
+     "zh": "公元前"
+    },
+    {
+     "w": "tomb",
+     "zh": "坟墓"
+    },
+    {
+     "w": "unearth",
+     "zh": "挖掘；发掘"
+    },
+    {
+     "w": "comment",
+     "zh": "议论；评论"
+    },
+    {
+     "w": "the Eiffel Tower",
+     "zh": "埃菲尔铁塔"
+    },
+    {
+     "w": "iceland",
+     "zh": "冰岛"
+    },
+    {
+     "w": "disneyland",
+     "zh": "迪士尼乐园"
+    },
+    {
+     "w": "peru",
+     "zh": "秘鲁（南美国家）"
+    },
+    {
+     "w": "the Amazon",
+     "zh": "亚马孙雨杯"
+    },
+    {
+     "w": "Machu Picchu",
+     "zh": "马丘比丘"
+    },
+    {
+     "w": "spain",
+     "zh": "西班牙"
+    },
+    {
+     "w": "spanish",
+     "zh": "西班牙语；西班牙人"
+    },
+    {
+     "w": "cuzco",
+     "zh": "库斯科"
+    },
+    {
+     "w": "lake",
+     "zh": "的喀喀湖"
+    },
+    {
+     "w": "the pros",
+     "zh": "乌鲁斯人"
+    }
+   ]
+  },
+  {
+   "n": "Unit 3",
+   "t": "",
+   "words": [
+    {
+     "w": "fitness",
+     "zh": "健康；健壮；适合"
+    },
+    {
+     "w": "soccer",
+     "zh": "足球；足球运动"
+    },
+    {
+     "w": "stadium",
+     "zh": "体育场；运动场"
+    },
+    {
+     "w": "boxing",
+     "zh": "拳击"
+    },
+    {
+     "w": "badminton",
+     "zh": "羽毛球运动"
+    },
+    {
+     "w": "marathon",
+     "zh": "马拉松賽跑"
+    },
+    {
+     "w": "event",
+     "zh": "比赛项目；大事；公开活动"
+    },
+    {
+     "w": "come along",
+     "zh": "跟随；到达；进步；赶快"
+    },
+    {
+     "w": "ski",
+     "zh": "滑雪"
+    },
+    {
+     "w": "host",
+     "zh": "主办；主持"
+    },
+    {
+     "w": "track",
+     "zh": "跑道；足迹；铁路轨道"
+    },
+    {
+     "w": "track and field",
+     "zh": "田径"
+    },
+    {
+     "w": "gym",
+     "zh": "健身房；体育馆"
+    },
+    {
+     "w": "gymnastics",
+     "zh": "体操"
+    },
+    {
+     "w": "work out",
+     "zh": "锻炼；计算出；解决"
+    },
+    {
+     "w": "sweat",
+     "zh": "使出汗；出汗弄湿"
+    },
+    {
+     "w": "make it",
+     "zh": "获得成功；准时到达"
+    },
+    {
+     "w": "legend",
+     "zh": "传奇故事 ；传说"
+    },
+    {
+     "w": "athlete",
+     "zh": "运动员；运动健儿"
+    },
+    {
+     "w": "master",
+     "zh": "高手；主人vt. 精通；掌握"
+    },
+    {
+     "w": "set an example",
+     "zh": "树立榜样"
+    },
+    {
+     "w": "honour",
+     "zh": "荣誉；尊敬；荣幸"
+    },
+    {
+     "w": "glory",
+     "zh": "荣誉；光荣；赞美"
+    },
+    {
+     "w": "meal",
+     "zh": "奖章；勋章"
+    },
+    {
+     "w": "championship",
+     "zh": "锦标赛；冠军赛；冠军称号"
+    },
+    {
+     "w": "champion",
+     "zh": "冠军；优胜者"
+    },
+    {
+     "w": "determination",
+     "zh": "决心；决定"
+    },
+    {
+     "w": "apart",
+     "zh": "分离；分开；成碎片"
+    },
+    {
+     "w": "fall apart",
+     "zh": "破裂；破碎；崩溃"
+    },
+    {
+     "w": "injure",
+     "zh": "使受伤；损害"
+    },
+    {
+     "w": "injured",
+     "zh": "受伤；有伤"
+    },
+    {
+     "w": "injury",
+     "zh": "伤害；损伤"
+    },
+    {
+     "w": "captain",
+     "zh": "队长；船长；机长"
+    },
+    {
+     "w": "lose heart",
+     "zh": "丧失信心；泄气"
+    },
+    {
+     "w": "graceful",
+     "zh": "优美的；优雅"
+    },
+    {
+     "w": "strength",
+     "zh": "力量；体力"
+    },
+    {
+     "w": "failure",
+     "zh": "失败；失败的人"
+    },
+    {
+     "w": "give up",
+     "zh": "放弃；投降"
+    },
+    {
+     "w": "compete",
+     "zh": "竞争；对抗"
+    },
+    {
+     "w": "make sense",
+     "zh": "有道理；合乎情理；表述清楚"
+    },
+    {
+     "w": "pretend",
+     "zh": "假装；装扮"
+    },
+    {
+     "w": "pretend to do sth",
+     "zh": "假装做某事"
+    },
+    {
+     "w": "even if",
+     "zh": "即使；虽然"
+    },
+    {
+     "w": "million",
+     "zh": "一百万"
+    },
+    {
+     "w": "cheat",
+     "zh": "作弊；舞弊vt. 欺骗；蒙骗n. 欺骗手段；骗子"
+    },
+    {
+     "w": "audience",
+     "zh": "观众；听众"
+    },
+    {
+     "w": "positive",
+     "zh": "积极乐观的"
+    },
+    {
+     "w": "slim",
+     "zh": "苗条的；单薄"
+    },
+    {
+     "w": "diet",
+     "zh": "规定饮食；日常饮食vi. 节食"
+    },
+    {
+     "w": "make a difference",
+     "zh": "有作用或影响"
+    },
+    {
+     "w": "rather",
+     "zh": "相当；有点儿"
+    },
+    {
+     "w": "rather than",
+     "zh": "而不是"
+    },
+    {
+     "w": "push-up",
+     "zh": "俯卧撑"
+    },
+    {
+     "w": "cut... out",
+     "zh": "停止做 ；剪下"
+    },
+    {
+     "w": "now and then",
+     "zh": "有时；偶尔"
+    },
+    {
+     "w": "compare... with",
+     "zh": "与⋯比较"
+    },
+    {
+     "w": "jog",
+     "zh": "慢跑n. 慢跑"
+    },
+    {
+     "w": "stress",
+     "zh": "压力；紧张；重音vi. 焦虑不安"
+    },
+    {
+     "w": "error",
+     "zh": "错误；差错"
+    }
+   ]
+  },
+  {
+   "n": "Unit 4",
+   "t": "",
+   "words": [
+    {
+     "w": "disaster",
+     "zh": "灾难；灾害"
+    },
+    {
+     "w": "tornado",
+     "zh": "龙卷风；旋"
+    },
+    {
+     "w": "brought",
+     "zh": "早灾；久旱"
+    },
+    {
+     "w": "landslide",
+     "zh": "（landfall）（山地或悬崖）崩塌；滑坡"
+    },
+    {
+     "w": "slide",
+     "zh": "滑行；滑动"
+    },
+    {
+     "w": "tsunami",
+     "zh": "海啸"
+    },
+    {
+     "w": "flood",
+     "zh": "洪水；大量vt. 使灌满水；淹没"
+    },
+    {
+     "w": "volcanic eruption",
+     "zh": "火山喷发"
+    },
+    {
+     "w": "magnitude",
+     "zh": "震级；重大"
+    },
+    {
+     "w": "rescue",
+     "zh": "营救；救援"
+    },
+    {
+     "w": "damage",
+     "zh": "损害；破坏n. 损坏；损失"
+    },
+    {
+     "w": "destroy",
+     "zh": "推毁；毁灭"
+    },
+    {
+     "w": "evacuate",
+     "zh": "疏散；撤出vi. 撤离"
+    },
+    {
+     "w": "helicopter",
+     "zh": "直升机"
+    },
+    {
+     "w": "death",
+     "zh": "死；死亡"
+    },
+    {
+     "w": "affect",
+     "zh": "影响； 侵袭；深深打动"
+    },
+    {
+     "w": "shelter",
+     "zh": "避难处；居所；庇护vt. 保护；掩蔽vi. 躲避（风雨或危险）"
+    },
+    {
+     "w": "crack",
+     "zh": "裂纹；袋缝"
+    },
+    {
+     "w": "gas",
+     "zh": "气体；燃气；汽油"
+    },
+    {
+     "w": "as if",
+     "zh": "似乎；好像；仿佛"
+    },
+    {
+     "w": "ruin",
+     "zh": "破坏；毁坏"
+    },
+    {
+     "w": "in ruins",
+     "zh": "严重受损；破败不堪"
+    },
+    {
+     "w": "percent",
+     "zh": "百分之⋯"
+    },
+    {
+     "w": "brick",
+     "zh": "砖；砖块"
+    },
+    {
+     "w": "metal",
+     "zh": "金属"
+    },
+    {
+     "w": "shock",
+     "zh": "震惊；令人震惊的事；休克"
+    },
+    {
+     "w": "in shock",
+     "zh": "震惊；吃惊"
+    },
+    {
+     "w": "electricity",
+     "zh": "电；电能"
+    },
+    {
+     "w": "trap",
+     "zh": "使落入险境；使陷入圈套n. 险境；陷阱"
+    },
+    {
+     "w": "bury",
+     "zh": "埋葬；安葬"
+    },
+    {
+     "w": "breathe",
+     "zh": "呼吸"
+    },
+    {
+     "w": "revive",
+     "zh": "复活； 苏醒"
+    },
+    {
+     "w": "revival",
+     "zh": "振兴；复苏"
+    },
+    {
+     "w": "effort",
+     "zh": "努力；艰难的尝试；尽力"
+    },
+    {
+     "w": "unify",
+     "zh": "统一； 成一体"
+    },
+    {
+     "w": "wisdom",
+     "zh": "智慧；才智"
+    },
+    {
+     "w": "context",
+     "zh": "上下文；语境；背景"
+    },
+    {
+     "w": "suffer",
+     "zh": "遭受；蒙受"
+    },
+    {
+     "w": "volcano",
+     "zh": "火山"
+    },
+    {
+     "w": "erupt",
+     "zh": "喷发， 喷出"
+    },
+    {
+     "w": "supply",
+     "zh": "供应 ；补给；［pl.］补给品vt. 供应；供给"
+    },
+    {
+     "w": "typhoon",
+     "zh": "合风"
+    },
+    {
+     "w": "in the open air",
+     "zh": "露天；在户外"
+    },
+    {
+     "w": "hurricane",
+     "zh": "飓风"
+    },
+    {
+     "w": "survive",
+     "zh": "生存；存活vt. 幸存；艰难度过"
+    },
+    {
+     "w": "power",
+     "zh": "电力供应；能量；力量；控制力"
+    },
+    {
+     "w": "tap",
+     "zh": "轻叩；轻敲；轻拍n. 水龙头；轻叩；轻敲"
+    },
+    {
+     "w": "pipe",
+     "zh": "管子；管道"
+    },
+    {
+     "w": "whistle",
+     "zh": "吹口哨；发出笛声vt. 吹口哨n. 哨子（声）；呼啸声"
+    },
+    {
+     "w": "emergency",
+     "zh": "突发事件；紧急情况"
+    },
+    {
+     "w": "calm",
+     "zh": "镇静的；沉着的vt. 使平静；使镇静"
+    },
+    {
+     "w": "aid",
+     "zh": "援助；帮助；救援物资"
+    },
+    {
+     "w": "kit",
+     "zh": "成套工具；成套设备"
+    },
+    {
+     "w": "first aid Kit",
+     "zh": "急救"
+    },
+    {
+     "w": "on hand",
+     "zh": "现有"
+    },
+    {
+     "w": "crash",
+     "zh": "碰撞；撞击n. 撞车；碰撞"
+    },
+    {
+     "w": "sweep",
+     "zh": "打扫；清扫"
+    },
+    {
+     "w": "sweep away",
+     "zh": "消灭；彻底消除"
+    },
+    {
+     "w": "wave",
+     "zh": "海浪；波浪"
+    },
+    {
+     "w": "strike",
+     "zh": "击打 / 撞击"
+    },
+    {
+     "w": "deliver",
+     "zh": "递送；传达vt. 发表"
+    },
+    {
+     "w": "summary",
+     "zh": "总结；概括；概要"
+    },
+    {
+     "w": "effect",
+     "zh": "影响；结果；效果"
+    },
+    {
+     "w": "length",
+     "zh": "长；长度"
+    },
+    {
+     "w": "ecuador",
+     "zh": "厄瓜多尔"
+    },
+    {
+     "w": "memphis",
+     "zh": "孟菲斯"
+    },
+    {
+     "w": "alberta",
+     "zh": "艾伯塔省"
+    },
+    {
+     "w": "indonesia",
+     "zh": "印度尼西亚"
+    },
+    {
+     "w": "thailand",
+     "zh": "泰国"
+    },
+    {
+     "w": "malaysia",
+     "zh": "马来西亚"
+    }
+   ]
+  },
+  {
+   "n": "Unit 5",
+   "t": "",
+   "words": [
+    {
+     "w": "billion",
+     "zh": "十亿"
+    },
+    {
+     "w": "native",
+     "zh": "出生地的；本地的；土著n. 本地人"
+    },
+    {
+     "w": "attitude",
+     "zh": "态度；看法"
+    },
+    {
+     "w": "reference",
+     "zh": "指称关系；参考"
+    },
+    {
+     "w": "refer",
+     "zh": "提到；参考；查阅vt. 查询；叫⋯⋯求助于"
+    },
+    {
+     "w": "refer to",
+     "zh": "指的是；描述；提到；查阅"
+    },
+    {
+     "w": "system",
+     "zh": "体系；制度；系统"
+    },
+    {
+     "w": "despite",
+     "zh": "即使；尽管"
+    },
+    {
+     "w": "ups and downs",
+     "zh": "浮沉；兴衰；荣辱"
+    },
+    {
+     "w": "factor",
+     "zh": "因素；要素"
+    },
+    {
+     "w": "based",
+     "zh": "以 为基础的；以…⋯为重要部分（或特征）"
+    },
+    {
+     "w": "base",
+     "zh": "以⋯⋯为据点；以⋯⋯为基础n. 底部；根据"
+    },
+    {
+     "w": "date back to...",
+     "zh": "追溯到"
+    },
+    {
+     "w": "bone",
+     "zh": "肯头；肯"
+    },
+    {
+     "w": "shell",
+     "zh": "壳；壳状物"
+    },
+    {
+     "w": "symbol",
+     "zh": "符号；象征"
+    },
+    {
+     "w": "carve",
+     "zh": "雕刻"
+    },
+    {
+     "w": "dynasty",
+     "zh": "王朝；朝代"
+    },
+    {
+     "w": "variety",
+     "zh": "（植物、语言等的）变体；异体；多样化"
+    },
+    {
+     "w": "major",
+     "zh": "主要；重要的；大n. 主修课程；主修学生"
+    },
+    {
+     "w": "no matter",
+     "zh": "不论⋯⋯⋯；不管⋯⋯"
+    },
+    {
+     "w": "dialect",
+     "zh": "地方话；方言"
+    },
+    {
+     "w": "means",
+     "zh": "方式：方法；途径"
+    },
+    {
+     "w": "classic",
+     "zh": "传统的；最优秀的；典型的n. 经典作品；名著"
+    },
+    {
+     "w": "regard",
+     "zh": "尊重；关注"
+    },
+    {
+     "w": "character",
+     "zh": "个性"
+    },
+    {
+     "w": "calligraphy",
+     "zh": "书法；书法艺术"
+    },
+    {
+     "w": "global",
+     "zh": "全球的；全世界"
+    },
+    {
+     "w": "affair",
+     "zh": "公共事务；事件；关系"
+    },
+    {
+     "w": "appreciate",
+     "zh": "欣赏；重视；感激；领会vi. 增值"
+    },
+    {
+     "w": "specific",
+     "zh": "特定的；明确的；具体的"
+    },
+    {
+     "w": "CE",
+     "zh": "公元"
+    },
+    {
+     "w": "struggle",
+     "zh": "斗争；奋斗；搏斗"
+    },
+    {
+     "w": "tongue",
+     "zh": "舌头；语言"
+    },
+    {
+     "w": "point of view",
+     "zh": "观点；看法"
+    },
+    {
+     "w": "semester",
+     "zh": "学期"
+    },
+    {
+     "w": "petrol",
+     "zh": "汽油"
+    },
+    {
+     "w": "subway",
+     "zh": "地铁"
+    },
+    {
+     "w": "apartment",
+     "zh": "（especially NAmE）公寓套房"
+    },
+    {
+     "w": "pants",
+     "zh": "内裤；短裤；（especially NAmE）裤子"
+    },
+    {
+     "w": "beg",
+     "zh": "恳求；祈求；哀求"
+    },
+    {
+     "w": "equal",
+     "zh": "同等的人；相等物adi. 相同；同样"
+    },
+    {
+     "w": "gap",
+     "zh": "间隔；开口；差距"
+    },
+    {
+     "w": "demand",
+     "zh": "要求；需求vi. 查问"
+    },
+    {
+     "w": "vocabulary",
+     "zh": "词汇"
+    },
+    {
+     "w": "description",
+     "zh": "描写 ；形容"
+    },
+    {
+     "w": "relate",
+     "zh": "联系；讲还"
+    },
+    {
+     "w": "relate to",
+     "zh": "与⋯•相关；涉及；谈到"
+    },
+    {
+     "w": "korean",
+     "zh": "朝鲜 语；朝鲜（或韩国）人"
+    },
+    {
+     "w": "danish",
+     "zh": "丹麦语；丹麦人"
+    },
+    {
+     "w": "denmark",
+     "zh": "丹麦"
+    },
+    {
+     "w": "arabic",
+     "zh": "阿拉伯语"
+    }
+   ]
+  }
+ ]
+}

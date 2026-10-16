@@ -1,0 +1,1775 @@
+{
+ "pub": "译林",
+ "stage": "初中",
+ "grade": "九年级",
+ "vol": "上册",
+ "id": "01b3ebf7-5e9a-471e-a5fe-beb76deb5207",
+ "title": "（根据2022年版课程标准修订）义务教育教科书·英语九年级上册",
+ "created": "2022-09-29",
+ "units": [
+  {
+   "n": "Unit 1",
+   "t": "",
+   "words": [
+    {
+     "w": "eat up",
+     "zh": "吃光，吃完"
+    },
+    {
+     "w": "creative",
+     "zh": "有创造力角；创造悱朐"
+    },
+    {
+     "w": "curious",
+     "zh": "好奇"
+    },
+    {
+     "w": "energetic",
+     "zh": "精力充沛的"
+    },
+    {
+     "w": "modest",
+     "zh": "谦虚的"
+    },
+    {
+     "w": "organized",
+     "zh": "有条理，有效率"
+    },
+    {
+     "w": "order",
+     "zh": "顺序"
+    },
+    {
+     "w": "keep in order",
+     "zh": "使⋯保持井然有序"
+    },
+    {
+     "w": "show off",
+     "zh": "炫耀"
+    },
+    {
+     "w": "grammar",
+     "zh": "语法"
+    },
+    {
+     "w": "come up with",
+     "zh": "想山"
+    },
+    {
+     "w": "neither",
+     "zh": "（否定句中）两者之一不"
+    },
+    {
+     "w": "nor",
+     "zh": "也不"
+    },
+    {
+     "w": "neither... .. nor",
+     "zh": "既不⋯也不⋯"
+    },
+    {
+     "w": "accountant",
+     "zh": "会计"
+    },
+    {
+     "w": "born",
+     "zh": "天生角"
+    },
+    {
+     "w": "impress",
+     "zh": "给⋯留下印象"
+    },
+    {
+     "w": "sculpture",
+     "zh": "雕塑，雕像"
+    },
+    {
+     "w": "praise",
+     "zh": "贊扬，表扬"
+    },
+    {
+     "w": "sales department",
+     "zh": "销售部"
+    },
+    {
+     "w": "general",
+     "zh": "总；普遍；首席的"
+    },
+    {
+     "w": "race",
+     "zh": "兌赛；赛跑"
+    },
+    {
+     "w": "either or",
+     "zh": "不是⋯就足⋯，或者⋯或者⋯"
+    },
+    {
+     "w": "lead",
+     "zh": "领先地位；榜样（"
+    },
+    {
+     "w": "take the lead",
+     "zh": "处于领先地位（"
+    },
+    {
+     "w": "tall behind",
+     "zh": "落后"
+    },
+    {
+     "w": "challenge",
+     "zh": "挑战"
+    },
+    {
+     "w": "chief",
+     "zh": "主要，首要"
+    },
+    {
+     "w": "high-speed",
+     "zh": "高速"
+    },
+    {
+     "w": "connect",
+     "zh": "连接"
+    },
+    {
+     "w": "connect to",
+     "zh": "与⋯相连，连接"
+    },
+    {
+     "w": "miss",
+     "zh": "错误，过失"
+    },
+    {
+     "w": "as good as",
+     "zh": "和…几乎一样，简直是"
+    },
+    {
+     "w": "attention",
+     "zh": "注意，专心"
+    },
+    {
+     "w": "pay attention to",
+     "zh": "注意"
+    },
+    {
+     "w": "standard",
+     "zh": "标准"
+    },
+    {
+     "w": "pioneer",
+     "zh": "先锋，开拓者"
+    },
+    {
+     "w": "surgeon",
+     "zh": "外科大夫"
+    },
+    {
+     "w": "carelessness",
+     "zh": "粗心"
+    },
+    {
+     "w": "extra",
+     "zh": "额外的；附加时"
+    },
+    {
+     "w": "devote",
+     "zh": "把⋯贡献，把⋯专用于"
+    },
+    {
+     "w": "respect",
+     "zh": "尊敬，尊重"
+    },
+    {
+     "w": "suitable",
+     "zh": "合适；适官的"
+    },
+    {
+     "w": "partner",
+     "zh": "搭档，合作伙伴"
+    },
+    {
+     "w": "impatient",
+     "zh": "不耐烦，急躁"
+    },
+    {
+     "w": "think twice",
+     "zh": "三思而行"
+    },
+    {
+     "w": "do the dishes",
+     "zh": "洗碗"
+    },
+    {
+     "w": "lunar",
+     "zh": "月球的"
+    },
+    {
+     "w": "calendar",
+     "zh": "日历；挂历"
+    },
+    {
+     "w": "animal sign",
+     "zh": "生肖"
+    },
+    {
+     "w": "represent",
+     "zh": "代表：象征"
+    },
+    {
+     "w": "appear",
+     "zh": "山现"
+    },
+    {
+     "w": "fixed",
+     "zh": "固定朐"
+    },
+    {
+     "w": "cycle",
+     "zh": "循环"
+    },
+    {
+     "w": "powerful",
+     "zh": "有力的；强大的"
+    },
+    {
+     "w": "lively",
+     "zh": "活泼的；生气勃物的"
+    },
+    {
+     "w": "practical",
+     "zh": "实际"
+    },
+    {
+     "w": "loyal",
+     "zh": "忠诚"
+    },
+    {
+     "w": "hall",
+     "zh": "总共，总计"
+    },
+    {
+     "w": "star signs",
+     "zh": "星座"
+    },
+    {
+     "w": "divide",
+     "zh": "分开，分"
+    },
+    {
+     "w": "divide... into",
+     "zh": "把⋯分成⋯"
+    },
+    {
+     "w": "shape",
+     "zh": "使成形，塑造"
+    },
+    {
+     "w": "speech",
+     "zh": "演讲"
+    },
+    {
+     "w": "absent",
+     "zh": "缺席"
+    },
+    {
+     "w": "monitor",
+     "zh": "班长"
+    },
+    {
+     "w": "position",
+     "zh": "职位；位置；名次"
+    },
+    {
+     "w": "agree with sb",
+     "zh": "同意某人"
+    }
+   ]
+  },
+  {
+   "n": "Unit 2",
+   "t": "",
+   "words": [
+    {
+     "w": "indigo",
+     "zh": "罷监，靛青"
+    },
+    {
+     "w": "violet",
+     "zh": "紫罗兰色"
+    },
+    {
+     "w": "rainbow",
+     "zh": "彩虹"
+    },
+    {
+     "w": "mood",
+     "zh": "心情，情绪"
+    },
+    {
+     "w": "influence",
+     "zh": "影响"
+    },
+    {
+     "w": "whether",
+     "zh": "是否"
+    },
+    {
+     "w": "characteristic",
+     "zh": "特征：品质"
+    },
+    {
+     "w": "calm",
+     "zh": "平静的，沉着"
+    },
+    {
+     "w": "relaxed",
+     "zh": "放松的；自在时"
+    },
+    {
+     "w": "peace",
+     "zh": "安宁；和半；利睦"
+    },
+    {
+     "w": "sadness",
+     "zh": "悲哀，忧伤"
+    },
+    {
+     "w": "purity",
+     "zh": "纯洁"
+    },
+    {
+     "w": "wedding",
+     "zh": "婚礼，结婚庆典"
+    },
+    {
+     "w": "prefer",
+     "zh": "宁愿选择，更喜欢"
+    },
+    {
+     "w": "create",
+     "zh": "造成，引起；创造，创建"
+    },
+    {
+     "w": "feeling",
+     "zh": "感觉，感受"
+    },
+    {
+     "w": "cheer up",
+     "zh": "使振作起来"
+    },
+    {
+     "w": "remind",
+     "zh": "提醒；使想起"
+    },
+    {
+     "w": "wisdom",
+     "zh": "智慧"
+    },
+    {
+     "w": "as",
+     "zh": "因为"
+    },
+    {
+     "w": "envy",
+     "zh": "妒忌，羡慕"
+    },
+    {
+     "w": "green with envy",
+     "zh": "妒忌的，眼红的"
+    },
+    {
+     "w": "require",
+     "zh": "需要，要求"
+    },
+    {
+     "w": "strength",
+     "zh": "力量"
+    },
+    {
+     "w": "heat",
+     "zh": "热"
+    },
+    {
+     "w": "difficulty",
+     "zh": "困难，费力"
+    },
+    {
+     "w": "have difficulty",
+     "zh": "做某事费劲"
+    },
+    {
+     "w": "decision",
+     "zh": "决定"
+    },
+    {
+     "w": "relationship",
+     "zh": "关系"
+    },
+    {
+     "w": "certainly",
+     "zh": "当然；必定地，无疑地"
+    },
+    {
+     "w": "everyday",
+     "zh": "每天；山常"
+    },
+    {
+     "w": "personal",
+     "zh": "个人，私人前"
+    },
+    {
+     "w": "suit",
+     "zh": "适合"
+    },
+    {
+     "w": "celebration",
+     "zh": "庆祝；庆祝活动"
+    },
+    {
+     "w": "ancient",
+     "zh": "占代，占老"
+    },
+    {
+     "w": "therapy",
+     "zh": "疗法，治疗"
+    },
+    {
+     "w": "discover",
+     "zh": "发现，发觉"
+    },
+    {
+     "w": "teens",
+     "zh": "复］十儿岁"
+    },
+    {
+     "w": "promise",
+     "zh": "承诺，允诺"
+    },
+    {
+     "w": "or",
+     "zh": "否则"
+    },
+    {
+     "w": "work",
+     "zh": "奏效，产生预期的效果"
+    },
+    {
+     "w": "practise",
+     "zh": "从事，执业"
+    },
+    {
+     "w": "stressed",
+     "zh": "紧张的，有压力的"
+    },
+    {
+     "w": "suggest",
+     "zh": "建议"
+    },
+    {
+     "w": "would rather",
+     "zh": "宁愿，更喜欢"
+    },
+    {
+     "w": "trust",
+     "zh": "信任"
+    },
+    {
+     "w": "warmth",
+     "zh": "温暖，暖和：热情"
+    },
+    {
+     "w": "handbag",
+     "zh": "女用皮包，手提包"
+    },
+    {
+     "w": "match",
+     "zh": "相配；般配"
+    },
+    {
+     "w": "balance",
+     "zh": "使⋯平衡"
+    }
+   ]
+  },
+  {
+   "n": "Unit 3",
+   "t": "",
+   "words": [
+    {
+     "w": "teenage",
+     "zh": "青少企时"
+    },
+    {
+     "w": "mark",
+     "zh": "分数"
+    },
+    {
+     "w": "mad",
+     "zh": "发疯；尘气"
+    },
+    {
+     "w": "drive sb mad",
+     "zh": "使人受不了"
+    },
+    {
+     "w": "exam",
+     "zh": "考试，测试"
+    },
+    {
+     "w": "perhaps",
+     "zh": "或许，可能"
+    },
+    {
+     "w": "deal",
+     "zh": "处理"
+    },
+    {
+     "w": "deal with",
+     "zh": "处理，对付"
+    },
+    {
+     "w": "choice",
+     "zh": "选择"
+    },
+    {
+     "w": "but",
+     "zh": "除⋯外；只有"
+    },
+    {
+     "w": "stay up",
+     "zh": "熬夜"
+    },
+    {
+     "w": "awake",
+     "zh": "醒着的"
+    },
+    {
+     "w": "hardly",
+     "zh": "几乎不"
+    },
+    {
+     "w": "imagine",
+     "zh": "想象，设想"
+    },
+    {
+     "w": "doubt",
+     "zh": "怀疑"
+    },
+    {
+     "w": "worth",
+     "zh": "值得，值⋯钱"
+    },
+    {
+     "w": "be worth doing",
+     "zh": "值得做某事"
+    },
+    {
+     "w": "suggestion",
+     "zh": "建议"
+    },
+    {
+     "w": "cause",
+     "zh": "原内"
+    },
+    {
+     "w": "strict",
+     "zh": "严格的，严厉的"
+    },
+    {
+     "w": "be strict with",
+     "zh": "对某人要求严格"
+    },
+    {
+     "w": "stay out",
+     "zh": "待在尸外： 不回家"
+    },
+    {
+     "w": "schoolwork",
+     "zh": "课"
+    },
+    {
+     "w": "valuable",
+     "zh": "宝贵的；贵重时"
+    },
+    {
+     "w": "friendship",
+     "zh": "友谊"
+    },
+    {
+     "w": "list",
+     "zh": "清单"
+    },
+    {
+     "w": "work out",
+     "zh": "算出：解决"
+    },
+    {
+     "w": "according to",
+     "zh": "根据"
+    },
+    {
+     "w": "whom",
+     "zh": "谁"
+    },
+    {
+     "w": "silence",
+     "zh": "安静，寂静；沉默"
+    },
+    {
+     "w": "worry",
+     "zh": "担心"
+    },
+    {
+     "w": "method",
+     "zh": "方法"
+    },
+    {
+     "w": "solve",
+     "zh": "解决；解答"
+    },
+    {
+     "w": "dictionary",
+     "zh": "字典"
+    },
+    {
+     "w": "youth",
+     "zh": "青少企辅导员"
+    },
+    {
+     "w": "reply",
+     "zh": "答复，同答"
+    },
+    {
+     "w": "chemistry",
+     "zh": "化学"
+    },
+    {
+     "w": "laugh at",
+     "zh": "嘲笑"
+    },
+    {
+     "w": "bookworm",
+     "zh": "书虫，书呆子"
+    },
+    {
+     "w": "progress",
+     "zh": "逃展，进步"
+    },
+    {
+     "w": "worried",
+     "zh": "担心，烦恼"
+    },
+    {
+     "w": "go over",
+     "zh": "复习；回顾"
+    },
+    {
+     "w": "aloud",
+     "zh": "大声地，山声地"
+    },
+    {
+     "w": "pronounce",
+     "zh": "发音"
+    },
+    {
+     "w": "correctly",
+     "zh": "正确地"
+    },
+    {
+     "w": "pronunciation",
+     "zh": "发产"
+    },
+    {
+     "w": "mention",
+     "zh": "提及，说起"
+    },
+    {
+     "w": "don't mention it",
+     "zh": "不客气"
+    },
+    {
+     "w": "stress",
+     "zh": "精神压力，紧张"
+    },
+    {
+     "w": "be of sb's age",
+     "zh": "与⋯同龄"
+    }
+   ]
+  },
+  {
+   "n": "Unit 4",
+   "t": "",
+   "words": [
+    {
+     "w": "on one's mind",
+     "zh": "挂在心上，惦念"
+    },
+    {
+     "w": "time",
+     "zh": "吋期，吋代"
+    },
+    {
+     "w": "whenever",
+     "zh": "无论何时"
+    },
+    {
+     "w": "through",
+     "zh": "以，凭借"
+    },
+    {
+     "w": "as soon as",
+     "zh": "一⋯就"
+    },
+    {
+     "w": "a great deal",
+     "zh": "大量，许多"
+    },
+    {
+     "w": "junior high",
+     "zh": "美＞初級巾学"
+    },
+    {
+     "w": "try out for sth",
+     "zh": "参加⋯选拔"
+    },
+    {
+     "w": "lose heart",
+     "zh": "池气，灰心"
+    },
+    {
+     "w": "score",
+     "zh": "得分"
+    },
+    {
+     "w": "senior",
+     "zh": "美＞高级中学"
+    },
+    {
+     "w": "stand",
+     "zh": "看台"
+    },
+    {
+     "w": "change one's mind",
+     "zh": "改变主意"
+    },
+    {
+     "w": "leader",
+     "zh": "领导者"
+    },
+    {
+     "w": "name",
+     "zh": "命名"
+    },
+    {
+     "w": "university",
+     "zh": "大学"
+    },
+    {
+     "w": "simply",
+     "zh": "仅仪；简古"
+    },
+    {
+     "w": "junior college",
+     "zh": "美>两年制专科学校"
+    },
+    {
+     "w": "national",
+     "zh": "因家"
+    },
+    {
+     "w": "championship",
+     "zh": "锦标赛，大赛"
+    },
+    {
+     "w": "succeed",
+     "zh": "成功"
+    },
+    {
+     "w": "succeed in doing sth",
+     "zh": "成功地做呆事"
+    },
+    {
+     "w": "scholarship",
+     "zh": "奖学金"
+    },
+    {
+     "w": "although",
+     "zh": "尽管，虽然"
+    },
+    {
+     "w": "graduate",
+     "zh": "毕业"
+    },
+    {
+     "w": "force",
+     "zh": "强近，边使"
+    },
+    {
+     "w": "league",
+     "zh": "联盟，社团"
+    },
+    {
+     "w": "remain",
+     "zh": "逗留；保持不变"
+    },
+    {
+     "w": "take notice of",
+     "zh": "注意，察觉"
+    },
+    {
+     "w": "achievement",
+     "zh": "成就，成绩"
+    },
+    {
+     "w": "prove",
+     "zh": "证明"
+    },
+    {
+     "w": "matter",
+     "zh": "要紧，有重大影响"
+    },
+    {
+     "w": "career",
+     "zh": "生涯，职业"
+    },
+    {
+     "w": "against",
+     "zh": "对抗；与⋯机反；违反"
+    },
+    {
+     "w": "break out",
+     "zh": "爆发"
+    },
+    {
+     "w": "record",
+     "zh": "记录"
+    },
+    {
+     "w": "symbol",
+     "zh": "象征"
+    },
+    {
+     "w": "victory",
+     "zh": "胜利"
+    },
+    {
+     "w": "spirit",
+     "zh": "精神，幽灵；灵魂"
+    },
+    {
+     "w": "jew",
+     "zh": "犹太人"
+    },
+    {
+     "w": "geo into hiding",
+     "zh": "躲藏起来"
+    },
+    {
+     "w": "nazi",
+     "zh": "納粹的"
+    },
+    {
+     "w": "moralist",
+     "zh": ""
+    },
+    {
+     "w": "die of",
+     "zh": "死于"
+    },
+    {
+     "w": "german",
+     "zh": "德同 朐"
+    },
+    {
+     "w": "thought",
+     "zh": "想法，看法，主意"
+    },
+    {
+     "w": "survive",
+     "zh": "幸存，生存"
+    },
+    {
+     "w": "admire",
+     "zh": "饮佩，濃慕"
+    },
+    {
+     "w": "courage",
+     "zh": "勇气"
+    },
+    {
+     "w": "in fear of one's life",
+     "zh": "为生命安全担忧"
+    },
+    {
+     "w": "unusual",
+     "zh": "不寻常的"
+    },
+    {
+     "w": "cell",
+     "zh": "细胞"
+    },
+    {
+     "w": "cancer",
+     "zh": "癌症"
+    },
+    {
+     "w": "surprise",
+     "zh": "惊奇，诧异"
+    },
+    {
+     "w": "to one's surprise",
+     "zh": "令某人惊奇内足"
+    },
+    {
+     "w": "research",
+     "zh": "伊究；调查"
+    },
+    {
+     "w": "death",
+     "zh": "死，死二"
+    }
+   ]
+  },
+  {
+   "n": "Unit 5",
+   "t": "",
+   "words": [
+    {
+     "w": "pleasant",
+     "zh": "令人愉快"
+    },
+    {
+     "w": "drama",
+     "zh": "戏剧；戏剧性事件"
+    },
+    {
+     "w": "photography",
+     "zh": "照相术，摄影"
+    },
+    {
+     "w": "art form",
+     "zh": "艺术形式"
+    },
+    {
+     "w": "pop",
+     "zh": "流行音乐"
+    },
+    {
+     "w": "musical",
+     "zh": "音乐的"
+    },
+    {
+     "w": "talent",
+     "zh": "天赋，才能"
+    },
+    {
+     "w": "boundary",
+     "zh": "边界，疆界，界限"
+    },
+    {
+     "w": "medal",
+     "zh": "奖牌，奖章"
+    },
+    {
+     "w": "present",
+     "zh": "颁发；提交"
+    },
+    {
+     "w": "winner",
+     "zh": "获胜者"
+    },
+    {
+     "w": "composer",
+     "zh": "作曲家"
+    },
+    {
+     "w": "central",
+     "zh": "中心的，中央"
+    },
+    {
+     "w": "instrument",
+     "zh": "乐器；具；器械"
+    },
+    {
+     "w": "common",
+     "zh": "普通，一般朐，常见哟"
+    },
+    {
+     "w": "object",
+     "zh": "物品，东西"
+    },
+    {
+     "w": "stone",
+     "zh": "不i头"
+    },
+    {
+     "w": "musician",
+     "zh": "音乐家"
+    },
+    {
+     "w": "be known",
+     "zh": "因⋯而者名"
+    },
+    {
+     "w": "control",
+     "zh": "控制，支配"
+    },
+    {
+     "w": "flow",
+     "zh": "流动"
+    },
+    {
+     "w": "successfully",
+     "zh": "成功地"
+    },
+    {
+     "w": "traditional",
+     "zh": "传统的"
+    },
+    {
+     "w": "bell",
+     "zh": "钟，铃"
+    },
+    {
+     "w": "though",
+     "zh": "虽然，尽管"
+    },
+    {
+     "w": "dividing line",
+     "zh": "分界线；界限"
+    },
+    {
+     "w": "highly",
+     "zh": "高度地；高地"
+    },
+    {
+     "w": "breath",
+     "zh": "呼吸"
+    },
+    {
+     "w": "out of breath",
+     "zh": "上气不接下气"
+    },
+    {
+     "w": "last",
+     "zh": "持续"
+    },
+    {
+     "w": "concert",
+     "zh": "音乐会"
+    },
+    {
+     "w": "folk",
+     "zh": "民间音乐"
+    },
+    {
+     "w": "country music",
+     "zh": "乡村音乐"
+    },
+    {
+     "w": "jazz",
+     "zh": "爵士乐"
+    },
+    {
+     "w": "rock",
+     "zh": "摇滚乐"
+    },
+    {
+     "w": "country",
+     "zh": "乡下，乡利"
+    },
+    {
+     "w": "cowboy",
+     "zh": "牛仔"
+    },
+    {
+     "w": "guitar",
+     "zh": "吉他"
+    },
+    {
+     "w": "lasting",
+     "zh": "持久时"
+    },
+    {
+     "w": "value",
+     "zh": "价值"
+    },
+    {
+     "w": "drum",
+     "zh": "鼓"
+    },
+    {
+     "w": "african",
+     "zh": "非洲"
+    },
+    {
+     "w": "american",
+     "zh": "美国人"
+    },
+    {
+     "w": "african american",
+     "zh": "美国黑人"
+    },
+    {
+     "w": "make up",
+     "zh": "编：编造"
+    },
+    {
+     "w": "local colour",
+     "zh": "地方特色"
+    },
+    {
+     "w": "tonight",
+     "zh": "今晚※literature/Irtrotjo（r）/n. 文学"
+    },
+    {
+     "w": "gift",
+     "zh": "天赋，才能"
+    },
+    {
+     "w": "have a gift for",
+     "zh": "对⋯有天赋"
+    },
+    {
+     "w": "encourage",
+     "zh": "鼓励；劝告"
+    }
+   ]
+  },
+  {
+   "n": "Unit 6",
+   "t": "",
+   "words": [
+    {
+     "w": "done",
+     "zh": "完毕，结术"
+    },
+    {
+     "w": "chat shown",
+     "zh": "访谈卡目"
+    },
+    {
+     "w": "comedy",
+     "zh": "喜剧"
+    },
+    {
+     "w": "documentary",
+     "zh": "纪玻片"
+    },
+    {
+     "w": "drama series",
+     "zh": "系列剧"
+    },
+    {
+     "w": "game show",
+     "zh": "游戏表演，竞赛节月"
+    },
+    {
+     "w": "real-life",
+     "zh": "真实生活"
+    },
+    {
+     "w": "dialogue",
+     "zh": "对话"
+    },
+    {
+     "w": "round-up",
+     "zh": "概要，摘要"
+    },
+    {
+     "w": "up-to-date",
+     "zh": "最新，现代舱"
+    },
+    {
+     "w": "fan",
+     "zh": "迷，狂热爱好者"
+    },
+    {
+     "w": "a",
+     "zh": "一些"
+    },
+    {
+     "w": "coming",
+     "zh": "即将来临"
+    },
+    {
+     "w": "cover",
+     "zh": "报道，电视报道"
+    },
+    {
+     "w": "live",
+     "zh": "在现场百播，在实现百播"
+    },
+    {
+     "w": "asian",
+     "zh": "亚洲 的"
+    },
+    {
+     "w": "vote",
+     "zh": "投票，选举"
+    },
+    {
+     "w": "music video",
+     "zh": "音乐视频"
+    },
+    {
+     "w": "announce",
+     "zh": "宣布，宣告"
+    },
+    {
+     "w": "text",
+     "zh": "短信，怎消息"
+    },
+    {
+     "w": "murder",
+     "zh": "谋杀"
+    },
+    {
+     "w": "murderer",
+     "zh": "杀人死，风手"
+    },
+    {
+     "w": "horror",
+     "zh": "恐怖"
+    },
+    {
+     "w": "direct",
+     "zh": "直接的"
+    },
+    {
+     "w": "director",
+     "zh": "导演"
+    },
+    {
+     "w": "wealthy",
+     "zh": "富有的"
+    },
+    {
+     "w": "mystery",
+     "zh": "神秘；疑案故事"
+    },
+    {
+     "w": "might",
+     "zh": "或许，可能"
+    },
+    {
+     "w": "scared",
+     "zh": "害怕，恐惧"
+    },
+    {
+     "w": "unless",
+     "zh": "除非"
+    },
+    {
+     "w": "animal-lover",
+     "zh": "喜欢动物的人"
+    },
+    {
+     "w": "scene",
+     "zh": "景象，风光；现场"
+    },
+    {
+     "w": "latest",
+     "zh": "最新，最近"
+    },
+    {
+     "w": "attack",
+     "zh": "政击，逃攻"
+    },
+    {
+     "w": "polar",
+     "zh": "北极熊"
+    },
+    {
+     "w": "male",
+     "zh": "雄性；男 朐"
+    },
+    {
+     "w": "studio",
+     "zh": "摄影棚；录产室"
+    },
+    {
+     "w": "minibus",
+     "zh": "小型公共汽车，中巴"
+    },
+    {
+     "w": "view",
+     "zh": "观看"
+    },
+    {
+     "w": "silly",
+     "zh": "傻；愚蠢朐"
+    },
+    {
+     "w": "waste",
+     "zh": "浪费"
+    },
+    {
+     "w": "twin",
+     "zh": "双胞胎之一"
+    },
+    {
+     "w": "burglar",
+     "zh": "入室窃贼"
+    },
+    {
+     "w": "gun",
+     "zh": "枪"
+    }
+   ]
+  },
+  {
+   "n": "Unit 7",
+   "t": "",
+   "words": [
+    {
+     "w": "superstar",
+     "zh": "超级明星"
+    },
+    {
+     "w": "in your dreams",
+     "zh": "你做梦，你安想"
+    },
+    {
+     "w": "so. that",
+     "zh": "如此⋯以至于"
+    },
+    {
+     "w": "action film",
+     "zh": "动作片"
+    },
+    {
+     "w": "romantic",
+     "zh": "浪漫"
+    },
+    {
+     "w": "science fiction",
+     "zh": "科幻电影；科幻小说"
+    },
+    {
+     "w": "western",
+     "zh": "西部电影；西部小说"
+    },
+    {
+     "w": "industry",
+     "zh": "工业；产业"
+    },
+    {
+     "w": "such.. that",
+     "zh": "如此⋯以至于"
+    },
+    {
+     "w": "storyteller",
+     "zh": "请故事的人"
+    },
+    {
+     "w": "script",
+     "zh": "刷本"
+    },
+    {
+     "w": "all-timeadj",
+     "zh": "一向前，空前"
+    },
+    {
+     "w": "actress",
+     "zh": "女演员"
+    },
+    {
+     "w": "loss",
+     "zh": "丧尖，损尖；尖败"
+    },
+    {
+     "w": "humanitarian",
+     "zh": "人道主义者"
+    },
+    {
+     "w": "ballet",
+     "zh": "芭蕾舞；芭常舞剧"
+    },
+    {
+     "w": "dancer",
+     "zh": "舞蹈者"
+    },
+    {
+     "w": "charm",
+     "zh": "魅力"
+    },
+    {
+     "w": "catch one's attention",
+     "zh": "吸引某人注意"
+    },
+    {
+     "w": "insist",
+     "zh": "坚持认为；坚持"
+    },
+    {
+     "w": "role",
+     "zh": "角色"
+    },
+    {
+     "w": "base",
+     "zh": "以⋯为基础"
+    },
+    {
+     "w": "major",
+     "zh": "主要的；较大时"
+    },
+    {
+     "w": "play the role of",
+     "zh": "扮演⋯价色"
+    },
+    {
+     "w": "princess",
+     "zh": "公主"
+    },
+    {
+     "w": "lifetime",
+     "zh": "終身，一生"
+    },
+    {
+     "w": "nomination",
+     "zh": "提名"
+    },
+    {
+     "w": "final",
+     "zh": "最终，最后朐"
+    },
+    {
+     "w": "appearance",
+     "zh": "出现，露面；外貌"
+    },
+    {
+     "w": "angel",
+     "zh": "大使"
+    },
+    {
+     "w": "beyond",
+     "zh": "超山，除⋯之外"
+    },
+    {
+     "w": "effort",
+     "zh": "努力；艰难尝试"
+    },
+    {
+     "w": "pass away",
+     "zh": "去世"
+    },
+    {
+     "w": "peacefully",
+     "zh": "宁静地；和平地"
+    },
+    {
+     "w": "attractive",
+     "zh": "漂亮的，有吸引力的"
+    },
+    {
+     "w": "rush hour",
+     "zh": "交通高峰期"
+    },
+    {
+     "w": "park",
+     "zh": "停车"
+    },
+    {
+     "w": "car park",
+     "zh": "停车场"
+    },
+    {
+     "w": "row",
+     "zh": "排， 行"
+    },
+    {
+     "w": "amazed",
+     "zh": "大为惊奇"
+    },
+    {
+     "w": "mistake",
+     "zh": "误以为"
+    },
+    {
+     "w": "mistake.. for",
+     "zh": "把⋯误认为⋯"
+    },
+    {
+     "w": "kung fu",
+     "zh": "功大"
+    },
+    {
+     "w": "DVD",
+     "zh": "数码影碟"
+    },
+    {
+     "w": "actor",
+     "zh": "演员"
+    },
+    {
+     "w": "tale",
+     "zh": "故事，讲述，叙还"
+    },
+    {
+     "w": "dinosaur",
+     "zh": "恐龙"
+    },
+    {
+     "w": "fall in love with",
+     "zh": "爱上某人"
+    },
+    {
+     "w": "special offer",
+     "zh": "特价优惠"
+    },
+    {
+     "w": "cancel",
+     "zh": "取消；终止"
+    },
+    {
+     "w": "stupid",
+     "zh": "愚蠢"
+    },
+    {
+     "w": "stuntman",
+     "zh": "特技替身演员"
+    },
+    {
+     "w": "consider",
+     "zh": "认为；考虑"
+    }
+   ]
+  },
+  {
+   "n": "Unit 8",
+   "t": "",
+   "words": [
+    {
+     "w": "detective",
+     "zh": "侦探，警探"
+    },
+    {
+     "w": "clue",
+     "zh": "线索"
+    },
+    {
+     "w": "missing",
+     "zh": "缺少；去失"
+    },
+    {
+     "w": "suspect",
+     "zh": "犯罪嫌疑人"
+    },
+    {
+     "w": "medium",
+     "zh": "中等"
+    },
+    {
+     "w": "untidy",
+     "zh": "不整洁的"
+    },
+    {
+     "w": "guilty",
+     "zh": "有罪的"
+    },
+    {
+     "w": "truth",
+     "zh": "事实，真相"
+    },
+    {
+     "w": "guess",
+     "zh": "猜，猜测"
+    },
+    {
+     "w": "lie",
+     "zh": "说谎"
+    },
+    {
+     "w": "confirm",
+     "zh": "证实，确认"
+    },
+    {
+     "w": "victim",
+     "zh": "受害者，罹难苔"
+    },
+    {
+     "w": "crime",
+     "zh": "犯罪活动；罪行"
+    },
+    {
+     "w": "somewhere",
+     "zh": "在某处"
+    },
+    {
+     "w": "contact",
+     "zh": "联系"
+    },
+    {
+     "w": "wound",
+     "zh": "使⋯受伤"
+    },
+    {
+     "w": "bleed",
+     "zh": "流血，出血"
+    },
+    {
+     "w": "enemy",
+     "zh": "仇人，敌人，反对者"
+    },
+    {
+     "w": "single",
+     "zh": "单身的；单个的"
+    },
+    {
+     "w": "well-paid",
+     "zh": "收入高"
+    },
+    {
+     "w": "charge",
+     "zh": "指控，控告"
+    },
+    {
+     "w": "break into",
+     "zh": "强行闯入"
+    },
+    {
+     "w": "system",
+     "zh": "系统"
+    },
+    {
+     "w": "suppose",
+     "zh": "猜想，假定，料想"
+    },
+    {
+     "w": "only",
+     "zh": "仅有，唯一"
+    },
+    {
+     "w": "witness",
+     "zh": "日击者；证人"
+    },
+    {
+     "w": "report",
+     "zh": "举报，报告"
+    },
+    {
+     "w": "breathe",
+     "zh": "呼吸"
+    },
+    {
+     "w": "heavily",
+     "zh": "沉重地；猛烈地"
+    },
+    {
+     "w": "reward",
+     "zh": "报酬，奖金"
+    },
+    {
+     "w": "arrest",
+     "zh": "逮捕"
+    },
+    {
+     "w": "couple",
+     "zh": "大妇，一对"
+    },
+    {
+     "w": "fingerprint",
+     "zh": "指紋，手印"
+    },
+    {
+     "w": "probably",
+     "zh": "大概，或许"
+    },
+    {
+     "w": "criminal",
+     "zh": "犯罪，死法朐"
+    },
+    {
+     "w": "female",
+     "zh": "女 的；雌性哟"
+    },
+    {
+     "w": "boss",
+     "zh": "老板，上可"
+    },
+    {
+     "w": "commit",
+     "zh": "兆"
+    },
+    {
+     "w": "turn out",
+     "zh": "原来是，结果是"
+    },
+    {
+     "w": "have nothing to do with",
+     "zh": "与⋯无关"
+    },
+    {
+     "w": "hurry",
+     "zh": "急忙，匆忙"
+    },
+    {
+     "w": "in a hurry",
+     "zh": "急忙，赶快"
+    },
+    {
+     "w": "kidnapping",
+     "zh": "綁架，劫持"
+    },
+    {
+     "w": "wealth",
+     "zh": "财富"
+    },
+    {
+     "w": "prison",
+     "zh": "监狱"
+    },
+    {
+     "w": "in prison",
+     "zh": "牢"
+    },
+    {
+     "w": "kidnap",
+     "zh": "绑架，劫持"
+    },
+    {
+     "w": "safety",
+     "zh": "安全，保险"
+    },
+    {
+     "w": "lock",
+     "zh": "锁"
+    },
+    {
+     "w": "shut",
+     "zh": "关上，封闭；合拢"
+    },
+    {
+     "w": "guard",
+     "zh": "守卫，保卫"
+    },
+    {
+     "w": "guard against sth",
+     "zh": "防范，提防"
+    },
+    {
+     "w": "necklace",
+     "zh": "项链"
+    },
+    {
+     "w": "theft",
+     "zh": "偷锅"
+    },
+    {
+     "w": "get along with",
+     "zh": "与⋯和睦相处"
+    },
+    {
+     "w": "jewellery",
+     "zh": "英>［总称］珠宝二＜美>"
+    },
+    {
+     "w": "steal",
+     "zh": "偷，窃取"
+    }
+   ]
+  }
+ ]
+}

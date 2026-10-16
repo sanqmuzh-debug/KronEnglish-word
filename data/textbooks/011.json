@@ -1,0 +1,2083 @@
+{
+ "pub": "人教",
+ "stage": "初中",
+ "grade": "八年级",
+ "vol": "下册",
+ "id": "467816b8-e76c-43fc-afc7-91638f97dba8",
+ "title": "（根据2022年版课程标准修订）义务教育教科书·英语八年级下册",
+ "created": "2022-09-29",
+ "units": [
+  {
+   "n": "Unit 1",
+   "t": "",
+   "words": [
+    {
+     "w": "matter",
+     "zh": "问题；事情"
+    },
+    {
+     "w": "What's the matter",
+     "zh": "怎么了？出什么事了？"
+    },
+    {
+     "w": "sore",
+     "zh": "疼痛；酸痛前"
+    },
+    {
+     "w": "have a cold",
+     "zh": "感冒"
+    },
+    {
+     "w": "stomachache",
+     "zh": "腹痛，肚子痛"
+    },
+    {
+     "w": "have a stomachache",
+     "zh": "胃痛"
+    },
+    {
+     "w": "foot",
+     "zh": "脚；足"
+    },
+    {
+     "w": "neck",
+     "zh": "颈：脖子"
+    },
+    {
+     "w": "stomach",
+     "zh": "胃部 / 肚子"
+    },
+    {
+     "w": "throat",
+     "zh": "咽喉；喉咙"
+    },
+    {
+     "w": "fever",
+     "zh": "发烧"
+    },
+    {
+     "w": "lie",
+     "zh": "躺：平躺"
+    },
+    {
+     "w": "lie down",
+     "zh": "躺下"
+    },
+    {
+     "w": "rest",
+     "zh": "放松；休息"
+    },
+    {
+     "w": "cough",
+     "zh": "咳嗽"
+    },
+    {
+     "w": "x-ray",
+     "zh": "射线；X光"
+    },
+    {
+     "w": "toothache",
+     "zh": "牙痛"
+    },
+    {
+     "w": "take one's temperature",
+     "zh": "量体温"
+    },
+    {
+     "w": "headache",
+     "zh": "头痛"
+    },
+    {
+     "w": "have a fever",
+     "zh": "发烧"
+    },
+    {
+     "w": "break",
+     "zh": "间歇；休息"
+    },
+    {
+     "w": "take breaks",
+     "zh": "休息"
+    },
+    {
+     "w": "hurt",
+     "zh": "（使）疼痛；受伤"
+    },
+    {
+     "w": "passenger",
+     "zh": "乘客 / 旅客"
+    },
+    {
+     "w": "of",
+     "zh": "离开 ；不工作；从…••去掉"
+    },
+    {
+     "w": "get off",
+     "zh": "下车"
+    },
+    {
+     "w": "to one's surprise",
+     "zh": "使…惊讶的是；出乎⋯⋯意料"
+    },
+    {
+     "w": "onto",
+     "zh": "向；朝"
+    },
+    {
+     "w": "trouble",
+     "zh": "问题；苦恼"
+    },
+    {
+     "w": "hit",
+     "zh": "击；打"
+    },
+    {
+     "w": "right away",
+     "zh": "立即；马上"
+    },
+    {
+     "w": "get into",
+     "zh": "陷入；参与"
+    },
+    {
+     "w": "herself",
+     "zh": "她自己"
+    },
+    {
+     "w": "bandage",
+     "zh": "绷带.用绷带包扎"
+    },
+    {
+     "w": "press",
+     "zh": "压；挤；按"
+    },
+    {
+     "w": "sick",
+     "zh": "生病的；有病的"
+    },
+    {
+     "w": "knee",
+     "zh": "膝；膝盖"
+    },
+    {
+     "w": "nosebleed",
+     "zh": "鼻出血"
+    },
+    {
+     "w": "breathe",
+     "zh": "呼吸"
+    },
+    {
+     "w": "sunburned",
+     "zh": "晒伤"
+    },
+    {
+     "w": "ourselves",
+     "zh": "我们自己"
+    },
+    {
+     "w": "climber",
+     "zh": "登山者；攀登者"
+    },
+    {
+     "w": "be used to",
+     "zh": "习惯于⋯⋯：适应于⋯⋯"
+    },
+    {
+     "w": "risk",
+     "zh": "危险：风险；冒險"
+    },
+    {
+     "w": "take risks",
+     "zh": "冒險"
+    },
+    {
+     "w": "accident",
+     "zh": "事故；意外遭遇"
+    },
+    {
+     "w": "situation",
+     "zh": "情况；状况"
+    },
+    {
+     "w": "kilo",
+     "zh": "千克"
+    },
+    {
+     "w": "rock",
+     "zh": "岩石"
+    },
+    {
+     "w": "run out",
+     "zh": "用尽；耗尽"
+    },
+    {
+     "w": "knife",
+     "zh": "刃"
+    },
+    {
+     "w": "cut off",
+     "zh": "切除"
+    },
+    {
+     "w": "blood",
+     "zh": "血"
+    },
+    {
+     "w": "mean",
+     "zh": "意思是；打算；意欲"
+    },
+    {
+     "w": "get out of",
+     "zh": "离开；从⋯•出来"
+    },
+    {
+     "w": "importance",
+     "zh": "重要性，重大"
+    },
+    {
+     "w": "decision",
+     "zh": "决定；抉择"
+    },
+    {
+     "w": "control",
+     "zh": "控制，支配，操纵"
+    },
+    {
+     "w": "be in control of",
+     "zh": "掌管；管理"
+    },
+    {
+     "w": "spirit",
+     "zh": "勇气；意志"
+    },
+    {
+     "w": "death",
+     "zh": "死；死亡"
+    },
+    {
+     "w": "give up",
+     "zh": "放弃"
+    },
+    {
+     "w": "nurse",
+     "zh": "护士"
+    },
+    {
+     "w": "judy",
+     "zh": "朱迪"
+    },
+    {
+     "w": "nancy",
+     "zh": "南希"
+    },
+    {
+     "w": "mandy",
+     "zh": "曼迪"
+    },
+    {
+     "w": "utah",
+     "zh": "犹他州"
+    }
+   ]
+  },
+  {
+   "n": "Unit 2",
+   "t": "",
+   "words": [
+    {
+     "w": "clean up",
+     "zh": "打扫 干净"
+    },
+    {
+     "w": "cheer",
+     "zh": "欢呼；喝彩"
+    },
+    {
+     "w": "cheer up",
+     "zh": "变得更高兴；振奋起来"
+    },
+    {
+     "w": "give out",
+     "zh": "分发；散发"
+    },
+    {
+     "w": "volunteer",
+     "zh": "自愿提供"
+    },
+    {
+     "w": "come up with",
+     "zh": "想出：提出（主意、计划、回答等）"
+    },
+    {
+     "w": "cutoff",
+     "zh": "推迟"
+    },
+    {
+     "w": "sign",
+     "zh": "标志；信号"
+    },
+    {
+     "w": "notice",
+     "zh": "通知；通告；注意"
+    },
+    {
+     "w": "hand out",
+     "zh": "分发"
+    },
+    {
+     "w": "call up",
+     "zh": "打电话给 ；征召"
+    },
+    {
+     "w": "used to",
+     "zh": "曾经⋯；过去⋯"
+    },
+    {
+     "w": "lonely",
+     "zh": "孤独；寂寞"
+    },
+    {
+     "w": "care for",
+     "zh": "照顾；非常喜欢"
+    },
+    {
+     "w": "several",
+     "zh": "几个的"
+    },
+    {
+     "w": "strong",
+     "zh": "强壮的，强健的"
+    },
+    {
+     "w": "feeling",
+     "zh": "感觉；感触"
+    },
+    {
+     "w": "satisfaction",
+     "zh": "满足；满意"
+    },
+    {
+     "w": "joy",
+     "zh": "高兴；愉快"
+    },
+    {
+     "w": "owner",
+     "zh": "物主：主人"
+    },
+    {
+     "w": "try out",
+     "zh": "参加⋯•选拔；试用"
+    },
+    {
+     "w": "journey",
+     "zh": "长途旅程"
+    },
+    {
+     "w": "raise",
+     "zh": "募集；征集"
+    },
+    {
+     "w": "midnight",
+     "zh": "午夜；子夜"
+    },
+    {
+     "w": "alone",
+     "zh": "独自；单独"
+    },
+    {
+     "w": "repair",
+     "zh": "修理：修补"
+    },
+    {
+     "w": "fix",
+     "zh": "修理；安装"
+    },
+    {
+     "w": "fix up",
+     "zh": "修理；装饰"
+    },
+    {
+     "w": "give away",
+     "zh": "贈送；捐赠"
+    },
+    {
+     "w": "take after",
+     "zh": "像"
+    },
+    {
+     "w": "broken",
+     "zh": "破損；残缺"
+    },
+    {
+     "w": "wheel",
+     "zh": "车轮；轮子"
+    },
+    {
+     "w": "letter",
+     "zh": "信；函"
+    },
+    {
+     "w": "miss",
+     "zh": "女士；小姐"
+    },
+    {
+     "w": "setup",
+     "zh": "建起；设立"
+    },
+    {
+     "w": "disabled",
+     "zh": "残废的，有缺陷的"
+    },
+    {
+     "w": "make a difference",
+     "zh": "影响；有作用"
+    },
+    {
+     "w": "blind",
+     "zh": "瞎的；失明的"
+    },
+    {
+     "w": "deaf",
+     "zh": "聋"
+    },
+    {
+     "w": "imagine",
+     "zh": "想象；设想"
+    },
+    {
+     "w": "difficulty",
+     "zh": "困难；难题"
+    },
+    {
+     "w": "open",
+     "zh": "开；打开"
+    },
+    {
+     "w": "door",
+     "zh": "门"
+    },
+    {
+     "w": "carry",
+     "zh": "拿；提；扛"
+    },
+    {
+     "w": "train",
+     "zh": "训练：培训"
+    },
+    {
+     "w": "excited",
+     "zh": "兴奋的"
+    },
+    {
+     "w": "training",
+     "zh": "训练；培训"
+    },
+    {
+     "w": "kindness",
+     "zh": "仁慈；善良"
+    },
+    {
+     "w": "never",
+     "zh": "从不，永不"
+    },
+    {
+     "w": "understand",
+     "zh": "（understood /.Anda（r）stod/）理解；领会"
+    },
+    {
+     "w": "change",
+     "zh": "变化；改变"
+    },
+    {
+     "w": "interest",
+     "zh": "兴趣；关注使感兴趣；使关注"
+    },
+    {
+     "w": "sir",
+     "zh": "先生（用于正式信函中对不知名的男性收信人称呼时，写为Sir）"
+    },
+    {
+     "w": "madam",
+     "zh": "夫人；女士（用于正式信函中对不知名的女性收信人称呼时，写为Madam）"
+    },
+    {
+     "w": "jimmy",
+     "zh": "吉米"
+    }
+   ]
+  },
+  {
+   "n": "Unit 3",
+   "t": "",
+   "words": [
+    {
+     "w": "rubbish",
+     "zh": "垃圾：废弃物"
+    },
+    {
+     "w": "take out the rubbish",
+     "zh": "倒垃圾"
+    },
+    {
+     "w": "fold",
+     "zh": "折叠：对折"
+    },
+    {
+     "w": "sweep",
+     "zh": "扫；打扫"
+    },
+    {
+     "w": "floor",
+     "zh": "地板"
+    },
+    {
+     "w": "mess",
+     "zh": "杂乱；不整洁"
+    },
+    {
+     "w": "throw",
+     "zh": "扔；掷"
+    },
+    {
+     "w": "all the time",
+     "zh": "频繁；反复"
+    },
+    {
+     "w": "neither",
+     "zh": "也不"
+    },
+    {
+     "w": "shirt",
+     "zh": "衬衫"
+    },
+    {
+     "w": "as soon as",
+     "zh": "一⋯就⋯•・•"
+    },
+    {
+     "w": "pass",
+     "zh": "给：递：走过；通过"
+    },
+    {
+     "w": "borrow",
+     "zh": "借；借用"
+    },
+    {
+     "w": "lend",
+     "zh": "借给；借出"
+    },
+    {
+     "w": "finger",
+     "zh": "手指"
+    },
+    {
+     "w": "hate",
+     "zh": "厌恶：讨厌"
+    },
+    {
+     "w": "chore",
+     "zh": "杂务；乏味无聊工作"
+    },
+    {
+     "w": "while",
+     "zh": "与⋯⋯同时；当⋯⋯时候；面；然而"
+    },
+    {
+     "w": "snack",
+     "zh": "点心；小吃：快𧶘"
+    },
+    {
+     "w": "stress",
+     "zh": "精神压力：心理负担"
+    },
+    {
+     "w": "waste",
+     "zh": "浪费：垃圾.很费；滥用"
+    },
+    {
+     "w": "in order to",
+     "zh": "目是；为了"
+    },
+    {
+     "w": "provide",
+     "zh": "提供；供应"
+    },
+    {
+     "w": "anyway",
+     "zh": "而且；加之"
+    },
+    {
+     "w": "depend",
+     "zh": "依靠；信赖"
+    },
+    {
+     "w": "depend on",
+     "zh": "依靠；信赖"
+    },
+    {
+     "w": "develop",
+     "zh": "发展；壮大"
+    },
+    {
+     "w": "independence",
+     "zh": "独立"
+    },
+    {
+     "w": "fairness",
+     "zh": "公平，公正"
+    },
+    {
+     "w": "since",
+     "zh": "因为；既然"
+    },
+    {
+     "w": "neighbor",
+     "zh": "邻居"
+    },
+    {
+     "w": "take care of",
+     "zh": "照顾；处理山/il/adj.有病；不舒服"
+    },
+    {
+     "w": "drop",
+     "zh": "落下；掉下"
+    },
+    {
+     "w": "independent",
+     "zh": "独立自主的"
+    },
+    {
+     "w": "fair",
+     "zh": "合理的；公正的"
+    },
+    {
+     "w": "unfair",
+     "zh": "不公平的"
+    },
+    {
+     "w": "sandy",
+     "zh": "桑迪"
+    }
+   ]
+  },
+  {
+   "n": "Unit 4",
+   "t": "",
+   "words": [
+    {
+     "w": "allow",
+     "zh": "允许；淮许"
+    },
+    {
+     "w": "wrong",
+     "zh": "坏事"
+    },
+    {
+     "w": "What's wrong",
+     "zh": "哪儿不舒服？"
+    },
+    {
+     "w": "look through",
+     "zh": "快速查看：浏览"
+    },
+    {
+     "w": "guess",
+     "zh": "猜测；估计"
+    },
+    {
+     "w": "deal",
+     "zh": "协议；交易"
+    },
+    {
+     "w": "big deal",
+     "zh": "重要事"
+    },
+    {
+     "w": "work out",
+     "zh": "成功地发展；解决"
+    },
+    {
+     "w": "get on with",
+     "zh": "和睦相处；关系良好"
+    },
+    {
+     "w": "relation",
+     "zh": "关系；联系；交往"
+    },
+    {
+     "w": "communication",
+     "zh": "交流：沟通"
+    },
+    {
+     "w": "argue",
+     "zh": "争吵；争论"
+    },
+    {
+     "w": "cloud",
+     "zh": "云；云朵"
+    },
+    {
+     "w": "elder",
+     "zh": "年纪较长的"
+    },
+    {
+     "w": "instead",
+     "zh": "作为替代"
+    },
+    {
+     "w": "whatever",
+     "zh": "[用于否定句中以加强语气]任何"
+    },
+    {
+     "w": "nervous",
+     "zh": "紧张的，不安的"
+    },
+    {
+     "w": "offer",
+     "zh": "主动提出：自愿给予"
+    },
+    {
+     "w": "proper",
+     "zh": "恰当的，适当的"
+    },
+    {
+     "w": "secondly",
+     "zh": "第二；其次"
+    },
+    {
+     "w": "communicate",
+     "zh": "交流；沟通"
+    },
+    {
+     "w": "explain",
+     "zh": "解释；说明"
+    },
+    {
+     "w": "clear",
+     "zh": "清楚的，明白的"
+    },
+    {
+     "w": "copy",
+     "zh": "抄袭：模仿：复制；复印"
+    },
+    {
+     "w": "return",
+     "zh": "回来，返回"
+    },
+    {
+     "w": "anymore",
+     "zh": "再也（不）：（不）再"
+    },
+    {
+     "w": "member",
+     "zh": "成员：分子"
+    },
+    {
+     "w": "pressure",
+     "zh": "压力"
+    },
+    {
+     "w": "compete",
+     "zh": "竞争；对抗"
+    },
+    {
+     "w": "opinion",
+     "zh": "意见：想法；看法"
+    },
+    {
+     "w": "skill",
+     "zh": "技艺；技巧"
+    },
+    {
+     "w": "typical",
+     "zh": "典型"
+    },
+    {
+     "w": "football",
+     "zh": "橄榄球；足球"
+    },
+    {
+     "w": "cut out",
+     "zh": "删除；删去"
+    },
+    {
+     "w": "quick",
+     "zh": "快的；迅速；时间短暂的"
+    },
+    {
+     "w": "continue",
+     "zh": "继续，持续"
+    },
+    {
+     "w": "compare",
+     "zh": "比较"
+    },
+    {
+     "w": "compare... with",
+     "zh": "比较；对比"
+    },
+    {
+     "w": "crazy",
+     "zh": "疯狂的，失常的"
+    },
+    {
+     "w": "push",
+     "zh": "鞭策；督促；推动"
+    },
+    {
+     "w": "development",
+     "zh": "发展；发育；成长"
+    },
+    {
+     "w": "cause",
+     "zh": "造成；引起"
+    },
+    {
+     "w": "usual",
+     "zh": "通常；寻常"
+    },
+    {
+     "w": "in one's opinion",
+     "zh": "依•••看"
+    },
+    {
+     "w": "perhaps",
+     "zh": "可能，大概，也许"
+    },
+    {
+     "w": "cathy",
+     "zh": "凯茜"
+    },
+    {
+     "w": "taylor",
+     "zh": "泰勒"
+    }
+   ]
+  },
+  {
+   "n": "Unit 5",
+   "t": "",
+   "words": [
+    {
+     "w": "rainstorm",
+     "zh": "暴风雨"
+    },
+    {
+     "w": "alarm",
+     "zh": "闹钟"
+    },
+    {
+     "w": "g of",
+     "zh": "发出响声"
+    },
+    {
+     "w": "begin",
+     "zh": "开始"
+    },
+    {
+     "w": "heavily",
+     "zh": "沉重地"
+    },
+    {
+     "w": "suddenly",
+     "zh": "突然：忽然"
+    },
+    {
+     "w": "pick up",
+     "zh": "接电话"
+    },
+    {
+     "w": "strange",
+     "zh": "奇怪陌生的"
+    },
+    {
+     "w": "storm",
+     "zh": "暴风雨"
+    },
+    {
+     "w": "wind",
+     "zh": "风"
+    },
+    {
+     "w": "light",
+     "zh": "光；光线；光亮"
+    },
+    {
+     "w": "report",
+     "zh": "报道；公布"
+    },
+    {
+     "w": "area",
+     "zh": "地域：地区"
+    },
+    {
+     "w": "wood",
+     "zh": "木；木头"
+    },
+    {
+     "w": "window",
+     "zh": "窗；窗户"
+    },
+    {
+     "w": "flashlight",
+     "zh": "れ. 手电筒"
+    },
+    {
+     "w": "match",
+     "zh": "火柴"
+    },
+    {
+     "w": "beat",
+     "zh": "敲打；打败"
+    },
+    {
+     "w": "against",
+     "zh": "倚；碰；撞"
+    },
+    {
+     "w": "at first",
+     "zh": "起初：起先"
+    },
+    {
+     "w": "asleep",
+     "zh": "睡着"
+    },
+    {
+     "w": "fall asleep",
+     "zh": "进入梦乡；睡着"
+    },
+    {
+     "w": "die down",
+     "zh": "逐渐变弱；逐渐消失"
+    },
+    {
+     "w": "rise",
+     "zh": "升起：增加；提高"
+    },
+    {
+     "w": "fallen",
+     "zh": "倒下；落下的"
+    },
+    {
+     "w": "apart",
+     "zh": "分离：分开"
+    },
+    {
+     "w": "have look",
+     "zh": "看一看"
+    },
+    {
+     "w": "icy",
+     "zh": "覆盖着冰的；冰冷的"
+    },
+    {
+     "w": "kid",
+     "zh": "开玩笑；欺骗"
+    },
+    {
+     "w": "realize",
+     "zh": "理解：领会；认识到"
+    },
+    {
+     "w": "make one's way",
+     "zh": "前往；费力地前进"
+    },
+    {
+     "w": "passage",
+     "zh": "章节；段落"
+    },
+    {
+     "w": "pupil",
+     "zh": "学生"
+    },
+    {
+     "w": "completely",
+     "zh": "完全地，彻底地"
+    },
+    {
+     "w": "shocked",
+     "zh": "使震动（shock的过去式）"
+    },
+    {
+     "w": "silence",
+     "zh": "沉默；缄默；无声"
+    },
+    {
+     "w": "in silence",
+     "zh": "沉默；无声"
+    },
+    {
+     "w": "recently",
+     "zh": "不久前；最近"
+    },
+    {
+     "w": "take down",
+     "zh": "拆除；往下拽；记录"
+    },
+    {
+     "w": "terrorist",
+     "zh": "恐怖主义者；恐怖分子"
+    },
+    {
+     "w": "date",
+     "zh": "日期；日子"
+    },
+    {
+     "w": "tower",
+     "zh": "塔；塔楼"
+    },
+    {
+     "w": "truth",
+     "zh": "实情；事实"
+    },
+    {
+     "w": "allen",
+     "zh": "艾伦"
+    },
+    {
+     "w": "martin",
+     "zh": ""
+    },
+    {
+     "w": "king",
+     "zh": "马丁•路德•金"
+    },
+    {
+     "w": "alabama",
+     "zh": "亚拉巴马州（美国）"
+    },
+    {
+     "w": "animal Helpline",
+     "zh": "动物保护热线"
+    },
+    {
+     "w": "world Trade",
+     "zh": "世贸大楼（美国纽约）"
+    }
+   ]
+  },
+  {
+   "n": "Unit 6",
+   "t": "",
+   "words": [
+    {
+     "w": "shoot",
+     "zh": "射击；发射"
+    },
+    {
+     "w": "stone",
+     "zh": "石头"
+    },
+    {
+     "w": "weak",
+     "zh": "虚弱；无力"
+    },
+    {
+     "w": "god",
+     "zh": "神；上帝"
+    },
+    {
+     "w": "remind",
+     "zh": "提醒；使想起"
+    },
+    {
+     "w": "bit",
+     "zh": "一点：小块"
+    },
+    {
+     "w": "a little bit",
+     "zh": "有点儿；稍微"
+    },
+    {
+     "w": "silly",
+     "zh": "愚蠢的；不明事理"
+    },
+    {
+     "w": "instead of",
+     "zh": "代替；反面"
+    },
+    {
+     "w": "turn... into",
+     "zh": "变成"
+    },
+    {
+     "w": "object",
+     "zh": "反对， 不赞成"
+    },
+    {
+     "w": "hide",
+     "zh": "隐藏；隐蔽"
+    },
+    {
+     "w": "tail",
+     "zh": "尾巴"
+    },
+    {
+     "w": "magic",
+     "zh": "有魔力的"
+    },
+    {
+     "w": "stick",
+     "zh": "棍；条"
+    },
+    {
+     "w": "excite",
+     "zh": "使激动；使兴奋"
+    },
+    {
+     "w": "western",
+     "zh": "西方（w可以小写）"
+    },
+    {
+     "w": "once upon",
+     "zh": "从前"
+    },
+    {
+     "w": "stepsister",
+     "zh": "继姐"
+    },
+    {
+     "w": "prince",
+     "zh": "王子"
+    },
+    {
+     "w": "fall in love",
+     "zh": "爱上：喜欢上"
+    },
+    {
+     "w": "fit",
+     "zh": "适合；合身"
+    },
+    {
+     "w": "couple",
+     "zh": "夫妻；两人；两件事物"
+    },
+    {
+     "w": "smile",
+     "zh": "笑；微笑"
+    },
+    {
+     "w": "marry",
+     "zh": "结婚"
+    },
+    {
+     "w": "get married",
+     "zh": "结婚"
+    },
+    {
+     "w": "gold",
+     "zh": "金子；金币"
+    },
+    {
+     "w": "emperor",
+     "zh": "皇帝"
+    },
+    {
+     "w": "underwear",
+     "zh": "内衣"
+    },
+    {
+     "w": "nobody",
+     "zh": "没有人n. 小人物"
+    },
+    {
+     "w": "stupid",
+     "zh": "愚蠢的"
+    },
+    {
+     "w": "cheat",
+     "zh": "欺骗；蒙骗n. 骗子"
+    },
+    {
+     "w": "stepmother",
+     "zh": "继母"
+    },
+    {
+     "w": "wife",
+     "zh": "妻子；太太"
+    },
+    {
+     "w": "husband",
+     "zh": "丈夫"
+    },
+    {
+     "w": "whole",
+     "zh": "全部的；整体"
+    },
+    {
+     "w": "scene",
+     "zh": "（戏剧"
+    },
+    {
+     "w": "moonlight",
+     "zh": "月光"
+    },
+    {
+     "w": "shine",
+     "zh": "发光；照耀"
+    },
+    {
+     "w": "bright",
+     "zh": "光亮地；明亮地"
+    },
+    {
+     "w": "ground",
+     "zh": "地；地面"
+    },
+    {
+     "w": "lead",
+     "zh": "帯路；领路"
+    },
+    {
+     "w": "voice",
+     "zh": "声音"
+    },
+    {
+     "w": "brave",
+     "zh": "勇敢的；无畏的"
+    },
+    {
+     "w": "the Monkey King",
+     "zh": "美猴玉"
+    }
+   ]
+  },
+  {
+   "n": "Unit 7",
+   "t": "",
+   "words": [
+    {
+     "w": "square",
+     "zh": "广场"
+    },
+    {
+     "w": "meter",
+     "zh": "米，公尺【美】"
+    },
+    {
+     "w": "deep",
+     "zh": "深的：纵深前"
+    },
+    {
+     "w": "desert",
+     "zh": "沙漠"
+    },
+    {
+     "w": "population",
+     "zh": "/pa:pjulerjn/n.人口；人口数量"
+    },
+    {
+     "w": "asia",
+     "zh": "亚洲"
+    },
+    {
+     "w": "feel free",
+     "zh": "随便"
+    },
+    {
+     "w": "tour",
+     "zh": "旅行；旅游"
+    },
+    {
+     "w": "tourist",
+     "zh": "游客"
+    },
+    {
+     "w": "wall",
+     "zh": "墙"
+    },
+    {
+     "w": "amazing",
+     "zh": "令人大为惊奇的；令人惊喜（或惊叹）"
+    },
+    {
+     "w": "ancient",
+     "zh": "古代的"
+    },
+    {
+     "w": "protect",
+     "zh": "保护；防护"
+    },
+    {
+     "w": "wide",
+     "zh": "宽：宽阔"
+    },
+    {
+     "w": "as far as",
+     "zh": "就我所知"
+    },
+    {
+     "w": "man-made",
+     "zh": "人造"
+    },
+    {
+     "w": "achievement",
+     "zh": "完成"
+    },
+    {
+     "w": "southwestern",
+     "zh": "西南部的"
+    },
+    {
+     "w": "thick",
+     "zh": "厚；浓韵"
+    },
+    {
+     "w": "include",
+     "zh": "包括；包含"
+    },
+    {
+     "w": "freezing",
+     "zh": "极冷的；冰冻的"
+    },
+    {
+     "w": "condition",
+     "zh": "条件；状况"
+    },
+    {
+     "w": "take in",
+     "zh": "吸入；春人"
+    },
+    {
+     "w": "succeed",
+     "zh": "实现目标；成功"
+    },
+    {
+     "w": "challenge",
+     "zh": "挑战，考验"
+    },
+    {
+     "w": "in the face of",
+     "zh": "面对"
+    },
+    {
+     "w": "achieve",
+     "zh": "达到：完成；成功"
+    },
+    {
+     "w": "force",
+     "zh": "力；力量"
+    },
+    {
+     "w": "nature",
+     "zh": "自然界；大自然"
+    },
+    {
+     "w": "even though",
+     "zh": "即使；虽然"
+    },
+    {
+     "w": "ocean",
+     "zh": "大海；海洋"
+    },
+    {
+     "w": "the Pacific",
+     "zh": "太平洋"
+    },
+    {
+     "w": "cm",
+     "zh": "/sentrmi:ta（r）/厘米"
+    },
+    {
+     "w": "weigh",
+     "zh": "重量是⋯；称⋯・⋯的重量"
+    },
+    {
+     "w": "birth",
+     "zh": "出生；诞生"
+    },
+    {
+     "w": "at birth",
+     "zh": "出生时"
+    },
+    {
+     "w": "up to",
+     "zh": "到达 ：至多有；不多于"
+    },
+    {
+     "w": "adult",
+     "zh": "成年的"
+    },
+    {
+     "w": "bamboo",
+     "zh": "竹子"
+    },
+    {
+     "w": "endangered",
+     "zh": "濒临灭绝的"
+    },
+    {
+     "w": "research",
+     "zh": "研究，调查"
+    },
+    {
+     "w": "keeper",
+     "zh": "饲养员；保管人"
+    },
+    {
+     "w": "awake",
+     "zh": "醒着"
+    },
+    {
+     "w": "excitement",
+     "zh": "激动；兴奋"
+    },
+    {
+     "w": "walk into",
+     "zh": "走路时撞着"
+    },
+    {
+     "w": "fall over",
+     "zh": "絆倒"
+    },
+    {
+     "w": "or so",
+     "zh": "大约"
+    },
+    {
+     "w": "illness",
+     "zh": "疾病；病"
+    },
+    {
+     "w": "wild",
+     "zh": "野生的"
+    },
+    {
+     "w": "government",
+     "zh": "政府"
+    },
+    {
+     "w": "whale",
+     "zh": "鲸"
+    },
+    {
+     "w": "oil",
+     "zh": "油；食用油；石油"
+    },
+    {
+     "w": "protection",
+     "zh": "保护；保卫"
+    },
+    {
+     "w": "huge",
+     "zh": "巨大的：极多的"
+    },
+    {
+     "w": "junko",
+     "zh": "田部井淳子"
+    },
+    {
+     "w": "qomolangma",
+     "zh": "珠穆朗玛峰"
+    },
+    {
+     "w": "the Nile",
+     "zh": "尼罗河"
+    },
+    {
+     "w": "the Caspian",
+     "zh": "里海"
+    },
+    {
+     "w": "the Sahara",
+     "zh": "撒哈拉沙漠"
+    },
+    {
+     "w": "the Yangtze",
+     "zh": "长江"
+    },
+    {
+     "w": "the Yellow River",
+     "zh": "黄河"
+    },
+    {
+     "w": "the Ming Dynasty",
+     "zh": "明朝"
+    },
+    {
+     "w": "the Ming Great Wall",
+     "zh": "明长城"
+    },
+    {
+     "w": "the Amazon",
+     "zh": ""
+    },
+    {
+     "w": "river",
+     "zh": "亚马孙河"
+    },
+    {
+     "w": "Chengdu Research Base",
+     "zh": "成都研究基地"
+    }
+   ]
+  },
+  {
+   "n": "Unit 8",
+   "t": "",
+   "words": [
+    {
+     "w": "treasure",
+     "zh": "珠宝；财富"
+    },
+    {
+     "w": "island",
+     "zh": "岛"
+    },
+    {
+     "w": "full of",
+     "zh": "满是•的； 大量；（有）丰富"
+    },
+    {
+     "w": "classic",
+     "zh": "经典作品；名著"
+    },
+    {
+     "w": "page",
+     "zh": "页，面，张"
+    },
+    {
+     "w": "hurry",
+     "zh": "多忙；赶快"
+    },
+    {
+     "w": "hurry up",
+     "zh": "赶快；急忙"
+    },
+    {
+     "w": "due",
+     "zh": "预期；预定"
+    },
+    {
+     "w": "ship",
+     "zh": "船"
+    },
+    {
+     "w": "tool",
+     "zh": "工具"
+    },
+    {
+     "w": "gun",
+     "zh": "枪；炮"
+    },
+    {
+     "w": "mark",
+     "zh": "迹象；记号；分数"
+    },
+    {
+     "w": "sand",
+     "zh": "沙滩；沙"
+    },
+    {
+     "w": "cannibal",
+     "zh": "食人肉者"
+    },
+    {
+     "w": "towards",
+     "zh": "朝，向"
+    },
+    {
+     "w": "land",
+     "zh": "陆地：大地"
+    },
+    {
+     "w": "fiction",
+     "zh": "小说"
+    },
+    {
+     "w": "science fiction",
+     "zh": "科幻小说"
+    },
+    {
+     "w": "technology",
+     "zh": "/tekna:ladsi/n.科技；工艺"
+    },
+    {
+     "w": "french",
+     "zh": "法语"
+    },
+    {
+     "w": "pop",
+     "zh": "流行音乐"
+    },
+    {
+     "w": "band",
+     "zh": "乐队"
+    },
+    {
+     "w": "country music",
+     "zh": "乡村音乐"
+    },
+    {
+     "w": "forever",
+     "zh": "永远"
+    },
+    {
+     "w": "abroad",
+     "zh": "在国外；到国外"
+    },
+    {
+     "w": "actually",
+     "zh": "实际上"
+    },
+    {
+     "w": "ever since",
+     "zh": "自从"
+    },
+    {
+     "w": "fan",
+     "zh": "迷；狂热爱好者"
+    },
+    {
+     "w": "southern",
+     "zh": "南方"
+    },
+    {
+     "w": "modern",
+     "zh": "现代的"
+    },
+    {
+     "w": "success",
+     "zh": "成功"
+    },
+    {
+     "w": "belong",
+     "zh": "属于：归属"
+    },
+    {
+     "w": "one another",
+     "zh": "互相"
+    },
+    {
+     "w": "laughter",
+     "zh": "笑， 笑声"
+    },
+    {
+     "w": "beauty",
+     "zh": "美；美丽"
+    },
+    {
+     "w": "million",
+     "zh": "一百万"
+    },
+    {
+     "w": "record",
+     "zh": "/reko:d/，/rekord/n.唱片；记录/riko：（r）d/. 录制：录（音）"
+    },
+    {
+     "w": "introduce",
+     "zh": "介绍：引见"
+    },
+    {
+     "w": "line",
+     "zh": "行；排"
+    },
+    {
+     "w": "alex",
+     "zh": "亚历克斯"
+    },
+    {
+     "w": "the Beatles",
+     "zh": "披头士乐队（英国）"
+    },
+    {
+     "w": "oliver",
+     "zh": "/twist/《雾都孤儿》"
+    }
+   ]
+  },
+  {
+   "n": "Unit 9",
+   "t": "",
+   "words": [
+    {
+     "w": "amusement",
+     "zh": "娱乐：游戏"
+    },
+    {
+     "w": "amusement park",
+     "zh": "游乐场"
+    },
+    {
+     "w": "somewhere",
+     "zh": "某个地方"
+    },
+    {
+     "w": "camera",
+     "zh": "照相机：摄影机：摄像机"
+    },
+    {
+     "w": "invention",
+     "zh": "发明：发明物"
+    },
+    {
+     "w": "invent",
+     "zh": "发明；创造"
+    },
+    {
+     "w": "unbelievable",
+     "zh": "难以置信的"
+    },
+    {
+     "w": "progress",
+     "zh": "进步，进展"
+    },
+    {
+     "w": "rapid",
+     "zh": "迅速；快速"
+    },
+    {
+     "w": "unusual",
+     "zh": "不寻常的"
+    },
+    {
+     "w": "toilet",
+     "zh": "坐便器；厕所"
+    },
+    {
+     "w": "encourage",
+     "zh": "鼓励"
+    },
+    {
+     "w": "social",
+     "zh": "社会前"
+    },
+    {
+     "w": "peaceful",
+     "zh": "和平安宁的"
+    },
+    {
+     "w": "tea art",
+     "zh": "茶乙"
+    },
+    {
+     "w": "performance",
+     "zh": "表演；演出"
+    },
+    {
+     "w": "perfect",
+     "zh": "完美的，无瑕疵的"
+    },
+    {
+     "w": "tea set",
+     "zh": "茶具"
+    },
+    {
+     "w": "itself",
+     "zh": "它自己"
+    },
+    {
+     "w": "collect",
+     "zh": "收集；采集"
+    },
+    {
+     "w": "couple of",
+     "zh": "两个；一对；几个"
+    },
+    {
+     "w": "german",
+     "zh": "德语：德国人"
+    },
+    {
+     "w": "theme",
+     "zh": "主题"
+    },
+    {
+     "w": "ride",
+     "zh": "供乘骑游乐设施；短途旅程"
+    },
+    {
+     "w": "province",
+     "zh": "省份"
+    },
+    {
+     "w": "thousand",
+     "zh": "一千"
+    },
+    {
+     "w": "thousands of",
+     "zh": "数以干计韵；许许多多前"
+    },
+    {
+     "w": "safe",
+     "zh": "安全的；无危险的"
+    },
+    {
+     "w": "simply",
+     "zh": "仅仅；只；不过"
+    },
+    {
+     "w": "fear",
+     "zh": "害怕；惧怕"
+    },
+    {
+     "w": "whether",
+     "zh": "不管⋯（还是）；或者••（或者）；是否"
+    },
+    {
+     "w": "indian",
+     "zh": "印度的"
+    },
+    {
+     "w": "japanese",
+     "zh": "日本人"
+    },
+    {
+     "w": "aah",
+     "zh": "日本：日本人；日语"
+    },
+    {
+     "w": "fox",
+     "zh": "狐狸"
+    },
+    {
+     "w": "all year round",
+     "zh": "全年"
+    },
+    {
+     "w": "equator",
+     "zh": "赤道"
+    },
+    {
+     "w": "whenever",
+     "zh": "每当"
+    },
+    {
+     "w": "spring",
+     "zh": "春天"
+    },
+    {
+     "w": "mostly",
+     "zh": "主要地：通常"
+    },
+    {
+     "w": "location",
+     "zh": "地点：位置"
+    },
+    {
+     "w": "national",
+     "zh": "国家科学博物馆"
+    },
+    {
+     "w": "international",
+     "zh": "国际的，跨国的"
+    },
+    {
+     "w": "disneyland",
+     "zh": "迪斯尼乐园"
+    },
+    {
+     "w": "Disney Cruise",
+     "zh": "迪斯尼游轮"
+    },
+    {
+     "w": "the Bird's Nest",
+     "zh": "鸟巢"
+    },
+    {
+     "w": "singapore",
+     "zh": "新加坡"
+    },
+    {
+     "w": "southeast Asia",
+     "zh": "东南亚"
+    },
+    {
+     "w": "night Safari",
+     "zh": "夜间野生动物园"
+    }
+   ]
+  },
+  {
+   "n": "Unit 10",
+   "t": "",
+   "words": [
+    {
+     "w": "yard",
+     "zh": "院子"
+    },
+    {
+     "w": "yard sale",
+     "zh": "庭院拍卖会"
+    },
+    {
+     "w": "sweet",
+     "zh": "甜蜜的；甜；含糖"
+    },
+    {
+     "w": "memory",
+     "zh": "记忆：回忆"
+    },
+    {
+     "w": "cent",
+     "zh": "分；分币"
+    },
+    {
+     "w": "toy",
+     "zh": "玩具"
+    },
+    {
+     "w": "bear",
+     "zh": "熊"
+    },
+    {
+     "w": "maker",
+     "zh": "生产者；制订者"
+    },
+    {
+     "w": "bread maker",
+     "zh": "面包机"
+    },
+    {
+     "w": "scarf",
+     "zh": "围巾；披巾；头巾"
+    },
+    {
+     "w": "soft",
+     "zh": "软：柔软"
+    },
+    {
+     "w": "soft toy",
+     "zh": "软体玩具；布绒玩具"
+    },
+    {
+     "w": "check",
+     "zh": "检査；审查"
+    },
+    {
+     "w": "check out",
+     "zh": "祭看；观察"
+    },
+    {
+     "w": "board",
+     "zh": "板；木板"
+    },
+    {
+     "w": "board game",
+     "zh": "棋类游戏"
+    },
+    {
+     "w": "junior",
+     "zh": "年少的"
+    },
+    {
+     "w": "junior high school",
+     "zh": "初级中学"
+    },
+    {
+     "w": "year out",
+     "zh": "清理；丢掉"
+    },
+    {
+     "w": "bedroom",
+     "zh": "卧室"
+    },
+    {
+     "w": "no longer",
+     "zh": "不再；不复"
+    },
+    {
+     "w": "own",
+     "zh": "拥有；有"
+    },
+    {
+     "w": "railway",
+     "zh": "铁路；铁道"
+    },
+    {
+     "w": "part",
+     "zh": "离开：分开"
+    },
+    {
+     "w": "part with",
+     "zh": "放弃、交出（尤指不舍得东西）"
+    },
+    {
+     "w": "certain",
+     "zh": "确定的，肯定的"
+    },
+    {
+     "w": "as for",
+     "zh": "至于；关于"
+    },
+    {
+     "w": "honest",
+     "zh": "诚实的，正直的"
+    },
+    {
+     "w": "to be honest",
+     "zh": "说实在"
+    },
+    {
+     "w": "truthful",
+     "zh": "真实的"
+    },
+    {
+     "w": "hometown",
+     "zh": "家乡；故乡"
+    },
+    {
+     "w": "nowadays",
+     "zh": "现今 / 现如今"
+    },
+    {
+     "w": "search",
+     "zh": "搜索；搜查"
+    },
+    {
+     "w": "among",
+     "zh": "在...之中"
+    },
+    {
+     "w": "crayon",
+     "zh": "彩色铅笔（或粉笔、蜡笔）"
+    },
+    {
+     "w": "shame",
+     "zh": "羞耻；羞愧；惭愧"
+    },
+    {
+     "w": "regard",
+     "zh": "将••认为：把••••视为；看待"
+    },
+    {
+     "w": "count",
+     "zh": "数数"
+    },
+    {
+     "w": "century",
+     "zh": "百年；世纪"
+    },
+    {
+     "w": "according",
+     "zh": "依据；按照"
+    },
+    {
+     "w": "opposite",
+     "zh": "在……对面"
+    },
+    {
+     "w": "especially",
+     "zh": "特别地，尤其"
+    },
+    {
+     "w": "childhood",
+     "zh": "童年：幼年"
+    },
+    {
+     "w": "consider",
+     "zh": "仔细考虑，思考"
+    },
+    {
+     "w": "close to",
+     "zh": "几乎；接近"
+    },
+    {
+     "w": "hold",
+     "zh": "拥有；抓住"
+    }
+   ]
+  }
+ ]
+}

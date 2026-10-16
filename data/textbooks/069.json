@@ -1,0 +1,1115 @@
+{
+ "pub": "沪教",
+ "stage": "初中",
+ "grade": "八年级",
+ "vol": "上册",
+ "id": "90442b57-1067-ae52-9aa6-92fdcc4b8589",
+ "title": "（根据2022年版课程标准修订）义务教育教科书·英语八年级上册",
+ "created": "2026-08-26",
+ "units": [
+  {
+   "n": "Unit 1",
+   "t": "",
+   "words": [
+    {
+     "w": "dinosaur",
+     "zh": "恐龙"
+    },
+    {
+     "w": "intelligent",
+     "zh": "有才智；聪明的"
+    },
+    {
+     "w": "talented",
+     "zh": "有才能；天才的"
+    },
+    {
+     "w": "artistic",
+     "zh": "有艺术天赋的；（尤指）有美术才能"
+    },
+    {
+     "w": "perhaps",
+     "zh": "可能；大概；也许"
+    },
+    {
+     "w": "notebook",
+     "zh": "笔记本"
+    },
+    {
+     "w": "vehicle",
+     "zh": "交通工具；车辆"
+    },
+    {
+     "w": "prehistoric",
+     "zh": "史前"
+    },
+    {
+     "w": "completely",
+     "zh": "完全地；彻底地"
+    },
+    {
+     "w": "original",
+     "zh": "原来；起初的"
+    },
+    {
+     "w": "birth",
+     "zh": "出生"
+    },
+    {
+     "w": "suffering",
+     "zh": "苦难；疼痛"
+    },
+    {
+     "w": "artist",
+     "zh": "艺术家；画家"
+    },
+    {
+     "w": "death",
+     "zh": "死；死亡"
+    },
+    {
+     "w": "whole",
+     "zh": "全部；所有"
+    },
+    {
+     "w": "piece",
+     "zh": "一首，一篇"
+    },
+    {
+     "w": "editor",
+     "zh": "编辑"
+    },
+    {
+     "w": "organize",
+     "zh": "安排；组织"
+    },
+    {
+     "w": "order",
+     "zh": "顺序"
+    },
+    {
+     "w": "record",
+     "zh": "记录"
+    },
+    {
+     "w": "die out",
+     "zh": "灭绝"
+    },
+    {
+     "w": "a type of",
+     "zh": "一种与…⋯属于同一种类"
+    },
+    {
+     "w": "be related to",
+     "zh": "与……有关联"
+    },
+    {
+     "w": "general education",
+     "zh": "通识教育"
+    },
+    {
+     "w": "ngo back a long way",
+     "zh": "历史悠久"
+    },
+    {
+     "w": "be similar to",
+     "zh": "与・・・・・相似"
+    },
+    {
+     "w": "alphabetical order",
+     "zh": "字母顺序"
+    },
+    {
+     "w": "play an important role",
+     "zh": "起到重要作用"
+    }
+   ]
+  },
+  {
+   "n": "Unit 2",
+   "t": "",
+   "words": [
+    {
+     "w": "flight",
+     "zh": "航程"
+    },
+    {
+     "w": "schedule",
+     "zh": "日程安排"
+    },
+    {
+     "w": "everywhere",
+     "zh": "到处；各个地方"
+    },
+    {
+     "w": "challenge",
+     "zh": "向挑战"
+    },
+    {
+     "w": "prize",
+     "zh": "奖赏；奖励"
+    },
+    {
+     "w": "promise",
+     "zh": "承诺；保证"
+    },
+    {
+     "w": "chessboard",
+     "zh": "国际象棋棋盘"
+    },
+    {
+     "w": "silver",
+     "zh": "银"
+    },
+    {
+     "w": "reply",
+     "zh": "回复；答复"
+    },
+    {
+     "w": "hesitation",
+     "zh": "犹豫"
+    },
+    {
+     "w": "wonder",
+     "zh": "想知道；琢磨"
+    },
+    {
+     "w": "agree",
+     "zh": "同意；赞成"
+    },
+    {
+     "w": "per cent",
+     "zh": "百分之⋯"
+    },
+    {
+     "w": "currently",
+     "zh": "目前；当前"
+    },
+    {
+     "w": "check",
+     "zh": "检査；核查"
+    },
+    {
+     "w": "budget",
+     "zh": "预算"
+    },
+    {
+     "w": "province",
+     "zh": "省份"
+    },
+    {
+     "w": "sharply taipei ady",
+     "zh": "急剧地；突然大幅度地"
+    },
+    {
+     "w": "count",
+     "zh": "计算 总数"
+    },
+    {
+     "w": "system",
+     "zh": "系统"
+    },
+    {
+     "w": "symbol",
+     "zh": "符号；记号"
+    },
+    {
+     "w": "represent",
+     "zh": "代表"
+    },
+    {
+     "w": "exactly",
+     "zh": "准确地；确切地"
+    },
+    {
+     "w": "flight schedule",
+     "zh": "航班时刻表"
+    },
+    {
+     "w": "price tag",
+     "zh": "价格标签"
+    },
+    {
+     "w": "for a moment",
+     "zh": "片刻；一会儿毫不犹豫"
+    },
+    {
+     "w": "without hesitation",
+     "zh": "上升"
+    },
+    {
+     "w": "g o up",
+     "zh": "下降"
+    },
+    {
+     "w": "ngo down",
+     "zh": ""
+    },
+    {
+     "w": "write down",
+     "zh": "写下；记下"
+    },
+    {
+     "w": "instead of",
+     "zh": "代替；作为⋯替换"
+    }
+   ]
+  },
+  {
+   "n": "Unit 3",
+   "t": "",
+   "words": [
+    {
+     "w": "network",
+     "zh": "网络"
+    },
+    {
+     "w": "flood",
+     "zh": "洪水；水灾"
+    },
+    {
+     "w": "multimedia",
+     "zh": "多媒体"
+    },
+    {
+     "w": "expert",
+     "zh": "专家"
+    },
+    {
+     "w": "mobile",
+     "zh": "可移动"
+    },
+    {
+     "w": "payment",
+     "zh": "付款；支付"
+    },
+    {
+     "w": "warn",
+     "zh": "提醒注意；警告"
+    },
+    {
+     "w": "treatment",
+     "zh": "治疗；疗法"
+    },
+    {
+     "w": "data",
+     "zh": "数据"
+    },
+    {
+     "w": "company",
+     "zh": "公司"
+    },
+    {
+     "w": "traffic",
+     "zh": "路上行驶的车辆；交通"
+    },
+    {
+     "w": "flow",
+     "zh": "涌流；流动"
+    },
+    {
+     "w": "smoothly",
+     "zh": "平稳地；连续而流畅地"
+    },
+    {
+     "w": "laptop",
+     "zh": "笔记本电脑"
+    },
+    {
+     "w": "screen",
+     "zh": "屏幕"
+    },
+    {
+     "w": "weight",
+     "zh": "重量"
+    },
+    {
+     "w": "digital",
+     "zh": "数码"
+    },
+    {
+     "w": "social",
+     "zh": "社交"
+    },
+    {
+     "w": "message",
+     "zh": "信息"
+    },
+    {
+     "w": "interview",
+     "zh": "采访"
+    },
+    {
+     "w": "positive",
+     "zh": "正面；积极"
+    },
+    {
+     "w": "negative",
+     "zh": "消极"
+    },
+    {
+     "w": "effect",
+     "zh": "影响"
+    },
+    {
+     "w": "opinion",
+     "zh": "意见；看法"
+    },
+    {
+     "w": "novel",
+     "zh": "小说"
+    },
+    {
+     "w": "comment",
+     "zh": "评论"
+    },
+    {
+     "w": "basis",
+     "zh": "基础"
+    },
+    {
+     "w": "microprocessor",
+     "zh": "微处理器"
+    },
+    {
+     "w": "microchip",
+     "zh": "微芯片；芯片"
+    },
+    {
+     "w": "major",
+     "zh": "主要；重要"
+    },
+    {
+     "w": "breakthrough",
+     "zh": "突破；重大进展"
+    },
+    {
+     "w": "electronic",
+     "zh": "电子"
+    },
+    {
+     "w": "software",
+     "zh": "软件"
+    },
+    {
+     "w": "app",
+     "zh": "应用程序；应用软件"
+    },
+    {
+     "w": "era",
+     "zh": "时代；纪元"
+    },
+    {
+     "w": "download",
+     "zh": "下载"
+    },
+    {
+     "w": "tiny",
+     "zh": "微小"
+    },
+    {
+     "w": "connect to",
+     "zh": "连接"
+    },
+    {
+     "w": "bring big changes to",
+     "zh": "给⋯•带来重大变化"
+    },
+    {
+     "w": "mobile payment",
+     "zh": "移动支付"
+    },
+    {
+     "w": "take... for example",
+     "zh": "以・・・・・・为例"
+    },
+    {
+     "w": "rubbish bin",
+     "zh": "垃圾"
+    },
+    {
+     "w": "social media",
+     "zh": "社交媒体"
+    },
+    {
+     "w": "in person",
+     "zh": "亲自；亲身"
+    },
+    {
+     "w": "the general public",
+     "zh": "公众；大众"
+    }
+   ]
+  },
+  {
+   "n": "Unit 4",
+   "t": "",
+   "words": [
+    {
+     "w": "balloon",
+     "zh": "气球"
+    },
+    {
+     "w": "wheel",
+     "zh": "轮；车轮"
+    },
+    {
+     "w": "central",
+     "zh": "在中心"
+    },
+    {
+     "w": "although",
+     "zh": "虽然；尽管；即使"
+    },
+    {
+     "w": "attach",
+     "zh": "把⋯⋯固定；把⋯⋯附（在・・・・・上）"
+    },
+    {
+     "w": "pull",
+     "zh": "拉；拽；扯；拖国际"
+    },
+    {
+     "w": "international",
+     "zh": "国际的，跨国的"
+    },
+    {
+     "w": "path",
+     "zh": "小路；小径"
+    },
+    {
+     "w": "technique",
+     "zh": "技巧；技艺"
+    },
+    {
+     "w": "depend",
+     "zh": "需要；依靠"
+    },
+    {
+     "w": "doubt",
+     "zh": "疑惑；疑问"
+    },
+    {
+     "w": "personally",
+     "zh": "就个人意见"
+    },
+    {
+     "w": "prediction",
+     "zh": "预言；预测"
+    },
+    {
+     "w": "statement",
+     "zh": "说明"
+    },
+    {
+     "w": "benefit",
+     "zh": "益处；优势"
+    },
+    {
+     "w": "wing",
+     "zh": "翅膀；机翼"
+    },
+    {
+     "w": "distance",
+     "zh": "距离"
+    },
+    {
+     "w": "petrol",
+     "zh": "汽油"
+    },
+    {
+     "w": "avoid",
+     "zh": "避免；防止"
+    },
+    {
+     "w": "anywhere",
+     "zh": "在任何地方"
+    },
+    {
+     "w": "notice",
+     "zh": "看 到"
+    },
+    {
+     "w": "type",
+     "zh": "活字"
+    },
+    {
+     "w": "mixture",
+     "zh": "混合物"
+    },
+    {
+     "w": "heat",
+     "zh": "加热；变热"
+    },
+    {
+     "w": "press",
+     "zh": "压"
+    },
+    {
+     "w": "metal",
+     "zh": "金属蒸汽机车"
+    },
+    {
+     "w": "steam locomotive",
+     "zh": "载人航天器"
+    },
+    {
+     "w": "creed spacecraft",
+     "zh": ""
+    },
+    {
+     "w": "on foot",
+     "zh": "步行"
+    },
+    {
+     "w": "take place",
+     "zh": "发生；进行"
+    },
+    {
+     "w": "for instance",
+     "zh": "例如；比如"
+    },
+    {
+     "w": "large amounts of",
+     "zh": "大量"
+    },
+    {
+     "w": "international trade",
+     "zh": "国际贸易"
+    },
+    {
+     "w": "depend on",
+     "zh": "依靠；依赖D printer D 打印机"
+    },
+    {
+     "w": "without doubt",
+     "zh": "毫无疑问"
+    },
+    {
+     "w": "fall time",
+     "zh": "自古以来；有史以来"
+    },
+    {
+     "w": "make fun of",
+     "zh": "取笑；拿⋯⋯开玩笑"
+    },
+    {
+     "w": "traffic jam",
+     "zh": "堵车；交通阻塞"
+    }
+   ]
+  },
+  {
+   "n": "Unit 5",
+   "t": "",
+   "words": [
+    {
+     "w": "exchange",
+     "zh": "交流"
+    },
+    {
+     "w": "nervous",
+     "zh": "焦虑；担忧"
+    },
+    {
+     "w": "grateful",
+     "zh": "感激"
+    },
+    {
+     "w": "chopstick",
+     "zh": "筷子"
+    },
+    {
+     "w": "tour",
+     "zh": "旅行；旅游"
+    },
+    {
+     "w": "tai chi",
+     "zh": "太极"
+    },
+    {
+     "w": "yet feet",
+     "zh": "尚 ；还；仍"
+    },
+    {
+     "w": "independent",
+     "zh": "自主"
+    },
+    {
+     "w": "content",
+     "zh": "内容"
+    },
+    {
+     "w": "feeling",
+     "zh": "感觉；感情"
+    },
+    {
+     "w": "shock",
+     "zh": "震惊；令人震惊事"
+    },
+    {
+     "w": "foreign",
+     "zh": "外国"
+    },
+    {
+     "w": "confused",
+     "zh": "糊涂；迷惑"
+    },
+    {
+     "w": "anxious",
+     "zh": "焦愿昀；忧虑"
+    },
+    {
+     "w": "phase",
+     "zh": "阶段；时期"
+    },
+    {
+     "w": "honeymoon",
+     "zh": "新活动之初）和谐时期"
+    },
+    {
+     "w": "unfamiliar",
+     "zh": "陌生；不熟悉"
+    },
+    {
+     "w": "homesick",
+     "zh": "想家的"
+    },
+    {
+     "w": "lonely",
+     "zh": "孤独"
+    },
+    {
+     "w": "deal",
+     "zh": "对付；应付"
+    },
+    {
+     "w": "expect",
+     "zh": "预料；预期"
+    },
+    {
+     "w": "situation",
+     "zh": "情祝"
+    },
+    {
+     "w": "accept",
+     "zh": "接受"
+    },
+    {
+     "w": "adaptation",
+     "zh": "适应京剧"
+    },
+    {
+     "w": "Beijing opera",
+     "zh": ""
+    },
+    {
+     "w": "host family",
+     "zh": "奇佰家庭"
+    },
+    {
+     "w": "snake its way",
+     "zh": "晚蜒"
+    },
+    {
+     "w": "culture shock",
+     "zh": "文化冲击"
+    },
+    {
+     "w": "deal with",
+     "zh": "解决；处理感到舒适自在"
+    },
+    {
+     "w": "feel at home",
+     "zh": ""
+    }
+   ]
+  },
+  {
+   "n": "Unit 6",
+   "t": "",
+   "words": [
+    {
+     "w": "author",
+     "zh": "作者；作家"
+    },
+    {
+     "w": "remains",
+     "zh": "遗迹；遗址"
+    },
+    {
+     "w": "locate",
+     "zh": "把・⋯安置在（或建造于）"
+    },
+    {
+     "w": "soldier",
+     "zh": "土兵"
+    },
+    {
+     "w": "captain",
+     "zh": "首领；领导者"
+    },
+    {
+     "w": "empty",
+     "zh": "空"
+    },
+    {
+     "w": "victory",
+     "zh": "胜利；成功"
+    },
+    {
+     "w": "joke",
+     "zh": "笑话；玩笑"
+    },
+    {
+     "w": "midnight",
+     "zh": "午夜"
+    },
+    {
+     "w": "except",
+     "zh": "除⋯⋯之外"
+    },
+    {
+     "w": "hide",
+     "zh": "藏；隐蔽"
+    },
+    {
+     "w": "secretly",
+     "zh": "秘密地"
+    },
+    {
+     "w": "enter",
+     "zh": "进来；进入"
+    },
+    {
+     "w": "succeed",
+     "zh": "达到目的；成功"
+    },
+    {
+     "w": "trick",
+     "zh": "诡计"
+    },
+    {
+     "w": "fight",
+     "zh": "打仗；战斗"
+    },
+    {
+     "w": "beat",
+     "zh": "打败"
+    },
+    {
+     "w": "pretend",
+     "zh": "假装；佯装"
+    },
+    {
+     "w": "enemy",
+     "zh": "敌人"
+    },
+    {
+     "w": "fail",
+     "zh": "失败；未能"
+    },
+    {
+     "w": "therefore",
+     "zh": "因此；所以"
+    },
+    {
+     "w": "within",
+     "zh": "在之内"
+    },
+    {
+     "w": "fill",
+     "zh": "充满； 装满"
+    },
+    {
+     "w": "towards",
+     "zh": "向；朝；对着"
+    },
+    {
+     "w": "attack",
+     "zh": "袭击；攻击"
+    },
+    {
+     "w": "fog",
+     "zh": "雾"
+    },
+    {
+     "w": "make jokes about",
+     "zh": "开⋯⋯玩笑"
+    },
+    {
+     "w": "succeed in",
+     "zh": "在⋯⋯方面成功"
+    },
+    {
+     "w": "be tired of",
+     "zh": "厌烦上船"
+    },
+    {
+     "w": "ngo on board",
+     "zh": ""
+    },
+    {
+     "w": "be jealous of",
+     "zh": "嫉妒"
+    },
+    {
+     "w": "be full of",
+     "zh": "装满；充满"
+    }
+   ]
+  },
+  {
+   "n": "Unit 7",
+   "t": "",
+   "words": [
+    {
+     "w": "regularly",
+     "zh": "有规律地"
+    },
+    {
+     "w": "repeat",
+     "zh": "重复"
+    },
+    {
+     "w": "note",
+     "zh": "笔记；记求"
+    },
+    {
+     "w": "visual",
+     "zh": "视觉"
+    },
+    {
+     "w": "mentally",
+     "zh": "精神上"
+    },
+    {
+     "w": "link",
+     "zh": "联系；相联系"
+    },
+    {
+     "w": "list",
+     "zh": "清单"
+    },
+    {
+     "w": "especially",
+     "zh": "尤其"
+    },
+    {
+     "w": "diet",
+     "zh": "日常饮食"
+    },
+    {
+     "w": "maintain",
+     "zh": "维持；保持"
+    },
+    {
+     "w": "nut",
+     "zh": "坚果"
+    },
+    {
+     "w": "relax",
+     "zh": "放松；休息"
+    },
+    {
+     "w": "stressed",
+     "zh": "心力交瘁；焦虑不安"
+    },
+    {
+     "w": "tend",
+     "zh": "在往会；常常就"
+    },
+    {
+     "w": "normal",
+     "zh": "正常"
+    },
+    {
+     "w": "loss",
+     "zh": "丧失；损失"
+    },
+    {
+     "w": "fork",
+     "zh": "管叉"
+    },
+    {
+     "w": "onion",
+     "zh": "洋葱"
+    },
+    {
+     "w": "ant",
+     "zh": "蚂蚁"
+    },
+    {
+     "w": "context",
+     "zh": "上下文；语境"
+    },
+    {
+     "w": "image",
+     "zh": "图像"
+    },
+    {
+     "w": "sense",
+     "zh": "感觉官能（即视、听、嗅、味、触五觉）"
+    },
+    {
+     "w": "summary",
+     "zh": "总结；概括"
+    },
+    {
+     "w": "contain",
+     "zh": "包含；含有"
+    },
+    {
+     "w": "particular",
+     "zh": "专指昀；特指"
+    },
+    {
+     "w": "chemistry",
+     "zh": "化学组成（或性质）；化学"
+    },
+    {
+     "w": "flash card",
+     "zh": "识字卡片"
+    },
+    {
+     "w": "make a point of",
+     "zh": "（因重要或必要）保证做最后但同样重要"
+    },
+    {
+     "w": "last but not least",
+     "zh": "最后但同样重要的"
+    },
+    {
+     "w": "natural disaster",
+     "zh": "自然灾害弄懂；弄清楚"
+    },
+    {
+     "w": "figure out",
+     "zh": "弄懂；弄清楚；弄明白"
+    }
+   ]
+  },
+  {
+   "n": "Unit 8",
+   "t": "",
+   "words": [
+    {
+     "w": "faithful",
+     "zh": "忠实的；忠诚的"
+    },
+    {
+     "w": "hold",
+     "zh": "抱着；拿着"
+    },
+    {
+     "w": "responsible",
+     "zh": "可信任；可信赖"
+    },
+    {
+     "w": "awake",
+     "zh": "醒着"
+    },
+    {
+     "w": "flat",
+     "zh": "公寓"
+    },
+    {
+     "w": "choice",
+     "zh": "选择"
+    },
+    {
+     "w": "advise",
+     "zh": "劝告；建议"
+    },
+    {
+     "w": "cause",
+     "zh": "引起；造成；导致"
+    },
+    {
+     "w": "complain",
+     "zh": "抱怨；投诉"
+    },
+    {
+     "w": "litter",
+     "zh": "猫砂；垃圾"
+    },
+    {
+     "w": "relieve",
+     "zh": "方便；解手"
+    },
+    {
+     "w": "unlikely",
+     "zh": "不大可能发生"
+    },
+    {
+     "w": "indoors",
+     "zh": "在至内"
+    },
+    {
+     "w": "magical",
+     "zh": "有魔力的"
+    },
+    {
+     "w": "wealth",
+     "zh": "钱财；财富"
+    },
+    {
+     "w": "queen",
+     "zh": "女王；王后"
+    },
+    {
+     "w": "servant",
+     "zh": "仆人；佣人"
+    },
+    {
+     "w": "pride",
+     "zh": "自豪；骄傲"
+    },
+    {
+     "w": "among",
+     "zh": "在…中"
+    },
+    {
+     "w": "relationship",
+     "zh": "关系长大；成熟"
+    },
+    {
+     "w": "g row up",
+     "zh": "照顾；照料"
+    },
+    {
+     "w": "care for",
+     "zh": ""
+    },
+    {
+     "w": "in short",
+     "zh": "总之；简言之"
+    },
+    {
+     "w": "have no choice but to do",
+     "zh": "别无选择；只能⋯⋯"
+    },
+    {
+     "w": "run free",
+     "zh": "四处自由走动"
+    },
+    {
+     "w": "lie around",
+     "zh": "懒散度日；游手好闲"
+    },
+    {
+     "w": "complain about",
+     "zh": "抱怨"
+    },
+    {
+     "w": "in addition",
+     "zh": "除・⋯以外引起某人"
+    },
+    {
+     "w": "catch the eye of somebody",
+     "zh": ""
+    }
+   ]
+  }
+ ]
+}

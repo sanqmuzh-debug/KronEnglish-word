@@ -1,0 +1,931 @@
+{
+ "pub": "沪教",
+ "stage": "高中",
+ "grade": "必修 第一册",
+ "vol": "",
+ "id": "307302c5-ca49-4be1-9b45-6ffe702c3cc5",
+ "title": "普通高中教科书·英语必修 第一册",
+ "created": "2022-09-29",
+ "units": [
+  {
+   "n": "Unit 1",
+   "t": "",
+   "words": [
+    {
+     "w": "digital",
+     "zh": "数字信息系统的；数码的；数字式"
+    },
+    {
+     "w": "typical",
+     "zh": "典型的；有代表性（of somebody / something） behaving in the way that you expect 不出所料的；特有的"
+    },
+    {
+     "w": "event",
+     "zh": "发生事情； 重要的事情，大事"
+    },
+    {
+     "w": "onto",
+     "zh": "与动词连用，表示朝某处或某位置运动）向，朝"
+    },
+    {
+     "w": "midnight",
+     "zh": "子夜；午夜"
+    },
+    {
+     "w": "routine",
+     "zh": "常规；正常顺序"
+    },
+    {
+     "w": "scene",
+     "zh": "（戏剧"
+    },
+    {
+     "w": "earn",
+     "zh": "挣得；赚得；挣钱"
+    },
+    {
+     "w": "death",
+     "zh": "死亡；死"
+    },
+    {
+     "w": "button",
+     "zh": "扣子；纽扣"
+    },
+    {
+     "w": "type",
+     "zh": "类型；种类"
+    },
+    {
+     "w": "unique",
+     "zh": "独特的；唯一的"
+    },
+    {
+     "w": "respond",
+     "zh": "反应"
+    },
+    {
+     "w": "select",
+     "zh": "选择；挑选"
+    },
+    {
+     "w": "organization",
+     "zh": "机构；团体；组织"
+    },
+    {
+     "w": "goal",
+     "zh": "目标；目的"
+    },
+    {
+     "w": "partner",
+     "zh": "搭档；同伴"
+    },
+    {
+     "w": "improve",
+     "zh": "改进； 改善"
+    },
+    {
+     "w": "currently",
+     "zh": "当前；现在"
+    },
+    {
+     "w": "schedule",
+     "zh": "工作计划；日程安排"
+    },
+    {
+     "w": "conference",
+     "zh": "会议"
+    },
+    {
+     "w": "quality",
+     "zh": "质量；品质"
+    },
+    {
+     "w": "deliver",
+     "zh": "给予；递送"
+    },
+    {
+     "w": "inspire",
+     "zh": "激励；鼓舞"
+    },
+    {
+     "w": "tip",
+     "zh": "指点；实用的提示"
+    },
+    {
+     "w": "acquire",
+     "zh": "获得；习得"
+    },
+    {
+     "w": "challenge",
+     "zh": "挑战"
+    },
+    {
+     "w": "volunteer",
+     "zh": "义务工作者；志愿者v. to offer to do something without being forced or being paid forit 自愿做；义务做"
+    },
+    {
+     "w": "location",
+     "zh": "地方；地点；位置"
+    },
+    {
+     "w": "length",
+     "zh": "时间的长短"
+    },
+    {
+     "w": "electricity",
+     "zh": "电"
+    },
+    {
+     "w": "material",
+     "zh": "材料"
+    },
+    {
+     "w": "senior",
+     "zh": "高级的n. older person 较年长的人"
+    },
+    {
+     "w": "junior",
+     "zh": "初级的"
+    },
+    {
+     "w": "freedom",
+     "zh": "自由"
+    },
+    {
+     "w": "dorm",
+     "zh": "集体宿舍；学生宿舍"
+    },
+    {
+     "w": "aspect",
+     "zh": "方面；层面"
+    },
+    {
+     "w": "exploration",
+     "zh": "探究；研究；探测"
+    },
+    {
+     "w": "edit",
+     "zh": "编辑，校订（文章、书籍等）"
+    },
+    {
+     "w": "particular",
+     "zh": "专指的；特指的"
+    },
+    {
+     "w": "element",
+     "zh": "元素；要素"
+    },
+    {
+     "w": "behaviour",
+     "zh": "行为；举止"
+    },
+    {
+     "w": "related",
+     "zh": "相关的；有联系的"
+    },
+    {
+     "w": "lantern",
+     "zh": "灯笼"
+    },
+    {
+     "w": "tradition",
+     "zh": "传统， 惯例"
+    },
+    {
+     "w": "reflect",
+     "zh": "显示，表明，表达"
+    },
+    {
+     "w": "attitude",
+     "zh": "态度；看法"
+    },
+    {
+     "w": "respect",
+     "zh": "尊重"
+    },
+    {
+     "w": "description",
+     "zh": "描述"
+    },
+    {
+     "w": "video clip",
+     "zh": ""
+    },
+    {
+     "w": "time capsule",
+     "zh": ""
+    },
+    {
+     "w": "in all",
+     "zh": "总共"
+    },
+    {
+     "w": "hula hoop",
+     "zh": "呼啦圈"
+    },
+    {
+     "w": "well off",
+     "zh": "富有的；富裕"
+    },
+    {
+     "w": "be keen on",
+     "zh": "喜爱；对……着迷；有兴趣"
+    },
+    {
+     "w": "paper towel",
+     "zh": "厚纸巾"
+    },
+    {
+     "w": "be ashamed of",
+     "zh": "为…感到羞愧"
+    },
+    {
+     "w": "refer to",
+     "zh": "描述；涉及；与⋯相关"
+    },
+    {
+     "w": "chinese knot",
+     "zh": "中国结"
+    },
+    {
+     "w": "dragon boat",
+     "zh": ""
+    }
+   ]
+  },
+  {
+   "n": "Unit 2",
+   "t": "",
+   "words": [
+    {
+     "w": "destination",
+     "zh": "目的地"
+    },
+    {
+     "w": "million",
+     "zh": "一百万"
+    },
+    {
+     "w": "amazing",
+     "zh": "令人大为惊奇的"
+    },
+    {
+     "w": "historic",
+     "zh": "历史上重要"
+    },
+    {
+     "w": "site",
+     "zh": "地点"
+    },
+    {
+     "w": "former",
+     "zh": "以前的"
+    },
+    {
+     "w": "poetry",
+     "zh": "诗歌；诗作"
+    },
+    {
+     "w": "basis",
+     "zh": "基础；要素"
+    },
+    {
+     "w": "court",
+     "zh": "宫殿"
+    },
+    {
+     "w": "originally",
+     "zh": "原先；起初"
+    },
+    {
+     "w": "defence",
+     "zh": "防御"
+    },
+    {
+     "w": "nowadays",
+     "zh": "当前；目前"
+    },
+    {
+     "w": "view",
+     "zh": "景色，风景"
+    },
+    {
+     "w": "memory",
+     "zh": "回忆；记忆"
+    },
+    {
+     "w": "contribute",
+     "zh": "捐献"
+    },
+    {
+     "w": "scientific",
+     "zh": "科学 的"
+    },
+    {
+     "w": "admire",
+     "zh": "钦佩"
+    },
+    {
+     "w": "statue",
+     "zh": "雕塑，雕像"
+    },
+    {
+     "w": "fancy",
+     "zh": "昂贵的；奢华的"
+    },
+    {
+     "w": "feature",
+     "zh": "特色；特征；特点"
+    },
+    {
+     "w": "position",
+     "zh": "地位"
+    },
+    {
+     "w": "opportunity",
+     "zh": "机会；时机"
+    },
+    {
+     "w": "transport",
+     "zh": "运送"
+    },
+    {
+     "w": "disappoint",
+     "zh": "使失望"
+    },
+    {
+     "w": "structure",
+     "zh": "结构；构造"
+    },
+    {
+     "w": "sculpture",
+     "zh": "雕塑"
+    },
+    {
+     "w": "weapon",
+     "zh": "武器；兵器"
+    },
+    {
+     "w": "crowded",
+     "zh": "人多的；拥挤的"
+    },
+    {
+     "w": "indicate",
+     "zh": "表明；显示"
+    },
+    {
+     "w": "afterwards",
+     "zh": "以后；后来"
+    },
+    {
+     "w": "downtown",
+     "zh": "在市中心，往市中心"
+    },
+    {
+     "w": "moment",
+     "zh": "某一时刻"
+    },
+    {
+     "w": "envelope",
+     "zh": "信封"
+    },
+    {
+     "w": "cafe",
+     "zh": "咖啡馆，小餮馆"
+    },
+    {
+     "w": "vote",
+     "zh": "投票"
+    },
+    {
+     "w": "chat",
+     "zh": "闲聊；聊天"
+    },
+    {
+     "w": "nowhere",
+     "zh": "无处；哪里都不"
+    },
+    {
+     "w": "embarrassed",
+     "zh": "窘迫的，尴尬的"
+    },
+    {
+     "w": "shocked",
+     "zh": "震惊"
+    },
+    {
+     "w": "opinion",
+     "zh": "意见；想法；看法"
+    },
+    {
+     "w": "blog",
+     "zh": "博客"
+    },
+    {
+     "w": "settle",
+     "zh": "定居"
+    },
+    {
+     "w": "adventure",
+     "zh": "冒险；冒险的经历"
+    },
+    {
+     "w": "energetic",
+     "zh": "精力充沛"
+    },
+    {
+     "w": "origin",
+     "zh": "起源；源头"
+    },
+    {
+     "w": "desert",
+     "zh": "沙漠"
+    },
+    {
+     "w": "entrance",
+     "zh": "入口"
+    },
+    {
+     "w": "battle",
+     "zh": "战役；战斗"
+    },
+    {
+     "w": "altogether",
+     "zh": "总共，一共"
+    },
+    {
+     "w": "be owned by somebody",
+     "zh": "属于某人；归某人所有"
+    },
+    {
+     "w": "belong to",
+     "zh": "属于"
+    },
+    {
+     "w": "prime minister",
+     "zh": "首相；总理"
+    }
+   ]
+  },
+  {
+   "n": "Unit 3",
+   "t": "",
+   "words": [
+    {
+     "w": "convenience",
+     "zh": "方便；便利"
+    },
+    {
+     "w": "label",
+     "zh": "标签"
+    },
+    {
+     "w": "global",
+     "zh": "全球的；全世界"
+    },
+    {
+     "w": "snack",
+     "zh": "点心；小吃；快餮"
+    },
+    {
+     "w": "packaging",
+     "zh": "包装材料"
+    },
+    {
+     "w": "recycle",
+     "zh": "回收利用"
+    },
+    {
+     "w": "facility",
+     "zh": "（pl.） buildings, services, equipment, etc. that are provided for a particular purpose 设施；设备"
+    },
+    {
+     "w": "plastic",
+     "zh": "塑料 / 塑料的"
+    },
+    {
+     "w": "container",
+     "zh": "容器"
+    },
+    {
+     "w": "greenhouse",
+     "zh": "溫室"
+    },
+    {
+     "w": "energy-efficient",
+     "zh": "节能的"
+    },
+    {
+     "w": "amount",
+     "zh": "数量；数额"
+    },
+    {
+     "w": "gas",
+     "zh": "气体"
+    },
+    {
+     "w": "impact",
+     "zh": "巨大影响；强大作用"
+    },
+    {
+     "w": "determine",
+     "zh": "查明；测定；准确算出"
+    },
+    {
+     "w": "stress",
+     "zh": "压力"
+    },
+    {
+     "w": "cattle",
+     "zh": "牛"
+    },
+    {
+     "w": "frozen",
+     "zh": "冷冻；冷藏的"
+    },
+    {
+     "w": "link",
+     "zh": "连接"
+    },
+    {
+     "w": "teenager",
+     "zh": "青少年"
+    },
+    {
+     "w": "diet",
+     "zh": "日常饮食；日常食物"
+    },
+    {
+     "w": "details",
+     "zh": "具体情况"
+    },
+    {
+     "w": "yoghurt",
+     "zh": "酸奶"
+    },
+    {
+     "w": "slim",
+     "zh": "苗条的；纤细的"
+    },
+    {
+     "w": "image",
+     "zh": "形象；印象"
+    },
+    {
+     "w": "source",
+     "zh": "起源；根源；原因"
+    },
+    {
+     "w": "expert",
+     "zh": "专家；行家；能手"
+    },
+    {
+     "w": "loss",
+     "zh": "丧失；损失；丢失"
+    },
+    {
+     "w": "actually",
+     "zh": "在口语中用于强调事实）的确，真实地，事实上"
+    },
+    {
+     "w": "moreover",
+     "zh": "而且"
+    },
+    {
+     "w": "equal",
+     "zh": "相同的，同样的；相等"
+    },
+    {
+     "w": "comment",
+     "zh": "评论"
+    },
+    {
+     "w": "host",
+     "zh": "节目主持人"
+    },
+    {
+     "w": "remind",
+     "zh": "提醒；使想起"
+    },
+    {
+     "w": "apologize",
+     "zh": "道歉；谢罪"
+    },
+    {
+     "w": "pudding",
+     "zh": "甜食，胡点"
+    },
+    {
+     "w": "decoration",
+     "zh": "装饰品"
+    },
+    {
+     "w": "consumer",
+     "zh": "消费者；顾客；用户"
+    },
+    {
+     "w": "despite",
+     "zh": "不管， 不顾"
+    },
+    {
+     "w": "prove",
+     "zh": "证明；证实"
+    },
+    {
+     "w": "retired",
+     "zh": "已退休的；已退职的"
+    },
+    {
+     "w": "groceries",
+     "zh": "食品杂货"
+    },
+    {
+     "w": "establish",
+     "zh": "查实；确定；证实"
+    },
+    {
+     "w": "legally",
+     "zh": "合法地"
+    },
+    {
+     "w": "permit",
+     "zh": "允许；准许"
+    },
+    {
+     "w": "assume",
+     "zh": "假定；假设；认为"
+    },
+    {
+     "w": "carbon footprint",
+     "zh": "个人"
+    },
+    {
+     "w": "rubbish dump",
+     "zh": ""
+    },
+    {
+     "w": "carbon dioxide",
+     "zh": "二氧化碳"
+    },
+    {
+     "w": "put... aside",
+     "zh": ""
+    },
+    {
+     "w": "peanut butter",
+     "zh": "花生酱"
+    },
+    {
+     "w": "baked potato",
+     "zh": "烤土豆"
+    },
+    {
+     "w": "junk food",
+     "zh": "垃圾食品"
+    },
+    {
+     "w": "vending machine",
+     "zh": "自动售货机"
+    },
+    {
+     "w": "pay attention to",
+     "zh": "注意；关注；关心"
+    },
+    {
+     "w": "pay regard to",
+     "zh": ""
+    },
+    {
+     "w": "traffic accident",
+     "zh": ""
+    }
+   ]
+  },
+  {
+   "n": "Unit 4",
+   "t": "",
+   "words": [
+    {
+     "w": "experiment",
+     "zh": "实验，试验"
+    },
+    {
+     "w": "capable",
+     "zh": "有能力的"
+    },
+    {
+     "w": "survive",
+     "zh": "生存；存活；继续存在"
+    },
+    {
+     "w": "unfortunately",
+     "zh": "不幸地；遗憾地；可惜地；可悲地"
+    },
+    {
+     "w": "labour-saving",
+     "zh": "省力的；节省劳力的；降低劳动强度的"
+    },
+    {
+     "w": "device",
+     "zh": "装置；仪器；器具；设备"
+    },
+    {
+     "w": "immediately",
+     "zh": "立即；马上；即刻"
+    },
+    {
+     "w": "disappear",
+     "zh": "消失；不见"
+    },
+    {
+     "w": "regularly",
+     "zh": "有规律地"
+    },
+    {
+     "w": "bomb",
+     "zh": "炸弹"
+    },
+    {
+     "w": "goods",
+     "zh": "商品；货品"
+    },
+    {
+     "w": "petrol",
+     "zh": "汽油"
+    },
+    {
+     "w": "boil",
+     "zh": "沸腾；煮沸；烧开"
+    },
+    {
+     "w": "aim",
+     "zh": "目的；目标"
+    },
+    {
+     "w": "narrow",
+     "zh": "狭窄的；窄小的"
+    },
+    {
+     "w": "suffer",
+     "zh": "因疾病、痛苦、悲伤等）受苦，受难，受折磨"
+    },
+    {
+     "w": "argue",
+     "zh": "提出论据辩驳"
+    },
+    {
+     "w": "decrease",
+     "zh": "减少，减小，降低"
+    },
+    {
+     "w": "apartment",
+     "zh": "一套公寓房间"
+    },
+    {
+     "w": "definitely",
+     "zh": "肯定；当然；确实"
+    },
+    {
+     "w": "stuff",
+     "zh": "东西，物品"
+    },
+    {
+     "w": "downstairs",
+     "zh": "楼下的"
+    },
+    {
+     "w": "piano",
+     "zh": "钢琴"
+    },
+    {
+     "w": "talent",
+     "zh": "大才；大资；天赋"
+    },
+    {
+     "w": "curtain",
+     "zh": "阂帘"
+    },
+    {
+     "w": "gather",
+     "zh": "搜集，收集"
+    },
+    {
+     "w": "data",
+     "zh": "数据；资料；材料"
+    },
+    {
+     "w": "download",
+     "zh": "下载"
+    },
+    {
+     "w": "software",
+     "zh": "软件"
+    },
+    {
+     "w": "company",
+     "zh": "公司；商号；商行"
+    },
+    {
+     "w": "load",
+     "zh": "装上，装入"
+    },
+    {
+     "w": "file",
+     "zh": "文件"
+    },
+    {
+     "w": "percentage",
+     "zh": "百分率；百分比"
+    },
+    {
+     "w": "recommend",
+     "zh": "推荐"
+    },
+    {
+     "w": "prefer",
+     "zh": "更喜欢，偏爱"
+    },
+    {
+     "w": "responsibility",
+     "zh": "职责；义务；任务"
+    },
+    {
+     "w": "arrange",
+     "zh": "整理；排列；布置"
+    },
+    {
+     "w": "poster",
+     "zh": "海报，广告画"
+    },
+    {
+     "w": "extremely",
+     "zh": "极其；极端；非常"
+    },
+    {
+     "w": "slightly",
+     "zh": "略微；稍微"
+    },
+    {
+     "w": "technique",
+     "zh": "技术；技能"
+    },
+    {
+     "w": "grab",
+     "zh": "人注意；吸引"
+    },
+    {
+     "w": "brochure",
+     "zh": "资料 手册"
+    },
+    {
+     "w": "intended",
+     "zh": "意欲达到的；打算的；计划的"
+    },
+    {
+     "w": "ceiling",
+     "zh": "天花板；顶棚"
+    },
+    {
+     "w": "occasion",
+     "zh": "特别的事情"
+    },
+    {
+     "w": "upper-class",
+     "zh": "上流社会的"
+    },
+    {
+     "w": "adult",
+     "zh": "成年人"
+    },
+    {
+     "w": "soul",
+     "zh": "灵魂"
+    },
+    {
+     "w": "time-honored",
+     "zh": "古老而受到尊重的；历史悠久的；由来已久"
+    },
+    {
+     "w": "style",
+     "zh": "样式"
+    },
+    {
+     "w": "hang on",
+     "zh": "等等（好像有什么不对或新的情况出现）"
+    },
+    {
+     "w": "take cover",
+     "zh": ""
+    },
+    {
+     "w": "domestic chore",
+     "zh": "家务琐事"
+    },
+    {
+     "w": "science fiction",
+     "zh": "科幻小说"
+    }
+   ]
+  }
+ ]
+}

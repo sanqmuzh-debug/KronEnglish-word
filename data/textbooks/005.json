@@ -1,0 +1,639 @@
+{
+ "pub": "人教",
+ "stage": "小学",
+ "grade": "五年级",
+ "vol": "下册",
+ "id": "c5180299-d288-46e2-a0df-9f04c94fd922",
+ "title": "义务教育教科书·英语（三年级起点）五年级下册",
+ "created": "2022-09-29",
+ "units": [
+  {
+   "n": "Unit 1",
+   "t": "",
+   "words": [
+    {
+     "w": "eat breakfast",
+     "zh": "吃早饭"
+    },
+    {
+     "w": "have... class",
+     "zh": "上⋯・・课"
+    },
+    {
+     "w": "play sports",
+     "zh": "进行体育运动"
+    },
+    {
+     "w": "exercise",
+     "zh": "活动；运动"
+    },
+    {
+     "w": "do morning exercises",
+     "zh": "做早操"
+    },
+    {
+     "w": "eat dinner",
+     "zh": "吃晚饭"
+    },
+    {
+     "w": "clean my room",
+     "zh": "打扫我房间"
+    },
+    {
+     "w": "go for a walk",
+     "zh": "散步"
+    },
+    {
+     "w": "go Shopping",
+     "zh": "去买东西；购物"
+    },
+    {
+     "w": "take",
+     "zh": "学习；上"
+    },
+    {
+     "w": "dancing",
+     "zh": "跳舞；舞蹈"
+    },
+    {
+     "w": "take a dancing class",
+     "zh": "上舞蹈课"
+    },
+    {
+     "w": "when",
+     "zh": "什么时候；何时"
+    },
+    {
+     "w": "after",
+     "zh": "在 后"
+    },
+    {
+     "w": "start",
+     "zh": "开始"
+    },
+    {
+     "w": "usually",
+     "zh": "通常地；惯常地"
+    },
+    {
+     "w": "spain",
+     "zh": "西班牙"
+    },
+    {
+     "w": "late",
+     "zh": "晚；迟"
+    },
+    {
+     "w": "why",
+     "zh": "为什么"
+    },
+    {
+     "w": "shop",
+     "zh": "去买东西；购物"
+    },
+    {
+     "w": "work",
+     "zh": "工作"
+    },
+    {
+     "w": "last",
+     "zh": "上一个；刚过去"
+    },
+    {
+     "w": "sound",
+     "zh": "听起来好像"
+    },
+    {
+     "w": "also",
+     "zh": "还；也"
+    },
+    {
+     "w": "busy",
+     "zh": "忙"
+    },
+    {
+     "w": "need",
+     "zh": "需要"
+    },
+    {
+     "w": "play peel",
+     "zh": ""
+    },
+    {
+     "w": "letter",
+     "zh": "信"
+    },
+    {
+     "w": "live",
+     "zh": "居住"
+    },
+    {
+     "w": "island",
+     "zh": "岛"
+    },
+    {
+     "w": "always",
+     "zh": "总是；一直"
+    },
+    {
+     "w": "cave",
+     "zh": "山洞；洞穴"
+    },
+    {
+     "w": "go Swimming",
+     "zh": "去游泳"
+    },
+    {
+     "w": "win",
+     "zh": "获胜"
+    }
+   ]
+  },
+  {
+   "n": "Unit 2",
+   "t": "",
+   "words": [
+    {
+     "w": "spring",
+     "zh": "春天"
+    },
+    {
+     "w": "summer",
+     "zh": "夏天"
+    },
+    {
+     "w": "autumn",
+     "zh": "秋天"
+    },
+    {
+     "w": "winter",
+     "zh": "冬天"
+    },
+    {
+     "w": "season",
+     "zh": "季节"
+    },
+    {
+     "w": "picnic",
+     "zh": "野餐o on a picnic 去野餐"
+    },
+    {
+     "w": "pick",
+     "zh": "摘；采集"
+    },
+    {
+     "w": "pick apples",
+     "zh": "摘苹果"
+    },
+    {
+     "w": "snowman",
+     "zh": "雪人"
+    },
+    {
+     "w": "make a snowman",
+     "zh": "堆雪人"
+    },
+    {
+     "w": "which",
+     "zh": "哪一个"
+    },
+    {
+     "w": "best",
+     "zh": "最；最高程度地"
+    },
+    {
+     "w": "snow",
+     "zh": "雪"
+    },
+    {
+     "w": "good job",
+     "zh": "做得好"
+    },
+    {
+     "w": "because",
+     "zh": "因为"
+    },
+    {
+     "w": "vacation",
+     "zh": "假期"
+    },
+    {
+     "w": "all",
+     "zh": "全；完全"
+    },
+    {
+     "w": "pink",
+     "zh": "粉色；粉色"
+    },
+    {
+     "w": "lovely",
+     "zh": "美好的"
+    },
+    {
+     "w": "leaf",
+     "zh": "叶子（复数 leaves /li:vz/）"
+    },
+    {
+     "w": "fall",
+     "zh": "落下；【美】秋天"
+    },
+    {
+     "w": "paint",
+     "zh": "用颜料绘画"
+    }
+   ]
+  },
+  {
+   "n": "Unit 3",
+   "t": "",
+   "words": [
+    {
+     "w": "january",
+     "zh": "一月"
+    },
+    {
+     "w": "february",
+     "zh": "二月"
+    },
+    {
+     "w": "march",
+     "zh": "三月"
+    },
+    {
+     "w": "april",
+     "zh": "四月"
+    },
+    {
+     "w": "may",
+     "zh": "五月"
+    },
+    {
+     "w": "june",
+     "zh": "六月"
+    },
+    {
+     "w": "july",
+     "zh": "七月"
+    },
+    {
+     "w": "august",
+     "zh": "八月"
+    },
+    {
+     "w": "september",
+     "zh": "九月"
+    },
+    {
+     "w": "october",
+     "zh": "十月"
+    },
+    {
+     "w": "november",
+     "zh": "十一月"
+    },
+    {
+     "w": "december",
+     "zh": "十二月"
+    },
+    {
+     "w": "few",
+     "zh": "不多；很少"
+    },
+    {
+     "w": "thing",
+     "zh": "事情"
+    },
+    {
+     "w": "meet",
+     "zh": "集会；开会"
+    },
+    {
+     "w": "sports meet",
+     "zh": "运动会"
+    },
+    {
+     "w": "trip",
+     "zh": "旅行"
+    },
+    {
+     "w": "plant",
+     "zh": "种植"
+    },
+    {
+     "w": "contest",
+     "zh": "比赛；竞赛"
+    },
+    {
+     "w": "labour",
+     "zh": "劳动"
+    },
+    {
+     "w": "labour Day",
+     "zh": "劳动节"
+    },
+    {
+     "w": "the Great Wall",
+     "zh": "长城"
+    },
+    {
+     "w": "national",
+     "zh": "国家的，全国性的"
+    },
+    {
+     "w": "national Day",
+     "zh": "国庆日"
+    },
+    {
+     "w": "american",
+     "zh": "美国"
+    },
+    {
+     "w": "thanksgiving",
+     "zh": "感恩节"
+    },
+    {
+     "w": "christmas",
+     "zh": "圣诞节"
+    },
+    {
+     "w": "game",
+     "zh": "游戏"
+    },
+    {
+     "w": "riddle",
+     "zh": "谜；谜语"
+    },
+    {
+     "w": "act",
+     "zh": "扮演"
+    },
+    {
+     "w": "act out",
+     "zh": "把⋯表演出来"
+    },
+    {
+     "w": "RSVP",
+     "zh": "请赐复"
+    },
+    {
+     "w": "by",
+     "zh": "在…⋯之前"
+    }
+   ]
+  },
+  {
+   "n": "Unit 4",
+   "t": "",
+   "words": [
+    {
+     "w": "first",
+     "zh": "第一"
+    },
+    {
+     "w": "second",
+     "zh": "第二"
+    },
+    {
+     "w": "third",
+     "zh": "第三"
+    },
+    {
+     "w": "fourth",
+     "zh": "第四"
+    },
+    {
+     "w": "fifth",
+     "zh": "第五"
+    },
+    {
+     "w": "twelfth",
+     "zh": "第十二"
+    },
+    {
+     "w": "twentieth",
+     "zh": "第二十（）"
+    },
+    {
+     "w": "twenty-first",
+     "zh": "第二十一（）"
+    },
+    {
+     "w": "twenty-third",
+     "zh": "第二十三（）"
+    },
+    {
+     "w": "thirtieth",
+     "zh": "第三十（）"
+    },
+    {
+     "w": "other",
+     "zh": "其他"
+    },
+    {
+     "w": "special",
+     "zh": "特殊；特别"
+    },
+    {
+     "w": "show",
+     "zh": "展览"
+    },
+    {
+     "w": "festival",
+     "zh": "节日"
+    },
+    {
+     "w": "kitten",
+     "zh": "小猫"
+    },
+    {
+     "w": "diary",
+     "zh": "日记"
+    },
+    {
+     "w": "still",
+     "zh": "仍然；依旧；还是"
+    },
+    {
+     "w": "noise",
+     "zh": "声音；响声；噪音"
+    },
+    {
+     "w": "fur",
+     "zh": "浓密软毛"
+    },
+    {
+     "w": "open",
+     "zh": "开着"
+    },
+    {
+     "w": "walk",
+     "zh": "行走"
+    }
+   ]
+  },
+  {
+   "n": "Unit 5",
+   "t": "",
+   "words": [
+    {
+     "w": "mine",
+     "zh": "我"
+    },
+    {
+     "w": "yours",
+     "zh": "你"
+    },
+    {
+     "w": "his",
+     "zh": "他"
+    },
+    {
+     "w": "hers",
+     "zh": "她"
+    },
+    {
+     "w": "theirs",
+     "zh": "他们；她们；它们"
+    },
+    {
+     "w": "ours",
+     "zh": "我们"
+    },
+    {
+     "w": "climbing",
+     "zh": "-ing形式）（正在）攀登；攀爬"
+    },
+    {
+     "w": "eating",
+     "zh": "（正在）吃"
+    },
+    {
+     "w": "playing",
+     "zh": "（正在）玩耍"
+    },
+    {
+     "w": "jumping",
+     "zh": "-ing形式）（正在）跳"
+    },
+    {
+     "w": "drinking",
+     "zh": "形式）（正在）喝（水）"
+    },
+    {
+     "w": "sleeping",
+     "zh": "-ing形式）（正在）睡觉"
+    },
+    {
+     "w": "each",
+     "zh": "每一；各个"
+    },
+    {
+     "w": "each other",
+     "zh": "相互"
+    },
+    {
+     "w": "excited",
+     "zh": "兴奋；激动"
+    },
+    {
+     "w": "like",
+     "zh": "像•…那样"
+    }
+   ]
+  },
+  {
+   "n": "Unit 6",
+   "t": "",
+   "words": [
+    {
+     "w": "doing morning exercises",
+     "zh": "（正在）做早操"
+    },
+    {
+     "w": "eating lunch",
+     "zh": "吃午饭"
+    },
+    {
+     "w": "reading a book",
+     "zh": "看书"
+    },
+    {
+     "w": "listening to music",
+     "zh": "听音乐"
+    },
+    {
+     "w": "keep",
+     "zh": "保持某种状态"
+    },
+    {
+     "w": "keep to the right",
+     "zh": "靠右"
+    },
+    {
+     "w": "keep your desk clean",
+     "zh": "保持你课桌干净"
+    },
+    {
+     "w": "talk quietly",
+     "zh": "小声讲话"
+    },
+    {
+     "w": "turn",
+     "zh": "顺序"
+    },
+    {
+     "w": "take turns",
+     "zh": "按顺序来"
+    },
+    {
+     "w": "bamboo",
+     "zh": "竹子"
+    },
+    {
+     "w": "its",
+     "zh": "它；他；她"
+    },
+    {
+     "w": "anything",
+     "zh": "任何事物"
+    },
+    {
+     "w": "else",
+     "zh": "另外；其他"
+    },
+    {
+     "w": "exhibition",
+     "zh": "展览"
+    },
+    {
+     "w": "say",
+     "zh": "说；讲"
+    },
+    {
+     "w": "have a look",
+     "zh": "看一看"
+    },
+    {
+     "w": "sushi",
+     "zh": "寿司"
+    },
+    {
+     "w": "teach",
+     "zh": "教"
+    },
+    {
+     "w": "sure",
+     "zh": "当然"
+    },
+    {
+     "w": "canadian",
+     "zh": "加拿大"
+    },
+    {
+     "w": "spanish",
+     "zh": "西班牙"
+    }
+   ]
+  }
+ ]
+}

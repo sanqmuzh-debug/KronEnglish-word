@@ -1,0 +1,1257 @@
+{
+ "pub": "北师大",
+ "stage": "高中",
+ "grade": "必修 第二册",
+ "vol": "",
+ "id": "f8c5c17e-8444-4b76-ba3a-5d6a9fce30e1",
+ "title": "普通高中教科书·英语必修 第二册",
+ "created": "2022-09-29",
+ "units": [
+  {
+   "n": "Unit 4",
+   "t": "Information Technology",
+   "words": [
+    {
+     "w": "app",
+     "zh": "应用程序"
+    },
+    {
+     "w": "enable",
+     "zh": "使可能，便发生"
+    },
+    {
+     "w": "convenience",
+     "zh": "方便，便利"
+    },
+    {
+     "w": "effect",
+     "zh": "效应；影响"
+    },
+    {
+     "w": "impact",
+     "zh": "影响；作用"
+    },
+    {
+     "w": "self-focused",
+     "zh": "以自我为中心的；关注自我的"
+    },
+    {
+     "w": "addicted",
+     "zh": "入了迷的"
+    },
+    {
+     "w": "be addicted to",
+     "zh": "沉迷"
+    },
+    {
+     "w": "indeed",
+     "zh": "确实；当然"
+    },
+    {
+     "w": "download",
+     "zh": "下载"
+    },
+    {
+     "w": "recommendation",
+     "zh": "推荐， 推荐信"
+    },
+    {
+     "w": "super",
+     "zh": "极好的，了不起的"
+    },
+    {
+     "w": "avatar",
+     "zh": "网络上代表个人）头像，虚拟替身，图标"
+    },
+    {
+     "w": "explore",
+     "zh": "探究；探讨；探险"
+    },
+    {
+     "w": "personality",
+     "zh": "个性，性格"
+    },
+    {
+     "w": "admit",
+     "zh": "承认"
+    },
+    {
+     "w": "alarm",
+     "zh": "闹钟"
+    },
+    {
+     "w": "lesson",
+     "zh": "课，课程"
+    },
+    {
+     "w": "image",
+     "zh": "图像；形象"
+    },
+    {
+     "w": "fancy",
+     "zh": "花哨的；别致带＊号的词为《普通高中英语课程标准（ 年版年修订）》必修和选择性必修以外词汇。"
+    },
+    {
+     "w": "trick",
+     "zh": "欺骗，诱骗，哄骗"
+    },
+    {
+     "w": "identity",
+     "zh": "身份；特征D （-dimensional） adj.二维的"
+    },
+    {
+     "w": "variety",
+     "zh": "多样化，变化"
+    },
+    {
+     "w": "a variety of",
+     "zh": "各种各样的"
+    },
+    {
+     "w": "sex",
+     "zh": "性别"
+    },
+    {
+     "w": "sensible",
+     "zh": "明智的"
+    },
+    {
+     "w": "creativity",
+     "zh": "创造力"
+    },
+    {
+     "w": "blog",
+     "zh": "博客；网络日志"
+    },
+    {
+     "w": "obviously",
+     "zh": "显然地，明显地"
+    },
+    {
+     "w": "add",
+     "zh": "显而易见地，明显地"
+    },
+    {
+     "w": "experiment",
+     "zh": "实验，试验"
+    },
+    {
+     "w": "hairstyle",
+     "zh": "发型，发式"
+    },
+    {
+     "w": "nowadays",
+     "zh": "现今，现时"
+    },
+    {
+     "w": "selection",
+     "zh": "选择， 挑选"
+    },
+    {
+     "w": "type",
+     "zh": "打；打字n. 类型，种类"
+    },
+    {
+     "w": "concern",
+     "zh": "担优，优虑与…有关；便担心"
+    },
+    {
+     "w": "virtual",
+     "zh": "虚拟；模拟时"
+    },
+    {
+     "w": "cheat",
+     "zh": "欺骗；欺诈"
+    },
+    {
+     "w": "view",
+     "zh": "看，把⋯视为"
+    },
+    {
+     "w": "accommodation",
+     "zh": "住处"
+    },
+    {
+     "w": "subscribe",
+     "zh": "订阅，订购"
+    },
+    {
+     "w": "powerful",
+     "zh": "强大的"
+    },
+    {
+     "w": "latest",
+     "zh": "最新的；最近"
+    },
+    {
+     "w": "reality",
+     "zh": "现实；其实"
+    },
+    {
+     "w": "or",
+     "zh": "虚拟现实"
+    },
+    {
+     "w": "AR",
+     "zh": "增强现实"
+    },
+    {
+     "w": "MR",
+     "zh": "混合现实"
+    },
+    {
+     "w": "account",
+     "zh": "账户"
+    },
+    {
+     "w": "software",
+     "zh": "计算机软件"
+    },
+    {
+     "w": "device",
+     "zh": "设置，装置"
+    },
+    {
+     "w": "mobile device",
+     "zh": "移动设备"
+    },
+    {
+     "w": "ensure",
+     "zh": "确保，保证"
+    },
+    {
+     "w": "material",
+     "zh": "材料；素材"
+    },
+    {
+     "w": "press",
+     "zh": "按"
+    },
+    {
+     "w": "button",
+     "zh": "按钮"
+    },
+    {
+     "w": "gender",
+     "zh": "性别"
+    },
+    {
+     "w": "goods",
+     "zh": "商品"
+    },
+    {
+     "w": "favour",
+     "zh": "恩惠；善意行为"
+    },
+    {
+     "w": "confirm",
+     "zh": "确认；证实"
+    },
+    {
+     "w": "deliver",
+     "zh": "递送；传送"
+    },
+    {
+     "w": "error",
+     "zh": "错误；失误"
+    },
+    {
+     "w": "harm",
+     "zh": "伤害，损害"
+    },
+    {
+     "w": "argument",
+     "zh": "论点；论据"
+    },
+    {
+     "w": "replace",
+     "zh": "取代；接替"
+    },
+    {
+     "w": "hug",
+     "zh": "拥抱；紧抱"
+    },
+    {
+     "w": "concentrate",
+     "zh": "集中精力"
+    },
+    {
+     "w": "concerned",
+     "zh": "有关的"
+    },
+    {
+     "w": "be concerned with",
+     "zh": "关心・・"
+    },
+    {
+     "w": "rewarding",
+     "zh": "有回报的"
+    },
+    {
+     "w": "addition",
+     "zh": "增添；添加"
+    },
+    {
+     "w": "in addition",
+     "zh": "除此之外"
+    },
+    {
+     "w": "content",
+     "zh": "内容"
+    },
+    {
+     "w": "shallow",
+     "zh": "肤浅时，浅薄时"
+    },
+    {
+     "w": "trivial",
+     "zh": "琐碎的"
+    },
+    {
+     "w": "basis",
+     "zh": "基础；基点"
+    },
+    {
+     "w": "percent",
+     "zh": "百分比；百分数"
+    },
+    {
+     "w": "opinion",
+     "zh": "意见，想法，看法"
+    },
+    {
+     "w": "focus",
+     "zh": "集中n. 焦点"
+    },
+    {
+     "w": "focus on",
+     "zh": "关注"
+    },
+    {
+     "w": "maintain",
+     "zh": "保持；维持"
+    },
+    {
+     "w": "smartphone",
+     "zh": "智能手机"
+    },
+    {
+     "w": "tablet",
+     "zh": "平板电脑；绮片；碑，牌"
+    },
+    {
+     "w": "limiting",
+     "zh": "局限的，限制性的"
+    },
+    {
+     "w": "brief",
+     "zh": "简洁，简明"
+    },
+    {
+     "w": "emoji",
+     "zh": "表情符号"
+    },
+    {
+     "w": "creative",
+     "zh": "创造性"
+    },
+    {
+     "w": "thought-provoking",
+     "zh": "发人深省的，令人深思的"
+    },
+    {
+     "w": "authority",
+     "zh": "权威人士；专家"
+    },
+    {
+     "w": "profile",
+     "zh": "人物简介；传略"
+    },
+    {
+     "w": "location",
+     "zh": "位置；地点"
+    },
+    {
+     "w": "optional",
+     "zh": "可以任选的"
+    },
+    {
+     "w": "imaginary",
+     "zh": "想象中的"
+    },
+    {
+     "w": "fantasy",
+     "zh": "幻想作品"
+    },
+    {
+     "w": "series",
+     "zh": "系列"
+    },
+    {
+     "w": "author",
+     "zh": "作者，作家"
+    },
+    {
+     "w": "amazing",
+     "zh": "令人叹为观止的"
+    },
+    {
+     "w": "privacy",
+     "zh": "隐私"
+    },
+    {
+     "w": "policy",
+     "zh": "政策，方针"
+    }
+   ]
+  },
+  {
+   "n": "Unit 5",
+   "t": "Humans And Nature",
+   "words": [
+    {
+     "w": "disaster",
+     "zh": "灾难；灾祸"
+    },
+    {
+     "w": "flood",
+     "zh": "洪水，水灾"
+    },
+    {
+     "w": "drought",
+     "zh": "早实，干早"
+    },
+    {
+     "w": "hurricane",
+     "zh": "飓风"
+    },
+    {
+     "w": "landslide",
+     "zh": "滑坡；塌方"
+    },
+    {
+     "w": "volcanic",
+     "zh": "火山的"
+    },
+    {
+     "w": "eruption",
+     "zh": "爆发"
+    },
+    {
+     "w": "wildlife",
+     "zh": "野生动物"
+    },
+    {
+     "w": "comment",
+     "zh": "评论；意见"
+    },
+    {
+     "w": "crowded",
+     "zh": "拥挤的"
+    },
+    {
+     "w": "landscape",
+     "zh": "风景，景色"
+    },
+    {
+     "w": "living",
+     "zh": "活的，活着"
+    },
+    {
+     "w": "weed",
+     "zh": "野草；海藻"
+    },
+    {
+     "w": "deer",
+     "zh": "鹿"
+    },
+    {
+     "w": "insect",
+     "zh": "昆虫"
+    },
+    {
+     "w": "whale",
+     "zh": "鲸"
+    },
+    {
+     "w": "dolphin",
+     "zh": "海豚"
+    },
+    {
+     "w": "digitize",
+     "zh": "把…转变成数字形式，便……数字化"
+    },
+    {
+     "w": "sailor",
+     "zh": "水手，海员"
+    },
+    {
+     "w": "accessible",
+     "zh": "易接近的"
+    },
+    {
+     "w": "waistband",
+     "zh": "腕带"
+    },
+    {
+     "w": "shark",
+     "zh": "鲨"
+    },
+    {
+     "w": "kangaroo",
+     "zh": "袋風"
+    },
+    {
+     "w": "eagle",
+     "zh": "鹰"
+    },
+    {
+     "w": "fox",
+     "zh": "狐狸"
+    },
+    {
+     "w": "soil",
+     "zh": "土壤"
+    },
+    {
+     "w": "climate",
+     "zh": "气候"
+    },
+    {
+     "w": "ecology",
+     "zh": "生态；生态学"
+    },
+    {
+     "w": "jungle",
+     "zh": "丛林"
+    },
+    {
+     "w": "shock",
+     "zh": "使震惊；使难以置信"
+    },
+    {
+     "w": "lecture",
+     "zh": "讲座，讲课；漢讲"
+    },
+    {
+     "w": "overuse",
+     "zh": "过度使用；滥用"
+    },
+    {
+     "w": "million",
+     "zh": "百万"
+    },
+    {
+     "w": "greenhouse",
+     "zh": "室，暖房"
+    },
+    {
+     "w": "turn one's back",
+     "zh": "对⋯⋯置之不理，对…•撒手不管"
+    },
+    {
+     "w": "title",
+     "zh": "题目，标题"
+    },
+    {
+     "w": "whirlpool",
+     "zh": "旋涡"
+    },
+    {
+     "w": "wave",
+     "zh": "海浪；波涛"
+    },
+    {
+     "w": "escape",
+     "zh": "逃离；逃避"
+    },
+    {
+     "w": "survive",
+     "zh": "活下来；幸存"
+    },
+    {
+     "w": "float",
+     "zh": "浮；漂"
+    },
+    {
+     "w": "file",
+     "zh": "档案，卷宗"
+    },
+    {
+     "w": "descent",
+     "zh": "下降，下溶"
+    },
+    {
+     "w": "tidal",
+     "zh": "潮汐，潮水"
+    },
+    {
+     "w": "poetry",
+     "zh": "诗歌；作诗的艺术"
+    },
+    {
+     "w": "mystery",
+     "zh": "神秘事物，难以理解钓事物"
+    },
+    {
+     "w": "soul",
+     "zh": "灵魂"
+    },
+    {
+     "w": "frightened",
+     "zh": "受惊的，害怕时"
+    },
+    {
+     "w": "horrible",
+     "zh": "糟糕透顶的"
+    },
+    {
+     "w": "page",
+     "zh": "边缘"
+    },
+    {
+     "w": "on the edge of",
+     "zh": "在…边缘；某事快要发生（尤指不好的事）"
+    },
+    {
+     "w": "barrel",
+     "zh": "桶"
+    },
+    {
+     "w": "curious",
+     "zh": "好奇"
+    },
+    {
+     "w": "observation",
+     "zh": "观察；观察结果"
+    },
+    {
+     "w": "equal",
+     "zh": "相等；相同时"
+    },
+    {
+     "w": "extent",
+     "zh": "广度"
+    },
+    {
+     "w": "tube",
+     "zh": "圆管，管子；（伦敦）地铁"
+    },
+    {
+     "w": "rescue",
+     "zh": "营救；救援"
+    },
+    {
+     "w": "vehicle",
+     "zh": "交通工具，车辆"
+    },
+    {
+     "w": "trap",
+     "zh": "困住；使陷于危险中"
+    },
+    {
+     "w": "attempt",
+     "zh": "尝试"
+    },
+    {
+     "w": "interrupt",
+     "zh": "打断讲话"
+    },
+    {
+     "w": "death",
+     "zh": "死，死亡"
+    },
+    {
+     "w": "loss",
+     "zh": "丧失；死亡"
+    },
+    {
+     "w": "damage",
+     "zh": "伤害，损伤，损害"
+    },
+    {
+     "w": "measure",
+     "zh": "估量，衡量；测量"
+    },
+    {
+     "w": "operation",
+     "zh": "手术"
+    },
+    {
+     "w": "overseas",
+     "zh": "在海外"
+    },
+    {
+     "w": "site",
+     "zh": "场所，地点"
+    },
+    {
+     "w": "process",
+     "zh": "过程，进程"
+    },
+    {
+     "w": "battle",
+     "zh": "战斗，战役"
+    },
+    {
+     "w": "duty",
+     "zh": "职责，义务；责任"
+    },
+    {
+     "w": "suffering",
+     "zh": "痛苦，苦难"
+    },
+    {
+     "w": "conduct",
+     "zh": "实施；进行；执行"
+    },
+    {
+     "w": "protection",
+     "zh": "保护；防护"
+    },
+    {
+     "w": "lamp",
+     "zh": "灯"
+    },
+    {
+     "w": "nearby",
+     "zh": "附近"
+    },
+    {
+     "w": "breathe",
+     "zh": "呼吸"
+    },
+    {
+     "w": "breathe in",
+     "zh": "吸气"
+    },
+    {
+     "w": "dust",
+     "zh": "灰尘；尘埃"
+    },
+    {
+     "w": "run out",
+     "zh": "用完；耗尽"
+    },
+    {
+     "w": "explorer",
+     "zh": "探险者；勘察者"
+    },
+    {
+     "w": "preparation",
+     "zh": "预备，准备"
+    },
+    {
+     "w": "sledge",
+     "zh": "雪橇"
+    },
+    {
+     "w": "ski",
+     "zh": "消雪权vi. 消雲"
+    },
+    {
+     "w": "captain",
+     "zh": "上校；队长；组长"
+    },
+    {
+     "w": "polar",
+     "zh": "极地的，地极"
+    },
+    {
+     "w": "base",
+     "zh": "基地，大本营；基础"
+    },
+    {
+     "w": "anxiously",
+     "zh": "不安地，忧虑地"
+    },
+    {
+     "w": "break down",
+     "zh": "停止运转，出故障"
+    },
+    {
+     "w": "ambition",
+     "zh": "抱负，雄心；追求，夙愿"
+    },
+    {
+     "w": "exploration",
+     "zh": "探险；探索"
+    },
+    {
+     "w": "cheerful",
+     "zh": "欢快乐观的"
+    },
+    {
+     "w": "prove",
+     "zh": "证明；证实"
+    },
+    {
+     "w": "distant",
+     "zh": "久远的；遥远时"
+    },
+    {
+     "w": "continent",
+     "zh": "洲，大洲；大陆"
+    },
+    {
+     "w": "tent",
+     "zh": "帐篷"
+    },
+    {
+     "w": "honesty",
+     "zh": "坦诚；诚实，正直"
+    },
+    {
+     "w": "sincerity",
+     "zh": "真实，诚挚"
+    },
+    {
+     "w": "bravery",
+     "zh": "勇气；勇敢的行为"
+    },
+    {
+     "w": "brochure",
+     "zh": "小册子"
+    }
+   ]
+  },
+  {
+   "n": "Unit 6",
+   "t": "The Admirable",
+   "words": [
+    {
+     "w": "admirable",
+     "zh": "令人钦佩的"
+    },
+    {
+     "w": "admire",
+     "zh": "钦佩；欣赏"
+    },
+    {
+     "w": "career",
+     "zh": "职业，事业"
+    },
+    {
+     "w": "put out fires",
+     "zh": "火火"
+    },
+    {
+     "w": "cure",
+     "zh": "治好 ；洽愈"
+    },
+    {
+     "w": "fight for",
+     "zh": "努力争取，为…斗争"
+    },
+    {
+     "w": "justice",
+     "zh": "公平，公正"
+    },
+    {
+     "w": "generation",
+     "zh": "一代"
+    },
+    {
+     "w": "reform",
+     "zh": "改革；改进"
+    },
+    {
+     "w": "shelter",
+     "zh": "避难所"
+    },
+    {
+     "w": "aftershock",
+     "zh": "余震"
+    },
+    {
+     "w": "observe",
+     "zh": "观察；注意"
+    },
+    {
+     "w": "metal",
+     "zh": "金属"
+    },
+    {
+     "w": "varied",
+     "zh": "各种各样的"
+    },
+    {
+     "w": "scary",
+     "zh": "可怕的，恐怖的"
+    },
+    {
+     "w": "harmless",
+     "zh": "无害"
+    },
+    {
+     "w": "skiing",
+     "zh": "滑雪运动"
+    },
+    {
+     "w": "originality",
+     "zh": "独创性；创造力"
+    },
+    {
+     "w": "disappearance",
+     "zh": "消亡；消失"
+    },
+    {
+     "w": "remarkable",
+     "zh": "卓越非凡的"
+    },
+    {
+     "w": "mankind",
+     "zh": "人类"
+    },
+    {
+     "w": "intelligent",
+     "zh": "聪颖智慧的"
+    },
+    {
+     "w": "generous",
+     "zh": "慷慨大方的"
+    },
+    {
+     "w": "have... in mind",
+     "zh": "心里已有⋯⋯"
+    },
+    {
+     "w": "evil",
+     "zh": "邪恶之事；祸害"
+    },
+    {
+     "w": "creatively",
+     "zh": "创造性地，有创造力地"
+    },
+    {
+     "w": "mosquito",
+     "zh": "蚊子"
+    },
+    {
+     "w": "apart",
+     "zh": "分开；散开"
+    },
+    {
+     "w": "apart from",
+     "zh": "除⋯・之外"
+    },
+    {
+     "w": "drug",
+     "zh": "绮物，绮材；毒品"
+    },
+    {
+     "w": "effective",
+     "zh": "有效的"
+    },
+    {
+     "w": "female",
+     "zh": "女"
+    },
+    {
+     "w": "stage",
+     "zh": "舞合；阶段"
+    },
+    {
+     "w": "award",
+     "zh": "授予；给予"
+    },
+    {
+     "w": "committee",
+     "zh": "委员会"
+    },
+    {
+     "w": "honour",
+     "zh": "荣誉 W.感到荣幸"
+    },
+    {
+     "w": "recognition",
+     "zh": "表彰；赞扬"
+    },
+    {
+     "w": "academy",
+     "zh": "研究院；学会"
+    },
+    {
+     "w": "gain",
+     "zh": "获得，赢得，取得；受益"
+    },
+    {
+     "w": "establish",
+     "zh": "建立，设立"
+    },
+    {
+     "w": "chemical",
+     "zh": "化学品"
+    },
+    {
+     "w": "herb",
+     "zh": "葯草"
+    },
+    {
+     "w": "literature",
+     "zh": "文献资料；著述；文学"
+    },
+    {
+     "w": "recipe",
+     "zh": "处方；秘诀"
+    },
+    {
+     "w": "limited",
+     "zh": "有限"
+    },
+    {
+     "w": "resource",
+     "zh": "物力；资源"
+    },
+    {
+     "w": "staff",
+     "zh": "全体职员，员工"
+    },
+    {
+     "w": "eventually",
+     "zh": "最终；终于"
+    },
+    {
+     "w": "come across",
+     "zh": "偶然发现；偶遇"
+    },
+    {
+     "w": "promising",
+     "zh": "大有希望"
+    },
+    {
+     "w": "fame",
+     "zh": "名声，名誉"
+    },
+    {
+     "w": "renowned",
+     "zh": "著名的"
+    },
+    {
+     "w": "despite",
+     "zh": "尽管；虽然"
+    },
+    {
+     "w": "wisdom",
+     "zh": "智慧"
+    },
+    {
+     "w": "potential",
+     "zh": "潛力；可能性"
+    },
+    {
+     "w": "advance",
+     "zh": "发展；进步"
+    },
+    {
+     "w": "integrate",
+     "zh": "成为一体， 合并"
+    },
+    {
+     "w": "pick out",
+     "zh": "挑选"
+    },
+    {
+     "w": "independence",
+     "zh": "独立"
+    },
+    {
+     "w": "peaceful",
+     "zh": "和平安宁的"
+    },
+    {
+     "w": "protest",
+     "zh": "抗议， 反对"
+    },
+    {
+     "w": "racial",
+     "zh": "种族；人种的"
+    },
+    {
+     "w": "discrimination",
+     "zh": "歧视"
+    },
+    {
+     "w": "inspiring",
+     "zh": "鼓舞人心的"
+    },
+    {
+     "w": "bar",
+     "zh": "铁册； 闩"
+    },
+    {
+     "w": "behind bars",
+     "zh": "在牢里"
+    },
+    {
+     "w": "skin",
+     "zh": "皮肤"
+    },
+    {
+     "w": "What a shame",
+     "zh": "真遗憾！"
+    },
+    {
+     "w": "further",
+     "zh": "更多的，进一步"
+    },
+    {
+     "w": "march",
+     "zh": "示威游行，抗议游行"
+    },
+    {
+     "w": "self-evident",
+     "zh": "不证自明的"
+    },
+    {
+     "w": "judge",
+     "zh": "评价；判断"
+    },
+    {
+     "w": "impressive",
+     "zh": "给人深刻印象的"
+    },
+    {
+     "w": "respect",
+     "zh": "尊敬；敬佩"
+    },
+    {
+     "w": "independent",
+     "zh": "独立自主的"
+    },
+    {
+     "w": "the other day",
+     "zh": "不久前某一天"
+    },
+    {
+     "w": "horror",
+     "zh": "令人惊恐的事"
+    },
+    {
+     "w": "regard",
+     "zh": "认为，看作"
+    },
+    {
+     "w": "be regarded as",
+     "zh": "被认为，被看作"
+    },
+    {
+     "w": "novelist",
+     "zh": "小说家"
+    },
+    {
+     "w": "journalist",
+     "zh": "新闻工作者"
+    },
+    {
+     "w": "passion",
+     "zh": "强烈爱好，热爱；激情"
+    },
+    {
+     "w": "opportunity",
+     "zh": "机会；时机"
+    },
+    {
+     "w": "reputation",
+     "zh": "名；名望"
+    },
+    {
+     "w": "awareness",
+     "zh": "认识；意识"
+    },
+    {
+     "w": "organisation",
+     "zh": "组织，机构"
+    },
+    {
+     "w": "strike",
+     "zh": "突然发生（某种不幸）；突然有坏的影响；打，击"
+    },
+    {
+     "w": "severe",
+     "zh": "很严重"
+    },
+    {
+     "w": "movement",
+     "zh": "运动，活动"
+    },
+    {
+     "w": "nightmare",
+     "zh": "噩梦，梦魇"
+    },
+    {
+     "w": "depression",
+     "zh": "忧郁，沮丧，消沉；抑郁症"
+    },
+    {
+     "w": "due to",
+     "zh": "由于，因为"
+    },
+    {
+     "w": "ongoing",
+     "zh": "正在持续发生的未结的"
+    },
+    {
+     "w": "commitment",
+     "zh": "承诺"
+    },
+    {
+     "w": "undertake",
+     "zh": "着手做，承担"
+    },
+    {
+     "w": "intense",
+     "zh": "强烈，剧烈"
+    },
+    {
+     "w": "engage",
+     "zh": "参加，参与"
+    },
+    {
+     "w": "design",
+     "zh": "计划，设计"
+    },
+    {
+     "w": "biography",
+     "zh": "传记"
+    },
+    {
+     "w": "passionate",
+     "zh": "具有强烈信念的；热爱的，酷爱的"
+    },
+    {
+     "w": "energetic",
+     "zh": "精力充沛的"
+    },
+    {
+     "w": "advocate",
+     "zh": "拥护"
+    },
+    {
+     "w": "disability",
+     "zh": "伤残，残障，障碍"
+    },
+    {
+     "w": "attitude",
+     "zh": "看法，态度"
+    },
+    {
+     "w": "summary",
+     "zh": "概要；摘要；总结"
+    },
+    {
+     "w": "daring",
+     "zh": "勇敢"
+    },
+    {
+     "w": "originally",
+     "zh": "原先，最初"
+    },
+    {
+     "w": "in spite of",
+     "zh": "尽管⋯ ；虽然；不顾"
+    }
+   ]
+  }
+ ]
+}

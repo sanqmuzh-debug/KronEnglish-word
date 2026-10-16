@@ -1,0 +1,755 @@
+{
+ "pub": "译林",
+ "stage": "初中",
+ "grade": "九年级",
+ "vol": "下册",
+ "id": "92286669-0bc5-423e-844c-06c4eddffd2e",
+ "title": "义务教育教科书·英语九年级下册",
+ "created": "2022-09-29",
+ "units": [
+  {
+   "n": "Unit 1",
+   "t": "",
+   "words": [
+    {
+     "w": "tiring",
+     "zh": "使人疲劳，累人"
+    },
+    {
+     "w": "step",
+     "zh": "台阶；棉级"
+    },
+    {
+     "w": "chinese knot",
+     "zh": "中国结"
+    },
+    {
+     "w": "chinese opera",
+     "zh": "中国戏画"
+    },
+    {
+     "w": "chinese paper-cutting",
+     "zh": "屮国剪纸"
+    },
+    {
+     "w": "chopsticks",
+     "zh": "复"
+    },
+    {
+     "w": "dragon dance",
+     "zh": "舞龙"
+    },
+    {
+     "w": "middle",
+     "zh": "中间，中央"
+    },
+    {
+     "w": "in the middle of",
+     "zh": "在•中间"
+    },
+    {
+     "w": "emperor",
+     "zh": "旱帝"
+    },
+    {
+     "w": "raising",
+     "zh": "升高"
+    },
+    {
+     "w": "flag",
+     "zh": "旗帜"
+    },
+    {
+     "w": "landscape",
+     "zh": "风景；地形"
+    },
+    {
+     "w": "attraction",
+     "zh": "向往地方；吸引"
+    },
+    {
+     "w": "watchtower",
+     "zh": "瞭望塔"
+    },
+    {
+     "w": "wonder",
+     "zh": "奇迹"
+    },
+    {
+     "w": "lie",
+     "zh": "位于"
+    },
+    {
+     "w": "shape",
+     "zh": "形状，外形"
+    },
+    {
+     "w": "underground",
+     "zh": "地下"
+    },
+    {
+     "w": "cave",
+     "zh": "洞穴"
+    },
+    {
+     "w": "hang",
+     "zh": "重下；悬挂"
+    },
+    {
+     "w": "point",
+     "zh": "指，指向"
+    },
+    {
+     "w": "upwards",
+     "zh": "向上"
+    },
+    {
+     "w": "hire",
+     "zh": "租用；雇用"
+    },
+    {
+     "w": "eastern",
+     "zh": "东部，东方"
+    },
+    {
+     "w": "south-east",
+     "zh": "东南方"
+    },
+    {
+     "w": "location",
+     "zh": "地点，方位"
+    },
+    {
+     "w": "makeup",
+     "zh": "山据 ；占用"
+    },
+    {
+     "w": "quarter",
+     "zh": "四分之一"
+    },
+    {
+     "w": "either",
+     "zh": "两苔之一"
+    },
+    {
+     "w": "level",
+     "zh": "水平"
+    },
+    {
+     "w": "service",
+     "zh": "服务；工作"
+    },
+    {
+     "w": "japanese",
+     "zh": "日本"
+    },
+    {
+     "w": "state",
+     "zh": "同家；州"
+    },
+    {
+     "w": "hindi",
+     "zh": "印地语"
+    },
+    {
+     "w": "billion",
+     "zh": "化"
+    },
+    {
+     "w": "population",
+     "zh": "人“iron /'aron/n. 铁"
+    },
+    {
+     "w": "IT",
+     "zh": "信息技术"
+    },
+    {
+     "w": "technology",
+     "zh": "技术"
+    },
+    {
+     "w": "custom",
+     "zh": "风俗，习俗"
+    },
+    {
+     "w": "fair",
+     "zh": "集市；庙会；展览会"
+    },
+    {
+     "w": "sari",
+     "zh": "莎丽"
+    },
+    {
+     "w": "indian",
+     "zh": "印度 昀"
+    }
+   ]
+  },
+  {
+   "n": "Unit 2",
+   "t": "",
+   "words": [
+    {
+     "w": "inventor",
+     "zh": "发明者"
+    },
+    {
+     "w": "invent",
+     "zh": "发明"
+    },
+    {
+     "w": "explorer",
+     "zh": "探险者；考察者"
+    },
+    {
+     "w": "south African",
+     "zh": "南非人"
+    },
+    {
+     "w": "fighter",
+     "zh": "斗士，战斗者；战斗机"
+    },
+    {
+     "w": "invention",
+     "zh": "发明物；创意"
+    },
+    {
+     "w": "italian",
+     "zh": "意大利人"
+    },
+    {
+     "w": "european",
+     "zh": "欧洲人"
+    },
+    {
+     "w": "russian",
+     "zh": "俄罗斯人"
+    },
+    {
+     "w": "pilot",
+     "zh": "飞行员"
+    },
+    {
+     "w": "command",
+     "zh": "飞行指挥"
+    },
+    {
+     "w": "licence",
+     "zh": "英>执照，许可证=＜美>"
+    },
+    {
+     "w": "navy",
+     "zh": "海军"
+    },
+    {
+     "w": "serve",
+     "zh": "服役；服务，招待"
+    },
+    {
+     "w": "test",
+     "zh": "测试；检验"
+    },
+    {
+     "w": "aircraft",
+     "zh": "单复同I机，航空器"
+    },
+    {
+     "w": "astronaut",
+     "zh": "宁航员"
+    },
+    {
+     "w": "spacecraft",
+     "zh": "单复同宁市飞船，航天器"
+    },
+    {
+     "w": "spin",
+     "zh": "快速旋转"
+    },
+    {
+     "w": "control",
+     "zh": "控制，支配"
+    },
+    {
+     "w": "out of control",
+     "zh": "失去控制，无法管理"
+    },
+    {
+     "w": "order",
+     "zh": "命令，指挥，要求"
+    },
+    {
+     "w": "cut... short",
+     "zh": "缩短"
+    },
+    {
+     "w": "pacific",
+     "zh": "太平洋"
+    },
+    {
+     "w": "ocean",
+     "zh": "海洋"
+    },
+    {
+     "w": "land",
+     "zh": "看陆， 降落"
+    },
+    {
+     "w": "giant",
+     "zh": "大；伟大"
+    },
+    {
+     "w": "leap",
+     "zh": "跳跃；跃升"
+    },
+    {
+     "w": "mankind",
+     "zh": "人类"
+    },
+    {
+     "w": "surface",
+     "zh": "表面；表层"
+    },
+    {
+     "w": "further",
+     "zh": "更多，更进一步"
+    },
+    {
+     "w": "citizen",
+     "zh": "公民；市民"
+    },
+    {
+     "w": "pride",
+     "zh": "骄傲；可引以为豪人"
+    },
+    {
+     "w": "passage",
+     "zh": "章节，乐段"
+    },
+    {
+     "w": "by hand",
+     "zh": "手に"
+    },
+    {
+     "w": "mathematics",
+     "zh": "数学"
+    },
+    {
+     "w": "scientist",
+     "zh": "科学家"
+    },
+    {
+     "w": "radium",
+     "zh": "镭"
+    },
+    {
+     "w": "laboratory",
+     "zh": "（=lab）实验室"
+    },
+    {
+     "w": "professor",
+     "zh": "教授"
+    },
+    {
+     "w": "discovery",
+     "zh": "发现：发现物"
+    },
+    {
+     "w": "unknown",
+     "zh": "未知，不出名"
+    },
+    {
+     "w": "widely",
+     "zh": "广泛地，普遍地"
+    },
+    {
+     "w": "hybrid",
+     "zh": "杂交"
+    },
+    {
+     "w": "title",
+     "zh": "标题，职位名称"
+    },
+    {
+     "w": "agriculture",
+     "zh": "农业"
+    },
+    {
+     "w": "hunger",
+     "zh": "饥饿"
+    },
+    {
+     "w": "happen to",
+     "zh": "碰巧"
+    },
+    {
+     "w": "advantage",
+     "zh": "优势，有利条件"
+    },
+    {
+     "w": "at present",
+     "zh": "现在，日前"
+    },
+    {
+     "w": "contribution",
+     "zh": "贡献"
+    },
+    {
+     "w": "increase",
+     "zh": "增加"
+    },
+    {
+     "w": "production",
+     "zh": "生产，产量"
+    },
+    {
+     "w": "development",
+     "zh": "发展"
+    }
+   ]
+  },
+  {
+   "n": "Unit 3",
+   "t": "",
+   "words": [
+    {
+     "w": "robot",
+     "zh": "机器人"
+    },
+    {
+     "w": "post",
+     "zh": "英>邮寄=<美>"
+    },
+    {
+     "w": "explore",
+     "zh": "探索；探时"
+    },
+    {
+     "w": "outer",
+     "zh": "太空"
+    },
+    {
+     "w": "brain",
+     "zh": "大脑"
+    },
+    {
+     "w": "whatever",
+     "zh": "任何，一切事物"
+    },
+    {
+     "w": "suit",
+     "zh": "套装"
+    },
+    {
+     "w": "smoothly",
+     "zh": "平整地；顺利地"
+    },
+    {
+     "w": "iron",
+     "zh": "熨烫"
+    },
+    {
+     "w": "in general",
+     "zh": "总钓来说；大体上"
+    },
+    {
+     "w": "satisfy",
+     "zh": "满足，使⋯满意"
+    },
+    {
+     "w": "need",
+     "zh": "需要事物；欲望"
+    },
+    {
+     "w": "virus",
+     "zh": "病毒"
+    },
+    {
+     "w": "no longer",
+     "zh": "不冉"
+    },
+    {
+     "w": "properly",
+     "zh": "正确地，适当地"
+    },
+    {
+     "w": "complete",
+     "zh": "完全，彻底的"
+    },
+    {
+     "w": "mess",
+     "zh": "乱七八糟"
+    },
+    {
+     "w": "lay",
+     "zh": "放，搁"
+    },
+    {
+     "w": "store",
+     "zh": "储藏，存储"
+    },
+    {
+     "w": "coin",
+     "zh": "硬币）"
+    },
+    {
+     "w": "bill",
+     "zh": "账单）"
+    },
+    {
+     "w": "private",
+     "zh": "私人"
+    },
+    {
+     "w": "paper",
+     "zh": "文件，证明"
+    },
+    {
+     "w": "spread",
+     "zh": "散开；扩散"
+    },
+    {
+     "w": "wheel",
+     "zh": "轮子，车轮"
+    },
+    {
+     "w": "pill",
+     "zh": "药片，药丸"
+    },
+    {
+     "w": "unsure",
+     "zh": "不确定，没把握"
+    },
+    {
+     "w": "forgetful",
+     "zh": "健忘"
+    },
+    {
+     "w": "stair",
+     "zh": "楼"
+    },
+    {
+     "w": "battery",
+     "zh": "电池"
+    },
+    {
+     "w": "customer",
+     "zh": "消费者，顾客"
+    },
+    {
+     "w": "hold",
+     "zh": "等待，不挂断"
+    },
+    {
+     "w": "through",
+     "zh": "接通"
+    },
+    {
+     "w": "put through",
+     "zh": "给⋯接通"
+    },
+    {
+     "w": "satisfied",
+     "zh": "满意，满足的"
+    },
+    {
+     "w": "be satisfied with",
+     "zh": "对⋯感到满意"
+    },
+    {
+     "w": "first of all",
+     "zh": "首先"
+    },
+    {
+     "w": "quality",
+     "zh": "质量"
+    },
+    {
+     "w": "up to standard",
+     "zh": "达到标准"
+    },
+    {
+     "w": "completely",
+     "zh": "完全地"
+    },
+    {
+     "w": "regret",
+     "zh": "后悔；遗憾"
+    },
+    {
+     "w": "product",
+     "zh": "产品，成果"
+    }
+   ]
+  },
+  {
+   "n": "Unit 4",
+   "t": "",
+   "words": [
+    {
+     "w": "mars",
+     "zh": "火星"
+    },
+    {
+     "w": "helmet",
+     "zh": "头盔"
+    },
+    {
+     "w": "air tank",
+     "zh": "氧气罐"
+    },
+    {
+     "w": "dried food",
+     "zh": "干粮"
+    },
+    {
+     "w": "power pack",
+     "zh": "电源包"
+    },
+    {
+     "w": "sleeping bag",
+     "zh": "睡袋"
+    },
+    {
+     "w": "gravity",
+     "zh": "重力"
+    },
+    {
+     "w": "planet",
+     "zh": "行星"
+    },
+    {
+     "w": "crowded",
+     "zh": "拥挤"
+    },
+    {
+     "w": "polluted",
+     "zh": "被污染"
+    },
+    {
+     "w": "rapid",
+     "zh": "快，迅速"
+    },
+    {
+     "w": "passenger",
+     "zh": "乘客"
+    },
+    {
+     "w": "at a",
+     "zh": "以⋯速度"
+    },
+    {
+     "w": "uncomfortable",
+     "zh": "使人不舒服，不舒适"
+    },
+    {
+     "w": "oxygen",
+     "zh": "氧气"
+    },
+    {
+     "w": "in the form of",
+     "zh": "以…形式"
+    },
+    {
+     "w": "tasty",
+     "zh": "味道好"
+    },
+    {
+     "w": "specially",
+     "zh": "专门地，特地"
+    },
+    {
+     "w": "float",
+     "zh": "飘浮，漂浮"
+    },
+    {
+     "w": "compare",
+     "zh": "比较"
+    },
+    {
+     "w": "compare to",
+     "zh": ""
+    },
+    {
+     "w": "interplanetary",
+     "zh": "行星间"
+    },
+    {
+     "w": "network",
+     "zh": "网络"
+    },
+    {
+     "w": "challenging",
+     "zh": "挑战性"
+    },
+    {
+     "w": "rapidly",
+     "zh": "快地，迅速地"
+    },
+    {
+     "w": "aware",
+     "zh": "知道，意识到"
+    },
+    {
+     "w": "circle",
+     "zh": "围绕；将⋯圈起来"
+    },
+    {
+     "w": "agreement",
+     "zh": "一致，同意"
+    },
+    {
+     "w": "distance",
+     "zh": "距离；远处"
+    },
+    {
+     "w": "possibility",
+     "zh": "可能性"
+    },
+    {
+     "w": "alien",
+     "zh": "外星人"
+    },
+    {
+     "w": "doubt",
+     "zh": "疑惑，疑问"
+    },
+    {
+     "w": "stranger",
+     "zh": "外来者，陌生人"
+    },
+    {
+     "w": "carry out",
+     "zh": "开展；执行"
+    },
+    {
+     "w": "percentage",
+     "zh": "百分率；百分数"
+    },
+    {
+     "w": "disadvantage",
+     "zh": "劣势，不利条件"
+    },
+    {
+     "w": "risk",
+     "zh": "风险，危险"
+    },
+    {
+     "w": "after all",
+     "zh": "毕竟"
+    },
+    {
+     "w": "goods",
+     "zh": "复］商品，货品"
+    },
+    {
+     "w": "electronic",
+     "zh": "电子"
+    },
+    {
+     "w": "entertainment",
+     "zh": "娱乐"
+    }
+   ]
+  }
+ ]
+}

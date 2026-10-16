@@ -1,0 +1,1481 @@
+{
+ "pub": "北师大",
+ "stage": "高中",
+ "grade": "必修 第一册",
+ "vol": "",
+ "id": "e37af837-2671-4018-af45-c82356546822",
+ "title": "普通高中教科书·英语必修 第一册",
+ "created": "2022-09-29",
+ "units": [
+  {
+   "n": "Unit 1",
+   "t": "Life Choices",
+   "words": [
+    {
+     "w": "senior",
+     "zh": "较高，高级"
+    },
+    {
+     "w": "secondary",
+     "zh": "次要的， 第二的"
+    },
+    {
+     "w": "stressful",
+     "zh": "产生压力的"
+    },
+    {
+     "w": "challenging",
+     "zh": "极具挑战性的"
+    },
+    {
+     "w": "differ",
+     "zh": "不同，不一样，有区别"
+    },
+    {
+     "w": "previous",
+     "zh": "以前的，先前的"
+    },
+    {
+     "w": "dynamic",
+     "zh": "有活力的"
+    },
+    {
+     "w": "campus",
+     "zh": "校园"
+    },
+    {
+     "w": "schedule",
+     "zh": "日程表，计划表"
+    },
+    {
+     "w": "expectation",
+     "zh": "期待"
+    },
+    {
+     "w": "confidence",
+     "zh": "自信，信心；信赖"
+    },
+    {
+     "w": "competence",
+     "zh": "能力，胜任"
+    },
+    {
+     "w": "chapter",
+     "zh": "一段时期；章节"
+    },
+    {
+     "w": "all nall",
+     "zh": "总而言之，总时来说"
+    },
+    {
+     "w": "apartment",
+     "zh": "公寓套房"
+    },
+    {
+     "w": "am",
+     "zh": "（ante meridiem）午前，上午（工厂、医院等轮班制的）"
+    },
+    {
+     "w": "shift",
+     "zh": "当班时间（O）带＊号昀词为《普通高中英语课程标准（ 年版 年修订）》必修和选择性必修以外词汇。"
+    },
+    {
+     "w": "pressure",
+     "zh": "压力"
+    },
+    {
+     "w": "leisure",
+     "zh": "闲暇，空闲"
+    },
+    {
+     "w": "recover",
+     "zh": "恢复健康，康复"
+    },
+    {
+     "w": "injury",
+     "zh": "伤，损害"
+    },
+    {
+     "w": "plus",
+     "zh": "有利，好时"
+    },
+    {
+     "w": "unfortunately",
+     "zh": "不幸地"
+    },
+    {
+     "w": "add",
+     "zh": "不幸地；令人遗憾地"
+    },
+    {
+     "w": "challenge",
+     "zh": "挑战；具有挑战性的事物"
+    },
+    {
+     "w": "arise",
+     "zh": "(过去式"
+    },
+    {
+     "w": "lesson",
+     "zh": "课，课程"
+    },
+    {
+     "w": "lifestyle",
+     "zh": "生活方式"
+    },
+    {
+     "w": "chat",
+     "zh": "闲谈，聊天"
+    },
+    {
+     "w": "surf",
+     "zh": "沖浪"
+    },
+    {
+     "w": "surf the Internet",
+     "zh": "网上冲浪，浏览因特网"
+    },
+    {
+     "w": "voluntary",
+     "zh": "自愿的， 志愿的"
+    },
+    {
+     "w": "engine",
+     "zh": "引擎"
+    },
+    {
+     "w": "search engine",
+     "zh": "搜索引擎"
+    },
+    {
+     "w": "definitely",
+     "zh": "一定地， 明确地"
+    },
+    {
+     "w": "teen",
+     "zh": "少年，十几岁时孩子"
+    },
+    {
+     "w": "laptop",
+     "zh": "笔记本电脑，便携式电脑"
+    },
+    {
+     "w": "digital",
+     "zh": "数字，数码"
+    },
+    {
+     "w": "native",
+     "zh": "本地人"
+    },
+    {
+     "w": "range",
+     "zh": "一系列；范围"
+    },
+    {
+     "w": "various",
+     "zh": "形形色色的"
+    },
+    {
+     "w": "hardware",
+     "zh": "硬件"
+    },
+    {
+     "w": "necessity",
+     "zh": "必需品"
+    },
+    {
+     "w": "convenient",
+     "zh": "方便的，便利的"
+    },
+    {
+     "w": "quality",
+     "zh": "质量，品质"
+    },
+    {
+     "w": "from time to time",
+     "zh": "有时；偶尔；间或"
+    },
+    {
+     "w": "living room",
+     "zh": "起居室"
+    },
+    {
+     "w": "addict",
+     "zh": "对⋯⋯着迷的人"
+    },
+    {
+     "w": "according to",
+     "zh": "按•所说，根据"
+    },
+    {
+     "w": "in person",
+     "zh": "亲目"
+    },
+    {
+     "w": "media",
+     "zh": "新闻媒体，传媒"
+    },
+    {
+     "w": "social media",
+     "zh": "社交媒体"
+    },
+    {
+     "w": "actually",
+     "zh": "实际上，事实上"
+    },
+    {
+     "w": "drag",
+     "zh": "拖，拉"
+    },
+    {
+     "w": "tend to do sth",
+     "zh": "易于做某事"
+    },
+    {
+     "w": "goal",
+     "zh": "目标，目"
+    },
+    {
+     "w": "aim",
+     "zh": "目的，意图vi. 力求达到"
+    },
+    {
+     "w": "target",
+     "zh": "目标"
+    },
+    {
+     "w": "update",
+     "zh": "更新"
+    },
+    {
+     "w": "meanwhile",
+     "zh": "与此同时"
+    },
+    {
+     "w": "distance",
+     "zh": "距离，同距"
+    },
+    {
+     "w": "volunteer",
+     "zh": "自愿；志愿"
+    },
+    {
+     "w": "revise",
+     "zh": "复习"
+    },
+    {
+     "w": "saying",
+     "zh": "格言，谚语"
+    },
+    {
+     "w": "ahead",
+     "zh": "在前面；问前"
+    },
+    {
+     "w": "get ahead",
+     "zh": "取得进步，获得成功"
+    },
+    {
+     "w": "cafe",
+     "zh": "咖啡馆，小發馆"
+    },
+    {
+     "w": "downtown",
+     "zh": "往或在城市的商业区（或中心区"
+    },
+    {
+     "w": "stress",
+     "zh": "压力；忧虑；紧张"
+    },
+    {
+     "w": "suffer",
+     "zh": "遭受"
+    },
+    {
+     "w": "suffer from",
+     "zh": "遭受⋯⋯（痛苦）"
+    },
+    {
+     "w": "reduce",
+     "zh": "减少"
+    },
+    {
+     "w": "expert",
+     "zh": "专家，行家"
+    },
+    {
+     "w": "frank",
+     "zh": "坦率，坦诚"
+    },
+    {
+     "w": "to be frank",
+     "zh": "坦自说，坦率地说"
+    },
+    {
+     "w": "editor",
+     "zh": "编辑，主编"
+    },
+    {
+     "w": "remove",
+     "zh": "移走；去掉"
+    },
+    {
+     "w": "entirely",
+     "zh": "完全地，彻底地"
+    },
+    {
+     "w": "fully",
+     "zh": "完全地，彻底地"
+    },
+    {
+     "w": "position",
+     "zh": "职位；位置"
+    },
+    {
+     "w": "military",
+     "zh": "军队，武装力量"
+    },
+    {
+     "w": "due to",
+     "zh": "因为"
+    },
+    {
+     "w": "absolutely",
+     "zh": "完全地，绝对地"
+    },
+    {
+     "w": "stressed",
+     "zh": "焦虑的，紧张的"
+    },
+    {
+     "w": "extent",
+     "zh": "程度"
+    },
+    {
+     "w": "thus",
+     "zh": "因此，因而，从而"
+    },
+    {
+     "w": "tension",
+     "zh": "紧张；焦虑"
+    },
+    {
+     "w": "organise",
+     "zh": "组织，筹划"
+    },
+    {
+     "w": "in other words",
+     "zh": "换句话说"
+    },
+    {
+     "w": "function",
+     "zh": "运转，工作"
+    },
+    {
+     "w": "seek",
+     "zh": "寻求；请求"
+    },
+    {
+     "w": "professional",
+     "zh": "职业的"
+    },
+    {
+     "w": "feature",
+     "zh": "比t.以…⋯为特色，是…⋯特征"
+    },
+    {
+     "w": "typical",
+     "zh": "典型的"
+    },
+    {
+     "w": "province",
+     "zh": "省"
+    },
+    {
+     "w": "graduate",
+     "zh": "毕业"
+    },
+    {
+     "w": "graduate from",
+     "zh": "从⋯・•毕业"
+    },
+    {
+     "w": "certificate",
+     "zh": "合格证书"
+    },
+    {
+     "w": "inspire",
+     "zh": "鼓励，激励"
+    },
+    {
+     "w": "apply",
+     "zh": "申请；请求"
+    },
+    {
+     "w": "eager",
+     "zh": "热切；渴望"
+    },
+    {
+     "w": "sort",
+     "zh": "种，类；类型"
+    },
+    {
+     "w": "all sorts of",
+     "zh": "各种各样的"
+    },
+    {
+     "w": "independently",
+     "zh": "独立地，自主地"
+    },
+    {
+     "w": "power",
+     "zh": "电，电力；力量"
+    },
+    {
+     "w": "supply",
+     "zh": "供应，供给"
+    },
+    {
+     "w": "unstable",
+     "zh": "不稳定的"
+    },
+    {
+     "w": "dusty",
+     "zh": "布满灰尘"
+    },
+    {
+     "w": "muddy",
+     "zh": "泥泞的，多泥的"
+    },
+    {
+     "w": "tough",
+     "zh": "困难的，难办"
+    },
+    {
+     "w": "flash",
+     "zh": "闪现，闪过n. 照相机闪光灯"
+    },
+    {
+     "w": "give up",
+     "zh": "放弃"
+    },
+    {
+     "w": "deal with",
+     "zh": "对付，应付，处理"
+    },
+    {
+     "w": "responsible",
+     "zh": "负责任的"
+    },
+    {
+     "w": "be responsible for",
+     "zh": "对⋯⋯负责"
+    },
+    {
+     "w": "attractive",
+     "zh": "有吸引力的"
+    },
+    {
+     "w": "as well as",
+     "zh": "以及⋯•⋯"
+    },
+    {
+     "w": "laughter",
+     "zh": "笑；笑声"
+    },
+    {
+     "w": "confident",
+     "zh": "自信"
+    },
+    {
+     "w": "besides",
+     "zh": "除⋯之外"
+    },
+    {
+     "w": "contact",
+     "zh": "联系，联络比.（写信，打电话）联系（某人）"
+    },
+    {
+     "w": "charity",
+     "zh": "慈善机构，慈善团体"
+    },
+    {
+     "w": "organisation",
+     "zh": "组织，团体，机构"
+    },
+    {
+     "w": "contribution",
+     "zh": "贡献"
+    },
+    {
+     "w": "intend",
+     "zh": "计划，打算，想要"
+    },
+    {
+     "w": "junior",
+     "zh": "低年级时"
+    },
+    {
+     "w": "formal",
+     "zh": "正式的，官方的"
+    },
+    {
+     "w": "informal",
+     "zh": "非正式"
+    },
+    {
+     "w": "adapt",
+     "zh": "适应"
+    },
+    {
+     "w": "adapt to sth",
+     "zh": "适应某事"
+    },
+    {
+     "w": "gym",
+     "zh": "体育馆，健身房"
+    },
+    {
+     "w": "moment",
+     "zh": "某一时刻"
+    },
+    {
+     "w": "at the moment",
+     "zh": "此刻，目前，眼下"
+    },
+    {
+     "w": "presentation",
+     "zh": "报告；陈述，说明"
+    },
+    {
+     "w": "slide",
+     "zh": "幻灯片"
+    },
+    {
+     "w": "forward",
+     "zh": "同前；进展"
+    },
+    {
+     "w": "look forward to",
+     "zh": "期待，盼望"
+    },
+    {
+     "w": "digestion",
+     "zh": "消化"
+    },
+    {
+     "w": "recreation",
+     "zh": "娱乐，消遣"
+    },
+    {
+     "w": "entertainment",
+     "zh": "娛乐"
+    },
+    {
+     "w": "rural",
+     "zh": "农村的，乡下的"
+    }
+   ]
+  },
+  {
+   "n": "Unit 2",
+   "t": "Sports And Fitness",
+   "words": [
+    {
+     "w": "athlete",
+     "zh": "运动员"
+    },
+    {
+     "w": "frequency",
+     "zh": "发生频率，发生率"
+    },
+    {
+     "w": "prefer",
+     "zh": "更喜欢"
+    },
+    {
+     "w": "rather than",
+     "zh": "而不是"
+    },
+    {
+     "w": "badminton",
+     "zh": "羽毛球"
+    },
+    {
+     "w": "golf",
+     "zh": "高尔夫"
+    },
+    {
+     "w": "gymnastics",
+     "zh": "体操"
+    },
+    {
+     "w": "jog",
+     "zh": "慢跑"
+    },
+    {
+     "w": "cycle",
+     "zh": "骑自行车"
+    },
+    {
+     "w": "bowling",
+     "zh": "保龄球"
+    },
+    {
+     "w": "skateboard",
+     "zh": "消板"
+    },
+    {
+     "w": "track",
+     "zh": "跑道"
+    },
+    {
+     "w": "in good",
+     "zh": "健康状况良好／不佳"
+    },
+    {
+     "w": "balanced",
+     "zh": "均衡"
+    },
+    {
+     "w": "diet",
+     "zh": "日常饮食"
+    },
+    {
+     "w": "stair",
+     "zh": "楼样；样级"
+    },
+    {
+     "w": "regularly",
+     "zh": "经常"
+    },
+    {
+     "w": "net",
+     "zh": "球网；网"
+    },
+    {
+     "w": "court",
+     "zh": "球场"
+    },
+    {
+     "w": "within",
+     "zh": "在⋯⋯之内"
+    },
+    {
+     "w": "underdog",
+     "zh": "处于劣势人（队）；弱方"
+    },
+    {
+     "w": "defeat",
+     "zh": "比t.（在比赛、战争中）战胜，打败"
+    },
+    {
+     "w": "company",
+     "zh": "公司；一群人"
+    },
+    {
+     "w": "guy",
+     "zh": "男人，家伙"
+    },
+    {
+     "w": "champion",
+     "zh": "冠车，第一名"
+    },
+    {
+     "w": "shot",
+     "zh": "投球，击球"
+    },
+    {
+     "w": "inspiration",
+     "zh": "激励，鼓舞；给人以灵感的人/物；灵感"
+    },
+    {
+     "w": "try out for sth",
+     "zh": "参加⋯⋯选拔"
+    },
+    {
+     "w": "bench",
+     "zh": "替补队员席"
+    },
+    {
+     "w": "replacement",
+     "zh": "替换的人（物）"
+    },
+    {
+     "w": "desire",
+     "zh": "渴望"
+    },
+    {
+     "w": "crash",
+     "zh": "猛撞"
+    },
+    {
+     "w": "crash into",
+     "zh": "猛撞，猛击"
+    },
+    {
+     "w": "gather",
+     "zh": "聚集，聚合"
+    },
+    {
+     "w": "gather around",
+     "zh": "聚集"
+    },
+    {
+     "w": "not... anymore",
+     "zh": "不再⋯•"
+    },
+    {
+     "w": "pack",
+     "zh": "包，包裹vi. & vt.把⋯⋯包起来"
+    },
+    {
+     "w": "sharply",
+     "zh": "严厉地，毫不客气地"
+    },
+    {
+     "w": "let sb down",
+     "zh": "使失望，莘负（别人的信任或期望）"
+    },
+    {
+     "w": "onto",
+     "zh": "到…的上面"
+    },
+    {
+     "w": "extra",
+     "zh": "额外的，另外时"
+    },
+    {
+     "w": "pay off",
+     "zh": "取得成功；奏效"
+    },
+    {
+     "w": "keep up with",
+     "zh": "跟上，保持同步"
+    },
+    {
+     "w": "energy",
+     "zh": "力量，活力"
+    },
+    {
+     "w": "crowd",
+     "zh": "人群"
+    },
+    {
+     "w": "clap",
+     "zh": "鼓掌，拍手"
+    },
+    {
+     "w": "earn",
+     "zh": "威得；博得"
+    },
+    {
+     "w": "boxing",
+     "zh": "拳击"
+    },
+    {
+     "w": "bounce",
+     "zh": "弹起，反弹"
+    },
+    {
+     "w": "belt",
+     "zh": "腰带，皮带"
+    },
+    {
+     "w": "announcement",
+     "zh": "通告，公告"
+    },
+    {
+     "w": "defence",
+     "zh": "防守队员，后卫"
+    },
+    {
+     "w": "audience",
+     "zh": "观众；听众"
+    },
+    {
+     "w": "remind",
+     "zh": "使（某人）想起，提醒"
+    },
+    {
+     "w": "bite",
+     "zh": "吸"
+    },
+    {
+     "w": "prohibit",
+     "zh": "禁止"
+    },
+    {
+     "w": "case",
+     "zh": "状况，场合；事例，实例"
+    },
+    {
+     "w": "in case",
+     "zh": "以防万一"
+    },
+    {
+     "w": "sign up",
+     "zh": "报名"
+    },
+    {
+     "w": "annual",
+     "zh": "每年的"
+    },
+    {
+     "w": "application",
+     "zh": "申请书"
+    },
+    {
+     "w": "warm-up",
+     "zh": "热身运动，准备活动"
+    },
+    {
+     "w": "quit",
+     "zh": "停止"
+    },
+    {
+     "w": "halfway",
+     "zh": "半途地"
+    },
+    {
+     "w": "tip",
+     "zh": "建议，思告，鸳门"
+    },
+    {
+     "w": "ought to",
+     "zh": "应该，应当"
+    },
+    {
+     "w": "occupy",
+     "zh": "占据"
+    },
+    {
+     "w": "disappointment",
+     "zh": "令人失望的事"
+    },
+    {
+     "w": "amazingly",
+     "zh": "惊人地，了不起地"
+    },
+    {
+     "w": "relieve",
+     "zh": "减轻，缓解"
+    },
+    {
+     "w": "strengthen",
+     "zh": "强健"
+    },
+    {
+     "w": "immune",
+     "zh": "有免疫力的"
+    },
+    {
+     "w": "system",
+     "zh": "系统"
+    },
+    {
+     "w": "immune system",
+     "zh": "免疫系统"
+    },
+    {
+     "w": "cheer up",
+     "zh": "（便）高兴起来，（便）振作起来"
+    },
+    {
+     "w": "weekly",
+     "zh": "每周"
+    },
+    {
+     "w": "be fed up with",
+     "zh": "厌烦，不满的，无法再忍受"
+    },
+    {
+     "w": "awkward",
+     "zh": "令人尴尬的"
+    },
+    {
+     "w": "particular",
+     "zh": "特定的，特别的"
+    },
+    {
+     "w": "in particular",
+     "zh": "尤其，特别"
+    },
+    {
+     "w": "benefit",
+     "zh": "好处，益处"
+    },
+    {
+     "w": "membership",
+     "zh": "会员身份"
+    },
+    {
+     "w": "equipment",
+     "zh": "设备，装备"
+    },
+    {
+     "w": "capable",
+     "zh": "有能力的"
+    },
+    {
+     "w": "be capable of",
+     "zh": "有能力做"
+    },
+    {
+     "w": "prevent",
+     "zh": "阻止"
+    },
+    {
+     "w": "it",
+     "zh": "预防；阻止，阻挡"
+    },
+    {
+     "w": "disease",
+     "zh": "疾病"
+    },
+    {
+     "w": "upper",
+     "zh": "较上的，上面时"
+    },
+    {
+     "w": "flow",
+     "zh": "流，流动 n.流动"
+    },
+    {
+     "w": "oxygen",
+     "zh": "氧"
+    },
+    {
+     "w": "relief",
+     "zh": "减轻，缓解"
+    },
+    {
+     "w": "ache",
+     "zh": "隐痛"
+    },
+    {
+     "w": "guideline",
+     "zh": "指导方针，指导原则"
+    },
+    {
+     "w": "click",
+     "zh": "点击"
+    },
+    {
+     "w": "detail",
+     "zh": "细节"
+    },
+    {
+     "w": "principle",
+     "zh": "原则，基本观念"
+    },
+    {
+     "w": "amount",
+     "zh": "数量，数额"
+    },
+    {
+     "w": "shortest",
+     "zh": "捷径，近路"
+    },
+    {
+     "w": "overnight",
+     "zh": "整夜， 通宵"
+    },
+    {
+     "w": "achievable",
+     "zh": "可完成的"
+    },
+    {
+     "w": "make sure",
+     "zh": "确保"
+    },
+    {
+     "w": "muscle",
+     "zh": "肌肉"
+    },
+    {
+     "w": "bone",
+     "zh": "肯头，胃"
+    },
+    {
+     "w": "satisfaction",
+     "zh": "满足，满意"
+    },
+    {
+     "w": "sweat",
+     "zh": "汗水"
+    },
+    {
+     "w": "aura",
+     "zh": "把••做得过火"
+    },
+    {
+     "w": "overdo",
+     "zh": "过度"
+    },
+    {
+     "w": "sight",
+     "zh": "祝野"
+    },
+    {
+     "w": "cyclist",
+     "zh": "骑自行车的人"
+    },
+    {
+     "w": "overtake",
+     "zh": "超过"
+    }
+   ]
+  },
+  {
+   "n": "Unit 3",
+   "t": "Celebrations",
+   "words": [
+    {
+     "w": "occasion",
+     "zh": "重要时社交活动；时刻，时候"
+    },
+    {
+     "w": "dragon",
+     "zh": "龙"
+    },
+    {
+     "w": "dragon Boat Festival",
+     "zh": "端午节"
+    },
+    {
+     "w": "graduation",
+     "zh": "毕业"
+    },
+    {
+     "w": "lunar ad",
+     "zh": "阴历的；月球时"
+    },
+    {
+     "w": "lunar month",
+     "zh": "阴历月，农历月"
+    },
+    {
+     "w": "barbecue",
+     "zh": "烧烤野餐"
+    },
+    {
+     "w": "sticky",
+     "zh": "黏性的，黏的"
+    },
+    {
+     "w": "adult",
+     "zh": "成人，成年人"
+    },
+    {
+     "w": "lantern",
+     "zh": "灯笼，提灯"
+    },
+    {
+     "w": "turkey",
+     "zh": "火鸡"
+    },
+    {
+     "w": "congratulation",
+     "zh": "恭喜，祝贺"
+    },
+    {
+     "w": "amazed",
+     "zh": "惊叹万分的"
+    },
+    {
+     "w": "sportsmanship",
+     "zh": "体育精神"
+    },
+    {
+     "w": "bronze",
+     "zh": "铜"
+    },
+    {
+     "w": "medal",
+     "zh": "奖牌；勋章"
+    },
+    {
+     "w": "response",
+     "zh": "回答，答复"
+    },
+    {
+     "w": "gesture",
+     "zh": "姿态；手势；姿势"
+    },
+    {
+     "w": "take advantage of sth",
+     "zh": "利用某物"
+    },
+    {
+     "w": "defend",
+     "zh": "保护，保卫"
+    },
+    {
+     "w": "flexibility",
+     "zh": "灵活性"
+    },
+    {
+     "w": "decorate",
+     "zh": "装修"
+    },
+    {
+     "w": "tradition",
+     "zh": "传统"
+    },
+    {
+     "w": "monster",
+     "zh": "怪兽，怪物"
+    },
+    {
+     "w": "immediately",
+     "zh": "立即， 马上"
+    },
+    {
+     "w": "gathering",
+     "zh": "聚会"
+    },
+    {
+     "w": "snack",
+     "zh": "快餐"
+    },
+    {
+     "w": "put up",
+     "zh": "张贴"
+    },
+    {
+     "w": "decoration",
+     "zh": "装饰物"
+    },
+    {
+     "w": "let off",
+     "zh": "使某物爆炸"
+    },
+    {
+     "w": "account",
+     "zh": "描述，报道"
+    },
+    {
+     "w": "summarise",
+     "zh": "概括，总结"
+    },
+    {
+     "w": "host",
+     "zh": "主人；东道主；主持人"
+    },
+    {
+     "w": "sweep",
+     "zh": "扫；打扫"
+    },
+    {
+     "w": "sweep away",
+     "zh": "扫除；清除"
+    },
+    {
+     "w": "character",
+     "zh": "个性"
+    },
+    {
+     "w": "attach",
+     "zh": "贴；固定；附上"
+    },
+    {
+     "w": "upside down",
+     "zh": "倒置地，颠倒地"
+    },
+    {
+     "w": "expectant",
+     "zh": "期待的，预期的"
+    },
+    {
+     "w": "scare",
+     "zh": "吓唬；便 惊恐"
+    },
+    {
+     "w": "scare sb",
+     "zh": "把⋯吓跑"
+    },
+    {
+     "w": "fight",
+     "zh": "航班"
+    },
+    {
+     "w": "wine",
+     "zh": "葡萄酒"
+    },
+    {
+     "w": "surround",
+     "zh": "环绕，围绕"
+    },
+    {
+     "w": "accent",
+     "zh": "口音"
+    },
+    {
+     "w": "hotpot",
+     "zh": "火锅"
+    },
+    {
+     "w": "firecracker",
+     "zh": "鞭炮，爆竹"
+    },
+    {
+     "w": "retired",
+     "zh": "退休"
+    },
+    {
+     "w": "buzz",
+     "zh": "闹哄哄，喧闹"
+    },
+    {
+     "w": "joy",
+     "zh": "欢欣，愉快，喜悦"
+    },
+    {
+     "w": "throughout",
+     "zh": "遍及，贯穿"
+    },
+    {
+     "w": "original",
+     "zh": "最初的"
+    },
+    {
+     "w": "custom",
+     "zh": "习惯，风俗"
+    },
+    {
+     "w": "wedding",
+     "zh": "婚礼"
+    },
+    {
+     "w": "greet",
+     "zh": "问候，欢迎；打招呼"
+    },
+    {
+     "w": "beer",
+     "zh": "啤酒"
+    },
+    {
+     "w": "teenager",
+     "zh": "青少年，十几岁附孩子"
+    },
+    {
+     "w": "studio",
+     "zh": "录音室"
+    },
+    {
+     "w": "as far as",
+     "zh": "就…⋯而膏"
+    },
+    {
+     "w": "appropriately",
+     "zh": "适当地"
+    },
+    {
+     "w": "specific",
+     "zh": "明确的"
+    },
+    {
+     "w": "neat",
+     "zh": "整清昀"
+    },
+    {
+     "w": "suit",
+     "zh": "套装"
+    },
+    {
+     "w": "jeans",
+     "zh": "牛仔裤"
+    },
+    {
+     "w": "in general",
+     "zh": "普遍地"
+    },
+    {
+     "w": "pudding",
+     "zh": "布丁；甜食，甜点心"
+    },
+    {
+     "w": "effort",
+     "zh": "努力；力气"
+    },
+    {
+     "w": "make an effort",
+     "zh": "尽力"
+    },
+    {
+     "w": "represent",
+     "zh": "代表"
+    },
+    {
+     "w": "extend",
+     "zh": "提供，给予，表示"
+    },
+    {
+     "w": "fortunate",
+     "zh": "幸运时"
+    },
+    {
+     "w": "memory",
+     "zh": "记忆，回忆"
+    },
+    {
+     "w": "stocking",
+     "zh": "长筒袜"
+    },
+    {
+     "w": "move in",
+     "zh": "搬来 一起居住"
+    },
+    {
+     "w": "somehow",
+     "zh": "由于某种原因"
+    },
+    {
+     "w": "slightly",
+     "zh": "略微，稍微"
+    },
+    {
+     "w": "pole",
+     "zh": "地极，北"
+    },
+    {
+     "w": "envelope",
+     "zh": "信封"
+    },
+    {
+     "w": "stuff",
+     "zh": "给⋯填馅；填，塞"
+    },
+    {
+     "w": "Lap lamp",
+     "zh": "大腿部"
+    },
+    {
+     "w": "frosty",
+     "zh": "严寒"
+    },
+    {
+     "w": "patience",
+     "zh": "耐心；耐力"
+    },
+    {
+     "w": "over and over",
+     "zh": "再三地，重复地"
+    },
+    {
+     "w": "eve",
+     "zh": "前夕；前一天"
+    },
+    {
+     "w": "branch",
+     "zh": "树枝"
+    },
+    {
+     "w": "plate",
+     "zh": "盘；碟"
+    },
+    {
+     "w": "behaviour",
+     "zh": "行为，举止"
+    },
+    {
+     "w": "whisper",
+     "zh": "低声说，低语"
+    },
+    {
+     "w": "merry",
+     "zh": "快乐"
+    },
+    {
+     "w": "ballet",
+     "zh": "芭蕾舞"
+    },
+    {
+     "w": "roll",
+     "zh": "便成筒形"
+    },
+    {
+     "w": "catch sb's eye",
+     "zh": "吸引某人目光；引起某人注意"
+    },
+    {
+     "w": "wave",
+     "zh": "挥手；招手"
+    },
+    {
+     "w": "affair",
+     "zh": "事件"
+    },
+    {
+     "w": "swallow",
+     "zh": "吞下，咽下"
+    },
+    {
+     "w": "pass away",
+     "zh": "去世"
+    },
+    {
+     "w": "no Longer",
+     "zh": "不再"
+    },
+    {
+     "w": "event",
+     "zh": "事件；活动"
+    },
+    {
+     "w": "description",
+     "zh": "描述，描写"
+    },
+    {
+     "w": "awesome",
+     "zh": "令人惊叹"
+    },
+    {
+     "w": "downstairs",
+     "zh": "楼下"
+    },
+    {
+     "w": "nowhere",
+     "zh": "哪里都不"
+    },
+    {
+     "w": "select",
+     "zh": "挑选，选拔"
+    },
+    {
+     "w": "album",
+     "zh": "簿，册"
+    },
+    {
+     "w": "calm",
+     "zh": "静的，平静的"
+    },
+    {
+     "w": "calm down",
+     "zh": "冷静下来"
+    },
+    {
+     "w": "uniform",
+     "zh": "制服"
+    },
+    {
+     "w": "tear",
+     "zh": "眼泪，泪水"
+    },
+    {
+     "w": "cuisine",
+     "zh": "烹饪"
+    },
+    {
+     "w": "thoroughly",
+     "zh": "完全地"
+    },
+    {
+     "w": "humbly",
+     "zh": "谦虚地北师大"
+    }
+   ]
+  }
+ ]
+}

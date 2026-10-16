@@ -1,0 +1,1543 @@
+{
+ "pub": "译林",
+ "stage": "初中",
+ "grade": "八年级",
+ "vol": "下册",
+ "id": "b33b5100-d1f9-427e-a9d6-03336612895a",
+ "title": "（根据2022年版课程标准修订）义务教育教科书·英语八年级下册",
+ "created": "2022-09-29",
+ "units": [
+  {
+   "n": "Unit 1",
+   "t": "",
+   "words": [
+    {
+     "w": "past",
+     "zh": "过去"
+    },
+    {
+     "w": "present",
+     "zh": "现在，目前"
+    },
+    {
+     "w": "just",
+     "zh": "刚才"
+    },
+    {
+     "w": "used to",
+     "zh": "曾经"
+    },
+    {
+     "w": "since",
+     "zh": "白⋯以来"
+    },
+    {
+     "w": "ever",
+     "zh": "曾经"
+    },
+    {
+     "w": "northern",
+     "zh": "北方，北部"
+    },
+    {
+     "w": "married",
+     "zh": "已婚，结婚"
+    },
+    {
+     "w": "wife",
+     "zh": "妻子"
+    },
+    {
+     "w": "block",
+     "zh": "街区"
+    },
+    {
+     "w": "over",
+     "zh": "在⋯期间"
+    },
+    {
+     "w": "turn.. into",
+     "zh": "把⋯变成⋯•"
+    },
+    {
+     "w": "pollution",
+     "zh": "彷染：污染物"
+    },
+    {
+     "w": "factory",
+     "zh": "厂"
+    },
+    {
+     "w": "waste",
+     "zh": "废料；废品"
+    },
+    {
+     "w": "realize",
+     "zh": "意识到；实现"
+    },
+    {
+     "w": "improve",
+     "zh": "改进，改善"
+    },
+    {
+     "w": "situation",
+     "zh": "形势，情况"
+    },
+    {
+     "w": "in some ways",
+     "zh": "在某种程度上"
+    },
+    {
+     "w": "impossible",
+     "zh": "不可能"
+    },
+    {
+     "w": "before",
+     "zh": "以前，过去"
+    },
+    {
+     "w": "lonely",
+     "zh": "孤独，寂寞"
+    },
+    {
+     "w": "from time to time",
+     "zh": "不时，有时，偶尔"
+    },
+    {
+     "w": "anyway",
+     "zh": "尽管，即使这样"
+    },
+    {
+     "w": "husband",
+     "zh": "丈大"
+    },
+    {
+     "w": "interview",
+     "zh": "采访；会见"
+    },
+    {
+     "w": "all one's life",
+     "zh": "一生"
+    },
+    {
+     "w": "yet feet ady",
+     "zh": "还，仍"
+    },
+    {
+     "w": "recently",
+     "zh": "近来，最近"
+    },
+    {
+     "w": "environment",
+     "zh": "环境"
+    },
+    {
+     "w": "transport",
+     "zh": "交通车辆，运输工具"
+    },
+    {
+     "w": "condition",
+     "zh": "环境，条件，状况"
+    },
+    {
+     "w": "return",
+     "zh": "返回"
+    },
+    {
+     "w": "last",
+     "zh": "最近，上一次；最后"
+    },
+    {
+     "w": "abroad",
+     "zh": "到 国外"
+    },
+    {
+     "w": "primary",
+     "zh": "小学教育；初级"
+    },
+    {
+     "w": "keep in touch",
+     "zh": "保持联系"
+    },
+    {
+     "w": "communicate",
+     "zh": "交流，交际"
+    },
+    {
+     "w": "communication",
+     "zh": "交流，交际"
+    },
+    {
+     "w": "exactly",
+     "zh": "正是，没错"
+    },
+    {
+     "w": "be",
+     "zh": "习惯于，适应于"
+    },
+    {
+     "w": "narrow",
+     "zh": "狭窄"
+    },
+    {
+     "w": "open space",
+     "zh": "开阔空地"
+    }
+   ]
+  },
+  {
+   "n": "Unit 2",
+   "t": "",
+   "words": [
+    {
+     "w": "travelling",
+     "zh": "英>旅行=<美>"
+    },
+    {
+     "w": "hey",
+     "zh": "嘿，喂"
+    },
+    {
+     "w": "miss",
+     "zh": "想念，思念"
+    },
+    {
+     "w": "fantastic",
+     "zh": "极好，美妙"
+    },
+    {
+     "w": "indoor",
+     "zh": "室内"
+    },
+    {
+     "w": "roller coaster",
+     "zh": "（游乐场的）过山车，环滑车"
+    },
+    {
+     "w": "speed",
+     "zh": "速度"
+    },
+    {
+     "w": "ride",
+     "zh": "乘从"
+    },
+    {
+     "w": "cartoon",
+     "zh": "卡通片，动画片"
+    },
+    {
+     "w": "character",
+     "zh": "人物"
+    },
+    {
+     "w": "such",
+     "zh": "这样"
+    },
+    {
+     "w": "such as",
+     "zh": "例如"
+    },
+    {
+     "w": "parade",
+     "zh": "游行"
+    },
+    {
+     "w": "magic",
+     "zh": "魔法"
+    },
+    {
+     "w": "pie",
+     "zh": "派，馅饼"
+    },
+    {
+     "w": "feel",
+     "zh": "感觉到，意识到"
+    },
+    {
+     "w": "couple",
+     "zh": "两人，两件事物；几个人，几件事物"
+    },
+    {
+     "w": "a couple of",
+     "zh": "一对；几个，几件"
+    },
+    {
+     "w": "at the end of",
+     "zh": "在⋯末尾"
+    },
+    {
+     "w": "castle",
+     "zh": "城堡"
+    },
+    {
+     "w": "sand",
+     "zh": "沙；沙滩"
+    },
+    {
+     "w": "marry",
+     "zh": "结婚，嫁，娶"
+    },
+    {
+     "w": "dead",
+     "zh": "死"
+    },
+    {
+     "w": "beauty",
+     "zh": "美丽；美人"
+    },
+    {
+     "w": "seaside",
+     "zh": "海边"
+    },
+    {
+     "w": "theme",
+     "zh": "主题公园"
+    },
+    {
+     "w": "sailing",
+     "zh": "帆船运动，航行"
+    },
+    {
+     "w": "except",
+     "zh": "除了⋯以外"
+    },
+    {
+     "w": "view",
+     "zh": "景色，风景"
+    },
+    {
+     "w": "mountain",
+     "zh": "高山"
+    },
+    {
+     "w": "business",
+     "zh": "公事；商业；生意"
+    },
+    {
+     "w": "on business",
+     "zh": "出差"
+    },
+    {
+     "w": "direct",
+     "zh": "直达，直接的"
+    },
+    {
+     "w": "flight",
+     "zh": "航班；航行"
+    },
+    {
+     "w": "point",
+     "zh": "要点"
+    },
+    {
+     "w": "detail",
+     "zh": "細节"
+    },
+    {
+     "w": "delicious",
+     "zh": "美味，可口时"
+    },
+    {
+     "w": "seafood",
+     "zh": "海鲜"
+    },
+    {
+     "w": "airport",
+     "zh": "机场"
+    },
+    {
+     "w": "relative",
+     "zh": "亲戚"
+    }
+   ]
+  },
+  {
+   "n": "Unit 3",
+   "t": "",
+   "words": [
+    {
+     "w": "online",
+     "zh": "联网，在线"
+    },
+    {
+     "w": "programme",
+     "zh": "英>丁日；计划，方案=＜美＞"
+    },
+    {
+     "w": "remote control",
+     "zh": "遙控器"
+    },
+    {
+     "w": "ah",
+     "zh": "啊"
+    },
+    {
+     "w": "channel",
+     "zh": "频道"
+    },
+    {
+     "w": "keyboard",
+     "zh": "键盘"
+    },
+    {
+     "w": "unit",
+     "zh": "机件；单位"
+    },
+    {
+     "w": "main units",
+     "zh": "主机"
+    },
+    {
+     "w": "mouse",
+     "zh": "昆标"
+    },
+    {
+     "w": "screen",
+     "zh": "显示屏，屏幕"
+    },
+    {
+     "w": "word processing",
+     "zh": "文字处理"
+    },
+    {
+     "w": "receive",
+     "zh": "收到，接到"
+    },
+    {
+     "w": "guide",
+     "zh": "导游，向导"
+    },
+    {
+     "w": "icon",
+     "zh": "图标"
+    },
+    {
+     "w": "click",
+     "zh": "点山"
+    },
+    {
+     "w": "asia",
+     "zh": "亚洲"
+    },
+    {
+     "w": "africa",
+     "zh": "非洲"
+    },
+    {
+     "w": "europe",
+     "zh": "欭洲"
+    },
+    {
+     "w": "america",
+     "zh": "美洲"
+    },
+    {
+     "w": "world-famous",
+     "zh": "世界著名，举世闻名"
+    },
+    {
+     "w": "trade",
+     "zh": "贸易"
+    },
+    {
+     "w": "southern",
+     "zh": "南方，南部"
+    },
+    {
+     "w": "international",
+     "zh": "国际"
+    },
+    {
+     "w": "gather",
+     "zh": "聚集，集合"
+    },
+    {
+     "w": "huge",
+     "zh": "巨大"
+    },
+    {
+     "w": "darkness",
+     "zh": "黑暗"
+    },
+    {
+     "w": "island",
+     "zh": "岛屿"
+    },
+    {
+     "w": "several",
+     "zh": "几个，数个"
+    },
+    {
+     "w": "lawn",
+     "zh": "卓华"
+    },
+    {
+     "w": "relax",
+     "zh": "放松，休息"
+    },
+    {
+     "w": "hard",
+     "zh": "辛苦；艰难"
+    },
+    {
+     "w": "musical",
+     "zh": "音乐剧"
+    },
+    {
+     "w": "so much",
+     "zh": "关下⋯就讲这么多，…到此为止"
+    },
+    {
+     "w": "bottom",
+     "zh": "底，底部"
+    },
+    {
+     "w": "pick",
+     "zh": "挑选"
+    },
+    {
+     "w": "play",
+     "zh": "戏剧，剧本"
+    },
+    {
+     "w": "website",
+     "zh": "网站"
+    },
+    {
+     "w": "dream",
+     "zh": "做梦，梦想"
+    },
+    {
+     "w": "dream of",
+     "zh": "梦想；想像"
+    },
+    {
+     "w": "passport",
+     "zh": "护照"
+    },
+    {
+     "w": "coast",
+     "zh": "海岸"
+    },
+    {
+     "w": "sail",
+     "zh": "帆"
+    },
+    {
+     "w": "australian",
+     "zh": "澳大利亚（人）"
+    },
+    {
+     "w": "opposite",
+     "zh": "对立的人"
+    },
+    {
+     "w": "mind",
+     "zh": "介意"
+    },
+    {
+     "w": "print",
+     "zh": "打印；印刷"
+    },
+    {
+     "w": "pleasure",
+     "zh": "高兴，乐意"
+    },
+    {
+     "w": "my pleasure",
+     "zh": "不客气，很乐意效劳"
+    },
+    {
+     "w": "book",
+     "zh": "预订，订"
+    },
+    {
+     "w": "england",
+     "zh": "英格兰"
+    },
+    {
+     "w": "queen",
+     "zh": "女王"
+    },
+    {
+     "w": "ruler",
+     "zh": "统治者；管理者"
+    },
+    {
+     "w": "pound",
+     "zh": "英镑"
+    },
+    {
+     "w": "be made up of",
+     "zh": "日⋯组成"
+    },
+    {
+     "w": "european",
+     "zh": "欧洲"
+    },
+    {
+     "w": "dollar",
+     "zh": "美元"
+    }
+   ]
+  },
+  {
+   "n": "Unit 4",
+   "t": "",
+   "words": [
+    {
+     "w": "read",
+     "zh": "读物"
+    },
+    {
+     "w": "cooking",
+     "zh": "烹饪，烹调"
+    },
+    {
+     "w": "novel",
+     "zh": "小说"
+    },
+    {
+     "w": "germany",
+     "zh": "德同"
+    },
+    {
+     "w": "knowledge",
+     "zh": "知识"
+    },
+    {
+     "w": "spare",
+     "zh": "空闲；多余"
+    },
+    {
+     "w": "french",
+     "zh": "法国"
+    },
+    {
+     "w": "writer",
+     "zh": "作者，作家"
+    },
+    {
+     "w": "ugly",
+     "zh": "丑陋"
+    },
+    {
+     "w": "touch",
+     "zh": "感动，触动"
+    },
+    {
+     "w": "against",
+     "zh": "紧第，碰，撞"
+    },
+    {
+     "w": "be tired out",
+     "zh": "筋疲力尽"
+    },
+    {
+     "w": "tie",
+     "zh": "捆，绑"
+    },
+    {
+     "w": "stomach",
+     "zh": "腹部；胃"
+    },
+    {
+     "w": "until",
+     "zh": "直到⋯为止"
+    },
+    {
+     "w": "finger",
+     "zh": "手指"
+    },
+    {
+     "w": "tiny",
+     "zh": "极小"
+    },
+    {
+     "w": "fall over",
+     "zh": "摔倒"
+    },
+    {
+     "w": "continue",
+     "zh": "继续"
+    },
+    {
+     "w": "either",
+     "zh": "也"
+    },
+    {
+     "w": "manage",
+     "zh": "设法完成；管理"
+    },
+    {
+     "w": "lift",
+     "zh": "举起，抬高；提高"
+    },
+    {
+     "w": "army",
+     "zh": "大批，大群"
+    },
+    {
+     "w": "must",
+     "zh": "应该，必须，一定"
+    },
+    {
+     "w": "unable",
+     "zh": "不能，不会的"
+    },
+    {
+     "w": "shoulder",
+     "zh": "肩膀"
+    },
+    {
+     "w": "hand",
+     "zh": "交；递，给"
+    },
+    {
+     "w": "hand in",
+     "zh": "上交，递交"
+    },
+    {
+     "w": "and so on",
+     "zh": "等等"
+    },
+    {
+     "w": "review",
+     "zh": "评论"
+    },
+    {
+     "w": "on time",
+     "zh": "准吋"
+    },
+    {
+     "w": "renew",
+     "zh": "续借，更新：重新开始"
+    },
+    {
+     "w": "series",
+     "zh": "一系列；系列节目"
+    },
+    {
+     "w": "publishing",
+     "zh": "出版社"
+    },
+    {
+     "w": "refuse",
+     "zh": "拒绝，回绝"
+    },
+    {
+     "w": "publish",
+     "zh": "出版"
+    },
+    {
+     "w": "so far",
+     "zh": "到目前为止"
+    },
+    {
+     "w": "success",
+     "zh": "成功"
+    },
+    {
+     "w": "translate",
+     "zh": "翻译"
+    },
+    {
+     "w": "sales",
+     "zh": "复】销售量"
+    },
+    {
+     "w": "copy",
+     "zh": "一本 ；副本"
+    },
+    {
+     "w": "canadian",
+     "zh": "加拿大 的"
+    },
+    {
+     "w": "at a time",
+     "zh": "每次，依次"
+    },
+    {
+     "w": "hidden",
+     "zh": "隐藏"
+    },
+    {
+     "w": "confidence",
+     "zh": "信心"
+    },
+    {
+     "w": "experience",
+     "zh": "经历，经验"
+    },
+    {
+     "w": "advice",
+     "zh": "建议，忠告，劝告"
+    },
+    {
+     "w": "librarian",
+     "zh": "图书管理员"
+    },
+    {
+     "w": "habit",
+     "zh": "习惯"
+    },
+    {
+     "w": "classical",
+     "zh": "古典"
+    },
+    {
+     "w": "open up",
+     "zh": "开启；开创；开辟"
+    }
+   ]
+  },
+  {
+   "n": "Unit 5",
+   "t": "",
+   "words": [
+    {
+     "w": "manners",
+     "zh": "复】礼貌，礼仪；规矩"
+    },
+    {
+     "w": "cumin",
+     "zh": "插嘴"
+    },
+    {
+     "w": "politely",
+     "zh": "礼貌地"
+    },
+    {
+     "w": "litter",
+     "zh": "垃圾，杂物"
+    },
+    {
+     "w": "tap",
+     "zh": "水龙头；旋塞"
+    },
+    {
+     "w": "run",
+     "zh": "流动"
+    },
+    {
+     "w": "obey",
+     "zh": "遵守，顺从"
+    },
+    {
+     "w": "queue",
+     "zh": "排队等候"
+    },
+    {
+     "w": "turn",
+     "zh": "轮流， 顺序"
+    },
+    {
+     "w": "proper",
+     "zh": "符合习俗的；正确的"
+    },
+    {
+     "w": "greet",
+     "zh": "问候，打招呼"
+    },
+    {
+     "w": "shake sb's hand",
+     "zh": "写某人握手"
+    },
+    {
+     "w": "kiss",
+     "zh": "亲吻"
+    },
+    {
+     "w": "close",
+     "zh": "亲密；严密"
+    },
+    {
+     "w": "conversation",
+     "zh": "（非正式）交谈，谈话"
+    },
+    {
+     "w": "avoid",
+     "zh": "避免"
+    },
+    {
+     "w": "subject",
+     "zh": "话题，主题"
+    },
+    {
+     "w": "behave",
+     "zh": "表现"
+    },
+    {
+     "w": "public",
+     "zh": "民众，群体"
+    },
+    {
+     "w": "in public",
+     "zh": "公开地，在别人而前"
+    },
+    {
+     "w": "push",
+     "zh": "推，挤"
+    },
+    {
+     "w": "push in",
+     "zh": "英>插队，加塞=<美>"
+    },
+    {
+     "w": "bump",
+     "zh": "撞，碰"
+    },
+    {
+     "w": "in one's way",
+     "zh": "挡住某人路"
+    },
+    {
+     "w": "excuse",
+     "zh": "原谅，宽恕"
+    },
+    {
+     "w": "excuse me",
+     "zh": "劳驾"
+    },
+    {
+     "w": "till",
+     "zh": "到⋯吋，古到⋯为止"
+    },
+    {
+     "w": "as well",
+     "zh": "也，还有"
+    },
+    {
+     "w": "loudly",
+     "zh": "大声地"
+    },
+    {
+     "w": "as",
+     "zh": "正如，如同"
+    },
+    {
+     "w": "saying",
+     "zh": "谚语，格言"
+    },
+    {
+     "w": "roman",
+     "zh": "罗马人"
+    },
+    {
+     "w": "by accident",
+     "zh": "偶然，意外地"
+    },
+    {
+     "w": "discussion",
+     "zh": "讨论"
+    },
+    {
+     "w": "express",
+     "zh": "表达"
+    },
+    {
+     "w": "explain",
+     "zh": "解释"
+    },
+    {
+     "w": "Keep sb from sth",
+     "zh": "保护，使免受"
+    },
+    {
+     "w": "warn",
+     "zh": "警告，告城"
+    },
+    {
+     "w": "parking",
+     "zh": "停车"
+    },
+    {
+     "w": "successful",
+     "zh": "成功"
+    },
+    {
+     "w": "sometime",
+     "zh": "（=sometime）在某吋"
+    },
+    {
+     "w": "soon after",
+     "zh": "不久以后"
+    },
+    {
+     "w": "risk",
+     "zh": "冒险做"
+    },
+    {
+     "w": "worm",
+     "zh": "软体虫，蠕虫"
+    },
+    {
+     "w": "pain",
+     "zh": "痛，疼痛"
+    },
+    {
+     "w": "gain",
+     "zh": "收获"
+    },
+    {
+     "w": "indeed",
+     "zh": "真正地"
+    },
+    {
+     "w": "practice",
+     "zh": "练习：训练；实践"
+    },
+    {
+     "w": "candle",
+     "zh": "蜡烛"
+    },
+    {
+     "w": "purpose",
+     "zh": "目"
+    },
+    {
+     "w": "content",
+     "zh": "内容，日录"
+    },
+    {
+     "w": "conclusion",
+     "zh": "总结，归納"
+    },
+    {
+     "w": "guest",
+     "zh": "客人，宾客"
+    },
+    {
+     "w": "host",
+     "zh": "主人，主持"
+    },
+    {
+     "w": "above all",
+     "zh": "首要足"
+    },
+    {
+     "w": "impolite",
+     "zh": "不礼貌"
+    }
+   ]
+  },
+  {
+   "n": "Unit 6",
+   "t": "",
+   "words": [
+    {
+     "w": "train",
+     "zh": "接受训练，培训，训练"
+    },
+    {
+     "w": "support",
+     "zh": "支持"
+    },
+    {
+     "w": "meaningful",
+     "zh": "有意义"
+    },
+    {
+     "w": "blind",
+     "zh": "瞎"
+    },
+    {
+     "w": "deaf",
+     "zh": "聋"
+    },
+    {
+     "w": "disabled",
+     "zh": "残疾的"
+    },
+    {
+     "w": "elderly",
+     "zh": "企老"
+    },
+    {
+     "w": "homeless",
+     "zh": "兀家可归"
+    },
+    {
+     "w": "volunteer",
+     "zh": "志愿做，义务做"
+    },
+    {
+     "w": "expect",
+     "zh": "期待，指望；预料"
+    },
+    {
+     "w": "adult",
+     "zh": "成年人"
+    },
+    {
+     "w": "intellectual",
+     "zh": "智力"
+    },
+    {
+     "w": "disability",
+     "zh": "缺陷，障碍"
+    },
+    {
+     "w": "chance",
+     "zh": "机会"
+    },
+    {
+     "w": "event",
+     "zh": "比赛项目；大事"
+    },
+    {
+     "w": "similar",
+     "zh": "同样，类似"
+    },
+    {
+     "w": "give up",
+     "zh": "放弃"
+    },
+    {
+     "w": "necessary",
+     "zh": "必须，必要"
+    },
+    {
+     "w": "training",
+     "zh": "培训，训练"
+    },
+    {
+     "w": "task",
+     "zh": "任务，作"
+    },
+    {
+     "w": "athlete",
+     "zh": "运动员"
+    },
+    {
+     "w": "coach",
+     "zh": "教练"
+    },
+    {
+     "w": "gold",
+     "zh": "黃金；金牌"
+    },
+    {
+     "w": "silver",
+     "zh": "银，银牌"
+    },
+    {
+     "w": "confident",
+     "zh": "白信"
+    },
+    {
+     "w": "background",
+     "zh": "背景"
+    },
+    {
+     "w": "closely",
+     "zh": "密切地"
+    },
+    {
+     "w": "achieve",
+     "zh": "实现，达到"
+    },
+    {
+     "w": "prize",
+     "zh": "奖赏，奖品"
+    },
+    {
+     "w": "donate",
+     "zh": "捐献"
+    },
+    {
+     "w": "charity",
+     "zh": "慈善：慈善机构"
+    },
+    {
+     "w": "organization",
+     "zh": "机构，组织"
+    },
+    {
+     "w": "one-to-one",
+     "zh": "一对一地=＜美＞ one-on-"
+    },
+    {
+     "w": "blood",
+     "zh": "血"
+    },
+    {
+     "w": "south-west",
+     "zh": "西南方"
+    },
+    {
+     "w": "north-west",
+     "zh": "西北方"
+    },
+    {
+     "w": "project",
+     "zh": "项目，工程；课题"
+    },
+    {
+     "w": "introduction",
+     "zh": "引音，介绍"
+    },
+    {
+     "w": "disease",
+     "zh": "疾病"
+    },
+    {
+     "w": "operation",
+     "zh": "手术"
+    },
+    {
+     "w": "give a helping hand",
+     "zh": "帮助，伸出援助之手"
+    },
+    {
+     "w": "survivor",
+     "zh": "幸存者"
+    }
+   ]
+  },
+  {
+   "n": "Unit 7",
+   "t": "",
+   "words": [
+    {
+     "w": "especially",
+     "zh": "特别，尤其"
+    },
+    {
+     "w": "basic",
+     "zh": "基础，基本时"
+    },
+    {
+     "w": "education",
+     "zh": "教育"
+    },
+    {
+     "w": "equal",
+     "zh": "平等"
+    },
+    {
+     "w": "right",
+     "zh": "权利"
+    },
+    {
+     "w": "spread",
+     "zh": "扩散；分布；展开"
+    },
+    {
+     "w": "interviewer",
+     "zh": "采访者"
+    },
+    {
+     "w": "blindness",
+     "zh": "失明"
+    },
+    {
+     "w": "mostly",
+     "zh": "主要地，大部分地"
+    },
+    {
+     "w": "case",
+     "zh": "病例；案例"
+    },
+    {
+     "w": "cure",
+     "zh": "治愈"
+    },
+    {
+     "w": "medical",
+     "zh": "医学，医疗"
+    },
+    {
+     "w": "treatment",
+     "zh": "治疗"
+    },
+    {
+     "w": "patient",
+     "zh": "病人"
+    },
+    {
+     "w": "afford",
+     "zh": "买得起，能做"
+    },
+    {
+     "w": "go to hospital",
+     "zh": "去石病"
+    },
+    {
+     "w": "on board",
+     "zh": "在飞机 上"
+    },
+    {
+     "w": "operate",
+     "zh": "做手术"
+    },
+    {
+     "w": "proud",
+     "zh": "白豪，骄傲"
+    },
+    {
+     "w": "reader",
+     "zh": "读者"
+    },
+    {
+     "w": "medicine",
+     "zh": "医学，药"
+    },
+    {
+     "w": "develop",
+     "zh": "发展；加强"
+    },
+    {
+     "w": "treat",
+     "zh": "治疗；处理"
+    },
+    {
+     "w": "carry on",
+     "zh": "继续开展，继续下去"
+    },
+    {
+     "w": "leaflet",
+     "zh": "传单，散页印刷品"
+    },
+    {
+     "w": "hand out",
+     "zh": "分发；提出"
+    },
+    {
+     "w": "hold",
+     "zh": "举行"
+    },
+    {
+     "w": "set",
+     "zh": "创建，建立"
+    },
+    {
+     "w": "set up",
+     "zh": "建起，设立"
+    },
+    {
+     "w": "including",
+     "zh": "包括，包含"
+    },
+    {
+     "w": "war",
+     "zh": "战尔"
+    },
+    {
+     "w": "organize",
+     "zh": "组织"
+    },
+    {
+     "w": "pale",
+     "zh": "苍白"
+    },
+    {
+     "w": "matter",
+     "zh": "事情，问题"
+    },
+    {
+     "w": "check",
+     "zh": "检査"
+    },
+    {
+     "w": "secretary",
+     "zh": "秘书"
+    },
+    {
+     "w": "make up one's mind",
+     "zh": "决定"
+    },
+    {
+     "w": "india",
+     "zh": "印度"
+    },
+    {
+     "w": "officer",
+     "zh": "官员"
+    }
+   ]
+  },
+  {
+   "n": "Unit 8",
+   "t": "",
+   "words": [
+    {
+     "w": "dig",
+     "zh": "挖"
+    },
+    {
+     "w": "serious",
+     "zh": "认真，严肃"
+    },
+    {
+     "w": "breadfruit",
+     "zh": "面包果"
+    },
+    {
+     "w": "reduce",
+     "zh": "减少，降低"
+    },
+    {
+     "w": "turn off",
+     "zh": "关上"
+    },
+    {
+     "w": "recycle",
+     "zh": "回收利用，循环利用"
+    },
+    {
+     "w": "wise",
+     "zh": "明智，充满智慧的"
+    },
+    {
+     "w": "plastic",
+     "zh": "塑料"
+    },
+    {
+     "w": "separate",
+     "zh": "分开，隔开"
+    },
+    {
+     "w": "recycling",
+     "zh": "回收利用，循环利用"
+    },
+    {
+     "w": "allow",
+     "zh": "允许"
+    },
+    {
+     "w": "cut down",
+     "zh": "砍倒"
+    },
+    {
+     "w": "punish",
+     "zh": "处罚，惩罚"
+    },
+    {
+     "w": "fine",
+     "zh": "罚款"
+    },
+    {
+     "w": "limit",
+     "zh": "限制"
+    },
+    {
+     "w": "depend",
+     "zh": "依幸，依赖，指望"
+    },
+    {
+     "w": "depend on",
+     "zh": "依掌；取决士"
+    },
+    {
+     "w": "rich",
+     "zh": "丰富；富有"
+    },
+    {
+     "w": "resource",
+     "zh": "资源"
+    },
+    {
+     "w": "wisely",
+     "zh": "明智地，充满智慧地"
+    },
+    {
+     "w": "run out",
+     "zh": "用完，耗尽"
+    },
+    {
+     "w": "produce",
+     "zh": "导致，产生"
+    },
+    {
+     "w": "difference",
+     "zh": "差异，不同"
+    },
+    {
+     "w": "make a difference",
+     "zh": "（对⋯）有影响，起作用"
+    },
+    {
+     "w": "poster",
+     "zh": "海报"
+    },
+    {
+     "w": "display",
+     "zh": "展示；陈列"
+    },
+    {
+     "w": "pollute",
+     "zh": "污染"
+    },
+    {
+     "w": "harm",
+     "zh": "伤害，损害"
+    },
+    {
+     "w": "living",
+     "zh": "活着，活"
+    },
+    {
+     "w": "survey",
+     "zh": "调查"
+    },
+    {
+     "w": "empty",
+     "zh": "空的"
+    },
+    {
+     "w": "dust",
+     "zh": "灰尘，尘土"
+    },
+    {
+     "w": "harmful",
+     "zh": "有害"
+    },
+    {
+     "w": "soil",
+     "zh": "土壤"
+    },
+    {
+     "w": "in place",
+     "zh": "在正确位置"
+    },
+    {
+     "w": "coal",
+     "zh": "煤"
+    },
+    {
+     "w": "oil",
+     "zh": "不油，原油；食用油"
+    },
+    {
+     "w": "gas",
+     "zh": "气体，煤气"
+    },
+    {
+     "w": "form",
+     "zh": "形成"
+    },
+    {
+     "w": "carelessly",
+     "zh": "满不在平地；粗心地"
+    },
+    {
+     "w": "reuse",
+     "zh": "再使用"
+    },
+    {
+     "w": "simple",
+     "zh": "简单"
+    },
+    {
+     "w": "step",
+     "zh": "步骤；措施"
+    },
+    {
+     "w": "power",
+     "zh": "电力；力量"
+    }
+   ]
+  }
+ ]
+}

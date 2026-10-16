@@ -1,0 +1,975 @@
+{
+ "pub": "外研",
+ "stage": "高中",
+ "grade": "选择性必修 第四册",
+ "vol": "",
+ "id": "ec94b647-8ff5-427f-a1a1-8e8bae07013f",
+ "title": "普通高中教科书·英语选择性必修 第四册",
+ "created": "2022-09-29",
+ "units": [
+  {
+   "n": "Unit 1",
+   "t": "",
+   "words": [
+    {
+     "w": "take action",
+     "zh": "采取行动"
+    },
+    {
+     "w": "boyhood",
+     "zh": "童年时期，少年时代"
+    },
+    {
+     "w": "ambition",
+     "zh": "追求，理想"
+    },
+    {
+     "w": "trainee",
+     "zh": "接受工作增训时人；实习生"
+    },
+    {
+     "w": "correspondent",
+     "zh": "通讯员，记者"
+    },
+    {
+     "w": "bullfighting",
+     "zh": "斗午"
+    },
+    {
+     "w": "historical",
+     "zh": "历史"
+    },
+    {
+     "w": "detective",
+     "zh": "私家侦探"
+    },
+    {
+     "w": "ultimately",
+     "zh": "最后，最终"
+    },
+    {
+     "w": "dot",
+     "zh": "点，小圆点"
+    },
+    {
+     "w": "backwards",
+     "zh": "往回，往前面"
+    },
+    {
+     "w": "admission",
+     "zh": "允许进入"
+    },
+    {
+     "w": "make up one's mind",
+     "zh": "做出决定，拿定主意"
+    },
+    {
+     "w": "pass up",
+     "zh": "放过，放弃，错过"
+    },
+    {
+     "w": "have second thoughts",
+     "zh": "犹像，产生怀疑"
+    },
+    {
+     "w": "put off",
+     "zh": "推迟⋯⋯，使…⋯延期"
+    },
+    {
+     "w": "reject... out of hand",
+     "zh": "坚决拒绝⋯；彻底"
+    },
+    {
+     "w": "weigh up",
+     "zh": "仔细考虑，权衡"
+    },
+    {
+     "w": "participation",
+     "zh": "参加，参与"
+    },
+    {
+     "w": "complex",
+     "zh": "复杂"
+    },
+    {
+     "w": "diverge",
+     "zh": "岔开，分开"
+    },
+    {
+     "w": "undergrowth",
+     "zh": "长在大树下或周边）下木层，下层灌木丛"
+    },
+    {
+     "w": "numerous",
+     "zh": "许多的，很多的"
+    },
+    {
+     "w": "commercial",
+     "zh": "商业广告"
+    },
+    {
+     "w": "thoughtful",
+     "zh": "认真思考的，深思"
+    },
+    {
+     "w": "symbolize",
+     "zh": "象征，代表"
+    },
+    {
+     "w": "alternative",
+     "zh": "可供选择事物"
+    },
+    {
+     "w": "dilemma",
+     "zh": "进退两难的境地，困境"
+    },
+    {
+     "w": "arise",
+     "zh": "引起"
+    },
+    {
+     "w": "circumstance",
+     "zh": "情况，情形"
+    },
+    {
+     "w": "mixture",
+     "zh": "混合；混合体"
+    },
+    {
+     "w": "affection",
+     "zh": "喜爱，钟爱"
+    },
+    {
+     "w": "qualified",
+     "zh": "合格，胜任的"
+    },
+    {
+     "w": "fluency",
+     "zh": "熟练，流利"
+    },
+    {
+     "w": "sincerely",
+     "zh": "由衷地，真诚地，真心实意地"
+    },
+    {
+     "w": "yours sincerely",
+     "zh": "谨上，敬上，谨启（用于以某人名字开头正式信件末尾）"
+    },
+    {
+     "w": "refreshments",
+     "zh": "茶点，点心和饮料"
+    },
+    {
+     "w": "shift",
+     "zh": "当班时间"
+    }
+   ]
+  },
+  {
+   "n": "Unit 2",
+   "t": "",
+   "words": [
+    {
+     "w": "be reunited with",
+     "zh": "重聚"
+    },
+    {
+     "w": "weaken",
+     "zh": "虚弱"
+    },
+    {
+     "w": "pessimistic",
+     "zh": "悲观，悲观主义"
+    },
+    {
+     "w": "anticipate",
+     "zh": "预期，预料"
+    },
+    {
+     "w": "possession",
+     "zh": "财产，财物"
+    },
+    {
+     "w": "abnormal",
+     "zh": "不正常，反常"
+    },
+    {
+     "w": "widespread",
+     "zh": "广泛流传"
+    },
+    {
+     "w": "recognition",
+     "zh": "承认，认可"
+    },
+    {
+     "w": "phrase",
+     "zh": "成语，习语；警句"
+    },
+    {
+     "w": "cooperate",
+     "zh": "合作，协作"
+    },
+    {
+     "w": "fee",
+     "zh": "工作酬金，服务费"
+    },
+    {
+     "w": "university fees",
+     "zh": "大学学费"
+    },
+    {
+     "w": "outstretched",
+     "zh": "张开的，仲开的"
+    },
+    {
+     "w": "cram",
+     "zh": "挤满"
+    },
+    {
+     "w": "pure",
+     "zh": "纯净的，清净的"
+    },
+    {
+     "w": "transparent",
+     "zh": "透明的"
+    },
+    {
+     "w": "vexed",
+     "zh": "恼火"
+    },
+    {
+     "w": "absurd",
+     "zh": "荒唐的，愚蠢的"
+    },
+    {
+     "w": "lean",
+     "zh": "倚，靠"
+    },
+    {
+     "w": "madame",
+     "zh": "夫人，太太，女士"
+    },
+    {
+     "w": "stroke",
+     "zh": "轻抚，抚摸"
+    },
+    {
+     "w": "instinctively",
+     "zh": "本能地"
+    },
+    {
+     "w": "despair",
+     "zh": "绝望"
+    },
+    {
+     "w": "luxury",
+     "zh": "奢华，奢侈"
+    }
+   ]
+  },
+  {
+   "n": "Unit 3",
+   "t": "",
+   "words": [
+    {
+     "w": "gateway",
+     "zh": "通向……的门户"
+    },
+    {
+     "w": "oasis",
+     "zh": "绿洲"
+    },
+    {
+     "w": "glorious",
+     "zh": "辉煌"
+    },
+    {
+     "w": "boast",
+     "zh": "自豪地拥有（好的事物）"
+    },
+    {
+     "w": "grotto",
+     "zh": "小洞穴"
+    },
+    {
+     "w": "testimony",
+     "zh": "证据；证明"
+    },
+    {
+     "w": "statue",
+     "zh": "雕像；塑像"
+    },
+    {
+     "w": "mural",
+     "zh": "壁画"
+    },
+    {
+     "w": "religious",
+     "zh": "宗教"
+    },
+    {
+     "w": "immortal",
+     "zh": "神"
+    },
+    {
+     "w": "heavenly",
+     "zh": "天国的"
+    },
+    {
+     "w": "peak",
+     "zh": "高峰，顶点"
+    },
+    {
+     "w": "Taoist priest",
+     "zh": "道士"
+    },
+    {
+     "w": "scroll",
+     "zh": "纸卷，卷轴"
+    },
+    {
+     "w": "ceramics",
+     "zh": "陶瓷制品"
+    },
+    {
+     "w": "crossroads",
+     "zh": "活动中心，汇集地"
+    },
+    {
+     "w": "expo",
+     "zh": "展览会，博览会"
+    },
+    {
+     "w": "strengthen",
+     "zh": "加强"
+    },
+    {
+     "w": "coverage",
+     "zh": "覆盖范围"
+    },
+    {
+     "w": "scholar",
+     "zh": "学者"
+    },
+    {
+     "w": "department",
+     "zh": "系，部"
+    },
+    {
+     "w": "institute",
+     "zh": "学院；研究院 Ching《易经》"
+    },
+    {
+     "w": "sinologist",
+     "zh": "汉学家"
+    },
+    {
+     "w": "temple",
+     "zh": "庙宇，寺院"
+    },
+    {
+     "w": "tune",
+     "zh": "曲调，旋律"
+    },
+    {
+     "w": "shepherd",
+     "zh": "牧羊人"
+    },
+    {
+     "w": "historian",
+     "zh": "历更学家"
+    },
+    {
+     "w": "prior",
+     "zh": "先前的；较早"
+    },
+    {
+     "w": "prior to",
+     "zh": "在…⋯之前，先于…⋯"
+    },
+    {
+     "w": "genius",
+     "zh": "天才，天赋"
+    },
+    {
+     "w": "chamber",
+     "zh": "房间"
+    },
+    {
+     "w": "romance",
+     "zh": "传奇故事"
+    },
+    {
+     "w": "kingdom",
+     "zh": "王国"
+    },
+    {
+     "w": "stratagem",
+     "zh": "计谋，策略"
+    },
+    {
+     "w": "enormous",
+     "zh": "巨大的，庞大"
+    }
+   ]
+  },
+  {
+   "n": "Unit 4",
+   "t": "",
+   "words": [
+    {
+     "w": "forehead",
+     "zh": "额，前额"
+    },
+    {
+     "w": "blank",
+     "zh": "无表情，不然的"
+    },
+    {
+     "w": "dizzy",
+     "zh": "头晕目眩"
+    },
+    {
+     "w": "chairwoman",
+     "zh": "女主席；女会长"
+    },
+    {
+     "w": "sunrise",
+     "zh": "日出 ；黎明；拂晓"
+    },
+    {
+     "w": "potential",
+     "zh": "潛力，可能性"
+    },
+    {
+     "w": "bug",
+     "zh": "突然昀兴趣，迷恋"
+    },
+    {
+     "w": "enterprising",
+     "zh": "有创业精神；有事业心的；有进取心的"
+    },
+    {
+     "w": "input",
+     "zh": "投入"
+    },
+    {
+     "w": "obstacle",
+     "zh": "障碍，阻碍，妨碍"
+    },
+    {
+     "w": "phase",
+     "zh": "阶段，时期"
+    },
+    {
+     "w": "manufacturer",
+     "zh": "制造商；制造公司，制造厂"
+    },
+    {
+     "w": "cosmetics",
+     "zh": "化妆品，美容品"
+    },
+    {
+     "w": "purchase",
+     "zh": "购买"
+    },
+    {
+     "w": "distribution",
+     "zh": "分销，经销"
+    },
+    {
+     "w": "bonus",
+     "zh": "奖金；红利"
+    },
+    {
+     "w": "entrepreneurial",
+     "zh": "创业的，具有创业精神的"
+    },
+    {
+     "w": "guidance",
+     "zh": "指导，引导"
+    },
+    {
+     "w": "consultant",
+     "zh": "顾问"
+    },
+    {
+     "w": "conventional",
+     "zh": "传统，常规"
+    },
+    {
+     "w": "discriminate",
+     "zh": "不公正地区别对待，歧视"
+    },
+    {
+     "w": "equator",
+     "zh": "赤道"
+    },
+    {
+     "w": "estate",
+     "zh": "庄园"
+    },
+    {
+     "w": "superior",
+     "zh": "质量上乘，优质的"
+    },
+    {
+     "w": "mild",
+     "zh": "不浓烈的，淡的"
+    },
+    {
+     "w": "calorie",
+     "zh": "卡"
+    },
+    {
+     "w": "subjective",
+     "zh": "主观的"
+    },
+    {
+     "w": "freshman",
+     "zh": "一年级学生"
+    },
+    {
+     "w": "make ends meet",
+     "zh": "使收支仅能相抵"
+    },
+    {
+     "w": "afloat",
+     "zh": "经济上周转得开；不欠债的"
+    },
+    {
+     "w": "interfere",
+     "zh": "介人；干涉"
+    },
+    {
+     "w": "interfere with",
+     "zh": "妨碍，阻止"
+    },
+    {
+     "w": "rational",
+     "zh": "合理的，基于理性昀"
+    },
+    {
+     "w": "exceed",
+     "zh": "超过，超出"
+    },
+    {
+     "w": "ngo into debt",
+     "zh": "陷入债务之甲，负债"
+    },
+    {
+     "w": "financial",
+     "zh": "财政，金融的；财务的"
+    },
+    {
+     "w": "accumulate",
+     "zh": "积累，积聚"
+    },
+    {
+     "w": "automatically",
+     "zh": "自动地"
+    },
+    {
+     "w": "toddler",
+     "zh": "学步儿童，刚学走路小孩"
+    },
+    {
+     "w": "sorrow",
+     "zh": "令人悲伤的事，不幸"
+    },
+    {
+     "w": "frustration",
+     "zh": "懊丧，懊恼，沮丧"
+    },
+    {
+     "w": "hire",
+     "zh": "租用，租借"
+    },
+    {
+     "w": "designer clothes",
+     "zh": "名牌服装"
+    },
+    {
+     "w": "rent out",
+     "zh": "出租"
+    },
+    {
+     "w": "thereby",
+     "zh": "因此，由此"
+    },
+    {
+     "w": "supervision",
+     "zh": "监督；管理"
+    },
+    {
+     "w": "expense",
+     "zh": "费用，花费"
+    },
+    {
+     "w": "at the expense of",
+     "zh": "以損害⋯⋯为代价"
+    },
+    {
+     "w": "abuse",
+     "zh": "溫用"
+    },
+    {
+     "w": "theft",
+     "zh": "偷窃，偷盗"
+    },
+    {
+     "w": "purse",
+     "zh": "钱包"
+    }
+   ]
+  },
+  {
+   "n": "Unit 5",
+   "t": "",
+   "words": [
+    {
+     "w": "civilisation",
+     "zh": "文明"
+    },
+    {
+     "w": "intrigue",
+     "zh": "激起⋯⋯昀兴趣，引起…⋯旳好奇心"
+    },
+    {
+     "w": "bury",
+     "zh": "将⋯埋在下面"
+    },
+    {
+     "w": "pyramid",
+     "zh": "金字塔"
+    },
+    {
+     "w": "astronomy",
+     "zh": "天文学"
+    },
+    {
+     "w": "canal",
+     "zh": "运河"
+    },
+    {
+     "w": "tropical",
+     "zh": "来自热带；产于热带的"
+    },
+    {
+     "w": "cyclone",
+     "zh": "气旋；旋风"
+    },
+    {
+     "w": "megadrought",
+     "zh": "超级千旱"
+    },
+    {
+     "w": "downfall",
+     "zh": "衰败"
+    },
+    {
+     "w": "ruin",
+     "zh": "残垣断壁，废墟"
+    },
+    {
+     "w": "fall into ruin",
+     "zh": "衰落，败落"
+    },
+    {
+     "w": "abandon",
+     "zh": "离弃，逃离"
+    },
+    {
+     "w": "dismiss",
+     "zh": "拒绝考虑，否定"
+    },
+    {
+     "w": "expansion",
+     "zh": "扩大；增加"
+    },
+    {
+     "w": "getaway",
+     "zh": "逃跑，逃走"
+    },
+    {
+     "w": "make a getaway",
+     "zh": "逃跑，逃走"
+    },
+    {
+     "w": "run for one's life",
+     "zh": "逃命"
+    },
+    {
+     "w": "check out",
+     "zh": "调查，检查"
+    },
+    {
+     "w": "test the waters",
+     "zh": "试水，试探"
+    },
+    {
+     "w": "steer clear of",
+     "zh": "避开⋯；从⋯处脱身"
+    },
+    {
+     "w": "retreat",
+     "zh": "后退；离开；退避"
+    },
+    {
+     "w": "subdue",
+     "zh": "克制，抑制"
+    },
+    {
+     "w": "the unknown",
+     "zh": "不为人知地方，人类尚未到达的地方"
+    },
+    {
+     "w": "set out",
+     "zh": "动身踏上 旅途"
+    },
+    {
+     "w": "uncharted",
+     "zh": "地图上没有标明的"
+    },
+    {
+     "w": "delve",
+     "zh": "探索，探究"
+    },
+    {
+     "w": "throw oneself into",
+     "zh": "积极投入到⋯⋯中去"
+    },
+    {
+     "w": "think twice",
+     "zh": "再三考虑，慎重考虑"
+    },
+    {
+     "w": "shrink",
+     "zh": "退缩，畏缩"
+    },
+    {
+     "w": "shrink from",
+     "zh": "避免做，不愿做"
+    },
+    {
+     "w": "look into",
+     "zh": "调查"
+    },
+    {
+     "w": "investigation",
+     "zh": "调查"
+    },
+    {
+     "w": "shipwreck",
+     "zh": "失事的船；沉船"
+    },
+    {
+     "w": "archaeological",
+     "zh": "考古学；考古的"
+    },
+    {
+     "w": "coral",
+     "zh": "珊瑚"
+    },
+    {
+     "w": "millimetre",
+     "zh": "毫米"
+    },
+    {
+     "w": "barreleye",
+     "zh": "管眼鱼"
+    },
+    {
+     "w": "upwards",
+     "zh": "向上，朝上"
+    },
+    {
+     "w": "trench",
+     "zh": "海沟"
+    },
+    {
+     "w": "equivalent",
+     "zh": "等同的；等值；相当时"
+    },
+    {
+     "w": "stack",
+     "zh": "整齐地堆起；摞起"
+    },
+    {
+     "w": "furthermore",
+     "zh": "此外；而且；不仅如此"
+    },
+    {
+     "w": "notable",
+     "zh": "显要的；显者的"
+    },
+    {
+     "w": "substance",
+     "zh": "物质"
+    },
+    {
+     "w": "vessel",
+     "zh": "船；舰"
+    },
+    {
+     "w": "drilling",
+     "zh": "钻探；勘探"
+    },
+    {
+     "w": "volt",
+     "zh": "卷，册"
+    }
+   ]
+  },
+  {
+   "n": "Unit 6",
+   "t": "",
+   "words": [
+    {
+     "w": "become accustomed to",
+     "zh": "习惯于 某事"
+    },
+    {
+     "w": "notion",
+     "zh": "概念；观点；看法"
+    },
+    {
+     "w": "hazardous",
+     "zh": "危险的，不安全"
+    },
+    {
+     "w": "unexceptional",
+     "zh": "平常"
+    },
+    {
+     "w": "shuttle",
+     "zh": "航天飞机"
+    },
+    {
+     "w": "the space shuttle",
+     "zh": "航天飞机"
+    },
+    {
+     "w": "excursion",
+     "zh": "短途出行"
+    },
+    {
+     "w": "rekindle",
+     "zh": "重新激起，重新唤起"
+    },
+    {
+     "w": "tragically",
+     "zh": "悲慘地，不幸地"
+    },
+    {
+     "w": "instantaneously",
+     "zh": "瞬间地"
+    },
+    {
+     "w": "shadow",
+     "zh": "坏影响，阴影"
+    },
+    {
+     "w": "cast a shadow on",
+     "zh": "给⋯⋯蒙上阴影"
+    },
+    {
+     "w": "scream",
+     "zh": "尖声大叫"
+    },
+    {
+     "w": "suspend",
+     "zh": "暂停，中止"
+    },
+    {
+     "w": "crew",
+     "zh": "全体机组人员"
+    },
+    {
+     "w": "simulated",
+     "zh": "模仿，模拟，仿真的"
+    },
+    {
+     "w": "simulator",
+     "zh": "模拟装置，模拟器"
+    },
+    {
+     "w": "lifelike",
+     "zh": "生动的，逼真的"
+    },
+    {
+     "w": "submit",
+     "zh": "提交"
+    },
+    {
+     "w": "awesome",
+     "zh": "很好的，了不起的"
+    },
+    {
+     "w": "telescope",
+     "zh": "望远镜"
+    },
+    {
+     "w": "the naked eye",
+     "zh": "肉眼"
+    },
+    {
+     "w": "angle",
+     "zh": "斜置"
+    },
+    {
+     "w": "galaxy",
+     "zh": "星系"
+    },
+    {
+     "w": "cosmic",
+     "zh": "宇宙"
+    },
+    {
+     "w": "conceivably",
+     "zh": "可以相信地；可想象地"
+    },
+    {
+     "w": "subatomic",
+     "zh": "亚原子的；原子内时"
+    },
+    {
+     "w": "particle",
+     "zh": "粒子"
+    },
+    {
+     "w": "invisible",
+     "zh": "看不见的"
+    },
+    {
+     "w": "straightforward",
+     "zh": "简单的"
+    },
+    {
+     "w": "self-discipline",
+     "zh": "自我约束，自律"
+    },
+    {
+     "w": "fetch",
+     "zh": "拿来"
+    },
+    {
+     "w": "muscle",
+     "zh": "肌肉"
+    },
+    {
+     "w": "pepper",
+     "zh": "胡椒粉"
+    },
+    {
+     "w": "sneeze",
+     "zh": "打喷嚏"
+    },
+    {
+     "w": "disc",
+     "zh": "激光唱片；光碟，光盘"
+    }
+   ]
+  }
+ ]
+}

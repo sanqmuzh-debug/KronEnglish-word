@@ -1,0 +1,659 @@
+{
+ "pub": "译林",
+ "stage": "小学",
+ "grade": "五年级",
+ "vol": "下册",
+ "id": "d3324da8-fe96-4a0d-9259-e60794e27491",
+ "title": "义务教育教科书·英语（三年级起点）五年级下册",
+ "created": "2022-09-29",
+ "units": [
+  {
+   "n": "Unit 1",
+   "t": "",
+   "words": [
+    {
+     "w": "prince",
+     "zh": "王子"
+    },
+    {
+     "w": "fairy",
+     "zh": "仙女"
+    },
+    {
+     "w": "why",
+     "zh": "为什么"
+    },
+    {
+     "w": "because",
+     "zh": "因为"
+    },
+    {
+     "w": "clothes",
+     "zh": "衣服"
+    },
+    {
+     "w": "let",
+     "zh": "让"
+    },
+    {
+     "w": "put on",
+     "zh": "穿上"
+    },
+    {
+     "w": "before",
+     "zh": "在•・•⋯•以前"
+    },
+    {
+     "w": "have to",
+     "zh": "不得不，必须"
+    },
+    {
+     "w": "try on",
+     "zh": "试芽"
+    },
+    {
+     "w": "fit",
+     "zh": "合适，合身"
+    },
+    {
+     "w": "take off",
+     "zh": "脱下蘑菇"
+    },
+    {
+     "w": "mushroom",
+     "zh": "蘑菇 / 蕈类"
+    },
+    {
+     "w": "late",
+     "zh": "迟，晚"
+    },
+    {
+     "w": "pick",
+     "zh": "摘，拾明白，理解"
+    },
+    {
+     "w": "understand",
+     "zh": "理解"
+    },
+    {
+     "w": "be bad for",
+     "zh": "有害"
+    },
+    {
+     "w": "leave... behind",
+     "zh": "留下，丢下"
+    }
+   ]
+  },
+  {
+   "n": "Unit 2",
+   "t": "",
+   "words": [
+    {
+     "w": "far from",
+     "zh": "离・・⋯远"
+    },
+    {
+     "w": "moon",
+     "zh": "月亮"
+    },
+    {
+     "w": "street",
+     "zh": "街，街道"
+    },
+    {
+     "w": "near",
+     "zh": "在⋯⋯附近"
+    },
+    {
+     "w": "city",
+     "zh": "城市（I）"
+    },
+    {
+     "w": "by",
+     "zh": "乘"
+    },
+    {
+     "w": "bus",
+     "zh": "公共汽车，巴"
+    },
+    {
+     "w": "on foot",
+     "zh": "步行"
+    },
+    {
+     "w": "metro",
+     "zh": "地铁"
+    },
+    {
+     "w": "taxi",
+     "zh": "出租车，士"
+    },
+    {
+     "w": "bike",
+     "zh": "自行车"
+    },
+    {
+     "w": "plane",
+     "zh": "飞机"
+    },
+    {
+     "w": "ship",
+     "zh": "轮船"
+    },
+    {
+     "w": "train",
+     "zh": "火车"
+    },
+    {
+     "w": "ride",
+     "zh": "骑车"
+    },
+    {
+     "w": "show",
+     "zh": "给⋯⋯看"
+    },
+    {
+     "w": "young",
+     "zh": "年幼的"
+    },
+    {
+     "w": "basket",
+     "zh": "篮子"
+    }
+   ]
+  },
+  {
+   "n": "Unit 3",
+   "t": "",
+   "words": [
+    {
+     "w": "ask the way",
+     "zh": "阿路"
+    },
+    {
+     "w": "get to",
+     "zh": "到达"
+    },
+    {
+     "w": "take",
+     "zh": "搭乘"
+    },
+    {
+     "w": "get on",
+     "zh": "上车"
+    },
+    {
+     "w": "station",
+     "zh": "车站"
+    },
+    {
+     "w": "get off",
+     "zh": "下车"
+    },
+    {
+     "w": "walk",
+     "zh": "走，步行"
+    },
+    {
+     "w": "bookshop",
+     "zh": "书店"
+    },
+    {
+     "w": "next to",
+     "zh": "在•・•⋯芳边"
+    },
+    {
+     "w": "sun",
+     "zh": "太阳"
+    },
+    {
+     "w": "ask... for help",
+     "zh": "向⋯•⋯求助"
+    },
+    {
+     "w": "excuse me",
+     "zh": "劳驾；对不起"
+    },
+    {
+     "w": "along",
+     "zh": "沿看，顺看"
+    },
+    {
+     "w": "turn right",
+     "zh": "向右转"
+    },
+    {
+     "w": "traffic light",
+     "zh": "交通灯"
+    },
+    {
+     "w": "on your right",
+     "zh": "在你的右侧"
+    },
+    {
+     "w": "cinema",
+     "zh": "电影院"
+    },
+    {
+     "w": "hospital",
+     "zh": "医院"
+    },
+    {
+     "w": "shop",
+     "zh": "商店"
+    },
+    {
+     "w": "ZOO",
+     "zh": "动物园"
+    },
+    {
+     "w": "turn left",
+     "zh": "向左转"
+    },
+    {
+     "w": "supermarket",
+     "zh": "超市"
+    },
+    {
+     "w": "film",
+     "zh": "电影"
+    },
+    {
+     "w": "stop",
+     "zh": "车站"
+    },
+    {
+     "w": "full",
+     "zh": "满的；饱的"
+    },
+    {
+     "w": "over",
+     "zh": "结束了，完了"
+    }
+   ]
+  },
+  {
+   "n": "Unit 4",
+   "t": "",
+   "words": [
+    {
+     "w": "see the doctor",
+     "zh": "看医生，看病"
+    },
+    {
+     "w": "feel",
+     "zh": "感觉，感到"
+    },
+    {
+     "w": "check",
+     "zh": "检査"
+    },
+    {
+     "w": "should",
+     "zh": "应该"
+    },
+    {
+     "w": "have a rest",
+     "zh": "休息"
+    },
+    {
+     "w": "take medicine",
+     "zh": "吃约"
+    },
+    {
+     "w": "drink water",
+     "zh": "喝水"
+    },
+    {
+     "w": "toothache",
+     "zh": "牙将"
+    },
+    {
+     "w": "dentist",
+     "zh": "牙医"
+    },
+    {
+     "w": "anything",
+     "zh": "任何东西"
+    },
+    {
+     "w": "brush one's teeth",
+     "zh": "刷牙就寝时间"
+    },
+    {
+     "w": "bedtime",
+     "zh": ""
+    },
+    {
+     "w": "giraffe",
+     "zh": "长颈鹿"
+    },
+    {
+     "w": "point at",
+     "zh": "指看，指向"
+    },
+    {
+     "w": "neck",
+     "zh": "脖子"
+    }
+   ]
+  },
+  {
+   "n": "Unit 5",
+   "t": "",
+   "words": [
+    {
+     "w": "parent",
+     "zh": "父或母"
+    },
+    {
+     "w": "clean",
+     "zh": "擦，洗"
+    },
+    {
+     "w": "cook",
+     "zh": "烧，煮"
+    },
+    {
+     "w": "sweep the floor",
+     "zh": "扫地"
+    },
+    {
+     "w": "busy",
+     "zh": "忙，忙碌"
+    },
+    {
+     "w": "wash the dishes",
+     "zh": "洗碗"
+    },
+    {
+     "w": "make the bed",
+     "zh": "整理床铺"
+    },
+    {
+     "w": "grow",
+     "zh": "种植"
+    },
+    {
+     "w": "garden",
+     "zh": "花园，果园"
+    },
+    {
+     "w": "sweet",
+     "zh": "甜"
+    },
+    {
+     "w": "pest",
+     "zh": "害虫"
+    },
+    {
+     "w": "ladybird",
+     "zh": "瓢虫"
+    },
+    {
+     "w": "go away",
+     "zh": "走了，离开"
+    }
+   ]
+  },
+  {
+   "n": "Unit 6",
+   "t": "",
+   "words": [
+    {
+     "w": "game",
+     "zh": "运动，比赛"
+    },
+    {
+     "w": "smell",
+     "zh": "有…⋯气味，闻起来"
+    },
+    {
+     "w": "meat",
+     "zh": "肉"
+    },
+    {
+     "w": "vegetable",
+     "zh": "蔬菜西红柿，番茄"
+    },
+    {
+     "w": "tomato",
+     "zh": "西红柿 / 番茄"
+    },
+    {
+     "w": "potato",
+     "zh": "马铃薯，土豆"
+    },
+    {
+     "w": "I can't wait",
+     "zh": "我等不及了！"
+    },
+    {
+     "w": "look for",
+     "zh": "找，寻找"
+    },
+    {
+     "w": "ready",
+     "zh": "准备好美味"
+    },
+    {
+     "w": "yummy",
+     "zh": "好吃"
+    },
+    {
+     "w": "love",
+     "zh": "喜欢，喜爱"
+    },
+    {
+     "w": "bread",
+     "zh": "面包"
+    },
+    {
+     "w": "win",
+     "zh": "获胜，赢太好了，太棒了"
+    },
+    {
+     "w": "yeah",
+     "zh": "是的"
+    },
+    {
+     "w": "angry",
+     "zh": "生气的，愤怒的"
+    },
+    {
+     "w": "spot",
+     "zh": "斑，点"
+    },
+    {
+     "w": "catch",
+     "zh": "抓，抓住"
+    },
+    {
+     "w": "drive... away",
+     "zh": "赶走"
+    }
+   ]
+  },
+  {
+   "n": "Unit 7",
+   "t": "",
+   "words": [
+    {
+     "w": "festival",
+     "zh": "节日"
+    },
+    {
+     "w": "spring Festival",
+     "zh": "春节"
+    },
+    {
+     "w": "january",
+     "zh": "一月"
+    },
+    {
+     "w": "february",
+     "zh": "二月"
+    },
+    {
+     "w": "call",
+     "zh": "叫作，称作"
+    },
+    {
+     "w": "chinese New Year",
+     "zh": "中国农历新年"
+    },
+    {
+     "w": "get together",
+     "zh": "团聚"
+    },
+    {
+     "w": "jiaozi",
+     "zh": "饺子"
+    },
+    {
+     "w": "dragon Boat Festival",
+     "zh": "端午节"
+    },
+    {
+     "w": "may",
+     "zh": "五月"
+    },
+    {
+     "w": "june",
+     "zh": "六月"
+    },
+    {
+     "w": "aragon boat race",
+     "zh": "赛龙舟"
+    },
+    {
+     "w": "place",
+     "zh": "地方，地点"
+    },
+    {
+     "w": "rice dumpling",
+     "zh": "粽子"
+    },
+    {
+     "w": "mid-autumn Festival",
+     "zh": "中秋节"
+    },
+    {
+     "w": "september",
+     "zh": "九月"
+    },
+    {
+     "w": "october",
+     "zh": "十月"
+    },
+    {
+     "w": "moon cake",
+     "zh": "月饼"
+    },
+    {
+     "w": "double Ninth Festival",
+     "zh": "重阳节（Chongyang Festival）"
+    },
+    {
+     "w": "november",
+     "zh": "十一月"
+    },
+    {
+     "w": "old",
+     "zh": "老的，年纪大"
+    },
+    {
+     "w": "mountain",
+     "zh": "山，山脉"
+    },
+    {
+     "w": "rice cake",
+     "zh": "重阳糕"
+    },
+    {
+     "w": "Mother's Day",
+     "zh": "母亲节"
+    },
+    {
+     "w": "Father's Day",
+     "zh": "父亲节"
+    },
+    {
+     "w": "favourite",
+     "zh": "最喜欢"
+    }
+   ]
+  },
+  {
+   "n": "Unit 8",
+   "t": "",
+   "words": [
+    {
+     "w": "birthday",
+     "zh": "生日"
+    },
+    {
+     "w": "eleventh",
+     "zh": "第十一"
+    },
+    {
+     "w": "eighth",
+     "zh": "第八"
+    },
+    {
+     "w": "april",
+     "zh": "四月"
+    },
+    {
+     "w": "together",
+     "zh": "一起"
+    },
+    {
+     "w": "march",
+     "zh": "三月"
+    },
+    {
+     "w": "july",
+     "zh": "七月"
+    },
+    {
+     "w": "august",
+     "zh": "八月"
+    },
+    {
+     "w": "december",
+     "zh": "十二月"
+    },
+    {
+     "w": "hero",
+     "zh": "英雄"
+    },
+    {
+     "w": "play",
+     "zh": "戏，戏剧"
+    },
+    {
+     "w": "password",
+     "zh": "密码"
+    },
+    {
+     "w": "answer",
+     "zh": "答案"
+    },
+    {
+     "w": "fourth",
+     "zh": "第四"
+    },
+    {
+     "w": "start",
+     "zh": "开始"
+    },
+    {
+     "w": "fight",
+     "zh": "打仗，打架"
+    }
+   ]
+  }
+ ]
+}
