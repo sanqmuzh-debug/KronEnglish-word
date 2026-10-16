@@ -1,122 +1,116 @@
 [
-{
-"w": "u.k.",
-"syl": "u·k",
-"zh": "英国",
-"lvl": "exam"
-},
-{
-"w": "u.n.",
-"syl": "u·n",
-"zh": "联合国（缩写）",
-"lvl": "exam"
-},
-{
-"w": "u.s.a.",
-"syl": "u·s·a",
-"zh": "美国（美利坚合众国）",
-"lvl": "exam"
-},
-{
-"w": "undivided",
-"syl": "un·di·vi·ded",
-"zh": "a. 没分开的",
-"lvl": "exam"
-},
-{
-"w": "unfit",
-"syl": "un·fit",
-"zh": "a. 不合宜的",
-"lvl": "exam"
-},
-{
-"w": "unmarried",
-"syl": "un·mar·ried",
-"zh": "a. 未婚的",
-"lvl": "exam"
-},
-{
-"w": "unsafe",
-"syl": "un·safe",
-"zh": "a. 不安全的",
-"lvl": "exam"
-},
-{
-"w": "unsuccessful",
-"syl": "un·suc·cess·ful",
-"zh": "a. 不成功",
-"lvl": "exam"
-},
-{
-"w": "waiting-room",
-"syl": "wait·ing·room",
-"zh": "候诊室,候车室",
-"lvl": "exam"
-},
-{
-"w": "walkman",
-"syl": "walk·man",
-"zh": "随身听",
-"lvl": "exam"
-},
-{
-"w": "warm-hearted",
-"syl": "warm·hear·ted",
-"zh": "a. 热心的",
-"lvl": "exam"
-},
-{
-"w": "washing-machine",
-"syl": "wash·ing·ma·chine",
-"zh": "洗衣机【连字符】",
-"lvl": "exam"
-},
-{
-"w": "wayside",
-"syl": "way·side",
-"zh": "a. 路边的",
-"lvl": "exam"
-},
-{
-"w": "weatherman",
-"syl": "weath·er·man",
-"zh": "气象员",
-"lvl": "exam"
-},
-{
-"w": "westerner",
-"syl": "wes·ter·ner",
-"zh": "西方人",
-"lvl": "exam"
-},
-{
-"w": "westwards",
-"syl": "wes·twards",
-"zh": "ad. 向西",
-"lvl": "exam"
-},
-{
-"w": "willingly",
-"syl": "wil·ling·ly",
-"zh": "ad. 乐意地",
-"lvl": "exam"
-},
-{
-"w": "willingness",
-"syl": "wil·lin·gness",
-"zh": "意愿",
-"lvl": "exam"
-},
-{
-"w": "windbreaker",
-"syl": "wind·brea·ker",
-"zh": "风衣",
-"lvl": "exam"
-},
-{
-"w": "workmate",
-"syl": "work·mate",
-"zh": "同事",
-"lvl": "exam"
-}
+ {
+  "w": "u.k.",
+  "syl": "u·k",
+  "zh": "英国",
+  "lvl": "exam"
+ },
+ {
+  "w": "u.n.",
+  "syl": "u·n",
+  "zh": "联合国（缩写）",
+  "lvl": "exam"
+ },
+ {
+  "w": "u.s.a.",
+  "syl": "u·s·a",
+  "zh": "美国（美利坚合众国）",
+  "lvl": "exam"
+ },
+ {
+  "w": "undivided",
+  "syl": "un·di·vi·ded",
+  "zh": "a. 没分开的",
+  "lvl": "exam"
+ },
+ {
+  "w": "unfit",
+  "syl": "un·fit",
+  "zh": "a. 不合宜的",
+  "lvl": "exam"
+ },
+ {
+  "w": "unmarried",
+  "syl": "un·mar·ried",
+  "zh": "a. 未婚的",
+  "lvl": "exam"
+ },
+ {
+  "w": "unsafe",
+  "syl": "un·safe",
+  "zh": "a. 不安全的",
+  "lvl": "exam"
+ },
+ {
+  "w": "unsuccessful",
+  "syl": "un·suc·cess·ful",
+  "zh": "a. 不成功",
+  "lvl": "exam"
+ },
+ {
+  "w": "waiting-room",
+  "syl": "wait·ing·room",
+  "zh": "候诊室,候车室",
+  "lvl": "exam"
+ },
+ {
+  "w": "walkman",
+  "syl": "walk·man",
+  "zh": "随身听",
+  "lvl": "exam"
+ },
+ {
+  "w": "warm-hearted",
+  "syl": "warm·hear·ted",
+  "zh": "a. 热心的",
+  "lvl": "exam"
+ },
+ {
+  "w": "wayside",
+  "syl": "way·side",
+  "zh": "a. 路边的",
+  "lvl": "exam"
+ },
+ {
+  "w": "weatherman",
+  "syl": "weath·er·man",
+  "zh": "气象员",
+  "lvl": "exam"
+ },
+ {
+  "w": "westerner",
+  "syl": "wes·ter·ner",
+  "zh": "西方人",
+  "lvl": "exam"
+ },
+ {
+  "w": "westwards",
+  "syl": "wes·twards",
+  "zh": "ad. 向西",
+  "lvl": "exam"
+ },
+ {
+  "w": "willingly",
+  "syl": "wil·ling·ly",
+  "zh": "ad. 乐意地",
+  "lvl": "exam"
+ },
+ {
+  "w": "willingness",
+  "syl": "wil·lin·gness",
+  "zh": "意愿",
+  "lvl": "exam"
+ },
+ {
+  "w": "windbreaker",
+  "syl": "wind·brea·ker",
+  "zh": "风衣",
+  "lvl": "exam"
+ },
+ {
+  "w": "workmate",
+  "syl": "work·mate",
+  "zh": "同事",
+  "lvl": "exam"
+ }
 ]

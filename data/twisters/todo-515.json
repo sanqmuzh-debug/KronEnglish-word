@@ -1,122 +1,116 @@
 [
-{
-"w": "men",
-"syl": "men",
-"zh": "（man的复数形式）男人",
-"lvl": "exam"
-},
-{
-"w": "met",
-"syl": "met",
-"zh": "(meet的过去式）碰上",
-"lvl": "exam"
-},
-{
-"w": "mic",
-"syl": "mic",
-"zh": "扩音器，麦克风",
-"lvl": "exam"
-},
-{
-"w": "nag",
-"syl": "nag",
-"zh": "唠叨",
-"lvl": "exam"
-},
-{
-"w": "nba",
-"syl": "nba",
-"zh": "全美篮球协会(National Basketball Association)",
-"lvl": "exam"
-},
-{
-"w": "no.",
-"syl": "no",
-"zh": "（number的缩写）第......号",
-"lvl": "exam"
-},
-{
-"w": "ooh",
-"syl": "ooh",
-"zh": "嗬",
-"lvl": "exam"
-},
-{
-"w": "pam",
-"syl": "pam",
-"zh": "帕姆（女名）",
-"lvl": "exam"
-},
-{
-"w": "pda",
-"syl": "pda",
-"zh": "(personal digital assistant)掌上电脑",
-"lvl": "exam"
-},
-{
-"w": "ply",
-"syl": "ply",
-"zh": "厚度",
-"lvl": "exam"
-},
-{
-"w": "pry",
-"syl": "pry",
-"zh": "探查",
-"lvl": "exam"
-},
-{
-"w": "ran",
-"syl": "ran",
-"zh": "（run的过去式）跑",
-"lvl": "exam"
-},
-{
-"w": "ssh",
-"syl": "ssh",
-"zh": "嘘（示意某人不要说话）",
-"lvl": "exam"
-},
-{
-"w": "tim",
-"syl": "tim",
-"zh": "蒂姆（男名）",
-"lvl": "exam"
-},
-{
-"w": "tut",
-"syl": "tut",
-"zh": "啧啧（表示不赞同）",
-"lvl": "exam"
-},
-{
-"w": "was",
-"syl": "was",
-"zh": "（am",
-"lvl": "exam"
-},
-{
-"w": "won",
-"syl": "won",
-"zh": "（win的过去式）赢",
-"lvl": "exam"
-},
-{
-"w": "wwf",
-"syl": "wwf",
-"zh": "世界自然基金会(World Wide Fund For Nature)",
-"lvl": "exam"
-},
-{
-"w": "yak",
-"syl": "yak",
-"zh": "牦牛",
-"lvl": "exam"
-},
-{
-"w": "zap",
-"syl": "zap",
-"zh": "毁坏",
-"lvl": "exam"
-}
+ {
+  "w": "men",
+  "syl": "men",
+  "zh": "（man的复数形式）男人",
+  "lvl": "exam"
+ },
+ {
+  "w": "met",
+  "syl": "met",
+  "zh": "(meet的过去式）碰上",
+  "lvl": "exam"
+ },
+ {
+  "w": "mic",
+  "syl": "mic",
+  "zh": "扩音器，麦克风",
+  "lvl": "exam"
+ },
+ {
+  "w": "nag",
+  "syl": "nag",
+  "zh": "唠叨",
+  "lvl": "exam"
+ },
+ {
+  "w": "nba",
+  "syl": "nba",
+  "zh": "全美篮球协会(National Basketball Association)",
+  "lvl": "exam"
+ },
+ {
+  "w": "ooh",
+  "syl": "ooh",
+  "zh": "嗬",
+  "lvl": "exam"
+ },
+ {
+  "w": "pam",
+  "syl": "pam",
+  "zh": "帕姆（女名）",
+  "lvl": "exam"
+ },
+ {
+  "w": "pda",
+  "syl": "pda",
+  "zh": "(personal digital assistant)掌上电脑",
+  "lvl": "exam"
+ },
+ {
+  "w": "ply",
+  "syl": "ply",
+  "zh": "厚度",
+  "lvl": "exam"
+ },
+ {
+  "w": "pry",
+  "syl": "pry",
+  "zh": "探查",
+  "lvl": "exam"
+ },
+ {
+  "w": "ran",
+  "syl": "ran",
+  "zh": "（run的过去式）跑",
+  "lvl": "exam"
+ },
+ {
+  "w": "ssh",
+  "syl": "ssh",
+  "zh": "嘘（示意某人不要说话）",
+  "lvl": "exam"
+ },
+ {
+  "w": "tim",
+  "syl": "tim",
+  "zh": "蒂姆（男名）",
+  "lvl": "exam"
+ },
+ {
+  "w": "tut",
+  "syl": "tut",
+  "zh": "啧啧（表示不赞同）",
+  "lvl": "exam"
+ },
+ {
+  "w": "was",
+  "syl": "was",
+  "zh": "（am",
+  "lvl": "exam"
+ },
+ {
+  "w": "won",
+  "syl": "won",
+  "zh": "（win的过去式）赢",
+  "lvl": "exam"
+ },
+ {
+  "w": "wwf",
+  "syl": "wwf",
+  "zh": "世界自然基金会(World Wide Fund For Nature)",
+  "lvl": "exam"
+ },
+ {
+  "w": "yak",
+  "syl": "yak",
+  "zh": "牦牛",
+  "lvl": "exam"
+ },
+ {
+  "w": "zap",
+  "syl": "zap",
+  "zh": "毁坏",
+  "lvl": "exam"
+ }
 ]

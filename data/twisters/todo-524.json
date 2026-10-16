@@ -1,122 +1,110 @@
 [
-{
-"w": "texas",
-"syl": "tex·as",
-"zh": "德克萨斯州（美国州名）",
-"lvl": "exam"
-},
-{
-"w": "timor",
-"syl": "ti·mor",
-"zh": "帝汶岛（位于东南亚）",
-"lvl": "exam"
-},
-{
-"w": "torso",
-"syl": "tor·so",
-"zh": "（人体的）躯干",
-"lvl": "exam"
-},
-{
-"w": "tryon",
-"syl": "try·on",
-"zh": "试穿（衣物）",
-"lvl": "exam"
-},
-{
-"w": "tulip",
-"syl": "tu·lip",
-"zh": "郁金香",
-"lvl": "exam"
-},
-{
-"w": "tweet",
-"syl": "tweet",
-"zh": "鸟(啾啾的声音)",
-"lvl": "exam"
-},
-{
-"w": "uluru",
-"syl": "uluru",
-"zh": "乌卢鲁",
-"lvl": "exam"
-},
-{
-"w": "viper",
-"syl": "vi·per",
-"zh": "毒蛇",
-"lvl": "exam"
-},
-{
-"w": "volvo",
-"syl": "vol·vo",
-"zh": "沃尔沃（汽车品牌",
-"lvl": "exam"
-},
-{
-"w": "wares",
-"syl": "wares",
-"zh": "[贸易] 商品",
-"lvl": "exam"
-},
-{
-"w": "wayle",
-"syl": "wayle",
-"zh": "威尔",
-"lvl": "exam"
-},
-{
-"w": "we'll",
-"syl": "well",
-"zh": "我们将……（=we will）",
-"lvl": "exam"
-},
-{
-"w": "wear.",
-"syl": "wear",
-"zh": "穿",
-"lvl": "exam"
-},
-{
-"w": "well.",
-"syl": "well",
-"zh": "好",
-"lvl": "exam"
-},
-{
-"w": "wetca",
-"syl": "wet·ca",
-"zh": "网络摄像头",
-"lvl": "exam"
-},
-{
-"w": "whine",
-"syl": "whine",
-"zh": "抱怨",
-"lvl": "exam"
-},
-{
-"w": "winch",
-"syl": "winch",
-"zh": "绞车",
-"lvl": "exam"
-},
-{
-"w": "women",
-"syl": "wom·en",
-"zh": "（woman的复数形式）女性",
-"lvl": "exam"
-},
-{
-"w": "abseil",
-"syl": "ab·seil",
-"zh": "（登山运动员）绕绳下降",
-"lvl": "exam"
-},
-{
-"w": "acidic",
-"syl": "a·cid·ic",
-"zh": "酸的，酸性的",
-"lvl": "exam"
-}
+ {
+  "w": "texas",
+  "syl": "tex·as",
+  "zh": "德克萨斯州（美国州名）",
+  "lvl": "exam"
+ },
+ {
+  "w": "timor",
+  "syl": "ti·mor",
+  "zh": "帝汶岛（位于东南亚）",
+  "lvl": "exam"
+ },
+ {
+  "w": "torso",
+  "syl": "tor·so",
+  "zh": "（人体的）躯干",
+  "lvl": "exam"
+ },
+ {
+  "w": "tryon",
+  "syl": "try·on",
+  "zh": "试穿（衣物）",
+  "lvl": "exam"
+ },
+ {
+  "w": "tulip",
+  "syl": "tu·lip",
+  "zh": "郁金香",
+  "lvl": "exam"
+ },
+ {
+  "w": "tweet",
+  "syl": "tweet",
+  "zh": "鸟(啾啾的声音)",
+  "lvl": "exam"
+ },
+ {
+  "w": "uluru",
+  "syl": "uluru",
+  "zh": "乌卢鲁",
+  "lvl": "exam"
+ },
+ {
+  "w": "viper",
+  "syl": "vi·per",
+  "zh": "毒蛇",
+  "lvl": "exam"
+ },
+ {
+  "w": "volvo",
+  "syl": "vol·vo",
+  "zh": "沃尔沃（汽车品牌",
+  "lvl": "exam"
+ },
+ {
+  "w": "wares",
+  "syl": "wares",
+  "zh": "[贸易] 商品",
+  "lvl": "exam"
+ },
+ {
+  "w": "wayle",
+  "syl": "wayle",
+  "zh": "威尔",
+  "lvl": "exam"
+ },
+ {
+  "w": "we'll",
+  "syl": "well",
+  "zh": "我们将……（=we will）",
+  "lvl": "exam"
+ },
+ {
+  "w": "wetca",
+  "syl": "wet·ca",
+  "zh": "网络摄像头",
+  "lvl": "exam"
+ },
+ {
+  "w": "whine",
+  "syl": "whine",
+  "zh": "抱怨",
+  "lvl": "exam"
+ },
+ {
+  "w": "winch",
+  "syl": "winch",
+  "zh": "绞车",
+  "lvl": "exam"
+ },
+ {
+  "w": "women",
+  "syl": "wom·en",
+  "zh": "（woman的复数形式）女性",
+  "lvl": "exam"
+ },
+ {
+  "w": "abseil",
+  "syl": "ab·seil",
+  "zh": "（登山运动员）绕绳下降",
+  "lvl": "exam"
+ },
+ {
+  "w": "acidic",
+  "syl": "a·cid·ic",
+  "zh": "酸的，酸性的",
+  "lvl": "exam"
+ }
 ]

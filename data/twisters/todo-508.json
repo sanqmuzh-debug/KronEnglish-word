@@ -1,122 +1,116 @@
 [
-{
-"w": "pencil-sharpener",
-"syl": "pen·cil·shar·pe·ner",
-"zh": "转笔刀【连字符】",
-"lvl": "exam"
-},
-{
-"w": "phone-booth",
-"syl": "phone·booth",
-"zh": "公用电话间【连字符】",
-"lvl": "exam"
-},
-{
-"w": "playroom",
-"syl": "play·room",
-"zh": "游戏室",
-"lvl": "exam"
-},
-{
-"w": "postbox",
-"syl": "post·box",
-"zh": "邮箱",
-"lvl": "exam"
-},
-{
-"w": "postcode",
-"syl": "post·code",
-"zh": "（英）邮政编码",
-"lvl": "exam"
-},
-{
-"w": "printing",
-"syl": "print·ing",
-"zh": "印刷，印刷术",
-"lvl": "exam"
-},
-{
-"w": "publicly",
-"syl": "pub·li·cly",
-"zh": "ad. 当众",
-"lvl": "exam"
-},
-{
-"w": "regards",
-"syl": "re·gards",
-"zh": "问候，致意",
-"lvl": "exam"
-},
-{
-"w": "repairs",
-"syl": "re·pairs",
-"zh": "修理工作",
-"lvl": "exam"
-},
-{
-"w": "right-handed",
-"syl": "right·han·ded",
-"zh": "a. 惯用右手的【连字符】",
-"lvl": "exam"
-},
-{
-"w": "right-wing",
-"syl": "right·wing",
-"zh": "右翼【连字符】",
-"lvl": "exam"
-},
-{
-"w": "ring-road",
-"syl": "ring·road",
-"zh": "环形公路【连字符】",
-"lvl": "exam"
-},
-{
-"w": "school-leaver",
-"syl": "school·lea·ver",
-"zh": "(英)学校毕业生【连字符】",
-"lvl": "exam"
-},
-{
-"w": "scores",
-"syl": "scores",
-"zh": "许多，很多",
-"lvl": "exam"
-},
-{
-"w": "seashell",
-"syl": "sea·shell",
-"zh": "海贝",
-"lvl": "exam"
-},
-{
-"w": "see-saw",
-"syl": "see·saw",
-"zh": "跷跷板（游戏）【连字符】",
-"lvl": "exam"
-},
-{
-"w": "self-service",
-"syl": "self·ser·vice",
-"zh": "自助,自我服务的",
-"lvl": "exam"
-},
-{
-"w": "service-charge",
-"syl": "ser·vice·charge",
-"zh": "服务费",
-"lvl": "exam"
-},
-{
-"w": "shaver",
-"syl": "sha·ver",
-"zh": "电动剃须刀",
-"lvl": "exam"
-},
-{
-"w": "shooting",
-"syl": "shoot·ing",
-"zh": "射击",
-"lvl": "exam"
-}
+ {
+  "w": "pencil-sharpener",
+  "syl": "pen·cil·shar·pe·ner",
+  "zh": "转笔刀【连字符】",
+  "lvl": "exam"
+ },
+ {
+  "w": "phone-booth",
+  "syl": "phone·booth",
+  "zh": "公用电话间【连字符】",
+  "lvl": "exam"
+ },
+ {
+  "w": "playroom",
+  "syl": "play·room",
+  "zh": "游戏室",
+  "lvl": "exam"
+ },
+ {
+  "w": "postbox",
+  "syl": "post·box",
+  "zh": "邮箱",
+  "lvl": "exam"
+ },
+ {
+  "w": "postcode",
+  "syl": "post·code",
+  "zh": "（英）邮政编码",
+  "lvl": "exam"
+ },
+ {
+  "w": "printing",
+  "syl": "print·ing",
+  "zh": "印刷，印刷术",
+  "lvl": "exam"
+ },
+ {
+  "w": "publicly",
+  "syl": "pub·li·cly",
+  "zh": "ad. 当众",
+  "lvl": "exam"
+ },
+ {
+  "w": "regards",
+  "syl": "re·gards",
+  "zh": "问候，致意",
+  "lvl": "exam"
+ },
+ {
+  "w": "repairs",
+  "syl": "re·pairs",
+  "zh": "修理工作",
+  "lvl": "exam"
+ },
+ {
+  "w": "right-handed",
+  "syl": "right·han·ded",
+  "zh": "a. 惯用右手的【连字符】",
+  "lvl": "exam"
+ },
+ {
+  "w": "right-wing",
+  "syl": "right·wing",
+  "zh": "右翼【连字符】",
+  "lvl": "exam"
+ },
+ {
+  "w": "ring-road",
+  "syl": "ring·road",
+  "zh": "环形公路【连字符】",
+  "lvl": "exam"
+ },
+ {
+  "w": "scores",
+  "syl": "scores",
+  "zh": "许多，很多",
+  "lvl": "exam"
+ },
+ {
+  "w": "seashell",
+  "syl": "sea·shell",
+  "zh": "海贝",
+  "lvl": "exam"
+ },
+ {
+  "w": "see-saw",
+  "syl": "see·saw",
+  "zh": "跷跷板（游戏）【连字符】",
+  "lvl": "exam"
+ },
+ {
+  "w": "self-service",
+  "syl": "self·ser·vice",
+  "zh": "自助,自我服务的",
+  "lvl": "exam"
+ },
+ {
+  "w": "service-charge",
+  "syl": "ser·vice·charge",
+  "zh": "服务费",
+  "lvl": "exam"
+ },
+ {
+  "w": "shaver",
+  "syl": "sha·ver",
+  "zh": "电动剃须刀",
+  "lvl": "exam"
+ },
+ {
+  "w": "shooting",
+  "syl": "shoot·ing",
+  "zh": "射击",
+  "lvl": "exam"
+ }
 ]

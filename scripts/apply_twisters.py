@@ -15,7 +15,7 @@ slug = lambda t: re.sub(r'[^a-z0-9]+', '-', t.lower()).strip('-')
 tw = {}
 for f in [os.path.join(ROOT, 'data', 'twister-samples.json')] + sorted(glob.glob(os.path.join(ROOT, 'data', 'twisters', '[0-9]*.json'))):
     for it in json.load(open(f, encoding='utf-8')):
-        tw[it['w'].lower()] = it
+        tw.setdefault(slug(it['w']), it)  # 按图名认词：have / have. 这类同名的共用一条、一张图
 have = set(open(os.path.join(ROOT, 'data', 'tw-images.txt')).read().split()) if os.path.exists(os.path.join(ROOT, 'data', 'tw-images.txt')) else set()
 
 n = 0
@@ -23,7 +23,7 @@ for f in sorted(glob.glob(os.path.join(ROOT, 'demo', 'books', '*.json'))):
     b = json.load(open(f, encoding='utf-8')); hit = False
     for u in b['units']:
         for w in u['w']:
-            it = tw.get(w['w'].lower())
+            it = tw.get(slug(w['w']))
             if not it or f"tw-{slug(it['w'])}.webp" not in have: continue  # 图到了才换，免得绕口令配着旧图
             w['s'], w['sc'], w['hint'], w['img'] = it['tw'], it['twc'], it['hint'], f"tw-{slug(it['w'])}.webp"
             hit = True; n += 1

@@ -1,122 +1,116 @@
 [
-{
-"w": "peacefully",
-"syl": "peace·ful·ly",
-"zh": "宁静地",
-"lvl": "yl"
-},
-{
-"w": "car park",
-"syl": "car·park",
-"zh": "停车场",
-"lvl": "yl"
-},
-{
-"w": "mistake.. for",
-"syl": "mis·take·for",
-"zh": "把⋯误认为⋯",
-"lvl": "yl"
-},
-{
-"w": "dvd",
-"syl": "dvd",
-"zh": "数码影碟",
-"lvl": "yl"
-},
-{
-"w": "special offer",
-"syl": "spe·cial·of·fer",
-"zh": "特价优惠",
-"lvl": "yl"
-},
-{
-"w": "stuntman",
-"syl": "stunt·man",
-"zh": "特技替身演员",
-"lvl": "yl"
-},
-{
-"w": "well-paid",
-"syl": "well·paid",
-"zh": "收入高",
-"lvl": "yl"
-},
-{
-"w": "break into",
-"syl": "break·in·to",
-"zh": "强行闯入",
-"lvl": "yl"
-},
-{
-"w": "fingerprint",
-"syl": "fin·ger·print",
-"zh": "指紋，手印",
-"lvl": "yl"
-},
-{
-"w": "have nothing to do with",
-"syl": "have·noth·ing·to·do·with",
-"zh": "与⋯无关",
-"lvl": "yl"
-},
-{
-"w": "kidnapping",
-"syl": "kid·nap·ping",
-"zh": "綁架，劫持",
-"lvl": "yl"
-},
-{
-"w": "in prison",
-"syl": "in·pris·on",
-"zh": "牢",
-"lvl": "yl"
-},
-{
-"w": "guard against sth",
-"syl": "guard·a·gainst·sth",
-"zh": "防范，提防",
-"lvl": "yl"
-},
-{
-"w": "jewellery",
-"syl": "jew·elle·ry",
-"zh": "英>［总称］珠宝二＜美>",
-"lvl": "yl"
-},
-{
-"w": "chinese opera",
-"syl": "chi·nese·ope·ra",
-"zh": "中国戏画",
-"lvl": "yl"
-},
-{
-"w": "chinese paper-cutting",
-"syl": "chi·nese·pa·per·cut·ting",
-"zh": "屮国剪纸",
-"lvl": "yl"
-},
-{
-"w": "dragon dance",
-"syl": "drag·on·dance",
-"zh": "舞龙",
-"lvl": "yl"
-},
-{
-"w": "watchtower",
-"syl": "watch·tow·er",
-"zh": "瞭望塔",
-"lvl": "yl"
-},
-{
-"w": "south-east",
-"syl": "south·east",
-"zh": "东南方",
-"lvl": "yl"
-},
-{
-"w": "makeup",
-"syl": "ma·keup",
-"zh": "山据",
-"lvl": "yl"
-}
+ {
+  "w": "peacefully",
+  "syl": "peace·ful·ly",
+  "zh": "宁静地",
+  "lvl": "yl"
+ },
+ {
+  "w": "car park",
+  "syl": "car·park",
+  "zh": "停车场",
+  "lvl": "yl"
+ },
+ {
+  "w": "dvd",
+  "syl": "dvd",
+  "zh": "数码影碟",
+  "lvl": "yl"
+ },
+ {
+  "w": "special offer",
+  "syl": "spe·cial·of·fer",
+  "zh": "特价优惠",
+  "lvl": "yl"
+ },
+ {
+  "w": "stuntman",
+  "syl": "stunt·man",
+  "zh": "特技替身演员",
+  "lvl": "yl"
+ },
+ {
+  "w": "well-paid",
+  "syl": "well·paid",
+  "zh": "收入高",
+  "lvl": "yl"
+ },
+ {
+  "w": "break into",
+  "syl": "break·in·to",
+  "zh": "强行闯入",
+  "lvl": "yl"
+ },
+ {
+  "w": "fingerprint",
+  "syl": "fin·ger·print",
+  "zh": "指紋，手印",
+  "lvl": "yl"
+ },
+ {
+  "w": "have nothing to do with",
+  "syl": "have·noth·ing·to·do·with",
+  "zh": "与⋯无关",
+  "lvl": "yl"
+ },
+ {
+  "w": "kidnapping",
+  "syl": "kid·nap·ping",
+  "zh": "綁架，劫持",
+  "lvl": "yl"
+ },
+ {
+  "w": "in prison",
+  "syl": "in·pris·on",
+  "zh": "牢",
+  "lvl": "yl"
+ },
+ {
+  "w": "guard against sth",
+  "syl": "guard·a·gainst·sth",
+  "zh": "防范，提防",
+  "lvl": "yl"
+ },
+ {
+  "w": "jewellery",
+  "syl": "jew·elle·ry",
+  "zh": "英>［总称］珠宝二＜美>",
+  "lvl": "yl"
+ },
+ {
+  "w": "chinese opera",
+  "syl": "chi·nese·ope·ra",
+  "zh": "中国戏画",
+  "lvl": "yl"
+ },
+ {
+  "w": "chinese paper-cutting",
+  "syl": "chi·nese·pa·per·cut·ting",
+  "zh": "屮国剪纸",
+  "lvl": "yl"
+ },
+ {
+  "w": "dragon dance",
+  "syl": "drag·on·dance",
+  "zh": "舞龙",
+  "lvl": "yl"
+ },
+ {
+  "w": "watchtower",
+  "syl": "watch·tow·er",
+  "zh": "瞭望塔",
+  "lvl": "yl"
+ },
+ {
+  "w": "south-east",
+  "syl": "south·east",
+  "zh": "东南方",
+  "lvl": "yl"
+ },
+ {
+  "w": "makeup",
+  "syl": "ma·keup",
+  "zh": "山据",
+  "lvl": "yl"
+ }
 ]

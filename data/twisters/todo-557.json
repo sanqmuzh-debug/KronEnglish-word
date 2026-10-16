@@ -1,122 +1,116 @@
 [
-{
-"w": "anti-black",
-"syl": "an·ti·black",
-"zh": "反黑人的",
-"lvl": "exam"
-},
-{
-"w": "anti-venom",
-"syl": "an·ti·ven·om",
-"zh": "抗毒",
-"lvl": "exam"
-},
-{
-"w": "antisocial",
-"syl": "an·ti·so·cial",
-"zh": "反社会的",
-"lvl": "exam"
-},
-{
-"w": "attainment",
-"syl": "at·tain·ment",
-"zh": "达到",
-"lvl": "exam"
-},
-{
-"w": "bakingtray",
-"syl": "bak·ing·tray",
-"zh": "n烤盘",
-"lvl": "exam"
-},
-{
-"w": "bangladesh",
-"syl": "bang·la·desh",
-"zh": "孟加拉国（亚洲国家）",
-"lvl": "exam"
-},
-{
-"w": "bedraggled",
-"syl": "be·drag·gled",
-"zh": "全身泥污的",
-"lvl": "exam"
-},
-{
-"w": "billy-goat",
-"syl": "bil·ly·goat",
-"zh": "公山羊",
-"lvl": "exam"
-},
-{
-"w": "blackberry",
-"syl": "black·ber·ry",
-"zh": "[园艺] 黑莓",
-"lvl": "exam"
-},
-{
-"w": "bluebottle",
-"syl": "blue·bot·tle",
-"zh": "矢车菊",
-"lvl": "exam"
-},
-{
-"w": "breakdance",
-"syl": "break·dance",
-"zh": "霹雳舞",
-"lvl": "exam"
-},
-{
-"w": "brightness",
-"syl": "bright·ness",
-"zh": "明亮",
-"lvl": "exam"
-},
-{
-"w": "carbonated",
-"syl": "car·bo·na·ted",
-"zh": "碳化的，碳酸的",
-"lvl": "exam"
-},
-{
-"w": "childishly",
-"syl": "chil·dish·ly",
-"zh": "天真地，幼稚地",
-"lvl": "exam"
-},
-{
-"w": "chippenham",
-"syl": "chip·pe·nham",
-"zh": "奇番海姆（北威尔特郡地区最大的集镇）",
-"lvl": "exam"
-},
-{
-"w": "city-state",
-"syl": "cit·y·state",
-"zh": "城邦",
-"lvl": "exam"
-},
-{
-"w": "clavichord",
-"syl": "clav·i·chord",
-"zh": "古钢琴，翼琴",
-"lvl": "exam"
-},
-{
-"w": "co-operate",
-"syl": "co·op·e·rate",
-"zh": "（常与 with 连用）合作",
-"lvl": "exam"
-},
-{
-"w": "coastguard",
-"syl": "coast·guard",
-"zh": "海岸警卫队",
-"lvl": "exam"
-},
-{
-"w": "comicstrip",
-"syl": "com·ics·trip",
-"zh": "n连环漫画",
-"lvl": "exam"
-}
+ {
+  "w": "anti-black",
+  "syl": "an·ti·black",
+  "zh": "反黑人的",
+  "lvl": "exam"
+ },
+ {
+  "w": "anti-venom",
+  "syl": "an·ti·ven·om",
+  "zh": "抗毒",
+  "lvl": "exam"
+ },
+ {
+  "w": "antisocial",
+  "syl": "an·ti·so·cial",
+  "zh": "反社会的",
+  "lvl": "exam"
+ },
+ {
+  "w": "attainment",
+  "syl": "at·tain·ment",
+  "zh": "达到",
+  "lvl": "exam"
+ },
+ {
+  "w": "bakingtray",
+  "syl": "bak·ing·tray",
+  "zh": "n烤盘",
+  "lvl": "exam"
+ },
+ {
+  "w": "bangladesh",
+  "syl": "bang·la·desh",
+  "zh": "孟加拉国（亚洲国家）",
+  "lvl": "exam"
+ },
+ {
+  "w": "bedraggled",
+  "syl": "be·drag·gled",
+  "zh": "全身泥污的",
+  "lvl": "exam"
+ },
+ {
+  "w": "blackberry",
+  "syl": "black·ber·ry",
+  "zh": "[园艺] 黑莓",
+  "lvl": "exam"
+ },
+ {
+  "w": "bluebottle",
+  "syl": "blue·bot·tle",
+  "zh": "矢车菊",
+  "lvl": "exam"
+ },
+ {
+  "w": "breakdance",
+  "syl": "break·dance",
+  "zh": "霹雳舞",
+  "lvl": "exam"
+ },
+ {
+  "w": "brightness",
+  "syl": "bright·ness",
+  "zh": "明亮",
+  "lvl": "exam"
+ },
+ {
+  "w": "carbonated",
+  "syl": "car·bo·na·ted",
+  "zh": "碳化的，碳酸的",
+  "lvl": "exam"
+ },
+ {
+  "w": "childishly",
+  "syl": "chil·dish·ly",
+  "zh": "天真地，幼稚地",
+  "lvl": "exam"
+ },
+ {
+  "w": "chippenham",
+  "syl": "chip·pe·nham",
+  "zh": "奇番海姆（北威尔特郡地区最大的集镇）",
+  "lvl": "exam"
+ },
+ {
+  "w": "city-state",
+  "syl": "cit·y·state",
+  "zh": "城邦",
+  "lvl": "exam"
+ },
+ {
+  "w": "clavichord",
+  "syl": "clav·i·chord",
+  "zh": "古钢琴，翼琴",
+  "lvl": "exam"
+ },
+ {
+  "w": "co-operate",
+  "syl": "co·op·e·rate",
+  "zh": "（常与 with 连用）合作",
+  "lvl": "exam"
+ },
+ {
+  "w": "coastguard",
+  "syl": "coast·guard",
+  "zh": "海岸警卫队",
+  "lvl": "exam"
+ },
+ {
+  "w": "comicstrip",
+  "syl": "com·ics·trip",
+  "zh": "n连环漫画",
+  "lvl": "exam"
+ }
 ]

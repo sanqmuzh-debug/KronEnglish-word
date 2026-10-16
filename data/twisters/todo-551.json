@@ -1,122 +1,116 @@
 [
-{
-"w": "dislocate",
-"syl": "dis·lo·cate",
-"zh": "使脱臼",
-"lvl": "exam"
-},
-{
-"w": "dispenser",
-"syl": "dis·pen·ser",
-"zh": "自动柜员机",
-"lvl": "exam"
-},
-{
-"w": "disunited",
-"syl": "dis·u·ni·ted",
-"zh": "分裂的",
-"lvl": "exam"
-},
-{
-"w": "downright",
-"syl": "down·right",
-"zh": "完全地，彻底地",
-"lvl": "exam"
-},
-{
-"w": "elegantly",
-"syl": "el·e·gant·ly",
-"zh": "优雅地",
-"lvl": "exam"
-},
-{
-"w": "endearing",
-"syl": "en·dea·ring",
-"zh": "可爱的",
-"lvl": "exam"
-},
-{
-"w": "enjoyment",
-"syl": "en·joy·ment",
-"zh": "享受",
-"lvl": "exam"
-},
-{
-"w": "enrolment",
-"syl": "en·rol·ment",
-"zh": "入学，登记",
-"lvl": "exam"
-},
-{
-"w": "entranced",
-"syl": "en·tranced",
-"zh": "着迷的",
-"lvl": "exam"
-},
-{
-"w": "escalopia",
-"syl": "es·ca·lo·pi·a",
-"zh": "无",
-"lvl": "exam"
-},
-{
-"w": "espionage",
-"syl": "es·pi·o·nage",
-"zh": "间谍",
-"lvl": "exam"
-},
-{
-"w": "fairytale",
-"syl": "fai·ry·tale",
-"zh": "童话",
-"lvl": "exam"
-},
-{
-"w": "fanatical",
-"syl": "fa·nat·i·cal",
-"zh": "狂热的",
-"lvl": "exam"
-},
-{
-"w": "faultless",
-"syl": "fault·less",
-"zh": "无错误的",
-"lvl": "exam"
-},
-{
-"w": "fervently",
-"syl": "fer·vent·ly",
-"zh": "热心地",
-"lvl": "exam"
-},
-{
-"w": "firealarm",
-"syl": "firealarm",
-"zh": "火警报警器",
-"lvl": "exam"
-},
-{
-"w": "flashback",
-"syl": "flash·back",
-"zh": "闪回",
-"lvl": "exam"
-},
-{
-"w": "from...on",
-"syl": "from·on",
-"zh": "从……时起",
-"lvl": "exam"
-},
-{
-"w": "greenland",
-"syl": "green·land",
-"zh": "格林兰（位于北美洲东北部",
-"lvl": "exam"
-},
-{
-"w": "guestroom",
-"syl": "guest·room",
-"zh": "（家庭中的）来客住房",
-"lvl": "exam"
-}
+ {
+  "w": "dislocate",
+  "syl": "dis·lo·cate",
+  "zh": "使脱臼",
+  "lvl": "exam"
+ },
+ {
+  "w": "dispenser",
+  "syl": "dis·pen·ser",
+  "zh": "自动柜员机",
+  "lvl": "exam"
+ },
+ {
+  "w": "disunited",
+  "syl": "dis·u·ni·ted",
+  "zh": "分裂的",
+  "lvl": "exam"
+ },
+ {
+  "w": "downright",
+  "syl": "down·right",
+  "zh": "完全地，彻底地",
+  "lvl": "exam"
+ },
+ {
+  "w": "elegantly",
+  "syl": "el·e·gant·ly",
+  "zh": "优雅地",
+  "lvl": "exam"
+ },
+ {
+  "w": "endearing",
+  "syl": "en·dea·ring",
+  "zh": "可爱的",
+  "lvl": "exam"
+ },
+ {
+  "w": "enjoyment",
+  "syl": "en·joy·ment",
+  "zh": "享受",
+  "lvl": "exam"
+ },
+ {
+  "w": "enrolment",
+  "syl": "en·rol·ment",
+  "zh": "入学，登记",
+  "lvl": "exam"
+ },
+ {
+  "w": "entranced",
+  "syl": "en·tranced",
+  "zh": "着迷的",
+  "lvl": "exam"
+ },
+ {
+  "w": "escalopia",
+  "syl": "es·ca·lo·pi·a",
+  "zh": "无",
+  "lvl": "exam"
+ },
+ {
+  "w": "espionage",
+  "syl": "es·pi·o·nage",
+  "zh": "间谍",
+  "lvl": "exam"
+ },
+ {
+  "w": "fairytale",
+  "syl": "fai·ry·tale",
+  "zh": "童话",
+  "lvl": "exam"
+ },
+ {
+  "w": "fanatical",
+  "syl": "fa·nat·i·cal",
+  "zh": "狂热的",
+  "lvl": "exam"
+ },
+ {
+  "w": "faultless",
+  "syl": "fault·less",
+  "zh": "无错误的",
+  "lvl": "exam"
+ },
+ {
+  "w": "fervently",
+  "syl": "fer·vent·ly",
+  "zh": "热心地",
+  "lvl": "exam"
+ },
+ {
+  "w": "firealarm",
+  "syl": "firealarm",
+  "zh": "火警报警器",
+  "lvl": "exam"
+ },
+ {
+  "w": "flashback",
+  "syl": "flash·back",
+  "zh": "闪回",
+  "lvl": "exam"
+ },
+ {
+  "w": "greenland",
+  "syl": "green·land",
+  "zh": "格林兰（位于北美洲东北部",
+  "lvl": "exam"
+ },
+ {
+  "w": "guestroom",
+  "syl": "guest·room",
+  "zh": "（家庭中的）来客住房",
+  "lvl": "exam"
+ }
 ]

@@ -1,122 +1,116 @@
 [
-{
-"w": "chug",
-"syl": "chug",
-"zh": "缓慢前进",
-"lvl": "wy"
-},
-{
-"w": "underground",
-"syl": "un·der·ground",
-"zh": "在地 下",
-"lvl": "wy"
-},
-{
-"w": "use",
-"syl": "use",
-"zh": "用，使用刷子",
-"lvl": "wy"
-},
-{
-"w": "night owl",
-"syl": "night·owl",
-"zh": "夜猫子",
-"lvl": "wy"
-},
-{
-"w": "stem",
-"syl": "stem",
-"zh": "细",
-"lvl": "wy"
-},
-{
-"w": "sunflower",
-"syl": "sun·flow·er",
-"zh": "向日葵",
-"lvl": "wy"
-},
-{
-"w": "sleep",
-"syl": "sleep",
-"zh": "睡，睡觉",
-"lvl": "wy"
-},
-{
-"w": "hour",
-"syl": "hour",
-"zh": "小时笔记，记录",
-"lvl": "wy"
-},
-{
-"w": "food group",
-"syl": "food·group",
-"zh": "",
-"lvl": "wy"
-},
-{
-"w": "chips",
-"syl": "chips",
-"zh": "炸薯条",
-"lvl": "wy"
-},
-{
-"w": "that's enough",
-"syl": "thats·e·nough",
-"zh": "够了",
-"lvl": "wy"
-},
-{
-"w": "a few",
-"syl": "a·few",
-"zh": "饼干",
-"lvl": "wy"
-},
-{
-"w": "whoa",
-"syl": "whoa",
-"zh": "燕麦",
-"lvl": "wy"
-},
-{
-"w": "oats",
-"syl": "oats",
-"zh": "坚果",
-"lvl": "wy"
-},
-{
-"w": "teaspoon",
-"syl": "tea·spoon",
-"zh": "茶匙",
-"lvl": "wy"
-},
-{
-"w": "turn into",
-"syl": "turn·in·to",
-"zh": "变成",
-"lvl": "wy"
-},
-{
-"w": "take off",
-"syl": "take·off",
-"zh": "拿掉",
-"lvl": "wy"
-},
-{
-"w": "lana",
-"syl": "lan·a",
-"zh": "陆地",
-"lvl": "wy"
-},
-{
-"w": "parent",
-"syl": "pa·rent",
-"zh": "父，母",
-"lvl": "wy"
-},
-{
-"w": "openly",
-"syl": "o·pen·ly",
-"zh": "坦诚地",
-"lvl": "wy"
-}
+ {
+  "w": "chug",
+  "syl": "chug",
+  "zh": "缓慢前进",
+  "lvl": "wy"
+ },
+ {
+  "w": "underground",
+  "syl": "un·der·ground",
+  "zh": "在地 下",
+  "lvl": "wy"
+ },
+ {
+  "w": "use",
+  "syl": "use",
+  "zh": "用，使用刷子",
+  "lvl": "wy"
+ },
+ {
+  "w": "night owl",
+  "syl": "night·owl",
+  "zh": "夜猫子",
+  "lvl": "wy"
+ },
+ {
+  "w": "stem",
+  "syl": "stem",
+  "zh": "细",
+  "lvl": "wy"
+ },
+ {
+  "w": "sunflower",
+  "syl": "sun·flow·er",
+  "zh": "向日葵",
+  "lvl": "wy"
+ },
+ {
+  "w": "sleep",
+  "syl": "sleep",
+  "zh": "睡，睡觉",
+  "lvl": "wy"
+ },
+ {
+  "w": "hour",
+  "syl": "hour",
+  "zh": "小时笔记，记录",
+  "lvl": "wy"
+ },
+ {
+  "w": "food group",
+  "syl": "food·group",
+  "zh": "",
+  "lvl": "wy"
+ },
+ {
+  "w": "chips",
+  "syl": "chips",
+  "zh": "炸薯条",
+  "lvl": "wy"
+ },
+ {
+  "w": "that's enough",
+  "syl": "thats·e·nough",
+  "zh": "够了",
+  "lvl": "wy"
+ },
+ {
+  "w": "a few",
+  "syl": "a·few",
+  "zh": "饼干",
+  "lvl": "wy"
+ },
+ {
+  "w": "whoa",
+  "syl": "whoa",
+  "zh": "燕麦",
+  "lvl": "wy"
+ },
+ {
+  "w": "oats",
+  "syl": "oats",
+  "zh": "坚果",
+  "lvl": "wy"
+ },
+ {
+  "w": "teaspoon",
+  "syl": "tea·spoon",
+  "zh": "茶匙",
+  "lvl": "wy"
+ },
+ {
+  "w": "take off",
+  "syl": "take·off",
+  "zh": "拿掉",
+  "lvl": "wy"
+ },
+ {
+  "w": "lana",
+  "syl": "lan·a",
+  "zh": "陆地",
+  "lvl": "wy"
+ },
+ {
+  "w": "parent",
+  "syl": "pa·rent",
+  "zh": "父，母",
+  "lvl": "wy"
+ },
+ {
+  "w": "openly",
+  "syl": "o·pen·ly",
+  "zh": "坦诚地",
+  "lvl": "wy"
+ }
 ]

@@ -20,6 +20,7 @@ for n in sys.argv[1:]:
         ls = x['prompt'].split('\n')
         if len(ls) != 7 or ls[0] != L1 or not ls[6].startswith('A real-photography 4:3 landscape film still'): p.append('prompt格式')
         if not re.fullmatch(r'm(0[1-9]|1[0-6])', x['meme']): p.append('meme')
-        if re.search(r'hedgehog|刺猬', json.dumps(x, ensure_ascii=False), re.I): p.append('禁词')
+        # 词本身是 hedgehog 的那条可以出现这个词，其他一律不写
+        if x['w'].lower() != 'hedgehog' and re.search(r'hedgehog|刺猬', json.dumps(x, ensure_ascii=False), re.I): p.append('禁词')
         if p: print(n, x['w'], p); bad += 1
 print('问题', bad)

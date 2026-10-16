@@ -1,122 +1,116 @@
 [
-{
-"w": "feline",
-"syl": "fe·line",
-"zh": "猫科动物",
-"lvl": "exam"
-},
-{
-"w": "fiancé",
-"syl": "fiancé",
-"zh": "无",
-"lvl": "exam"
-},
-{
-"w": "first.",
-"syl": "first",
-"zh": "第一",
-"lvl": "exam"
-},
-{
-"w": "forego",
-"syl": "fore·go",
-"zh": "摒绝，放弃",
-"lvl": "exam"
-},
-{
-"w": "framed",
-"syl": "framed",
-"zh": "制定",
-"lvl": "exam"
-},
-{
-"w": "franch",
-"syl": "franch",
-"zh": "法国的",
-"lvl": "exam"
-},
-{
-"w": "freddy",
-"syl": "fred·dy",
-"zh": "弗雷迪（男名）",
-"lvl": "exam"
-},
-{
-"w": "fruity",
-"syl": "frui·ty",
-"zh": "果味的",
-"lvl": "exam"
-},
-{
-"w": "fullof",
-"syl": "ful·lof",
-"zh": "充满",
-"lvl": "exam"
-},
-{
-"w": "garcia",
-"syl": "gar·ci·a",
-"zh": "加西亚（姓）",
-"lvl": "exam"
-},
-{
-"w": "gaucho",
-"syl": "gau·cho",
-"zh": "高卓人，牧人",
-"lvl": "exam"
-},
-{
-"w": "geneva",
-"syl": "ge·ne·va",
-"zh": "日内瓦（瑞士西南部城市）",
-"lvl": "exam"
-},
-{
-"w": "getoff",
-"syl": "get·off",
-"zh": "下车，下船",
-"lvl": "exam"
-},
-{
-"w": "gorgon",
-"syl": "gor·gon",
-"zh": "蛇发女怪（希腊神话中的一个形象）",
-"lvl": "exam"
-},
-{
-"w": "grassy",
-"syl": "gras·sy",
-"zh": "长满草的",
-"lvl": "exam"
-},
-{
-"w": "grimly",
-"syl": "grim·ly",
-"zh": "可怕地",
-"lvl": "exam"
-},
-{
-"w": "grower",
-"syl": "grow·er",
-"zh": "栽培者",
-"lvl": "exam"
-},
-{
-"w": "gusher",
-"syl": "gush·er",
-"zh": "喷油井",
-"lvl": "exam"
-},
-{
-"w": "hassle",
-"syl": "has·sle",
-"zh": "烦扰，不断打扰",
-"lvl": "exam"
-},
-{
-"w": "hawser",
-"syl": "haw·ser",
-"zh": "粗缆",
-"lvl": "exam"
-}
+ {
+  "w": "feline",
+  "syl": "fe·line",
+  "zh": "猫科动物",
+  "lvl": "exam"
+ },
+ {
+  "w": "fiancé",
+  "syl": "fiancé",
+  "zh": "无",
+  "lvl": "exam"
+ },
+ {
+  "w": "forego",
+  "syl": "fore·go",
+  "zh": "摒绝，放弃",
+  "lvl": "exam"
+ },
+ {
+  "w": "framed",
+  "syl": "framed",
+  "zh": "制定",
+  "lvl": "exam"
+ },
+ {
+  "w": "franch",
+  "syl": "franch",
+  "zh": "法国的",
+  "lvl": "exam"
+ },
+ {
+  "w": "freddy",
+  "syl": "fred·dy",
+  "zh": "弗雷迪（男名）",
+  "lvl": "exam"
+ },
+ {
+  "w": "fruity",
+  "syl": "frui·ty",
+  "zh": "果味的",
+  "lvl": "exam"
+ },
+ {
+  "w": "fullof",
+  "syl": "ful·lof",
+  "zh": "充满",
+  "lvl": "exam"
+ },
+ {
+  "w": "garcia",
+  "syl": "gar·ci·a",
+  "zh": "加西亚（姓）",
+  "lvl": "exam"
+ },
+ {
+  "w": "gaucho",
+  "syl": "gau·cho",
+  "zh": "高卓人，牧人",
+  "lvl": "exam"
+ },
+ {
+  "w": "geneva",
+  "syl": "ge·ne·va",
+  "zh": "日内瓦（瑞士西南部城市）",
+  "lvl": "exam"
+ },
+ {
+  "w": "getoff",
+  "syl": "get·off",
+  "zh": "下车，下船",
+  "lvl": "exam"
+ },
+ {
+  "w": "gorgon",
+  "syl": "gor·gon",
+  "zh": "蛇发女怪（希腊神话中的一个形象）",
+  "lvl": "exam"
+ },
+ {
+  "w": "grassy",
+  "syl": "gras·sy",
+  "zh": "长满草的",
+  "lvl": "exam"
+ },
+ {
+  "w": "grimly",
+  "syl": "grim·ly",
+  "zh": "可怕地",
+  "lvl": "exam"
+ },
+ {
+  "w": "grower",
+  "syl": "grow·er",
+  "zh": "栽培者",
+  "lvl": "exam"
+ },
+ {
+  "w": "gusher",
+  "syl": "gush·er",
+  "zh": "喷油井",
+  "lvl": "exam"
+ },
+ {
+  "w": "hassle",
+  "syl": "has·sle",
+  "zh": "烦扰，不断打扰",
+  "lvl": "exam"
+ },
+ {
+  "w": "hawser",
+  "syl": "haw·ser",
+  "zh": "粗缆",
+  "lvl": "exam"
+ }
 ]

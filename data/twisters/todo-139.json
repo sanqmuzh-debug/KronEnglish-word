@@ -1,122 +1,116 @@
 [
-{
-"w": "lose heart",
-"syl": "lose·heart",
-"zh": "丧失信心",
-"lvl": "pep"
-},
-{
-"w": "graceful",
-"syl": "grace·ful",
-"zh": "优美的",
-"lvl": "pep"
-},
-{
-"w": "failure",
-"syl": "failure",
-"zh": "失败",
-"lvl": "pep"
-},
-{
-"w": "make sense",
-"syl": "make·sense",
-"zh": "有道理",
-"lvl": "pep"
-},
-{
-"w": "pretend to do sth",
-"syl": "pre·tend·to·do·sth",
-"zh": "假装做某事",
-"lvl": "pep"
-},
-{
-"w": "even if",
-"syl": "e·ven·if",
-"zh": "即使",
-"lvl": "pep"
-},
-{
-"w": "audience",
-"syl": "au·di·ence",
-"zh": "观众",
-"lvl": "pep"
-},
-{
-"w": "diet",
-"syl": "di·et",
-"zh": "规定饮食",
-"lvl": "pep"
-},
-{
-"w": "rather",
-"syl": "rath·er",
-"zh": "相当",
-"lvl": "pep"
-},
-{
-"w": "rather than",
-"syl": "rath·er·than",
-"zh": "而不是",
-"lvl": "pep"
-},
-{
-"w": "cut... out",
-"syl": "cut·out",
-"zh": "停止做",
-"lvl": "pep"
-},
-{
-"w": "now and then",
-"syl": "now·and·then",
-"zh": "有时",
-"lvl": "pep"
-},
-{
-"w": "error",
-"syl": "er·ror",
-"zh": "错误",
-"lvl": "pep"
-},
-{
-"w": "tornado",
-"syl": "tor·na·do",
-"zh": "龙卷风",
-"lvl": "pep"
-},
-{
-"w": "brought",
-"syl": "brought",
-"zh": "早灾",
-"lvl": "pep"
-},
-{
-"w": "landslide",
-"syl": "land·slide",
-"zh": "（landfall）（山地或悬崖）崩塌",
-"lvl": "pep"
-},
-{
-"w": "slide",
-"syl": "slide",
-"zh": "滑行",
-"lvl": "pep"
-},
-{
-"w": "tsunami",
-"syl": "tsu·na·mi",
-"zh": "海啸",
-"lvl": "pep"
-},
-{
-"w": "flood",
-"syl": "flood",
-"zh": "洪水",
-"lvl": "pep"
-},
-{
-"w": "volcanic eruption",
-"syl": "vol·can·ic·e·rup·tion",
-"zh": "火山喷发",
-"lvl": "pep"
-}
+ {
+  "w": "lose heart",
+  "syl": "lose·heart",
+  "zh": "丧失信心",
+  "lvl": "pep"
+ },
+ {
+  "w": "graceful",
+  "syl": "grace·ful",
+  "zh": "优美的",
+  "lvl": "pep"
+ },
+ {
+  "w": "failure",
+  "syl": "failure",
+  "zh": "失败",
+  "lvl": "pep"
+ },
+ {
+  "w": "make sense",
+  "syl": "make·sense",
+  "zh": "有道理",
+  "lvl": "pep"
+ },
+ {
+  "w": "pretend to do sth",
+  "syl": "pre·tend·to·do·sth",
+  "zh": "假装做某事",
+  "lvl": "pep"
+ },
+ {
+  "w": "even if",
+  "syl": "e·ven·if",
+  "zh": "即使",
+  "lvl": "pep"
+ },
+ {
+  "w": "audience",
+  "syl": "au·di·ence",
+  "zh": "观众",
+  "lvl": "pep"
+ },
+ {
+  "w": "diet",
+  "syl": "di·et",
+  "zh": "规定饮食",
+  "lvl": "pep"
+ },
+ {
+  "w": "rather",
+  "syl": "rath·er",
+  "zh": "相当",
+  "lvl": "pep"
+ },
+ {
+  "w": "rather than",
+  "syl": "rath·er·than",
+  "zh": "而不是",
+  "lvl": "pep"
+ },
+ {
+  "w": "now and then",
+  "syl": "now·and·then",
+  "zh": "有时",
+  "lvl": "pep"
+ },
+ {
+  "w": "error",
+  "syl": "er·ror",
+  "zh": "错误",
+  "lvl": "pep"
+ },
+ {
+  "w": "tornado",
+  "syl": "tor·na·do",
+  "zh": "龙卷风",
+  "lvl": "pep"
+ },
+ {
+  "w": "brought",
+  "syl": "brought",
+  "zh": "早灾",
+  "lvl": "pep"
+ },
+ {
+  "w": "landslide",
+  "syl": "land·slide",
+  "zh": "（landfall）（山地或悬崖）崩塌",
+  "lvl": "pep"
+ },
+ {
+  "w": "slide",
+  "syl": "slide",
+  "zh": "滑行",
+  "lvl": "pep"
+ },
+ {
+  "w": "tsunami",
+  "syl": "tsu·na·mi",
+  "zh": "海啸",
+  "lvl": "pep"
+ },
+ {
+  "w": "flood",
+  "syl": "flood",
+  "zh": "洪水",
+  "lvl": "pep"
+ },
+ {
+  "w": "volcanic eruption",
+  "syl": "vol·can·ic·e·rup·tion",
+  "zh": "火山喷发",
+  "lvl": "pep"
+ }
 ]

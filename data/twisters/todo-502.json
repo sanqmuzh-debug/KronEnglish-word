@@ -1,122 +1,116 @@
 [
-{
-"w": "disobey",
-"syl": "dis·o·bey",
-"zh": "不服从",
-"lvl": "exam"
-},
-{
-"w": "dustbin",
-"syl": "dust·bin",
-"zh": "垃圾箱",
-"lvl": "exam"
-},
-{
-"w": "exhausted",
-"syl": "ex·haus·ted",
-"zh": "耗尽",
-"lvl": "exam"
-},
-{
-"w": "fingernail",
-"syl": "fin·ger·nail",
-"zh": "指甲",
-"lvl": "exam"
-},
-{
-"w": "firewood",
-"syl": "fir·e·wood",
-"zh": "木柴",
-"lvl": "exam"
-},
-{
-"w": "freeway",
-"syl": "free·way",
-"zh": "高速公路",
-"lvl": "exam"
-},
-{
-"w": "frenchman",
-"syl": "french·man",
-"zh": "(复 Frenchmen) 法国人（男）",
-"lvl": "exam"
-},
-{
-"w": "glasshouse",
-"syl": "glass·house",
-"zh": "温室，暖房",
-"lvl": "exam"
-},
-{
-"w": "greengrocer",
-"syl": "green·gro·cer",
-"zh": "（英）蔬菜水果商",
-"lvl": "exam"
-},
-{
-"w": "hardworking",
-"syl": "hard·wor·king",
-"zh": "a. 努力工作的",
-"lvl": "exam"
-},
-{
-"w": "headmistress",
-"syl": "head·mis·tress",
-"zh": "女校长",
-"lvl": "exam"
-},
-{
-"w": "hibernation",
-"syl": "hi·ber·na·tion",
-"zh": "冬眠",
-"lvl": "exam"
-},
-{
-"w": "hillside",
-"syl": "hill·side",
-"zh": "（小山）山腰",
-"lvl": "exam"
-},
-{
-"w": "honor",
-"syl": "hon·or",
-"zh": "荣誉",
-"lvl": "exam"
-},
-{
-"w": "honorable",
-"syl": "hon·o·ra·ble",
-"zh": "光荣的",
-"lvl": "exam"
-},
-{
-"w": "ice-cream",
-"syl": "ice·cream",
-"zh": "冰淇淋【连字符】",
-"lvl": "exam"
-},
-{
-"w": "jeep",
-"syl": "jeep",
-"zh": "吉普车",
-"lvl": "exam"
-},
-{
-"w": "juicy",
-"syl": "jui·cy",
-"zh": "a. 多汁的",
-"lvl": "exam"
-},
-{
-"w": "lighten",
-"syl": "ligh·ten",
-"zh": "减轻",
-"lvl": "exam"
-},
-{
-"w": "locust",
-"syl": "lo·cust",
-"zh": "蝗虫",
-"lvl": "exam"
-}
+ {
+  "w": "disobey",
+  "syl": "dis·o·bey",
+  "zh": "不服从",
+  "lvl": "exam"
+ },
+ {
+  "w": "dustbin",
+  "syl": "dust·bin",
+  "zh": "垃圾箱",
+  "lvl": "exam"
+ },
+ {
+  "w": "exhausted",
+  "syl": "ex·haus·ted",
+  "zh": "耗尽",
+  "lvl": "exam"
+ },
+ {
+  "w": "fingernail",
+  "syl": "fin·ger·nail",
+  "zh": "指甲",
+  "lvl": "exam"
+ },
+ {
+  "w": "firewood",
+  "syl": "fir·e·wood",
+  "zh": "木柴",
+  "lvl": "exam"
+ },
+ {
+  "w": "freeway",
+  "syl": "free·way",
+  "zh": "高速公路",
+  "lvl": "exam"
+ },
+ {
+  "w": "frenchman",
+  "syl": "french·man",
+  "zh": "(复 Frenchmen) 法国人（男）",
+  "lvl": "exam"
+ },
+ {
+  "w": "glasshouse",
+  "syl": "glass·house",
+  "zh": "温室，暖房",
+  "lvl": "exam"
+ },
+ {
+  "w": "greengrocer",
+  "syl": "green·gro·cer",
+  "zh": "（英）蔬菜水果商",
+  "lvl": "exam"
+ },
+ {
+  "w": "hardworking",
+  "syl": "hard·wor·king",
+  "zh": "a. 努力工作的",
+  "lvl": "exam"
+ },
+ {
+  "w": "headmistress",
+  "syl": "head·mis·tress",
+  "zh": "女校长",
+  "lvl": "exam"
+ },
+ {
+  "w": "hibernation",
+  "syl": "hi·ber·na·tion",
+  "zh": "冬眠",
+  "lvl": "exam"
+ },
+ {
+  "w": "hillside",
+  "syl": "hill·side",
+  "zh": "（小山）山腰",
+  "lvl": "exam"
+ },
+ {
+  "w": "honor",
+  "syl": "hon·or",
+  "zh": "荣誉",
+  "lvl": "exam"
+ },
+ {
+  "w": "honorable",
+  "syl": "hon·o·ra·ble",
+  "zh": "光荣的",
+  "lvl": "exam"
+ },
+ {
+  "w": "jeep",
+  "syl": "jeep",
+  "zh": "吉普车",
+  "lvl": "exam"
+ },
+ {
+  "w": "juicy",
+  "syl": "jui·cy",
+  "zh": "a. 多汁的",
+  "lvl": "exam"
+ },
+ {
+  "w": "lighten",
+  "syl": "ligh·ten",
+  "zh": "减轻",
+  "lvl": "exam"
+ },
+ {
+  "w": "locust",
+  "syl": "lo·cust",
+  "zh": "蝗虫",
+  "lvl": "exam"
+ }
 ]

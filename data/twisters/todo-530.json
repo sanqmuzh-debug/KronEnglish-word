@@ -1,122 +1,116 @@
 [
-{
-"w": "napier",
-"syl": "na·pi·er",
-"zh": "内皮尔（新西兰装饰艺术风格名城）",
-"lvl": "exam"
-},
-{
-"w": "naughy",
-"syl": "naugh·y",
-"zh": "淘气的（naughty）",
-"lvl": "exam"
-},
-{
-"w": "nextto",
-"syl": "nex·tto",
-"zh": "紧邻，在…近旁",
-"lvl": "exam"
-},
-{
-"w": "norman",
-"syl": "nor·man",
-"zh": "诺曼人",
-"lvl": "exam"
-},
-{
-"w": "oswald",
-"syl": "os·wald",
-"zh": "奥斯瓦尔德（人名）",
-"lvl": "exam"
-},
-{
-"w": "packed",
-"syl": "packed",
-"zh": "挤满人的",
-"lvl": "exam"
-},
-{
-"w": "payfor",
-"syl": "pay·for",
-"zh": "为……付钱",
-"lvl": "exam"
-},
-{
-"w": "payoff",
-"syl": "pay·off",
-"zh": "结清",
-"lvl": "exam"
-},
-{
-"w": "pearce",
-"syl": "pearce",
-"zh": "皮尔斯（人名",
-"lvl": "exam"
-},
-{
-"w": "pester",
-"syl": "pes·ter",
-"zh": "纠缠，烦扰",
-"lvl": "exam"
-},
-{
-"w": "pounce",
-"syl": "pounce",
-"zh": "/猛扑，爪",
-"lvl": "exam"
-},
-{
-"w": "press.",
-"syl": "press",
-"zh": "新闻界",
-"lvl": "exam"
-},
-{
-"w": "quagga",
-"syl": "quag·ga",
-"zh": "白氏斑马",
-"lvl": "exam"
-},
-{
-"w": "quaker",
-"syl": "qua·ker",
-"zh": "贵格会教徒",
-"lvl": "exam"
-},
-{
-"w": "rapids",
-"syl": "rap·ids",
-"zh": "急流",
-"lvl": "exam"
-},
-{
-"w": "rashly",
-"syl": "rash·ly",
-"zh": "轻率地",
-"lvl": "exam"
-},
-{
-"w": "relive",
-"syl": "re·live",
-"zh": "重新体验",
-"lvl": "exam"
-},
-{
-"w": "riding",
-"syl": "ri·ding",
-"zh": "骑马（运动）",
-"lvl": "exam"
-},
-{
-"w": "risque",
-"syl": "ris·que",
-"zh": "不雅的",
-"lvl": "exam"
-},
-{
-"w": "rudder",
-"syl": "rud·der",
-"zh": "船舵",
-"lvl": "exam"
-}
+ {
+  "w": "napier",
+  "syl": "na·pi·er",
+  "zh": "内皮尔（新西兰装饰艺术风格名城）",
+  "lvl": "exam"
+ },
+ {
+  "w": "naughy",
+  "syl": "naugh·y",
+  "zh": "淘气的（naughty）",
+  "lvl": "exam"
+ },
+ {
+  "w": "nextto",
+  "syl": "nex·tto",
+  "zh": "紧邻，在…近旁",
+  "lvl": "exam"
+ },
+ {
+  "w": "norman",
+  "syl": "nor·man",
+  "zh": "诺曼人",
+  "lvl": "exam"
+ },
+ {
+  "w": "oswald",
+  "syl": "os·wald",
+  "zh": "奥斯瓦尔德（人名）",
+  "lvl": "exam"
+ },
+ {
+  "w": "packed",
+  "syl": "packed",
+  "zh": "挤满人的",
+  "lvl": "exam"
+ },
+ {
+  "w": "payfor",
+  "syl": "pay·for",
+  "zh": "为……付钱",
+  "lvl": "exam"
+ },
+ {
+  "w": "payoff",
+  "syl": "pay·off",
+  "zh": "结清",
+  "lvl": "exam"
+ },
+ {
+  "w": "pearce",
+  "syl": "pearce",
+  "zh": "皮尔斯（人名",
+  "lvl": "exam"
+ },
+ {
+  "w": "pester",
+  "syl": "pes·ter",
+  "zh": "纠缠，烦扰",
+  "lvl": "exam"
+ },
+ {
+  "w": "pounce",
+  "syl": "pounce",
+  "zh": "/猛扑，爪",
+  "lvl": "exam"
+ },
+ {
+  "w": "quagga",
+  "syl": "quag·ga",
+  "zh": "白氏斑马",
+  "lvl": "exam"
+ },
+ {
+  "w": "quaker",
+  "syl": "qua·ker",
+  "zh": "贵格会教徒",
+  "lvl": "exam"
+ },
+ {
+  "w": "rapids",
+  "syl": "rap·ids",
+  "zh": "急流",
+  "lvl": "exam"
+ },
+ {
+  "w": "rashly",
+  "syl": "rash·ly",
+  "zh": "轻率地",
+  "lvl": "exam"
+ },
+ {
+  "w": "relive",
+  "syl": "re·live",
+  "zh": "重新体验",
+  "lvl": "exam"
+ },
+ {
+  "w": "riding",
+  "syl": "ri·ding",
+  "zh": "骑马（运动）",
+  "lvl": "exam"
+ },
+ {
+  "w": "risque",
+  "syl": "ris·que",
+  "zh": "不雅的",
+  "lvl": "exam"
+ },
+ {
+  "w": "rudder",
+  "syl": "rud·der",
+  "zh": "船舵",
+  "lvl": "exam"
+ }
 ]

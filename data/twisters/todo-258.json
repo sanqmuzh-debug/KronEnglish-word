@@ -1,122 +1,116 @@
 [
-{
-"w": "natural",
-"syl": "nat·u·ral",
-"zh": "正常",
-"lvl": "bnu"
-},
-{
-"w": "get back at",
-"syl": "get·back·at",
-"zh": "向某人报复",
-"lvl": "bnu"
-},
-{
-"w": "disagreement",
-"syl": "dis·a·gree·ment",
-"zh": "意见不一，分歧",
-"lvl": "bnu"
-},
-{
-"w": "step-by-step",
-"syl": "step·by·step",
-"zh": "按部就班",
-"lvl": "bnu"
-},
-{
-"w": "statement",
-"syl": "state·ment",
-"zh": "说明，说法",
-"lvl": "bnu"
-},
-{
-"w": "pocket money",
-"syl": "pock·et·mon·ey",
-"zh": "零花钱",
-"lvl": "bnu"
-},
-{
-"w": "stamp",
-"syl": "stamp",
-"zh": "邮票",
-"lvl": "bnu"
-},
-{
-"w": "recycled",
-"syl": "re·cy·cled",
-"zh": "回收利用的",
-"lvl": "bnu"
-},
-{
-"w": "smiling",
-"syl": "smi·ling",
-"zh": "微笑的",
-"lvl": "bnu"
-},
-{
-"w": "e-card",
-"syl": "e·card",
-"zh": "电子贺卡",
-"lvl": "bnu"
-},
-{
-"w": "how come",
-"syl": "how·come",
-"zh": "怎么可能",
-"lvl": "bnu"
-},
-{
-"w": "school supply",
-"syl": "school·su·pply",
-"zh": "学习用品",
-"lvl": "bnu"
-},
-{
-"w": "wireless",
-"syl": "wire·less",
-"zh": "无线n. 无线电报",
-"lvl": "bnu"
-},
-{
-"w": "save up",
-"syl": "save·up",
-"zh": "攒钱",
-"lvl": "bnu"
-},
-{
-"w": "recyclable",
-"syl": "re·cy·cla·ble",
-"zh": "可回收利用的",
-"lvl": "bnu"
-},
-{
-"w": "penny",
-"syl": "pen·ny",
-"zh": "分",
-"lvl": "bnu"
-},
-{
-"w": "fame",
-"syl": "fame",
-"zh": "名气",
-"lvl": "bnu"
-},
-{
-"w": "riches",
-"syl": "rich·es",
-"zh": "财富，财产",
-"lvl": "bnu"
-},
-{
-"w": "from then on",
-"syl": "from·then·on",
-"zh": "从那时起",
-"lvl": "bnu"
-},
-{
-"w": "perfectly",
-"syl": "per·fect·ly",
-"zh": "完美地",
-"lvl": "bnu"
-}
+ {
+  "w": "natural",
+  "syl": "nat·u·ral",
+  "zh": "正常",
+  "lvl": "bnu"
+ },
+ {
+  "w": "get back at",
+  "syl": "get·back·at",
+  "zh": "向某人报复",
+  "lvl": "bnu"
+ },
+ {
+  "w": "disagreement",
+  "syl": "dis·a·gree·ment",
+  "zh": "意见不一，分歧",
+  "lvl": "bnu"
+ },
+ {
+  "w": "statement",
+  "syl": "state·ment",
+  "zh": "说明，说法",
+  "lvl": "bnu"
+ },
+ {
+  "w": "pocket money",
+  "syl": "pock·et·mon·ey",
+  "zh": "零花钱",
+  "lvl": "bnu"
+ },
+ {
+  "w": "stamp",
+  "syl": "stamp",
+  "zh": "邮票",
+  "lvl": "bnu"
+ },
+ {
+  "w": "recycled",
+  "syl": "re·cy·cled",
+  "zh": "回收利用的",
+  "lvl": "bnu"
+ },
+ {
+  "w": "smiling",
+  "syl": "smi·ling",
+  "zh": "微笑的",
+  "lvl": "bnu"
+ },
+ {
+  "w": "e-card",
+  "syl": "e·card",
+  "zh": "电子贺卡",
+  "lvl": "bnu"
+ },
+ {
+  "w": "how come",
+  "syl": "how·come",
+  "zh": "怎么可能",
+  "lvl": "bnu"
+ },
+ {
+  "w": "school supply",
+  "syl": "school·su·pply",
+  "zh": "学习用品",
+  "lvl": "bnu"
+ },
+ {
+  "w": "wireless",
+  "syl": "wire·less",
+  "zh": "无线n. 无线电报",
+  "lvl": "bnu"
+ },
+ {
+  "w": "save up",
+  "syl": "save·up",
+  "zh": "攒钱",
+  "lvl": "bnu"
+ },
+ {
+  "w": "recyclable",
+  "syl": "re·cy·cla·ble",
+  "zh": "可回收利用的",
+  "lvl": "bnu"
+ },
+ {
+  "w": "penny",
+  "syl": "pen·ny",
+  "zh": "分",
+  "lvl": "bnu"
+ },
+ {
+  "w": "fame",
+  "syl": "fame",
+  "zh": "名气",
+  "lvl": "bnu"
+ },
+ {
+  "w": "riches",
+  "syl": "rich·es",
+  "zh": "财富，财产",
+  "lvl": "bnu"
+ },
+ {
+  "w": "from then on",
+  "syl": "from·then·on",
+  "zh": "从那时起",
+  "lvl": "bnu"
+ },
+ {
+  "w": "perfectly",
+  "syl": "per·fect·ly",
+  "zh": "完美地",
+  "lvl": "bnu"
+ }
 ]

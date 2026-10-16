@@ -1,122 +1,116 @@
 [
-{
-"w": "legally",
-"syl": "le·gal·ly",
-"zh": "合法地",
-"lvl": "sh"
-},
-{
-"w": "carbon footprint",
-"syl": "car·bon·foot·print",
-"zh": "个人",
-"lvl": "sh"
-},
-{
-"w": "rubbish dump",
-"syl": "rub·bish·dump",
-"zh": "",
-"lvl": "sh"
-},
-{
-"w": "put... aside",
-"syl": "put·a·side",
-"zh": "",
-"lvl": "sh"
-},
-{
-"w": "peanut butter",
-"syl": "pea·nut·but·ter",
-"zh": "花生酱",
-"lvl": "sh"
-},
-{
-"w": "baked potato",
-"syl": "baked·po·ta·to",
-"zh": "烤土豆",
-"lvl": "sh"
-},
-{
-"w": "vending machine",
-"syl": "ven·ding·ma·chine",
-"zh": "自动售货机",
-"lvl": "sh"
-},
-{
-"w": "pay regard to",
-"syl": "pay·re·gard·to",
-"zh": "",
-"lvl": "sh"
-},
-{
-"w": "traffic accident",
-"syl": "traf·fic·ac·ci·dent",
-"zh": "",
-"lvl": "sh"
-},
-{
-"w": "intended",
-"syl": "in·ten·ded",
-"zh": "意欲达到的",
-"lvl": "sh"
-},
-{
-"w": "time-honored",
-"syl": "time·hon·ored",
-"zh": "古老而受到尊重的",
-"lvl": "sh"
-},
-{
-"w": "hang on",
-"syl": "hang·on",
-"zh": "等等（好像有什么不对或新的情况出现）",
-"lvl": "sh"
-},
-{
-"w": "take cover",
-"syl": "take·cov·er",
-"zh": "",
-"lvl": "sh"
-},
-{
-"w": "domestic chore",
-"syl": "do·mes·tic·chore",
-"zh": "家务琐事",
-"lvl": "sh"
-},
-{
-"w": "so that",
-"syl": "so·that",
-"zh": "负责",
-"lvl": "sh"
-},
-{
-"w": "adventurer",
-"syl": "ad·ven·tu·rer",
-"zh": "冒险家",
-"lvl": "sh"
-},
-{
-"w": "eyewitness",
-"syl": "eye·wit·ness",
-"zh": "目击者",
-"lvl": "sh"
-},
-{
-"w": "be likely to",
-"syl": "be·li·kely·to",
-"zh": "可能做",
-"lvl": "sh"
-},
-{
-"w": "ice sheet",
-"syl": "ice·sheet",
-"zh": "冰原",
-"lvl": "sh"
-},
-{
-"w": "devoted",
-"syl": "de·vo·ted",
-"zh": "挚爱的",
-"lvl": "sh"
-}
+ {
+  "w": "legally",
+  "syl": "le·gal·ly",
+  "zh": "合法地",
+  "lvl": "sh"
+ },
+ {
+  "w": "carbon footprint",
+  "syl": "car·bon·foot·print",
+  "zh": "个人",
+  "lvl": "sh"
+ },
+ {
+  "w": "rubbish dump",
+  "syl": "rub·bish·dump",
+  "zh": "",
+  "lvl": "sh"
+ },
+ {
+  "w": "put... aside",
+  "syl": "put·a·side",
+  "zh": "",
+  "lvl": "sh"
+ },
+ {
+  "w": "peanut butter",
+  "syl": "pea·nut·but·ter",
+  "zh": "花生酱",
+  "lvl": "sh"
+ },
+ {
+  "w": "baked potato",
+  "syl": "baked·po·ta·to",
+  "zh": "烤土豆",
+  "lvl": "sh"
+ },
+ {
+  "w": "vending machine",
+  "syl": "ven·ding·ma·chine",
+  "zh": "自动售货机",
+  "lvl": "sh"
+ },
+ {
+  "w": "pay regard to",
+  "syl": "pay·re·gard·to",
+  "zh": "",
+  "lvl": "sh"
+ },
+ {
+  "w": "traffic accident",
+  "syl": "traf·fic·ac·ci·dent",
+  "zh": "",
+  "lvl": "sh"
+ },
+ {
+  "w": "intended",
+  "syl": "in·ten·ded",
+  "zh": "意欲达到的",
+  "lvl": "sh"
+ },
+ {
+  "w": "time-honored",
+  "syl": "time·hon·ored",
+  "zh": "古老而受到尊重的",
+  "lvl": "sh"
+ },
+ {
+  "w": "hang on",
+  "syl": "hang·on",
+  "zh": "等等（好像有什么不对或新的情况出现）",
+  "lvl": "sh"
+ },
+ {
+  "w": "take cover",
+  "syl": "take·cov·er",
+  "zh": "",
+  "lvl": "sh"
+ },
+ {
+  "w": "domestic chore",
+  "syl": "do·mes·tic·chore",
+  "zh": "家务琐事",
+  "lvl": "sh"
+ },
+ {
+  "w": "adventurer",
+  "syl": "ad·ven·tu·rer",
+  "zh": "冒险家",
+  "lvl": "sh"
+ },
+ {
+  "w": "eyewitness",
+  "syl": "eye·wit·ness",
+  "zh": "目击者",
+  "lvl": "sh"
+ },
+ {
+  "w": "be likely to",
+  "syl": "be·li·kely·to",
+  "zh": "可能做",
+  "lvl": "sh"
+ },
+ {
+  "w": "ice sheet",
+  "syl": "ice·sheet",
+  "zh": "冰原",
+  "lvl": "sh"
+ },
+ {
+  "w": "devoted",
+  "syl": "de·vo·ted",
+  "zh": "挚爱的",
+  "lvl": "sh"
+ }
 ]

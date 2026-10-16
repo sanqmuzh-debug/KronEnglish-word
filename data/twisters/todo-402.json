@@ -1,122 +1,110 @@
 [
-{
-"w": "video camera",
-"syl": "vid·e·o·cam·e·ra",
-"zh": "摄像机",
-"lvl": "sh"
-},
-{
-"w": "play against",
-"syl": "play·a·gainst",
-"zh": "同⋯•比赛",
-"lvl": "sh"
-},
-{
-"w": "weather forecast",
-"syl": "weath·er·fore·cast",
-"zh": "天气预报",
-"lvl": "sh"
-},
-{
-"w": "life jacket",
-"syl": "life·jack·et",
-"zh": "救生衣",
-"lvl": "sh"
-},
-{
-"w": "thank goodness",
-"syl": "thank·good·ness",
-"zh": "谢天谢地",
-"lvl": "sh"
-},
-{
-"w": "patch",
-"syl": "patch",
-"zh": "色斑",
-"lvl": "sh"
-},
-{
-"w": "heart attack",
-"syl": "heart·at·tack",
-"zh": "心脏病发作",
-"lvl": "sh"
-},
-{
-"w": "keep sb. from sth",
-"syl": "keep·sb·from·sth",
-"zh": "阻止（或防止",
-"lvl": "sh"
-},
-{
-"w": "keep on",
-"syl": "keep·on",
-"zh": "继续",
-"lvl": "sh"
-},
-{
-"w": "landing site",
-"syl": "lan·ding·site",
-"zh": "降落场",
-"lvl": "sh"
-},
-{
-"w": "as soon as possible",
-"syl": "as·soon·as·pos·si·ble",
-"zh": "尽快",
-"lvl": "sh"
-},
-{
-"w": "disagree with",
-"syl": "dis·a·gree·with",
-"zh": "不同意",
-"lvl": "sh"
-},
-{
-"w": "in the present",
-"syl": "in·the·pres·ent",
-"zh": "现在",
-"lvl": "sh"
-},
-{
-"w": "at the front",
-"syl": "at·the·front",
-"zh": "在前面",
-"lvl": "sh"
-},
-{
-"w": "on the Internet",
-"syl": "on·the·In·ter·net",
-"zh": "在互联网上",
-"lvl": "sh"
-},
-{
-"w": "mix... with",
-"syl": "mix·with",
-"zh": "相混合",
-"lvl": "sh"
-},
-{
-"w": "prepare for",
-"syl": "pre·pare·for",
-"zh": "准备",
-"lvl": "sh"
-},
-{
-"w": "in a second",
-"syl": "in·a·sec·ond",
-"zh": "片刻",
-"lvl": "sh"
-},
-{
-"w": "displace",
-"syl": "dis·place",
-"zh": "取代，替代",
-"lvl": "sh"
-},
-{
-"w": "racing",
-"syl": "ra·cing",
-"zh": "赛马",
-"lvl": "sh"
-}
+ {
+  "w": "video camera",
+  "syl": "vid·e·o·cam·e·ra",
+  "zh": "摄像机",
+  "lvl": "sh"
+ },
+ {
+  "w": "play against",
+  "syl": "play·a·gainst",
+  "zh": "同⋯•比赛",
+  "lvl": "sh"
+ },
+ {
+  "w": "weather forecast",
+  "syl": "weath·er·fore·cast",
+  "zh": "天气预报",
+  "lvl": "sh"
+ },
+ {
+  "w": "life jacket",
+  "syl": "life·jack·et",
+  "zh": "救生衣",
+  "lvl": "sh"
+ },
+ {
+  "w": "thank goodness",
+  "syl": "thank·good·ness",
+  "zh": "谢天谢地",
+  "lvl": "sh"
+ },
+ {
+  "w": "patch",
+  "syl": "patch",
+  "zh": "色斑",
+  "lvl": "sh"
+ },
+ {
+  "w": "heart attack",
+  "syl": "heart·at·tack",
+  "zh": "心脏病发作",
+  "lvl": "sh"
+ },
+ {
+  "w": "keep on",
+  "syl": "keep·on",
+  "zh": "继续",
+  "lvl": "sh"
+ },
+ {
+  "w": "landing site",
+  "syl": "lan·ding·site",
+  "zh": "降落场",
+  "lvl": "sh"
+ },
+ {
+  "w": "as soon as possible",
+  "syl": "as·soon·as·pos·si·ble",
+  "zh": "尽快",
+  "lvl": "sh"
+ },
+ {
+  "w": "disagree with",
+  "syl": "dis·a·gree·with",
+  "zh": "不同意",
+  "lvl": "sh"
+ },
+ {
+  "w": "in the present",
+  "syl": "in·the·pres·ent",
+  "zh": "现在",
+  "lvl": "sh"
+ },
+ {
+  "w": "at the front",
+  "syl": "at·the·front",
+  "zh": "在前面",
+  "lvl": "sh"
+ },
+ {
+  "w": "on the Internet",
+  "syl": "on·the·In·ter·net",
+  "zh": "在互联网上",
+  "lvl": "sh"
+ },
+ {
+  "w": "prepare for",
+  "syl": "pre·pare·for",
+  "zh": "准备",
+  "lvl": "sh"
+ },
+ {
+  "w": "in a second",
+  "syl": "in·a·sec·ond",
+  "zh": "片刻",
+  "lvl": "sh"
+ },
+ {
+  "w": "displace",
+  "syl": "dis·place",
+  "zh": "取代，替代",
+  "lvl": "sh"
+ },
+ {
+  "w": "racing",
+  "syl": "ra·cing",
+  "zh": "赛马",
+  "lvl": "sh"
+ }
 ]

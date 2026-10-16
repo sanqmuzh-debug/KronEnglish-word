@@ -1,122 +1,116 @@
 [
-{
-"w": "public service",
-"syl": "pub·lic·ser·vice",
-"zh": "公共服务",
-"lvl": "think"
-},
-{
-"w": "qualifications",
-"syl": "qua·li·fi·ca·tions",
-"zh": "任职资质",
-"lvl": "think"
-},
-{
-"w": "unconcerned",
-"syl": "un·con·cerned",
-"zh": "毫不担心的",
-"lvl": "think"
-},
-{
-"w": "unsurprising",
-"syl": "un·sur·pri·sing",
-"zh": "不足为奇的",
-"lvl": "think"
-},
-{
-"w": "unimportant",
-"syl": "u·nim·por·tant",
-"zh": "微不足道的",
-"lvl": "think"
-},
-{
-"w": "unnecessary",
-"syl": "un·nec·es·sa·ry",
-"zh": "不必要的",
-"lvl": "think"
-},
-{
-"w": "untrue",
-"syl": "un·true",
-"zh": "虚假的",
-"lvl": "think"
-},
-{
-"w": "irresponsible",
-"syl": "ir·res·pon·si·ble",
-"zh": "不负责任的",
-"lvl": "think"
-},
-{
-"w": "safety record",
-"syl": "safe·ty·re·cord",
-"zh": "安全生产记录",
-"lvl": "think"
-},
-{
-"w": "wreck",
-"syl": "wreck",
-"zh": "沉船残骸",
-"lvl": "think"
-},
-{
-"w": "sunk",
-"syl": "sunk",
-"zh": "沉没的（过去式",
-"lvl": "think"
-},
-{
-"w": "air pocket",
-"syl": "air·pock·et",
-"zh": "气室",
-"lvl": "think"
-},
-{
-"w": "tragedy",
-"syl": "trag·e·dy",
-"zh": "悲剧",
-"lvl": "think"
-},
-{
-"w": "crawl",
-"syl": "crawl",
-"zh": "爬行",
-"lvl": "think"
-},
-{
-"w": "stagger",
-"syl": "stag·ger",
-"zh": "蹒跚",
-"lvl": "think"
-},
-{
-"w": "tiptoe",
-"syl": "tip·toe",
-"zh": "蹑手蹑脚走",
-"lvl": "think"
-},
-{
-"w": "right?",
-"syl": "right",
-"zh": "对吧？",
-"lvl": "think"
-},
-{
-"w": "right in the middle",
-"syl": "right·in·the·mid·dle",
-"zh": "正当中",
-"lvl": "think"
-},
-{
-"w": "rightly or wrongly",
-"syl": "right·ly·or·wrong·ly",
-"zh": "无论对错",
-"lvl": "think"
-},
-{
-"w": "commuters",
-"syl": "com·mu·ters",
-"zh": "通勤者（往返家与办公室的人）",
-"lvl": "think"
-}
+ {
+  "w": "public service",
+  "syl": "pub·lic·ser·vice",
+  "zh": "公共服务",
+  "lvl": "think"
+ },
+ {
+  "w": "qualifications",
+  "syl": "qua·li·fi·ca·tions",
+  "zh": "任职资质",
+  "lvl": "think"
+ },
+ {
+  "w": "unconcerned",
+  "syl": "un·con·cerned",
+  "zh": "毫不担心的",
+  "lvl": "think"
+ },
+ {
+  "w": "unsurprising",
+  "syl": "un·sur·pri·sing",
+  "zh": "不足为奇的",
+  "lvl": "think"
+ },
+ {
+  "w": "unimportant",
+  "syl": "u·nim·por·tant",
+  "zh": "微不足道的",
+  "lvl": "think"
+ },
+ {
+  "w": "unnecessary",
+  "syl": "un·nec·es·sa·ry",
+  "zh": "不必要的",
+  "lvl": "think"
+ },
+ {
+  "w": "untrue",
+  "syl": "un·true",
+  "zh": "虚假的",
+  "lvl": "think"
+ },
+ {
+  "w": "irresponsible",
+  "syl": "ir·res·pon·si·ble",
+  "zh": "不负责任的",
+  "lvl": "think"
+ },
+ {
+  "w": "safety record",
+  "syl": "safe·ty·re·cord",
+  "zh": "安全生产记录",
+  "lvl": "think"
+ },
+ {
+  "w": "wreck",
+  "syl": "wreck",
+  "zh": "沉船残骸",
+  "lvl": "think"
+ },
+ {
+  "w": "sunk",
+  "syl": "sunk",
+  "zh": "沉没的（过去式",
+  "lvl": "think"
+ },
+ {
+  "w": "air pocket",
+  "syl": "air·pock·et",
+  "zh": "气室",
+  "lvl": "think"
+ },
+ {
+  "w": "tragedy",
+  "syl": "trag·e·dy",
+  "zh": "悲剧",
+  "lvl": "think"
+ },
+ {
+  "w": "crawl",
+  "syl": "crawl",
+  "zh": "爬行",
+  "lvl": "think"
+ },
+ {
+  "w": "stagger",
+  "syl": "stag·ger",
+  "zh": "蹒跚",
+  "lvl": "think"
+ },
+ {
+  "w": "tiptoe",
+  "syl": "tip·toe",
+  "zh": "蹑手蹑脚走",
+  "lvl": "think"
+ },
+ {
+  "w": "right in the middle",
+  "syl": "right·in·the·mid·dle",
+  "zh": "正当中",
+  "lvl": "think"
+ },
+ {
+  "w": "rightly or wrongly",
+  "syl": "right·ly·or·wrong·ly",
+  "zh": "无论对错",
+  "lvl": "think"
+ },
+ {
+  "w": "commuters",
+  "syl": "com·mu·ters",
+  "zh": "通勤者（往返家与办公室的人）",
+  "lvl": "think"
+ }
 ]

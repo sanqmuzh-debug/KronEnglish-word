@@ -1,122 +1,116 @@
 [
-{
-"w": "tracking",
-"syl": "track·ing",
-"zh": "跟踪",
-"lvl": "bnu"
-},
-{
-"w": "cut back on",
-"syl": "cut·back·on",
-"zh": "削减，缩减",
-"lvl": "bnu"
-},
-{
-"w": "disposable",
-"syl": "dis·po·sa·ble",
-"zh": "一次性用后即弃的",
-"lvl": "bnu"
-},
-{
-"w": "packaging",
-"syl": "pack·a·ging",
-"zh": "包装盒（瓶",
-"lvl": "bnu"
-},
-{
-"w": "yoghurt",
-"syl": "yo·ghurt",
-"zh": "酸奶",
-"lvl": "bnu"
-},
-{
-"w": "container",
-"syl": "con·tai·ner",
-"zh": "容器",
-"lvl": "bnu"
-},
-{
-"w": "air conditioning",
-"syl": "air·con·di·tion·ing",
-"zh": "空调系统",
-"lvl": "bnu"
-},
-{
-"w": "to sum up",
-"syl": "to·sum·up",
-"zh": "总之",
-"lvl": "bnu"
-},
-{
-"w": "landfill",
-"syl": "land·fill",
-"zh": "废弃物填埋场",
-"lvl": "bnu"
-},
-{
-"w": "clean-burning",
-"syl": "clean·burn·ing",
-"zh": "清洁焚烧的",
-"lvl": "bnu"
-},
-{
-"w": "waste-to-energy",
-"syl": "waste·to·en·er·gy",
-"zh": "以垃圾作为能源",
-"lvl": "bnu"
-},
-{
-"w": "footwear",
-"syl": "foot·wear",
-"zh": "鞋类",
-"lvl": "bnu"
-},
-{
-"w": "brush up",
-"syl": "brush·up",
-"zh": "温习，复习",
-"lvl": "bnu"
-},
-{
-"w": "reflect on",
-"syl": "re·flect·on",
-"zh": "思考",
-"lvl": "bnu"
-},
-{
-"w": "argue with",
-"syl": "ar·gue·with",
-"zh": "争吵",
-"lvl": "bnu"
-},
-{
-"w": "end up doing",
-"syl": "end·up·do·ing",
-"zh": "最后",
-"lvl": "bnu"
-},
-{
-"w": "annually",
-"syl": "an·nu·al·ly",
-"zh": "每年",
-"lvl": "bnu"
-},
-{
-"w": "near-surface",
-"syl": "near·sur·face",
-"zh": "近地表",
-"lvl": "bnu"
-},
-{
-"w": "build-up",
-"syl": "build·up",
-"zh": "增长",
-"lvl": "bnu"
-},
-{
-"w": "pollutant",
-"syl": "pol·lu·tant",
-"zh": "污染物",
-"lvl": "bnu"
-}
+ {
+  "w": "tracking",
+  "syl": "track·ing",
+  "zh": "跟踪",
+  "lvl": "bnu"
+ },
+ {
+  "w": "cut back on",
+  "syl": "cut·back·on",
+  "zh": "削减，缩减",
+  "lvl": "bnu"
+ },
+ {
+  "w": "disposable",
+  "syl": "dis·po·sa·ble",
+  "zh": "一次性用后即弃的",
+  "lvl": "bnu"
+ },
+ {
+  "w": "packaging",
+  "syl": "pack·a·ging",
+  "zh": "包装盒（瓶",
+  "lvl": "bnu"
+ },
+ {
+  "w": "yoghurt",
+  "syl": "yo·ghurt",
+  "zh": "酸奶",
+  "lvl": "bnu"
+ },
+ {
+  "w": "container",
+  "syl": "con·tai·ner",
+  "zh": "容器",
+  "lvl": "bnu"
+ },
+ {
+  "w": "air conditioning",
+  "syl": "air·con·di·tion·ing",
+  "zh": "空调系统",
+  "lvl": "bnu"
+ },
+ {
+  "w": "to sum up",
+  "syl": "to·sum·up",
+  "zh": "总之",
+  "lvl": "bnu"
+ },
+ {
+  "w": "landfill",
+  "syl": "land·fill",
+  "zh": "废弃物填埋场",
+  "lvl": "bnu"
+ },
+ {
+  "w": "clean-burning",
+  "syl": "clean·burn·ing",
+  "zh": "清洁焚烧的",
+  "lvl": "bnu"
+ },
+ {
+  "w": "waste-to-energy",
+  "syl": "waste·to·en·er·gy",
+  "zh": "以垃圾作为能源",
+  "lvl": "bnu"
+ },
+ {
+  "w": "footwear",
+  "syl": "foot·wear",
+  "zh": "鞋类",
+  "lvl": "bnu"
+ },
+ {
+  "w": "brush up",
+  "syl": "brush·up",
+  "zh": "温习，复习",
+  "lvl": "bnu"
+ },
+ {
+  "w": "reflect on",
+  "syl": "re·flect·on",
+  "zh": "思考",
+  "lvl": "bnu"
+ },
+ {
+  "w": "argue with",
+  "syl": "ar·gue·with",
+  "zh": "争吵",
+  "lvl": "bnu"
+ },
+ {
+  "w": "end up doing",
+  "syl": "end·up·do·ing",
+  "zh": "最后",
+  "lvl": "bnu"
+ },
+ {
+  "w": "annually",
+  "syl": "an·nu·al·ly",
+  "zh": "每年",
+  "lvl": "bnu"
+ },
+ {
+  "w": "near-surface",
+  "syl": "near·sur·face",
+  "zh": "近地表",
+  "lvl": "bnu"
+ },
+ {
+  "w": "pollutant",
+  "syl": "pol·lu·tant",
+  "zh": "污染物",
+  "lvl": "bnu"
+ }
 ]

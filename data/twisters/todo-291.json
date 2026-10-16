@@ -1,122 +1,116 @@
 [
-{
-"w": "daddy",
-"syl": "dad·dy",
-"zh": "爸爸",
-"lvl": "wy"
-},
-{
-"w": "mummy",
-"syl": "mum·my",
-"zh": "妈妈",
-"lvl": "wy"
-},
-{
-"w": "dining room",
-"syl": "di·ning·room",
-"zh": "餐厅",
-"lvl": "wy"
-},
-{
-"w": "miaow",
-"syl": "mia·ow",
-"zh": "咪，喵",
-"lvl": "wy"
-},
-{
-"w": "bear i",
-"syl": "bear·i",
-"zh": "",
-"lvl": "wy"
-},
-{
-"w": "ostrich",
-"syl": "os·trich",
-"zh": "鸵马",
-"lvl": "wy"
-},
-{
-"w": "out",
-"syl": "out",
-"zh": "动物园",
-"lvl": "wy"
-},
-{
-"w": "zebra",
-"syl": "ze·bra",
-"zh": "移动",
-"lvl": "wy"
-},
-{
-"w": "shoe",
-"syl": "shoe",
-"zh": "鞋",
-"lvl": "wy"
-},
-{
-"w": "toe",
-"syl": "toe",
-"zh": "脚趾",
-"lvl": "wy"
-},
-{
-"w": "answer",
-"syl": "an·swer",
-"zh": "回答，答复",
-"lvl": "wy"
-},
-{
-"w": "what about",
-"syl": "what·a·bout",
-"zh": "………怎么样葡萄",
-"lvl": "wy"
-},
-{
-"w": "very much",
-"syl": "ve·ry·much",
-"zh": "非常下午，午后",
-"lvl": "wy"
-},
-{
-"w": "afternoon tea",
-"syl": "af·ter·noon·tea",
-"zh": "每，每逢，每隔",
-"lvl": "wy"
-},
-{
-"w": "cupcake",
-"syl": "cup·cake",
-"zh": "三明洽，夹心面包",
-"lvl": "wy"
-},
-{
-"w": "nob y",
-"syl": "nob·y",
-"zh": "空闲的，有空",
-"lvl": "wy"
-},
-{
-"w": "study",
-"syl": "stud·y",
-"zh": "螳螂",
-"lvl": "wy"
-},
-{
-"w": "mantis",
-"syl": "man·tis",
-"zh": "",
-"lvl": "wy"
-},
-{
-"w": "ice",
-"syl": "ice",
-"zh": "冰",
-"lvl": "wy"
-},
-{
-"w": "tick-tock",
-"syl": "tick·tock",
-"zh": "嘀嗒声",
-"lvl": "wy"
-}
+ {
+  "w": "daddy",
+  "syl": "dad·dy",
+  "zh": "爸爸",
+  "lvl": "wy"
+ },
+ {
+  "w": "mummy",
+  "syl": "mum·my",
+  "zh": "妈妈",
+  "lvl": "wy"
+ },
+ {
+  "w": "dining room",
+  "syl": "di·ning·room",
+  "zh": "餐厅",
+  "lvl": "wy"
+ },
+ {
+  "w": "miaow",
+  "syl": "mia·ow",
+  "zh": "咪，喵",
+  "lvl": "wy"
+ },
+ {
+  "w": "bear i",
+  "syl": "bear·i",
+  "zh": "",
+  "lvl": "wy"
+ },
+ {
+  "w": "ostrich",
+  "syl": "os·trich",
+  "zh": "鸵马",
+  "lvl": "wy"
+ },
+ {
+  "w": "out",
+  "syl": "out",
+  "zh": "动物园",
+  "lvl": "wy"
+ },
+ {
+  "w": "zebra",
+  "syl": "ze·bra",
+  "zh": "移动",
+  "lvl": "wy"
+ },
+ {
+  "w": "shoe",
+  "syl": "shoe",
+  "zh": "鞋",
+  "lvl": "wy"
+ },
+ {
+  "w": "toe",
+  "syl": "toe",
+  "zh": "脚趾",
+  "lvl": "wy"
+ },
+ {
+  "w": "answer",
+  "syl": "an·swer",
+  "zh": "回答，答复",
+  "lvl": "wy"
+ },
+ {
+  "w": "very much",
+  "syl": "ve·ry·much",
+  "zh": "非常下午，午后",
+  "lvl": "wy"
+ },
+ {
+  "w": "afternoon tea",
+  "syl": "af·ter·noon·tea",
+  "zh": "每，每逢，每隔",
+  "lvl": "wy"
+ },
+ {
+  "w": "cupcake",
+  "syl": "cup·cake",
+  "zh": "三明洽，夹心面包",
+  "lvl": "wy"
+ },
+ {
+  "w": "nob y",
+  "syl": "nob·y",
+  "zh": "空闲的，有空",
+  "lvl": "wy"
+ },
+ {
+  "w": "study",
+  "syl": "stud·y",
+  "zh": "螳螂",
+  "lvl": "wy"
+ },
+ {
+  "w": "mantis",
+  "syl": "man·tis",
+  "zh": "",
+  "lvl": "wy"
+ },
+ {
+  "w": "ice",
+  "syl": "ice",
+  "zh": "冰",
+  "lvl": "wy"
+ },
+ {
+  "w": "tick-tock",
+  "syl": "tick·tock",
+  "zh": "嘀嗒声",
+  "lvl": "wy"
+ }
 ]

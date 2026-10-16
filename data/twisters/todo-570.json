@@ -1,122 +1,116 @@
 [
-{
-"w": "disinfectant",
-"syl": "di·sin·fec·tant",
-"zh": "消毒剂",
-"lvl": "exam"
-},
-{
-"w": "do...afavour",
-"syl": "do·a·fa·vour",
-"zh": "帮…的忙",
-"lvl": "exam"
-},
-{
-"w": "eccentricity",
-"syl": "ec·cen·tric·i·ty",
-"zh": "古怪",
-"lvl": "exam"
-},
-{
-"w": "effortlessly",
-"syl": "ef·fort·less·ly",
-"zh": "轻松地",
-"lvl": "exam"
-},
-{
-"w": "fundamentals",
-"syl": "fun·da·men·tals",
-"zh": "基本面",
-"lvl": "exam"
-},
-{
-"w": "gall-bladder",
-"syl": "gall·blad·der",
-"zh": "胆囊",
-"lvl": "exam"
-},
-{
-"w": "gene-therapy",
-"syl": "gene·the·ra·py",
-"zh": "基因疗法",
-"lvl": "exam"
-},
-{
-"w": "hand-crafted",
-"syl": "hand·craf·ted",
-"zh": "手工制作的",
-"lvl": "exam"
-},
-{
-"w": "have...class",
-"syl": "have·class",
-"zh": "上⋯⋯课",
-"lvl": "exam"
-},
-{
-"w": "heat-sensing",
-"syl": "heat·sen·sing",
-"zh": "热敏感的",
-"lvl": "exam"
-},
-{
-"w": "homelessness",
-"syl": "home·less·ness",
-"zh": "无家可归",
-"lvl": "exam"
-},
-{
-"w": "housewarming",
-"syl": "house·war·ming",
-"zh": "乔迁庆宴",
-"lvl": "exam"
-},
-{
-"w": "humming-bird",
-"syl": "hum·ming·bird",
-"zh": "蜂鸟",
-"lvl": "exam"
-},
-{
-"w": "inhospitable",
-"syl": "in·hos·pi·ta·ble",
-"zh": "不适合居住的",
-"lvl": "exam"
-},
-{
-"w": "interconnect",
-"syl": "in·ter·con·nect",
-"zh": "使互相连接",
-"lvl": "exam"
-},
-{
-"w": "interminably",
-"syl": "in·ter·mi·nab·ly",
-"zh": "无限地",
-"lvl": "exam"
-},
-{
-"w": "interrogator",
-"syl": "in·ter·ro·ga·tor",
-"zh": "讯问者，质问者",
-"lvl": "exam"
-},
-{
-"w": "johannesburg",
-"syl": "jo·han·nes·burg",
-"zh": "约翰内斯堡（南非城市）",
-"lvl": "exam"
-},
-{
-"w": "link...to...",
-"syl": "link·to",
-"zh": "将……和……联系或连接起来",
-"lvl": "exam"
-},
-{
-"w": "longitudinal",
-"syl": "lon·gi·tu·di·nal",
-"zh": "长度的，纵向的",
-"lvl": "exam"
-}
+ {
+  "w": "disinfectant",
+  "syl": "di·sin·fec·tant",
+  "zh": "消毒剂",
+  "lvl": "exam"
+ },
+ {
+  "w": "do...afavour",
+  "syl": "do·a·fa·vour",
+  "zh": "帮…的忙",
+  "lvl": "exam"
+ },
+ {
+  "w": "eccentricity",
+  "syl": "ec·cen·tric·i·ty",
+  "zh": "古怪",
+  "lvl": "exam"
+ },
+ {
+  "w": "effortlessly",
+  "syl": "ef·fort·less·ly",
+  "zh": "轻松地",
+  "lvl": "exam"
+ },
+ {
+  "w": "fundamentals",
+  "syl": "fun·da·men·tals",
+  "zh": "基本面",
+  "lvl": "exam"
+ },
+ {
+  "w": "gall-bladder",
+  "syl": "gall·blad·der",
+  "zh": "胆囊",
+  "lvl": "exam"
+ },
+ {
+  "w": "gene-therapy",
+  "syl": "gene·the·ra·py",
+  "zh": "基因疗法",
+  "lvl": "exam"
+ },
+ {
+  "w": "hand-crafted",
+  "syl": "hand·craf·ted",
+  "zh": "手工制作的",
+  "lvl": "exam"
+ },
+ {
+  "w": "heat-sensing",
+  "syl": "heat·sen·sing",
+  "zh": "热敏感的",
+  "lvl": "exam"
+ },
+ {
+  "w": "homelessness",
+  "syl": "home·less·ness",
+  "zh": "无家可归",
+  "lvl": "exam"
+ },
+ {
+  "w": "housewarming",
+  "syl": "house·war·ming",
+  "zh": "乔迁庆宴",
+  "lvl": "exam"
+ },
+ {
+  "w": "humming-bird",
+  "syl": "hum·ming·bird",
+  "zh": "蜂鸟",
+  "lvl": "exam"
+ },
+ {
+  "w": "inhospitable",
+  "syl": "in·hos·pi·ta·ble",
+  "zh": "不适合居住的",
+  "lvl": "exam"
+ },
+ {
+  "w": "interconnect",
+  "syl": "in·ter·con·nect",
+  "zh": "使互相连接",
+  "lvl": "exam"
+ },
+ {
+  "w": "interminably",
+  "syl": "in·ter·mi·nab·ly",
+  "zh": "无限地",
+  "lvl": "exam"
+ },
+ {
+  "w": "interrogator",
+  "syl": "in·ter·ro·ga·tor",
+  "zh": "讯问者，质问者",
+  "lvl": "exam"
+ },
+ {
+  "w": "johannesburg",
+  "syl": "jo·han·nes·burg",
+  "zh": "约翰内斯堡（南非城市）",
+  "lvl": "exam"
+ },
+ {
+  "w": "link...to...",
+  "syl": "link·to",
+  "zh": "将……和……联系或连接起来",
+  "lvl": "exam"
+ },
+ {
+  "w": "longitudinal",
+  "syl": "lon·gi·tu·di·nal",
+  "zh": "长度的，纵向的",
+  "lvl": "exam"
+ }
 ]

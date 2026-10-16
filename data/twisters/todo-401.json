@@ -1,122 +1,110 @@
 [
-{
-"w": "spirits",
-"syl": "spi·rits",
-"zh": "情绪",
-"lvl": "sh"
-},
-{
-"w": "voluntary work",
-"syl": "vol·un·ta·ry·work",
-"zh": "义务性工作",
-"lvl": "sh"
-},
-{
-"w": "ask permission",
-"syl": "ask·per·mis·sion",
-"zh": "报请批准",
-"lvl": "sh"
-},
-{
-"w": "super from",
-"syl": "su·per·from",
-"zh": "因……受苦",
-"lvl": "sh"
-},
-{
-"w": "raise one's spirits",
-"syl": "raise·ones·spi·rits",
-"zh": "使振奋",
-"lvl": "sh"
-},
-{
-"w": "well-dressed",
-"syl": "well·dressed",
-"zh": "衣着入时",
-"lvl": "sh"
-},
-{
-"w": "sit up",
-"syl": "sit·up",
-"zh": "坐起来",
-"lvl": "sh"
-},
-{
-"w": "make a good impression on",
-"syl": "make·a·good·im·pres·sion·on",
-"zh": "给⋯⋯留下好印象",
-"lvl": "sh"
-},
-{
-"w": "remind sb. about sth",
-"syl": "re·mind·sb·a·bout·sth",
-"zh": "提醒某人某事",
-"lvl": "sh"
-},
-{
-"w": "cormorant",
-"syl": "cor·mo·rant",
-"zh": "鸬鹚",
-"lvl": "sh"
-},
-{
-"w": "paper cutting",
-"syl": "pa·per·cut·ting",
-"zh": "剪纸",
-"lvl": "sh"
-},
-{
-"w": "up and down",
-"syl": "up·and·down",
-"zh": "起伏，上下波动",
-"lvl": "sh"
-},
-{
-"w": "after dark",
-"syl": "af·ter·dark",
-"zh": "天黑后，黃昏后",
-"lvl": "sh"
-},
-{
-"w": "no more",
-"syl": "no·more",
-"zh": "不再",
-"lvl": "sh"
-},
-{
-"w": "role-play",
-"syl": "role·play",
-"zh": "角色扮演",
-"lvl": "sh"
-},
-{
-"w": "sketch",
-"syl": "sketch",
-"zh": "速写，概述",
-"lvl": "sh"
-},
-{
-"w": "detailed",
-"syl": "de·tailed",
-"zh": "详细",
-"lvl": "sh"
-},
-{
-"w": "separately",
-"syl": "sep·a·rate·ly",
-"zh": "单独地",
-"lvl": "sh"
-},
-{
-"w": "comic strip",
-"syl": "com·ic·strip",
-"zh": "连环漫画",
-"lvl": "sh"
-},
-{
-"w": "pop out",
-"syl": "pop·out",
-"zh": "张犬",
-"lvl": "sh"
-}
+ {
+  "w": "spirits",
+  "syl": "spi·rits",
+  "zh": "情绪",
+  "lvl": "sh"
+ },
+ {
+  "w": "voluntary work",
+  "syl": "vol·un·ta·ry·work",
+  "zh": "义务性工作",
+  "lvl": "sh"
+ },
+ {
+  "w": "ask permission",
+  "syl": "ask·per·mis·sion",
+  "zh": "报请批准",
+  "lvl": "sh"
+ },
+ {
+  "w": "super from",
+  "syl": "su·per·from",
+  "zh": "因……受苦",
+  "lvl": "sh"
+ },
+ {
+  "w": "raise one's spirits",
+  "syl": "raise·ones·spi·rits",
+  "zh": "使振奋",
+  "lvl": "sh"
+ },
+ {
+  "w": "well-dressed",
+  "syl": "well·dressed",
+  "zh": "衣着入时",
+  "lvl": "sh"
+ },
+ {
+  "w": "make a good impression on",
+  "syl": "make·a·good·im·pres·sion·on",
+  "zh": "给⋯⋯留下好印象",
+  "lvl": "sh"
+ },
+ {
+  "w": "remind sb. about sth",
+  "syl": "re·mind·sb·a·bout·sth",
+  "zh": "提醒某人某事",
+  "lvl": "sh"
+ },
+ {
+  "w": "cormorant",
+  "syl": "cor·mo·rant",
+  "zh": "鸬鹚",
+  "lvl": "sh"
+ },
+ {
+  "w": "up and down",
+  "syl": "up·and·down",
+  "zh": "起伏，上下波动",
+  "lvl": "sh"
+ },
+ {
+  "w": "after dark",
+  "syl": "af·ter·dark",
+  "zh": "天黑后，黃昏后",
+  "lvl": "sh"
+ },
+ {
+  "w": "no more",
+  "syl": "no·more",
+  "zh": "不再",
+  "lvl": "sh"
+ },
+ {
+  "w": "role-play",
+  "syl": "role·play",
+  "zh": "角色扮演",
+  "lvl": "sh"
+ },
+ {
+  "w": "sketch",
+  "syl": "sketch",
+  "zh": "速写，概述",
+  "lvl": "sh"
+ },
+ {
+  "w": "detailed",
+  "syl": "de·tailed",
+  "zh": "详细",
+  "lvl": "sh"
+ },
+ {
+  "w": "separately",
+  "syl": "sep·a·rate·ly",
+  "zh": "单独地",
+  "lvl": "sh"
+ },
+ {
+  "w": "comic strip",
+  "syl": "com·ic·strip",
+  "zh": "连环漫画",
+  "lvl": "sh"
+ },
+ {
+  "w": "pop out",
+  "syl": "pop·out",
+  "zh": "张犬",
+  "lvl": "sh"
+ }
 ]

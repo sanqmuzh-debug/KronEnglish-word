@@ -1,122 +1,116 @@
 [
-{
-"w": "bring out",
-"syl": "bring·out",
-"zh": "使显现",
-"lvl": "wy"
-},
-{
-"w": "matchbox",
-"syl": "match·box",
-"zh": "火柴盒",
-"lvl": "wy"
-},
-{
-"w": "come to life",
-"syl": "come·to·life",
-"zh": "变得生动",
-"lvl": "wy"
-},
-{
-"w": "multimedia",
-"syl": "mul·ti·me·di·a",
-"zh": "多媒体",
-"lvl": "wy"
-},
-{
-"w": "take pride in",
-"syl": "take·pride·in",
-"zh": "对⋯・感到自豪",
-"lvl": "wy"
-},
-{
-"w": "fridge magnet",
-"syl": "fridge·mag·net",
-"zh": "冰磁贴",
-"lvl": "wy"
-},
-{
-"w": "great-aunt",
-"syl": "great·aunt",
-"zh": "舅婆",
-"lvl": "wy"
-},
-{
-"w": "fighter",
-"syl": "figh·ter",
-"zh": "斗士，奋斗者",
-"lvl": "wy"
-},
-{
-"w": "name... after",
-"syl": "name·af·ter",
-"zh": "以⋯⋯名字给⋯・⋯命名",
-"lvl": "wy"
-},
-{
-"w": "leave... behind",
-"syl": "leave·be·hind",
-"zh": "离开，去下",
-"lvl": "wy"
-},
-{
-"w": "front line",
-"syl": "front·line",
-"zh": "前线",
-"lvl": "wy"
-},
-{
-"w": "presenter",
-"syl": "pres·en·ter",
-"zh": "主持人，主播",
-"lvl": "wy"
-},
-{
-"w": "co-pilot",
-"syl": "co·pi·lot",
-"zh": "驾驶员",
-"lvl": "wy"
-},
-{
-"w": "state",
-"syl": "state",
-"zh": "陈述",
-"lvl": "wy"
-},
-{
-"w": "dreamer",
-"syl": "drea·mer",
-"zh": "做梦人",
-"lvl": "wy"
-},
-{
-"w": "scientific research",
-"syl": "sci·en·tif·ic·re·search",
-"zh": "科学研究",
-"lvl": "wy"
-},
-{
-"w": "once again",
-"syl": "once·a·gain",
-"zh": "再一次",
-"lvl": "wy"
-},
-{
-"w": "start over",
-"syl": "start·o·ver",
-"zh": "重新开始",
-"lvl": "wy"
-},
-{
-"w": "punish",
-"syl": "pun·ish",
-"zh": "处罚，惩罚",
-"lvl": "wy"
-},
-{
-"w": "global warming",
-"syl": "glo·bal·war·ming",
-"zh": "全球变暖",
-"lvl": "wy"
-}
+ {
+  "w": "bring out",
+  "syl": "bring·out",
+  "zh": "使显现",
+  "lvl": "wy"
+ },
+ {
+  "w": "matchbox",
+  "syl": "match·box",
+  "zh": "火柴盒",
+  "lvl": "wy"
+ },
+ {
+  "w": "come to life",
+  "syl": "come·to·life",
+  "zh": "变得生动",
+  "lvl": "wy"
+ },
+ {
+  "w": "multimedia",
+  "syl": "mul·ti·me·di·a",
+  "zh": "多媒体",
+  "lvl": "wy"
+ },
+ {
+  "w": "take pride in",
+  "syl": "take·pride·in",
+  "zh": "对⋯・感到自豪",
+  "lvl": "wy"
+ },
+ {
+  "w": "fridge magnet",
+  "syl": "fridge·mag·net",
+  "zh": "冰磁贴",
+  "lvl": "wy"
+ },
+ {
+  "w": "great-aunt",
+  "syl": "great·aunt",
+  "zh": "舅婆",
+  "lvl": "wy"
+ },
+ {
+  "w": "fighter",
+  "syl": "figh·ter",
+  "zh": "斗士，奋斗者",
+  "lvl": "wy"
+ },
+ {
+  "w": "name... after",
+  "syl": "name·af·ter",
+  "zh": "以⋯⋯名字给⋯・⋯命名",
+  "lvl": "wy"
+ },
+ {
+  "w": "front line",
+  "syl": "front·line",
+  "zh": "前线",
+  "lvl": "wy"
+ },
+ {
+  "w": "presenter",
+  "syl": "pres·en·ter",
+  "zh": "主持人，主播",
+  "lvl": "wy"
+ },
+ {
+  "w": "co-pilot",
+  "syl": "co·pi·lot",
+  "zh": "驾驶员",
+  "lvl": "wy"
+ },
+ {
+  "w": "state",
+  "syl": "state",
+  "zh": "陈述",
+  "lvl": "wy"
+ },
+ {
+  "w": "dreamer",
+  "syl": "drea·mer",
+  "zh": "做梦人",
+  "lvl": "wy"
+ },
+ {
+  "w": "scientific research",
+  "syl": "sci·en·tif·ic·re·search",
+  "zh": "科学研究",
+  "lvl": "wy"
+ },
+ {
+  "w": "once again",
+  "syl": "once·a·gain",
+  "zh": "再一次",
+  "lvl": "wy"
+ },
+ {
+  "w": "start over",
+  "syl": "start·o·ver",
+  "zh": "重新开始",
+  "lvl": "wy"
+ },
+ {
+  "w": "punish",
+  "syl": "pun·ish",
+  "zh": "处罚，惩罚",
+  "lvl": "wy"
+ },
+ {
+  "w": "global warming",
+  "syl": "glo·bal·war·ming",
+  "zh": "全球变暖",
+  "lvl": "wy"
+ }
 ]
