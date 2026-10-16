@@ -835,7 +835,7 @@ function pullBook(btn){
   const st=document.createElement('div');st.className='bk-stage';st.id='bkStage';
   const curU=S.pick.bk===f.b.id?S.pick.u:-1;
   st.innerHTML=`<div class="bk-fly" style="left:${L}px;top:${T}px;width:${W}px;height:${H}px"><div class="bk-flip"><div class="bk-front">${coverHTML(f)}</div>
-    <div class="bk-back" style="--b:${f.c}"><header><b>${bkName(f)}</b></header><ol>${f.b.units.map((u,k)=>`<li><button data-u="${k}" class="${k===curU?'on':''}"><i>${k+1}</i><span><b>${u[0].replace('Welcome Unit','Welcome')}</b>${u[1]?`<small>${u[1]}</small>`:''}</span><em>${(d=>d>=u[2]?'<s>✓</s>':d?d+'/'+u[2]:u[2])(unitDone(f.b.id,k))}</em></button></li>`).join('')}</ol></div></div></div>`;
+    <div class="bk-back" style="--b:var(--ok)"><header><b>${bkName(f)}</b></header><ol>${f.b.units.map((u,k)=>`<li><button data-u="${k}" class="${k===curU?'on':''}"><i>${k+1}</i><span><b>${u[0].replace('Welcome Unit','Welcome')}</b>${u[1]?`<small>${u[1]}</small>`:''}</span><em>${(d=>d>=u[2]?'<s>✓</s>':d?d+'/'+u[2]:u[2])(unitDone(f.b.id,k))}</em></button></li>`).join('')}</ol></div></div></div>`;
   document.body.appendChild(st);btn.classList.add('out');
   const fly=st.querySelector('.bk-fly');
   const home=()=>`translate(${r.left-L}px,${r.top-T}px) scale(${r.width/W},${r.height/H})`;
