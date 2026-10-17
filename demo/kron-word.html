@@ -171,8 +171,8 @@ button:focus-visible{outline:3px solid var(--sky);outline-offset:3px}
 .rv-sent p{margin:0;font:500 19px/1.45 var(--font-display)}
 .rv-sent.long p{font-size:16px}.rv-sent.long p.sc{font-size:13px}
 .rv-sent p.sc{font:400 14px/1.5 var(--font-ui);color:var(--muted);margin-top:4px}
-.scene.photo{aspect-ratio:16/9;background:var(--surface-2)}.scene.photo.tw{aspect-ratio:4/3}.scene.photo::before{display:none}
-.scene.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.scene.photo{aspect-ratio:auto;background:var(--surface-2)}.scene.photo::before{display:none}
+.scene.photo img{display:block;width:100%;height:auto;max-height:52vh;object-fit:contain}
 .bc-img{width:78%;aspect-ratio:16/9;object-fit:cover;border-radius:10px;box-shadow:0 2px 0 rgba(0,0,0,.12)}
 .m-img{height:40px;aspect-ratio:16/9;object-fit:cover;border-radius:12px}
 .bk-img.gen{display:flex;flex-direction:column;justify-content:flex-end;gap:6px;padding:14% 12%;background:var(--b);color:#fff;text-align:left}
@@ -315,7 +315,6 @@ button:focus-visible{outline:3px solid var(--sky);outline-offset:3px}
 .gbox .gb-lid::before{content:"";position:absolute;inset:0 auto 0 50%;width:14px;margin-left:-7px;background:rgba(255,255,255,.55)}
 .gbox .gb-lid::after{content:"";position:absolute;left:50%;top:-14px;width:30px;height:16px;margin-left:-15px;border:5px solid rgba(255,255,255,.85);border-bottom:0;border-radius:16px 16px 0 0}
 .gbox .gb-name{position:absolute;left:50%;bottom:30px;transform:translate(-50%,0) scale(.3);opacity:0;white-space:nowrap;font:700 14px var(--font-display);color:var(--g);display:flex;flex-direction:column;align-items:center;gap:2px;transition:transform .55s cubic-bezier(.34,1.7,.64,1),opacity .3s;z-index:3}
-.gbox .gb-name i{font-style:normal;font-size:30px;line-height:1}
 .boxes:not(.picked) .gbox{animation:boxDrop .7s cubic-bezier(.34,1.6,.64,1) var(--d) both,boxIdle 2.4s ease-in-out calc(var(--d) + .8s) infinite}
 .boxes:not(.picked) .gbox:hover .gb-body,.boxes:not(.picked) .gbox:active .gb-body{transform:translateY(2px)}
 .gbox.chosen{animation:boxShake .5s ease-in-out both;z-index:2}
@@ -674,7 +673,7 @@ function showReveal(){
   work.className=`work c-${it.color}`;
   const sparks=[[12,18],[30,10],[52,22],[86,64],[70,14],[92,30]].map(([x,y],i)=>`<i class="spark" style="left:${x}%;top:${y}%;animation-delay:${i*.3}s"></i>`).join('');
   work.innerHTML=`<div class="reveal">
-    ${w.img?`<div class="scene photo${w.img.startsWith('tw-')?' tw':''}"><img src="${IMG(w.img)}" alt="${w.w}" draggable="false"></div>`:`<div class="scene">${sparks}<span class="scene-emoji">${w.e}</span>${kronSVG('','wow')}<span class="scene-say">${w.w}!</span></div>`}
+    ${w.img?`<div class="scene photo"><img src="${IMG(w.img)}" alt="${w.w}" draggable="false"></div>`:`<div class="scene">${sparks}<span class="scene-emoji">${w.e}</span>${kronSVG('','wow')}<span class="scene-say">${w.w}!</span></div>`}
     <div class="rv-head"><div class="rv-word" aria-label="${w.w}">${w.syl.map(s=>`<span>${s}</span>`).join('<i>·</i>')}</div><button class="round" id="sayWord" aria-label="读单词">${IC.speaker}</button></div>
     <div class="rv-meta"><span class="ipa">${w.ipa}</span><span class="zh">${w.zf||w.zh}</span></div>
     ${w.s?`<div class="rv-sent${w.s.length>110?' long':''}"><div><p>${markSent(w.s,w)}</p>${w.sc?`<p class="sc">${w.sc}</p>`:''}</div><button class="round sm" id="saySent" aria-label="读例句">${IC.speaker}</button></div>`:''}
@@ -749,7 +748,7 @@ function win(again){
   const games=shuffle(ARCADE).slice(0,3),tints=shuffle(['--berry','--sky','--grape','--mint']);
   openSheet(`<div class="win-kron">${kronSVG('','wow')}</div><h2 style="text-align:center">全部撞掉啦！</h2><div class="win-pg"><span>${pickTitle()}</span><b>${unitDone(S.pick.bk,S.pick.u)}/${findBook(S.pick.bk).b.units[S.pick.u][2]}</b><div class="pg"><i style="width:${unitDone(S.pick.bk,S.pick.u)/findBook(S.pick.bk).b.units[S.pick.u][2]*100}%"></i></div></div>
     <div class="stats"><div class="stat"><b>${Math.floor(sec/60)}:${String(sec%60).padStart(2,'0')}</b><span>用时</span></div><div class="stat"><b>${acc}%</b><span>一次拼对</span></div><div class="stat"><b>${S.mistakes}</b><span>拼错次数</span></div></div>
-    <div class="boxes" id="boxes">${games.map((g,i)=>`<button class="gbox" data-act="box" data-i="${i}" style="--c:var(${tints[i]});--g:${g.c};--d:${i*.12}s" aria-label="盲盒 ${i+1}"><span class="gb-lid"></span><span class="gb-body"><b>?</b></span><span class="gb-name"><i>${g.ic}</i>${g.name}</span></button>`).join('')}</div>
+    <div class="boxes" id="boxes">${games.map((g,i)=>`<button class="gbox" data-act="box" data-i="${i}" style="--c:var(${tints[i]});--g:${g.c};--d:${i*.12}s" aria-label="盲盒 ${i+1}"><span class="gb-lid"></span><span class="gb-body"><b>?</b></span><span class="gb-name">${g.name}</span></button>`).join('')}</div>
     <button class="btn primary wide" data-act="again">再来一轮</button><button class="btn wide" data-act="home">回书架</button>`,
     {again:()=>{closeSheet();newGame(false)},home:()=>{closeSheet();S.live=false;openHome()},dismiss:false,
      box:a=>{const wrap=$('#boxes');if(wrap.classList.contains('picked'))return;wrap.classList.add('picked');a.classList.add('chosen');sfx.whoosh();
@@ -758,12 +757,12 @@ function win(again){
        setTimeout(()=>openArcade(games[+a.dataset.i].id),1700)}});
 }
 const ARCADE=[
- {id:'match',name:'配对闪电战',ic:'⚡',c:'#1FAE6B'},{id:'gravity',name:'单词陨石',ic:'☄️',c:'#7A5CFA'},{id:'whack',name:'单词打地鼠',ic:'🔨',c:'#FF8A1F'},
- {id:'sentence',name:'句子拼搭',ic:'🧩',c:'#0FA2E0'},{id:'quiz',name:'抢答冲刺',ic:'⏱️',c:'#FF4769'},{id:'lava',name:'岩浆逃生',ic:'🌋',c:'#EE4B2B'},
- {id:'maze',name:'迷宫追逐',ic:'🌀',c:'#3949C9'},{id:'fish',name:'单词钓鱼',ic:'🎣',c:'#0FA39A'},{id:'race',name:'拼写赛车',ic:'🏎️',c:'#D6336C'},
- {id:'balloon',name:'气球猜词',ic:'🎈',c:'#D98200'},{id:'gold',name:'宝箱淘金',ic:'💰',c:'#B8740A'},{id:'plane',name:'纸飞机穿云',ic:'✈️',c:'#1098AD'},
- {id:'search',name:'单词寻宝',ic:'🔍',c:'#9C36B5'},{id:'memory',name:'翻翻乐',ic:'🃏',c:'#5C7CFA'},{id:'wordle',name:'五字母猜词',ic:'🔤',c:'#2B8A3E'},
- {id:'tower',name:'单词塔防',ic:'🏰',c:'#5F3DC4'},{id:'snake',name:'贪吃蛇拼词',ic:'🐍',c:'#2F9E44'},{id:'jump',name:'跳跳 Kron',ic:'🦘',c:'#F76707'},{id:'duel',name:'双人拔河',ic:'🪢',c:'#C92A2A'}];
+ {id:'match',name:'配对闪电战',c:'#1FAE6B'},{id:'gravity',name:'单词陨石',c:'#7A5CFA'},{id:'whack',name:'单词打地鼠',c:'#FF8A1F'},
+ {id:'sentence',name:'句子拼搭',c:'#0FA2E0'},{id:'quiz',name:'抢答冲刺',c:'#FF4769'},{id:'lava',name:'岩浆逃生',c:'#EE4B2B'},
+ {id:'maze',name:'迷宫追逐',c:'#3949C9'},{id:'fish',name:'单词钓鱼',c:'#0FA39A'},{id:'race',name:'拼写赛车',c:'#D6336C'},
+ {id:'balloon',name:'气球猜词',c:'#D98200'},{id:'gold',name:'宝箱淘金',c:'#B8740A'},{id:'plane',name:'纸飞机穿云',c:'#1098AD'},
+ {id:'search',name:'单词寻宝',c:'#9C36B5'},{id:'memory',name:'翻翻乐',c:'#5C7CFA'},{id:'wordle',name:'五字母猜词',c:'#2B8A3E'},
+ {id:'tower',name:'单词塔防',c:'#5F3DC4'},{id:'snake',name:'贪吃蛇拼词',c:'#2F9E44'},{id:'jump',name:'跳跳 Kron',c:'#F76707'},{id:'duel',name:'双人拔河',c:'#C92A2A'}];
 function arcadeWords(){const pack=w=>({w:w.w,zh:w.zh,e:w.e,n:w.syl.length,s:(w.s||'').replace(/[{}]/g,'')});
   const round=S.round||[],rest=shuffle((S.pool||[]).filter(w=>!round.includes(w)));
   return[...round,...rest].slice(0,Math.max(12,round.length)).map(pack)}
