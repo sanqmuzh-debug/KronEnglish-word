@@ -1,0 +1,122 @@
+[
+{
+"w": "magnitude",
+"syl": "mag·ni·tude",
+"zh": "震级",
+"lvl": "pep"
+},
+{
+"w": "rescue",
+"syl": "res·cue",
+"zh": "营救",
+"lvl": "pep"
+},
+{
+"w": "damage",
+"syl": "dam·age",
+"zh": "损害",
+"lvl": "pep"
+},
+{
+"w": "destroy",
+"syl": "des·troy",
+"zh": "推毁",
+"lvl": "pep"
+},
+{
+"w": "evacuate",
+"syl": "e·vac·u·ate",
+"zh": "疏散",
+"lvl": "pep"
+},
+{
+"w": "helicopter",
+"syl": "hel·i·cop·ter",
+"zh": "直升机",
+"lvl": "pep"
+},
+{
+"w": "shelter",
+"syl": "shel·ter",
+"zh": "避难处",
+"lvl": "pep"
+},
+{
+"w": "crack",
+"syl": "crack",
+"zh": "裂纹",
+"lvl": "pep"
+},
+{
+"w": "gas",
+"syl": "gas",
+"zh": "气体",
+"lvl": "pep"
+},
+{
+"w": "as if",
+"syl": "as·if",
+"zh": "似乎",
+"lvl": "pep"
+},
+{
+"w": "ruin",
+"syl": "ru·in",
+"zh": "破坏",
+"lvl": "pep"
+},
+{
+"w": "in ruins",
+"syl": "in·ru·ins",
+"zh": "严重受损",
+"lvl": "pep"
+},
+{
+"w": "brick",
+"syl": "brick",
+"zh": "砖",
+"lvl": "pep"
+},
+{
+"w": "metal",
+"syl": "met·al",
+"zh": "金属",
+"lvl": "pep"
+},
+{
+"w": "shock",
+"syl": "shock",
+"zh": "震惊",
+"lvl": "pep"
+},
+{
+"w": "in shock",
+"syl": "in·shock",
+"zh": "震惊",
+"lvl": "pep"
+},
+{
+"w": "electricity",
+"syl": "e·lec·tric·i·ty",
+"zh": "电",
+"lvl": "pep"
+},
+{
+"w": "trap",
+"syl": "trap",
+"zh": "使落入险境",
+"lvl": "pep"
+},
+{
+"w": "bury",
+"syl": "bu·ry",
+"zh": "埋葬",
+"lvl": "pep"
+},
+{
+"w": "revive",
+"syl": "re·vive",
+"zh": "复活",
+"lvl": "pep"
+}
+]

@@ -1,0 +1,122 @@
+[
+{
+"w": "robot",
+"syl": "ro·bot",
+"zh": "机器人",
+"lvl": "pep"
+},
+{
+"w": "him",
+"syl": "him",
+"zh": "他",
+"lvl": "pep"
+},
+{
+"w": "finish",
+"syl": "fin·ish",
+"zh": "完成，结束",
+"lvl": "pep"
+},
+{
+"w": "Monday",
+"syl": "Mon·day",
+"zh": "星期一",
+"lvl": "pep"
+},
+{
+"w": "Tuesday",
+"syl": "Tues·day",
+"zh": "星期二",
+"lvl": "pep"
+},
+{
+"w": "Wednesday",
+"syl": "Wed·nes·day",
+"zh": "星期三",
+"lvl": "pep"
+},
+{
+"w": "Thursday",
+"syl": "Thurs·day",
+"zh": "星期四",
+"lvl": "pep"
+},
+{
+"w": "Friday",
+"syl": "Fri·day",
+"zh": "星期五",
+"lvl": "pep"
+},
+{
+"w": "Saturday",
+"syl": "Sat·ur·day",
+"zh": "星期六",
+"lvl": "pep"
+},
+{
+"w": "Sunday",
+"syl": "Sun·day",
+"zh": "星期日",
+"lvl": "pep"
+},
+{
+"w": "weekend",
+"syl": "week·end",
+"zh": "周末",
+"lvl": "pep"
+},
+{
+"w": "wash",
+"syl": "wash",
+"zh": "洗",
+"lvl": "pep"
+},
+{
+"w": "wash my clothes",
+"syl": "wash·my·clothes",
+"zh": "洗我的衣服",
+"lvl": "pep"
+},
+{
+"w": "watch",
+"syl": "watch",
+"zh": "看",
+"lvl": "pep"
+},
+{
+"w": "watch TV",
+"syl": "watch·T·V",
+"zh": "看电视",
+"lvl": "pep"
+},
+{
+"w": "do",
+"syl": "do",
+"zh": "做",
+"lvl": "pep"
+},
+{
+"w": "do homework",
+"syl": "do·home·work",
+"zh": "做作业",
+"lvl": "pep"
+},
+{
+"w": "read books",
+"syl": "read·books",
+"zh": "看书",
+"lvl": "pep"
+},
+{
+"w": "play football",
+"syl": "play·foot·ball",
+"zh": "踢足球",
+"lvl": "pep"
+},
+{
+"w": "cooking",
+"syl": "cook·ing",
+"zh": "烹饪",
+"lvl": "pep"
+}
+]

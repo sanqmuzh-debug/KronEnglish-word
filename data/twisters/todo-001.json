@@ -1,0 +1,122 @@
+[
+{
+"w": "name",
+"syl": "name",
+"zh": "名字",
+"lvl": "pep"
+},
+{
+"w": "nice",
+"syl": "nice",
+"zh": "令人愉快",
+"lvl": "pep"
+},
+{
+"w": "ear",
+"syl": "ear",
+"zh": "耳朵",
+"lvl": "pep"
+},
+{
+"w": "hand",
+"syl": "hand",
+"zh": "手",
+"lvl": "pep"
+},
+{
+"w": "eye",
+"syl": "eye",
+"zh": "眼睛",
+"lvl": "pep"
+},
+{
+"w": "mouth",
+"syl": "mouth",
+"zh": "嘴",
+"lvl": "pep"
+},
+{
+"w": "arm",
+"syl": "arm",
+"zh": "胳膊",
+"lvl": "pep"
+},
+{
+"w": "can",
+"syl": "can",
+"zh": "可以",
+"lvl": "pep"
+},
+{
+"w": "share",
+"syl": "share",
+"zh": "分享",
+"lvl": "pep"
+},
+{
+"w": "smile",
+"syl": "smile",
+"zh": "微笑",
+"lvl": "pep"
+},
+{
+"w": "listen",
+"syl": "list·en",
+"zh": "听",
+"lvl": "pep"
+},
+{
+"w": "help",
+"syl": "help",
+"zh": "帮助",
+"lvl": "pep"
+},
+{
+"w": "say",
+"syl": "say",
+"zh": "说",
+"lvl": "pep"
+},
+{
+"w": "friend",
+"syl": "friend",
+"zh": "朋友",
+"lvl": "pep"
+},
+{
+"w": "good",
+"syl": "good",
+"zh": "好",
+"lvl": "pep"
+},
+{
+"w": "mum",
+"syl": "mum",
+"zh": "妈妈",
+"lvl": "pep"
+},
+{
+"w": "dad",
+"syl": "dad",
+"zh": "爸爸",
+"lvl": "pep"
+},
+{
+"w": "grandma",
+"syl": "grand·ma",
+"zh": "奶奶",
+"lvl": "pep"
+},
+{
+"w": "grandpa",
+"syl": "grand·pa",
+"zh": "爷爷",
+"lvl": "pep"
+},
+{
+"w": "grandfather",
+"syl": "grand·fa·ther",
+"zh": "（外）祖父",
+"lvl": "pep"
+}
+]

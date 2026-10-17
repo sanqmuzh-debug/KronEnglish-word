@@ -1,0 +1,122 @@
+[
+{
+"w": "chicago",
+"syl": "chi·ca·go",
+"zh": "芝加哥",
+"lvl": "pep"
+},
+{
+"w": "seoul",
+"syl": "seoul",
+"zh": "首尔",
+"lvl": "pep"
+},
+{
+"w": "castle",
+"syl": "cast·le",
+"zh": "城堡",
+"lvl": "pep"
+},
+{
+"w": "apply",
+"syl": "a·pply",
+"zh": "申请",
+"lvl": "pep"
+},
+{
+"w": "apply for",
+"syl": "a·pply·for",
+"zh": "甲请",
+"lvl": "pep"
+},
+{
+"w": "visa",
+"syl": "vi·sa",
+"zh": "签证",
+"lvl": "pep"
+},
+{
+"w": "rent",
+"syl": "rent",
+"zh": "租用",
+"lvl": "pep"
+},
+{
+"w": "amazed",
+"syl": "a·mazed",
+"zh": "惊奇的",
+"lvl": "pep"
+},
+{
+"w": "arrangement",
+"syl": "ar·range·ment",
+"zh": "安排",
+"lvl": "pep"
+},
+{
+"w": "extremely",
+"syl": "ex·treme·ly",
+"zh": "极其",
+"lvl": "pep"
+},
+{
+"w": "source",
+"syl": "source",
+"zh": "来源",
+"lvl": "pep"
+},
+{
+"w": "empire",
+"syl": "em·pi·re",
+"zh": "帝国",
+"lvl": "pep"
+},
+{
+"w": "site",
+"syl": "site",
+"zh": "地点",
+"lvl": "pep"
+},
+{
+"w": "take control of",
+"syl": "take·con·trol·of",
+"zh": "控制",
+"lvl": "pep"
+},
+{
+"w": "recognise",
+"syl": "rec·og·nise",
+"zh": "认出 / 辨认出",
+"lvl": "pep"
+},
+{
+"w": "accommodation",
+"syl": "ac·com·mo·da·tion",
+"zh": "住处",
+"lvl": "pep"
+},
+{
+"w": "path",
+"syl": "path",
+"zh": "小路",
+"lvl": "pep"
+},
+{
+"w": "destination",
+"syl": "des·ti·na·tion",
+"zh": "目的地",
+"lvl": "pep"
+},
+{
+"w": "other than",
+"syl": "oth·er·than",
+"zh": "除・・・・・以外",
+"lvl": "pep"
+},
+{
+"w": "architecture",
+"syl": "ar·chi·tec·ture",
+"zh": "建筑设计",
+"lvl": "pep"
+}
+]

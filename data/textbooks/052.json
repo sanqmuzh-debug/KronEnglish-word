@@ -1,0 +1,1687 @@
+{
+ "pub": "外研",
+ "stage": "高中",
+ "grade": "必修 第一册",
+ "vol": "",
+ "id": "d33e4538-ed9b-413f-813d-63929d3135d6",
+ "title": "普通高中教科书·英语必修 第一册",
+ "created": "2022-09-29",
+ "units": [
+  {
+   "n": "Unit 1",
+   "t": "",
+   "words": [
+    {
+     "w": "senior",
+     "zh": "高的，高级"
+    },
+    {
+     "w": "senior high",
+     "zh": "高中"
+    },
+    {
+     "w": "curious",
+     "zh": "好奇的"
+    },
+    {
+     "w": "impression",
+     "zh": "印象，感想"
+    },
+    {
+     "w": "campus",
+     "zh": "校园"
+    },
+    {
+     "w": "tradition",
+     "zh": "传统"
+    },
+    {
+     "w": "facility",
+     "zh": "设施"
+    },
+    {
+     "w": "impressive",
+     "zh": "令人钦風前，给人深刻印象"
+    },
+    {
+     "w": "moment",
+     "zh": "某一时刻"
+    },
+    {
+     "w": "author",
+     "zh": "作者，作家"
+    },
+    {
+     "w": "eagerness",
+     "zh": "热切，渴望"
+    },
+    {
+     "w": "explore",
+     "zh": "考祭，探险"
+    },
+    {
+     "w": "one by one",
+     "zh": "依次地，一个接一个地"
+    },
+    {
+     "w": "engine",
+     "zh": "发动机，引擎"
+    },
+    {
+     "w": "insect",
+     "zh": "昆虫"
+    },
+    {
+     "w": "collection",
+     "zh": "收藏品"
+    },
+    {
+     "w": "organise",
+     "zh": "组织"
+    },
+    {
+     "w": "nudge",
+     "zh": "轻推"
+    },
+    {
+     "w": "butterfly",
+     "zh": "蝴蝶"
+    },
+    {
+     "w": "butterflies in one's stomach",
+     "zh": "情绪紧张，心里发慌"
+    },
+    {
+     "w": "breathe",
+     "zh": "呼吸"
+    },
+    {
+     "w": "panic",
+     "zh": "惊恐，惊慌"
+    },
+    {
+     "w": "in panic",
+     "zh": "惊慌地"
+    },
+    {
+     "w": "challenge",
+     "zh": "挑战"
+    },
+    {
+     "w": "pressure",
+     "zh": "压力"
+    },
+    {
+     "w": "calm",
+     "zh": "镇静的，沉着"
+    },
+    {
+     "w": "description",
+     "zh": "描述，描写，叙述，形容"
+    },
+    {
+     "w": "confident",
+     "zh": "有信心，自信的"
+    },
+    {
+     "w": "poster",
+     "zh": "海报"
+    },
+    {
+     "w": "badminton",
+     "zh": "羽毛球"
+    },
+    {
+     "w": "drama",
+     "zh": "戏剧"
+    },
+    {
+     "w": "band",
+     "zh": "乐队，乐团"
+    },
+    {
+     "w": "debate",
+     "zh": "订论，辩论"
+    },
+    {
+     "w": "gym",
+     "zh": "体育馆，健身房"
+    },
+    {
+     "w": "piano",
+     "zh": "钢琴"
+    },
+    {
+     "w": "stage",
+     "zh": "舞台"
+    },
+    {
+     "w": "photography",
+     "zh": "摄影"
+    },
+    {
+     "w": "dinner",
+     "zh": "未表达出来，隐藏，内心"
+    },
+    {
+     "w": "pm",
+     "zh": "下午"
+    },
+    {
+     "w": "argue",
+     "zh": "爭论，爭辩"
+    },
+    {
+     "w": "topic",
+     "zh": "话题，论题"
+    },
+    {
+     "w": "sharp",
+     "zh": "敏锐的，聪明"
+    },
+    {
+     "w": "dinosaur",
+     "zh": "恐龙"
+    },
+    {
+     "w": "dolphin",
+     "zh": "海豚"
+    },
+    {
+     "w": "intelligent",
+     "zh": "有智慧，聪明"
+    },
+    {
+     "w": "investigate",
+     "zh": "查明，调查"
+    },
+    {
+     "w": "various",
+     "zh": "各种各样的，各种不同前"
+    },
+    {
+     "w": "volunteer",
+     "zh": "志愿者，义务工作者，自愿参加者"
+    },
+    {
+     "w": "gain",
+     "zh": "获得，赢得"
+    },
+    {
+     "w": "apply lo play",
+     "zh": ""
+    },
+    {
+     "w": "schedule",
+     "zh": "计划表，进度表，日程表"
+    },
+    {
+     "w": "award",
+     "zh": "奖，奖赏"
+    },
+    {
+     "w": "opportunity",
+     "zh": "机会，时机"
+    },
+    {
+     "w": "hint",
+     "zh": "有益建议"
+    },
+    {
+     "w": "subscribe",
+     "zh": "订阅"
+    },
+    {
+     "w": "view",
+     "zh": "观看"
+    },
+    {
+     "w": "former",
+     "zh": "从前"
+    },
+    {
+     "w": "graduate",
+     "zh": "毕业"
+    },
+    {
+     "w": "orientation",
+     "zh": "新工作或学习课程开始前一段时间）培训，迎新"
+    },
+    {
+     "w": "orientation Day",
+     "zh": "迎新日"
+    },
+    {
+     "w": "frightened",
+     "zh": "受惊的，害怕"
+    },
+    {
+     "w": "signs",
+     "zh": "看到，看见"
+    },
+    {
+     "w": "figure",
+     "zh": "认为，以为"
+    },
+    {
+     "w": "go all out",
+     "zh": "全力以赴，竭尽全力"
+    },
+    {
+     "w": "select",
+     "zh": "挑选，选择"
+    },
+    {
+     "w": "particular",
+     "zh": "细节"
+    },
+    {
+     "w": "in particular",
+     "zh": "尤其，特别"
+    },
+    {
+     "w": "rainbow",
+     "zh": "彩虹"
+    },
+    {
+     "w": "neat",
+     "zh": "好的，令人愉快"
+    },
+    {
+     "w": "specific",
+     "zh": "具体的，特定"
+    },
+    {
+     "w": "refer",
+     "zh": "参考，查阅"
+    },
+    {
+     "w": "refer to",
+     "zh": "参考，查阅"
+    },
+    {
+     "w": "journal",
+     "zh": "日记，日志"
+    },
+    {
+     "w": "junior",
+     "zh": "低年级"
+    },
+    {
+     "w": "struggle",
+     "zh": "拼搏"
+    },
+    {
+     "w": "memorise",
+     "zh": "记住，熟记"
+    },
+    {
+     "w": "skateboarding",
+     "zh": "滑板运动"
+    },
+    {
+     "w": "forward",
+     "zh": "向前"
+    },
+    {
+     "w": "look forward to",
+     "zh": "期待，盼望"
+    },
+    {
+     "w": "committee",
+     "zh": "委员会"
+    },
+    {
+     "w": "improve",
+     "zh": "改善，改进"
+    },
+    {
+     "w": "rate",
+     "zh": "对⋯作评估，评价"
+    },
+    {
+     "w": "performance",
+     "zh": "表现"
+    },
+    {
+     "w": "exchange",
+     "zh": "交流"
+    }
+   ]
+  },
+  {
+   "n": "Unit 2",
+   "t": "",
+   "words": [
+    {
+     "w": "title",
+     "zh": "题目，标题"
+    },
+    {
+     "w": "pine",
+     "zh": "松树"
+    },
+    {
+     "w": "pineapple",
+     "zh": "菠萝"
+    },
+    {
+     "w": "ham",
+     "zh": "火腿"
+    },
+    {
+     "w": "eggplant",
+     "zh": "茄子"
+    },
+    {
+     "w": "sculpt",
+     "zh": "雕刻，雕塑"
+    },
+    {
+     "w": "sculpture",
+     "zh": "雕像，雕刻品，雕塑作品"
+    },
+    {
+     "w": "seasick",
+     "zh": "晕船时"
+    },
+    {
+     "w": "airsick",
+     "zh": "晕机"
+    },
+    {
+     "w": "carsick",
+     "zh": "晕车"
+    },
+    {
+     "w": "homesick",
+     "zh": "想家"
+    },
+    {
+     "w": "opposing",
+     "zh": "（观点、意见等）相反哟，相对立前"
+    },
+    {
+     "w": "behavior",
+     "zh": "举止，行为"
+    },
+    {
+     "w": "confusing",
+     "zh": "令人困感"
+    },
+    {
+     "w": "capitalized",
+     "zh": "大写的"
+    },
+    {
+     "w": "unique",
+     "zh": "独一无二的，独特"
+    },
+    {
+     "w": "burn up",
+     "zh": "烧毁，烧尽"
+    },
+    {
+     "w": "burn down",
+     "zh": "烧毀"
+    },
+    {
+     "w": "alarm",
+     "zh": "警报器；闹钟"
+    },
+    {
+     "w": "reflect",
+     "zh": "显示，反映"
+    },
+    {
+     "w": "creativity",
+     "zh": "创造性，创造力"
+    },
+    {
+     "w": "visible",
+     "zh": "看得见，可见"
+    },
+    {
+     "w": "wind up",
+     "zh": "给 上发条；使（活动、会议等）结束"
+    },
+    {
+     "w": "creative",
+     "zh": "创造"
+    },
+    {
+     "w": "type",
+     "zh": "类型，种类"
+    },
+    {
+     "w": "come across",
+     "zh": "偶然发现"
+    },
+    {
+     "w": "unfamiliar",
+     "zh": "不熟悉，不了解韵"
+    },
+    {
+     "w": "contact",
+     "zh": "联系，联络"
+    },
+    {
+     "w": "organization",
+     "zh": "组织，刚体，机构"
+    },
+    {
+     "w": "likely",
+     "zh": "可能的，可能发生时"
+    },
+    {
+     "w": "subway",
+     "zh": "地铁"
+    },
+    {
+     "w": "highway",
+     "zh": "公路"
+    },
+    {
+     "w": "motorway",
+     "zh": "高速公路"
+    },
+    {
+     "w": "gas",
+     "zh": "汽油"
+    },
+    {
+     "w": "petrol",
+     "zh": "汽油"
+    },
+    {
+     "w": "apartment",
+     "zh": "一套住房，公寓套房"
+    },
+    {
+     "w": "flat",
+     "zh": "一套住房，公寓套房"
+    },
+    {
+     "w": "elevator",
+     "zh": "电棉，升降机"
+    },
+    {
+     "w": "context",
+     "zh": "上下文，语境"
+    },
+    {
+     "w": "addition",
+     "zh": "增加物，添加物"
+    },
+    {
+     "w": "forum",
+     "zh": "论坛，讨论区"
+    },
+    {
+     "w": "resource",
+     "zh": "资料， 资源"
+    },
+    {
+     "w": "misadventure",
+     "zh": "事故，灾难"
+    },
+    {
+     "w": "remind",
+     "zh": "提醒，使⋯⋯想起"
+    },
+    {
+     "w": "rather",
+     "zh": "相当，颇"
+    },
+    {
+     "w": "comment",
+     "zh": "评论"
+    },
+    {
+     "w": "frog",
+     "zh": "蛙，青蛙"
+    },
+    {
+     "w": "throat",
+     "zh": "喉咙，咽喉"
+    },
+    {
+     "w": "have a frog in one's throat",
+     "zh": "说话困难"
+    },
+    {
+     "w": "downtown",
+     "zh": "在城镇中心区，在闹市区"
+    },
+    {
+     "w": "boot",
+     "zh": "靴子"
+    },
+    {
+     "w": "entrance",
+     "zh": "大门 ，人口"
+    },
+    {
+     "w": "section",
+     "zh": "区域"
+    },
+    {
+     "w": "exit",
+     "zh": "出日"
+    },
+    {
+     "w": "actually",
+     "zh": "事实上，实际上"
+    },
+    {
+     "w": "downstairs",
+     "zh": "在楼下"
+    },
+    {
+     "w": "wicked",
+     "zh": "缺德的，邪恶的；很棒的，极好"
+    },
+    {
+     "w": "odd",
+     "zh": "奇特的，古怪"
+    },
+    {
+     "w": "negative",
+     "zh": "消极，负面"
+    },
+    {
+     "w": "positive",
+     "zh": "好的，积极"
+    },
+    {
+     "w": "error",
+     "zh": "错误，谬误"
+    },
+    {
+     "w": "intend",
+     "zh": "计划，打算"
+    },
+    {
+     "w": "informal",
+     "zh": "非正式眗"
+    },
+    {
+     "w": "recognise",
+     "zh": "认识，辨认出"
+    },
+    {
+     "w": "base",
+     "zh": "以⋯⋯为基础"
+    },
+    {
+     "w": "aware",
+     "zh": "意识到的，明白"
+    },
+    {
+     "w": "be aware of",
+     "zh": "意识到，察觉到"
+    }
+   ]
+  },
+  {
+   "n": "Unit 3",
+   "t": "",
+   "words": [
+    {
+     "w": "character",
+     "zh": "人物，角色"
+    },
+    {
+     "w": "approach",
+     "zh": "走近，靠近"
+    },
+    {
+     "w": "chat",
+     "zh": "闲谈，聊天"
+    },
+    {
+     "w": "focus",
+     "zh": "集中"
+    },
+    {
+     "w": "career",
+     "zh": "职业，事业"
+    },
+    {
+     "w": "lawyer",
+     "zh": "律师"
+    },
+    {
+     "w": "assume",
+     "zh": "假定"
+    },
+    {
+     "w": "respect",
+     "zh": "尊敬，敬重"
+    },
+    {
+     "w": "studio",
+     "zh": "录音室"
+    },
+    {
+     "w": "court",
+     "zh": "法院，法庭"
+    },
+    {
+     "w": "ignore",
+     "zh": "忽视，不理"
+    },
+    {
+     "w": "professional",
+     "zh": "职业前，专业的"
+    },
+    {
+     "w": "suit",
+     "zh": "适合"
+    },
+    {
+     "w": "talent",
+     "zh": "天赋，才能"
+    },
+    {
+     "w": "option",
+     "zh": "选择，可选择钓东西"
+    },
+    {
+     "w": "sigh",
+     "zh": "叹气，叹息（尤因厌烦、失望、疲倦等）"
+    },
+    {
+     "w": "curtain",
+     "zh": "（舞台上）幕，帷幕"
+    },
+    {
+     "w": "generation",
+     "zh": "一代"
+    },
+    {
+     "w": "gap",
+     "zh": "差距，差别"
+    },
+    {
+     "w": "currently",
+     "zh": "现时，当前"
+    },
+    {
+     "w": "regularly",
+     "zh": "经常"
+    },
+    {
+     "w": "responsible",
+     "zh": "对事故、错误、罪行等）负有责任，应承担责任"
+    },
+    {
+     "w": "memory",
+     "zh": "记忆，回忆"
+    },
+    {
+     "w": "nowadays",
+     "zh": "现今，现时"
+    },
+    {
+     "w": "jaw",
+     "zh": "下巴，下颌"
+    },
+    {
+     "w": "beard",
+     "zh": "胡须"
+    },
+    {
+     "w": "skin",
+     "zh": "皮肤"
+    },
+    {
+     "w": "jogging",
+     "zh": "慢跑锻炼"
+    },
+    {
+     "w": "slim",
+     "zh": "苗条，修长"
+    },
+    {
+     "w": "cheek",
+     "zh": "面颊，脸颊"
+    },
+    {
+     "w": "nation",
+     "zh": "国家"
+    },
+    {
+     "w": "aim",
+     "zh": "力求达到"
+    },
+    {
+     "w": "issue",
+     "zh": "议题；争论钓问题"
+    },
+    {
+     "w": "theme",
+     "zh": "主题"
+    },
+    {
+     "w": "observe",
+     "zh": "庆祝，过"
+    },
+    {
+     "w": "range",
+     "zh": "一系列"
+    },
+    {
+     "w": "event",
+     "zh": "活动（指演出、体育比赛、聚会等）"
+    },
+    {
+     "w": "apologise",
+     "zh": "道歉"
+    },
+    {
+     "w": "stress",
+     "zh": "重音，重读"
+    },
+    {
+     "w": "impact",
+     "zh": "作用，影响"
+    },
+    {
+     "w": "strength",
+     "zh": "强烈程度"
+    },
+    {
+     "w": "admire",
+     "zh": "钦佩， 羡慕"
+    },
+    {
+     "w": "judge",
+     "zh": "认为，判断"
+    },
+    {
+     "w": "settle",
+     "zh": "和解，结束"
+    },
+    {
+     "w": "settle for",
+     "zh": "勉强接受，将就"
+    },
+    {
+     "w": "triathlon",
+     "zh": "铁人三项运动"
+    },
+    {
+     "w": "series",
+     "zh": "系列比赛"
+    },
+    {
+     "w": "in the lead",
+     "zh": "领先"
+    },
+    {
+     "w": "onto",
+     "zh": "到⋯⋯上，问…上"
+    },
+    {
+     "w": "track",
+     "zh": "跑道"
+    },
+    {
+     "w": "media",
+     "zh": "新闻媒体，传媒"
+    },
+    {
+     "w": "obviously",
+     "zh": "明显地，显而易见地"
+    },
+    {
+     "w": "feature",
+     "zh": "特写"
+    },
+    {
+     "w": "typically",
+     "zh": "一般，通常"
+    },
+    {
+     "w": "individual",
+     "zh": "独特的，与众不同（一般含褒义）"
+    },
+    {
+     "w": "style",
+     "zh": "风格"
+    },
+    {
+     "w": "extra",
+     "zh": "额外，另外时"
+    },
+    {
+     "w": "detail",
+     "zh": "细节，细微之处"
+    },
+    {
+     "w": "contain",
+     "zh": "包含，含有"
+    },
+    {
+     "w": "summary",
+     "zh": "总结，概要"
+    },
+    {
+     "w": "powerful",
+     "zh": "强有力的，有影响（感染）力"
+    },
+    {
+     "w": "despite",
+     "zh": "尽管，虽然"
+    },
+    {
+     "w": "throughout",
+     "zh": "在整个期间，自始至终"
+    },
+    {
+     "w": "entire",
+     "zh": "全部的，整个"
+    },
+    {
+     "w": "enormously",
+     "zh": "非常，极其"
+    },
+    {
+     "w": "million",
+     "zh": "许多，无数"
+    },
+    {
+     "w": "disqualify",
+     "zh": "取消…⋯资格"
+    },
+    {
+     "w": "athlete",
+     "zh": "运动员，田径运动员"
+    },
+    {
+     "w": "medal",
+     "zh": "奖牌，勋章"
+    },
+    {
+     "w": "somehow",
+     "zh": "用某种方法，不知怎"
+    },
+    {
+     "w": "indeed",
+     "zh": "当然，确实（用于强调陈述或回答）"
+    }
+   ]
+  },
+  {
+   "n": "Unit 4",
+   "t": "",
+   "words": [
+    {
+     "w": "forever",
+     "zh": "永远"
+    },
+    {
+     "w": "familiar",
+     "zh": "熟悉的"
+    },
+    {
+     "w": "adventure",
+     "zh": "历险 ，奇遇"
+    },
+    {
+     "w": "prefer",
+     "zh": "更喜欢"
+    },
+    {
+     "w": "click",
+     "zh": "点击"
+    },
+    {
+     "w": "lose track of",
+     "zh": "不了解•⋯的情况，不了解⋯动态"
+    },
+    {
+     "w": "deliver",
+     "zh": "递送，传送"
+    },
+    {
+     "w": "thanks to",
+     "zh": "归功于⋯⋯，多亏⋯"
+    },
+    {
+     "w": "advance",
+     "zh": "进步，进展"
+    },
+    {
+     "w": "significantly",
+     "zh": "重大地，显著地"
+    },
+    {
+     "w": "social media",
+     "zh": "社交媒体"
+    },
+    {
+     "w": "maintain",
+     "zh": "保持，维持"
+    },
+    {
+     "w": "wi-fi",
+     "zh": "无线网络，无线上网"
+    },
+    {
+     "w": "digital",
+     "zh": "数字的，数码的"
+    },
+    {
+     "w": "enable",
+     "zh": "使可能，使发生"
+    },
+    {
+     "w": "unusual",
+     "zh": "异常的，不平常的"
+    },
+    {
+     "w": "site",
+     "zh": "网站"
+    },
+    {
+     "w": "tend",
+     "zh": "易于做某事，往往会发生某事"
+    },
+    {
+     "w": "update",
+     "zh": "最新消息"
+    },
+    {
+     "w": "saying",
+     "zh": "格言，谚语，警句"
+    },
+    {
+     "w": "criminal",
+     "zh": "罪犯"
+    },
+    {
+     "w": "bathwater",
+     "zh": "浴水，洗澡水"
+    },
+    {
+     "w": "throw the baby out with the bathwater",
+     "zh": "不分良莠一起抛弃"
+    },
+    {
+     "w": "acquire",
+     "zh": "获得，得到"
+    },
+    {
+     "w": "goods",
+     "zh": "商品"
+    },
+    {
+     "w": "prove",
+     "zh": "证明，证实"
+    },
+    {
+     "w": "illustrate",
+     "zh": "说明，阐明"
+    },
+    {
+     "w": "diagram",
+     "zh": "图解，示意图"
+    },
+    {
+     "w": "inspiring",
+     "zh": "鼓舞人心，启发灵感"
+    },
+    {
+     "w": "teenager",
+     "zh": "青少年，十几岁前孩子（到岁之间孩子）"
+    },
+    {
+     "w": "pour",
+     "zh": "灌，注，倒"
+    },
+    {
+     "w": "pot",
+     "zh": "锅"
+    },
+    {
+     "w": "gram",
+     "zh": "克"
+    },
+    {
+     "w": "pack",
+     "zh": "小盒，小包"
+    },
+    {
+     "w": "comfort",
+     "zh": "安慰，感精"
+    },
+    {
+     "w": "patience",
+     "zh": "耐心"
+    },
+    {
+     "w": "passion",
+     "zh": "强烈的情感，激情"
+    },
+    {
+     "w": "generosity",
+     "zh": "慷慨，大方"
+    },
+    {
+     "w": "slice",
+     "zh": "片，薄片"
+    },
+    {
+     "w": "humour",
+     "zh": "幽默感"
+    },
+    {
+     "w": "quality",
+     "zh": "素质，品德"
+    },
+    {
+     "w": "anxious",
+     "zh": "焦虑的，不安"
+    },
+    {
+     "w": "postpone",
+     "zh": "使延期，推迟"
+    },
+    {
+     "w": "distance",
+     "zh": "使与……保持距离，撇清和⋯⋯关系"
+    },
+    {
+     "w": "ordinary",
+     "zh": "普通的，平常"
+    },
+    {
+     "w": "scar",
+     "zh": "伤疤"
+    },
+    {
+     "w": "dine",
+     "zh": "进餐"
+    },
+    {
+     "w": "chum",
+     "zh": "好朋友"
+    },
+    {
+     "w": "chap",
+     "zh": "小伙子，家伙"
+    },
+    {
+     "w": "fortune",
+     "zh": "大笔钱，巨款"
+    },
+    {
+     "w": "make one's fortune",
+     "zh": "发财"
+    },
+    {
+     "w": "drag",
+     "zh": "拖，拉"
+    },
+    {
+     "w": "ought to",
+     "zh": "应该，应当"
+    },
+    {
+     "w": "destiny",
+     "zh": "命运，天命"
+    },
+    {
+     "w": "correspond",
+     "zh": "通信"
+    },
+    {
+     "w": "proposition",
+     "zh": "事业，生意"
+    },
+    {
+     "w": "hustle",
+     "zh": "急速活动"
+    },
+    {
+     "w": "staunch",
+     "zh": "坚定，忠实可靠的"
+    },
+    {
+     "w": "partner",
+     "zh": "伙伴，搭档"
+    },
+    {
+     "w": "turn up",
+     "zh": "出现"
+    },
+    {
+     "w": "excerpt",
+     "zh": "摘录，节录"
+    },
+    {
+     "w": "appointed",
+     "zh": "约定的，指定"
+    },
+    {
+     "w": "strike",
+     "zh": "划"
+    },
+    {
+     "w": "cigar",
+     "zh": "雪茄烟"
+    },
+    {
+     "w": "plain",
+     "zh": "简单的，朴素"
+    },
+    {
+     "w": "scene",
+     "zh": "场景"
+    },
+    {
+     "w": "bitterly",
+     "zh": "痛苦地，愤恨地"
+    },
+    {
+     "w": "ashamed",
+     "zh": "感到不好意思，难为情的"
+    },
+    {
+     "w": "unfold",
+     "zh": "展开，打开"
+    },
+    {
+     "w": "location",
+     "zh": "地点，位置"
+    },
+    {
+     "w": "surroundings",
+     "zh": "周围的事物，环境"
+    },
+    {
+     "w": "personality",
+     "zh": "个性，性格"
+    },
+    {
+     "w": "atmosphere",
+     "zh": "气氛，氛围，环境"
+    }
+   ]
+  },
+  {
+   "n": "Unit 5",
+   "t": "",
+   "words": [
+    {
+     "w": "charity",
+     "zh": "慈善机构，慈善团体"
+    },
+    {
+     "w": "monarch",
+     "zh": "君主，国王"
+    },
+    {
+     "w": "monarch butterfly",
+     "zh": "黑脉金斑蝶"
+    },
+    {
+     "w": "atlantic",
+     "zh": "大西洋"
+    },
+    {
+     "w": "whale",
+     "zh": "鲸"
+    },
+    {
+     "w": "annual",
+     "zh": "一年一度的，每年"
+    },
+    {
+     "w": "migration",
+     "zh": "迁徙"
+    },
+    {
+     "w": "migrate",
+     "zh": "移栖，迁徙"
+    },
+    {
+     "w": "seek",
+     "zh": "寻找，寻求"
+    },
+    {
+     "w": "professor",
+     "zh": "教授"
+    },
+    {
+     "w": "measure",
+     "zh": "量，测量"
+    },
+    {
+     "w": "position",
+     "zh": "位置"
+    },
+    {
+     "w": "determine",
+     "zh": "测定，确定"
+    },
+    {
+     "w": "eventually",
+     "zh": "终于，最终"
+    },
+    {
+     "w": "solution",
+     "zh": "解决，解决方法"
+    },
+    {
+     "w": "mystery",
+     "zh": "难以理解的事物，谜"
+    },
+    {
+     "w": "amazing",
+     "zh": "惊人，了不起"
+    },
+    {
+     "w": "crash",
+     "zh": "发出撞击声"
+    },
+    {
+     "w": "per cent",
+     "zh": "百分比"
+    },
+    {
+     "w": "destroy",
+     "zh": "破坏，毁掉"
+    },
+    {
+     "w": "chemical",
+     "zh": "化学品"
+    },
+    {
+     "w": "caterpillar",
+     "zh": "毛虫（蝴蝶等昆虫幼虫）"
+    },
+    {
+     "w": "creature",
+     "zh": "生物，动物"
+    },
+    {
+     "w": "survive",
+     "zh": "活下来，幸存"
+    },
+    {
+     "w": "effect",
+     "zh": "影响，结果"
+    },
+    {
+     "w": "flow chart",
+     "zh": "流程图，作业图"
+    },
+    {
+     "w": "accommodation",
+     "zh": "住处，工作场所"
+    },
+    {
+     "w": "idiom",
+     "zh": "习语，成语"
+    },
+    {
+     "w": "kill two birds with one stone",
+     "zh": "一举两得，一箭双雕"
+    },
+    {
+     "w": "hold your horses",
+     "zh": "慢点，别急"
+    },
+    {
+     "w": "rain cats and dogs",
+     "zh": "下倾盆大雨"
+    },
+    {
+     "w": "authority",
+     "zh": "当权，权力"
+    },
+    {
+     "w": "source",
+     "zh": "来源，出处"
+    },
+    {
+     "w": "found",
+     "zh": "创立，创建"
+    },
+    {
+     "w": "photographer",
+     "zh": "摄影师"
+    },
+    {
+     "w": "button",
+     "zh": "按钮"
+    },
+    {
+     "w": "recover",
+     "zh": "恢复"
+    },
+    {
+     "w": "shock",
+     "zh": "吃惊，震惊"
+    },
+    {
+     "w": "element",
+     "zh": "基本部分，要素"
+    },
+    {
+     "w": "the elements",
+     "zh": "天气"
+    },
+    {
+     "w": "brave the elements",
+     "zh": "不顾天气恶劣，冒着风雨"
+    },
+    {
+     "w": "encounter",
+     "zh": "意外的相遇，邂逅"
+    },
+    {
+     "w": "variety",
+     "zh": "多样化，变化"
+    },
+    {
+     "w": "per",
+     "zh": "每"
+    },
+    {
+     "w": "path",
+     "zh": "小径，小道"
+    },
+    {
+     "w": "breathtaking",
+     "zh": "令人惊叹时"
+    },
+    {
+     "w": "eagle",
+     "zh": "鹰"
+    },
+    {
+     "w": "concentrate",
+     "zh": "专注，专心"
+    },
+    {
+     "w": "freeze",
+     "zh": "突然停止，呆住"
+    },
+    {
+     "w": "stare",
+     "zh": "凝视，盯着看"
+    },
+    {
+     "w": "capture",
+     "zh": "记录，捕捉"
+    },
+    {
+     "w": "image",
+     "zh": "图像，影像"
+    },
+    {
+     "w": "after all",
+     "zh": "毕竟，终究"
+    },
+    {
+     "w": "reaction",
+     "zh": "反应"
+    },
+    {
+     "w": "file",
+     "zh": "档条，文件"
+    }
+   ]
+  },
+  {
+   "n": "Unit 6",
+   "t": "",
+   "words": [
+    {
+     "w": "wrap",
+     "zh": "包，裹"
+    },
+    {
+     "w": "sheet",
+     "zh": "一大片"
+    },
+    {
+     "w": "frost",
+     "zh": "霜"
+    },
+    {
+     "w": "terrace",
+     "zh": "棉田"
+    },
+    {
+     "w": "dynasty",
+     "zh": "朝代"
+    },
+    {
+     "w": "completion",
+     "zh": "完成，结束"
+    },
+    {
+     "w": "region",
+     "zh": "地区，区域"
+    },
+    {
+     "w": "therefore",
+     "zh": "因此，此"
+    },
+    {
+     "w": "steep",
+     "zh": "陡的，陡峭时"
+    },
+    {
+     "w": "soil",
+     "zh": "土壤"
+    },
+    {
+     "w": "shallow",
+     "zh": "浅"
+    },
+    {
+     "w": "prevent",
+     "zh": "阻挡，防止"
+    },
+    {
+     "w": "harmony",
+     "zh": "融洽相处，和谐"
+    },
+    {
+     "w": "design",
+     "zh": "设计"
+    },
+    {
+     "w": "vapour",
+     "zh": "蒸气"
+    },
+    {
+     "w": "harm",
+     "zh": "伤害，损害"
+    },
+    {
+     "w": "crop",
+     "zh": "庄稼，作物"
+    },
+    {
+     "w": "agriculture",
+     "zh": "农业"
+    },
+    {
+     "w": "replace",
+     "zh": "以••替换，更换"
+    },
+    {
+     "w": "material",
+     "zh": "材料"
+    },
+    {
+     "w": "mineral",
+     "zh": "矿物，矿产"
+    },
+    {
+     "w": "consumer",
+     "zh": "消费者"
+    },
+    {
+     "w": "priority",
+     "zh": "优先处理的事，当务之急"
+    },
+    {
+     "w": "beauty",
+     "zh": "美，美丽"
+    },
+    {
+     "w": "barrier",
+     "zh": "障碍，壁垒"
+    },
+    {
+     "w": "reef",
+     "zh": "礁"
+    },
+    {
+     "w": "structure",
+     "zh": "结构，构造，组织"
+    },
+    {
+     "w": "living",
+     "zh": "活的，活着"
+    },
+    {
+     "w": "organism",
+     "zh": "生物，有机体"
+    },
+    {
+     "w": "observatory",
+     "zh": "天文合，观象合"
+    },
+    {
+     "w": "basin",
+     "zh": "盆地，低洼地"
+    },
+    {
+     "w": "grand",
+     "zh": "宏伟的，壮丽时"
+    },
+    {
+     "w": "canyon",
+     "zh": "峡谷"
+    },
+    {
+     "w": "valley",
+     "zh": "合，山谷"
+    },
+    {
+     "w": "narrow",
+     "zh": "狭窄的，不宽时"
+    },
+    {
+     "w": "platform",
+     "zh": "高台，平台"
+    },
+    {
+     "w": "waterfall",
+     "zh": "瀑布"
+    },
+    {
+     "w": "thunder",
+     "zh": "打雷"
+    },
+    {
+     "w": "channel",
+     "zh": "海峡"
+    },
+    {
+     "w": "tunnel",
+     "zh": "隧道"
+    },
+    {
+     "w": "camel",
+     "zh": "骆驼"
+    },
+    {
+     "w": "desert",
+     "zh": "沙漠，荒漠"
+    },
+    {
+     "w": "sail",
+     "zh": "航行"
+    },
+    {
+     "w": "climate",
+     "zh": "气候"
+    },
+    {
+     "w": "inside",
+     "zh": "在 內"
+    },
+    {
+     "w": "publish",
+     "zh": "出版"
+    },
+    {
+     "w": "green fingers",
+     "zh": "高超的种植技能"
+    },
+    {
+     "w": "sunflower",
+     "zh": "向日葵"
+    },
+    {
+     "w": "expert",
+     "zh": "内行的，专家"
+    },
+    {
+     "w": "branch",
+     "zh": "树枝"
+    },
+    {
+     "w": "trent",
+     "zh": "租用，租借"
+    },
+    {
+     "w": "rooftop",
+     "zh": "屋顶"
+    },
+    {
+     "w": "thistle",
+     "zh": "蓟"
+    },
+    {
+     "w": "limited",
+     "zh": "有限的"
+    },
+    {
+     "w": "benefit",
+     "zh": "好处，益处"
+    },
+    {
+     "w": "herb",
+     "zh": "香草"
+    },
+    {
+     "w": "pleasant",
+     "zh": "令人愉快的"
+    },
+    {
+     "w": "flavour",
+     "zh": "味，味道"
+    },
+    {
+     "w": "energy",
+     "zh": "力量，活力"
+    },
+    {
+     "w": "system",
+     "zh": "系统"
+    }
+   ]
+  }
+ ]
+}

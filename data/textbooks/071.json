@@ -1,0 +1,1035 @@
+{
+ "pub": "沪教",
+ "stage": "初中",
+ "grade": "九年级",
+ "vol": "上册",
+ "id": "b1a19b7a-5a7f-4d0e-9f9d-b5e59dafc979",
+ "title": "（根据2022年版课程标准修订）义务教育教科书·英语九年级上册",
+ "created": "2022-09-29",
+ "units": [
+  {
+   "n": "Unit 1",
+   "t": "",
+   "words": [
+    {
+     "w": "golden",
+     "zh": "金；金色前"
+    },
+    {
+     "w": "crown",
+     "zh": "王冠；皇冠"
+    },
+    {
+     "w": "olympics",
+     "zh": "奥运会"
+    },
+    {
+     "w": "agreement",
+     "zh": "同意；应允"
+    },
+    {
+     "w": "confirmation",
+     "zh": "证实"
+    },
+    {
+     "w": "pot",
+     "zh": "罐"
+    },
+    {
+     "w": "doubt",
+     "zh": "不能肯定；对⋯⋯无把握"
+    },
+    {
+     "w": "real",
+     "zh": "真；正宗"
+    },
+    {
+     "w": "truth",
+     "zh": "真相；实情"
+    },
+    {
+     "w": "seem",
+     "zh": "好像；似乎"
+    },
+    {
+     "w": "solve",
+     "zh": "解决；处理"
+    },
+    {
+     "w": "fill",
+     "zh": "装满；注满"
+    },
+    {
+     "w": "bowl",
+     "zh": "碗；盆"
+    },
+    {
+     "w": "displace",
+     "zh": "取代，替代"
+    },
+    {
+     "w": "less",
+     "zh": "较少；更少"
+    },
+    {
+     "w": "metal",
+     "zh": "金属"
+    },
+    {
+     "w": "certain",
+     "zh": "确定的；肯定"
+    },
+    {
+     "w": "prison",
+     "zh": "监狱；牢狱"
+    },
+    {
+     "w": "boxing",
+     "zh": "拳击"
+    },
+    {
+     "w": "racing",
+     "zh": "赛马"
+    },
+    {
+     "w": "wrestling",
+     "zh": "摔跤运动"
+    },
+    {
+     "w": "hit",
+     "zh": "击；打"
+    },
+    {
+     "w": "brave",
+     "zh": "勇敢；无畏"
+    },
+    {
+     "w": "punctuation",
+     "zh": "标点符号"
+    },
+    {
+     "w": "correct",
+     "zh": "准确无误；正确的"
+    },
+    {
+     "w": "mistake",
+     "zh": "错误说明：本词汇表音标根据《牛津高阶英汉双解词典》（第版）标注。标*前单词只要求理解。（be） happy with（对某人或事物）满意"
+    },
+    {
+     "w": "fill... with",
+     "zh": "用⋯⋯把⋯⋯装满"
+    },
+    {
+     "w": "run over",
+     "zh": "溢出"
+    },
+    {
+     "w": "send... to prison",
+     "zh": "把⋯⋯关进监狱"
+    },
+    {
+     "w": "make sure",
+     "zh": "确保；攻法保证"
+    }
+   ]
+  },
+  {
+   "n": "Unit 2",
+   "t": "",
+   "words": [
+    {
+     "w": "mind",
+     "zh": "聪明人；富有才智"
+    },
+    {
+     "w": "astronomer",
+     "zh": "天文学家"
+    },
+    {
+     "w": "genius",
+     "zh": "天才"
+    },
+    {
+     "w": "consider",
+     "zh": "认为，觉得"
+    },
+    {
+     "w": "sense",
+     "zh": "理解力，判断力"
+    },
+    {
+     "w": "humour",
+     "zh": "幽默"
+    },
+    {
+     "w": "invitation",
+     "zh": "邀请"
+    },
+    {
+     "w": "theory",
+     "zh": "学说；论；说"
+    },
+    {
+     "w": "university",
+     "zh": "大学"
+    },
+    {
+     "w": "pleasure",
+     "zh": "乐事；快事"
+    },
+    {
+     "w": "avoid",
+     "zh": "避免，避开"
+    },
+    {
+     "w": "lecture",
+     "zh": "讲座；演讲"
+    },
+    {
+     "w": "tonight",
+     "zh": "在今夜；在今晚"
+    },
+    {
+     "w": "audience",
+     "zh": "观众；听众"
+    },
+    {
+     "w": "trust",
+     "zh": "信任；信赖"
+    },
+    {
+     "w": "seat",
+     "zh": "座位"
+    },
+    {
+     "w": "applause",
+     "zh": "鼓掌，喝彩"
+    },
+    {
+     "w": "pale",
+     "zh": "苍白"
+    },
+    {
+     "w": "achievement",
+     "zh": "成就；成绩"
+    },
+    {
+     "w": "universe",
+     "zh": "宇宙"
+    },
+    {
+     "w": "philosopher",
+     "zh": "哲学家"
+    },
+    {
+     "w": "obey",
+     "zh": "服从，遵守"
+    },
+    {
+     "w": "reduce",
+     "zh": "减少；缩小"
+    },
+    {
+     "w": "exactly",
+     "zh": "精确地；准确地"
+    },
+    {
+     "w": "action",
+     "zh": "故事、戏剧等中）情节"
+    },
+    {
+     "w": "sense of humour",
+     "zh": "幽默感"
+    },
+    {
+     "w": "let... down",
+     "zh": "使⋯⋯失望"
+    },
+    {
+     "w": "by heart",
+     "zh": "单凭记忆；能背诵"
+    },
+    {
+     "w": "take a seat",
+     "zh": "坐下"
+    },
+    {
+     "w": "without difficulty",
+     "zh": "轻而易举"
+    },
+    {
+     "w": "join in",
+     "zh": "参加；加入"
+    },
+    {
+     "w": "have no idea",
+     "zh": "丝毫不知道（be） in trouble 倒霉；处于困境"
+    },
+    {
+     "w": "play a joke on",
+     "zh": "跟某人开玩笑，提弄某人"
+    },
+    {
+     "w": "turning point",
+     "zh": "转折点"
+    },
+    {
+     "w": "a series of",
+     "zh": "一系列"
+    }
+   ]
+  },
+  {
+   "n": "Unit 3",
+   "t": "",
+   "words": [
+    {
+     "w": "meal",
+     "zh": "一顿饭"
+    },
+    {
+     "w": "share",
+     "zh": "把自己想法（或经历、感情）告诉（某人）"
+    },
+    {
+     "w": "decision",
+     "zh": "决定；抉择"
+    },
+    {
+     "w": "possessions",
+     "zh": "个人财产；私人物品"
+    },
+    {
+     "w": "expect",
+     "zh": "要求，指望"
+    },
+    {
+     "w": "abroad",
+     "zh": "在国外；到国外"
+    },
+    {
+     "w": "business",
+     "zh": "商务；公事"
+    },
+    {
+     "w": "personal",
+     "zh": "个人眗；私人"
+    },
+    {
+     "w": "set",
+     "zh": "安排；确定；决定"
+    },
+    {
+     "w": "daughter",
+     "zh": "女儿"
+    },
+    {
+     "w": "fashionable",
+     "zh": "流行；时髦"
+    },
+    {
+     "w": "fashion",
+     "zh": "流行款式；时兴式样"
+    },
+    {
+     "w": "out of date",
+     "zh": "过时"
+    },
+    {
+     "w": "iron",
+     "zh": "熨，烫平"
+    },
+    {
+     "w": "event",
+     "zh": "公开活动"
+    },
+    {
+     "w": "suppose",
+     "zh": "认为"
+    },
+    {
+     "w": "either",
+     "zh": "用于否定词组后）也"
+    },
+    {
+     "w": "relationship",
+     "zh": "关系；联系"
+    },
+    {
+     "w": "invite",
+     "zh": "邀请"
+    },
+    {
+     "w": "cost",
+     "zh": "需付费；价钱为"
+    },
+    {
+     "w": "type",
+     "zh": "类型；种类"
+    },
+    {
+     "w": "help with",
+     "zh": "帮着做（be） on business 出差"
+    },
+    {
+     "w": "have no interest in",
+     "zh": "对⋯・・⋯・没有兴趣"
+    }
+   ]
+  },
+  {
+   "n": "Unit 4",
+   "t": "",
+   "words": [
+    {
+     "w": "online",
+     "zh": "在线"
+    },
+    {
+     "w": "model",
+     "zh": "模特儿"
+    },
+    {
+     "w": "diet",
+     "zh": "规定饮食（为健康或减肥等目）"
+    },
+    {
+     "w": "though",
+     "zh": "虽然；尽管"
+    },
+    {
+     "w": "awful",
+     "zh": "很坏；极讨厌"
+    },
+    {
+     "w": "regret",
+     "zh": "懊悔"
+    },
+    {
+     "w": "ashamed",
+     "zh": "惭愧；羞愧"
+    },
+    {
+     "w": "situation",
+     "zh": "情况；状况"
+    },
+    {
+     "w": "braces",
+     "zh": "牙箍"
+    },
+    {
+     "w": "hate",
+     "zh": "厌恶；增恶"
+    },
+    {
+     "w": "advantage",
+     "zh": "优势"
+    },
+    {
+     "w": "embarrassed",
+     "zh": "窘迫时；尴尬"
+    },
+    {
+     "w": "suggest",
+     "zh": "建议；提议"
+    },
+    {
+     "w": "mad",
+     "zh": "很生气；气愤"
+    },
+    {
+     "w": "mess",
+     "zh": "杂乱；不整洁"
+    },
+    {
+     "w": "annoying",
+     "zh": "使恼怒；使生气"
+    },
+    {
+     "w": "fail",
+     "zh": "不及格"
+    },
+    {
+     "w": "careless",
+     "zh": "粗心造成"
+    },
+    {
+     "w": "comment",
+     "zh": "评论"
+    },
+    {
+     "w": "request",
+     "zh": "要求，请求"
+    },
+    {
+     "w": "polite",
+     "zh": "有礼貌"
+    },
+    {
+     "w": "none",
+     "zh": "没有一个；毫无"
+    },
+    {
+     "w": "exam",
+     "zh": "考试（be） on a diet 节食"
+    },
+    {
+     "w": "laugh at",
+     "zh": "嘲笑；讥笑"
+    },
+    {
+     "w": "feel ashamed of",
+     "zh": "对⋯••感到惭愧"
+    },
+    {
+     "w": "drive sb. mad",
+     "zh": "让某人受不了"
+    },
+    {
+     "w": "make a mess",
+     "zh": "搞得一塌糊涂"
+    },
+    {
+     "w": "out of place",
+     "zh": "格格不人"
+    },
+    {
+     "w": "none of one's business",
+     "zh": "与某人无关"
+    },
+    {
+     "w": "hear from",
+     "zh": "收到某人信件（或电子邮件、电话等）"
+    }
+   ]
+  },
+  {
+   "n": "Unit 5",
+   "t": "",
+   "words": [
+    {
+     "w": "praise",
+     "zh": "赞扬；称赞"
+    },
+    {
+     "w": "view",
+     "zh": "看，观看"
+    },
+    {
+     "w": "script",
+     "zh": "广播 稿"
+    },
+    {
+     "w": "director",
+     "zh": "导演"
+    },
+    {
+     "w": "make-up",
+     "zh": "化妆"
+    },
+    {
+     "w": "artist",
+     "zh": "艺术家"
+    },
+    {
+     "w": "studio",
+     "zh": "演播室"
+    },
+    {
+     "w": "contestant",
+     "zh": "比赛者"
+    },
+    {
+     "w": "upon",
+     "zh": "在⋯⋯上"
+    },
+    {
+     "w": "among",
+     "zh": "在 中"
+    },
+    {
+     "w": "onto",
+     "zh": "向；朝"
+    },
+    {
+     "w": "forward",
+     "zh": "向前"
+    },
+    {
+     "w": "second",
+     "zh": "秒"
+    },
+    {
+     "w": "relaxed",
+     "zh": "放松，冷静"
+    },
+    {
+     "w": "ahead of",
+     "zh": "领先"
+    },
+    {
+     "w": "beat",
+     "zh": "赢；打败（某人）"
+    },
+    {
+     "w": "still",
+     "zh": "平静的；安静的"
+    },
+    {
+     "w": "single",
+     "zh": "仅有一个时；单个"
+    },
+    {
+     "w": "victory",
+     "zh": "胜利；成功"
+    },
+    {
+     "w": "england",
+     "zh": "英格兰"
+    },
+    {
+     "w": "lucky ad",
+     "zh": "幸运时；运气好时"
+    },
+    {
+     "w": "news",
+     "zh": "新闻报道"
+    },
+    {
+     "w": "survey",
+     "zh": "民意调查"
+    },
+    {
+     "w": "floor plan",
+     "zh": "楼层平面图"
+    },
+    {
+     "w": "talent show",
+     "zh": "达人秀"
+    },
+    {
+     "w": "pass out",
+     "zh": "昏迷，失去知觉"
+    },
+    {
+     "w": "keep still",
+     "zh": "保持静止，保持不动（状态）"
+    },
+    {
+     "w": "emergency exit",
+     "zh": "紧急出口"
+    },
+    {
+     "w": "on weekdays",
+     "zh": "在工作日"
+    }
+   ]
+  },
+  {
+   "n": "Unit 6",
+   "t": "",
+   "words": [
+    {
+     "w": "preference",
+     "zh": "偏爱；喜爱"
+    },
+    {
+     "w": "review",
+     "zh": "评介；评论"
+    },
+    {
+     "w": "bean",
+     "zh": "豆；豆英"
+    },
+    {
+     "w": "beef",
+     "zh": "牛肉"
+    },
+    {
+     "w": "product",
+     "zh": "产品；制品"
+    },
+    {
+     "w": "protein",
+     "zh": "蛋白质"
+    },
+    {
+     "w": "hamburger",
+     "zh": "汉堡包"
+    },
+    {
+     "w": "cola",
+     "zh": "一杯（或一罐、一瓶）可乐"
+    },
+    {
+     "w": "sandwich",
+     "zh": "三明冶"
+    },
+    {
+     "w": "salad",
+     "zh": "色拉"
+    },
+    {
+     "w": "medical",
+     "zh": "医疗"
+    },
+    {
+     "w": "fat",
+     "zh": "脂肪"
+    },
+    {
+     "w": "sugar",
+     "zh": "食糖"
+    },
+    {
+     "w": "state",
+     "zh": "说明"
+    },
+    {
+     "w": "necessary",
+     "zh": "必需；必要"
+    },
+    {
+     "w": "research",
+     "zh": "研究；调查"
+    },
+    {
+     "w": "plenty",
+     "zh": "大量；充足"
+    },
+    {
+     "w": "usual",
+     "zh": "通常；寻常"
+    },
+    {
+     "w": "coffee",
+     "zh": "咖啡"
+    },
+    {
+     "w": "treat",
+     "zh": "买"
+    },
+    {
+     "w": "customer",
+     "zh": "顾客"
+    },
+    {
+     "w": "title",
+     "zh": "标题；题目"
+    },
+    {
+     "w": "serve",
+     "zh": "提供"
+    },
+    {
+     "w": "pound",
+     "zh": "英镑"
+    },
+    {
+     "w": "pie",
+     "zh": "果馅饼；果馅派"
+    },
+    {
+     "w": "chip",
+     "zh": "炸薯条"
+    },
+    {
+     "w": "service",
+     "zh": "服务"
+    },
+    {
+     "w": "a balanced diet",
+     "zh": "均衡饮食"
+    },
+    {
+     "w": "dairy product",
+     "zh": "乳制品"
+    },
+    {
+     "w": "stay away from",
+     "zh": "离开；不接近"
+    },
+    {
+     "w": "fried food",
+     "zh": "油炸食物"
+    },
+    {
+     "w": "soft drink",
+     "zh": "软饮料"
+    },
+    {
+     "w": "medical examination",
+     "zh": "体格检査"
+    },
+    {
+     "w": "lose weight",
+     "zh": "减肥"
+    },
+    {
+     "w": "plenty of",
+     "zh": "大量，充足"
+    },
+    {
+     "w": "in general",
+     "zh": "通常；大体上"
+    },
+    {
+     "w": "treat oneself to sth",
+     "zh": "给自己买某物（be） prepared to do sth. 愿意做某事"
+    }
+   ]
+  },
+  {
+   "n": "Unit 7",
+   "t": "",
+   "words": [
+    {
+     "w": "adventure",
+     "zh": "冒险；冒险经历"
+    },
+    {
+     "w": "novel",
+     "zh": "小说"
+    },
+    {
+     "w": "frog",
+     "zh": "蛙，青蛙"
+    },
+    {
+     "w": "congratulations",
+     "zh": "祝贺；恭贺"
+    },
+    {
+     "w": "sympathy",
+     "zh": "同情"
+    },
+    {
+     "w": "steamboat",
+     "zh": "汽船，轮船"
+    },
+    {
+     "w": "steam",
+     "zh": "蒸汽动力；蒸汽"
+    },
+    {
+     "w": "writer",
+     "zh": "作家"
+    },
+    {
+     "w": "humorous",
+     "zh": "滑稽有趣的；有幽默感"
+    },
+    {
+     "w": "fence",
+     "zh": "栅栏；篱笆"
+    },
+    {
+     "w": "task",
+     "zh": "任务，工作"
+    },
+    {
+     "w": "yard",
+     "zh": "码"
+    },
+    {
+     "w": "board",
+     "zh": "木板"
+    },
+    {
+     "w": "progress",
+     "zh": "进展"
+    },
+    {
+     "w": "rest",
+     "zh": "休息时间"
+    },
+    {
+     "w": "pity",
+     "zh": "遗憾；可惜"
+    },
+    {
+     "w": "silence",
+     "zh": "沉默，缄默"
+    },
+    {
+     "w": "while",
+     "zh": "一段时间；一会儿"
+    },
+    {
+     "w": "careful",
+     "zh": "小心；谨慎"
+    },
+    {
+     "w": "deal",
+     "zh": "交易"
+    },
+    {
+     "w": "coat",
+     "zh": "涂料层；覆盖层"
+    },
+    {
+     "w": "celebrated",
+     "zh": "著名；闻名"
+    },
+    {
+     "w": "lead",
+     "zh": "铅"
+    },
+    {
+     "w": "plot",
+     "zh": "故事情节"
+    },
+    {
+     "w": "lazy",
+     "zh": "懒惰的"
+    },
+    {
+     "w": "pretend",
+     "zh": "假装；佯装"
+    },
+    {
+     "w": "have a rest",
+     "zh": "休息一下"
+    },
+    {
+     "w": "think of",
+     "zh": "想像到"
+    },
+    {
+     "w": "come along",
+     "zh": "出现"
+    },
+    {
+     "w": "what a pity",
+     "zh": "真可惜"
+    },
+    {
+     "w": "go on doing",
+     "zh": "不停地做"
+    },
+    {
+     "w": "in silence",
+     "zh": "沉默地"
+    },
+    {
+     "w": "after a while",
+     "zh": "过了一会儿"
+    },
+    {
+     "w": "turn sth. over",
+     "zh": "使翻转"
+    },
+    {
+     "w": "trick sb. into doing sth",
+     "zh": "诱使某人做某事"
+    }
+   ]
+  },
+  {
+   "n": "Unit 8",
+   "t": "",
+   "words": [
+    {
+     "w": "gift",
+     "zh": "礼物"
+    },
+    {
+     "w": "graduation",
+     "zh": "毕业典礼"
+    },
+    {
+     "w": "cent",
+     "zh": "分；分币"
+    },
+    {
+     "w": "count",
+     "zh": "计算 总数"
+    },
+    {
+     "w": "afford",
+     "zh": "买得起"
+    },
+    {
+     "w": "present",
+     "zh": "礼物"
+    },
+    {
+     "w": "knee",
+     "zh": "膝；膝盖"
+    },
+    {
+     "w": "sign",
+     "zh": "招牌，标牌"
+    },
+    {
+     "w": "goods",
+     "zh": "商品；货品"
+    },
+    {
+     "w": "search",
+     "zh": "搜寻；查找"
+    },
+    {
+     "w": "chain",
+     "zh": "链子"
+    },
+    {
+     "w": "bill",
+     "zh": "账单"
+    },
+    {
+     "w": "step",
+     "zh": "脚步声"
+    },
+    {
+     "w": "draw",
+     "zh": "掏出"
+    },
+    {
+     "w": "comb",
+     "zh": "发插；梳子"
+    },
+    {
+     "w": "accuse",
+     "zh": "控告；控诉"
+    },
+    {
+     "w": "america",
+     "zh": "美洲"
+    },
+    {
+     "w": "wife",
+     "zh": "妻子"
+    },
+    {
+     "w": "album",
+     "zh": "相册；影集"
+    },
+    {
+     "w": "note",
+     "zh": "笔记，记录"
+    },
+    {
+     "w": "look for",
+     "zh": "寻找；寻求"
+    },
+    {
+     "w": "at last",
+     "zh": "终于；最终"
+    },
+    {
+     "w": "fix... on",
+     "zh": "集中 于"
+    },
+    {
+     "w": "hold out",
+     "zh": "递出（be） accused of ... 被控告⋯⋯；被指责⋯⋯"
+    },
+    {
+     "w": "under the name",
+     "zh": "用⋯⋯名字；以⋯⋯假名"
+    }
+   ]
+  }
+ ]
+}

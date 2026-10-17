@@ -1,0 +1,122 @@
+[
+{
+"w": "these",
+"syl": "these",
+"zh": "这些",
+"lvl": "pep"
+},
+{
+"w": "see",
+"syl": "see",
+"zh": "看见",
+"lvl": "pep"
+},
+{
+"w": "smell",
+"syl": "smell",
+"zh": "闸",
+"lvl": "pep"
+},
+{
+"w": "taste",
+"syl": "taste",
+"zh": "尝",
+"lvl": "pep"
+},
+{
+"w": "hear",
+"syl": "hear",
+"zh": "听见",
+"lvl": "pep"
+},
+{
+"w": "touch",
+"syl": "touch",
+"zh": "触摸",
+"lvl": "pep"
+},
+{
+"w": "nose",
+"syl": "nose",
+"zh": "鼻",
+"lvl": "pep"
+},
+{
+"w": "tongue",
+"syl": "tongue",
+"zh": "舌",
+"lvl": "pep"
+},
+{
+"w": "class",
+"syl": "class",
+"zh": "课",
+"lvl": "pep"
+},
+{
+"w": "in",
+"syl": "in",
+"zh": "在课堂上",
+"lvl": "pep"
+},
+{
+"w": "computer",
+"syl": "com·pu·ter",
+"zh": "计算机",
+"lvl": "pep"
+},
+{
+"w": "learn",
+"syl": "learn",
+"zh": "学",
+"lvl": "pep"
+},
+{
+"w": "breakfast",
+"syl": "break·fast",
+"zh": "早餐",
+"lvl": "pep"
+},
+{
+"w": "time",
+"syl": "time",
+"zh": "时间",
+"lvl": "pep"
+},
+{
+"w": "bread",
+"syl": "bread",
+"zh": "面包",
+"lvl": "pep"
+},
+{
+"w": "egg",
+"syl": "egg",
+"zh": "蛋",
+"lvl": "pep"
+},
+{
+"w": "milk",
+"syl": "milk",
+"zh": "奶",
+"lvl": "pep"
+},
+{
+"w": "noodle",
+"syl": "noo·dle",
+"zh": "面条",
+"lvl": "pep"
+},
+{
+"w": "juice",
+"syl": "juice",
+"zh": "果汁",
+"lvl": "pep"
+},
+{
+"w": "rice",
+"syl": "rice",
+"zh": "大米",
+"lvl": "pep"
+}
+]

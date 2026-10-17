@@ -1,0 +1,122 @@
+[
+{
+"w": "marriage",
+"syl": "mar·riage",
+"zh": "结婚",
+"lvl": "pep"
+},
+{
+"w": "majority",
+"syl": "ma·jo·ri·ty",
+"zh": "大部分",
+"lvl": "pep"
+},
+{
+"w": "complain",
+"syl": "com·plain",
+"zh": "抱怨",
+"lvl": "pep"
+},
+{
+"w": "tuition",
+"syl": "tu·i·tion",
+"zh": "教学",
+"lvl": "pep"
+},
+{
+"w": "fee",
+"syl": "fee",
+"zh": "专业服务费",
+"lvl": "pep"
+},
+{
+"w": "tuition fees",
+"syl": "tu·i·tion·fees",
+"zh": "学费",
+"lvl": "pep"
+},
+{
+"w": "respond",
+"syl": "res·pond",
+"zh": "回答",
+"lvl": "pep"
+},
+{
+"w": "response",
+"syl": "res·ponse",
+"zh": "反应",
+"lvl": "pep"
+},
+{
+"w": "union",
+"syl": "u·nion",
+"zh": "协会",
+"lvl": "pep"
+},
+{
+"w": "scholarship",
+"syl": "schol·ar·ship",
+"zh": "奖学金",
+"lvl": "pep"
+},
+{
+"w": "hire",
+"syl": "hire",
+"zh": "聘任",
+"lvl": "pep"
+},
+{
+"w": "physician",
+"syl": "phy·si·cian",
+"zh": "医师",
+"lvl": "pep"
+},
+{
+"w": "resident physician",
+"syl": "res·i·dent·phy·si·cian",
+"zh": "住院医师",
+"lvl": "pep"
+},
+{
+"w": "colleague",
+"syl": "col·league",
+"zh": "同事",
+"lvl": "pep"
+},
+{
+"w": "reject",
+"syl": "re·ject",
+"zh": "拒绝接受",
+"lvl": "pep"
+},
+{
+"w": "rejection",
+"syl": "re·jec·tion",
+"zh": "拒绝接受",
+"lvl": "pep"
+},
+{
+"w": "appoint",
+"syl": "ap·point",
+"zh": "任命",
+"lvl": "pep"
+},
+{
+"w": "clinic",
+"syl": "clin·ic",
+"zh": "诊所",
+"lvl": "pep"
+},
+{
+"w": "elect",
+"syl": "e·lect",
+"zh": "选举",
+"lvl": "pep"
+},
+{
+"w": "election",
+"syl": "e·lec·tion",
+"zh": "选举",
+"lvl": "pep"
+}
+]

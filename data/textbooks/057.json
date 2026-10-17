@@ -1,0 +1,1415 @@
+{
+ "pub": "外研",
+ "stage": "高中",
+ "grade": "选择性必修 第三册",
+ "vol": "",
+ "id": "3833818d-30c5-4e08-a9b3-2da808a9e6d3",
+ "title": "普通高中教科书·英语选择性必修 第三册",
+ "created": "2022-09-29",
+ "units": [
+  {
+   "n": "Unit 1",
+   "t": "",
+   "words": [
+    {
+     "w": "integrity",
+     "zh": "正直诚实"
+    },
+    {
+     "w": "virtue",
+     "zh": "美德"
+    },
+    {
+     "w": "licence",
+     "zh": "执照"
+    },
+    {
+     "w": "loan",
+     "zh": "货款"
+    },
+    {
+     "w": "adulthood",
+     "zh": "成年"
+    },
+    {
+     "w": "milestone",
+     "zh": "重大事件，里程碑"
+    },
+    {
+     "w": "election",
+     "zh": "选举"
+    },
+    {
+     "w": "wage",
+     "zh": "工资，新金"
+    },
+    {
+     "w": "tax",
+     "zh": "税"
+    },
+    {
+     "w": "have a say",
+     "zh": "有发言权"
+    },
+    {
+     "w": "behind the wheel",
+     "zh": "在驾驶汽车"
+    },
+    {
+     "w": "ambulance",
+     "zh": "救护车"
+    },
+    {
+     "w": "legal",
+     "zh": "合法"
+    },
+    {
+     "w": "mature",
+     "zh": "成熟，明白事理"
+    },
+    {
+     "w": "instantly",
+     "zh": "立即，马上"
+    },
+    {
+     "w": "childhood",
+     "zh": "童年，儿童时代"
+    },
+    {
+     "w": "obey loo be",
+     "zh": "服从；遵守"
+    },
+    {
+     "w": "subtle",
+     "zh": "难以察觉的；微妙韵"
+    },
+    {
+     "w": "gradual",
+     "zh": "逐渐的，逐步"
+    },
+    {
+     "w": "selfish",
+     "zh": "自私"
+    },
+    {
+     "w": "organ donation",
+     "zh": "器官捐献"
+    },
+    {
+     "w": "approve",
+     "zh": "赞成，同意"
+    },
+    {
+     "w": "steady",
+     "zh": "稳定"
+    },
+    {
+     "w": "tempt",
+     "zh": "诱惑，引诱"
+    },
+    {
+     "w": "librarian",
+     "zh": "图书馆管理员"
+    },
+    {
+     "w": "household",
+     "zh": "家庭"
+    },
+    {
+     "w": "commute",
+     "zh": "每天上班的路程"
+    },
+    {
+     "w": "deposit",
+     "zh": "订金"
+    },
+    {
+     "w": "commitment",
+     "zh": "投入，花费"
+    },
+    {
+     "w": "suitable",
+     "zh": "合适时"
+    },
+    {
+     "w": "minimum",
+     "zh": "最小的，最少的"
+    },
+    {
+     "w": "bittersweet",
+     "zh": "苦乐参半"
+    },
+    {
+     "w": "boarder",
+     "zh": "寄宿生，住校生"
+    },
+    {
+     "w": "varied",
+     "zh": "各种各样"
+    },
+    {
+     "w": "cherish",
+     "zh": "重视，珍视"
+    },
+    {
+     "w": "routine",
+     "zh": "惯例，习惯"
+    },
+    {
+     "w": "primeval",
+     "zh": "原始的，远古"
+    },
+    {
+     "w": "boa constrictor",
+     "zh": "蟒蛇"
+    },
+    {
+     "w": "swallow",
+     "zh": "吞下，咽下"
+    },
+    {
+     "w": "prey",
+     "zh": "猜物"
+    },
+    {
+     "w": "chew",
+     "zh": "咀嚼"
+    },
+    {
+     "w": "digestion",
+     "zh": "消化"
+    },
+    {
+     "w": "ponder",
+     "zh": "仔細考虑，深思"
+    },
+    {
+     "w": "masterpiece",
+     "zh": "杰作"
+    },
+    {
+     "w": "digest",
+     "zh": "消化"
+    },
+    {
+     "w": "lay aside",
+     "zh": "把…⋯搁置一边"
+    },
+    {
+     "w": "devote oneself to",
+     "zh": "致力于，献身于"
+    },
+    {
+     "w": "arithmetic",
+     "zh": "算术"
+    },
+    {
+     "w": "disheartened",
+     "zh": "沮丧的，灰心的"
+    },
+    {
+     "w": "tiresome",
+     "zh": "烦人，令人厌烦"
+    },
+    {
+     "w": "at a glance",
+     "zh": "一瞥，看一眼"
+    },
+    {
+     "w": "consequence",
+     "zh": "后果"
+    },
+    {
+     "w": "intimately",
+     "zh": "亲密地；密切地"
+    },
+    {
+     "w": "golf",
+     "zh": "高尔夫球运动"
+    },
+    {
+     "w": "politics",
+     "zh": "政治"
+    },
+    {
+     "w": "necktie",
+     "zh": "领带"
+    },
+    {
+     "w": "evidence",
+     "zh": "证据"
+    },
+    {
+     "w": "airline",
+     "zh": "航空公司"
+    },
+    {
+     "w": "memorable",
+     "zh": "难忘的"
+    },
+    {
+     "w": "bond",
+     "zh": "纽带，关系"
+    },
+    {
+     "w": "conclusion",
+     "zh": "结论"
+    }
+   ]
+  },
+  {
+   "n": "Unit 2",
+   "t": "",
+   "words": [
+    {
+     "w": "security",
+     "zh": "安全"
+    },
+    {
+     "w": "moderator",
+     "zh": "主持人"
+    },
+    {
+     "w": "detox",
+     "zh": "脱瘾"
+    },
+    {
+     "w": "fundraising",
+     "zh": "募捐，筹款"
+    },
+    {
+     "w": "switch",
+     "zh": "改变，转换"
+    },
+    {
+     "w": "switch on",
+     "zh": "开，打开"
+    },
+    {
+     "w": "motivate",
+     "zh": "激发，激励"
+    },
+    {
+     "w": "occupy",
+     "zh": "占用，占去"
+    },
+    {
+     "w": "profile",
+     "zh": "概况"
+    },
+    {
+     "w": "distract",
+     "zh": "分散 ，使分心"
+    },
+    {
+     "w": "constantly",
+     "zh": "持续不断地；经常地"
+    },
+    {
+     "w": "towel",
+     "zh": "毛巾"
+    },
+    {
+     "w": "throw in the towel",
+     "zh": "认输"
+    },
+    {
+     "w": "access",
+     "zh": "接触机会"
+    },
+    {
+     "w": "rely",
+     "zh": "依赖"
+    },
+    {
+     "w": "rely on",
+     "zh": "依靠，依赖"
+    },
+    {
+     "w": "deadline",
+     "zh": "截止时间；最后期限"
+    },
+    {
+     "w": "procrastination",
+     "zh": "拖延"
+    },
+    {
+     "w": "appropriate",
+     "zh": "恰当；合适"
+    },
+    {
+     "w": "spit",
+     "zh": "吐日水，吐唾沫"
+    },
+    {
+     "w": "headphones",
+     "zh": "耳机"
+    },
+    {
+     "w": "bin",
+     "zh": "垃圾稽"
+    },
+    {
+     "w": "considerate",
+     "zh": "替他人着想"
+    },
+    {
+     "w": "promote",
+     "zh": "促进，增进"
+    },
+    {
+     "w": "clarify",
+     "zh": "澄清，讲清楚，阐明"
+    },
+    {
+     "w": "headline",
+     "zh": "媒体报道的热门话题；标题"
+    },
+    {
+     "w": "max out",
+     "zh": "花光； 刷爆"
+    },
+    {
+     "w": "in contrast to",
+     "zh": "与・⋯形成对比"
+    },
+    {
+     "w": "district",
+     "zh": "地区，区域"
+    },
+    {
+     "w": "necessity",
+     "zh": "必需品"
+    },
+    {
+     "w": "toothpaste",
+     "zh": "牙膏"
+    },
+    {
+     "w": "soap",
+     "zh": "肥皂"
+    },
+    {
+     "w": "item",
+     "zh": "一件商品"
+    },
+    {
+     "w": "unprecedentedly",
+     "zh": "空前地"
+    },
+    {
+     "w": "personal finances",
+     "zh": "财务管理"
+    },
+    {
+     "w": "jar",
+     "zh": "罐子，广口瓶"
+    },
+    {
+     "w": "invest",
+     "zh": "投资"
+    },
+    {
+     "w": "lifelong",
+     "zh": "终身的"
+    },
+    {
+     "w": "vision",
+     "zh": "构想，设想"
+    },
+    {
+     "w": "likewise add",
+     "zh": "同样地；相似地"
+    },
+    {
+     "w": "objectively",
+     "zh": "客观地"
+    },
+    {
+     "w": "equip",
+     "zh": "使有知识和技能，使能够胜任"
+    },
+    {
+     "w": "nail",
+     "zh": "钉子"
+    }
+   ]
+  },
+  {
+   "n": "Unit 3",
+   "t": "",
+   "words": [
+    {
+     "w": "decade",
+     "zh": "十年；十年期"
+    },
+    {
+     "w": "legendary",
+     "zh": "大名鼎鼎，传奇式时"
+    },
+    {
+     "w": "fixture",
+     "zh": "固定存在物"
+    },
+    {
+     "w": "elderly",
+     "zh": "年老的"
+    },
+    {
+     "w": "tablet",
+     "zh": "平板电脑"
+    },
+    {
+     "w": "sympathy",
+     "zh": "同情"
+    },
+    {
+     "w": "bunch",
+     "zh": "一群，一伙"
+    },
+    {
+     "w": "a bunch of",
+     "zh": "一群"
+    },
+    {
+     "w": "dusty",
+     "zh": "布满灰尘时"
+    },
+    {
+     "w": "shelf",
+     "zh": "搁板，架子"
+    },
+    {
+     "w": "furniture",
+     "zh": "家具"
+    },
+    {
+     "w": "mist",
+     "zh": "薄雾，雾霭"
+    },
+    {
+     "w": "brick",
+     "zh": "砖，砖块"
+    },
+    {
+     "w": "exterior",
+     "zh": "外部，外观"
+    },
+    {
+     "w": "stationery",
+     "zh": "文具"
+    },
+    {
+     "w": "saleswoman",
+     "zh": "女销售员"
+    },
+    {
+     "w": "leadership",
+     "zh": "领导；领导地位"
+    },
+    {
+     "w": "organic lo",
+     "zh": "有机的；绿色的"
+    },
+    {
+     "w": "recital",
+     "zh": "朗诵会"
+    },
+    {
+     "w": "jazz",
+     "zh": "爵士乐"
+    },
+    {
+     "w": "pop up",
+     "zh": "突然出现，冒出来"
+    },
+    {
+     "w": "humble",
+     "zh": "简陋"
+    },
+    {
+     "w": "compete",
+     "zh": "竞争"
+    },
+    {
+     "w": "emphasise",
+     "zh": "强调"
+    },
+    {
+     "w": "reconstruction",
+     "zh": "重建；修复"
+    },
+    {
+     "w": "journalist",
+     "zh": "新闻工作者；新闻记者"
+    },
+    {
+     "w": "era",
+     "zh": "时代，年代"
+    },
+    {
+     "w": "reform",
+     "zh": "改进；改革"
+    },
+    {
+     "w": "reform and opening-up",
+     "zh": "改革开放"
+    },
+    {
+     "w": "pave",
+     "zh": "铺"
+    },
+    {
+     "w": "pave the way",
+     "zh": "铺平道路；创造条件"
+    },
+    {
+     "w": "socialist",
+     "zh": "社会主义的"
+    },
+    {
+     "w": "alongside",
+     "zh": "一起"
+    },
+    {
+     "w": "initiative",
+     "zh": "倡议"
+    },
+    {
+     "w": "solid",
+     "zh": "坚实的"
+    },
+    {
+     "w": "economic",
+     "zh": "经济"
+    },
+    {
+     "w": "occupation",
+     "zh": "工作，职业"
+    },
+    {
+     "w": "cafeteria",
+     "zh": "自助餐厅"
+    },
+    {
+     "w": "emoji",
+     "zh": "表情符号"
+    },
+    {
+     "w": "integral",
+     "zh": "不可缺少时"
+    },
+    {
+     "w": "component",
+     "zh": "组成部分"
+    },
+    {
+     "w": "category",
+     "zh": "类别"
+    },
+    {
+     "w": "expand",
+     "zh": "扩大；增加"
+    },
+    {
+     "w": "pictograph",
+     "zh": "象形图"
+    },
+    {
+     "w": "emotional",
+     "zh": "情绪 的，情感（上）"
+    },
+    {
+     "w": "gesture",
+     "zh": "手势，姿势"
+    },
+    {
+     "w": "facial",
+     "zh": "脸上时；面部"
+    },
+    {
+     "w": "textspeak",
+     "zh": "短信简写语"
+    },
+    {
+     "w": "intention",
+     "zh": "意图，目"
+    },
+    {
+     "w": "adaptation",
+     "zh": "改编版"
+    },
+    {
+     "w": "accessible",
+     "zh": "易懂的"
+    },
+    {
+     "w": "soul",
+     "zh": "精神"
+    },
+    {
+     "w": "tendency",
+     "zh": "趋势"
+    },
+    {
+     "w": "facilitate",
+     "zh": "促进；使便利"
+    },
+    {
+     "w": "educator",
+     "zh": "教育工作者"
+    },
+    {
+     "w": "pictorial",
+     "zh": "图画的"
+    },
+    {
+     "w": "secondary",
+     "zh": "次要，第二位"
+    },
+    {
+     "w": "comic",
+     "zh": "连环漫画"
+    },
+    {
+     "w": "costume",
+     "zh": "化装服"
+    },
+    {
+     "w": "urgently",
+     "zh": "紧急地；急迫地"
+    },
+    {
+     "w": "convincing",
+     "zh": "有说服力前，使人信服"
+    }
+   ]
+  },
+  {
+   "n": "Unit 4",
+   "t": "",
+   "words": [
+    {
+     "w": "boundary",
+     "zh": "分界线；边界"
+    },
+    {
+     "w": "statistic",
+     "zh": "统计数据"
+    },
+    {
+     "w": "assist",
+     "zh": "协助，帮助"
+    },
+    {
+     "w": "tackle",
+     "zh": "处理，对付"
+    },
+    {
+     "w": "vital",
+     "zh": "极其重要"
+    },
+    {
+     "w": "comrade",
+     "zh": "同志；朋友"
+    },
+    {
+     "w": "tragic",
+     "zh": "悲惨的，不幸的"
+    },
+    {
+     "w": "combat",
+     "zh": "防止，抑制"
+    },
+    {
+     "w": "relieve",
+     "zh": "给 换班"
+    },
+    {
+     "w": "specialist",
+     "zh": "专家"
+    },
+    {
+     "w": "infectious",
+     "zh": "传染性"
+    },
+    {
+     "w": "clinic",
+     "zh": "诊所；门诊鄙"
+    },
+    {
+     "w": "disinfect",
+     "zh": "为…⋯消毒，给……杀菌"
+    },
+    {
+     "w": "outbreak",
+     "zh": "爆发，突然发生"
+    },
+    {
+     "w": "devotion",
+     "zh": "奉献"
+    },
+    {
+     "w": "vomit",
+     "zh": "呕吐物"
+    },
+    {
+     "w": "miracle",
+     "zh": "意外的幸运事；奇迹"
+    },
+    {
+     "w": "van",
+     "zh": "小型货车"
+    },
+    {
+     "w": "twin",
+     "zh": "双胞胎"
+    },
+    {
+     "w": "ward",
+     "zh": "病房"
+    },
+    {
+     "w": "compensate",
+     "zh": "弥补，补偿"
+    },
+    {
+     "w": "collaborate",
+     "zh": "合作，协作"
+    },
+    {
+     "w": "realistic",
+     "zh": "能够实现的"
+    },
+    {
+     "w": "minority",
+     "zh": "少数派；少数"
+    },
+    {
+     "w": "cast",
+     "zh": "选派"
+    },
+    {
+     "w": "mankind",
+     "zh": "人类"
+    },
+    {
+     "w": "inclusive",
+     "zh": "包容广阔"
+    },
+    {
+     "w": "culture shock",
+     "zh": "文化冲击"
+    },
+    {
+     "w": "joint",
+     "zh": "联合的，共同的"
+    },
+    {
+     "w": "harmonious",
+     "zh": "和睦的，融洽的"
+    },
+    {
+     "w": "mutual",
+     "zh": "共有的，共同"
+    },
+    {
+     "w": "rewarding",
+     "zh": "值得做，有意义"
+    },
+    {
+     "w": "mount",
+     "zh": "走上，登上"
+    },
+    {
+     "w": "civil",
+     "zh": "公民的，国民"
+    },
+    {
+     "w": "civil war",
+     "zh": "内战"
+    },
+    {
+     "w": "slave",
+     "zh": "奴隶"
+    },
+    {
+     "w": "confederate",
+     "zh": "南部联邦的"
+    },
+    {
+     "w": "union",
+     "zh": "联邦"
+    },
+    {
+     "w": "civilian",
+     "zh": "平民前；百姓时"
+    },
+    {
+     "w": "division",
+     "zh": "分歧，分裂"
+    },
+    {
+     "w": "bring forth",
+     "zh": "使产生，使出现"
+    },
+    {
+     "w": "conceive",
+     "zh": "构想，设想"
+    },
+    {
+     "w": "liberty",
+     "zh": "自由"
+    },
+    {
+     "w": "medicate",
+     "zh": "致力于，献身于"
+    },
+    {
+     "w": "endure",
+     "zh": "持续存在"
+    },
+    {
+     "w": "battlefield",
+     "zh": "战场"
+    },
+    {
+     "w": "portion",
+     "zh": "一部分"
+    },
+    {
+     "w": "altogether",
+     "zh": "完全"
+    },
+    {
+     "w": "consecrate",
+     "zh": "宣布⋯⋯为神圣之处"
+    },
+    {
+     "w": "hallow",
+     "zh": "使成为神圣"
+    },
+    {
+     "w": "detract",
+     "zh": "减低，破坏，损害"
+    },
+    {
+     "w": "nobly",
+     "zh": "高尚地，崇高地"
+    },
+    {
+     "w": "in vain",
+     "zh": "白白地"
+    },
+    {
+     "w": "perish",
+     "zh": "死亡"
+    },
+    {
+     "w": "influential",
+     "zh": "有影响力的"
+    },
+    {
+     "w": "communist",
+     "zh": "共产主义"
+    }
+   ]
+  },
+  {
+   "n": "Unit 5",
+   "t": "",
+   "words": [
+    {
+     "w": "halfway",
+     "zh": "中间的，半途的"
+    },
+    {
+     "w": "dramatically",
+     "zh": "显著地"
+    },
+    {
+     "w": "heritage",
+     "zh": "遗产；传统"
+    },
+    {
+     "w": "inhabitant",
+     "zh": "栖居旳动物"
+    },
+    {
+     "w": "penguin",
+     "zh": "企鹅"
+    },
+    {
+     "w": "habitat",
+     "zh": "栖息地"
+    },
+    {
+     "w": "rat",
+     "zh": "大老鼠"
+    },
+    {
+     "w": "subsequently",
+     "zh": "后来，随后"
+    },
+    {
+     "w": "appetite",
+     "zh": "胃口，食欲"
+    },
+    {
+     "w": "multiply",
+     "zh": "大大增加，（使）倍增"
+    },
+    {
+     "w": "vegetation",
+     "zh": "植物，草木（总称）"
+    },
+    {
+     "w": "erosion",
+     "zh": "侵蚀"
+    },
+    {
+     "w": "parakeet",
+     "zh": "长尾 鹦鹉"
+    },
+    {
+     "w": "chaos",
+     "zh": "大混乱；紊乱"
+    },
+    {
+     "w": "conservation",
+     "zh": "保护"
+    },
+    {
+     "w": "virus",
+     "zh": "病毒"
+    },
+    {
+     "w": "decrease",
+     "zh": "变小， 减少"
+    },
+    {
+     "w": "trap",
+     "zh": "夹子，陷阱"
+    },
+    {
+     "w": "departure",
+     "zh": "离开"
+    },
+    {
+     "w": "immunity",
+     "zh": "免疫力"
+    },
+    {
+     "w": "explode",
+     "zh": "突然增加"
+    },
+    {
+     "w": "collapse",
+     "zh": "倒坍；塌下"
+    },
+    {
+     "w": "substantial",
+     "zh": "大量，多"
+    },
+    {
+     "w": "incident",
+     "zh": "事件"
+    },
+    {
+     "w": "intervention",
+     "zh": "干预，介人"
+    },
+    {
+     "w": "owe",
+     "zh": "应该做；对⋯⋯负有⋯⋯的义务"
+    },
+    {
+     "w": "postscript",
+     "zh": "附言"
+    },
+    {
+     "w": "pest",
+     "zh": "有害小动物；害虫"
+    },
+    {
+     "w": "ecology",
+     "zh": "生态"
+    },
+    {
+     "w": "dissolve",
+     "zh": "溶解"
+    },
+    {
+     "w": "nutrient",
+     "zh": "养分，营养物"
+    },
+    {
+     "w": "comparison",
+     "zh": "比较"
+    },
+    {
+     "w": "visual",
+     "zh": "视觉"
+    },
+    {
+     "w": "session",
+     "zh": "一段时间"
+    },
+    {
+     "w": "on behalf of",
+     "zh": "代表"
+    },
+    {
+     "w": "herbal",
+     "zh": "用香 草制成的"
+    },
+    {
+     "w": "mysterious",
+     "zh": "神秘"
+    },
+    {
+     "w": "status",
+     "zh": "地位；身份"
+    },
+    {
+     "w": "criterion",
+     "zh": "标准，准则"
+    },
+    {
+     "w": "prosper",
+     "zh": "兴旺，发达"
+    },
+    {
+     "w": "rare",
+     "zh": "稀有的，罕见的"
+    },
+    {
+     "w": "biological",
+     "zh": "生物前，与生物有关"
+    },
+    {
+     "w": "apparently",
+     "zh": "据说；看来，似乎"
+    },
+    {
+     "w": "vast",
+     "zh": "巨大；广大"
+    },
+    {
+     "w": "altitude",
+     "zh": "海拔"
+    },
+    {
+     "w": "variation",
+     "zh": "差异；变化"
+    },
+    {
+     "w": "thrive",
+     "zh": "茁壮成长"
+    },
+    {
+     "w": "fossil",
+     "zh": "化石"
+    },
+    {
+     "w": "floral",
+     "zh": "花"
+    },
+    {
+     "w": "vertebrate",
+     "zh": "脊椎动物"
+    },
+    {
+     "w": "beehive",
+     "zh": "蜂房，蜂"
+    },
+    {
+     "w": "endangered",
+     "zh": "濒临灭绝"
+    },
+    {
+     "w": "elsewhere",
+     "zh": "在别处"
+    },
+    {
+     "w": "invasion",
+     "zh": "涌入"
+    },
+    {
+     "w": "coexist",
+     "zh": "共存，共处"
+    },
+    {
+     "w": "secure",
+     "zh": "稳固；安全的"
+    },
+    {
+     "w": "greeting",
+     "zh": "问候，招呼"
+    }
+   ]
+  },
+  {
+   "n": "Unit 6",
+   "t": "",
+   "words": [
+    {
+     "w": "fox",
+     "zh": "狐狸"
+    },
+    {
+     "w": "chacma baboon",
+     "zh": "南非大狒，大狒狒"
+    },
+    {
+     "w": "crime",
+     "zh": "罪，罪行"
+    },
+    {
+     "w": "seaside",
+     "zh": "海滨"
+    },
+    {
+     "w": "suburb",
+     "zh": "郊区，城郊"
+    },
+    {
+     "w": "greedy",
+     "zh": "贪婪，贪心"
+    },
+    {
+     "w": "thief",
+     "zh": "小偷，贼"
+    },
+    {
+     "w": "commit",
+     "zh": "犯"
+    },
+    {
+     "w": "urban",
+     "zh": "城镇韵，城市的"
+    },
+    {
+     "w": "predator",
+     "zh": "掠食动物，捕食性动物"
+    },
+    {
+     "w": "newcomer",
+     "zh": "新来者"
+    },
+    {
+     "w": "flourish",
+     "zh": "生长茂盛，兴盛"
+    },
+    {
+     "w": "raccoon",
+     "zh": "浣熊"
+    },
+    {
+     "w": "container",
+     "zh": "容器"
+    },
+    {
+     "w": "garbage",
+     "zh": "垃圾"
+    },
+    {
+     "w": "lamb",
+     "zh": "羔羊肉"
+    },
+    {
+     "w": "kebab",
+     "zh": "烤 串"
+    },
+    {
+     "w": "garlic",
+     "zh": "蒜"
+    },
+    {
+     "w": "estimate",
+     "zh": "估计，估算"
+    },
+    {
+     "w": "migratory",
+     "zh": "迁徙的"
+    },
+    {
+     "w": "appreciate",
+     "zh": "欣赏；赏识"
+    },
+    {
+     "w": "crucial",
+     "zh": "至关重要，关键性"
+    },
+    {
+     "w": "restrict",
+     "zh": "限制，控制"
+    },
+    {
+     "w": "hiker",
+     "zh": "徒步旅行者，远足者"
+    },
+    {
+     "w": "kit",
+     "zh": "成套工具"
+    },
+    {
+     "w": "optimistic",
+     "zh": "乐观；乐观主义"
+    },
+    {
+     "w": "clay",
+     "zh": "黏士"
+    },
+    {
+     "w": "cave",
+     "zh": "洞穴"
+    },
+    {
+     "w": "heat wave",
+     "zh": "酷热期，热浪期"
+    },
+    {
+     "w": "indoors",
+     "zh": "在室内"
+    },
+    {
+     "w": "cope with",
+     "zh": "应付"
+    },
+    {
+     "w": "fuel",
+     "zh": "燃料"
+    },
+    {
+     "w": "consumption",
+     "zh": "精力、油、电等的）消耗量"
+    },
+    {
+     "w": "supplement",
+     "zh": "补充，增补，增加"
+    },
+    {
+     "w": "eliminate",
+     "zh": "消除，根除"
+    },
+    {
+     "w": "firefighter",
+     "zh": "消防队员"
+    },
+    {
+     "w": "bring... under control",
+     "zh": "使…⋯处于控制之下"
+    },
+    {
+     "w": "blaze",
+     "zh": "烈火，大火"
+    },
+    {
+     "w": "fierce",
+     "zh": "恶劣的，极端"
+    },
+    {
+     "w": "react",
+     "zh": "反应"
+    },
+    {
+     "w": "monthly",
+     "zh": "每月一次的"
+    },
+    {
+     "w": "get rid of",
+     "zh": "摆脱，除去"
+    },
+    {
+     "w": "mars",
+     "zh": "火星"
+    },
+    {
+     "w": "advanced",
+     "zh": "高级的；先进时"
+    },
+    {
+     "w": "wipe",
+     "zh": "擦，拭，揩"
+    },
+    {
+     "w": "wipe out",
+     "zh": "彻底摧毁，消灭"
+    },
+    {
+     "w": "nuclear",
+     "zh": "核武器"
+    },
+    {
+     "w": "terrifying",
+     "zh": "极其可怕的，骇人听闻的"
+    },
+    {
+     "w": "hostile",
+     "zh": "恶劣"
+    },
+    {
+     "w": "unmanned",
+     "zh": "无人驾驶"
+    },
+    {
+     "w": "spacecraft",
+     "zh": "航天器，宇宙飞船"
+    },
+    {
+     "w": "orbit",
+     "zh": "环绕⋯⋯运行"
+    },
+    {
+     "w": "stunning",
+     "zh": "极具吸引力的；令人惊奇时"
+    },
+    {
+     "w": "agency",
+     "zh": "机构；局，部，处"
+    },
+    {
+     "w": "consist",
+     "zh": "组成"
+    },
+    {
+     "w": "consist of",
+     "zh": "由⋯⋯•构成，由⋯组成"
+    },
+    {
+     "w": "in the meantime",
+     "zh": "在此期间，与此同时"
+    },
+    {
+     "w": "infer",
+     "zh": "推断，推定"
+    },
+    {
+     "w": "expose",
+     "zh": "使暴露"
+    },
+    {
+     "w": "astronaut",
+     "zh": "宇航员，太空人"
+    },
+    {
+     "w": "dust",
+     "zh": "炒土，尘土"
+    },
+    {
+     "w": "capsule",
+     "zh": "密封舱，太空舱"
+    },
+    {
+     "w": "exposure",
+     "zh": "暴露"
+    },
+    {
+     "w": "trunk",
+     "zh": "树干"
+    }
+   ]
+  }
+ ]
+}

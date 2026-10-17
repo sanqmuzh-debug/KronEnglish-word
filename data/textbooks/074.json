@@ -1,0 +1,919 @@
+{
+ "pub": "沪教",
+ "stage": "高中",
+ "grade": "必修 第二册",
+ "vol": "",
+ "id": "3d4ef8c1-f511-4723-9358-db926373495c",
+ "title": "普通高中教科书·英语必修 第二册",
+ "created": "2022-09-29",
+ "units": [
+  {
+   "n": "Unit 1",
+   "t": "",
+   "words": [
+    {
+     "w": "blame",
+     "zh": "把⋯归咎于；指责"
+    },
+    {
+     "w": "theme",
+     "zh": "主题"
+    },
+    {
+     "w": "factor",
+     "zh": "因素；要素"
+    },
+    {
+     "w": "chemical",
+     "zh": "化学制品；化学品"
+    },
+    {
+     "w": "frightening",
+     "zh": "使惊恐的；骇人"
+    },
+    {
+     "w": "pressure",
+     "zh": "心理压力；紧张"
+    },
+    {
+     "w": "impress",
+     "zh": "使钦佩；给⋯留下深刻的好印象"
+    },
+    {
+     "w": "statistic",
+     "zh": "统计数字；统计资料"
+    },
+    {
+     "w": "seat belt",
+     "zh": "安全带"
+    },
+    {
+     "w": "solution",
+     "zh": "解决办法；处理手段"
+    },
+    {
+     "w": "independent",
+     "zh": "独立的；自主的"
+    },
+    {
+     "w": "surfing",
+     "zh": "冲浪运动"
+    },
+    {
+     "w": "adapt",
+     "zh": "改编；改写"
+    },
+    {
+     "w": "section",
+     "zh": "节；部分"
+    },
+    {
+     "w": "reveal",
+     "zh": "揭示；显示；透露"
+    },
+    {
+     "w": "author",
+     "zh": "著者；作者"
+    },
+    {
+     "w": "responsible",
+     "zh": "负责任的"
+    },
+    {
+     "w": "so that",
+     "zh": "负责；承担义务"
+    },
+    {
+     "w": "limited",
+     "zh": "有限的"
+    },
+    {
+     "w": "reliable",
+     "zh": "真实可信的"
+    },
+    {
+     "w": "extent",
+     "zh": "程度；限度"
+    },
+    {
+     "w": "judgement",
+     "zh": "意见"
+    },
+    {
+     "w": "issue",
+     "zh": "重要议题；争论的问题"
+    },
+    {
+     "w": "strategy",
+     "zh": "策略；计策；行动计划"
+    },
+    {
+     "w": "conduct",
+     "zh": "组织；安排；实施"
+    },
+    {
+     "w": "confidence",
+     "zh": "自信心"
+    },
+    {
+     "w": "adventurer",
+     "zh": "冒险家"
+    },
+    {
+     "w": "achievement",
+     "zh": "完成"
+    },
+    {
+     "w": "ski",
+     "zh": "滑雪n. one of a pair of long narrow pieces of wood, metal or plastic for skiing 滑雪板"
+    },
+    {
+     "w": "quit",
+     "zh": "停止；戒掉"
+    },
+    {
+     "w": "charity",
+     "zh": "慈善；赈济"
+    },
+    {
+     "w": "disease",
+     "zh": "疾病"
+    },
+    {
+     "w": "reaction",
+     "zh": "反应；回应"
+    },
+    {
+     "w": "dizzy",
+     "zh": "头晕目眩的；眩晕"
+    },
+    {
+     "w": "incredible",
+     "zh": "极好的；极大的"
+    },
+    {
+     "w": "curiosity",
+     "zh": "好奇心；求知欲"
+    },
+    {
+     "w": "eyewitness",
+     "zh": "目击者；见让人"
+    },
+    {
+     "w": "account",
+     "zh": "描述；叙述；报告"
+    },
+    {
+     "w": "preserve",
+     "zh": "保护；维护；保留"
+    },
+    {
+     "w": "base",
+     "zh": "据点；总部"
+    },
+    {
+     "w": "continent",
+     "zh": "大陆；陆地；洲"
+    },
+    {
+     "w": "native",
+     "zh": "本地的；当地"
+    },
+    {
+     "w": "boot",
+     "zh": "靴子"
+    },
+    {
+     "w": "ambitious",
+     "zh": "有野心的；有雄心"
+    },
+    {
+     "w": "limit",
+     "zh": "限度；限制v. to stop something from increasing beyond a particular amount orlevel 限制；限定"
+    },
+    {
+     "w": "attempt",
+     "zh": "企图；试图；尝试v. to make an effort or try to do something, especially something difficult 努力；尝试；试图"
+    },
+    {
+     "w": "contain",
+     "zh": "包含；含有；容纳"
+    },
+    {
+     "w": "vehicle",
+     "zh": "交通工具，车辆"
+    },
+    {
+     "w": "check out",
+     "zh": "察看，观察（有趣或有吸引力的人或事物）"
+    },
+    {
+     "w": "be likely to",
+     "zh": "可能做；可能成为"
+    },
+    {
+     "w": "due to",
+     "zh": "由于；因为"
+    },
+    {
+     "w": "social media",
+     "zh": "社交媒体"
+    },
+    {
+     "w": "ice sheet",
+     "zh": "冰原；冰盖"
+    },
+    {
+     "w": "polar bear",
+     "zh": "北极熊"
+    },
+    {
+     "w": "apart from",
+     "zh": "[əˈpɑːt frɒm] 除了……外(还) ；此外"
+    },
+    {
+     "w": "except for",
+     "zh": "除…⋯之外"
+    }
+   ]
+  },
+  {
+   "n": "Unit 2",
+   "t": "",
+   "words": [
+    {
+     "w": "episode",
+     "zh": "电视连续剧或广播剧）一集"
+    },
+    {
+     "w": "series",
+     "zh": "系列作品"
+    },
+    {
+     "w": "previous",
+     "zh": "先前的；以往的"
+    },
+    {
+     "w": "brief",
+     "zh": "简洁的；简单的"
+    },
+    {
+     "w": "quote",
+     "zh": "引语；引文v. to repeat the exact words that another person has said or written 引用；引述"
+    },
+    {
+     "w": "clap",
+     "zh": "拍手；击掌"
+    },
+    {
+     "w": "indeed",
+     "zh": "确实"
+    },
+    {
+     "w": "positive",
+     "zh": "积极的；建设性的；朝看成功"
+    },
+    {
+     "w": "effect",
+     "zh": "效应；影响；结果"
+    },
+    {
+     "w": "performance",
+     "zh": "表现"
+    },
+    {
+     "w": "propose",
+     "zh": "提议；建议"
+    },
+    {
+     "w": "lecture",
+     "zh": "讲座，讲课，演讲"
+    },
+    {
+     "w": "document",
+     "zh": "公文，文件"
+    },
+    {
+     "w": "resource",
+     "zh": "资料"
+    },
+    {
+     "w": "eager",
+     "zh": "渴望的， 热切的"
+    },
+    {
+     "w": "frequently",
+     "zh": "频繁地；经常"
+    },
+    {
+     "w": "update",
+     "zh": "更新"
+    },
+    {
+     "w": "otherwise",
+     "zh": "否则"
+    },
+    {
+     "w": "motivate",
+     "zh": "使有动机"
+    },
+    {
+     "w": "mood",
+     "zh": "画作营造的基调情绪氛围"
+    },
+    {
+     "w": "audience",
+     "zh": "观众"
+    },
+    {
+     "w": "hurricane",
+     "zh": "尤指西大西洋）飓风"
+    },
+    {
+     "w": "path",
+     "zh": "小路；小径"
+    },
+    {
+     "w": "county",
+     "zh": "郡；（美国昀）县"
+    },
+    {
+     "w": "valley",
+     "zh": "山谷"
+    },
+    {
+     "w": "accident",
+     "zh": "意外， 事故"
+    },
+    {
+     "w": "recognize",
+     "zh": "承认；意识到"
+    },
+    {
+     "w": "aid",
+     "zh": "帮助；援助"
+    },
+    {
+     "w": "function",
+     "zh": "起作用"
+    },
+    {
+     "w": "donate",
+     "zh": "尤指向慈善机构）捐赠，赠送"
+    },
+    {
+     "w": "supply",
+     "zh": "供应量；供给量；储备"
+    },
+    {
+     "w": "devoted",
+     "zh": "挚爱的；忠诚的；全心全意"
+    },
+    {
+     "w": "creative",
+     "zh": "有创意的"
+    },
+    {
+     "w": "satisfaction",
+     "zh": "满足；满意；欣慰"
+    },
+    {
+     "w": "benefit",
+     "zh": "优势；益处"
+    },
+    {
+     "w": "concentration",
+     "zh": "专心， 专注"
+    },
+    {
+     "w": "obviously",
+     "zh": "用于说明某种情况或事实）明显，显而易见，不言而喻"
+    },
+    {
+     "w": "promote",
+     "zh": "促进；推动"
+    },
+    {
+     "w": "cooperation",
+     "zh": "合作， 协作"
+    },
+    {
+     "w": "mental",
+     "zh": "思想的；精神的；思考的；智力的"
+    },
+    {
+     "w": "academic",
+     "zh": "学业的"
+    },
+    {
+     "w": "procedure",
+     "zh": "步骤"
+    },
+    {
+     "w": "aware",
+     "zh": "知道；意识到；明白"
+    },
+    {
+     "w": "addicted",
+     "zh": "入迷"
+    },
+    {
+     "w": "debate",
+     "zh": "尤指正式）讨论，辩论n. an argument or discussion expressing different opinions（各自发表不同意见的）争论，辩论"
+    },
+    {
+     "w": "uniform",
+     "zh": "制服 / 校服"
+    },
+    {
+     "w": "identity",
+     "zh": "特征"
+    },
+    {
+     "w": "signal",
+     "zh": "标志；表明；预示"
+    },
+    {
+     "w": "summarize",
+     "zh": "总结；概括"
+    },
+    {
+     "w": "master",
+     "zh": "精通；掌握"
+    },
+    {
+     "w": "prevent",
+     "zh": "阻止；阻碍"
+    },
+    {
+     "w": "cure",
+     "zh": "药；药物；疗法"
+    },
+    {
+     "w": "cancer",
+     "zh": "癌， 癌症"
+    },
+    {
+     "w": "wi-fi",
+     "zh": "无线保真"
+    },
+    {
+     "w": "sail",
+     "zh": "航行； 乘船航行"
+    },
+    {
+     "w": "tight",
+     "zh": "严密的；严格"
+    },
+    {
+     "w": "ocean",
+     "zh": "大海；海洋"
+    },
+    {
+     "w": "pursue",
+     "zh": "追求；致力于"
+    },
+    {
+     "w": "rock band",
+     "zh": ""
+    },
+    {
+     "w": "in charge of",
+     "zh": "主管；掌管"
+    },
+    {
+     "w": "sum up",
+     "zh": "（of a person） to become very weak orill and die（人）衰弱；病重死亡"
+    },
+    {
+     "w": "fade away",
+     "zh": "逐渐消逝"
+    }
+   ]
+  },
+  {
+   "n": "Unit 3",
+   "t": "",
+   "words": [
+    {
+     "w": "climate",
+     "zh": "气候"
+    },
+    {
+     "w": "billion",
+     "zh": "十亿"
+    },
+    {
+     "w": "alarming",
+     "zh": "使人惊恐的；令人惊慌的"
+    },
+    {
+     "w": "rate",
+     "zh": "速度；进度"
+    },
+    {
+     "w": "predict",
+     "zh": "预言；预告；预报"
+    },
+    {
+     "w": "chain",
+     "zh": "一系列，一连串"
+    },
+    {
+     "w": "hunt",
+     "zh": "打猎；猎杀"
+    },
+    {
+     "w": "agriculture",
+     "zh": "农业；农学"
+    },
+    {
+     "w": "figure",
+     "zh": "代表数量，尤指官方资料中的）数字"
+    },
+    {
+     "w": "significantly",
+     "zh": "有重大意义地；显著地；明显地"
+    },
+    {
+     "w": "unfamiliar",
+     "zh": "陌生的；不熟悉的"
+    },
+    {
+     "w": "youth",
+     "zh": "青年，年轻人"
+    },
+    {
+     "w": "threaten",
+     "zh": "危及；对……构成威胁"
+    },
+    {
+     "w": "extinction",
+     "zh": "灭绝，绝种"
+    },
+    {
+     "w": "admit",
+     "zh": "承认"
+    },
+    {
+     "w": "somehow",
+     "zh": "不知为什么"
+    },
+    {
+     "w": "measure",
+     "zh": "措施；方法"
+    },
+    {
+     "w": "absolutely",
+     "zh": "绝对地，完全地"
+    },
+    {
+     "w": "contrast",
+     "zh": "对比；对照"
+    },
+    {
+     "w": "imply",
+     "zh": "暗示意指"
+    },
+    {
+     "w": "major",
+     "zh": "主要的；重要的"
+    },
+    {
+     "w": "available",
+     "zh": "可获得的；可购得的；可找到的"
+    },
+    {
+     "w": "option",
+     "zh": "选择；可选择的事物"
+    },
+    {
+     "w": "desire",
+     "zh": "愿望；欲望；渴望"
+    },
+    {
+     "w": "reduce",
+     "zh": "减少，缩小"
+    },
+    {
+     "w": "design",
+     "zh": "设计；制图；构思"
+    },
+    {
+     "w": "balance",
+     "zh": "同等重视（相对两个事物或方面）"
+    },
+    {
+     "w": "graduate",
+     "zh": "大学华业/'gradsuat/ n.a person who has a university degree 大学毕业生"
+    },
+    {
+     "w": "plus",
+     "zh": "而且；此外；况且"
+    },
+    {
+     "w": "eventually",
+     "zh": "最后；终于"
+    },
+    {
+     "w": "concerned",
+     "zh": "感兴趣的；关切的；关注的"
+    },
+    {
+     "w": "fund",
+     "zh": "为……提供资金；拨款给"
+    },
+    {
+     "w": "mirror",
+     "zh": "镜子"
+    },
+    {
+     "w": "tear",
+     "zh": "眼泪；泪珠；泪水"
+    },
+    {
+     "w": "net",
+     "zh": "网"
+    },
+    {
+     "w": "string",
+     "zh": "细绳；线；带子"
+    },
+    {
+     "w": "mud",
+     "zh": "泥；淤泥"
+    },
+    {
+     "w": "cloth",
+     "zh": "织物；布料"
+    },
+    {
+     "w": "process",
+     "zh": "过程；进程"
+    },
+    {
+     "w": "contact",
+     "zh": "联系，联络（如用电话或信件）"
+    },
+    {
+     "w": "madam",
+     "zh": "夫人；女士"
+    },
+    {
+     "w": "advertise",
+     "zh": "为…做广告"
+    },
+    {
+     "w": "therefore",
+     "zh": "因此；所以；因而"
+    },
+    {
+     "w": "advertisement",
+     "zh": "广告；启事"
+    },
+    {
+     "w": "flight",
+     "zh": "航班飞机；班机"
+    },
+    {
+     "w": "grateful",
+     "zh": "感激的；表示感谢的"
+    },
+    {
+     "w": "faithfully",
+     "zh": "忠实地；忠诚地"
+    },
+    {
+     "w": "formal",
+     "zh": "正式的"
+    },
+    {
+     "w": "important occasions",
+     "zh": "适合正式场合的；正规的；庄重的"
+    },
+    {
+     "w": "official",
+     "zh": "正式的；官方的；官方授权"
+    },
+    {
+     "w": "fluent",
+     "zh": "尤指外语）流利，流畅的；熟练"
+    },
+    {
+     "w": "exchange",
+     "zh": "交换"
+    },
+    {
+     "w": "range",
+     "zh": "一系列"
+    },
+    {
+     "w": "spring roll",
+     "zh": "春卷"
+    },
+    {
+     "w": "silicon chip",
+     "zh": "硅片"
+    },
+    {
+     "w": "solar-power battery",
+     "zh": "太阳能电池"
+    },
+    {
+     "w": "look forward to",
+     "zh": "盼望；期待"
+    },
+    {
+     "w": "mother tongue",
+     "zh": "母语"
+    }
+   ]
+  },
+  {
+   "n": "Unit 4",
+   "t": "",
+   "words": [
+    {
+     "w": "brick",
+     "zh": "砖；砖块"
+    },
+    {
+     "w": "gain",
+     "zh": "好处；利益；改进"
+    },
+    {
+     "w": "attract",
+     "zh": "吸引；使喜爱"
+    },
+    {
+     "w": "shark",
+     "zh": "鲨鱼"
+    },
+    {
+     "w": "target",
+     "zh": "目标，对象"
+    },
+    {
+     "w": "approach",
+     "zh": "靠近，接近"
+    },
+    {
+     "w": "attack",
+     "zh": "袭击；攻击v. to use violence to try to hurt or kill somebody 袭击；攻击"
+    },
+    {
+     "w": "sharp",
+     "zh": "锋利的；尖"
+    },
+    {
+     "w": "skin",
+     "zh": "皮；皮肤"
+    },
+    {
+     "w": "strength",
+     "zh": "体力；力气；力量"
+    },
+    {
+     "w": "wrap",
+     "zh": "用…⋯缠绕"
+    },
+    {
+     "w": "bleed",
+     "zh": "流血；失血"
+    },
+    {
+     "w": "bite",
+     "zh": "吸"
+    },
+    {
+     "w": "defeat",
+     "zh": "失败v. to win against somebody in a war, competition, sports game, etc. 击败，战胜"
+    },
+    {
+     "w": "destroy",
+     "zh": "摧毁"
+    },
+    {
+     "w": "intelligent",
+     "zh": "有智力的；有理解和学习能力的"
+    },
+    {
+     "w": "good at",
+     "zh": "有才智的；聪明的"
+    },
+    {
+     "w": "struggle",
+     "zh": "搏斗；扭打；挣扎脱身"
+    },
+    {
+     "w": "sink",
+     "zh": "下沉"
+    },
+    {
+     "w": "ahead",
+     "zh": "向前面，在前面"
+    },
+    {
+     "w": "maintain",
+     "zh": "维持；保持"
+    },
+    {
+     "w": "dramatically",
+     "zh": "巨大地"
+    },
+    {
+     "w": "curious",
+     "zh": "求知欲强的；好奇"
+    },
+    {
+     "w": "shortage",
+     "zh": "不足；缺少；短缺"
+    },
+    {
+     "w": "grain",
+     "zh": "谷物；谷粒"
+    },
+    {
+     "w": "decade",
+     "zh": "十年，十年期"
+    },
+    {
+     "w": "self-sufficient",
+     "zh": ""
+    },
+    {
+     "w": "medal",
+     "zh": "奖章；勋章"
+    },
+    {
+     "w": "outstanding",
+     "zh": "优秀的；杰出的；出色的"
+    },
+    {
+     "w": "institute",
+     "zh": "研究所，学院"
+    },
+    {
+     "w": "request",
+     "zh": "要求，请求"
+    },
+    {
+     "w": "atmosphere",
+     "zh": "大气，大气层"
+    },
+    {
+     "w": "lack",
+     "zh": "缺乏；匮乏；短缺"
+    },
+    {
+     "w": "clue",
+     "zh": "提示词语，解答提示"
+    },
+    {
+     "w": "literature",
+     "zh": "文学；文学作品"
+    },
+    {
+     "w": "failure",
+     "zh": "失败的人"
+    },
+    {
+     "w": "lack of",
+     "zh": "失败"
+    },
+    {
+     "w": "realistic",
+     "zh": "现实主义的"
+    },
+    {
+     "w": "professional",
+     "zh": "专业的；职业的"
+    },
+    {
+     "w": "false",
+     "zh": "错误的；不正确的"
+    },
+    {
+     "w": "permanently",
+     "zh": "永久地；永恒地"
+    },
+    {
+     "w": "setback",
+     "zh": "挫折；阻碍"
+    },
+    {
+     "w": "title",
+     "zh": "名称，标题，题目"
+    },
+    {
+     "w": "cell phone",
+     "zh": "（American English） a mobile phone 移动电话；手机"
+    },
+    {
+     "w": "in addition",
+     "zh": "此外"
+    }
+   ]
+  }
+ ]
+}

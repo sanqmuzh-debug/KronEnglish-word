@@ -1,0 +1,122 @@
+[
+{
+"w": "mound",
+"syl": "mound",
+"zh": "土堆，土丘",
+"lvl": "wy"
+},
+{
+"w": "algae",
+"syl": "al·gae",
+"zh": "藻类",
+"lvl": "wy"
+},
+{
+"w": "pine cone",
+"syl": "pine·cone",
+"zh": "松果，松球",
+"lvl": "wy"
+},
+{
+"w": "tile",
+"syl": "tile",
+"zh": "瓦片",
+"lvl": "wy"
+},
+{
+"w": "mimic",
+"syl": "mim·ic",
+"zh": "模仿",
+"lvl": "wy"
+},
+{
+"w": "waterfront",
+"syl": "wa·ter·front",
+"zh": "滨水地区",
+"lvl": "wy"
+},
+{
+"w": "promenade",
+"syl": "prom·e·nade",
+"zh": "滨海步行道",
+"lvl": "wy"
+},
+{
+"w": "plumbing",
+"syl": "plumb·ing",
+"zh": "管道系统",
+"lvl": "wy"
+},
+{
+"w": "biomimicry",
+"syl": "bi·o·mim·i·cry",
+"zh": "伤生学",
+"lvl": "wy"
+},
+{
+"w": "convert",
+"syl": "con·vert",
+"zh": "使转变",
+"lvl": "wy"
+},
+{
+"w": "seek solutions to",
+"syl": "seek·so·lu·tions·to",
+"zh": "寻求解决方法",
+"lvl": "wy"
+},
+{
+"w": "take inspiration from",
+"syl": "take·ins·pi·ra·tion·from",
+"zh": "从…・中获取灵感",
+"lvl": "wy"
+},
+{
+"w": "echo-location",
+"syl": "ech·o·lo·ca·tion",
+"zh": "回声定位",
+"lvl": "wy"
+},
+{
+"w": "radar",
+"syl": "ra·dar",
+"zh": "雷达",
+"lvl": "wy"
+},
+{
+"w": "dragonfly",
+"syl": "drag·on·fly",
+"zh": "蜻蜓",
+"lvl": "wy"
+},
+{
+"w": "drone",
+"syl": "drone",
+"zh": "无人驾驶飞机",
+"lvl": "wy"
+},
+{
+"w": "spider",
+"syl": "spi·der",
+"zh": "蜘蛛",
+"lvl": "wy"
+},
+{
+"w": "superficially",
+"syl": "su·per·fi·cial·ly",
+"zh": "表面 地",
+"lvl": "wy"
+},
+{
+"w": "deliberately",
+"syl": "de·lib·e·rate·ly",
+"zh": "不慌不忙地",
+"lvl": "wy"
+},
+{
+"w": "depressive",
+"syl": "de·pres·sive",
+"zh": "抑郁",
+"lvl": "wy"
+}
+]

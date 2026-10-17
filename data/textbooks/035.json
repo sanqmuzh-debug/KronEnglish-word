@@ -1,0 +1,1105 @@
+{
+ "pub": "北师大",
+ "stage": "高中",
+ "grade": "必修 第三册",
+ "vol": "",
+ "id": "1e2e7507-0db6-4505-af12-87baac887bc1",
+ "title": "普通高中教科书·英语必修 第三册",
+ "created": "2022-09-29",
+ "units": [
+  {
+   "n": "Unit 7",
+   "t": "Art",
+   "words": [
+    {
+     "w": "opera",
+     "zh": "歌剧；歌剧艺术"
+    },
+    {
+     "w": "band",
+     "zh": "乐队；乐团"
+    },
+    {
+     "w": "performance",
+     "zh": "表演；演出"
+    },
+    {
+     "w": "exhibition",
+     "zh": "展出（会），展览"
+    },
+    {
+     "w": "classical",
+     "zh": "古典的"
+    },
+    {
+     "w": "jazz",
+     "zh": "爵士乐"
+    },
+    {
+     "w": "drama",
+     "zh": "戏剧"
+    },
+    {
+     "w": "comedy",
+     "zh": "喜剧片；喜剧节目"
+    },
+    {
+     "w": "calligraphy",
+     "zh": "书法"
+    },
+    {
+     "w": "performer",
+     "zh": "表演者，演出者"
+    },
+    {
+     "w": "talented",
+     "zh": "极富艺术才华天赋异禀的"
+    },
+    {
+     "w": "component",
+     "zh": "组成部分"
+    },
+    {
+     "w": "costume",
+     "zh": "戏装；化装服"
+    },
+    {
+     "w": "shade",
+     "zh": "阴凉处，遮光物"
+    },
+    {
+     "w": "atmosphere",
+     "zh": "气氛；氛围"
+    },
+    {
+     "w": "monthly",
+     "zh": "每月一次"
+    },
+    {
+     "w": "uplifting",
+     "zh": "带＊号的词为《普通高中英语课程标准（年版年修订）》必修和选择性必修以外词汇。"
+    },
+    {
+     "w": "lesson",
+     "zh": "课，课程"
+    },
+    {
+     "w": "masterpiece",
+     "zh": "杰作 ()"
+    },
+    {
+     "w": "figure",
+     "zh": "人像，人形；数字"
+    },
+    {
+     "w": "starry",
+     "zh": "布满星星的"
+    },
+    {
+     "w": "mentally",
+     "zh": "精神上；心理上"
+    },
+    {
+     "w": "massive",
+     "zh": "巨大的"
+    },
+    {
+     "w": "beneath",
+     "zh": "在⋯（正）下方"
+    },
+    {
+     "w": "affect",
+     "zh": "影响"
+    },
+    {
+     "w": "spot",
+     "zh": "点；斑点；污渍"
+    },
+    {
+     "w": "failure",
+     "zh": "失败的事；失败"
+    },
+    {
+     "w": "scream",
+     "zh": "尖叫，尖叫声"
+    },
+    {
+     "w": "striking",
+     "zh": "惊人的；显著的"
+    },
+    {
+     "w": "let out a scream",
+     "zh": "发出尖叫声"
+    },
+    {
+     "w": "viewer",
+     "zh": "观看者"
+    },
+    {
+     "w": "burning",
+     "zh": "燃烧着"
+    },
+    {
+     "w": "cause",
+     "zh": "导致，引起；便发生n. 原因；事业"
+    },
+    {
+     "w": "empire",
+     "zh": "帝国；大企业"
+    },
+    {
+     "w": "scene",
+     "zh": "景色"
+    },
+    {
+     "w": "mysterious",
+     "zh": "（）"
+    },
+    {
+     "w": "visual",
+     "zh": "视觉的，视力的"
+    },
+    {
+     "w": "reaction",
+     "zh": "反应（）"
+    },
+    {
+     "w": "male",
+     "zh": "男"
+    },
+    {
+     "w": "mask",
+     "zh": "面具"
+    },
+    {
+     "w": "clown",
+     "zh": "小丑"
+    },
+    {
+     "w": "emotion",
+     "zh": "情感"
+    },
+    {
+     "w": "acrobatics",
+     "zh": "杂技"
+    },
+    {
+     "w": "master",
+     "zh": "掌握，精通n. 大师；主人"
+    },
+    {
+     "w": "refer",
+     "zh": "提到；谈到"
+    },
+    {
+     "w": "refer to",
+     "zh": "提到"
+    },
+    {
+     "w": "perform",
+     "zh": "表漢；演出"
+    },
+    {
+     "w": "pattern",
+     "zh": "图案；花样，式样"
+    },
+    {
+     "w": "otherwise",
+     "zh": "否则"
+    },
+    {
+     "w": "carriage",
+     "zh": "马车"
+    },
+    {
+     "w": "complex",
+     "zh": "复杂的"
+    },
+    {
+     "w": "aspect",
+     "zh": "方面"
+    },
+    {
+     "w": "orchestra",
+     "zh": "管弦乐队"
+    },
+    {
+     "w": "genius",
+     "zh": "天才"
+    },
+    {
+     "w": "symphony",
+     "zh": "交响乐， 交响曲"
+    },
+    {
+     "w": "minor",
+     "zh": "小调；小；不很重要"
+    },
+    {
+     "w": "composer",
+     "zh": "作曲家"
+    },
+    {
+     "w": "piano",
+     "zh": "钢琴"
+    },
+    {
+     "w": "struggle",
+     "zh": "奋斗"
+    },
+    {
+     "w": "proceed",
+     "zh": "继续进行"
+    },
+    {
+     "w": "note",
+     "zh": "单音，音调，音符"
+    },
+    {
+     "w": "score",
+     "zh": "乐谱；比分；成绩"
+    },
+    {
+     "w": "respond",
+     "zh": "回应，回复"
+    },
+    {
+     "w": "backstage",
+     "zh": "后台的；(在)幕后(的)"
+    },
+    {
+     "w": "tense",
+     "zh": "紧张昀；焦愿不安"
+    },
+    {
+     "w": "conductor",
+     "zh": "指挥"
+    },
+    {
+     "w": "hesitate",
+     "zh": "犹豫；踌躇"
+    },
+    {
+     "w": "not hesitate to do sth",
+     "zh": "毫不犹豫做某事，尽管做某事"
+    },
+    {
+     "w": "charge",
+     "zh": "主管；负责"
+    },
+    {
+     "w": "take charge of",
+     "zh": "负责"
+    },
+    {
+     "w": "joyous",
+     "zh": "令人高兴的"
+    },
+    {
+     "w": "signal",
+     "zh": "标志着；预示n. 标识"
+    },
+    {
+     "w": "broad",
+     "zh": "宽阔的；广博"
+    },
+    {
+     "w": "broad smile",
+     "zh": "满面笑容"
+    },
+    {
+     "w": "compose",
+     "zh": "作（曲）；构成；写作"
+    },
+    {
+     "w": "advertisement",
+     "zh": "广告"
+    },
+    {
+     "w": "youth",
+     "zh": "少年"
+    },
+    {
+     "w": "contest",
+     "zh": "比赛，竞赛"
+    },
+    {
+     "w": "martial",
+     "zh": "军事的；战争时"
+    },
+    {
+     "w": "martial arts",
+     "zh": "武术"
+    },
+    {
+     "w": "madam",
+     "zh": "女士；夫人"
+    },
+    {
+     "w": "documentary",
+     "zh": "纪录片"
+    },
+    {
+     "w": "currently",
+     "zh": "当前；现时"
+    },
+    {
+     "w": "acceptable",
+     "zh": "可接受"
+    },
+    {
+     "w": "individual",
+     "zh": "个人，个体"
+    },
+    {
+     "w": "appreciate",
+     "zh": "感激；欣賞"
+    },
+    {
+     "w": "faithfully",
+     "zh": "忠实地"
+    },
+    {
+     "w": "expressive",
+     "zh": "富有表现力的"
+    },
+    {
+     "w": "artistic",
+     "zh": "美术的；艺术"
+    },
+    {
+     "w": "extensively",
+     "zh": "广泛地；大规模地；全面地"
+    },
+    {
+     "w": "symbolism",
+     "zh": "象征主义"
+    },
+    {
+     "w": "sculptor",
+     "zh": "雕刻家"
+    },
+    {
+     "w": "admiration",
+     "zh": "敬佩；羨慕"
+    }
+   ]
+  },
+  {
+   "n": "Unit 8",
+   "t": "Green Living",
+   "words": [
+    {
+     "w": "tap",
+     "zh": "龙头；阀门"
+    },
+    {
+     "w": "tissue",
+     "zh": "纸巾"
+    },
+    {
+     "w": "ocean",
+     "zh": "海洋，大海"
+    },
+    {
+     "w": "smog",
+     "zh": "雾霾"
+    },
+    {
+     "w": "desert",
+     "zh": "炒漠"
+    },
+    {
+     "w": "global",
+     "zh": "全球性的"
+    },
+    {
+     "w": "industrial",
+     "zh": "工业的"
+    },
+    {
+     "w": "extinction",
+     "zh": "灭绝"
+    },
+    {
+     "w": "solution",
+     "zh": "解决办法"
+    },
+    {
+     "w": "electricity",
+     "zh": "电"
+    },
+    {
+     "w": "transport",
+     "zh": "运送"
+    },
+    {
+     "w": "recycle",
+     "zh": "回收利用"
+    },
+    {
+     "w": "battery",
+     "zh": "电池"
+    },
+    {
+     "w": "carbon",
+     "zh": "碳"
+    },
+    {
+     "w": "balance",
+     "zh": "平衡"
+    },
+    {
+     "w": "do my part for sth",
+     "zh": "尽自己所能做某事"
+    },
+    {
+     "w": "best-selling",
+     "zh": "畅销的"
+    },
+    {
+     "w": "permission",
+     "zh": "允许；许可"
+    },
+    {
+     "w": "threatening",
+     "zh": "(行为)带有威胁的"
+    },
+    {
+     "w": "messy",
+     "zh": "乱七八糟的"
+    },
+    {
+     "w": "punishable",
+     "zh": "法网难逃应受严惩的"
+    },
+    {
+     "w": "fat",
+     "zh": "一套公寓房，一套住房"
+    },
+    {
+     "w": "root",
+     "zh": "树根"
+    },
+    {
+     "w": "shoot",
+     "zh": "芽，苗；嫩枝"
+    },
+    {
+     "w": "bother",
+     "zh": "费心，麻烦"
+    },
+    {
+     "w": "can't be bothered to do sth",
+     "zh": "懒得做某事"
+    },
+    {
+     "w": "just-me-ism",
+     "zh": "以自我为中心，自我中心主义"
+    },
+    {
+     "w": "gallon",
+     "zh": "加仑"
+    },
+    {
+     "w": "take action",
+     "zh": "采取行动"
+    },
+    {
+     "w": "institute",
+     "zh": "机构；研究院"
+    },
+    {
+     "w": "chimpanzee",
+     "zh": "黑猩猩"
+    },
+    {
+     "w": "firm",
+     "zh": "实的；稳固的"
+    },
+    {
+     "w": "foundation",
+     "zh": "基础；地基"
+    },
+    {
+     "w": "brick",
+     "zh": "砖，砖块"
+    },
+    {
+     "w": "all around the world",
+     "zh": "全世界"
+    },
+    {
+     "w": "wag",
+     "zh": "摇"
+    },
+    {
+     "w": "involve",
+     "zh": "参与；包含"
+    },
+    {
+     "w": "poster",
+     "zh": "海报"
+    },
+    {
+     "w": "founder",
+     "zh": "创办人，创始者"
+    },
+    {
+     "w": "profit",
+     "zh": "盈利，利润"
+    },
+    {
+     "w": "pm",
+     "zh": "下午"
+    },
+    {
+     "w": "organiser",
+     "zh": "组织者"
+    },
+    {
+     "w": "union",
+     "zh": "联合会"
+    },
+    {
+     "w": "contented",
+     "zh": "心满意足的"
+    },
+    {
+     "w": "occur",
+     "zh": "发生"
+    },
+    {
+     "w": "make sb's dream come true",
+     "zh": "（使）某人梦想成真"
+    },
+    {
+     "w": "agriculture",
+     "zh": "农业"
+    },
+    {
+     "w": "proposal",
+     "zh": "建议，提议"
+    },
+    {
+     "w": "region",
+     "zh": "地区，区域"
+    },
+    {
+     "w": "slim",
+     "zh": "苗条的"
+    },
+    {
+     "w": "survival",
+     "zh": "继续生存，幸存"
+    },
+    {
+     "w": "rate",
+     "zh": "比率，率"
+    },
+    {
+     "w": "quote",
+     "zh": "马文，引用"
+    },
+    {
+     "w": "headstone",
+     "zh": "基碑"
+    },
+    {
+     "w": "overcome",
+     "zh": "克服（困难）；控制（感情）"
+    },
+    {
+     "w": "determination",
+     "zh": "决心；毅力"
+    },
+    {
+     "w": "work through",
+     "zh": "调整"
+    },
+    {
+     "w": "former",
+     "zh": "以前的，从前"
+    },
+    {
+     "w": "current",
+     "zh": "（水或气）流"
+    },
+    {
+     "w": "county",
+     "zh": "县"
+    },
+    {
+     "w": "ordinary",
+     "zh": "普通的"
+    },
+    {
+     "w": "parking",
+     "zh": "停放"
+    },
+    {
+     "w": "therefore",
+     "zh": "因此；由此"
+    },
+    {
+     "w": "path",
+     "zh": "小径，小道"
+    },
+    {
+     "w": "come up with",
+     "zh": "想出，想到"
+    },
+    {
+     "w": "disappear",
+     "zh": "消失，不见"
+    },
+    {
+     "w": "tracking",
+     "zh": "跟踪"
+    },
+    {
+     "w": "destination",
+     "zh": "目地；终点"
+    },
+    {
+     "w": "pedal",
+     "zh": "骑 n.踏板"
+    },
+    {
+     "w": "resident",
+     "zh": "居民"
+    },
+    {
+     "w": "official",
+     "zh": "官员，高级职员"
+    },
+    {
+     "w": "attitude",
+     "zh": "看法；态度"
+    },
+    {
+     "w": "diagram",
+     "zh": "图解，不示意图"
+    },
+    {
+     "w": "percentage",
+     "zh": "百分比，百分率"
+    },
+    {
+     "w": "take part",
+     "zh": "参加"
+    },
+    {
+     "w": "cut back on",
+     "zh": "削减，缩减"
+    },
+    {
+     "w": "disposable",
+     "zh": "一次性用后即弃的"
+    },
+    {
+     "w": "packaging",
+     "zh": "包装盒（瓶、袋），包装材料"
+    },
+    {
+     "w": "plastic",
+     "zh": "塑料制"
+    },
+    {
+     "w": "honey",
+     "zh": "蜂蜜"
+    },
+    {
+     "w": "butter",
+     "zh": "黄油，牛油"
+    },
+    {
+     "w": "yoghurt",
+     "zh": "酸奶"
+    },
+    {
+     "w": "container",
+     "zh": "容器"
+    },
+    {
+     "w": "majority",
+     "zh": "大多数"
+    },
+    {
+     "w": "air conditioning",
+     "zh": "空调系统"
+    },
+    {
+     "w": "sum",
+     "zh": "概括，总结"
+    },
+    {
+     "w": "to sum up",
+     "zh": "总之"
+    },
+    {
+     "w": "indicate",
+     "zh": "表明；显示"
+    },
+    {
+     "w": "landfill",
+     "zh": "废弃物填埋场"
+    },
+    {
+     "w": "clean-burning",
+     "zh": "清洁焚烧的"
+    },
+    {
+     "w": "waste-to-energy",
+     "zh": "以垃圾作为能源"
+    },
+    {
+     "w": "footwear",
+     "zh": "鞋类"
+    }
+   ]
+  },
+  {
+   "n": "Unit 9",
+   "t": "Learning",
+   "words": [
+    {
+     "w": "approach",
+     "zh": "方法"
+    },
+    {
+     "w": "geometry",
+     "zh": "几何"
+    },
+    {
+     "w": "partner",
+     "zh": "搭档，同伴"
+    },
+    {
+     "w": "brush up",
+     "zh": "温习，复习"
+    },
+    {
+     "w": "reflect",
+     "zh": "仔细思考；表达（意见）；反映"
+    },
+    {
+     "w": "reflect on",
+     "zh": "思考"
+    },
+    {
+     "w": "argue",
+     "zh": "争论，争吵"
+    },
+    {
+     "w": "argue with",
+     "zh": "争吵"
+    },
+    {
+     "w": "assume",
+     "zh": "假定"
+    },
+    {
+     "w": "automatic",
+     "zh": "自动的，机械的"
+    },
+    {
+     "w": "inner",
+     "zh": "内部的"
+    },
+    {
+     "w": "outer",
+     "zh": "外部的，外面"
+    },
+    {
+     "w": "flexible",
+     "zh": "灵活的"
+    },
+    {
+     "w": "end up doing",
+     "zh": "最后；最终"
+    },
+    {
+     "w": "promote",
+     "zh": "促进，增进"
+    },
+    {
+     "w": "annually",
+     "zh": "每年；一年一度地"
+    },
+    {
+     "w": "near-surface",
+     "zh": "近地表"
+    },
+    {
+     "w": "build-up",
+     "zh": "增长；加强"
+    },
+    {
+     "w": "pollutant",
+     "zh": "污染物"
+    },
+    {
+     "w": "flooding",
+     "zh": "水灾，洪水泛滥"
+    },
+    {
+     "w": "overflow",
+     "zh": "满得外溢"
+    },
+    {
+     "w": "work out",
+     "zh": "弄懂某事物；计算出"
+    },
+    {
+     "w": "in short",
+     "zh": "总而言之；简单地说"
+    },
+    {
+     "w": "attempt to",
+     "zh": "尝试"
+    },
+    {
+     "w": "unlikely",
+     "zh": "不大可能的"
+    },
+    {
+     "w": "be based on",
+     "zh": "以⋯・・⋯・为根据"
+    },
+    {
+     "w": "dinosaur",
+     "zh": "恐龙"
+    },
+    {
+     "w": "exist",
+     "zh": "存在；实际上有"
+    },
+    {
+     "w": "data",
+     "zh": "资料；数据"
+    },
+    {
+     "w": "ignore",
+     "zh": "忽视；置之不理"
+    },
+    {
+     "w": "impression",
+     "zh": "印象；感想"
+    },
+    {
+     "w": "simplified",
+     "zh": "简化了的"
+    },
+    {
+     "w": "classic",
+     "zh": "经典"
+    },
+    {
+     "w": "unfamiliar",
+     "zh": "不熟悉的"
+    },
+    {
+     "w": "memorise",
+     "zh": "记住；熟记"
+    },
+    {
+     "w": "strategy",
+     "zh": "策略；战略；规划"
+    },
+    {
+     "w": "effectively",
+     "zh": "有效地"
+    },
+    {
+     "w": "beyond",
+     "zh": "超出⋯•⋯••范围"
+    },
+    {
+     "w": "recommend",
+     "zh": "推荐；建议"
+    },
+    {
+     "w": "novel",
+     "zh": "小说"
+    },
+    {
+     "w": "sufficient",
+     "zh": "充足的"
+    },
+    {
+     "w": "input",
+     "zh": "输入；投入"
+    },
+    {
+     "w": "normally",
+     "zh": "通常，平常"
+    },
+    {
+     "w": "context",
+     "zh": "上下文；语境；背景"
+    },
+    {
+     "w": "chunk",
+     "zh": "语块"
+    },
+    {
+     "w": "acquire",
+     "zh": "学习，获得（知识，技能）"
+    },
+    {
+     "w": "be honoured to do sth",
+     "zh": "很荣幸做某事"
+    },
+    {
+     "w": "odd",
+     "zh": "奇特的"
+    },
+    {
+     "w": "soccer",
+     "zh": "足球"
+    },
+    {
+     "w": "subway",
+     "zh": "地铁"
+    },
+    {
+     "w": "in one way or another",
+     "zh": "不管怎样"
+    },
+    {
+     "w": "worldwide",
+     "zh": "遍及全世界的"
+    },
+    {
+     "w": "arrangement",
+     "zh": "整理"
+    },
+    {
+     "w": "childhood",
+     "zh": "童年，儿童时代"
+    },
+    {
+     "w": "emotional",
+     "zh": "情感（上）的"
+    },
+    {
+     "w": "excitement",
+     "zh": "兴奋，激动"
+    },
+    {
+     "w": "as result",
+     "zh": "作为结果"
+    },
+    {
+     "w": "photographic",
+     "zh": "详细准确的；照片的；摄影的"
+    },
+    {
+     "w": "digit",
+     "zh": "数字"
+    },
+    {
+     "w": "pi",
+     "zh": "圆周率"
+    },
+    {
+     "w": "helicopter",
+     "zh": "直升机"
+    },
+    {
+     "w": "publish",
+     "zh": "出版"
+    },
+    {
+     "w": "curve",
+     "zh": "曲线，弧线"
+    },
+    {
+     "w": "sharp",
+     "zh": "急剧的，猛烈；尖的，锋利"
+    },
+    {
+     "w": "timely",
+     "zh": "适时的，及时的"
+    },
+    {
+     "w": "cell",
+     "zh": "细胞"
+    },
+    {
+     "w": "periodically",
+     "zh": "定期地"
+    },
+    {
+     "w": "take it easy",
+     "zh": "放轻松"
+    },
+    {
+     "w": "memorization",
+     "zh": "记忆"
+    },
+    {
+     "w": "technique",
+     "zh": "技巧，手法"
+    },
+    {
+     "w": "reflection",
+     "zh": "沉思；想法；反射"
+    },
+    {
+     "w": "reflective",
+     "zh": "（表面）反光的"
+    },
+    {
+     "w": "journal",
+     "zh": "日记，日志"
+    },
+    {
+     "w": "moreover",
+     "zh": "此外，而且"
+    },
+    {
+     "w": "surfing",
+     "zh": "神浪"
+    },
+    {
+     "w": "seafood",
+     "zh": "海鲜"
+    },
+    {
+     "w": "gap",
+     "zh": "间隙， 缺口"
+    },
+    {
+     "w": "gender",
+     "zh": "性别"
+    },
+    {
+     "w": "identical",
+     "zh": "完全相同的"
+    },
+    {
+     "w": "comic",
+     "zh": "滑稽的，好笑"
+    },
+    {
+     "w": "fiction",
+     "zh": "小说"
+    },
+    {
+     "w": "evidence",
+     "zh": "证据，证明"
+    },
+    {
+     "w": "expose",
+     "zh": "使接触；使体验"
+    },
+    {
+     "w": "outcome",
+     "zh": "结果，后果"
+    }
+   ]
+  }
+ ]
+}

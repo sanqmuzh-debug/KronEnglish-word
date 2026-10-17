@@ -1,0 +1,959 @@
+{
+ "pub": "沪教",
+ "stage": "高中",
+ "grade": "必修 第三册",
+ "vol": "",
+ "id": "e5a7d2a5-12fa-425a-87e0-2678ea9bbe33",
+ "title": "普通高中教科书·英语必修 第三册",
+ "created": "2022-09-29",
+ "units": [
+  {
+   "n": "Unit 1",
+   "t": "",
+   "words": [
+    {
+     "w": "nationality",
+     "zh": "国籍"
+    },
+    {
+     "w": "journal",
+     "zh": "日志；日记"
+    },
+    {
+     "w": "authority",
+     "zh": "力"
+    },
+    {
+     "w": "journalist",
+     "zh": "新闻记者；新闻工作者"
+    },
+    {
+     "w": "annual",
+     "zh": "每年的；一年一次的"
+    },
+    {
+     "w": "spot",
+     "zh": "看见；看出；发现"
+    },
+    {
+     "w": "entirely",
+     "zh": "全部地；完整地；完全地"
+    },
+    {
+     "w": "error",
+     "zh": "错误；差误"
+    },
+    {
+     "w": "emotion",
+     "zh": "强烈感情；情绪"
+    },
+    {
+     "w": "female",
+     "zh": "女的；女性的"
+    },
+    {
+     "w": "illustrate",
+     "zh": "用示例、图画等）说明，解释"
+    },
+    {
+     "w": "ensure",
+     "zh": "保证；担保；确保"
+    },
+    {
+     "w": "affect",
+     "zh": "影响"
+    },
+    {
+     "w": "permission",
+     "zh": "准许；许可；批准"
+    },
+    {
+     "w": "subway",
+     "zh": "地铁；地铁交通"
+    },
+    {
+     "w": "average",
+     "zh": "普通的；平常的；一般"
+    },
+    {
+     "w": "confirm",
+     "zh": "证实"
+    },
+    {
+     "w": "click",
+     "zh": "点击"
+    },
+    {
+     "w": "flexible",
+     "zh": "能适应新情况的；灵活的"
+    },
+    {
+     "w": "perceive",
+     "zh": "注意到；意识到；察觉到"
+    },
+    {
+     "w": "soccer",
+     "zh": "足球运动"
+    },
+    {
+     "w": "horrible",
+     "zh": "极坏的；一分讨厌的；可恶"
+    },
+    {
+     "w": "joyfully",
+     "zh": "高兴地；快乐地"
+    },
+    {
+     "w": "calm",
+     "zh": "宁静的"
+    },
+    {
+     "w": "breathe",
+     "zh": "呼吸"
+    },
+    {
+     "w": "merrily",
+     "zh": "高兴地；愉快地"
+    },
+    {
+     "w": "release",
+     "zh": "公开；发行"
+    },
+    {
+     "w": "innovation",
+     "zh": "新事物、思想或方法）创造；创新；改革"
+    },
+    {
+     "w": "outline",
+     "zh": "概述；略述"
+    },
+    {
+     "w": "collection",
+     "zh": "收集物，收藏品"
+    },
+    {
+     "w": "committee",
+     "zh": "委员会"
+    },
+    {
+     "w": "announce",
+     "zh": "宣布"
+    },
+    {
+     "w": "entry",
+     "zh": "参赛作品"
+    },
+    {
+     "w": "publish",
+     "zh": "出版；发行"
+    },
+    {
+     "w": "plot",
+     "zh": "故事情节；布局"
+    },
+    {
+     "w": "super",
+     "zh": "非常；极"
+    },
+    {
+     "w": "soundtrack",
+     "zh": "声带"
+    },
+    {
+     "w": "character",
+     "zh": "个性"
+    },
+    {
+     "w": "civilization",
+     "zh": "文明"
+    },
+    {
+     "w": "novel",
+     "zh": "小说"
+    },
+    {
+     "w": "astronaut",
+     "zh": "宇航员；航天员"
+    },
+    {
+     "w": "system",
+     "zh": "系统"
+    },
+    {
+     "w": "crash",
+     "zh": "猛撞；碰撞"
+    },
+    {
+     "w": "disaster",
+     "zh": "灾难"
+    },
+    {
+     "w": "pack",
+     "zh": "塞进"
+    },
+    {
+     "w": "entertaining",
+     "zh": "有趣的；娱乐的；使人愉快的"
+    },
+    {
+     "w": "throughout",
+     "zh": "自始至终；贯穿整个时期"
+    },
+    {
+     "w": "photographer",
+     "zh": "拍照者；摄影师"
+    },
+    {
+     "w": "rare",
+     "zh": "稀少的；稀罕的"
+    },
+    {
+     "w": "region",
+     "zh": "地区；区域；地方"
+    },
+    {
+     "w": "custom",
+     "zh": "风俖；习俗"
+    },
+    {
+     "w": "overall",
+     "zh": "全部；总计"
+    },
+    {
+     "w": "ordinary",
+     "zh": "普通的；平常的；平凡的"
+    },
+    {
+     "w": "province",
+     "zh": "省份；（某些国家的）一级行政区"
+    },
+    {
+     "w": "flour",
+     "zh": "面粉"
+    },
+    {
+     "w": "participate in",
+     "zh": "参加；参与"
+    },
+    {
+     "w": "ought to",
+     "zh": "[ɔːt tuː] 应该；应当"
+    },
+    {
+     "w": "appeal to",
+     "zh": "有吸引力；有感染力；引起兴趣"
+    },
+    {
+     "w": "stewed beef",
+     "zh": "炖牛肉"
+    },
+    {
+     "w": "soy sauce",
+     "zh": "酱沺"
+    },
+    {
+     "w": "steamed bun",
+     "zh": "馒头"
+    },
+    {
+     "w": "staple food",
+     "zh": "基本食物；主食"
+    },
+    {
+     "w": "focus on",
+     "zh": "集中 于"
+    }
+   ]
+  },
+  {
+   "n": "Unit 2",
+   "t": "",
+   "words": [
+    {
+     "w": "flood",
+     "zh": "充斥，充满"
+    },
+    {
+     "w": "cotton",
+     "zh": "棉花，棉布"
+    },
+    {
+     "w": "guy",
+     "zh": "男人；小伙子；家伙"
+    },
+    {
+     "w": "insect",
+     "zh": "昆虫"
+    },
+    {
+     "w": "sweat",
+     "zh": "出汗；流汗n. drops of liquid that appear on the surface of your skin when you are hot, ill / sick or afraid 汗"
+    },
+    {
+     "w": "port",
+     "zh": "港口；避风港"
+    },
+    {
+     "w": "discount",
+     "zh": "折扣"
+    },
+    {
+     "w": "iron",
+     "zh": "熨，烫平"
+    },
+    {
+     "w": "export",
+     "zh": "出口；输出/ik'sport/ v. to sell goods or services to another country 出口；输出"
+    },
+    {
+     "w": "hesitate",
+     "zh": "犹豫，迟疑不决"
+    },
+    {
+     "w": "cash",
+     "zh": "现金"
+    },
+    {
+     "w": "profit",
+     "zh": "获益；得到好处n. the money that you make in business or by selling things, especially after paying the costs involved 利润；收益；赢利"
+    },
+    {
+     "w": "living",
+     "zh": "生计；谋生；收入"
+    },
+    {
+     "w": "wine",
+     "zh": "葡萄酒"
+    },
+    {
+     "w": "jeans",
+     "zh": "牛仔裤；粗斜纹棉布裤"
+    },
+    {
+     "w": "economic",
+     "zh": "经济的"
+    },
+    {
+     "w": "involve",
+     "zh": "包含；需要；使成为必然部分（或结果）"
+    },
+    {
+     "w": "income",
+     "zh": "收入"
+    },
+    {
+     "w": "treatment",
+     "zh": "处理；讨论"
+    },
+    {
+     "w": "quantity",
+     "zh": "数量"
+    },
+    {
+     "w": "kit",
+     "zh": "全套衣服及装备"
+    },
+    {
+     "w": "gym",
+     "zh": "健身房；体育馆"
+    },
+    {
+     "w": "breath",
+     "zh": "呼吸的空气"
+    },
+    {
+     "w": "habitat",
+     "zh": "生活环境；栖息地"
+    },
+    {
+     "w": "import",
+     "zh": "进口；输入；引进"
+    },
+    {
+     "w": "replace",
+     "zh": "代替， 取代"
+    },
+    {
+     "w": "certify",
+     "zh": "证明；证实"
+    },
+    {
+     "w": "protest",
+     "zh": "抗议， 反对"
+    },
+    {
+     "w": "awkward",
+     "zh": "令人尴尬的；使人难堪"
+    },
+    {
+     "w": "majority",
+     "zh": "大部分；大多数"
+    },
+    {
+     "w": "smog",
+     "zh": "烟雾"
+    },
+    {
+     "w": "slide",
+     "zh": "滑"
+    },
+    {
+     "w": "harvest",
+     "zh": "收割"
+    },
+    {
+     "w": "honey",
+     "zh": "蜂蜜"
+    },
+    {
+     "w": "bitter",
+     "zh": "味苦的（of arguments, disagreements, etc.） very serious and unpleasant, with a lot of anger and hatred involved（争论、分歧等）激烈而不愉快的；充满愤怒与仇恨的"
+    },
+    {
+     "w": "flavour",
+     "zh": "味道"
+    },
+    {
+     "w": "roast",
+     "zh": "烘烤，焙，炒（坚果、豆子等）"
+    },
+    {
+     "w": "liquid",
+     "zh": "液体"
+    },
+    {
+     "w": "bar",
+     "zh": "条，块"
+    },
+    {
+     "w": "calculate",
+     "zh": "计算；核算"
+    },
+    {
+     "w": "operation",
+     "zh": "手术"
+    },
+    {
+     "w": "advanced",
+     "zh": "先进的（of a course of study） at a high or difficult level（课程）高级的；高等的"
+    },
+    {
+     "w": "version",
+     "zh": "译本"
+    },
+    {
+     "w": "dozen",
+     "zh": "打；十二个"
+    },
+    {
+     "w": "accurate",
+     "zh": "正确无误的"
+    },
+    {
+     "w": "rescue",
+     "zh": "援救"
+    },
+    {
+     "w": "application",
+     "zh": "尤指理论、发现等的）应用，运用"
+    },
+    {
+     "w": "equipment",
+     "zh": "设备；器材"
+    },
+    {
+     "w": "overseas",
+     "zh": "在海外"
+    },
+    {
+     "w": "remarkable",
+     "zh": "非凡的；奇异的；显著的"
+    },
+    {
+     "w": "mission",
+     "zh": "太空飞行任务"
+    },
+    {
+     "w": "a sweet",
+     "zh": "口香糖"
+    },
+    {
+     "w": "chewing gum",
+     "zh": ""
+    }
+   ]
+  },
+  {
+   "n": "Unit 3",
+   "t": "",
+   "words": [
+    {
+     "w": "make-up",
+     "zh": "[ˈmeɪkʌp] n.化妆品；性格；构成方式"
+    },
+    {
+     "w": "ideal",
+     "zh": "完美的；理想的；最合适的"
+    },
+    {
+     "w": "broad",
+     "zh": "宽阔的；广阔的"
+    },
+    {
+     "w": "short-sighted",
+     "zh": "近视"
+    },
+    {
+     "w": "shallow",
+     "zh": "浅的"
+    },
+    {
+     "w": "normal",
+     "zh": "典型的；正常的；一般的"
+    },
+    {
+     "w": "representation",
+     "zh": "代表"
+    },
+    {
+     "w": "shave",
+     "zh": "剃 ； 刮脸"
+    },
+    {
+     "w": "generation",
+     "zh": "一代人；一辈人"
+    },
+    {
+     "w": "metal",
+     "zh": "金属 / 铁器"
+    },
+    {
+     "w": "stretch",
+     "zh": "延伸， 拉长"
+    },
+    {
+     "w": "this way",
+     "zh": "拉长；拽宽；撑大；押松"
+    },
+    {
+     "w": "elegant",
+     "zh": "优美的；文雅的"
+    },
+    {
+     "w": "odd",
+     "zh": "奇怪的；怪异的；反常"
+    },
+    {
+     "w": "enable",
+     "zh": "使能够；使有机会"
+    },
+    {
+     "w": "display",
+     "zh": "显示，显露，表现"
+    },
+    {
+     "w": "vary",
+     "zh": "柜异，不同，有别"
+    },
+    {
+     "w": "surround",
+     "zh": "围绕；环绕"
+    },
+    {
+     "w": "sex",
+     "zh": "性别"
+    },
+    {
+     "w": "context",
+     "zh": "上下文"
+    },
+    {
+     "w": "gender",
+     "zh": "性别"
+    },
+    {
+     "w": "cultural differences",
+     "zh": "性别"
+    },
+    {
+     "w": "trend",
+     "zh": "趋势；倾向；动向"
+    },
+    {
+     "w": "occupation",
+     "zh": "工作；职业"
+    },
+    {
+     "w": "campus",
+     "zh": "校园，校区"
+    },
+    {
+     "w": "personality",
+     "zh": "性格"
+    },
+    {
+     "w": "external",
+     "zh": "外部的；外面的"
+    },
+    {
+     "w": "relief",
+     "zh": "不快过后的）宽慰；轻松；解脱"
+    },
+    {
+     "w": "duty",
+     "zh": "责任；义务；本分"
+    },
+    {
+     "w": "effort",
+     "zh": "努力"
+    },
+    {
+     "w": "ignore",
+     "zh": "忽视；对⋯不予理会"
+    },
+    {
+     "w": "hide-and-seek",
+     "zh": "捉迷藏"
+    },
+    {
+     "w": "branch",
+     "zh": "支路"
+    },
+    {
+     "w": "mass",
+     "zh": "大量；；许多"
+    },
+    {
+     "w": "individual",
+     "zh": "单独的；个别的"
+    },
+    {
+     "w": "pattern",
+     "zh": "图案；花样；式样"
+    },
+    {
+     "w": "observe",
+     "zh": "看到；注意到；观察到"
+    },
+    {
+     "w": "constantly",
+     "zh": "始终；一直；重复不断地"
+    },
+    {
+     "w": "dive",
+     "zh": "潜水"
+    },
+    {
+     "w": "sort",
+     "zh": "种类；类别"
+    },
+    {
+     "w": "impression",
+     "zh": "印象"
+    },
+    {
+     "w": "somebody",
+     "zh": "印象；感想"
+    },
+    {
+     "w": "react",
+     "zh": "起反应；（对……）作出反应；回应"
+    },
+    {
+     "w": "column",
+     "zh": "柱"
+    },
+    {
+     "w": "sample",
+     "zh": "样本"
+    },
+    {
+     "w": "emphasis",
+     "zh": "强调"
+    },
+    {
+     "w": "suit",
+     "zh": "西装；西服；套装"
+    },
+    {
+     "w": "exist",
+     "zh": "存在；实际上有"
+    },
+    {
+     "w": "symbol",
+     "zh": "象征"
+    },
+    {
+     "w": "various",
+     "zh": "各种不同的；各种各样"
+    },
+    {
+     "w": "wedding",
+     "zh": "婚礼；结婚庆典"
+    },
+    {
+     "w": "carve",
+     "zh": "雕刻"
+    },
+    {
+     "w": "delicate",
+     "zh": "精致的；精细的；精密的"
+    },
+    {
+     "w": "practical",
+     "zh": "实际的；真实的；客观存在"
+    },
+    {
+     "w": "plastic surgery",
+     "zh": "整形手术；整形外科"
+    }
+   ]
+  },
+  {
+   "n": "Unit 4",
+   "t": "",
+   "words": [
+    {
+     "w": "guideline",
+     "zh": "准则"
+    },
+    {
+     "w": "track",
+     "zh": "轨道"
+    },
+    {
+     "w": "qualification",
+     "zh": "通过经验或具备技能而取得的）资格，资历"
+    },
+    {
+     "w": "enthusiasm",
+     "zh": "热情"
+    },
+    {
+     "w": "employ",
+     "zh": "雇用"
+    },
+    {
+     "w": "charitable",
+     "zh": "慈善团体的；慈善事业的"
+    },
+    {
+     "w": "foundation",
+     "zh": "基金会"
+    },
+    {
+     "w": "conservation",
+     "zh": "保护"
+    },
+    {
+     "w": "escape",
+     "zh": "逃脱；摆脱"
+    },
+    {
+     "w": "nearby",
+     "zh": "附近的"
+    },
+    {
+     "w": "highlight",
+     "zh": "最好的部分"
+    },
+    {
+     "w": "concept",
+     "zh": "概念；观念"
+    },
+    {
+     "w": "recreation",
+     "zh": "娱乐；消遣"
+    },
+    {
+     "w": "scholarship",
+     "zh": "奖学金"
+    },
+    {
+     "w": "mosquito",
+     "zh": "蚊子"
+    },
+    {
+     "w": "construct",
+     "zh": "建造；修建"
+    },
+    {
+     "w": "specific",
+     "zh": "明确的；具体时"
+    },
+    {
+     "w": "dinosaur",
+     "zh": "恐龙"
+    },
+    {
+     "w": "deer",
+     "zh": "鹿"
+    },
+    {
+     "w": "harm",
+     "zh": "伤害；损害"
+    },
+    {
+     "w": "declare",
+     "zh": "宣布；宣告"
+    },
+    {
+     "w": "tough",
+     "zh": "艰难的；棘手的"
+    },
+    {
+     "w": "compete",
+     "zh": "竞争；对抗"
+    },
+    {
+     "w": "seek",
+     "zh": "寻找"
+    },
+    {
+     "w": "romantic",
+     "zh": "爱情的"
+    },
+    {
+     "w": "dolphin",
+     "zh": "海豚"
+    },
+    {
+     "w": "whale",
+     "zh": "鲸"
+    },
+    {
+     "w": "anxious",
+     "zh": "焦虑；忧虑；担心"
+    },
+    {
+     "w": "scared",
+     "zh": "害怕；恐惧；担心"
+    },
+    {
+     "w": "revise",
+     "zh": "修改；修订"
+    },
+    {
+     "w": "extra",
+     "zh": "额外的；外加"
+    },
+    {
+     "w": "engage",
+     "zh": "与…建立密切关系；尽力理解"
+    },
+    {
+     "w": "jogging",
+     "zh": "慢跑"
+    },
+    {
+     "w": "persuade",
+     "zh": "劝说；说服"
+    },
+    {
+     "w": "opera",
+     "zh": "歌剧"
+    },
+    {
+     "w": "studio",
+     "zh": "电影摄影棚"
+    },
+    {
+     "w": "postpone",
+     "zh": "延迟；延期"
+    },
+    {
+     "w": "tale",
+     "zh": "讲述；叙述"
+    },
+    {
+     "w": "sufficient",
+     "zh": "足够的；充足的"
+    },
+    {
+     "w": "kangaroo",
+     "zh": "袋鼠"
+    },
+    {
+     "w": "engine",
+     "zh": "发动机；引擎"
+    },
+    {
+     "w": "calmly",
+     "zh": "平静地；冷静地"
+    },
+    {
+     "w": "further",
+     "zh": "较远；更远"
+    },
+    {
+     "w": "plate",
+     "zh": "盘子；碟子"
+    },
+    {
+     "w": "flash",
+     "zh": "闪光；闪耀"
+    },
+    {
+     "w": "chapter",
+     "zh": "时期，篇章"
+    },
+    {
+     "w": "highway",
+     "zh": "公路， 大路"
+    },
+    {
+     "w": "agricultural",
+     "zh": "农业的"
+    },
+    {
+     "w": "drought",
+     "zh": "久旱；旱灾"
+    },
+    {
+     "w": "movement",
+     "zh": "移动；迁移"
+    },
+    {
+     "w": "diagram",
+     "zh": "简图；图解"
+    },
+    {
+     "w": "gap year",
+     "zh": ""
+    },
+    {
+     "w": "life expectancy",
+     "zh": "预期寿命"
+    },
+    {
+     "w": "soak up",
+     "zh": ""
+    },
+    {
+     "w": "take in",
+     "zh": "吸收或吸掉"
+    },
+    {
+     "w": "secondary school",
+     "zh": "中等学校；中学"
+    },
+    {
+     "w": "to be frank",
+     "zh": "[tuː biː fræŋk] 坦白说；坦率地说"
+    },
+    {
+     "w": "neon light",
+     "zh": ""
+    },
+    {
+     "w": "dust storm",
+     "zh": ""
+    },
+    {
+     "w": "brand new",
+     "zh": ""
+    }
+   ]
+  }
+ ]
+}

@@ -46,11 +46,12 @@ button:focus-visible{outline:3px solid var(--sky);outline-offset:3px}
 .brand{display:flex;align-items:center;gap:8px;font:700 21px var(--font-display);letter-spacing:-.01em;white-space:nowrap}
 .brand .kron{width:36px;height:36px}
 .top-mid{flex:1;min-width:0;display:flex;flex-direction:column;gap:6px}
-.top-mid b{font:700 15px/1.1 var(--font-display);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tm-row{display:flex;align-items:baseline;gap:10px}
+.top-mid b{flex:1;min-width:0;font:700 15px/1.1 var(--font-display);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .progress{height:14px;border-radius:99px;background:var(--surface-2);overflow:hidden}
 .progress i{display:block;height:100%;width:0;border-radius:99px;background:var(--ok);position:relative;transition:width .7s cubic-bezier(.34,1.5,.64,1)}
 .progress i::after{content:"";position:absolute;left:8px;right:8px;top:3px;height:4px;border-radius:9px;background:rgba(255,255,255,.4)}
-.count{font:600 15px var(--font-display);font-variant-numeric:tabular-nums;color:var(--muted);min-width:42px;text-align:right}
+.count{font:600 14px/1.1 var(--font-display);font-variant-numeric:tabular-nums;color:var(--muted);text-align:right}
 .icon-btn{width:42px;height:42px;display:grid;place-items:center;border-radius:14px;background:var(--surface);border:2px solid var(--line);border-bottom-width:4px;color:var(--muted);transition:transform .08s}
 .icon-btn:active{transform:translateY(2px);border-bottom-width:2px}
 .icon-btn svg{width:20px;height:20px}
@@ -73,7 +74,7 @@ button:focus-visible{outline:3px solid var(--sky);outline-offset:3px}
 .bcard:hover{--y:-4px}
 .bcard:active{--y:2px}
 .bc-emoji{font-size:30px;line-height:1}
-.bc-zh{font:600 14px var(--font-ui);letter-spacing:.02em;text-shadow:0 1px 0 rgba(0,0,0,.12)}
+.bc-zh{max-width:88%;font:600 14px var(--font-ui);letter-spacing:.02em;text-shadow:0 1px 0 rgba(0,0,0,.12);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .bc-dots{display:flex;gap:4px}.bc-dots i{width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.8)}
 .bcard.want{animation:want 1.6s ease-in-out infinite}
 .bcard.want2{animation:want 0.9s ease-in-out infinite}
@@ -168,6 +169,15 @@ button:focus-visible{outline:3px solid var(--sky);outline-offset:3px}
 .rv-sent div{flex:1;min-width:0}
 .rv-sent small{display:block;font:600 11.5px var(--font-display);letter-spacing:.08em;color:var(--muted);margin-bottom:2px}
 .rv-sent p{margin:0;font:500 19px/1.45 var(--font-display)}
+.rv-sent.long p{font-size:16px}.rv-sent.long p.sc{font-size:13px}
+.rv-sent p.sc{font:400 14px/1.5 var(--font-ui);color:var(--muted);margin-top:4px}
+.scene.photo{aspect-ratio:16/9;background:var(--surface-2)}.scene.photo.tw{aspect-ratio:4/3}.scene.photo::before{display:none}
+.scene.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.bc-img{width:78%;aspect-ratio:16/9;object-fit:cover;border-radius:10px;box-shadow:0 2px 0 rgba(0,0,0,.12)}
+.m-img{height:40px;aspect-ratio:16/9;object-fit:cover;border-radius:12px}
+.bk-img.gen{display:flex;flex-direction:column;justify-content:flex-end;gap:6px;padding:14% 12%;background:var(--b);color:#fff;text-align:left}
+.bk-img.gen small{font:600 11px var(--font-display);letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.85)}
+.bk-img.gen b{font:700 clamp(17px,2.6vw,26px)/1.15 var(--font-display);overflow-wrap:anywhere}
 .rv-sent mark{background:color-mix(in oklab,var(--c) 22%,transparent);color:inherit;border-radius:6px;padding:0 2px;font-weight:700}
 
 /* tray */
@@ -228,8 +238,9 @@ button:focus-visible{outline:3px solid var(--sky);outline-offset:3px}
 .hm-bar{position:sticky;top:0;z-index:3;background:var(--hbar);-webkit-backdrop-filter:saturate(180%) blur(20px);backdrop-filter:saturate(180%) blur(20px);padding-top:env(safe-area-inset-top)}
 .hm-bar .in{max-width:620px;margin:0 auto;height:66px;display:flex;align-items:center;justify-content:space-between;padding:0 max(16px,env(safe-area-inset-left,0px))}
 .hm-bar .brand span{display:inline}
-.hm-tabs{display:flex;justify-content:center;padding:32px 16px 0;animation:hmUp .7s cubic-bezier(.2,.8,.2,1) .05s both}
-.pills{position:relative;display:inline-flex;padding:5px;border-radius:99px;background:var(--hp)}
+.hm-tabs{display:flex;padding:32px 16px 0;overflow-x:auto;scrollbar-width:none;animation:hmUp .7s cubic-bezier(.2,.8,.2,1) .05s both}
+.hm-tabs::-webkit-scrollbar{display:none}
+.pills{position:relative;display:inline-flex;flex:none;margin:0 auto;padding:5px;border-radius:99px;background:var(--hp)}
 .pills button{position:relative;z-index:1;border:0;background:none;padding:10px 20px;border-radius:99px;font:600 16px var(--font-display);letter-spacing:.01em;color:var(--hk);white-space:nowrap;transition:color .35s}
 .pills button[aria-pressed="true"]{color:#fff}
 .pills .ind{position:absolute;top:5px;bottom:5px;left:0;width:0;border-radius:99px;background:var(--ok);box-shadow:inset 0 -3px 0 var(--ok-d);transition:transform .45s cubic-bezier(.3,1.2,.5,1),width .45s cubic-bezier(.3,1.2,.5,1)}
@@ -352,8 +363,7 @@ button:focus-visible{outline:3px solid var(--sky);outline-offset:3px}
 <div class="app">
   <header class="top">
     <button class="icon-btn" id="goHome" aria-label="回书架"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg></button>
-    <div class="top-mid"><b id="bookName"></b><div class="progress" role="progressbar" aria-label="消除进度"><i id="bar"></i></div></div>
-    <div class="count" id="count">0/9</div>
+    <div class="top-mid"><div class="tm-row"><b id="bookName"></b><span class="count" id="count">0/9</span></div><div class="progress" role="progressbar" aria-label="消除进度"><i id="bar"></i></div></div>
     <button class="icon-btn" id="openSettings" aria-label="设置">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M4 7h10M18 7h2M4 17h4M12 17h8"/><circle cx="16" cy="7" r="2.4"/><circle cx="10" cy="17" r="2.4"/></svg>
     </button>
@@ -378,6 +388,7 @@ button:focus-visible{outline:3px solid var(--sky);outline-offset:3px}
 <div class="toast" id="toast" role="status"></div>
 <canvas id="fx"></canvas>
 
+<script src="shelf.js"></script>
 <script>
 /* ---------- sample data (demo only — real books come from your library) ---------- */
 const BOOKS = {
@@ -418,15 +429,27 @@ const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
 const cssVar=n=>getComputedStyle(document.documentElement).getPropertyValue(n).trim();
 function shuffle(a){a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.random()*(i+1)|0;[a[i],a[j]]=[a[j],a[i]]}return a}
 /* ---------- bookshelf: real books and units; rounds still use the sample words above ---------- */
-const SHELF=[{"id":"think","name":"Think","books":[{"id":"th0","lvl":"Starter","mark":"S","units":[["Welcome Unit","启航与破冰",4],["Unit 1","All together (大家在一起)",12],["Unit 2","Away from home (出门在外)",18],["Unit 3","Home sweet home (温馨小家)",27],["Unit 4","It's a big world (大千世界)",21],["Unit 5","Around town (小镇生活)",9],["Unit 6","Family and friends (好友与外貌)",27],["Unit 7","You can do it (挑战潜能)",36],["Unit 8","What are you doing? (正在发生)",17],["Unit 9","My favourite food (舌尖美味)",28],["Unit 10","Out of the past (时光印记)",15],["Unit 11","Amazing animals (神奇动物)",24],["Unit 12","Moving about (出行天下)",20]]},{"id":"th1","lvl":"1","mark":"1","units":[["Unit 1","闲暇生活与爱好",12],["Unit 2","潮流服饰与购物",26],["Unit 3","美食美味与超市食材",32],["Unit 4","家庭成员与性格情绪",24],["Unit 5","家居居室与生活空间",22],["Unit 6","珍贵友谊与性格特质",19],["Unit 7","科技智能与数码生活",24],["Unit 8","运动竞技与体坛争锋",22],["Unit 9","自然旷野与极境生灵",33],["Unit 10","城市地标与方向指引",22],["Unit 11","身体健康与生化器官",14],["Unit 12","环球旅行与交通探险",26]]},{"id":"th2","lvl":"2","mark":"2","units":[["Unit 1","Incredible people (难忘人物与品质)",8],["Unit 2","A good education (学校日常与教育)",29],["Unit 3","On the screen (影视荧幕与娱乐)",18],["Unit 4","Online life (数字生活与沟通)",11],["Unit 5","Music to my ears (音乐之旅与乐器)",8],["Unit 6","No planet B (地球家园与环保)",24],["Unit 8","Science and us (科技探索与实验)",15],["Unit 9","Working week (职业职场与发展)",4],["Unit 10","Mind and body (健康活力与习惯)",12],["Unit 11","Breaking news (乐善好施与社会新闻)",12],["Unit 12","Rules and regulations (规矩规则与准则)",6]]},{"id":"think-l3","lvl":"3","mark":"3","units":[["Unit 1","Life plans",8],["Unit 2","Hard times",16],["Unit 3","What's in a name?",10],["Unit 4","Dilemmas",7],["Unit 5","What a story!",16],["Unit 6","How do they do that?",14],["Unit 7","All the same",11],["Unit 8","It's a crime",21],["Unit 9","What happened?",8],["Unit 10","Money",17],["Unit 11","Help!",21],["Unit 12","A word of advice",5]]},{"id":"th4","lvl":"4","mark":"4","units":[["Unit 1","极限生存与动作感知",20],["Unit 2","行在路上与多元文化",28],["Unit 3","少年时代与角色变幻",27],["Unit 4","思维艺术与性格画像",25],["Unit 5","智能时代与数字生活",26],["Unit 6","携手同行与深层社交",28],["Unit 7","乐观棱镜与未来愿景",21],["Unit 8","清单思维与地球奇观",21],["Unit 9","人生抉择与职场尊严",24],["Unit 10","传媒风云与事实辨析",23],["Unit 11","仰望星空与电影视界",22],["Unit 12","秘境探险与荒野科考",28]]},{"id":"th5","lvl":"5","mark":"5","units":[["Welcome","关系、挑战与未来表达",4],["Unit 1","Family matters (家庭与人际)",11],["Unit 2","Sweet dreams (睡眠与梦境)",10],["Unit 3","Lucky for some? (运气与机遇)",1],["Unit 4","Having a laugh (幽默与笑语)",7],["Unit 5","What a thrill! (挑战极限与冒险)",13],["Unit 6","Famous lives (名望与名利场)",10],["Unit 7","A thing of beauty? (审美潮流与情感反应)",9],["Unit 8","Cracking the code (语言起源与沟通)",29],["Unit 9","Fairness matters (公平、正义与司法)",5],["Unit 10","Learning for life (高等教育与学术深造)",5],["Unit 11","The modern world (现代生活与情绪管理)",13],["Unit 12","Celebrating heroes (英雄表彰、成败与梦想)",3]]}]},{"id":"pu","name":"Power Up","books":[{"id":"pu0","lvl":"Start Smart","mark":"S","units":[["Welcome","快乐启航与新朋友",25],["Unit 1","My family (我的温馨家庭)",10],["Unit 2","At school (快乐校园与教室)",10],["Unit 3","Delicious food (美味水果与可口食物)",10],["Unit 4","Home sweet home (温馨小家与房间)",10],["Unit 5","All about me (身体部位与外貌)",10],["Unit 6","Toys and transport (趣味玩具与交通工具)",10],["Unit 7","Action time (活力动作与运动技能)",10],["Unit 8","Holiday fun (假日海滩与大自然)",10],["Unit 9","Clothes and animals (漂亮衣服与农场动物)",10]]},{"id":"pu1","lvl":"1","mark":"1","units":[["Welcome","认识友好探索小分队",8],["Unit 1","校园探索与书包文具",20],["Unit 2","亲爱家人与奇妙身体",22],["Unit 3","动物朋友与喜怒哀乐",16],["Unit 4","美食伙伴与可口午餐",20],["Unit 5","生日派对与益智玩具",18],["Unit 6","户外探险与城镇动物园",23],["Unit 7","活力运动与竞技爱好",19],["Unit 8","温馨家园与居家陈设",17],["Unit 9","阳光假日与沙滩拾贝",24]]},{"id":"pu2","lvl":"2","mark":"2","units":[["Welcome","快乐农场与新朋友 (Meet the Friends)",12],["Unit 1","A day on the farm (农场一日与田园风光)",18],["Unit 2","My week (一周生活与课外爱好)",15],["Unit 3","Look at us! (多元职业与外貌打扮)",21],["Unit 4","Home sweet home (温馨家庭与楼宇空间)",21],["Unit 5","Animal world (野生动物与自然律动)",19],["Unit 6","Weather and clothes (四季天气与着装搭配)",16],["Unit 7","Food and cooking (美味佳肴与厨房烹饪)",19],["Unit 8","In the city (城市漫游与街区建筑)",20],["Unit 9","Big adventures (情绪心境与奇妙历险)",18]]},{"id":"pu3","lvl":"3","mark":"3","units":[["Welcome","Welcome to Diversicus",8],["Unit 1","Practice time",13],["Unit 2","What’s for breakfast?",22],["Unit 3","A healthy body",19],["Unit 4","Fun in the jungle",19],["Unit 5","Behind the scenes",18],["Unit 6","Classroom stars",21],["Unit 7","When I grow up ...",19],["Unit 8","City break",19],["Unit 9","Let’s travel!",17]]},{"id":"pu4","lvl":"4","mark":"4","units":[["Welcome","Welcome to Diversicus (马戏团初见与角色介绍)",8],["Unit 1","This year’s trip (年度旅行与交通)",20],["Unit 2","Our beautiful planet (美丽星球与神奇生物)",20],["Unit 3","Let’s celebrate! (盛大狂欢与赛事旋律)",25],["Unit 4","Time of our lives (生活时刻与日常承诺)",19],["Unit 5","Let it snow! (冰雪严冬与季节气象)",17],["Unit 6","Working together (携手同心与职场世界)",18],["Unit 7","Then and now (古今家居与岁月变迁)",21],["Unit 8","Space travel (星际远航与太空探索)",22],["Unit 9","Great bakers (天才烘焙家与厨房美食)",21]]}]}];
-const SHELF_TINT={think:['#C2412D','#3F6FD1','#8A4FD0','#B8901E','#2B9C8F','#B03A2E'],pu:['#E5A100','#4FA62A','#2E8FD6','#D9433A','#EE8420']};
-const COVER_AR={think:.703,pu:.79};
-const findBook=id=>{for(const sr of SHELF){const i=sr.books.findIndex(b=>b.id===id);if(i>=0)return{sr,b:sr.books[i],i,c:SHELF_TINT[sr.id][i],ar:COVER_AR[sr.id]}}return null};
-const bookTitle=id=>{const f=findBook(id);return f?f.sr.name+' '+f.b.lvl:''};
+const SHELF=window.KRON_SHELF; // demo/shelf.js，scripts/import_legacy.py 生成
+const SHELF_TINT={think:['#C2412D','#3F6FD1','#8A4FD0','#B8901E','#2B9C8F','#B03A2E'],pu:['#E5A100','#4FA62A','#2E8FD6','#D9433A','#EE8420'],ielts:['#B4232F','#1D3F73'],exam:['#30C25B','#2E8FD6','#E5A100','#D9433A','#8A4FD0','#2B9C8F','#1D1D1F']};
+const COVER_AR={think:.703,pu:.79,ielts:.72,exam:.72};
+const findBook=id=>{for(const sr of SHELF){const i=sr.books.findIndex(b=>b.id===id);if(i>=0)return{sr,b:sr.books[i],i,c:(SHELF_TINT[sr.id]||SHELF_TINT.exam)[i%7],ar:COVER_AR[sr.id]||.706}}return null};
+const bkName=f=>f.sr.id==='exam'?f.b.lvl+'词汇':f.sr.name+' '+f.b.lvl;
+const bookTitle=id=>{const f=findBook(id);return f?bkName(f):''};
 const sampleFor=id=>{const f=findBook(id);return f&&f.sr.id==='think'&&f.b.mark!=='S'?'think1':'kids'};
 const S={pick:{bk:'pu1',u:0},book:'kids',count:9,muted:false};
 try{const p=JSON.parse(localStorage.getItem('kronword')||'{}');if(p.pick&&findBook(p.pick.bk)){S.pick=p.pick;S.saved=true}if(p.count)S.count=p.count;if(p.muted)S.muted=true}catch(e){}
 S.book=sampleFor(S.pick.bk);
+/* real words: demo/books/<book>.json (scripts/import_legacy.py); pictures from R2 via /img/; clips in audio-fish/, newer ones (r:1) from R2 via /au/ */
+const BOOK_DATA={};
+const IMG=n=>'/img/'+encodeURIComponent(n);
+const realWord=x=>{const d=x.r?'/au/':'audio-fish/';return{...x,say:x.syl,e:'',clip:d+x.a,bricks:x.syl.map((_,i)=>`${d}${x.a}-${i}`)}};
+function loadBook(id){return BOOK_DATA[id]||(BOOK_DATA[id]=fetch(`books/${id}.json`).then(r=>r.ok?r.json():Promise.reject(r.status)).then(d=>d.units.map(u=>u.w.map(realWord))).catch(e=>{delete BOOK_DATA[id];throw e}))}
+async function unitPool(){const{bk,u}=S.pick;
+  try{const units=await loadBook(bk);let pool=units[u]||units[0];for(let k=1;pool.length<6&&k<units.length;k++)pool=pool.concat(units[(u+k)%units.length]);S.pool=pool}
+  catch(e){S.pool=BOOKS[sampleFor(bk)].words}
+  return S.pool}
+const brickSrc=(x,i)=>x.bricks?x.bricks[i]:`${x.w}-${i}`;
+const pic=(w,cls)=>w.img?`<img class="${cls}-img" src="${IMG(w.img)}" alt="" loading="lazy" draggable="false">`:`<span class="${cls}-emoji">${w.e}</span>`;
 const PROG=(()=>{try{return JSON.parse(localStorage.getItem('kronword_prog')||'{}')}catch(e){return{}}})();
 const unitDone=(bk,u)=>{const f=findBook(bk);return f?Math.min((PROG[bk]||{})[u]||0,f.b.units[u][2]):0};
 const bookDone=bk=>findBook(bk).b.units.reduce((n,_,u)=>n+unitDone(bk,u),0);
@@ -516,15 +539,15 @@ let voice=null;
 function pickVoice(){if(!('speechSynthesis' in window))return;const vs=speechSynthesis.getVoices();
   voice=vs.find(v=>/en[-_]US/i.test(v.lang)&&/Samantha|Ava|Allison|Google US/i.test(v.name))||vs.find(v=>/en[-_]US/i.test(v.lang))||vs.find(v=>/^en/i.test(v.lang))||null}
 if('speechSynthesis' in window){pickVoice();speechSynthesis.onvoiceschanged=pickVoice}
-function say(text,rate=.85){if(!('speechSynthesis' in window)||S.muted)return;try{speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(text);u.lang='en-US';if(voice)u.voice=voice;u.rate=rate;u.pitch=1.05;speechSynthesis.speak(u)}catch(e){}}
+function say(text,rate=.85){if(!('speechSynthesis' in window)||S.muted)return Promise.resolve(false);return new Promise(ok=>{try{speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(text);u.lang='en-US';if(voice)u.voice=voice;u.rate=rate;u.pitch=1.05;u.onend=()=>ok(true);u.onerror=()=>ok(false);speechSynthesis.speak(u)}catch(e){ok(false)}})}
 /* recorded clips: audio/<word>.mp3 and audio/<word>-<n>.mp3 (scripts/make_syllable_audio.py); no clip falls back to the browser voice */
 const CLIPS={};let clipSrc=null,clipTurn=0;
-function clip(name){return CLIPS[name]||(CLIPS[name]=fetch(`audio/${name}.mp3`).then(r=>r.ok?r.arrayBuffer():Promise.reject()).then(b=>new Promise((ok,no)=>ac().decodeAudioData(b,ok,no))).catch(()=>null))}
+function clip(name){return CLIPS[name]||(CLIPS[name]=fetch(`${name.includes('/')?'':'audio/'}${name}.mp3`).then(r=>r.ok?r.arrayBuffer():Promise.reject()).then(b=>new Promise((ok,no)=>ac().decodeAudioData(b,ok,no))).catch(()=>null))}
 async function play(name,text,rate){if(S.muted)return;const turn=++clipTurn;try{speechSynthesis.cancel()}catch(e){}
   if(clipSrc){try{clipSrc.stop()}catch(e){}clipSrc=null}
   const c=ac(),buf=c&&await clip(name);if(turn!==clipTurn)return;if(!buf)return say(text,rate);
   const src=c.createBufferSource();src.buffer=buf;src.connect(c.destination);src.start();clipSrc=src}
-const sayWord=(w,rate)=>play(w.w,w.w,rate);
+const sayWord=(w,rate)=>play(w.clip||w.w,w.w,rate);
 
 /* ---------- particles ---------- */
 const cv=$('#fx'),cx=cv.getContext('2d');let parts=[],running=false;
@@ -550,9 +573,10 @@ function wiggle(el){el.animate([{rotate:'0deg'},{rotate:'-7deg'},{rotate:'6deg'}
 function setProgress(){const done=S.total?S.total-S.queue.length-(S.current?1:0):0;$('#bar').style.width=(S.total?done/S.total*100:0)+'%';$('#count').textContent=`${done}/${S.total}`}
 
 /* ---------- game ---------- */
-function newGame(autoPick){
-  const book=BOOKS[S.book];const max=book.words.length-book.words.length%3;const n=Math.min(S.count,max);
-  const picked=shuffle(book.words).slice(0,n);const cols=shuffle(COLORS);
+async function newGame(autoPick){
+  const pool=await unitPool(),max=pool.length-pool.length%3,n=Math.min(S.count,max);
+  const off=(PROG[S.pick.bk]||{})[S.pick.u]||0;  // walk through the unit in order, a round at a time
+  const picked=Array.from({length:n},(_,i)=>pool[(off+i)%pool.length]);const cols=shuffle(COLORS);
   const items=picked.map((w,i)=>({id:'k'+Date.now().toString(36)+i,w,color:cols[Math.floor(i/3)%cols.length],review:false}));
   Object.assign(S,{live:true,round:picked,queue:shuffle(items),tray:[],cleared:0,total:n,current:null,mistakes:0,solved:0,listens:0,t0:Date.now(),popCombo:0,busy:false,locked:false});
   $('#bookName').textContent=pickTitle();
@@ -579,7 +603,7 @@ function renderBelt(feed){
 }
 function makeBeltCard(it){const b=document.createElement('button');b.className=`bcard c-${it.color}`;b.dataset.id=it.id;
   b.setAttribute('aria-label',`${COLOR_ZH[it.color]}卡片：${it.w.zh}，${it.w.syl.length} 个音节`);
-  b.innerHTML=`<span class="bc-emoji">${it.w.e}</span><span class="bc-zh">${it.w.zh}</span><span class="bc-dots">${'<i></i>'.repeat(it.w.syl.length)}</span>`;
+  b.innerHTML=`${pic(it.w,'bc')}<span class="bc-zh">${it.w.zh}</span><span class="bc-dots">${'<i></i>'.repeat(it.w.syl.length)}</span>`;
   b.onclick=()=>{const q=S.queue.find(x=>x.id===it.id);if(q)pick(q,b)};return b}
 function trayCounts(){const c={};S.tray.forEach(t=>c[t.color]=(c[t.color]||0)+1);return c}
 function updateHints(){const c=trayCounts();document.querySelectorAll('#belt .bcard').forEach(el=>{const it=S.queue.find(q=>q.id===el.dataset.id);if(!it)return;
@@ -600,22 +624,20 @@ async function pick(it,el,auto){
   ghost.remove();S.busy=false;
 }
 
-function distractor(w){const all=Object.values(BOOKS).flatMap(b=>b.words).filter(x=>x!==w);
-  const opts=[];all.forEach(x=>x.syl.forEach((s,i)=>{if(!w.syl.includes(s))opts.push({t:s,say:x.say[i],src:`${x.w}-${i}`})}));return opts.length?[opts[Math.random()*opts.length|0]]:[]}
+function distractor(w){const all=(S.pool||[]).filter(x=>x!==w);
+  const opts=[];all.forEach(x=>x.syl.forEach((s,i)=>{if(!w.syl.includes(s))opts.push({t:s,say:x.say[i],src:brickSrc(x,i)})}));return opts.length?[opts[Math.random()*opts.length|0]]:[]}
 
 function renderWork(){
   const it=S.current,w=it.w,work=$('#work');
   work.className=`work c-${it.color}`;
-  const pool=shuffle([...w.syl.map((s,i)=>({t:s,say:w.say[i],src:`${w.w}-${i}`})),...distractor(w)]);
-  work.innerHTML=`<div class="meaning" id="meaning"><span class="m-emoji">${w.e}</span><b>${w.zh}</b></div>
+  const pool=shuffle([...w.syl.map((s,i)=>({t:s,say:w.say[i],src:brickSrc(w,i)})),...distractor(w)]);
+  work.innerHTML=`<div class="meaning" id="meaning">${pic(w,'m')}<b>${w.zh}</b></div>
   <div class="slots" id="slots">${w.syl.map(()=>'<div class="slot"></div>').join('')}</div>
-  <div class="pool" id="pool">${pool.map((p,i)=>`<div class="cell"><button class="brick" style="--i:${i}" data-t="${p.t}" data-say="${p.say}" data-src="${p.src}" aria-label="积木 ${p.t}">${p.t}</button></div>`).join('')}</div>
-  <div class="actions"><button class="btn" id="hearWord">${IC.speaker}听整词</button><button class="btn" id="resetBricks">${IC.undo}全部放回</button></div>`;
-  clip(w.w);work.querySelectorAll('.brick').forEach(b=>clip(b.dataset.src));
+  <div class="pool" id="pool">${pool.map((p,i)=>`<div class="cell"><button class="brick" style="--i:${i}" data-t="${p.t}" data-say="${p.say}" data-src="${p.src}" aria-label="积木 ${p.t}">${p.t}</button></div>`).join('')}</div>`;
+  clip(w.clip||w.w);work.querySelectorAll('.brick').forEach(b=>clip(b.dataset.src));
   work.querySelectorAll('.cell').forEach(c=>{const b=c.firstElementChild;c.style.width=b.offsetWidth+'px';b._home=c;b.onclick=()=>onBrick(b)});
-  $('#hearWord').onclick=()=>{ac();S.listens++;sayWord(w,.7)};
-  $('#resetBricks').onclick=()=>{document.querySelectorAll('#slots .brick').forEach(b=>moveTo(b,b._home));sfx.back()};
-  coach(w.hint,'KRON');setBaseMood('thinking');
+  setTimeout(()=>{if(S.current===it)sayWord(w,.7)},420);  // 拿到卡片就自动读整词
+  coach(w.hint||'点一点积木听听，再按顺序拼起来。','KRON');setBaseMood('thinking');
 }
 function moveTo(b,target){const f=b.getBoundingClientRect();target.appendChild(b);b.style.animation='none';flip(b,f)}
 function onBrick(b){
@@ -642,26 +664,31 @@ async function success(){
   coach(PRAISE[Math.random()*PRAISE.length|0]);mood('wow',1800);
   await wait(reduced?300:1150);showReveal();S.locked=false;
 }
-function markSent(s){return s.replace(/\{([^}]+)\}/g,'<mark>$1</mark>')}
+function markSent(s,w){if(s.includes('{'))return s.replace(/\{([^}]+)\}/g,'<mark>$1</mark>');
+  const esc=t=>t.replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'})[c]);
+  const re=new RegExp('\\b('+w.w.replace(/[.*+?^${}()|[\]\\]/g,'\\$&').replace(/\s+/g,'\\s+')+'\\w*)','i');
+  return esc(s).replace(re,'<mark>$1</mark>')}
 function plainSent(s){return s.replace(/[{}]/g,'')}
 function showReveal(){
   const it=S.current,w=it.w,work=$('#work');
   work.className=`work c-${it.color}`;
   const sparks=[[12,18],[30,10],[52,22],[86,64],[70,14],[92,30]].map(([x,y],i)=>`<i class="spark" style="left:${x}%;top:${y}%;animation-delay:${i*.3}s"></i>`).join('');
   work.innerHTML=`<div class="reveal">
-    <div class="scene">${sparks}<span class="scene-emoji">${w.e}</span>${kronSVG('','wow')}<span class="scene-say">${w.w}!</span><span class="scene-tag">插画位 · Kron 主角场景</span></div>
+    ${w.img?`<div class="scene photo${w.img.startsWith('tw-')?' tw':''}"><img src="${IMG(w.img)}" alt="${w.w}" draggable="false"></div>`:`<div class="scene">${sparks}<span class="scene-emoji">${w.e}</span>${kronSVG('','wow')}<span class="scene-say">${w.w}!</span></div>`}
     <div class="rv-head"><div class="rv-word" aria-label="${w.w}">${w.syl.map(s=>`<span>${s}</span>`).join('<i>·</i>')}</div><button class="round" id="sayWord" aria-label="读单词">${IC.speaker}</button></div>
-    <div class="rv-meta"><span class="ipa">${w.ipa}</span><span class="zh">${w.zh}</span></div>
-    <div class="rv-sent"><div><small>绕口令例句</small><p>${markSent(w.s)}</p></div><button class="round sm" id="saySent" aria-label="读例句">${IC.speaker}</button></div>
+    <div class="rv-meta"><span class="ipa">${w.ipa}</span><span class="zh">${w.zf||w.zh}</span></div>
+    ${w.s?`<div class="rv-sent${w.s.length>110?' long':''}"><div><p>${markSent(w.s,w)}</p>${w.sc?`<p class="sc">${w.sc}</p>`:''}</div><button class="round sm" id="saySent" aria-label="读例句">${IC.speaker}</button></div>`:''}
     <div class="auto-go" aria-hidden="true"><i id="autoGo"></i></div></div>`;
-  const AUTO=reduced?1200:3600;let goT;
-  const arm=()=>{clearTimeout(goT);const b=$('#autoGo');if(b){b.style.transition='none';b.style.width='0';b.offsetWidth;b.style.transition=`width ${AUTO}ms linear`;b.style.width='100%'}goT=setTimeout(()=>{if(S.current===it)collect()},AUTO)};
-  $('#sayWord').onclick=e=>{e.stopPropagation();ac();sayWord(w,.8);arm()};
-  $('#saySent').onclick=e=>{e.stopPropagation();ac();say(plainSent(w.s),.82);arm()};
-  work.querySelector('.reveal').onclick=()=>{clearTimeout(goT);if(S.current===it)collect()};
-  requestAnimationFrame(arm);
+  // 有例句（绕口令）就自动读一遍，读完再跳；没声音时按句子长短估个时间
+  const est=w.s&&!S.muted?plainSent(w.s).split(/\s+/).length*430+1600:(reduced?1200:3600);let goT,turn=0;
+  const arm=(ms=est)=>{clearTimeout(goT);const b=$('#autoGo');if(b){b.style.transition='none';b.style.width='0';b.offsetWidth;b.style.transition=`width ${ms}ms linear`;b.style.width='100%'}goT=setTimeout(()=>{if(S.current===it)collect()},ms+2500)};
+  const readSent=()=>{const t=++turn,t0=Date.now();arm();say(plainSent(w.s),.82).then(spoke=>{if(t!==turn||S.current!==it)return;clearTimeout(goT);goT=setTimeout(()=>{if(S.current===it)collect()},spoke?700:Math.max(0,est-(Date.now()-t0)))})};
+  $('#sayWord').onclick=e=>{e.stopPropagation();ac();turn++;sayWord(w,.8);arm(reduced?1200:3600)};
+  const ss=$('#saySent');if(ss)ss.onclick=e=>{e.stopPropagation();ac();readSent()};
+  work.querySelector('.reveal').onclick=()=>{clearTimeout(goT);turn++;try{speechSynthesis.cancel()}catch(e){}if(S.current===it)collect()};
+  if(w.s&&!S.muted)setTimeout(()=>{if(S.current===it)readSent()},900);else requestAnimationFrame(()=>arm());
   const tc=trayCounts()[it.color]||0;
-  coach(tc>=2?`托盘里已经有 ${tc} 张${COLOR_ZH[it.color]}，马上就能撞掉！`:'听听例句，标亮的都是同一个音哦。');
+  coach(tc>=2?`托盘里已经有 ${tc} 张${COLOR_ZH[it.color]}，马上就能撞掉！`:'跟着念一遍！');
   lookAt(innerWidth,innerHeight*.35);
 }
 async function collect(){
@@ -738,7 +765,7 @@ const ARCADE=[
  {id:'search',name:'单词寻宝',ic:'🔍',c:'#9C36B5'},{id:'memory',name:'翻翻乐',ic:'🃏',c:'#5C7CFA'},{id:'wordle',name:'五字母猜词',ic:'🔤',c:'#2B8A3E'},
  {id:'tower',name:'单词塔防',ic:'🏰',c:'#5F3DC4'},{id:'snake',name:'贪吃蛇拼词',ic:'🐍',c:'#2F9E44'},{id:'jump',name:'跳跳 Kron',ic:'🦘',c:'#F76707'},{id:'duel',name:'双人拔河',ic:'🪢',c:'#C92A2A'}];
 function arcadeWords(){const pack=w=>({w:w.w,zh:w.zh,e:w.e,n:w.syl.length,s:(w.s||'').replace(/[{}]/g,'')});
-  const round=S.round||[],rest=shuffle(BOOKS[S.book].words.filter(w=>!round.includes(w)));
+  const round=S.round||[],rest=shuffle((S.pool||[]).filter(w=>!round.includes(w)));
   return[...round,...rest].slice(0,Math.max(12,round.length)).map(pack)}
 function openArcade(id){closeSheet();try{speechSynthesis.cancel()}catch(e){}
   const ov=document.createElement('div');ov.className='arcade';ov.id='arcade';
@@ -756,7 +783,7 @@ function closeSheet(){const b=$('#backdrop');b&&b.remove()}
 addEventListener('keydown',e=>{if(e.key!=='Escape')return;if($('#bkStage'))$('#bkStage').click();else if($('#shelf')&&!$('#backdrop')){}else closeSheet()});
 function openSettings(){
   let count=S.count,muted=S.muted;
-  const draw=()=>{const max=BOOKS[S.book].words.length-BOOKS[S.book].words.length%3;if(count>max)count=max;
+  const draw=()=>{const L=(S.pool||[]).length,max=L-L%3;if(count>max)count=max;
     openSheet(`<h2>这一轮怎么背？</h2>
         <div><div class="field-label">本轮单词数</div><div class="seg">${[6,9,12].map(n=>`<button data-act="count" data-n="${n}" aria-pressed="${n===count}" ${n>max?'disabled':''}>${n}</button>`).join('')}</div></div>
     <div class="toggle-row"><span>声音</span><button class="switch" role="switch" data-act="mute" aria-checked="${!muted}" aria-label="声音"></button></div>
@@ -765,14 +792,15 @@ function openSettings(){
      go:()=>{S.count=count;S.muted=muted;savePrefs();closeSheet();newGame(false)}})};
   draw();
 }
-const coverHTML=(f)=>`<img class="bk-img" src="covers/${f.b.id}.jpg" alt="${f.sr.name} ${f.b.lvl}" draggable="false">`;
+const coverHTML=(f)=>f.b.cover?`<img class="bk-img" src="covers/${f.b.id}.jpg" alt="${bkName(f)}" draggable="false">`
+  :`<div class="bk-img gen" style="--b:${f.c}"><small>${f.sr.id==='exam'?'Kron Word':f.sr.name}</small><b>${f.b.lvl}</b></div>`;
 const HOME_TABS=[['all','全部'],...SHELF.map(sr=>[sr.id,sr.name])];
 const bookWords=b=>b.units.reduce((n,u)=>n+u[2],0);
 function homeRow(books,big,k,off){
   const h=innerWidth<=600?(big?230:180):(big?290:230),m=innerWidth<=600?16:22;
   const half=books.reduce((w,f)=>w+h*f.ar+m,0),reps=Math.max(1,Math.ceil(innerWidth*1.15/half));
   const one=Array.from({length:reps},()=>books).flat();
-  const item=f=>`<button class="hb" data-bk="${f.b.id}" style="--ar:${f.ar}" aria-label="${f.sr.name} ${f.b.lvl}"><div class="cov">${coverHTML(f)}</div><b>${f.sr.name} ${f.b.lvl}</b>${(d=>d?`<small>已背 ${d}/${bookWords(f.b)} 词</small><span class="pg"><i style="width:${d/bookWords(f.b)*100}%"></i></span>`:`<small>${f.b.units.length} 单元 · ${bookWords(f.b)} 词</small>`)(bookDone(f.b.id))}</button>`;
+  const item=f=>`<button class="hb" data-bk="${f.b.id}" style="--ar:${f.ar}" aria-label="${bkName(f)}"><div class="cov">${coverHTML(f)}</div><b>${bkName(f)}</b>${(d=>d?`<small>已背 ${d}/${bookWords(f.b)} 词</small><span class="pg"><i style="width:${d/bookWords(f.b)*100}%"></i></span>`:`<small>${f.b.units.length} 单元 · ${bookWords(f.b)} 词</small>`)(bookDone(f.b.id))}</button>`;
   const dur=half*reps/34;
   return`<div class="mq${big?' big':''}" style="--d:${.12+k*.14}s;--dur:${dur}s;--off:${-dur*off}s"><div class="mq-track">${one.map(item).join('')}${one.map(item).join('').replaceAll('<button class="hb"','<button tabindex="-1" aria-hidden="true" class="hb"')}</div></div>`;
 }
@@ -809,7 +837,7 @@ function pullBook(btn){
   const st=document.createElement('div');st.className='bk-stage';st.id='bkStage';
   const curU=S.pick.bk===f.b.id?S.pick.u:-1;
   st.innerHTML=`<div class="bk-fly" style="left:${L}px;top:${T}px;width:${W}px;height:${H}px"><div class="bk-flip"><div class="bk-front">${coverHTML(f)}</div>
-    <div class="bk-back" style="--b:${f.c}"><header><b>${f.sr.name} ${f.b.lvl}</b></header><ol>${f.b.units.map((u,k)=>`<li><button data-u="${k}" class="${k===curU?'on':''}"><i>${k+1}</i><span><b>${u[0].replace('Welcome Unit','Welcome')}</b>${u[1]?`<small>${u[1]}</small>`:''}</span><em>${(d=>d>=u[2]?'<s>✓</s>':d?d+'/'+u[2]:u[2])(unitDone(f.b.id,k))}</em></button></li>`).join('')}</ol></div></div></div>`;
+    <div class="bk-back" style="--b:var(--ok)"><header><b>${bkName(f)}</b></header><ol>${f.b.units.map((u,k)=>`<li><button data-u="${k}" class="${k===curU?'on':''}"><i>${k+1}</i><span><b>${u[0].replace('Welcome Unit','Welcome')}</b>${u[1]?`<small>${u[1]}</small>`:''}</span><em>${(d=>d>=u[2]?'<s>✓</s>':d?d+'/'+u[2]:u[2])(unitDone(f.b.id,k))}</em></button></li>`).join('')}</ol></div></div></div>`;
   document.body.appendChild(st);btn.classList.add('out');
   const fly=st.querySelector('.bk-fly');
   const home=()=>`translate(${r.left-L}px,${r.top-T}px) scale(${r.width/W},${r.height/H})`;

@@ -1,0 +1,635 @@
+{
+ "pub": "沪教",
+ "stage": "小学",
+ "grade": "六年级",
+ "vol": "下册",
+ "id": "63f19462-c7e5-43cb-a5db-756341614929",
+ "title": "义务教育教科书·英语（三年级起点）六年级下册",
+ "created": "2022-09-29",
+ "units": [
+  {
+   "n": "Unit 1",
+   "t": "",
+   "words": [
+    {
+     "w": "weigh",
+     "zh": "有⋯重；重"
+    },
+    {
+     "w": "kilogram",
+     "zh": "千克：公斤"
+    },
+    {
+     "w": "centimetre",
+     "zh": "厘米"
+    },
+    {
+     "w": "taller",
+     "zh": "更高"
+    },
+    {
+     "w": "fan",
+     "zh": "迷；爱好者"
+    },
+    {
+     "w": "fantastic",
+     "zh": "极好"
+    },
+    {
+     "w": "themselves",
+     "zh": "他们自己，她们自己，它们自己"
+    },
+    {
+     "w": "theatre",
+     "zh": "剧院"
+    },
+    {
+     "w": "go fishing",
+     "zh": "去钓鱼"
+    },
+    {
+     "w": "enjoy oneself",
+     "zh": "玩得愉快；得到乐趣"
+    },
+    {
+     "w": "get.. in",
+     "zh": "收割"
+    }
+   ]
+  },
+  {
+   "n": "Unit 2",
+   "t": "",
+   "words": [
+    {
+     "w": "life",
+     "zh": "生活"
+    },
+    {
+     "w": "writer",
+     "zh": "作家"
+    },
+    {
+     "w": "photographer",
+     "zh": "摄影师"
+    },
+    {
+     "w": "film",
+     "zh": "胶卷"
+    },
+    {
+     "w": "digital",
+     "zh": "数码"
+    },
+    {
+     "w": "street cleaner",
+     "zh": "环卫工人"
+    },
+    {
+     "w": "sweep",
+     "zh": "扫地"
+    },
+    {
+     "w": "broom",
+     "zh": "扫帚"
+    },
+    {
+     "w": "drive",
+     "zh": "驾驶"
+    },
+    {
+     "w": "street sweeper",
+     "zh": "扫地车"
+    },
+    {
+     "w": "wife",
+     "zh": "妻子"
+    },
+    {
+     "w": "poor",
+     "zh": "贫穷；差；次"
+    },
+    {
+     "w": "fairy",
+     "zh": "仙子；小精灵"
+    },
+    {
+     "w": "wish",
+     "zh": "愿望；祝愿"
+    },
+    {
+     "w": "by hand",
+     "zh": "用手"
+    },
+    {
+     "w": "right away",
+     "zh": "立即；马上"
+    },
+    {
+     "w": "in a short time",
+     "zh": "很快"
+    }
+   ]
+  },
+  {
+   "n": "Unit 3",
+   "t": "",
+   "words": [
+    {
+     "w": "carry",
+     "zh": "背；提；拿"
+    },
+    {
+     "w": "online",
+     "zh": "在线地；在线"
+    },
+    {
+     "w": "head teacher",
+     "zh": "校长"
+    },
+    {
+     "w": "PS",
+     "zh": "附言"
+    },
+    {
+     "w": "mountain",
+     "zh": "山；山脉"
+    },
+    {
+     "w": "even",
+     "zh": "甚至"
+    },
+    {
+     "w": "space",
+     "zh": "太空"
+    },
+    {
+     "w": "dinosaur",
+     "zh": "恐龙"
+    },
+    {
+     "w": "a piece of",
+     "zh": "一张；一斤"
+    },
+    {
+     "w": "have a picnic",
+     "zh": "去野餐"
+    },
+    {
+     "w": "better and better",
+     "zh": "越来越好"
+    }
+   ]
+  },
+  {
+   "n": "Unit 4",
+   "t": "",
+   "words": [
+    {
+     "w": "oil",
+     "zh": "油"
+    },
+    {
+     "w": "oil painting",
+     "zh": "油画"
+    },
+    {
+     "w": "powerful",
+     "zh": "强有力的；力量大"
+    },
+    {
+     "w": "ink",
+     "zh": "墨水；墨汁"
+    },
+    {
+     "w": "chinese ink painting",
+     "zh": "中国水墨画"
+    },
+    {
+     "w": "brush",
+     "zh": "画笔；刷子，刷"
+    },
+    {
+     "w": "paints",
+     "zh": "绘画颜料"
+    },
+    {
+     "w": "artist",
+     "zh": "艺术家； 画家"
+    },
+    {
+     "w": "unhappy",
+     "zh": "不高兴"
+    },
+    {
+     "w": "carefully",
+     "zh": "仔细地"
+    },
+    {
+     "w": "on the left",
+     "zh": "在左边"
+    },
+    {
+     "w": "on the right",
+     "zh": "在右边"
+    },
+    {
+     "w": "all the time",
+     "zh": "一直；始终"
+    }
+   ]
+  },
+  {
+   "n": "Unit 5",
+   "t": "",
+   "words": [
+    {
+     "w": "craft",
+     "zh": "手艺；工艺王冠；皇冠"
+    },
+    {
+     "w": "crown",
+     "zh": "王冠， 冕"
+    },
+    {
+     "w": "scissors",
+     "zh": "剪刀"
+    },
+    {
+     "w": "tape",
+     "zh": "胶帯"
+    },
+    {
+     "w": "glue",
+     "zh": "胶水"
+    },
+    {
+     "w": "saw",
+     "zh": "锯"
+    },
+    {
+     "w": "craftsman",
+     "zh": "工匠；手艺人（复数craftsmen）"
+    },
+    {
+     "w": "tool",
+     "zh": "工具"
+    },
+    {
+     "w": "easily",
+     "zh": "容易地"
+    },
+    {
+     "w": "himself",
+     "zh": "他自己"
+    },
+    {
+     "w": "still",
+     "zh": "仍然"
+    },
+    {
+     "w": "model house",
+     "zh": "房子模型"
+    },
+    {
+     "w": "a long time ago",
+     "zh": "很久以前"
+    },
+    {
+     "w": "at work",
+     "zh": "忙着"
+    },
+    {
+     "w": "say to oneself",
+     "zh": "自言自语"
+    }
+   ]
+  },
+  {
+   "n": "Unit 6",
+   "t": "",
+   "words": [
+    {
+     "w": "long race",
+     "zh": "长跑"
+    },
+    {
+     "w": "short race",
+     "zh": "短跑"
+    },
+    {
+     "w": "win",
+     "zh": "获胜；赢"
+    },
+    {
+     "w": "long Jump",
+     "zh": "跳远"
+    },
+    {
+     "w": "high jump",
+     "zh": "跳高"
+    },
+    {
+     "w": "swimsuit",
+     "zh": "游泳衣"
+    },
+    {
+     "w": "swimming cap",
+     "zh": "游泳帽"
+    },
+    {
+     "w": "swimming pool",
+     "zh": "游泳池"
+    },
+    {
+     "w": "warm-up",
+     "zh": "准备活动；热身练习"
+    },
+    {
+     "w": "fit",
+     "zh": "健壮"
+    },
+    {
+     "w": "swimming goggles",
+     "zh": "游泳镜"
+    }
+   ]
+  },
+  {
+   "n": "Unit 7",
+   "t": "",
+   "words": [
+    {
+     "w": "bell",
+     "zh": "铃铛"
+    },
+    {
+     "w": "neck",
+     "zh": "脖子"
+    },
+    {
+     "w": "ago",
+     "zh": "以前"
+    },
+    {
+     "w": "gatekeeper",
+     "zh": "门卫"
+    },
+    {
+     "w": "praise",
+     "zh": "赞扬；称赞"
+    },
+    {
+     "w": "praise... for",
+     "zh": "因⋯⋯而表扬⋯⋯"
+    }
+   ]
+  },
+  {
+   "n": "Unit 8",
+   "t": "",
+   "words": [
+    {
+     "w": "sign",
+     "zh": "标识"
+    },
+    {
+     "w": "middle",
+     "zh": "中间；中部；中心"
+    },
+    {
+     "w": "special",
+     "zh": "特别"
+    },
+    {
+     "w": "path",
+     "zh": "小路；小径"
+    },
+    {
+     "w": "may",
+     "zh": "可能；可以"
+    },
+    {
+     "w": "lost",
+     "zh": "迷路；迷失"
+    },
+    {
+     "w": "worry",
+     "zh": "担心"
+    },
+    {
+     "w": "follow",
+     "zh": "跟随；跟着"
+    },
+    {
+     "w": "in the middle",
+     "zh": "在中间"
+    },
+    {
+     "w": "look out",
+     "zh": "小心；当心"
+    },
+    {
+     "w": "no smoking",
+     "zh": "禁止吸烟"
+    },
+    {
+     "w": "no swimming",
+     "zh": "禁止游泳"
+    },
+    {
+     "w": "get lost",
+     "zh": "迷路"
+    },
+    {
+     "w": "some time",
+     "zh": "一段时间"
+    },
+    {
+     "w": "on the way",
+     "zh": "在路上"
+    }
+   ]
+  },
+  {
+   "n": "Unit 9",
+   "t": "",
+   "words": [
+    {
+     "w": "reuse",
+     "zh": "重新利用"
+    },
+    {
+     "w": "can",
+     "zh": "金属罐"
+    },
+    {
+     "w": "rubber",
+     "zh": "橡皮"
+    },
+    {
+     "w": "vase",
+     "zh": "花瓶"
+    },
+    {
+     "w": "pen holder",
+     "zh": "笔筒"
+    },
+    {
+     "w": "envelope",
+     "zh": "信封"
+    },
+    {
+     "w": "plastic",
+     "zh": "塑料制；塑料"
+    },
+    {
+     "w": "rubbish bin",
+     "zh": "垃圾桶"
+    },
+    {
+     "w": "truck",
+     "zh": "卡车"
+    },
+    {
+     "w": "piece",
+     "zh": "碎片；碎块"
+    },
+    {
+     "w": "cloth",
+     "zh": "布；布料"
+    },
+    {
+     "w": "throw away",
+     "zh": "扔掉"
+    }
+   ]
+  },
+  {
+   "n": "Unit 10",
+   "t": "",
+   "words": [
+    {
+     "w": "fairy tale",
+     "zh": "童话"
+    },
+    {
+     "w": "adult",
+     "zh": "成年人"
+    },
+    {
+     "w": "well-known",
+     "zh": "众所周知；著名"
+    },
+    {
+     "w": "stronger",
+     "zh": "更强大"
+    },
+    {
+     "w": "than",
+     "zh": "比"
+    },
+    {
+     "w": "scarf",
+     "zh": "围巾"
+    },
+    {
+     "w": "blow off",
+     "zh": "吹掉"
+    },
+    {
+     "w": "take off",
+     "zh": "脱掉"
+    }
+   ]
+  },
+  {
+   "n": "Unit 11",
+   "t": "",
+   "words": [
+    {
+     "w": "western",
+     "zh": "西方"
+    },
+    {
+     "w": "turkey",
+     "zh": "火鸡"
+    },
+    {
+     "w": "moment",
+     "zh": "时光；时刻"
+    },
+    {
+     "w": "decorate",
+     "zh": "装饰；布置"
+    },
+    {
+     "w": "bright",
+     "zh": "明亮的；鲜艳"
+    },
+    {
+     "w": "laugh at",
+     "zh": "嘲笑"
+    }
+   ]
+  },
+  {
+   "n": "Unit 12",
+   "t": "",
+   "words": [
+    {
+     "w": "pea",
+     "zh": "豌豆"
+    },
+    {
+     "w": "pod",
+     "zh": "豆英"
+    },
+    {
+     "w": "forever",
+     "zh": "永远"
+    },
+    {
+     "w": "bigger",
+     "zh": "更大"
+    },
+    {
+     "w": "excited",
+     "zh": "兴奋"
+    },
+    {
+     "w": "bullet",
+     "zh": "子弹"
+    },
+    {
+     "w": "lazy",
+     "zh": "懒惰的"
+    },
+    {
+     "w": "roof",
+     "zh": "屋顶"
+    },
+    {
+     "w": "yard",
+     "zh": "院子"
+    },
+    {
+     "w": "hit",
+     "zh": "碰撞；撞击"
+    },
+    {
+     "w": "see the world",
+     "zh": "见世面"
+    },
+    {
+     "w": "one by one",
+     "zh": "一个接个地"
+    },
+    {
+     "w": "look out of",
+     "zh": "往外看"
+    }
+   ]
+  }
+ ]
+}

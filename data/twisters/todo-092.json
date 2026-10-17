@@ -1,0 +1,122 @@
+[
+{
+"w": "cash",
+"syl": "cash",
+"zh": "现金",
+"lvl": "pep"
+},
+{
+"w": "wallet",
+"syl": "wal·let",
+"zh": "钱包",
+"lvl": "pep"
+},
+{
+"w": "guest",
+"syl": "guest",
+"zh": "答人",
+"lvl": "pep"
+},
+{
+"w": "chief",
+"syl": "chief",
+"zh": "首席的",
+"lvl": "pep"
+},
+{
+"w": "researcher",
+"syl": "re·sear·cher",
+"zh": "研究者",
+"lvl": "pep"
+},
+{
+"w": "research",
+"syl": "re·search",
+"zh": "研究",
+"lvl": "pep"
+},
+{
+"w": "futurist",
+"syl": "fu·tu·rist",
+"zh": "未米学家",
+"lvl": "pep"
+},
+{
+"w": "robotics",
+"syl": "ro·bot·ics",
+"zh": "机器人学",
+"lvl": "pep"
+},
+{
+"w": "industry",
+"syl": "in·dus·try",
+"zh": "行业",
+"lvl": "pep"
+},
+{
+"w": "service",
+"syl": "ser·vice",
+"zh": "服务",
+"lvl": "pep"
+},
+{
+"w": "disaster",
+"syl": "di·sas·ter",
+"zh": "灾难",
+"lvl": "pep"
+},
+{
+"w": "emergency",
+"syl": "e·mer·gen·cy",
+"zh": "紧急情况",
+"lvl": "pep"
+},
+{
+"w": "disappear",
+"syl": "dis·ap·pear",
+"zh": "消失",
+"lvl": "pep"
+},
+{
+"w": "challenging",
+"syl": "chal·len·ging",
+"zh": "极具挑战性的",
+"lvl": "pep"
+},
+{
+"w": "expert",
+"syl": "ex·pert",
+"zh": "专家",
+"lvl": "pep"
+},
+{
+"w": "replace",
+"syl": "re·place",
+"zh": "代替",
+"lvl": "pep"
+},
+{
+"w": "creativity",
+"syl": "cre·a·tiv·i·ty",
+"zh": "创造力",
+"lvl": "pep"
+},
+{
+"w": "emotional",
+"syl": "e·mo·tio·nal",
+"zh": "情感（上）的",
+"lvl": "pep"
+},
+{
+"w": "emotional intelligence",
+"syl": "e·mo·tio·nal·in·tel·li·gence",
+"zh": "情绪智力",
+"lvl": "pep"
+},
+{
+"w": "mention",
+"syl": "men·tion",
+"zh": "提到",
+"lvl": "pep"
+}
+]

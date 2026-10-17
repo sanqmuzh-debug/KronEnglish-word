@@ -1,0 +1,122 @@
+[
+{
+"w": "round",
+"syl": "round",
+"zh": "圆的",
+"lvl": "bnu"
+},
+{
+"w": "call",
+"syl": "call",
+"zh": "把⋯⋯叫作房屋",
+"lvl": "bnu"
+},
+{
+"w": "holiday",
+"syl": "hol·i·day",
+"zh": "假期拿",
+"lvl": "bnu"
+},
+{
+"w": "heavy coat",
+"syl": "heav·y·coat",
+"zh": "毛线衣，羊毛衫",
+"lvl": "bnu"
+},
+{
+"w": "fifty",
+"syl": "fif·ty",
+"zh": "五十的",
+"lvl": "bnu"
+},
+{
+"w": "sixty",
+"syl": "six·ty",
+"zh": "六十",
+"lvl": "bnu"
+},
+{
+"w": "seventy",
+"syl": "sev·en·ty",
+"zh": "七十",
+"lvl": "bnu"
+},
+{
+"w": "ninety",
+"syl": "nine·ty",
+"zh": "九十",
+"lvl": "bnu"
+},
+{
+"w": "No touching",
+"syl": "No·touch·ing",
+"zh": "禁止触摸。禁止拍照。",
+"lvl": "bnu"
+},
+{
+"w": "No photos",
+"syl": "No·pho·tos",
+"zh": "当心，小心",
+"lvl": "bnu"
+},
+{
+"w": "keep quiet",
+"syl": "keep·qui·et",
+"zh": "禁止携带宠物。",
+"lvl": "bnu"
+},
+{
+"w": "No pets",
+"syl": "No·pets",
+"zh": "",
+"lvl": "bnu"
+},
+{
+"w": "no good",
+"syl": "no·good",
+"zh": "禁用食物与饮料。",
+"lvl": "bnu"
+},
+{
+"w": "No bikes",
+"syl": "No·bikes",
+"zh": "禁止奔跑。",
+"lvl": "bnu"
+},
+{
+"w": "No running",
+"syl": "No·run·ning",
+"zh": "看，观看",
+"lvl": "bnu"
+},
+{
+"w": "noodles",
+"syl": "noo·dles",
+"zh": "菜单",
+"lvl": "bnu"
+},
+{
+"w": "fried rice",
+"syl": "fried·rice",
+"zh": "",
+"lvl": "bnu"
+},
+{
+"w": "french fries",
+"syl": "french·fries",
+"zh": "面包",
+"lvl": "bnu"
+},
+{
+"w": "dumplings",
+"syl": "dum·plings",
+"zh": "米饭",
+"lvl": "bnu"
+},
+{
+"w": "hot dog",
+"syl": "hot·dog",
+"zh": "",
+"lvl": "bnu"
+}
+]

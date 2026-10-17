@@ -1,0 +1,991 @@
+{
+ "pub": "外研",
+ "stage": "初中",
+ "grade": "九年级",
+ "vol": "上册",
+ "id": "2c8772f1-c624-51e1-215d-f0a35f4b5820",
+ "title": "（根据2022年版课程标准修订）义务教育教科书 英语 九年级上册",
+ "created": "2026-08-11",
+ "units": [
+  {
+   "n": "Unit 1",
+   "t": "",
+   "words": [
+    {
+     "w": "lady",
+     "zh": "女士，女子"
+    },
+    {
+     "w": "gentleman",
+     "zh": "先生"
+    },
+    {
+     "w": "high school",
+     "zh": "高中"
+    },
+    {
+     "w": "puppet",
+     "zh": "木偶；布袋木偶，手偶"
+    },
+    {
+     "w": "performer",
+     "zh": "表演者"
+    },
+    {
+     "w": "finger",
+     "zh": "手指"
+    },
+    {
+     "w": "teenager",
+     "zh": "青少年"
+    },
+    {
+     "w": "old-fashioned",
+     "zh": "老式的，过时"
+    },
+    {
+     "w": "take part in",
+     "zh": "参加，参与"
+    },
+    {
+     "w": "performance",
+     "zh": "表演；演出"
+    },
+    {
+     "w": "unless",
+     "zh": "除非⋯"
+    },
+    {
+     "w": "video",
+     "zh": "视频"
+    },
+    {
+     "w": "amaze",
+     "zh": "使大为惊奇"
+    },
+    {
+     "w": "post",
+     "zh": "发布"
+    },
+    {
+     "w": "be flooded with",
+     "zh": "大量收到"
+    },
+    {
+     "w": "hold on",
+     "zh": "坚持下去"
+    },
+    {
+     "w": "blood",
+     "zh": "血，血液"
+    },
+    {
+     "w": "interested",
+     "zh": "感兴趣"
+    },
+    {
+     "w": "surprising",
+     "zh": "令人惊奇的，使人吃惊的，出人意料"
+    },
+    {
+     "w": "lost",
+     "zh": "全神贯注"
+    },
+    {
+     "w": "viewer",
+     "zh": "观众"
+    },
+    {
+     "w": "attention",
+     "zh": "注意"
+    },
+    {
+     "w": "abroad a",
+     "zh": "在国外"
+    },
+    {
+     "w": "teenage",
+     "zh": "青少年"
+    },
+    {
+     "w": "folk arts",
+     "zh": "民间艺术"
+    },
+    {
+     "w": "programme",
+     "zh": "计划，方案"
+    },
+    {
+     "w": "volunteer",
+     "zh": "志愿者，义务工作者"
+    },
+    {
+     "w": "group",
+     "zh": "组，群；团体"
+    },
+    {
+     "w": "report",
+     "zh": "报道"
+    },
+    {
+     "w": "fence",
+     "zh": "栅栏，围栏，篱笆"
+    },
+    {
+     "w": "kill",
+     "zh": "弄死，杀死"
+    },
+    {
+     "w": "scarecrow",
+     "zh": "稻草人"
+    },
+    {
+     "w": "educator",
+     "zh": "教育家"
+    },
+    {
+     "w": "country",
+     "zh": "国，国家"
+    },
+    {
+     "w": "nation",
+     "zh": "国家"
+    },
+    {
+     "w": "shoulder the responsibility",
+     "zh": "承担责任"
+    },
+    {
+     "w": "energy",
+     "zh": "力量，活力"
+    },
+    {
+     "w": "youth",
+     "zh": "青年，年轻人"
+    },
+    {
+     "w": "wealthy",
+     "zh": "富有的，富裕"
+    },
+    {
+     "w": "independent",
+     "zh": "独立的，自主"
+    },
+    {
+     "w": "excerpt",
+     "zh": "书籍、诗歌、音乐等）摘录，节录"
+    }
+   ]
+  },
+  {
+   "n": "Unit 2",
+   "t": "",
+   "words": [
+    {
+     "w": "tin",
+     "zh": "金属盒"
+    },
+    {
+     "w": "spare",
+     "zh": "备用的；多余，闲置"
+    },
+    {
+     "w": "moneybox",
+     "zh": "储钱盒，存钱罐"
+    },
+    {
+     "w": "own",
+     "zh": "自己的，属于自己"
+    },
+    {
+     "w": "size",
+     "zh": "大小，尺寸"
+    },
+    {
+     "w": "better",
+     "zh": "更好的，较好"
+    },
+    {
+     "w": "make sense",
+     "zh": "解释得通；有道理"
+    },
+    {
+     "w": "dreamland",
+     "zh": "梦境；理想世界"
+    },
+    {
+     "w": "manage",
+     "zh": "成功应付，得以对付过去"
+    },
+    {
+     "w": "key",
+     "zh": "关键"
+    },
+    {
+     "w": "deal",
+     "zh": "处理，应付，应对"
+    },
+    {
+     "w": "deal with",
+     "zh": "处理，应付，应对"
+    },
+    {
+     "w": "laptop",
+     "zh": "笔记本电脑，便携式电脑"
+    },
+    {
+     "w": "budget",
+     "zh": "预算"
+    },
+    {
+     "w": "exactly",
+     "zh": "正是，不错"
+    },
+    {
+     "w": "pleasure",
+     "zh": "愉快，快乐；满足"
+    },
+    {
+     "w": "end",
+     "zh": "最后部分，未尾"
+    },
+    {
+     "w": "save",
+     "zh": "储蓄，存"
+    },
+    {
+     "w": "bank",
+     "zh": "银行"
+    },
+    {
+     "w": "account",
+     "zh": "账户"
+    },
+    {
+     "w": "expensive",
+     "zh": "昂贵，花钱多"
+    },
+    {
+     "w": "price",
+     "zh": "价格，价钱"
+    },
+    {
+     "w": "savings",
+     "zh": "积蓄；（尤指）银行存款，储蓄金"
+    },
+    {
+     "w": "make ends meet",
+     "zh": "使收支仅能相抵，勉强维持生计"
+    },
+    {
+     "w": "date",
+     "zh": "日期，日子"
+    },
+    {
+     "w": "sale",
+     "zh": "出售，销售"
+    },
+    {
+     "w": "on sale",
+     "zh": "出售；廉价出售"
+    },
+    {
+     "w": "t-shirt",
+     "zh": "恤"
+    },
+    {
+     "w": "website",
+     "zh": "网站"
+    },
+    {
+     "w": "worth",
+     "zh": "值⋯钱"
+    },
+    {
+     "w": "dollar",
+     "zh": "美元"
+    },
+    {
+     "w": "cent",
+     "zh": "分，美分"
+    },
+    {
+     "w": "penny pen",
+     "zh": "（美国或加拿大货币）"
+    },
+    {
+     "w": "couple",
+     "zh": "一对夫妇；一对情侣"
+    },
+    {
+     "w": "flat",
+     "zh": "一套住房，一套公寓房，单元房"
+    },
+    {
+     "w": "treasure",
+     "zh": "珍宝，珍品"
+    },
+    {
+     "w": "christmas Eve",
+     "zh": "圣诞前夕，平安夜"
+    },
+    {
+     "w": "certainly",
+     "zh": "当然"
+    },
+    {
+     "w": "chain",
+     "zh": "链子，链条"
+    },
+    {
+     "w": "comb",
+     "zh": "梳子"
+    }
+   ]
+  },
+  {
+   "n": "Unit 3",
+   "t": "",
+   "words": [
+    {
+     "w": "guest",
+     "zh": "嘉宾，宾客"
+    },
+    {
+     "w": "remains",
+     "zh": "遗迹"
+    },
+    {
+     "w": "lie",
+     "zh": "位于"
+    },
+    {
+     "w": "northwest",
+     "zh": "西北，西北方"
+    },
+    {
+     "w": "such",
+     "zh": "这样，如此，非常（用于强调）"
+    },
+    {
+     "w": "archaeologist",
+     "zh": "考古学家"
+    },
+    {
+     "w": "giant",
+     "zh": "巨人"
+    },
+    {
+     "w": "the fruit of",
+     "zh": "的成果"
+    },
+    {
+     "w": "centre",
+     "zh": "中心"
+    },
+    {
+     "w": "period",
+     "zh": "时期"
+    },
+    {
+     "w": "form",
+     "zh": "形成"
+    },
+    {
+     "w": "valuable",
+     "zh": "宝贵，有价值"
+    },
+    {
+     "w": "smoothly",
+     "zh": "顺利地（进行）"
+    },
+    {
+     "w": "luck",
+     "zh": "好运，幸运"
+    },
+    {
+     "w": "bring out",
+     "zh": "使显现"
+    },
+    {
+     "w": "cartoon",
+     "zh": "卡通 ，动画片"
+    },
+    {
+     "w": "silk",
+     "zh": "丝绸"
+    },
+    {
+     "w": "matchbox",
+     "zh": "火柴盒"
+    },
+    {
+     "w": "weight",
+     "zh": "重量，分量"
+    },
+    {
+     "w": "around",
+     "zh": "大约"
+    },
+    {
+     "w": "ton",
+     "zh": "英吨"
+    },
+    {
+     "w": "mystery",
+     "zh": "神秘事物，谜"
+    },
+    {
+     "w": "coast",
+     "zh": "海岸，海滨"
+    },
+    {
+     "w": "pretty",
+     "zh": "漂亮的，好看，标致"
+    },
+    {
+     "w": "hit",
+     "zh": "风行一时的事物"
+    },
+    {
+     "w": "besides",
+     "zh": "除⋯⋯之外（还）"
+    },
+    {
+     "w": "creativity",
+     "zh": "独创性，创造性，创造力"
+    },
+    {
+     "w": "come to life",
+     "zh": "变得生动/tek'npladi/n. 技术"
+    },
+    {
+     "w": "technology",
+     "zh": "科技，工艺"
+    },
+    {
+     "w": "multimedia",
+     "zh": "多媒体"
+    },
+    {
+     "w": "noisy",
+     "zh": "嘈杂"
+    },
+    {
+     "w": "collection",
+     "zh": "收藏品"
+    },
+    {
+     "w": "fever",
+     "zh": "狂热，六奋"
+    },
+    {
+     "w": "pride",
+     "zh": "自豪，骄傲"
+    },
+    {
+     "w": "take pride in",
+     "zh": "对⋯・感到自豪"
+    },
+    {
+     "w": "design",
+     "zh": "装饰图案"
+    },
+    {
+     "w": "bat",
+     "zh": "蝙蝠"
+    },
+    {
+     "w": "scarf",
+     "zh": "围巾；披肩"
+    },
+    {
+     "w": "fridge",
+     "zh": "冰，冰柜"
+    },
+    {
+     "w": "fridge magnet",
+     "zh": "冰磁贴"
+    },
+    {
+     "w": "mirror",
+     "zh": "反映"
+    }
+   ]
+  },
+  {
+   "n": "Unit 4",
+   "t": "",
+   "words": [
+    {
+     "w": "great-aunt",
+     "zh": "舅婆；姑婆；姨婆；叔祖母；但祖母"
+    },
+    {
+     "w": "person",
+     "zh": "人"
+    },
+    {
+     "w": "fighter",
+     "zh": "斗士，奋斗者"
+    },
+    {
+     "w": "later",
+     "zh": "之后"
+    },
+    {
+     "w": "footstep",
+     "zh": "足迹"
+    },
+    {
+     "w": "name... after",
+     "zh": "以⋯⋯名字给⋯・⋯命名"
+    },
+    {
+     "w": "realise",
+     "zh": "明白；认识到"
+    },
+    {
+     "w": "could",
+     "zh": "能，可以"
+    },
+    {
+     "w": "leave... behind",
+     "zh": "离开，去下"
+    },
+    {
+     "w": "gentle",
+     "zh": "温和的，温柔"
+    },
+    {
+     "w": "pity",
+     "zh": "可惜，遗憾"
+    },
+    {
+     "w": "war",
+     "zh": "战争"
+    },
+    {
+     "w": "battle",
+     "zh": "战斗，战役"
+    },
+    {
+     "w": "shock",
+     "zh": "令人震惊事"
+    },
+    {
+     "w": "survivor",
+     "zh": "生还者，幸存者"
+    },
+    {
+     "w": "temperature",
+     "zh": "温度，气温"
+    },
+    {
+     "w": "front line",
+     "zh": "前线"
+    },
+    {
+     "w": "lose",
+     "zh": "丧失，失去"
+    },
+    {
+     "w": "deeply",
+     "zh": "非常，很深地"
+    },
+    {
+     "w": "presenter",
+     "zh": "主持人，主播"
+    },
+    {
+     "w": "recommend",
+     "zh": "推荐"
+    },
+    {
+     "w": "co-pilot",
+     "zh": "驾驶员"
+    },
+    {
+     "w": "engine",
+     "zh": "发动机，引擎"
+    },
+    {
+     "w": "state",
+     "zh": "陈述；说明"
+    },
+    {
+     "w": "dreamer",
+     "zh": "做梦人"
+    },
+    {
+     "w": "pick",
+     "zh": "采，摘"
+    },
+    {
+     "w": "countless",
+     "zh": "无数，数不尽"
+    },
+    {
+     "w": "thing",
+     "zh": "东西，物"
+    },
+    {
+     "w": "experiment",
+     "zh": "实验"
+    },
+    {
+     "w": "scientific research",
+     "zh": "科学研究"
+    },
+    {
+     "w": "type",
+     "zh": "类型，种类"
+    },
+    {
+     "w": "poor",
+     "zh": "差的，不佳"
+    },
+    {
+     "w": "soil",
+     "zh": "土壤，土地，泥土"
+    },
+    {
+     "w": "feed",
+     "zh": "养活"
+    },
+    {
+     "w": "pass away",
+     "zh": "过世，离世"
+    },
+    {
+     "w": "socialist",
+     "zh": "社会主义"
+    }
+   ]
+  },
+  {
+   "n": "Unit 5",
+   "t": "",
+   "words": [
+    {
+     "w": "human",
+     "zh": "人的，人类］"
+    },
+    {
+     "w": "drop",
+     "zh": "降低"
+    },
+    {
+     "w": "tourist",
+     "zh": "游客"
+    },
+    {
+     "w": "benefit",
+     "zh": "受益，得益"
+    },
+    {
+     "w": "wonder",
+     "zh": "奇迹，奇观"
+    },
+    {
+     "w": "once again",
+     "zh": "再一次"
+    },
+    {
+     "w": "admire",
+     "zh": "欣赏，观赏"
+    },
+    {
+     "w": "throughout",
+     "zh": "在整个期间，目始至终"
+    },
+    {
+     "w": "mark",
+     "zh": "痕迹；标记"
+    },
+    {
+     "w": "rapid",
+     "zh": "快速的，迅速"
+    },
+    {
+     "w": "society",
+     "zh": "社会"
+    },
+    {
+     "w": "cancel",
+     "zh": "取消"
+    },
+    {
+     "w": "start over",
+     "zh": "重新开始，从头来过"
+    },
+    {
+     "w": "get along with",
+     "zh": "与⋯⋯相处融洽"
+    },
+    {
+     "w": "permit",
+     "zh": "允许"
+    },
+    {
+     "w": "affect",
+     "zh": "影响"
+    },
+    {
+     "w": "organisation",
+     "zh": "组织，团体，机构"
+    },
+    {
+     "w": "harm",
+     "zh": "伤害"
+    },
+    {
+     "w": "punish",
+     "zh": "处罚，惩罚"
+    },
+    {
+     "w": "global warming",
+     "zh": "全球变暖"
+    },
+    {
+     "w": "rubbish",
+     "zh": "垃圾"
+    },
+    {
+     "w": "overfish",
+     "zh": "过度捕捞"
+    },
+    {
+     "w": "gas",
+     "zh": "气，气体"
+    },
+    {
+     "w": "greenhouse gas",
+     "zh": "温室气体"
+    },
+    {
+     "w": "square",
+     "zh": "平方"
+    },
+    {
+     "w": "logging",
+     "zh": "伐木"
+    },
+    {
+     "w": "solar panel",
+     "zh": "太阳能电池板"
+    },
+    {
+     "w": "microphone",
+     "zh": "麦克风，话筒，传声器，扩音器"
+    },
+    {
+     "w": "alarm",
+     "zh": "警报"
+    },
+    {
+     "w": "guard",
+     "zh": "警卫；门卫"
+    },
+    {
+     "w": "foreigner",
+     "zh": "外国人"
+    },
+    {
+     "w": "logo",
+     "zh": "标识，标志，徽标"
+    },
+    {
+     "w": "endangered",
+     "zh": "濒危，濒临灭绝"
+    },
+    {
+     "w": "vulnerable",
+     "zh": "易受伤"
+    },
+    {
+     "w": "protection",
+     "zh": "保护"
+    },
+    {
+     "w": "farmland",
+     "zh": "农田，耕地"
+    }
+   ]
+  },
+  {
+   "n": "Unit 6",
+   "t": "",
+   "words": [
+    {
+     "w": "consider",
+     "zh": "认为"
+    },
+    {
+     "w": "material",
+     "zh": "材料（如木材、塑料、金属等）"
+    },
+    {
+     "w": "shape",
+     "zh": "使成为某种形状，使成形"
+    },
+    {
+     "w": "long-lasting",
+     "zh": "耐用"
+    },
+    {
+     "w": "cheap",
+     "zh": "便宜的，廉价的"
+    },
+    {
+     "w": "environmental",
+     "zh": "自然环境的；生态环境"
+    },
+    {
+     "w": "toothbrush",
+     "zh": "牙刷"
+    },
+    {
+     "w": "glove",
+     "zh": "手套"
+    },
+    {
+     "w": "former",
+     "zh": "以前，从前"
+    },
+    {
+     "w": "wing",
+     "zh": "翅膀，翼"
+    },
+    {
+     "w": "tie",
+     "zh": "系，扎，拴，捆"
+    },
+    {
+     "w": "stuck",
+     "zh": "卡住的，无法移动的，动不了"
+    },
+    {
+     "w": "bin",
+     "zh": "柜；垃圾，垃圾桶"
+    },
+    {
+     "w": "mistake... for",
+     "zh": "把••错当成"
+    },
+    {
+     "w": "average",
+     "zh": "平均数"
+    },
+    {
+     "w": "on average",
+     "zh": "平均来看"
+    },
+    {
+     "w": "gram",
+     "zh": "克（公制基本重量单位）"
+    },
+    {
+     "w": "tiny",
+     "zh": "极 小"
+    },
+    {
+     "w": "break down",
+     "zh": "分解"
+    },
+    {
+     "w": "trouble",
+     "zh": "麻烦，问题"
+    },
+    {
+     "w": "wisely",
+     "zh": "明智地"
+    },
+    {
+     "w": "highlight",
+     "zh": "突出，强调"
+    },
+    {
+     "w": "pollute",
+     "zh": "污染"
+    },
+    {
+     "w": "electronic",
+     "zh": "电子；电子器件"
+    },
+    {
+     "w": "truck",
+     "zh": "货车，卡车"
+    },
+    {
+     "w": "emission",
+     "zh": "排放物，散发物"
+    },
+    {
+     "w": "upcycle",
+     "zh": "升级改造"
+    },
+    {
+     "w": "reuse",
+     "zh": "再使用，重复使用"
+    },
+    {
+     "w": "fox",
+     "zh": "狐狸"
+    },
+    {
+     "w": "loudly",
+     "zh": "响亮地，大声地"
+    },
+    {
+     "w": "land",
+     "zh": "掉落"
+    },
+    {
+     "w": "village",
+     "zh": "乡村，村庄"
+    },
+    {
+     "w": "reporter",
+     "zh": "记者"
+    },
+    {
+     "w": "depth",
+     "zh": "深，深度"
+    },
+    {
+     "w": "suggest",
+     "zh": "建议，提议"
+    },
+    {
+     "w": "businessman",
+     "zh": "商人；企业家"
+    },
+    {
+     "w": "industrial",
+     "zh": "工业"
+    },
+    {
+     "w": "litter",
+     "zh": "垃圾，废弃物"
+    },
+    {
+     "w": "peace",
+     "zh": "和平；平静，安宁"
+    },
+    {
+     "w": "business",
+     "zh": "公司，企业，商业机构"
+    },
+    {
+     "w": "building",
+     "zh": "建筑物；楼房，房子，楼宇"
+    },
+    {
+     "w": "imagination",
+     "zh": "幻想"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,707 @@
+{
+ "pub": "译林",
+ "stage": "小学",
+ "grade": "六年级",
+ "vol": "上册",
+ "id": "32d2e60a-be5a-4c1c-92d6-8b99e00f6db3",
+ "title": "（根据2022年版课程标准修订）义务教育教科书·英语 六年级上册",
+ "created": "2022-09-29",
+ "units": [
+  {
+   "n": "Unit 1",
+   "t": "",
+   "words": [
+    {
+     "w": "long long ago",
+     "zh": "很久以前"
+    },
+    {
+     "w": "magic",
+     "zh": "有魔力的，神奇"
+    },
+    {
+     "w": "clever",
+     "zh": "聪明"
+    },
+    {
+     "w": "foolish",
+     "zh": "愚蠢"
+    },
+    {
+     "w": "through",
+     "zh": "军过"
+    },
+    {
+     "w": "laugh",
+     "zh": "笑，大笑"
+    },
+    {
+     "w": "wear",
+     "zh": "芽"
+    },
+    {
+     "w": "tell",
+     "zh": "讲，叙述"
+    },
+    {
+     "w": "each",
+     "zh": "每个"
+    },
+    {
+     "w": "say",
+     "zh": "说"
+    },
+    {
+     "w": "sentence",
+     "zh": "句子"
+    },
+    {
+     "w": "quick",
+     "zh": "迅速的，快的"
+    },
+    {
+     "w": "next",
+     "zh": "下一个"
+    },
+    {
+     "w": "little",
+     "zh": "小的，年幼的"
+    },
+    {
+     "w": "turn",
+     "zh": "机会"
+    },
+    {
+     "w": "think",
+     "zh": "想，思考"
+    },
+    {
+     "w": "hard",
+     "zh": "努力地，费劲地"
+    },
+    {
+     "w": "laugh at",
+     "zh": "嘲笑"
+    },
+    {
+     "w": "grandchildren",
+     "zh": "孙子，孙女；外孙，外孙女"
+    },
+    {
+     "w": "move. away",
+     "zh": "把•⋯搬走"
+    },
+    {
+     "w": "child",
+     "zh": "孩子"
+    }
+   ]
+  },
+  {
+   "n": "Unit 2",
+   "t": "",
+   "words": [
+    {
+     "w": "sunny",
+     "zh": "晴朗"
+    },
+    {
+     "w": "show",
+     "zh": "展览，展示"
+    },
+    {
+     "w": "interesting",
+     "zh": "有趣的，有意思（I）"
+    },
+    {
+     "w": "weather",
+     "zh": "天气变成，变为"
+    },
+    {
+     "w": "become",
+     "zh": "变成，成为"
+    },
+    {
+     "w": "windy",
+     "zh": "有风多云"
+    },
+    {
+     "w": "cloudy",
+     "zh": "多云阴天的"
+    },
+    {
+     "w": "high",
+     "zh": "在高处"
+    },
+    {
+     "w": "sky",
+     "zh": "天空"
+    },
+    {
+     "w": "bring",
+     "zh": "带来"
+    },
+    {
+     "w": "honey",
+     "zh": "蜂蜜"
+    },
+    {
+     "w": "drink",
+     "zh": "饮料"
+    },
+    {
+     "w": "ant",
+     "zh": "蚂蚁"
+    },
+    {
+     "w": "bee",
+     "zh": "蜜蜂"
+    },
+    {
+     "w": "cloud",
+     "zh": "云"
+    },
+    {
+     "w": "rain",
+     "zh": "下雨"
+    },
+    {
+     "w": "rainy",
+     "zh": "多雨"
+    },
+    {
+     "w": "meet",
+     "zh": "遇见"
+    },
+    {
+     "w": "lose",
+     "zh": "丢失"
+    },
+    {
+     "w": "know",
+     "zh": "知道"
+    },
+    {
+     "w": "What happened",
+     "zh": "出什么事了？"
+    },
+    {
+     "w": "climb up",
+     "zh": "爬上"
+    },
+    {
+     "w": "hold onto",
+     "zh": "抓紧"
+    },
+    {
+     "w": "fly away",
+     "zh": "飞走"
+    }
+   ]
+  },
+  {
+   "n": "Unit 3",
+   "t": "",
+   "words": [
+    {
+     "w": "holiday",
+     "zh": "假日，假期"
+    },
+    {
+     "w": "national Day",
+     "zh": "国庆节"
+    },
+    {
+     "w": "call",
+     "zh": "打电话"
+    },
+    {
+     "w": "bund",
+     "zh": "外滩上海博物馆"
+    },
+    {
+     "w": "shanghai Museum",
+     "zh": ""
+    },
+    {
+     "w": "star",
+     "zh": "星星"
+    },
+    {
+     "w": "great Wall",
+     "zh": "长城"
+    },
+    {
+     "w": "summer Palace",
+     "zh": "颐和园"
+    },
+    {
+     "w": "fashion show",
+     "zh": "时装表演，时装秀"
+    },
+    {
+     "w": "excited",
+     "zh": "激动的，兴奋"
+    },
+    {
+     "w": "paper",
+     "zh": "纸"
+    },
+    {
+     "w": "ask",
+     "zh": "问"
+    },
+    {
+     "w": "bottle",
+     "zh": "瓶子"
+    },
+    {
+     "w": "go well",
+     "zh": "进展顺利"
+    },
+    {
+     "w": "at first",
+     "zh": "开始，最初"
+    },
+    {
+     "w": "heavy rain",
+     "zh": "大雨"
+    }
+   ]
+  },
+  {
+   "n": "Unit 4",
+   "t": "",
+   "words": [
+    {
+     "w": "then and now",
+     "zh": "…•以前"
+    },
+    {
+     "w": "use",
+     "zh": "使用，利用"
+    },
+    {
+     "w": "telephone",
+     "zh": "电话"
+    },
+    {
+     "w": "office",
+     "zh": "办公室"
+    },
+    {
+     "w": "mobile phone",
+     "zh": "移动电话，手机"
+    },
+    {
+     "w": "anywhere",
+     "zh": "随处，到处"
+    },
+    {
+     "w": "radio",
+     "zh": "收音机报纸"
+    },
+    {
+     "w": "newspaper",
+     "zh": "报纸"
+    },
+    {
+     "w": "news",
+     "zh": "新闻"
+    },
+    {
+     "w": "watch",
+     "zh": "观看"
+    },
+    {
+     "w": "e-book",
+     "zh": "电子书"
+    },
+    {
+     "w": "make friends",
+     "zh": "交朋友"
+    },
+    {
+     "w": "all over the world",
+     "zh": "全世界"
+    },
+    {
+     "w": "do shopping",
+     "zh": "购物"
+    },
+    {
+     "w": "TV",
+     "zh": "电视"
+    },
+    {
+     "w": "look out of",
+     "zh": "朝••⋯外看"
+    },
+    {
+     "w": "go on",
+     "zh": "继续"
+    },
+    {
+     "w": "still",
+     "zh": "仍然"
+    },
+    {
+     "w": "What day is today",
+     "zh": "今天是星期几？"
+    },
+    {
+     "w": "spell",
+     "zh": "拼读，拼写"
+    },
+    {
+     "w": "make a sentence",
+     "zh": "造句"
+    },
+    {
+     "w": "with",
+     "zh": "用"
+    },
+    {
+     "w": "yesterday",
+     "zh": "昨天"
+    }
+   ]
+  },
+  {
+   "n": "Unit 5",
+   "t": "",
+   "words": [
+    {
+     "w": "sign",
+     "zh": "标识"
+    },
+    {
+     "w": "shopping centre",
+     "zh": "购物中心"
+    },
+    {
+     "w": "careful",
+     "zh": "小心，当心"
+    },
+    {
+     "w": "What does it mean",
+     "zh": "它是什么意思？意思是"
+    },
+    {
+     "w": "mean",
+     "zh": "意味着，表示"
+    },
+    {
+     "w": "floor",
+     "zh": "地面"
+    },
+    {
+     "w": "litter",
+     "zh": "乱扔垃圾"
+    },
+    {
+     "w": "go in",
+     "zh": "进入，走进"
+    },
+    {
+     "w": "take... into",
+     "zh": "带入"
+    },
+    {
+     "w": "restaurant",
+     "zh": "饭店，贅厅"
+    },
+    {
+     "w": "someone",
+     "zh": "某人"
+    },
+    {
+     "w": "smoke",
+     "zh": "吸烟，抽烟"
+    },
+    {
+     "w": "smell",
+     "zh": "闻到"
+    },
+    {
+     "w": "No eating or drinking",
+     "zh": "请勿饮食。"
+    },
+    {
+     "w": "No littering",
+     "zh": "请勿乱扔垃圾。"
+    },
+    {
+     "w": "no parking",
+     "zh": "请勿停车。"
+    },
+    {
+     "w": "no smoking",
+     "zh": "请勿吸烟。"
+    },
+    {
+     "w": "danger",
+     "zh": "危险！"
+    },
+    {
+     "w": "Wet floor",
+     "zh": "小心地滑。"
+    },
+    {
+     "w": "outing",
+     "zh": "外出游玩，远足"
+    },
+    {
+     "w": "walk on",
+     "zh": "继续走路"
+    },
+    {
+     "w": "around",
+     "zh": "在••⋯周围"
+    }
+   ]
+  },
+  {
+   "n": "Unit 6",
+   "t": "",
+   "words": [
+    {
+     "w": "keep",
+     "zh": "保持，维持"
+    },
+    {
+     "w": "clean",
+     "zh": "干净的，整洁"
+    },
+    {
+     "w": "make",
+     "zh": "便・・・⋯・变得"
+    },
+    {
+     "w": "air",
+     "zh": "空气"
+    },
+    {
+     "w": "dirty",
+     "zh": "航脏"
+    },
+    {
+     "w": "rubbish",
+     "zh": "垃圾"
+    },
+    {
+     "w": "messy",
+     "zh": "肮脏的，乱七八糟"
+    },
+    {
+     "w": "dead",
+     "zh": "死"
+    },
+    {
+     "w": "move... away from",
+     "zh": "从•・••搬走"
+    },
+    {
+     "w": "bin",
+     "zh": "垃圾桶"
+    },
+    {
+     "w": "plant",
+     "zh": "种植，栽种更多"
+    },
+    {
+     "w": "more",
+     "zh": "更多的，较多的"
+    },
+    {
+     "w": "museum",
+     "zh": "博物馆"
+    },
+    {
+     "w": "throw",
+     "zh": "扔"
+    },
+    {
+     "w": "skin",
+     "zh": "果皮"
+    },
+    {
+     "w": "ground",
+     "zh": "地面，地上"
+    },
+    {
+     "w": "pick... up",
+     "zh": "捡起，拾起"
+    },
+    {
+     "w": "slip",
+     "zh": "滑倒"
+    },
+    {
+     "w": "fall",
+     "zh": "摔倒"
+    }
+   ]
+  },
+  {
+   "n": "Unit 7",
+   "t": "",
+   "words": [
+    {
+     "w": "protect",
+     "zh": "保护"
+    },
+    {
+     "w": "earth",
+     "zh": "地球"
+    },
+    {
+     "w": "save",
+     "zh": "节约"
+    },
+    {
+     "w": "useful",
+     "zh": "有用的"
+    },
+    {
+     "w": "much",
+     "zh": "很多"
+    },
+    {
+     "w": "waste",
+     "zh": "浪费"
+    },
+    {
+     "w": "reuse",
+     "zh": "再利用"
+    },
+    {
+     "w": "energy",
+     "zh": "能源"
+    },
+    {
+     "w": "most",
+     "zh": "大部分"
+    },
+    {
+     "w": "come from",
+     "zh": "从⋯⋯•来，来目"
+    },
+    {
+     "w": "coal",
+     "zh": "煤炭"
+    },
+    {
+     "w": "oil",
+     "zh": "石油"
+    },
+    {
+     "w": "drive",
+     "zh": "开车，驾驶"
+    },
+    {
+     "w": "wood",
+     "zh": "不头，木材"
+    },
+    {
+     "w": "other",
+     "zh": "其他"
+    },
+    {
+     "w": "cut down",
+     "zh": "砍伐，砍掉太多"
+    },
+    {
+     "w": "too many",
+     "zh": ""
+    },
+    {
+     "w": "too much",
+     "zh": "太多"
+    },
+    {
+     "w": "plastic",
+     "zh": "塑料"
+    },
+    {
+     "w": "glass",
+     "zh": "玻璃"
+    },
+    {
+     "w": "project",
+     "zh": "课题"
+    },
+    {
+     "w": "poster",
+     "zh": "海报"
+    },
+    {
+     "w": "gate",
+     "zh": "大门"
+    }
+   ]
+  },
+  {
+   "n": "Unit 8",
+   "t": "",
+   "words": [
+    {
+     "w": "get",
+     "zh": "收到，接到"
+    },
+    {
+     "w": "next week",
+     "zh": "下周"
+    },
+    {
+     "w": "food",
+     "zh": "食物，食品"
+    },
+    {
+     "w": "tangyuan",
+     "zh": "汤圆"
+    },
+    {
+     "w": "chinese New Year's Eve",
+     "zh": "大年夜，除夕"
+    },
+    {
+     "w": "chinese New Year's Day",
+     "zh": "大年初一，春节"
+    },
+    {
+     "w": "red packet",
+     "zh": "红包舞狮"
+    },
+    {
+     "w": "lion dance",
+     "zh": ""
+    },
+    {
+     "w": "fireworks",
+     "zh": "烟花表演"
+    },
+    {
+     "w": "firecracker",
+     "zh": "鞭炮"
+    },
+    {
+     "w": "rich",
+     "zh": "富有的，有钱的"
+    },
+    {
+     "w": "plan",
+     "zh": "计划，打算"
+    },
+    {
+     "w": "hooray",
+     "zh": "好极了"
+    },
+    {
+     "w": "light",
+     "zh": "点燃"
+    }
+   ]
+  }
+ ]
+}

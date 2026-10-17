@@ -1,0 +1,122 @@
+[
+{
+"w": "moor",
+"syl": "moor",
+"zh": "系住",
+"lvl": "exam"
+},
+{
+"w": "mosque",
+"syl": "mosque",
+"zh": "清真寺",
+"lvl": "exam"
+},
+{
+"w": "mow",
+"syl": "mow",
+"zh": "草堆",
+"lvl": "exam"
+},
+{
+"w": "nausea",
+"syl": "nau·se·a",
+"zh": "恶心，晕船",
+"lvl": "exam"
+},
+{
+"w": "negotiation",
+"syl": "negotiation",
+"zh": "谈判",
+"lvl": "exam"
+},
+{
+"w": "nominee",
+"syl": "nom·i·nee",
+"zh": "被任命者",
+"lvl": "exam"
+},
+{
+"w": "nude",
+"syl": "nude",
+"zh": "裸的，裸体的",
+"lvl": "exam"
+},
+{
+"w": "numeral",
+"syl": "nu·me·ral",
+"zh": "数字",
+"lvl": "exam"
+},
+{
+"w": "obliging",
+"syl": "o·bli·ging",
+"zh": "乐于助人的",
+"lvl": "exam"
+},
+{
+"w": "oblong",
+"syl": "ob·long",
+"zh": "椭圆形的",
+"lvl": "exam"
+},
+{
+"w": "obscurity",
+"syl": "obs·cur·i·ty",
+"zh": "朦胧",
+"lvl": "exam"
+},
+{
+"w": "omission",
+"syl": "o·mis·sion",
+"zh": "疏忽，遗漏",
+"lvl": "exam"
+},
+{
+"w": "outright",
+"syl": "out·right",
+"zh": "全部地",
+"lvl": "exam"
+},
+{
+"w": "overview",
+"syl": "o·ver·view",
+"zh": "[图情] 综述",
+"lvl": "exam"
+},
+{
+"w": "parenthesis",
+"syl": "pa·ren·the·sis",
+"zh": "插入语,插入成分",
+"lvl": "exam"
+},
+{
+"w": "parish",
+"syl": "pa·rish",
+"zh": "教区",
+"lvl": "exam"
+},
+{
+"w": "pentagon",
+"syl": "pen·ta·gon",
+"zh": "五角形",
+"lvl": "exam"
+},
+{
+"w": "perch",
+"syl": "perch",
+"zh": "鲈鱼",
+"lvl": "exam"
+},
+{
+"w": "peril",
+"syl": "pe·ril",
+"zh": "危险",
+"lvl": "exam"
+},
+{
+"w": "perturb",
+"syl": "per·turb",
+"zh": "扰乱",
+"lvl": "exam"
+}
+]

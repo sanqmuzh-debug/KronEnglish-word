@@ -1,0 +1,947 @@
+{
+ "pub": "沪教",
+ "stage": "高中",
+ "grade": "选择性必修 第四册",
+ "vol": "",
+ "id": "9b69b588-9343-48b5-91de-1bb5a89afd9d",
+ "title": "普通高中教科书·英语选择性必修 第四册",
+ "created": "2023-07-03",
+ "units": [
+  {
+   "n": "Unit 1",
+   "t": "",
+   "words": [
+    {
+     "w": "minor",
+     "zh": "较小的；次要的；轻微"
+    },
+    {
+     "w": "testimony",
+     "zh": "证明；证据"
+    },
+    {
+     "w": "sweep",
+     "zh": "猛烈吹过；席卷"
+    },
+    {
+     "w": "footage",
+     "zh": "连续镜头，片段"
+    },
+    {
+     "w": "compelling",
+     "zh": "扣人心弦昀"
+    },
+    {
+     "w": "zone",
+     "zh": "地区，地带"
+    },
+    {
+     "w": "agenda",
+     "zh": "议程表，议事日程"
+    },
+    {
+     "w": "cite",
+     "zh": "提及（原因）；举出（示例）；列举"
+    },
+    {
+     "w": "reliable",
+     "zh": "具实可信的"
+    },
+    {
+     "w": "examine",
+     "zh": "审查；调查；考查；考察"
+    },
+    {
+     "w": "coverage",
+     "zh": "新闻报道"
+    },
+    {
+     "w": "unregulated",
+     "zh": "不受法规约束的；不受管制的"
+    },
+    {
+     "w": "trace",
+     "zh": "查出；找到；发现；追踪"
+    },
+    {
+     "w": "network",
+     "zh": "人际网"
+    },
+    {
+     "w": "kidnap",
+     "zh": "劫持；绑架"
+    },
+    {
+     "w": "alongside",
+     "zh": "在…⋯旁边；沿着……的边"
+    },
+    {
+     "w": "highway",
+     "zh": "公路"
+    },
+    {
+     "w": "prosecute",
+     "zh": "起诉；控告；检举"
+    },
+    {
+     "w": "blame",
+     "zh": "把……归咎于；责怪；指责"
+    },
+    {
+     "w": "bruise",
+     "zh": "青肿；瘀伤"
+    },
+    {
+     "w": "clinic",
+     "zh": "诊所；（医院）门诊部"
+    },
+    {
+     "w": "witness",
+     "zh": "当场看到，目击n. a person who sees something happen 目击者；见证入"
+    },
+    {
+     "w": "cheat",
+     "zh": "欺骗"
+    },
+    {
+     "w": "aboard",
+     "zh": "在 上；上（船、飞机、公共汽车、火车等）"
+    },
+    {
+     "w": "shave jerk",
+     "zh": "剃"
+    },
+    {
+     "w": "lower",
+     "zh": "使……降下；把……放低"
+    },
+    {
+     "w": "arch",
+     "zh": "拱，拱门"
+    },
+    {
+     "w": "part of",
+     "zh": "拱"
+    },
+    {
+     "w": "drag",
+     "zh": "拖，拉，拽，扯"
+    },
+    {
+     "w": "prejudice",
+     "zh": "偏见；成见"
+    },
+    {
+     "w": "expectation",
+     "zh": "预料；预期；期待"
+    },
+    {
+     "w": "typhoon",
+     "zh": "台风"
+    },
+    {
+     "w": "lamb",
+     "zh": "羔羊；小羊"
+    },
+    {
+     "w": "suspect",
+     "zh": "怀疑（某人有罪）"
+    },
+    {
+     "w": "instinct",
+     "zh": "本能"
+    },
+    {
+     "w": "reality",
+     "zh": "事实"
+    },
+    {
+     "w": "envy",
+     "zh": "羡慕；忌妒"
+    },
+    {
+     "w": "outlook",
+     "zh": "人生观；见解"
+    },
+    {
+     "w": "comprehension",
+     "zh": "理解力；领悟能力"
+    },
+    {
+     "w": "transition",
+     "zh": "过渡；转变；变革；变迁"
+    },
+    {
+     "w": "dock",
+     "zh": "进港，停靠码头，进入船坞"
+    },
+    {
+     "w": "dramatic",
+     "zh": "引人注目的；给人印象深刻"
+    },
+    {
+     "w": "spontaneous",
+     "zh": "自然的；无雕饰的"
+    },
+    {
+     "w": "socialist",
+     "zh": "社会主义的"
+    },
+    {
+     "w": "unscripted",
+     "zh": "无底稿的；未详细准"
+    },
+    {
+     "w": "contemporary",
+     "zh": "当代；现代"
+    },
+    {
+     "w": "rhythm",
+     "zh": "节奏；韵律；律动"
+    },
+    {
+     "w": "emerge",
+     "zh": "显现；显露；露头"
+    },
+    {
+     "w": "capture",
+     "zh": "（用文字或图片）记录"
+    },
+    {
+     "w": "fall for",
+     "zh": ""
+    },
+    {
+     "w": "be bound to",
+     "zh": "一定会；很可能会"
+    }
+   ]
+  },
+  {
+   "n": "Unit 2",
+   "t": "",
+   "words": [
+    {
+     "w": "corporation",
+     "zh": "公司"
+    },
+    {
+     "w": "script",
+     "zh": "剧本；电影剧本；广播 稿"
+    },
+    {
+     "w": "frontier",
+     "zh": "边境， 边疆"
+    },
+    {
+     "w": "entrepreneur",
+     "zh": "创业者；企业家"
+    },
+    {
+     "w": "immortality",
+     "zh": "永生；不朽；不灭"
+    },
+    {
+     "w": "transplant",
+     "zh": "移植"
+    },
+    {
+     "w": "fundamentally",
+     "zh": "根本上；完全地"
+    },
+    {
+     "w": "mere",
+     "zh": "仅仅的；只不过"
+    },
+    {
+     "w": "purely",
+     "zh": "仅仅；完全"
+    },
+    {
+     "w": "pose",
+     "zh": "造成 ；引起；产生"
+    },
+    {
+     "w": "criminal",
+     "zh": "罪犯"
+    },
+    {
+     "w": "severe",
+     "zh": "极为恶劣的；十分严重"
+    },
+    {
+     "w": "career",
+     "zh": "职业；生涯"
+    },
+    {
+     "w": "resistance",
+     "zh": "反对；抵制；抗拒"
+    },
+    {
+     "w": "dynamic",
+     "zh": "动态的；发展变化（of a person） having a lot of energy and a strong personality 充满活力且个性鲜明"
+    },
+    {
+     "w": "gender",
+     "zh": "性别"
+    },
+    {
+     "w": "opponent",
+     "zh": "反对者"
+    },
+    {
+     "w": "mechanics",
+     "zh": "力学"
+    },
+    {
+     "w": "condemn",
+     "zh": "宣判；判处"
+    },
+    {
+     "w": "client",
+     "zh": "委托人；当事人；客户"
+    },
+    {
+     "w": "shrug",
+     "zh": "耸肩（表示不在乎或不知道）"
+    },
+    {
+     "w": "sustain",
+     "zh": "维持"
+    },
+    {
+     "w": "propose",
+     "zh": "提议；建议"
+    },
+    {
+     "w": "drill",
+     "zh": "练习；训练"
+    },
+    {
+     "w": "dismiss",
+     "zh": "不予考虑；摒弃；对⋯…不屑一提"
+    },
+    {
+     "w": "urgent",
+     "zh": "紧急的；紧迫的"
+    },
+    {
+     "w": "resign",
+     "zh": "辞职；辞去"
+    },
+    {
+     "w": "sneeze",
+     "zh": "打喷嚏"
+    },
+    {
+     "w": "control for",
+     "zh": "打喷嚏"
+    },
+    {
+     "w": "sink",
+     "zh": "下沉；下陷；沉没"
+    },
+    {
+     "w": "smash",
+     "zh": "打碎；破碎"
+    },
+    {
+     "w": "owe",
+     "zh": "归因于；归功于；起源于"
+    },
+    {
+     "w": "drown",
+     "zh": "淹死；溺死"
+    },
+    {
+     "w": "miraculously",
+     "zh": "奇迹般地；不可思议地"
+    },
+    {
+     "w": "explode",
+     "zh": "爆炸；爆破；爆裂"
+    },
+    {
+     "w": "choke",
+     "zh": "使窒息"
+    },
+    {
+     "w": "debt",
+     "zh": "借款；欠款；债务"
+    },
+    {
+     "w": "architect",
+     "zh": "建筑师"
+    },
+    {
+     "w": "forgive",
+     "zh": "("
+    },
+    {
+     "w": "tension",
+     "zh": "紧张，不安"
+    },
+    {
+     "w": "deterioration",
+     "zh": "变坏；恶化；退化"
+    },
+    {
+     "w": "harmony",
+     "zh": "融洽；和睦"
+    },
+    {
+     "w": "glow",
+     "zh": "暗淡光"
+    },
+    {
+     "w": "magnificent",
+     "zh": "壮丽的；宏伟"
+    },
+    {
+     "w": "vulnerable",
+     "zh": "脆弱的，易受：…伤害"
+    },
+    {
+     "w": "infection",
+     "zh": "（身体某部位的）感染；传染病"
+    },
+    {
+     "w": "alert",
+     "zh": "警觉的；警惕的；戒备"
+    },
+    {
+     "w": "bearded",
+     "zh": "留胡子的；有胡须的"
+    },
+    {
+     "w": "bend",
+     "zh": "拐弯；弯曲"
+    },
+    {
+     "w": "sigh",
+     "zh": "叹气；叹息"
+    },
+    {
+     "w": "hence",
+     "zh": "因此；由此"
+    },
+    {
+     "w": "occupy",
+     "zh": "使用，占用"
+    },
+    {
+     "w": "legend",
+     "zh": "尤指某领域中）传奇人物"
+    },
+    {
+     "w": "frustrate",
+     "zh": "使沮丧， 使灰心"
+    },
+    {
+     "w": "shelf life",
+     "zh": ""
+    },
+    {
+     "w": "gender discrimination",
+     "zh": ""
+    },
+    {
+     "w": "bucket list",
+     "zh": "人生愿望清单"
+    },
+    {
+     "w": "give something away",
+     "zh": "赠送；捐赠"
+    }
+   ]
+  },
+  {
+   "n": "Unit 3",
+   "t": "",
+   "words": [
+    {
+     "w": "frog",
+     "zh": "蛙；青蛙"
+    },
+    {
+     "w": "strait",
+     "zh": "海峡"
+    },
+    {
+     "w": "meanwhile",
+     "zh": "同时；与此同时"
+    },
+    {
+     "w": "float",
+     "zh": "浮动；漂流；飘动；飘移"
+    },
+    {
+     "w": "butcher",
+     "zh": "屠宰；宰杀"
+    },
+    {
+     "w": "distressing",
+     "zh": "使人痛苦的；令人苦恼"
+    },
+    {
+     "w": "statistic",
+     "zh": "统计数字；统计资料"
+    },
+    {
+     "w": "predator",
+     "zh": "捕食者；捕食性动物"
+    },
+    {
+     "w": "collapse",
+     "zh": "机构、生意、行动等）突然失败，倒闭，崩溃v. to fall down or fall in suddenly, often after breaking apart（突然）倒塌，坍塌"
+    },
+    {
+     "w": "recreation",
+     "zh": "娱乐；消遣；娱乐活动；游戏"
+    },
+    {
+     "w": "association",
+     "zh": "协会， 团体"
+    },
+    {
+     "w": "species",
+     "zh": "种类"
+    },
+    {
+     "w": "prohibit",
+     "zh": "禁止"
+    },
+    {
+     "w": "monstrous",
+     "zh": "丑恶的；道德败坏的；骇人"
+    },
+    {
+     "w": "monitor",
+     "zh": "持续监测"
+    },
+    {
+     "w": "sympathy",
+     "zh": "同情"
+    },
+    {
+     "w": "numerous",
+     "zh": "众多的；许多时"
+    },
+    {
+     "w": "cruel",
+     "zh": "引起痛苦的"
+    },
+    {
+     "w": "nest",
+     "zh": "筑巢"
+    },
+    {
+     "w": "urban",
+     "zh": "城镇的；城市的"
+    },
+    {
+     "w": "destruction",
+     "zh": "摧毁；毁灭；破坏"
+    },
+    {
+     "w": "arouse",
+     "zh": "激起，引起"
+    },
+    {
+     "w": "mineral",
+     "zh": "矿物"
+    },
+    {
+     "w": "shortage",
+     "zh": "不足；缺少；短缺"
+    },
+    {
+     "w": "extract",
+     "zh": "提取；提炼"
+    },
+    {
+     "w": "fetch",
+     "zh": "售得，卖得"
+    },
+    {
+     "w": "expansion",
+     "zh": "扩张；扩展；扩大"
+    },
+    {
+     "w": "garlic",
+     "zh": "大蒜"
+    },
+    {
+     "w": "legal",
+     "zh": "法律允许的；合法的；法律要求"
+    },
+    {
+     "w": "boundary",
+     "zh": "分界线， 边界"
+    },
+    {
+     "w": "label",
+     "zh": "标签；签条；标记"
+    },
+    {
+     "w": "administration",
+     "zh": "管理"
+    },
+    {
+     "w": "handle",
+     "zh": "处理，应付（局势、人、工作或情感）"
+    },
+    {
+     "w": "input",
+     "zh": "输入"
+    },
+    {
+     "w": "distract",
+     "zh": "转移 ；分散（思想）；使分心"
+    },
+    {
+     "w": "bat",
+     "zh": "蝙蝠"
+    },
+    {
+     "w": "install",
+     "zh": "安装；设置"
+    },
+    {
+     "w": "circuit",
+     "zh": "电路；线路"
+    },
+    {
+     "w": "automatically",
+     "zh": "自动地"
+    },
+    {
+     "w": "mud",
+     "zh": "泥；淤泥；泥浆"
+    },
+    {
+     "w": "pretend",
+     "zh": "装扮，扮作，模拟"
+    },
+    {
+     "w": "teapot",
+     "zh": "茶壶"
+    },
+    {
+     "w": "chart",
+     "zh": "图表"
+    },
+    {
+     "w": "breeder",
+     "zh": ""
+    },
+    {
+     "w": "protein",
+     "zh": "蛋日质"
+    },
+    {
+     "w": "hostile",
+     "zh": "有阻碍的；不利"
+    },
+    {
+     "w": "fertilizer",
+     "zh": "肥料"
+    },
+    {
+     "w": "basin",
+     "zh": "盆地；凹地；海盆"
+    },
+    {
+     "w": "domestically",
+     "zh": "本国地；国内地"
+    },
+    {
+     "w": "stock",
+     "zh": "存货"
+    },
+    {
+     "w": "tolerance",
+     "zh": "宽容，忍受"
+    },
+    {
+     "w": "diversity",
+     "zh": "差异 ；不同（点）"
+    },
+    {
+     "w": "dominance",
+     "zh": "支配地位，统治"
+    },
+    {
+     "w": "cuisine",
+     "zh": "烹饪；风味"
+    },
+    {
+     "w": "bakery",
+     "zh": "面包 店；面包 烘房"
+    },
+    {
+     "w": "damp",
+     "zh": "潮湿；湿气重的"
+    },
+    {
+     "w": "stream",
+     "zh": "鱼贯而行；一个接一个地移动"
+    },
+    {
+     "w": "fare",
+     "zh": "饭菜"
+    },
+    {
+     "w": "ancestral",
+     "zh": "祖先的"
+    },
+    {
+     "w": "ritual",
+     "zh": "程序；仪规；礼节"
+    },
+    {
+     "w": "marvel",
+     "zh": "令人惊异的人 ；奇迹"
+    },
+    {
+     "w": "apparently",
+     "zh": "可见；看来；显然"
+    },
+    {
+     "w": "pork",
+     "zh": "猪肉"
+    },
+    {
+     "w": "outlet",
+     "zh": "出口， 出路"
+    },
+    {
+     "w": "bacon",
+     "zh": "咸肉"
+    },
+    {
+     "w": "wipe out",
+     "zh": "彻底消灭；全部摧毁"
+    },
+    {
+     "w": "marine ecosystem",
+     "zh": "海洋生态系统"
+    }
+   ]
+  },
+  {
+   "n": "Unit 4",
+   "t": "",
+   "words": [
+    {
+     "w": "consultant",
+     "zh": "顾问"
+    },
+    {
+     "w": "faint",
+     "zh": "微弱的，不清楚"
+    },
+    {
+     "w": "outline",
+     "zh": "提纲，要点"
+    },
+    {
+     "w": "hardware",
+     "zh": "硬件"
+    },
+    {
+     "w": "slight",
+     "zh": "轻微的；略微"
+    },
+    {
+     "w": "cord",
+     "zh": "软线；花线；皮线"
+    },
+    {
+     "w": "inch",
+     "zh": "英寸"
+    },
+    {
+     "w": "intervening",
+     "zh": "发生于其间的；介于中间"
+    },
+    {
+     "w": "premature",
+     "zh": "未成熟的；过早的；提前的"
+    },
+    {
+     "w": "pipe",
+     "zh": "管子；管道"
+    },
+    {
+     "w": "adolescent",
+     "zh": "青春期的n. a young person who is developing from a child into an adult 青少年"
+    },
+    {
+     "w": "phase",
+     "zh": "阶段；时期"
+    },
+    {
+     "w": "virtual",
+     "zh": "（通过计算机软件，如在互联网上）模拟的，虚拟的"
+    },
+    {
+     "w": "underlie",
+     "zh": "构成·的基础；作为⋯的原因"
+    },
+    {
+     "w": "bubble",
+     "zh": "泡；气泡"
+    },
+    {
+     "w": "infer",
+     "zh": "据理逻辑推断"
+    },
+    {
+     "w": "fuel",
+     "zh": "燃料"
+    },
+    {
+     "w": "domain",
+     "zh": "知识、活动的）领域，范围，范畴"
+    },
+    {
+     "w": "hydrogen",
+     "zh": "氢气"
+    },
+    {
+     "w": "mode",
+     "zh": "方式；风格"
+    },
+    {
+     "w": "broadcast",
+     "zh": "播送（电视或无线电节目）"
+    },
+    {
+     "w": "concrete",
+     "zh": "确实的；具体的"
+    },
+    {
+     "w": "hatch",
+     "zh": "策划（of a young bird, fish, insect, etc.） to come out of anegg 孵出；出壳"
+    },
+    {
+     "w": "acid",
+     "zh": "酸"
+    },
+    {
+     "w": "generator",
+     "zh": "发电机"
+    },
+    {
+     "w": "telescope",
+     "zh": "望远镜"
+    },
+    {
+     "w": "precede",
+     "zh": "在……之前友生（或出现）；先于"
+    },
+    {
+     "w": "drug",
+     "zh": "药；药物"
+    },
+    {
+     "w": "breast",
+     "zh": "乳房"
+    },
+    {
+     "w": "expertise",
+     "zh": "专门知识；专门技能"
+    },
+    {
+     "w": "leisure",
+     "zh": "闲暇；休闲"
+    },
+    {
+     "w": "premier",
+     "zh": "总理，首相adj. most important, famous or successful 首要的；最著名的；最成功的；第一的"
+    },
+    {
+     "w": "distribute",
+     "zh": "分发， 分送"
+    },
+    {
+     "w": "inappropriate",
+     "zh": "不适当的；不合适"
+    },
+    {
+     "w": "recognition",
+     "zh": "认出， 识别"
+    },
+    {
+     "w": "clone",
+     "zh": "克降"
+    },
+    {
+     "w": "gravity",
+     "zh": "万有引力"
+    },
+    {
+     "w": "assess",
+     "zh": "评估，评定"
+    },
+    {
+     "w": "directory",
+     "zh": "人名地址录"
+    },
+    {
+     "w": "demonstrate",
+     "zh": "证明；证实；论证；说明"
+    },
+    {
+     "w": "invest",
+     "zh": "投入"
+    },
+    {
+     "w": "upgrade",
+     "zh": "升级（硬件或软件系统）"
+    },
+    {
+     "w": "orbit",
+     "zh": "沿轨道绕行"
+    },
+    {
+     "w": "universe",
+     "zh": "宇宙；天地万物"
+    },
+    {
+     "w": "vast",
+     "zh": "辽阔的；巨大的；庞大的；大量昀"
+    },
+    {
+     "w": "proceed",
+     "zh": "接着做；继而做"
+    },
+    {
+     "w": "seed",
+     "zh": "种子；籽"
+    },
+    {
+     "w": "groundbreaking",
+     "zh": "开创性的；创新的；革新的"
+    },
+    {
+     "w": "astronaut",
+     "zh": "宇航员；航天员"
+    },
+    {
+     "w": "accomplishment",
+     "zh": "成就；成绩"
+    },
+    {
+     "w": "tin cup",
+     "zh": "锡杯"
+    },
+    {
+     "w": "pave the way",
+     "zh": "铺路，铺平道路"
+    }
+   ]
+  }
+ ]
+}

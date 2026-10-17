@@ -1,0 +1,1147 @@
+{
+ "pub": "沪教",
+ "stage": "高中",
+ "grade": "选择性必修 第一册",
+ "vol": "",
+ "id": "a7e5c3d3-10f3-43b9-af25-40866cfe2eca",
+ "title": "普通高中教科书·英语选择性必修 第一册",
+ "created": "2022-09-29",
+ "units": [
+  {
+   "n": "Unit 1",
+   "t": "",
+   "words": [
+    {
+     "w": "associate",
+     "zh": "联想；联系"
+    },
+    {
+     "w": "tablet",
+     "zh": "平板电脑"
+    },
+    {
+     "w": "fashion",
+     "zh": "流行款式"
+    },
+    {
+     "w": "item",
+     "zh": "一件商品或物品"
+    },
+    {
+     "w": "abandon",
+     "zh": "离弃；舍弃；丢奔"
+    },
+    {
+     "w": "drawer",
+     "zh": "抽屉"
+    },
+    {
+     "w": "essential",
+     "zh": "完全必要；极其重要"
+    },
+    {
+     "w": "vital",
+     "zh": "必不可少的；重要"
+    },
+    {
+     "w": "crucial",
+     "zh": "至关重要的"
+    },
+    {
+     "w": "anxiety",
+     "zh": "焦虑"
+    },
+    {
+     "w": "optimistic",
+     "zh": "乐观的"
+    },
+    {
+     "w": "release",
+     "zh": "排放；释放"
+    },
+    {
+     "w": "chemical",
+     "zh": "化学品adj. connected with chemistry 化学"
+    },
+    {
+     "w": "miserable",
+     "zh": "痛苦的；非常难受"
+    },
+    {
+     "w": "lack",
+     "zh": "缺之v. to have none or not enough of something 缺乏；不足"
+    },
+    {
+     "w": "mood",
+     "zh": "情绪；心情"
+    },
+    {
+     "w": "affect",
+     "zh": "影响"
+    },
+    {
+     "w": "theory",
+     "zh": "学说；理论"
+    },
+    {
+     "w": "imply",
+     "zh": "暗示意指"
+    },
+    {
+     "w": "mutual",
+     "zh": "相互的"
+    },
+    {
+     "w": "contrast",
+     "zh": "对比；对照"
+    },
+    {
+     "w": "depressed",
+     "zh": "忧郁的；沮丧的"
+    },
+    {
+     "w": "incredibly",
+     "zh": "极其地；令人难以置信地"
+    },
+    {
+     "w": "presentation",
+     "zh": "提供， 显示"
+    },
+    {
+     "w": "urge",
+     "zh": "强烈的欲望；冲动v. to aavise or try hard to persuade someboay to do something 敦促；力劝"
+    },
+    {
+     "w": "appreciate",
+     "zh": "欣赏"
+    },
+    {
+     "w": "poet",
+     "zh": "诗人"
+    },
+    {
+     "w": "solid",
+     "zh": "可靠的；可信赖的；坚实的"
+    },
+    {
+     "w": "scientific",
+     "zh": "科学的；关于科学的"
+    },
+    {
+     "w": "evidence",
+     "zh": "根据；证据v. to prove or show something证明；作为⋯⋯的证据"
+    },
+    {
+     "w": "decade",
+     "zh": "十年，十年期"
+    },
+    {
+     "w": "overall",
+     "zh": "总体的；综合的"
+    },
+    {
+     "w": "promote",
+     "zh": "促进"
+    },
+    {
+     "w": "journalist",
+     "zh": "记者"
+    },
+    {
+     "w": "afterwards",
+     "zh": "以后；后釆"
+    },
+    {
+     "w": "nutrition",
+     "zh": "营养；滋养"
+    },
+    {
+     "w": "mostly",
+     "zh": "通常；主要地；一般地"
+    },
+    {
+     "w": "recipe",
+     "zh": "烹饪法；食谱"
+    },
+    {
+     "w": "composition",
+     "zh": "作文；小论文"
+    },
+    {
+     "w": "golf",
+     "zh": "高尔夫球运动"
+    },
+    {
+     "w": "series of",
+     "zh": "高尔夫球运动"
+    },
+    {
+     "w": "wrestle",
+     "zh": "摔跤"
+    },
+    {
+     "w": "cycle",
+     "zh": "骑自行车"
+    },
+    {
+     "w": "cooperate",
+     "zh": "合作；协作"
+    },
+    {
+     "w": "sacrifice",
+     "zh": "牺牲，舍身"
+    },
+    {
+     "w": "discipline",
+     "zh": "自制力；遵守纪律"
+    },
+    {
+     "w": "self-reliance",
+     "zh": "自力更生；自立"
+    },
+    {
+     "w": "commitment",
+     "zh": "承诺；保证"
+    },
+    {
+     "w": "persuade",
+     "zh": "劝说；说服"
+    },
+    {
+     "w": "tone",
+     "zh": "语气；口气"
+    },
+    {
+     "w": "tournament",
+     "zh": "锦标赛，联赛"
+    },
+    {
+     "w": "disappointed",
+     "zh": "失望的"
+    },
+    {
+     "w": "committed",
+     "zh": "尽心尽力的"
+    },
+    {
+     "w": "consume",
+     "zh": "消耗；耗费"
+    },
+    {
+     "w": "calorie",
+     "zh": "大卡；千卡；卡路里"
+    },
+    {
+     "w": "million",
+     "zh": "一百万"
+    },
+    {
+     "w": "suburb",
+     "zh": "郊区"
+    },
+    {
+     "w": "greedy",
+     "zh": "贪婪"
+    },
+    {
+     "w": "portion",
+     "zh": "一份，一客"
+    },
+    {
+     "w": "adopt",
+     "zh": "收养"
+    },
+    {
+     "w": "fry",
+     "zh": "炸薯条v. to cook something in hot oil 油炸"
+    },
+    {
+     "w": "consumption",
+     "zh": "消耗"
+    },
+    {
+     "w": "cancer",
+     "zh": "癌症"
+    },
+    {
+     "w": "phenomenon",
+     "zh": "现象"
+    },
+    {
+     "w": "pots of money",
+     "zh": ""
+    },
+    {
+     "w": "get a kick out of",
+     "zh": ""
+    },
+    {
+     "w": "games console",
+     "zh": "电子游戏机主机 ("
+    }
+   ]
+  },
+  {
+   "n": "Unit 2",
+   "t": "",
+   "words": [
+    {
+     "w": "wave",
+     "zh": "海浪"
+    },
+    {
+     "w": "victim",
+     "zh": "受害者；牺牲品"
+    },
+    {
+     "w": "tide",
+     "zh": "潮汐；潮水"
+    },
+    {
+     "w": "overflow",
+     "zh": "漫出；溢出"
+    },
+    {
+     "w": "mosquito",
+     "zh": "蚊子"
+    },
+    {
+     "w": "fellow",
+     "zh": "同伴的；同类的；同事"
+    },
+    {
+     "w": "predict",
+     "zh": "预言；预告"
+    },
+    {
+     "w": "distant",
+     "zh": "遙远的"
+    },
+    {
+     "w": "shelter",
+     "zh": "居所；住处"
+    },
+    {
+     "w": "nominate",
+     "zh": "提名， 任命"
+    },
+    {
+     "w": "anger",
+     "zh": "怒，愤怒"
+    },
+    {
+     "w": "frustration",
+     "zh": "懊恼；沮丧；受挫"
+    },
+    {
+     "w": "preserve",
+     "zh": "保护；保存"
+    },
+    {
+     "w": "ancestor",
+     "zh": "祖宗；祖先"
+    },
+    {
+     "w": "threaten",
+     "zh": "危及；对⋯⋯构成威胁"
+    },
+    {
+     "w": "folk",
+     "zh": "传统民间的；民俗的"
+    },
+    {
+     "w": "forever",
+     "zh": "永远"
+    },
+    {
+     "w": "inform",
+     "zh": "通知；通告"
+    },
+    {
+     "w": "nevertheless",
+     "zh": "尽管如此；然而"
+    },
+    {
+     "w": "native",
+     "zh": "本地的；当地的"
+    },
+    {
+     "w": "landscape",
+     "zh": "风景"
+    },
+    {
+     "w": "visual",
+     "zh": "视力的；视觉的"
+    },
+    {
+     "w": "antique",
+     "zh": "文物；古重"
+    },
+    {
+     "w": "pub",
+     "zh": "酒吧；酒馆"
+    },
+    {
+     "w": "rural",
+     "zh": "乡村的；农村的"
+    },
+    {
+     "w": "urban",
+     "zh": "城市的；都市的"
+    },
+    {
+     "w": "plain",
+     "zh": "朴素的；简单的"
+    },
+    {
+     "w": "responsibility",
+     "zh": "责任， 责任心"
+    },
+    {
+     "w": "varied",
+     "zh": "各种各样的；形形色色的"
+    },
+    {
+     "w": "tune",
+     "zh": "曲调；曲子"
+    },
+    {
+     "w": "bride",
+     "zh": "新娘；即将 结婚旳女子"
+    },
+    {
+     "w": "bridegroom",
+     "zh": "新郎；即将 结婚的男子"
+    },
+    {
+     "w": "bless",
+     "zh": "享有 ；赋有"
+    },
+    {
+     "w": "calligraphy",
+     "zh": "书法"
+    },
+    {
+     "w": "structure",
+     "zh": "结构，构造，组织"
+    },
+    {
+     "w": "precise",
+     "zh": "准确的；精确的"
+    },
+    {
+     "w": "advocate",
+     "zh": "支持者/'aedvakei/ v. to support something publicly 拥护；支持；提倡"
+    },
+    {
+     "w": "recycle",
+     "zh": "回收利用"
+    },
+    {
+     "w": "bin",
+     "zh": "垃圾箱"
+    },
+    {
+     "w": "widespread",
+     "zh": "分布广的；晋遍的；广泛"
+    },
+    {
+     "w": "intention",
+     "zh": "打算；计划；意图；目的"
+    },
+    {
+     "w": "energy-efficient",
+     "zh": "节能的"
+    },
+    {
+     "w": "appointment",
+     "zh": "任命"
+    },
+    {
+     "w": "dentist",
+     "zh": "牙科医生"
+    },
+    {
+     "w": "skip",
+     "zh": "跳绳"
+    },
+    {
+     "w": "contest",
+     "zh": "比赛；竞赛"
+    },
+    {
+     "w": "barbecue",
+     "zh": "户外烧烤"
+    },
+    {
+     "w": "garbage",
+     "zh": "垃圾；废物"
+    },
+    {
+     "w": "ban",
+     "zh": "明令禁止；取缔"
+    },
+    {
+     "w": "access",
+     "zh": "机会，权利"
+    },
+    {
+     "w": "dormitory",
+     "zh": "集体石舍"
+    },
+    {
+     "w": "perspective",
+     "zh": "态度；观点；思考方法"
+    },
+    {
+     "w": "defend",
+     "zh": "保护；防御"
+    },
+    {
+     "w": "violence",
+     "zh": "暴力；暴行"
+    },
+    {
+     "w": "campaign",
+     "zh": "参加运动n. a series of planned activities that are intended to achieve a social or commercial aim 运动（为社会、商业等目的而进行的一系列有计划的活动）"
+    },
+    {
+     "w": "conserve",
+     "zh": "节省；节约"
+    },
+    {
+     "w": "habitat",
+     "zh": "生活环境；栖息地"
+    },
+    {
+     "w": "essay",
+     "zh": "文章；论说文"
+    },
+    {
+     "w": "convinced",
+     "zh": "坚信的；深信的；确信的"
+    },
+    {
+     "w": "opposing",
+     "zh": "相反的；极不相同的"
+    },
+    {
+     "w": "marathon",
+     "zh": "马拉松赛跑"
+    },
+    {
+     "w": "sponsor",
+     "zh": "赞助者；赞助商v. to pay the costs of a particularevent 赞助"
+    },
+    {
+     "w": "enthusiasm",
+     "zh": "热情"
+    },
+    {
+     "w": "rewarding",
+     "zh": "值得做的"
+    },
+    {
+     "w": "transform",
+     "zh": "改变,改造"
+    },
+    {
+     "w": "so that",
+     "zh": "使改观"
+    },
+    {
+     "w": "stretch",
+     "zh": "伸展"
+    },
+    {
+     "w": "involve",
+     "zh": "加入；牵涉到"
+    },
+    {
+     "w": "palm tree",
+     "zh": ""
+    },
+    {
+     "w": "crystal clear",
+     "zh": ""
+    },
+    {
+     "w": "coconut milk",
+     "zh": "椰奶"
+    },
+    {
+     "w": "weather forecast",
+     "zh": "天气预报"
+    },
+    {
+     "w": "relay race",
+     "zh": ""
+    }
+   ]
+  },
+  {
+   "n": "Unit 3",
+   "t": "",
+   "words": [
+    {
+     "w": "advertisement",
+     "zh": "广告；启事"
+    },
+    {
+     "w": "celebrity",
+     "zh": "名人；名流"
+    },
+    {
+     "w": "genuine",
+     "zh": "真的"
+    },
+    {
+     "w": "advertise",
+     "zh": "为…做广告"
+    },
+    {
+     "w": "unusual",
+     "zh": "特别的；不寻常的；罕见的"
+    },
+    {
+     "w": "identical",
+     "zh": "完全同样的；相同的"
+    },
+    {
+     "w": "contrary",
+     "zh": "与之相异的；相对立的；相反"
+    },
+    {
+     "w": "spot",
+     "zh": "看见；看出；注意到；发现"
+    },
+    {
+     "w": "trick",
+     "zh": "欺骗；欺诈"
+    },
+    {
+     "w": "billion",
+     "zh": "一亿"
+    },
+    {
+     "w": "conventional",
+     "zh": "常规的"
+    },
+    {
+     "w": "launch",
+     "zh": "上市，发行"
+    },
+    {
+     "w": "trendsetter",
+     "zh": "新潮倡导者"
+    },
+    {
+     "w": "contract",
+     "zh": "合同；合约；契约/kon'"
+    },
+    {
+     "w": "hire",
+     "zh": "聘用"
+    },
+    {
+     "w": "agency",
+     "zh": "经办， 代理"
+    },
+    {
+     "w": "luxury",
+     "zh": "奢侈品"
+    },
+    {
+     "w": "display",
+     "zh": "展出；展示"
+    },
+    {
+     "w": "purchase",
+     "zh": "购买的东西"
+    },
+    {
+     "w": "sample",
+     "zh": "样品，试样，样本"
+    },
+    {
+     "w": "anyhow",
+     "zh": "加之；反正"
+    },
+    {
+     "w": "psychologist",
+     "zh": "心理学家"
+    },
+    {
+     "w": "respectively",
+     "zh": "分别；各自；顺序为；依次为"
+    },
+    {
+     "w": "borderline",
+     "zh": "两种品质 之间的分界线"
+    },
+    {
+     "w": "stimulate",
+     "zh": "促进；激发；激励"
+    },
+    {
+     "w": "abstract",
+     "zh": "抽象"
+    },
+    {
+     "w": "concept",
+     "zh": "概念；观念"
+    },
+    {
+     "w": "ideal",
+     "zh": "完美的；理想；最合适的"
+    },
+    {
+     "w": "quote",
+     "zh": "引用；引还n. exact words 原话"
+    },
+    {
+     "w": "finding",
+     "zh": "调查发现；调研结果"
+    },
+    {
+     "w": "fake",
+     "zh": "假的"
+    },
+    {
+     "w": "discount",
+     "zh": "折扣"
+    },
+    {
+     "w": "weekly",
+     "zh": "每周"
+    },
+    {
+     "w": "monthly",
+     "zh": "每月的；每月一次的"
+    },
+    {
+     "w": "publication",
+     "zh": "出版"
+    },
+    {
+     "w": "academic",
+     "zh": "学业的；教学的；学术"
+    },
+    {
+     "w": "cottage",
+     "zh": "小屋； 村舍，小别墅"
+    },
+    {
+     "w": "cotton",
+     "zh": "棉花，棉布"
+    },
+    {
+     "w": "crop",
+     "zh": "庄稼；作物"
+    },
+    {
+     "w": "harvest",
+     "zh": "收割n. the time of year when the crops are gathered in on a farm, etc; the act of cutting and gathering crops 收获季节；收割；收获"
+    },
+    {
+     "w": "guarantee",
+     "zh": "保证；担保v. to promise to do something; to promise something will happen 保证；担保；保障"
+    },
+    {
+     "w": "available",
+     "zh": "可获得的；可购得的；可找到的"
+    },
+    {
+     "w": "specialist",
+     "zh": "专门的"
+    },
+    {
+     "w": "ethical",
+     "zh": "合乎道德的"
+    },
+    {
+     "w": "canteen",
+     "zh": "食堂；賓厅"
+    },
+    {
+     "w": "identify",
+     "zh": "确认；认出"
+    },
+    {
+     "w": "priority",
+     "zh": "优先处理的事"
+    },
+    {
+     "w": "faulty",
+     "zh": "不完美的；有错误的；有缺陷的"
+    },
+    {
+     "w": "complain",
+     "zh": "抱怨；埋怨；投诉；发牢骚"
+    },
+    {
+     "w": "false",
+     "zh": "错误的；不正确的；不真实"
+    },
+    {
+     "w": "madam",
+     "zh": "夫人；女士"
+    },
+    {
+     "w": "adjust",
+     "zh": "调整"
+    },
+    {
+     "w": "loose",
+     "zh": "疏松的；不结实的"
+    },
+    {
+     "w": "faithfully",
+     "zh": "忠实地；忠诚地"
+    },
+    {
+     "w": "origin",
+     "zh": "起源；源头；起因"
+    },
+    {
+     "w": "pack",
+     "zh": "收拾 ；装"
+    },
+    {
+     "w": "suitcase",
+     "zh": "旅行用）手提"
+    },
+    {
+     "w": "lunar",
+     "zh": "月球的；月亮"
+    },
+    {
+     "w": "harmonious",
+     "zh": "友好和睦的；和谐的"
+    },
+    {
+     "w": "toast",
+     "zh": "烤面包片"
+    },
+    {
+     "w": "ingredient",
+     "zh": "组成部分， 成分"
+    },
+    {
+     "w": "grocery",
+     "zh": "食品杂货店"
+    },
+    {
+     "w": "jewellery",
+     "zh": "珠宝；首饰"
+    },
+    {
+     "w": "trend",
+     "zh": "趋势；趋向"
+    },
+    {
+     "w": "wrap",
+     "zh": "外套"
+    },
+    {
+     "w": "commercialize",
+     "zh": ""
+    },
+    {
+     "w": "stealth marketing",
+     "zh": ""
+    }
+   ]
+  },
+  {
+   "n": "Unit 4",
+   "t": "",
+   "words": [
+    {
+     "w": "flavour",
+     "zh": "味道；口味"
+    },
+    {
+     "w": "scent",
+     "zh": "香味"
+    },
+    {
+     "w": "raw",
+     "zh": "生"
+    },
+    {
+     "w": "insist",
+     "zh": "坚持说"
+    },
+    {
+     "w": "tongue",
+     "zh": "舌；舌头"
+    },
+    {
+     "w": "detect",
+     "zh": "发现；查明"
+    },
+    {
+     "w": "bitter",
+     "zh": "苦"
+    },
+    {
+     "w": "cabbage",
+     "zh": "卷心菜；洋白菜"
+    },
+    {
+     "w": "onion",
+     "zh": "洋葱"
+    },
+    {
+     "w": "ripe",
+     "zh": "成熟的"
+    },
+    {
+     "w": "exceptionally",
+     "zh": "特别；非常"
+    },
+    {
+     "w": "distinguish",
+     "zh": "辨别；分清"
+    },
+    {
+     "w": "salty",
+     "zh": "咸；含盐的"
+    },
+    {
+     "w": "sour",
+     "zh": "酸的"
+    },
+    {
+     "w": "sensitive",
+     "zh": "灵敏的"
+    },
+    {
+     "w": "able to",
+     "zh": "善解人意的"
+    },
+    {
+     "w": "bath",
+     "zh": "浴缸；浴盆"
+    },
+    {
+     "w": "pinch",
+     "zh": "捏"
+    },
+    {
+     "w": "somewhat",
+     "zh": "有点；有几分"
+    },
+    {
+     "w": "texture",
+     "zh": "口感"
+    },
+    {
+     "w": "creamy",
+     "zh": "像奶油的；含乳脂"
+    },
+    {
+     "w": "unpleasant",
+     "zh": "令人不快的；不舒服"
+    },
+    {
+     "w": "perceive",
+     "zh": "察觉到；洞察"
+    },
+    {
+     "w": "appetite",
+     "zh": "食欲；胃口"
+    },
+    {
+     "w": "claim",
+     "zh": "声称；断言；主张n. a statement that something is true although it has not been proved 声明；宣称"
+    },
+    {
+     "w": "riddle",
+     "zh": "无法解释的情况"
+    },
+    {
+     "w": "differ",
+     "zh": "有区别；不同于"
+    },
+    {
+     "w": "dessert",
+     "zh": "甜点；甜食"
+    },
+    {
+     "w": "combination",
+     "zh": "结合体；混合体"
+    },
+    {
+     "w": "rescue",
+     "zh": "救援；营救v. to save someone or something from a dangerous situation 营救，解救"
+    },
+    {
+     "w": "bury",
+     "zh": "覆盖"
+    },
+    {
+     "w": "injury",
+     "zh": "伤害，损伤"
+    },
+    {
+     "w": "ankle",
+     "zh": "踝；踝关节"
+    },
+    {
+     "w": "warning",
+     "zh": "警告；警示"
+    },
+    {
+     "w": "react",
+     "zh": "作出反应；回应"
+    },
+    {
+     "w": "panic",
+     "zh": "惊慌失措n. a sudden strong feeling of fear that makes you unable to think clearly or behave sensibly 恐慌"
+    },
+    {
+     "w": "bark",
+     "zh": "吠叫"
+    },
+    {
+     "w": "grateful",
+     "zh": "感激的"
+    },
+    {
+     "w": "frequency",
+     "zh": "发生率"
+    },
+    {
+     "w": "radiation",
+     "zh": "辐射"
+    },
+    {
+     "w": "elective",
+     "zh": "选修的"
+    },
+    {
+     "w": "expand",
+     "zh": "增加"
+    },
+    {
+     "w": "encounter",
+     "zh": "遭遇；遇到"
+    },
+    {
+     "w": "impairment",
+     "zh": "缺陷；障碍"
+    },
+    {
+     "w": "construct",
+     "zh": "修建；建造"
+    },
+    {
+     "w": "facility",
+     "zh": "设施；设备"
+    },
+    {
+     "w": "barrier",
+     "zh": "障碍物"
+    },
+    {
+     "w": "challenge",
+     "zh": "挑战；艰巨任务"
+    },
+    {
+     "w": "investigate",
+     "zh": "调查；侦查"
+    },
+    {
+     "w": "preference",
+     "zh": "喜爱， 偏爱"
+    },
+    {
+     "w": "principle",
+     "zh": "法则；原则"
+    },
+    {
+     "w": "complaint",
+     "zh": "抱怨"
+    },
+    {
+     "w": "ringtone",
+     "zh": ""
+    },
+    {
+     "w": "disturb",
+     "zh": "打扰；干扰"
+    },
+    {
+     "w": "bother",
+     "zh": "使 烦恼"
+    },
+    {
+     "w": "flow",
+     "zh": "连贯；流畅"
+    },
+    {
+     "w": "quantity",
+     "zh": "数量"
+    },
+    {
+     "w": "spicy",
+     "zh": "用香料调味的"
+    },
+    {
+     "w": "tent",
+     "zh": "帐篷"
+    },
+    {
+     "w": "lamp",
+     "zh": "灯"
+    },
+    {
+     "w": "hike",
+     "zh": "去⋯远足；徒步旅行"
+    },
+    {
+     "w": "incident",
+     "zh": "发生的事情"
+    },
+    {
+     "w": "thunderstorm",
+     "zh": "雷雨；雷暴"
+    },
+    {
+     "w": "whisper",
+     "zh": "耳语；低语；悄声说"
+    },
+    {
+     "w": "stare",
+     "zh": "盯着看；凝视"
+    },
+    {
+     "w": "creature",
+     "zh": "生物；动物"
+    },
+    {
+     "w": "merciless",
+     "zh": "残忍的"
+    },
+    {
+     "w": "switch",
+     "zh": "关／开"
+    },
+    {
+     "w": "taste bud",
+     "zh": ""
+    },
+    {
+     "w": "part of",
+     "zh": "味蕾"
+    },
+    {
+     "w": "nail clippers",
+     "zh": ""
+    }
+   ]
+  }
+ ]
+}

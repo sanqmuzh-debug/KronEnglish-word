@@ -1,0 +1,122 @@
+[
+{
+"w": "surgery",
+"syl": "sur·ge·ry",
+"zh": "外科手术",
+"lvl": "pep"
+},
+{
+"w": "liberation",
+"syl": "lib·e·ra·tion",
+"zh": "解放",
+"lvl": "pep"
+},
+{
+"w": "shave",
+"syl": "shave",
+"zh": "剃",
+"lvl": "pep"
+},
+{
+"w": "shave off",
+"syl": "shave·off",
+"zh": "剃掉",
+"lvl": "pep"
+},
+{
+"w": "beard",
+"syl": "beard",
+"zh": "胡须",
+"lvl": "pep"
+},
+{
+"w": "disturb",
+"syl": "dis·turb",
+"zh": "打扰",
+"lvl": "pep"
+},
+{
+"w": "cigarette",
+"syl": "cig·a·rette",
+"zh": "香烟",
+"lvl": "pep"
+},
+{
+"w": "specialist",
+"syl": "spe·cia·list",
+"zh": "专科医生",
+"lvl": "pep"
+},
+{
+"w": "consultant",
+"syl": "con·sul·tant",
+"zh": "顾问",
+"lvl": "pep"
+},
+{
+"w": "drug",
+"syl": "drug",
+"zh": "毒品",
+"lvl": "pep"
+},
+{
+"w": "skip",
+"syl": "skip",
+"zh": "跳过",
+"lvl": "pep"
+},
+{
+"w": "dizzy",
+"syl": "diz·zy",
+"zh": "头晕目眩的",
+"lvl": "pep"
+},
+{
+"w": "flu",
+"syl": "flu",
+"zh": "流感",
+"lvl": "pep"
+},
+{
+"w": "stimulate",
+"syl": "stim·u·late",
+"zh": "激发",
+"lvl": "pep"
+},
+{
+"w": "dentist",
+"syl": "den·tist",
+"zh": "牙科医生",
+"lvl": "pep"
+},
+{
+"w": "sugary",
+"syl": "sug·a·ry",
+"zh": "含糖的",
+"lvl": "pep"
+},
+{
+"w": "dynamic",
+"syl": "dy·nam·ic",
+"zh": "有活力的",
+"lvl": "pep"
+},
+{
+"w": "stressed out",
+"syl": "stressed·out",
+"zh": "焦虑不安",
+"lvl": "pep"
+},
+{
+"w": "worn out",
+"syl": "worn·out",
+"zh": "筋疲力尽的",
+"lvl": "pep"
+},
+{
+"w": "bowling",
+"syl": "bow·ling",
+"zh": "保龄球运动",
+"lvl": "pep"
+}
+]

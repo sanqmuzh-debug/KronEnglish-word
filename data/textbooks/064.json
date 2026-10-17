@@ -1,0 +1,711 @@
+{
+ "pub": "沪教",
+ "stage": "小学",
+ "grade": "五年级",
+ "vol": "下册",
+ "id": "70085bc7-91aa-4726-9f92-8eed80d30276",
+ "title": "义务教育教科书·英语（三年级起点）五年级下册",
+ "created": "2022-09-29",
+ "units": [
+  {
+   "n": "Unit 1",
+   "t": "",
+   "words": [
+    {
+     "w": "tiny",
+     "zh": "整理；整洁"
+    },
+    {
+     "w": "mess",
+     "zh": "脏乱；不整洁"
+    },
+    {
+     "w": "let",
+     "zh": "让"
+    },
+    {
+     "w": "sock",
+     "zh": "短袜"
+    },
+    {
+     "w": "yours",
+     "zh": "你；你们"
+    },
+    {
+     "w": "cap",
+     "zh": "帽子"
+    },
+    {
+     "w": "mine",
+     "zh": "我的"
+    },
+    {
+     "w": "crayon",
+     "zh": "彩色蜡笔"
+    },
+    {
+     "w": "umbrella",
+     "zh": "伞"
+    },
+    {
+     "w": "nail",
+     "zh": "钉子"
+    },
+    {
+     "w": "drop",
+     "zh": "使落下；掉落"
+    },
+    {
+     "w": "stick",
+     "zh": "粘贴；粘住"
+    },
+    {
+     "w": "second",
+     "zh": "秒"
+    },
+    {
+     "w": "hers",
+     "zh": "她"
+    },
+    {
+     "w": "theirs",
+     "zh": "他们；她们的；它们"
+    },
+    {
+     "w": "tiny up",
+     "zh": "把⋯整理好（be） full of 装满⋯⋯；充满⋯⋯"
+    },
+    {
+     "w": "a few",
+     "zh": "几个；一些"
+    }
+   ]
+  },
+  {
+   "n": "Unit 2",
+   "t": "",
+   "words": [
+    {
+     "w": "why",
+     "zh": "为什么"
+    },
+    {
+     "w": "because",
+     "zh": "因为"
+    },
+    {
+     "w": "study",
+     "zh": "书房；学习"
+    },
+    {
+     "w": "dining room",
+     "zh": "答室；䬸厅"
+    },
+    {
+     "w": "wild goose",
+     "zh": "大雁"
+    },
+    {
+     "w": "change",
+     "zh": "改变；变化"
+    },
+    {
+     "w": "place",
+     "zh": "地方"
+    },
+    {
+     "w": "twice",
+     "zh": "两次"
+    },
+    {
+     "w": "every",
+     "zh": "每；每个"
+    },
+    {
+     "w": "north",
+     "zh": "北方；向北"
+    },
+    {
+     "w": "south",
+     "zh": "南方；向南"
+    },
+    {
+     "w": "enough",
+     "zh": "足够"
+    },
+    {
+     "w": "then",
+     "zh": "然后"
+    },
+    {
+     "w": "all day",
+     "zh": "一天到晚"
+    }
+   ]
+  },
+  {
+   "n": "Unit 3",
+   "t": "",
+   "words": [
+    {
+     "w": "future",
+     "zh": "将来；未来"
+    },
+    {
+     "w": "stand",
+     "zh": "站；站住"
+    },
+    {
+     "w": "machine",
+     "zh": "机器"
+    },
+    {
+     "w": "will",
+     "zh": "将；将会"
+    },
+    {
+     "w": "exercise",
+     "zh": "运动；锻炼；活动"
+    },
+    {
+     "w": "early",
+     "zh": "早；提早"
+    },
+    {
+     "w": "easily",
+     "zh": "容易地"
+    },
+    {
+     "w": "hard",
+     "zh": "努力地"
+    },
+    {
+     "w": "more",
+     "zh": "更多"
+    },
+    {
+     "w": "in the future",
+     "zh": "将来"
+    },
+    {
+     "w": "in front of",
+     "zh": "在…⋯前面"
+    },
+    {
+     "w": "take a photo",
+     "zh": "拍照"
+    },
+    {
+     "w": "wear glasses",
+     "zh": "戴眼镜"
+    },
+    {
+     "w": "do exercise",
+     "zh": "做运动（be） weak in 不擅长"
+    },
+    {
+     "w": "not.. any more",
+     "zh": "不再"
+    }
+   ]
+  },
+  {
+   "n": "Unit 4",
+   "t": "",
+   "words": [
+    {
+     "w": "storybook",
+     "zh": "故事书"
+    },
+    {
+     "w": "buy",
+     "zh": "买"
+    },
+    {
+     "w": "story",
+     "zh": "故事"
+    },
+    {
+     "w": "dictionary",
+     "zh": "字典；词典"
+    },
+    {
+     "w": "magazine",
+     "zh": "杂志"
+    },
+    {
+     "w": "newspaper",
+     "zh": "报纸"
+    },
+    {
+     "w": "week",
+     "zh": "周；星期"
+    },
+    {
+     "w": "student",
+     "zh": "学生"
+    },
+    {
+     "w": "poster",
+     "zh": "海报"
+    },
+    {
+     "w": "best",
+     "zh": "最好"
+    },
+    {
+     "w": "writer",
+     "zh": "作家"
+    },
+    {
+     "w": "over there",
+     "zh": "在那边"
+    },
+    {
+     "w": "do a survey",
+     "zh": "做调查"
+    },
+    {
+     "w": "act... out",
+     "zh": "表演"
+    }
+   ]
+  },
+  {
+   "n": "Unit 5",
+   "t": "",
+   "words": [
+    {
+     "w": "weekend",
+     "zh": "周末"
+    },
+    {
+     "w": "stay",
+     "zh": "待；暂住；逗留"
+    },
+    {
+     "w": "film",
+     "zh": "电影"
+    },
+    {
+     "w": "boat",
+     "zh": "小船；舟"
+    },
+    {
+     "w": "plan",
+     "zh": "安排；计划"
+    },
+    {
+     "w": "tomorrow",
+     "zh": "明天"
+    },
+    {
+     "w": "build",
+     "zh": "建筑；建造"
+    },
+    {
+     "w": "next",
+     "zh": "紧接着；随后；紧接着"
+    },
+    {
+     "w": "swing",
+     "zh": "秋干"
+    },
+    {
+     "w": "cry",
+     "zh": "哭；喊叫"
+    },
+    {
+     "w": "until",
+     "zh": "直到"
+    },
+    {
+     "w": "see a film",
+     "zh": "看电影"
+    },
+    {
+     "w": "row a boat",
+     "zh": "划船"
+    }
+   ]
+  },
+  {
+   "n": "Unit 6",
+   "t": "",
+   "words": [
+    {
+     "w": "holiday",
+     "zh": "假日；假期"
+    },
+    {
+     "w": "clear",
+     "zh": "清澈"
+    },
+    {
+     "w": "seafood",
+     "zh": "海鲜"
+    },
+    {
+     "w": "hotel",
+     "zh": "旅馆"
+    },
+    {
+     "w": "island",
+     "zh": "岛"
+    },
+    {
+     "w": "butterfly",
+     "zh": "蝴蝶"
+    },
+    {
+     "w": "how long",
+     "zh": "多久"
+    },
+    {
+     "w": "go swimming",
+     "zh": "去游泳"
+    },
+    {
+     "w": "in the south of",
+     "zh": "在⋯⋯南部"
+    },
+    {
+     "w": "all year round",
+     "zh": "一年到头"
+    }
+   ]
+  },
+  {
+   "n": "Unit 7",
+   "t": "",
+   "words": [
+    {
+     "w": "meet",
+     "zh": "迎接；会见"
+    },
+    {
+     "w": "school gate",
+     "zh": "校门；校门日"
+    },
+    {
+     "w": "art room",
+     "zh": "美术室"
+    },
+    {
+     "w": "hall",
+     "zh": "礼堂"
+    },
+    {
+     "w": "finally",
+     "zh": "最后"
+    },
+    {
+     "w": "meeting room",
+     "zh": "会客室；会议室"
+    },
+    {
+     "w": "show",
+     "zh": "给⋯看"
+    },
+    {
+     "w": "project",
+     "zh": "课题"
+    },
+    {
+     "w": "board",
+     "zh": "布告牌；不板"
+    }
+   ]
+  },
+  {
+   "n": "Unit 8",
+   "t": "",
+   "words": [
+    {
+     "w": "which",
+     "zh": "哪一个；哪一些"
+    },
+    {
+     "w": "trousers",
+     "zh": "裤子"
+    },
+    {
+     "w": "size",
+     "zh": "尺码"
+    },
+    {
+     "w": "sweater",
+     "zh": "毛衣"
+    },
+    {
+     "w": "coat",
+     "zh": "外套；大衣"
+    },
+    {
+     "w": "shoe",
+     "zh": "鞋"
+    },
+    {
+     "w": "emperor",
+     "zh": "皇帝"
+    },
+    {
+     "w": "only",
+     "zh": "只有；仅"
+    },
+    {
+     "w": "nod",
+     "zh": "点头"
+    },
+    {
+     "w": "smile",
+     "zh": "笑容；微笑"
+    },
+    {
+     "w": "money",
+     "zh": "钱"
+    },
+    {
+     "w": "keep",
+     "zh": "保持"
+    },
+    {
+     "w": "laugh",
+     "zh": "大笑"
+    },
+    {
+     "w": "try on",
+     "zh": "试穿"
+    },
+    {
+     "w": "put... on",
+     "zh": "穿；戴"
+    },
+    {
+     "w": "keep quiet",
+     "zh": "保持安静"
+    },
+    {
+     "w": "have a look",
+     "zh": "看一看"
+    }
+   ]
+  },
+  {
+   "n": "Unit 9",
+   "t": "",
+   "words": [
+    {
+     "w": "I",
+     "zh": "生病的；不舒服"
+    },
+    {
+     "w": "headache",
+     "zh": "头痛"
+    },
+    {
+     "w": "fever",
+     "zh": "发烧；发热"
+    },
+    {
+     "w": "should",
+     "zh": "应该"
+    },
+    {
+     "w": "medicine",
+     "zh": "药"
+    },
+    {
+     "w": "rest",
+     "zh": "休息"
+    },
+    {
+     "w": "toothache",
+     "zh": "牙痛"
+    },
+    {
+     "w": "toothless",
+     "zh": "没有牙齿"
+    },
+    {
+     "w": "present",
+     "zh": "礼物"
+    },
+    {
+     "w": "world",
+     "zh": "世界"
+    },
+    {
+     "w": "dentist",
+     "zh": "牙医"
+    },
+    {
+     "w": "have a headache",
+     "zh": "头疼"
+    },
+    {
+     "w": "have a fever",
+     "zh": "发烧"
+    },
+    {
+     "w": "have a cold",
+     "zh": "感冒"
+    },
+    {
+     "w": "have a rest",
+     "zh": "休息一下"
+    },
+    {
+     "w": "get well",
+     "zh": "康复"
+    },
+    {
+     "w": "have a toothache",
+     "zh": "牙疼"
+    },
+    {
+     "w": "have a meeting",
+     "zh": "开会"
+    },
+    {
+     "w": "pull.. out",
+     "zh": "把…⋯拔出"
+    }
+   ]
+  },
+  {
+   "n": "Unit 10",
+   "t": "",
+   "words": [
+    {
+     "w": "invention",
+     "zh": "发明；创造"
+    },
+    {
+     "w": "watch",
+     "zh": "手表"
+    },
+    {
+     "w": "anywhere",
+     "zh": "任何地方"
+    },
+    {
+     "w": "travel",
+     "zh": "旅行；长途行走"
+    },
+    {
+     "w": "invent",
+     "zh": "发明"
+    },
+    {
+     "w": "something",
+     "zh": "某事，某物"
+    },
+    {
+     "w": "myself",
+     "zh": "我自己"
+    },
+    {
+     "w": "camera",
+     "zh": "相机"
+    },
+    {
+     "w": "far away from",
+     "zh": "远离⋯⋯"
+    }
+   ]
+  },
+  {
+   "n": "Unit 11",
+   "t": "",
+   "words": [
+    {
+     "w": "festival",
+     "zh": "节日"
+    },
+    {
+     "w": "important",
+     "zh": "重要"
+    },
+    {
+     "w": "call",
+     "zh": "把⋯•⋯叫做"
+    },
+    {
+     "w": "dumpling",
+     "zh": "饺子"
+    },
+    {
+     "w": "relative",
+     "zh": "亲戚"
+    },
+    {
+     "w": "red packet",
+     "zh": "红包"
+    },
+    {
+     "w": "firework",
+     "zh": "烟火；烟花"
+    },
+    {
+     "w": "monster",
+     "zh": "怪物"
+    },
+    {
+     "w": "end",
+     "zh": "结尾：结束"
+    },
+    {
+     "w": "village",
+     "zh": "村庄"
+    },
+    {
+     "w": "last",
+     "zh": "最后"
+    },
+    {
+     "w": "firecracker",
+     "zh": "鞭炮；爆竹"
+    },
+    {
+     "w": "mooncake",
+     "zh": "月饼"
+    },
+    {
+     "w": "at the end of",
+     "zh": "在⋯⋯最后"
+    }
+   ]
+  },
+  {
+   "n": "Unit 12",
+   "t": "",
+   "words": [
+    {
+     "w": "giant",
+     "zh": "巨人"
+    },
+    {
+     "w": "wall",
+     "zh": "墙；围墙"
+    },
+    {
+     "w": "kind",
+     "zh": "友好；体贴"
+    },
+    {
+     "w": "through",
+     "zh": "穿过"
+    },
+    {
+     "w": "no entry",
+     "zh": "禁止进入（be） Kind to .. 对⋯・⋯友好"
+    },
+    {
+     "w": "knock down",
+     "zh": "推倒；拆掉"
+    }
+   ]
+  }
+ ]
+}

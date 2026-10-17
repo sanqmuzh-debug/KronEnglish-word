@@ -1,0 +1,122 @@
+[
+{
+"w": "felt",
+"syl": "felt",
+"zh": "感觉",
+"lvl": "pep"
+},
+{
+"w": "cheetah",
+"syl": "chee·tah",
+"zh": "猜豹",
+"lvl": "pep"
+},
+{
+"w": "woke",
+"syl": "woke",
+"zh": "醒",
+"lvl": "pep"
+},
+{
+"w": "dream",
+"syl": "dream",
+"zh": "梦",
+"lvl": "pep"
+},
+{
+"w": "unit",
+"syl": "u·nit",
+"zh": "单元",
+"lvl": "pep"
+},
+{
+"w": "starter",
+"syl": "star·ter",
+"zh": "过渡单元",
+"lvl": "pep"
+},
+{
+"w": "section",
+"syl": "sec·tion",
+"zh": "部分",
+"lvl": "pep"
+},
+{
+"w": "greet",
+"syl": "greet",
+"zh": "招呼",
+"lvl": "pep"
+},
+{
+"w": "oh",
+"syl": "oh",
+"zh": "哦",
+"lvl": "pep"
+},
+{
+"w": "conversation",
+"syl": "con·ver·sa·tion",
+"zh": "谈话",
+"lvl": "pep"
+},
+{
+"w": "spell",
+"syl": "spell",
+"zh": "用字母拼",
+"lvl": "pep"
+},
+{
+"w": "bell",
+"syl": "bell",
+"zh": "铃",
+"lvl": "pep"
+},
+{
+"w": "helen",
+"syl": "hel·en",
+"zh": "海伦",
+"lvl": "pep"
+},
+{
+"w": "peter",
+"syl": "pe·ter",
+"zh": "彼得",
+"lvl": "pep"
+},
+{
+"w": "prc",
+"syl": "prc",
+"zh": "中华人民共和国",
+"lvl": "pep"
+},
+{
+"w": "pla",
+"syl": "pla",
+"zh": "中国人民解放军",
+"lvl": "pep"
+},
+{
+"w": "UN",
+"syl": "U·N",
+"zh": "联合国",
+"lvl": "pep"
+},
+{
+"w": "miller",
+"syl": "mil·ler",
+"zh": "米靭",
+"lvl": "pep"
+},
+{
+"w": "key",
+"syl": "key",
+"zh": "钥匙",
+"lvl": "pep"
+},
+{
+"w": "you're welcome",
+"syl": "youre·wel·come",
+"zh": "别客气",
+"lvl": "pep"
+}
+]

@@ -1,0 +1,122 @@
+[
+{
+"w": "meat",
+"syl": "meat",
+"zh": "肉",
+"lvl": "pep"
+},
+{
+"w": "vegetable",
+"syl": "vege·ta·ble",
+"zh": "蔬菜",
+"lvl": "pep"
+},
+{
+"w": "healthy",
+"syl": "heal·thy",
+"zh": "健康",
+"lvl": "pep"
+},
+{
+"w": "plate",
+"syl": "plate",
+"zh": "盘子",
+"lvl": "pep"
+},
+{
+"w": "soup",
+"syl": "soup",
+"zh": "汤",
+"lvl": "pep"
+},
+{
+"w": "fruit",
+"syl": "fruit",
+"zh": "水果",
+"lvl": "pep"
+},
+{
+"w": "colourful",
+"syl": "col·our·ful",
+"zh": "五彩缤纷时",
+"lvl": "pep"
+},
+{
+"w": "candy",
+"syl": "can·dy",
+"zh": "糖果",
+"lvl": "pep"
+},
+{
+"w": "yummy",
+"syl": "yum·my",
+"zh": "很好吃",
+"lvl": "pep"
+},
+{
+"w": "boat",
+"syl": "boat",
+"zh": "小船",
+"lvl": "pep"
+},
+{
+"w": "cool",
+"syl": "cool",
+"zh": "因时髦",
+"lvl": "pep"
+},
+{
+"w": "keep",
+"syl": "keep",
+"zh": "保持，保留",
+"lvl": "pep"
+},
+{
+"w": "at",
+"syl": "at",
+"zh": "在",
+"lvl": "pep"
+},
+{
+"w": "home",
+"syl": "home",
+"zh": "家",
+"lvl": "pep"
+},
+{
+"w": "ball",
+"syl": "ball",
+"zh": "球",
+"lvl": "pep"
+},
+{
+"w": "doll",
+"syl": "doll",
+"zh": "玩偶",
+"lvl": "pep"
+},
+{
+"w": "car",
+"syl": "car",
+"zh": "小汽车",
+"lvl": "pep"
+},
+{
+"w": "on",
+"syl": "on",
+"zh": "在...上",
+"lvl": "pep"
+},
+{
+"w": "shelf",
+"syl": "shelf",
+"zh": "架子",
+"lvl": "pep"
+},
+{
+"w": "box",
+"syl": "box",
+"zh": "盒子",
+"lvl": "pep"
+}
+]

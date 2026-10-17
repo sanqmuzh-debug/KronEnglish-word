@@ -1,0 +1,887 @@
+{
+ "pub": "外研",
+ "stage": "初中",
+ "grade": "八年级",
+ "vol": "下册",
+ "id": "e97b46fe-ed57-9d08-5533-60ff4bb437ae",
+ "title": "（根据2022年版课程标准修订）义务教育教科书·英语 八年级下册",
+ "created": "2026-02-26",
+ "units": [
+  {
+   "n": "Unit 1",
+   "t": "",
+   "words": [
+    {
+     "w": "wet",
+     "zh": "湿的，潮的，潮湿"
+    },
+    {
+     "w": "drop",
+     "zh": "滴"
+    },
+    {
+     "w": "sweat",
+     "zh": "汗，汗水"
+    },
+    {
+     "w": "watermelon",
+     "zh": "西瓜"
+    },
+    {
+     "w": "remind",
+     "zh": "使想起"
+    },
+    {
+     "w": "newborn",
+     "zh": "新生"
+    },
+    {
+     "w": "brush",
+     "zh": "刷子；毛刷"
+    },
+    {
+     "w": "speech",
+     "zh": "演说，演讲"
+    },
+    {
+     "w": "challenging",
+     "zh": "富于挑战性；困难而有趣"
+    },
+    {
+     "w": "context",
+     "zh": "上下文，语境"
+    },
+    {
+     "w": "company",
+     "zh": "公司"
+    },
+    {
+     "w": "interview",
+     "zh": "面试，面谈"
+    },
+    {
+     "w": "communication",
+     "zh": "信息交流；沟通"
+    },
+    {
+     "w": "skill",
+     "zh": "技能，技巧，技艺"
+    },
+    {
+     "w": "personality",
+     "zh": "个性，性格"
+    },
+    {
+     "w": "require",
+     "zh": "需要"
+    },
+    {
+     "w": "organise",
+     "zh": "组织，筹划，安排"
+    },
+    {
+     "w": "leadership",
+     "zh": "领导才能，领导素质"
+    },
+    {
+     "w": "career",
+     "zh": "职业，事业"
+    },
+    {
+     "w": "cashier",
+     "zh": "出纳员"
+    },
+    {
+     "w": "necessary",
+     "zh": "必要的，必需，必不可少"
+    },
+    {
+     "w": "replace",
+     "zh": "取代"
+    },
+    {
+     "w": "pilot",
+     "zh": "驾驶员，飞行员"
+    },
+    {
+     "w": "autopilot",
+     "zh": "自动驾驶仪"
+    },
+    {
+     "w": "tourism",
+     "zh": "旅游业，观光业"
+    },
+    {
+     "w": "surely",
+     "zh": "确实地，无疑地"
+    },
+    {
+     "w": "provide",
+     "zh": "提供，供应，供给"
+    },
+    {
+     "w": "low",
+     "zh": "少，低"
+    },
+    {
+     "w": "beyond",
+     "zh": "在更远处；往更远处"
+    },
+    {
+     "w": "virtual",
+     "zh": "虚拟，模拟"
+    },
+    {
+     "w": "reality",
+     "zh": "具实；现实"
+    },
+    {
+     "w": "fashionable",
+     "zh": "时髦，流行"
+    },
+    {
+     "w": "market",
+     "zh": "市场"
+    }
+   ]
+  },
+  {
+   "n": "Unit 2",
+   "t": "",
+   "words": [
+    {
+     "w": "pm",
+     "zh": "下午（用于表示钟点数字之后）"
+    },
+    {
+     "w": "promise",
+     "zh": "保证，承诺，诺言"
+    },
+    {
+     "w": "tonight",
+     "zh": "今晚"
+    },
+    {
+     "w": "interrupt",
+     "zh": "打断 讲话；中断（••）行动；打扰"
+    },
+    {
+     "w": "lamp",
+     "zh": "灯"
+    },
+    {
+     "w": "blouse",
+     "zh": "女士宽松短衫，女衬衫"
+    },
+    {
+     "w": "pale",
+     "zh": "苍白"
+    },
+    {
+     "w": "attach",
+     "zh": "系；绑；贴"
+    },
+    {
+     "w": "wrist",
+     "zh": "腕"
+    },
+    {
+     "w": "policewoman",
+     "zh": "女警察"
+    },
+    {
+     "w": "elderly",
+     "zh": "年老的，渐老（委婉用法）"
+    },
+    {
+     "w": "plot",
+     "zh": "情节"
+    },
+    {
+     "w": "point",
+     "zh": "要点，重点；中心意思，主要含义；观点"
+    },
+    {
+     "w": "lazy",
+     "zh": "懒洋洋的，慵懒"
+    },
+    {
+     "w": "sofa",
+     "zh": "长沙发"
+    },
+    {
+     "w": "term",
+     "zh": "学期"
+    },
+    {
+     "w": "spend",
+     "zh": "花"
+    },
+    {
+     "w": "conversation",
+     "zh": "谈话，交谈，会话"
+    },
+    {
+     "w": "disagreement",
+     "zh": "意见不合，分歧，争论"
+    },
+    {
+     "w": "attitude",
+     "zh": "看法，态度"
+    },
+    {
+     "w": "childhood",
+     "zh": "童年，儿童时代"
+    },
+    {
+     "w": "peer",
+     "zh": "同龄人"
+    },
+    {
+     "w": "pressure",
+     "zh": "压力"
+    },
+    {
+     "w": "disappointed",
+     "zh": "失望，沮丧"
+    },
+    {
+     "w": "fail",
+     "zh": "失败；未做到"
+    },
+    {
+     "w": "heartbreaking",
+     "zh": "使人心碎"
+    },
+    {
+     "w": "skiing",
+     "zh": "滑雪运动"
+    },
+    {
+     "w": "completely",
+     "zh": "完全地，全部地，彻底地"
+    },
+    {
+     "w": "upon",
+     "zh": "在⋯⋯上面"
+    },
+    {
+     "w": "fall upon",
+     "zh": "落在 身上"
+    },
+    {
+     "w": "clearly",
+     "zh": "清楚地，明白地"
+    }
+   ]
+  },
+  {
+   "n": "Unit 3",
+   "t": "",
+   "words": [
+    {
+     "w": "director",
+     "zh": "导演"
+    },
+    {
+     "w": "drama",
+     "zh": "戏剧"
+    },
+    {
+     "w": "leader",
+     "zh": "领导者"
+    },
+    {
+     "w": "role",
+     "zh": "角色"
+    },
+    {
+     "w": "freeze",
+     "zh": "突然停止；呆住"
+    },
+    {
+     "w": "silence",
+     "zh": "沉默，緘默"
+    },
+    {
+     "w": "awful",
+     "zh": "糟糕的，恶劣的"
+    },
+    {
+     "w": "advise",
+     "zh": "建议"
+    },
+    {
+     "w": "yours",
+     "zh": "你真摯的（用于以头衔加姓氏称呼收信人信函末尾）"
+    },
+    {
+     "w": "teamwork",
+     "zh": "合作，协作，配合"
+    },
+    {
+     "w": "strength",
+     "zh": "优点，长处，优势"
+    },
+    {
+     "w": "weakness",
+     "zh": "弱点，缺点，不足"
+    },
+    {
+     "w": "vote",
+     "zh": "投票，表决"
+    },
+    {
+     "w": "suggestion",
+     "zh": "建议，提议"
+    },
+    {
+     "w": "meeting",
+     "zh": "会议"
+    },
+    {
+     "w": "captain",
+     "zh": "队长，组长"
+    },
+    {
+     "w": "shy",
+     "zh": "羞怯的，腼腆的（尤指在陌生人面前）"
+    },
+    {
+     "w": "confidence",
+     "zh": "自信，信心"
+    },
+    {
+     "w": "tent",
+     "zh": "帐篷"
+    },
+    {
+     "w": "camp",
+     "zh": "扎营，宿营，露营"
+    },
+    {
+     "w": "go camping",
+     "zh": "去露营"
+    },
+    {
+     "w": "break",
+     "zh": "使破裂，使破碎"
+    },
+    {
+     "w": "tape",
+     "zh": "胶带，胶布"
+    },
+    {
+     "w": "voluntary",
+     "zh": "志愿"
+    },
+    {
+     "w": "cooperation",
+     "zh": "合作，协作"
+    },
+    {
+     "w": "noon",
+     "zh": "正午，中午"
+    },
+    {
+     "w": "climber",
+     "zh": "登山运动员"
+    },
+    {
+     "w": "roof",
+     "zh": "顶，顶部"
+    },
+    {
+     "w": "roof of the world",
+     "zh": "世界屋脊”"
+    },
+    {
+     "w": "ladder",
+     "zh": "税子"
+    },
+    {
+     "w": "teammate",
+     "zh": "队友"
+    },
+    {
+     "w": "lower",
+     "zh": "把 移低，降下"
+    },
+    {
+     "w": "painful",
+     "zh": "令人痛苦"
+    },
+    {
+     "w": "rope",
+     "zh": "绳，粗绳，绳索"
+    },
+    {
+     "w": "effort",
+     "zh": "努力"
+    },
+    {
+     "w": "make every effort",
+     "zh": "尽一切努力"
+    },
+    {
+     "w": "north",
+     "zh": "北方，北部；朝北"
+    },
+    {
+     "w": "base",
+     "zh": "基地，根据地，总部，大本营"
+    },
+    {
+     "w": "base camp",
+     "zh": "大本营"
+    },
+    {
+     "w": "mountaineering",
+     "zh": "登山运动"
+    }
+   ]
+  },
+  {
+   "n": "Unit 4",
+   "t": "",
+   "words": [
+    {
+     "w": "excuse",
+     "zh": "原谅"
+    },
+    {
+     "w": "excuse me",
+     "zh": "劳驾（用于礼貌地引起他人"
+    },
+    {
+     "w": "purple",
+     "zh": "紫色"
+    },
+    {
+     "w": "crayon",
+     "zh": "彩色蜡笔"
+    },
+    {
+     "w": "sunshine",
+     "zh": "阳光"
+    },
+    {
+     "w": "virus",
+     "zh": "病毒"
+    },
+    {
+     "w": "afford",
+     "zh": "买得起"
+    },
+    {
+     "w": "disappointment",
+     "zh": "失望，扫兴，沮丧"
+    },
+    {
+     "w": "x-ray",
+     "zh": "光检查"
+    },
+    {
+     "w": "treatment",
+     "zh": "治疗，诊治；疗法"
+    },
+    {
+     "w": "pocket",
+     "zh": "衣袋，日袋"
+    },
+    {
+     "w": "pocket money",
+     "zh": "零花钱"
+    },
+    {
+     "w": "illness",
+     "zh": "病，疾病；患病状态"
+    },
+    {
+     "w": "wheelchair",
+     "zh": "轮椅"
+    },
+    {
+     "w": "public",
+     "zh": "公开"
+    },
+    {
+     "w": "go public",
+     "zh": "公开，公之于众"
+    },
+    {
+     "w": "mention",
+     "zh": "提到，说起，谈到"
+    },
+    {
+     "w": "directly",
+     "zh": "坦率地"
+    },
+    {
+     "w": "solution",
+     "zh": "解决方法"
+    },
+    {
+     "w": "bottle",
+     "zh": "瓶子"
+    },
+    {
+     "w": "a bottle of",
+     "zh": "一瓶"
+    },
+    {
+     "w": "exam",
+     "zh": "考试"
+    },
+    {
+     "w": "dialogue",
+     "zh": "对话"
+    },
+    {
+     "w": "flu",
+     "zh": "流行性感冒，流感"
+    },
+    {
+     "w": "homeless",
+     "zh": "无家可归"
+    },
+    {
+     "w": "donate",
+     "zh": "捐赠，捐献"
+    },
+    {
+     "w": "goodwill",
+     "zh": "好意，亲善，友善"
+    },
+    {
+     "w": "soldier",
+     "zh": "土兵，军人"
+    },
+    {
+     "w": "fireman",
+     "zh": "消防队员"
+    },
+    {
+     "w": "against",
+     "zh": "和⋯对抗"
+    },
+    {
+     "w": "graduate",
+     "zh": "大学毕业"
+    },
+    {
+     "w": "college",
+     "zh": "大学；学院"
+    },
+    {
+     "w": "warmth",
+     "zh": "温暖"
+    },
+    {
+     "w": "means",
+     "zh": "手段；方法；工具"
+    },
+    {
+     "w": "by no means",
+     "zh": "绝不，一点儿都不"
+    },
+    {
+     "w": "lucky",
+     "zh": "运气好的，幸运"
+    }
+   ]
+  },
+  {
+   "n": "Unit 5",
+   "t": "",
+   "words": [
+    {
+     "w": "dinosaur",
+     "zh": "恐龙"
+    },
+    {
+     "w": "feather",
+     "zh": "羽毛，翎"
+    },
+    {
+     "w": "feather-covered",
+     "zh": "羽毛覆盖"
+    },
+    {
+     "w": "lizard",
+     "zh": "蜥蜴"
+    },
+    {
+     "w": "amber",
+     "zh": "琥珀"
+    },
+    {
+     "w": "whether",
+     "zh": "是否（用于表示选择或对某事不确定）"
+    },
+    {
+     "w": "northern",
+     "zh": "北部"
+    },
+    {
+     "w": "species",
+     "zh": "物种"
+    },
+    {
+     "w": "unknown",
+     "zh": "不知道，未知"
+    },
+    {
+     "w": "african",
+     "zh": "非洲的；非洲人"
+    },
+    {
+     "w": "belief",
+     "zh": "观点"
+    },
+    {
+     "w": "fully",
+     "zh": "完全地；充分地；彻底地"
+    },
+    {
+     "w": "unlock",
+     "zh": "揭开"
+    },
+    {
+     "w": "unlock the secrets of sth",
+     "zh": "揭开某事秘密"
+    },
+    {
+     "w": "newspaper",
+     "zh": "报"
+    },
+    {
+     "w": "writing",
+     "zh": "写作，著书"
+    },
+    {
+     "w": "style",
+     "zh": "风格"
+    },
+    {
+     "w": "method",
+     "zh": "万法，办法"
+    },
+    {
+     "w": "text",
+     "zh": "文字材料"
+    },
+    {
+     "w": "alive",
+     "zh": "有活力的，有生气"
+    },
+    {
+     "w": "argument",
+     "zh": "论点，论据"
+    },
+    {
+     "w": "board",
+     "zh": "布告牌，公告牌"
+    },
+    {
+     "w": "model",
+     "zh": "模型"
+    },
+    {
+     "w": "planet",
+     "zh": "行星"
+    },
+    {
+     "w": "clear",
+     "zh": "清除；清理"
+    },
+    {
+     "w": "upload",
+     "zh": "上载，上传"
+    },
+    {
+     "w": "whale",
+     "zh": "鲸"
+    },
+    {
+     "w": "boiling",
+     "zh": "很热的，滚烫"
+    },
+    {
+     "w": "chemical",
+     "zh": "化学品"
+    },
+    {
+     "w": "endless",
+     "zh": "无数的；无限"
+    },
+    {
+     "w": "sight",
+     "zh": "视力，视觉"
+    },
+    {
+     "w": "anybody",
+     "zh": "任何人"
+    },
+    {
+     "w": "magnifier",
+     "zh": "放大镜"
+    },
+    {
+     "w": "wealth",
+     "zh": "财富"
+    },
+    {
+     "w": "hardly",
+     "zh": "几乎不"
+    },
+    {
+     "w": "belong",
+     "zh": "应在"
+    },
+    {
+     "w": "belong to",
+     "zh": "属于"
+    },
+    {
+     "w": "granddaughter",
+     "zh": "孙女；外孙女"
+    }
+   ]
+  },
+  {
+   "n": "Unit 6",
+   "t": "",
+   "words": [
+    {
+     "w": "sweetly",
+     "zh": "悦耳动听地，好听地"
+    },
+    {
+     "w": "villager",
+     "zh": "村民"
+    },
+    {
+     "w": "wheat",
+     "zh": "小麦"
+    },
+    {
+     "w": "countryside",
+     "zh": "乡下，农村"
+    },
+    {
+     "w": "province",
+     "zh": "省"
+    },
+    {
+     "w": "react",
+     "zh": "反应"
+    },
+    {
+     "w": "especially",
+     "zh": "尤其"
+    },
+    {
+     "w": "wisdom",
+     "zh": "智慧，才智"
+    },
+    {
+     "w": "below",
+     "zh": "在⋯⋯的下面"
+    },
+    {
+     "w": "arrival",
+     "zh": "到来"
+    },
+    {
+     "w": "calendar",
+     "zh": "历法"
+    },
+    {
+     "w": "energetic",
+     "zh": "精力充沛的，充满活力"
+    },
+    {
+     "w": "beekeeping",
+     "zh": "养蜂业"
+    },
+    {
+     "w": "according to",
+     "zh": "据…⋯所示，按……所说"
+    },
+    {
+     "w": "desert",
+     "zh": "沙漠，荒漠"
+    },
+    {
+     "w": "energy",
+     "zh": "能源"
+    },
+    {
+     "w": "charge",
+     "zh": "充电"
+    },
+    {
+     "w": "environment",
+     "zh": "生态环境"
+    },
+    {
+     "w": "resource",
+     "zh": "资源"
+    },
+    {
+     "w": "natural resources",
+     "zh": "自然资源"
+    },
+    {
+     "w": "probably",
+     "zh": "很可能，大概"
+    },
+    {
+     "w": "west",
+     "zh": "西，西面"
+    },
+    {
+     "w": "east",
+     "zh": "东部"
+    },
+    {
+     "w": "midsummer",
+     "zh": "仲夏"
+    },
+    {
+     "w": "crazy",
+     "zh": "疯狂"
+    },
+    {
+     "w": "rainfall",
+     "zh": "雨量"
+    },
+    {
+     "w": "survive",
+     "zh": "活下来；幸存"
+    },
+    {
+     "w": "underground",
+     "zh": "地 下"
+    },
+    {
+     "w": "canal",
+     "zh": "水渠，沟渠；运河"
+    },
+    {
+     "w": "among",
+     "zh": "是⋯之一"
+    },
+    {
+     "w": "shortage",
+     "zh": "短缺，不足，缺乏"
+    },
+    {
+     "w": "increase",
+     "zh": "增加，增多；增长"
+    }
+   ]
+  }
+ ]
+}

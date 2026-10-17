@@ -1,0 +1,110 @@
+[
+ {
+  "w": "What day is it today",
+  "syl": "What·day·is·it·to·day",
+  "zh": "今天星期几？｜电影院",
+  "lvl": "yl"
+ },
+ {
+  "w": "See you tomorrow",
+  "syl": "See·you·to·mor·row",
+  "zh": "し",
+  "lvl": "yl"
+ },
+ {
+  "w": "have a go",
+  "syl": "have·a·go",
+  "zh": "试一试！",
+  "lvl": "yl"
+ },
+ {
+  "w": "It's OK",
+  "syl": "Its·O·K",
+  "zh": "",
+  "lvl": "yl"
+ },
+ {
+  "w": "Well played",
+  "syl": "Well·played",
+  "zh": "好球！",
+  "lvl": "yl"
+ },
+ {
+  "w": "save... for a rainy day",
+  "syl": "save·for·a·rai·ny·day",
+  "zh": "未雨绸缪",
+  "lvl": "yl"
+ },
+ {
+  "w": "fly a kite",
+  "syl": "fly·a·kite",
+  "zh": "放风筝",
+  "lvl": "yl"
+ },
+ {
+  "w": "It's raining",
+  "syl": "Its·rain·ing",
+  "zh": "下雨了。",
+  "lvl": "yl"
+ },
+ {
+  "w": "go skating",
+  "syl": "go·ska·ting",
+  "zh": "去滑冰",
+  "lvl": "yl"
+ },
+ {
+  "w": "go climbing",
+  "syl": "go·climb·ing",
+  "zh": "新的",
+  "lvl": "yl"
+ },
+ {
+  "w": "Welcome back to",
+  "syl": "Wel·come·back·to",
+  "zh": "欢迎回到⋯•⋯•",
+  "lvl": "yl"
+ },
+ {
+  "w": "go to",
+  "syl": "go·to",
+  "zh": "去⋯⋯",
+  "lvl": "yl"
+ },
+ {
+  "w": "go to school",
+  "syl": "go·to·school",
+  "zh": "上学",
+  "lvl": "yl"
+ },
+ {
+  "w": "in the morning",
+  "syl": "in·the·mor·ning",
+  "zh": "在上午",
+  "lvl": "yl"
+ },
+ {
+  "w": "have lunch",
+  "syl": "have·lunch",
+  "zh": "吃午饭",
+  "lvl": "yl"
+ },
+ {
+  "w": "in the afternoon",
+  "syl": "in·the·af·ter·noon",
+  "zh": "在下午",
+  "lvl": "yl"
+ },
+ {
+  "w": "have dinner",
+  "syl": "have·din·ner",
+  "zh": "吃晚饭",
+  "lvl": "yl"
+ },
+ {
+  "w": "in the evening",
+  "syl": "in·the·eve·ning",
+  "zh": "在晚上",
+  "lvl": "yl"
+ }
+]

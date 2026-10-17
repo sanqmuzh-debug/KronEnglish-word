@@ -1,0 +1,1067 @@
+{
+ "pub": "沪教",
+ "stage": "高中",
+ "grade": "选择性必修 第二册",
+ "vol": "",
+ "id": "fbd6f377-5c21-4ff4-905a-90e3fdddfe3b",
+ "title": "普通高中教科书·英语选择性必修 第二册",
+ "created": "2022-09-29",
+ "units": [
+  {
+   "n": "Unit 1",
+   "t": "",
+   "words": [
+    {
+     "w": "vocation",
+     "zh": "工作，职业"
+    },
+    {
+     "w": "gain",
+     "zh": "获得；取得n. increase 增加"
+    },
+    {
+     "w": "impress",
+     "zh": "使钦佩；使敬仰；给……留下深刻的好印象"
+    },
+    {
+     "w": "clerk",
+     "zh": "职员；文员"
+    },
+    {
+     "w": "descend",
+     "zh": "下来；下降"
+    },
+    {
+     "w": "shaft",
+     "zh": "电棉或矿井中的）升降机井；通风井"
+    },
+    {
+     "w": "loosen",
+     "zh": "放松；变松"
+    },
+    {
+     "w": "toss",
+     "zh": "扔，抛"
+    },
+    {
+     "w": "edge",
+     "zh": "边；边沿"
+    },
+    {
+     "w": "amused",
+     "zh": "被逗笑的；觉得好笑"
+    },
+    {
+     "w": "territory",
+     "zh": "领士；版图"
+    },
+    {
+     "w": "mailbox",
+     "zh": "信稚"
+    },
+    {
+     "w": "worthwhile",
+     "zh": "值得花时间 的"
+    },
+    {
+     "w": "wander",
+     "zh": "漫游；闲逛；游荡"
+    },
+    {
+     "w": "bare",
+     "zh": "空"
+    },
+    {
+     "w": "sensational",
+     "zh": "轰动"
+    },
+    {
+     "w": "rough",
+     "zh": "不舒服的"
+    },
+    {
+     "w": "column",
+     "zh": "专栏"
+    },
+    {
+     "w": "occupation",
+     "zh": "工作；职业"
+    },
+    {
+     "w": "suitable",
+     "zh": "合适的；适当"
+    },
+    {
+     "w": "deserve",
+     "zh": "应受， 值得"
+    },
+    {
+     "w": "cease",
+     "zh": "停止"
+    },
+    {
+     "w": "goat",
+     "zh": "山羊"
+    },
+    {
+     "w": "scholarship",
+     "zh": "奖学金"
+    },
+    {
+     "w": "circumstance",
+     "zh": "条件；环境"
+    },
+    {
+     "w": "exaggeration",
+     "zh": "夸张"
+    },
+    {
+     "w": "more important",
+     "zh": "夸张；言过其实"
+    },
+    {
+     "w": "proof",
+     "zh": "证据；证明"
+    },
+    {
+     "w": "passionate",
+     "zh": "热诚的"
+    },
+    {
+     "w": "mission",
+     "zh": "使命"
+    },
+    {
+     "w": "rocket",
+     "zh": "火前"
+    },
+    {
+     "w": "recite",
+     "zh": "背诵；吟诵"
+    },
+    {
+     "w": "patent",
+     "zh": "专利"
+    },
+    {
+     "w": "insight",
+     "zh": "洞悉；了解"
+    },
+    {
+     "w": "counsellor",
+     "zh": "夏令营负责人"
+    },
+    {
+     "w": "enthusiastic",
+     "zh": "满腔热情的"
+    },
+    {
+     "w": "entertainment",
+     "zh": "娱乐节目；娱乐活动"
+    },
+    {
+     "w": "assistant",
+     "zh": "助理；助手adi. having a rank below that of a senior person and helping them in their work 助理的"
+    },
+    {
+     "w": "inquiry",
+     "zh": "询问；打听"
+    },
+    {
+     "w": "scan",
+     "zh": "细看，审视"
+    },
+    {
+     "w": "qualification",
+     "zh": "资格"
+    },
+    {
+     "w": "enclose",
+     "zh": "随函附上"
+    },
+    {
+     "w": "drama",
+     "zh": "戏；剧"
+    },
+    {
+     "w": "candidate",
+     "zh": "候选人；申请人"
+    },
+    {
+     "w": "certificate",
+     "zh": "证书"
+    },
+    {
+     "w": "catalogue",
+     "zh": "目录"
+    },
+    {
+     "w": "sincerely",
+     "zh": "真诚地；诚实地"
+    },
+    {
+     "w": "minimum",
+     "zh": "最低的；最小；最低限度n. the lowest or smallest amount 最小值；最低额度"
+    },
+    {
+     "w": "approve",
+     "zh": "赞成；同意"
+    },
+    {
+     "w": "freedom",
+     "zh": "自由"
+    },
+    {
+     "w": "citizen",
+     "zh": "公民"
+    },
+    {
+     "w": "constitution",
+     "zh": "宪法， 章程"
+    },
+    {
+     "w": "arrest",
+     "zh": "逮捕；拘留n. the act of arresting somebody 逮捕；拘捕"
+    },
+    {
+     "w": "humiliate",
+     "zh": "羞辱"
+    },
+    {
+     "w": "prison",
+     "zh": "监狱"
+    },
+    {
+     "w": "sow",
+     "zh": "播种；种"
+    },
+    {
+     "w": "seed",
+     "zh": "种子；籽"
+    },
+    {
+     "w": "discrimination",
+     "zh": "区别， 辨别"
+    },
+    {
+     "w": "damage",
+     "zh": "损害；伤害"
+    },
+    {
+     "w": "church",
+     "zh": "教堂"
+    },
+    {
+     "w": "threat",
+     "zh": "恐吓"
+    },
+    {
+     "w": "reform",
+     "zh": "改革；变革v. to improve a system, an organization, a law, etc. by making changes to it 改革；改进"
+    },
+    {
+     "w": "illegal",
+     "zh": "不合法的；非法"
+    },
+    {
+     "w": "decline",
+     "zh": "谢绝；婉言拒绝n. decrease in the number, value, quality, etc. of something（数量、价值、质量等的）减少，下降，衰落，衰退"
+    },
+    {
+     "w": "racial",
+     "zh": "人种"
+    },
+    {
+     "w": "fend for oneself",
+     "zh": ""
+    },
+    {
+     "w": "hay wagon",
+     "zh": "还干草四轮车"
+    },
+    {
+     "w": "autobiographical novel",
+     "zh": ""
+    },
+    {
+     "w": "traffic jam",
+     "zh": "交通阻塞"
+    },
+    {
+     "w": "arts and crafts",
+     "zh": "手工艺品"
+    },
+    {
+     "w": "department store",
+     "zh": "百货公司"
+    }
+   ]
+  },
+  {
+   "n": "Unit 2",
+   "t": "",
+   "words": [
+    {
+     "w": "log",
+     "zh": "登录；注册n. a thick piece of wood 原木"
+    },
+    {
+     "w": "status",
+     "zh": "状况，情形"
+    },
+    {
+     "w": "analyse",
+     "zh": "分析"
+    },
+    {
+     "w": "gossip",
+     "zh": "流言蜚语"
+    },
+    {
+     "w": "dozen",
+     "zh": "打；十二个"
+    },
+    {
+     "w": "bet",
+     "zh": "敢说"
+    },
+    {
+     "w": "untag",
+     "zh": "去除标签"
+    },
+    {
+     "w": "pray",
+     "zh": "企盼；祈望"
+    },
+    {
+     "w": "intense",
+     "zh": "很大的；十分强烈"
+    },
+    {
+     "w": "consistently",
+     "zh": "一直；持续地"
+    },
+    {
+     "w": "consequently",
+     "zh": "因此；所以"
+    },
+    {
+     "w": "compromise",
+     "zh": "使陷入危险"
+    },
+    {
+     "w": "nasty",
+     "zh": "极差的；令人厌恶的"
+    },
+    {
+     "w": "profile",
+     "zh": "概述；简介"
+    },
+    {
+     "w": "delete",
+     "zh": "删除；移除"
+    },
+    {
+     "w": "weep",
+     "zh": "哭泣，流泪"
+    },
+    {
+     "w": "sympathetic",
+     "zh": "有同情心的"
+    },
+    {
+     "w": "employer",
+     "zh": "雇主；老板"
+    },
+    {
+     "w": "exposure",
+     "zh": "暴露"
+    },
+    {
+     "w": "harm",
+     "zh": "伤害；损害"
+    },
+    {
+     "w": "potential",
+     "zh": "潜在的；可能"
+    },
+    {
+     "w": "pause",
+     "zh": "停顿；停顿旳时间"
+    },
+    {
+     "w": "instant",
+     "zh": "立刻的；立即"
+    },
+    {
+     "w": "dare",
+     "zh": "敢于；胆敢"
+    },
+    {
+     "w": "outgoing",
+     "zh": "外向的"
+    },
+    {
+     "w": "adorable",
+     "zh": "可爱的；讨人喜爱的"
+    },
+    {
+     "w": "prior",
+     "zh": "先前的；在前的"
+    },
+    {
+     "w": "globe",
+     "zh": "地球；世界"
+    },
+    {
+     "w": "canal",
+     "zh": "运河， 沟渠"
+    },
+    {
+     "w": "foggy",
+     "zh": "有雾的"
+    },
+    {
+     "w": "mist",
+     "zh": "薄雾"
+    },
+    {
+     "w": "estate",
+     "zh": "住宅区；工业区"
+    },
+    {
+     "w": "weed",
+     "zh": "杂草；野草"
+    },
+    {
+     "w": "wire",
+     "zh": "金属丝；金属线"
+    },
+    {
+     "w": "kettle",
+     "zh": "水壶"
+    },
+    {
+     "w": "lung",
+     "zh": "肺"
+    },
+    {
+     "w": "handkerchief",
+     "zh": "手帕"
+    },
+    {
+     "w": "plug",
+     "zh": "接通"
+    },
+    {
+     "w": "wrist",
+     "zh": "手腕；腕关节"
+    },
+    {
+     "w": "waist",
+     "zh": "腰，腰部，腰围"
+    },
+    {
+     "w": "comprise",
+     "zh": "包括；由……组成"
+    },
+    {
+     "w": "component",
+     "zh": "组成部分"
+    },
+    {
+     "w": "clue",
+     "zh": "线索；提示"
+    },
+    {
+     "w": "clarify",
+     "zh": "使更清晰易懂；阐明"
+    },
+    {
+     "w": "constant",
+     "zh": "不断的；连续发生的"
+    },
+    {
+     "w": "rarely",
+     "zh": "罕有；很少"
+    },
+    {
+     "w": "instantly",
+     "zh": "立刻；马上"
+    },
+    {
+     "w": "emergency",
+     "zh": "紧急情况；突发事件"
+    },
+    {
+     "w": "inaccurate",
+     "zh": "不准确的"
+    },
+    {
+     "w": "objective",
+     "zh": "客观的；不带个人感情"
+    },
+    {
+     "w": "device",
+     "zh": "装置"
+    },
+    {
+     "w": "absorb",
+     "zh": "吸引全部注意力"
+    },
+    {
+     "w": "withdraw",
+     "zh": "收回， 撤回"
+    },
+    {
+     "w": "compatible",
+     "zh": "相容的；兼容"
+    },
+    {
+     "w": "fleeting",
+     "zh": "短暂的；闪现的"
+    },
+    {
+     "w": "hip",
+     "zh": "臀部"
+    },
+    {
+     "w": "desperate",
+     "zh": "极想的；渴望"
+    },
+    {
+     "w": "reverse",
+     "zh": "颠倒；使完全相反"
+    },
+    {
+     "w": "version",
+     "zh": "译本"
+    },
+    {
+     "w": "rhyme",
+     "zh": "使押韵"
+    },
+    {
+     "w": "mechanical",
+     "zh": "机械的"
+    },
+    {
+     "w": "neutral",
+     "zh": "中立的"
+    },
+    {
+     "w": "log in",
+     "zh": "登录；注册"
+    },
+    {
+     "w": "have a row with",
+     "zh": "吵架"
+    },
+    {
+     "w": "human being",
+     "zh": "人"
+    },
+    {
+     "w": "detective story",
+     "zh": "侦探小说"
+    }
+   ]
+  },
+  {
+   "n": "Unit 3",
+   "t": "",
+   "words": [
+    {
+     "w": "genius",
+     "zh": "天才人物；（某领域）天才"
+    },
+    {
+     "w": "scream",
+     "zh": "尖叫"
+    },
+    {
+     "w": "professor",
+     "zh": "教授"
+    },
+    {
+     "w": "maturity",
+     "zh": "成熟"
+    },
+    {
+     "w": "sculptor",
+     "zh": "雕刻家；雕塑家"
+    },
+    {
+     "w": "cubism",
+     "zh": "立体主义；立体派"
+    },
+    {
+     "w": "found",
+     "zh": "创建；创办"
+    },
+    {
+     "w": "triangle",
+     "zh": "三角形；三角形物体"
+    },
+    {
+     "w": "controversial",
+     "zh": "引起争论的；有争议的"
+    },
+    {
+     "w": "applaud",
+     "zh": "称赞；赞许；赞赏"
+    },
+    {
+     "w": "compose",
+     "zh": "作曲；创作"
+    },
+    {
+     "w": "symphony",
+     "zh": "交响乐；交响田"
+    },
+    {
+     "w": "brilliant",
+     "zh": "很成功的"
+    },
+    {
+     "w": "superb",
+     "zh": "极佳的；卓越的"
+    },
+    {
+     "w": "noble",
+     "zh": "贵族的；高贵"
+    },
+    {
+     "w": "royal",
+     "zh": "皇家的；王室的"
+    },
+    {
+     "w": "beauty",
+     "zh": "美；美丽"
+    },
+    {
+     "w": "output",
+     "zh": "人、机器、机构）产量，输出量"
+    },
+    {
+     "w": "opera",
+     "zh": "歌剧"
+    },
+    {
+     "w": "devotion",
+     "zh": "奉献；忠诚；专心；热心"
+    },
+    {
+     "w": "tailor",
+     "zh": "裁缝"
+    },
+    {
+     "w": "servant",
+     "zh": "仆人；佣人"
+    },
+    {
+     "w": "finance",
+     "zh": "筹措资金"
+    },
+    {
+     "w": "vision",
+     "zh": "想象；幻想"
+    },
+    {
+     "w": "funeral",
+     "zh": "葬礼；丧礼；出殡"
+    },
+    {
+     "w": "grave",
+     "zh": "坟墓；墓穴；坟头"
+    },
+    {
+     "w": "financial",
+     "zh": "财政的；财务的；金融的"
+    },
+    {
+     "w": "criticism",
+     "zh": "批评， 批判"
+    },
+    {
+     "w": "gradually",
+     "zh": "逐渐地；逐步地；渐进地"
+    },
+    {
+     "w": "splendid",
+     "zh": "壮丽的；雄伟的；华丽的"
+    },
+    {
+     "w": "substantial",
+     "zh": "大量的；价值巨大；重大的"
+    },
+    {
+     "w": "property",
+     "zh": "性质；特性"
+    },
+    {
+     "w": "ruin",
+     "zh": "残垣断壁；废墟v. to damage something so badly that it loses all its value, pleasure, etc;to spoil something 毁坏；破坏"
+    },
+    {
+     "w": "jungle",
+     "zh": "丛林，密林"
+    },
+    {
+     "w": "fantasy",
+     "zh": "幻想作品"
+    },
+    {
+     "w": "leather",
+     "zh": "皮革， 皮革制品"
+    },
+    {
+     "w": "practical",
+     "zh": "明智的；买事求是的"
+    },
+    {
+     "w": "security",
+     "zh": "安全；平安"
+    },
+    {
+     "w": "straightforward",
+     "zh": "简单的；易懂的；不复杂的"
+    },
+    {
+     "w": "emotion",
+     "zh": "情感"
+    },
+    {
+     "w": "division",
+     "zh": "部门"
+    },
+    {
+     "w": "compete",
+     "zh": "比赛，竞争"
+    },
+    {
+     "w": "category",
+     "zh": "类别，种类"
+    },
+    {
+     "w": "absence",
+     "zh": "不存在；缺乏"
+    },
+    {
+     "w": "remarkable",
+     "zh": "非凡的；奇异的；显著的；引人注目的"
+    },
+    {
+     "w": "robber",
+     "zh": "强盗；盗贼；抢劫犯"
+    },
+    {
+     "w": "interpretation",
+     "zh": "阐释解读"
+    },
+    {
+     "w": "adaptation",
+     "zh": "改编本，改写本"
+    },
+    {
+     "w": "evaluative",
+     "zh": ""
+    },
+    {
+     "w": "deny",
+     "zh": "否认；否定"
+    },
+    {
+     "w": "favoured",
+     "zh": "大众喜爱的"
+    },
+    {
+     "w": "distinctive",
+     "zh": "独特的；特别的；有特色的"
+    },
+    {
+     "w": "inner",
+     "zh": "内心的；隐藏的"
+    },
+    {
+     "w": "emphasis",
+     "zh": "强调；重视；重要性"
+    },
+    {
+     "w": "complicated",
+     "zh": "复杂的， 难懂的"
+    },
+    {
+     "w": "characteristic",
+     "zh": "典型的；独特的；特有的"
+    },
+    {
+     "w": "anniversary",
+     "zh": "周年纪念日"
+    },
+    {
+     "w": "striking",
+     "zh": "引l人注目的；显著的"
+    },
+    {
+     "w": "sketch pad",
+     "zh": "画板"
+    },
+    {
+     "w": "trial and error",
+     "zh": ""
+    }
+   ]
+  },
+  {
+   "n": "Unit 4",
+   "t": "",
+   "words": [
+    {
+     "w": "accompany",
+     "zh": "陪同；陪伴"
+    },
+    {
+     "w": "beam",
+     "zh": "光线"
+    },
+    {
+     "w": "brick",
+     "zh": "砖；砖块"
+    },
+    {
+     "w": "blank",
+     "zh": "空的；无图画"
+    },
+    {
+     "w": "nonsense",
+     "zh": "谬论；胡扯；胡言乱语"
+    },
+    {
+     "w": "shade",
+     "zh": "阴凉处，遮光物"
+    },
+    {
+     "w": "firm",
+     "zh": "牢固的；稳固的"
+    },
+    {
+     "w": "stem",
+     "zh": "茎"
+    },
+    {
+     "w": "sin",
+     "zh": "罪；罪恶；罪过"
+    },
+    {
+     "w": "ladder",
+     "zh": "梯子，阶梯"
+    },
+    {
+     "w": "fate",
+     "zh": "命运安排"
+    },
+    {
+     "w": "amateur",
+     "zh": "业余爱好者；业余运动员"
+    },
+    {
+     "w": "humble",
+     "zh": "谦逊的；虚心"
+    },
+    {
+     "w": "amid",
+     "zh": "在…中间"
+    },
+    {
+     "w": "hint",
+     "zh": "暗示；透露；示意n. something that you say or do in an indirect way in order to show somebody what you are thinking 暗示；提示；示意"
+    },
+    {
+     "w": "pessimistic",
+     "zh": "悲观的；悲观主义的"
+    },
+    {
+     "w": "ambitious",
+     "zh": "有野心的；有雄心的"
+    },
+    {
+     "w": "pond",
+     "zh": "池塘；水池"
+    },
+    {
+     "w": "labour",
+     "zh": "劳动； 体力劳动"
+    },
+    {
+     "w": "carpet",
+     "zh": "地毯"
+    },
+    {
+     "w": "blanket",
+     "zh": "毯子；毛毯"
+    },
+    {
+     "w": "classify",
+     "zh": "分类"
+    },
+    {
+     "w": "corresponding",
+     "zh": "符合的；相应的；相关"
+    },
+    {
+     "w": "severely",
+     "zh": "非常严重地"
+    },
+    {
+     "w": "belief",
+     "zh": "信任， 相信"
+    },
+    {
+     "w": "bow",
+     "zh": "弓"
+    },
+    {
+     "w": "arrow",
+     "zh": "箭"
+    },
+    {
+     "w": "acknowledge",
+     "zh": "承认"
+    },
+    {
+     "w": "interact",
+     "zh": "互动"
+    },
+    {
+     "w": "liberation",
+     "zh": "解放"
+    },
+    {
+     "w": "navy",
+     "zh": "海军；海军部队"
+    },
+    {
+     "w": "crew",
+     "zh": "全体工作人员"
+    },
+    {
+     "w": "assign",
+     "zh": "分配 ；分派，布置（工作、任务等）"
+    },
+    {
+     "w": "confront",
+     "zh": "使面临，使面对，使对付（令人不快或难处的人、场合）"
+    },
+    {
+     "w": "seize",
+     "zh": "抓住；捉住；夺"
+    },
+    {
+     "w": "communist",
+     "zh": "共产主义者；共产主义的支持者"
+    },
+    {
+     "w": "outstanding",
+     "zh": "优秀的；杰出的；出色的"
+    },
+    {
+     "w": "fascinating",
+     "zh": "极有吸引力的；迷人"
+    },
+    {
+     "w": "herb",
+     "zh": "药草， 香草"
+    },
+    {
+     "w": "extraordinary",
+     "zh": "不平常的；不一般的；非凡的；卓越的"
+    },
+    {
+     "w": "pursue",
+     "zh": "追求；致力于；执行；贯彻"
+    },
+    {
+     "w": "dedicate",
+     "zh": "题献词于上"
+    },
+    {
+     "w": "liberty",
+     "zh": "自田"
+    },
+    {
+     "w": "initially",
+     "zh": "开始；最初；起初"
+    },
+    {
+     "w": "transformation",
+     "zh": ""
+    },
+    {
+     "w": "sorrow",
+     "zh": "悲伤；悲痛；悲衰"
+    },
+    {
+     "w": "subsequent",
+     "zh": "随后的；后来的；之后的"
+    },
+    {
+     "w": "lawyer",
+     "zh": "律师"
+    },
+    {
+     "w": "welfare",
+     "zh": "个人、动物或群体的）幸福，福祉，安康"
+    },
+    {
+     "w": "involvement",
+     "zh": "参与；加入；插手"
+    },
+    {
+     "w": "expense",
+     "zh": "费用；价钱"
+    },
+    {
+     "w": "principled",
+     "zh": "是非观念强的；原则性强的；基于坚定信念的"
+    },
+    {
+     "w": "persistence",
+     "zh": "坚持；锲而不舍"
+    },
+    {
+     "w": "dignity",
+     "zh": "自豪；自尊；自重"
+    },
+    {
+     "w": "steel",
+     "zh": "钢"
+    },
+    {
+     "w": "stability",
+     "zh": "稳定（性）；稳固（性）"
+    },
+    {
+     "w": "negotiate",
+     "zh": "谈判；磋商；协商"
+    },
+    {
+     "w": "manner",
+     "zh": "举止；行为方式"
+    },
+    {
+     "w": "capacity",
+     "zh": "领悟 能力"
+    },
+    {
+     "w": "cling to",
+     "zh": "抓紧；紧握；紧抱"
+    },
+    {
+     "w": "turn down",
+     "zh": "拒绝；顶回（提议、建议或提议人）"
+    }
+   ]
+  }
+ ]
+}

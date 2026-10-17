@@ -1,0 +1,1481 @@
+{
+ "pub": "人教",
+ "stage": "高中",
+ "grade": "选择性必修 第二册",
+ "vol": "",
+ "id": "0d537335-d02c-4774-85e2-7554c86fea7e",
+ "title": "普通高中教科书·英语选择性必修 第二册",
+ "created": "2022-09-29",
+ "units": [
+  {
+   "n": "Unit 1",
+   "t": "",
+   "words": [
+    {
+     "w": "cholera",
+     "zh": "霍乱"
+    },
+    {
+     "w": "severe",
+     "zh": "严重的"
+    },
+    {
+     "w": "diarrhoea",
+     "zh": "腹泻"
+    },
+    {
+     "w": "dehydration",
+     "zh": "脱水"
+    },
+    {
+     "w": "frustrated",
+     "zh": "懊恼的；泪丧的；失意的"
+    },
+    {
+     "w": "once and for all",
+     "zh": "最终地；彻底地"
+    },
+    {
+     "w": "contradictory",
+     "zh": "反对的， 矛盾的"
+    },
+    {
+     "w": "infection",
+     "zh": "感染；传染"
+    },
+    {
+     "w": "infect",
+     "zh": "使感染；传染"
+    },
+    {
+     "w": "germ",
+     "zh": "微生物；细菌；病菌"
+    },
+    {
+     "w": "subscribe",
+     "zh": "订阅"
+    },
+    {
+     "w": "subscribe to",
+     "zh": "同意；赞同"
+    },
+    {
+     "w": "proof",
+     "zh": "让据；让明；检验"
+    },
+    {
+     "w": "multiple",
+     "zh": "复合的"
+    },
+    {
+     "w": "pump",
+     "zh": "泵；抽水机；打气筒"
+    },
+    {
+     "w": "water pump",
+     "zh": "水泵"
+    },
+    {
+     "w": "household",
+     "zh": "一家人；家庭；同住一所（套）房子人"
+    },
+    {
+     "w": "suspect",
+     "zh": "怀疑；疑有；不信任/'sAspekt/ n. 犯罪嫌疑人；可疑对象"
+    },
+    {
+     "w": "blame",
+     "zh": "责备；指责"
+    },
+    {
+     "w": "handle",
+     "zh": "把手；拉手；柄"
+    },
+    {
+     "w": "intervention",
+     "zh": "介入；出面；干涉"
+    },
+    {
+     "w": "link",
+     "zh": "联系；纽带"
+    },
+    {
+     "w": "raw",
+     "zh": "未煮的；生的；未经处理的；原始"
+    },
+    {
+     "w": "pure",
+     "zh": "干净的；纯的；纯粹"
+    },
+    {
+     "w": "substantial",
+     "zh": "可观的， 大量的"
+    },
+    {
+     "w": "decrease",
+     "zh": "「di:kris/n.减少；降低；减少量/drkris/ vt.& vi.（使大小、数量等）减少；减小；降低"
+    },
+    {
+     "w": "thanks to",
+     "zh": "幸亏；由于"
+    },
+    {
+     "w": "statistic",
+     "zh": "统计数值"
+    },
+    {
+     "w": "transform",
+     "zh": "使改观；使改变形态vi. 改变；转变"
+    },
+    {
+     "w": "epidemiology",
+     "zh": "流行病学"
+    },
+    {
+     "w": "microscope",
+     "zh": "显微镜"
+    },
+    {
+     "w": "thinking",
+     "zh": "思想；思维；见解"
+    },
+    {
+     "w": "protein",
+     "zh": "蛋白质"
+    },
+    {
+     "w": "cell",
+     "zh": "细胞；小房间；单间牢房"
+    },
+    {
+     "w": "virus",
+     "zh": "病毒"
+    },
+    {
+     "w": "finding",
+     "zh": "发现；调查结果；（法律）判决"
+    },
+    {
+     "w": "initial",
+     "zh": "最初的；开始的；第一的"
+    },
+    {
+     "w": "vaccine",
+     "zh": "疫苗"
+    },
+    {
+     "w": "framework",
+     "zh": "框架；结构"
+    },
+    {
+     "w": "theoretical framework",
+     "zh": "理论框架"
+    },
+    {
+     "w": "solid",
+     "zh": "可靠的；固体的；坚实的n. 固体"
+    },
+    {
+     "w": "cast",
+     "zh": "投射；向…⋯投以（视线、笑容等）；投掷"
+    },
+    {
+     "w": "shadow",
+     "zh": "阴影；影子；背光处"
+    },
+    {
+     "w": "rainbow",
+     "zh": "彩虹"
+    },
+    {
+     "w": "pour",
+     "zh": "倒出；倾泻；斟"
+    },
+    {
+     "w": "concrete",
+     "zh": "混凝土"
+    },
+    {
+     "w": "plasma",
+     "zh": "血浆"
+    },
+    {
+     "w": "aerospace",
+     "zh": "航空航天工业"
+    },
+    {
+     "w": "patriotic",
+     "zh": "爱国的"
+    },
+    {
+     "w": "mechanical",
+     "zh": "机械的"
+    },
+    {
+     "w": "mechanic",
+     "zh": "机械师；机械修理工"
+    },
+    {
+     "w": "break out",
+     "zh": "（战争、打斗等不愉快的事情）突然开始；爆发"
+    },
+    {
+     "w": "aviation",
+     "zh": "航空， 航空学"
+    },
+    {
+     "w": "defend",
+     "zh": "保卫；防守；辩解"
+    },
+    {
+     "w": "jet",
+     "zh": "喷气式飞机"
+    },
+    {
+     "w": "assistant",
+     "zh": "助理；助手"
+    },
+    {
+     "w": "in charge of",
+     "zh": "主管；掌管"
+    },
+    {
+     "w": "missile",
+     "zh": "导弹"
+    },
+    {
+     "w": "leadership",
+     "zh": "领导"
+    },
+    {
+     "w": "trace",
+     "zh": "追溯；追踪；查出n. 痕迹；遗迹；踪迹"
+    },
+    {
+     "w": "outstanding but",
+     "zh": ""
+    },
+    {
+     "w": "gifted",
+     "zh": "有天赋的"
+    },
+    {
+     "w": "come down",
+     "zh": "惠 ；染上"
+    },
+    {
+     "w": "abstract",
+     "zh": "抽象的；理论上的"
+    },
+    {
+     "w": "steady",
+     "zh": "稳定的；平稳的；稳步"
+    },
+    {
+     "w": "concept",
+     "zh": "概念；观念"
+    },
+    {
+     "w": "astronomer",
+     "zh": "天文学家"
+    },
+    {
+     "w": "astronomy",
+     "zh": "天文学"
+    },
+    {
+     "w": "telescope",
+     "zh": "望远镜"
+    },
+    {
+     "w": "besides",
+     "zh": "除⋯⋯之外"
+    },
+    {
+     "w": "brilliant",
+     "zh": "绝妙的"
+    },
+    {
+     "w": "furthermore",
+     "zh": "此外；再者"
+    },
+    {
+     "w": "above all",
+     "zh": "最重要的是；尤其是"
+    },
+    {
+     "w": "fault",
+     "zh": "弱点；过错"
+    },
+    {
+     "w": "shift",
+     "zh": "改变；转换；轮班"
+    },
+    {
+     "w": "vivid",
+     "zh": "生动的；鲜明的；丰富"
+    },
+    {
+     "w": "cambridge",
+     "zh": "剑桥"
+    },
+    {
+     "w": "non-newtonian fluid",
+     "zh": "非牛顿流体"
+    },
+    {
+     "w": "the big bang theory",
+     "zh": "大爆炸宇宙论"
+    }
+   ]
+  },
+  {
+   "n": "Unit 2",
+   "t": "",
+   "words": [
+    {
+     "w": "complex",
+     "zh": "由许多部分组成的"
+    },
+    {
+     "w": "recall",
+     "zh": "记起；回想起"
+    },
+    {
+     "w": "qualification",
+     "zh": "资格"
+    },
+    {
+     "w": "qualify",
+     "zh": "（使）具备资格；（使）合格"
+    },
+    {
+     "w": "ambition",
+     "zh": "追求的目标；夙愿；野心；抱负"
+    },
+    {
+     "w": "ambitious",
+     "zh": "有雄心的"
+    },
+    {
+     "w": "adaptation",
+     "zh": "适应：改编本"
+    },
+    {
+     "w": "comfort",
+     "zh": "安慰；令人感到安慰的人或事物；舒服；安逸vt. 安慰；抚慰"
+    },
+    {
+     "w": "tutor",
+     "zh": "家庭教师"
+    },
+    {
+     "w": "cite",
+     "zh": "引用；引述"
+    },
+    {
+     "w": "participation",
+     "zh": "参加；参与"
+    },
+    {
+     "w": "participate",
+     "zh": "参加；参与"
+    },
+    {
+     "w": "participate in",
+     "zh": "参加；参与"
+    },
+    {
+     "w": "presentation",
+     "zh": "报告；陈述；出示；拿出"
+    },
+    {
+     "w": "speak up",
+     "zh": "大声点说；明确表态"
+    },
+    {
+     "w": "feel at home",
+     "zh": "舒服自在；不拘束"
+    },
+    {
+     "w": "engage",
+     "zh": "参加；参与vt. 吸引（注意力、兴趣）"
+    },
+    {
+     "w": "engage in",
+     "zh": "从事；参与"
+    },
+    {
+     "w": "involve",
+     "zh": "包含；需要；涉及；影响；（使）参加"
+    },
+    {
+     "w": "get involved in",
+     "zh": "参与；卷入；与⋯有关联"
+    },
+    {
+     "w": "messenger",
+     "zh": "送信人；信使"
+    },
+    {
+     "w": "edition",
+     "zh": "一份；一期、一辑；版次"
+    },
+    {
+     "w": "culture shock",
+     "zh": "文化冲击"
+    },
+    {
+     "w": "zone",
+     "zh": "将…划做特殊区域"
+    },
+    {
+     "w": "comfort zone",
+     "zh": "舒适区；舒适范围"
+    },
+    {
+     "w": "overwhelming",
+     "zh": "压倒性的"
+    },
+    {
+     "w": "homesickness",
+     "zh": "思乡病；乡愁"
+    },
+    {
+     "w": "motivated",
+     "zh": "积极的；主动的"
+    },
+    {
+     "w": "motivation",
+     "zh": "动力；积极性；动机"
+    },
+    {
+     "w": "motivate",
+     "zh": "成为⋯⋯的动机；激发；激励"
+    },
+    {
+     "w": "advisor",
+     "zh": "顾问"
+    },
+    {
+     "w": "reasonable",
+     "zh": "有道理的；合情理的"
+    },
+    {
+     "w": "expectation",
+     "zh": "期待"
+    },
+    {
+     "w": "applicant",
+     "zh": "申请人"
+    },
+    {
+     "w": "firm",
+     "zh": "公司；商行；事务所"
+    },
+    {
+     "w": "exposure",
+     "zh": "接触；体验；暴路；揭露"
+    },
+    {
+     "w": "expose",
+     "zh": "暴露"
+    },
+    {
+     "w": "insight",
+     "zh": "洞察力；眼光"
+    },
+    {
+     "w": "departure",
+     "zh": "离开；启程；出发"
+    },
+    {
+     "w": "setting",
+     "zh": "环境：背景；（小说等）情节背景"
+    },
+    {
+     "w": "grasp",
+     "zh": "理解；领会；抓紧"
+    },
+    {
+     "w": "dramatic",
+     "zh": "激动人心的"
+    },
+    {
+     "w": "expense",
+     "zh": "费用；花费；开销"
+    },
+    {
+     "w": "cost an arm and a leg",
+     "zh": "花一大笔钱"
+    },
+    {
+     "w": "tremendous",
+     "zh": "巨大；极大的"
+    },
+    {
+     "w": "behave",
+     "zh": "表现"
+    },
+    {
+     "w": "surroundings",
+     "zh": "环境，周围的事物"
+    },
+    {
+     "w": "surrounding",
+     "zh": "周围的"
+    },
+    {
+     "w": "mature",
+     "zh": "成熟"
+    },
+    {
+     "w": "depressed",
+     "zh": "沮丧的；意志消沉"
+    },
+    {
+     "w": "depress",
+     "zh": "使沮丧；使忧愁"
+    },
+    {
+     "w": "boom",
+     "zh": "迅速发展；繁荣"
+    },
+    {
+     "w": "strengthen",
+     "zh": "加强，增强"
+    },
+    {
+     "w": "deny",
+     "zh": "否认；否定；拒绝"
+    },
+    {
+     "w": "optimistic",
+     "zh": "乐观"
+    },
+    {
+     "w": "gain",
+     "zh": "获得；赢得；取得；增加n. 好处；增加"
+    },
+    {
+     "w": "perspective",
+     "zh": "视角， 观点"
+    },
+    {
+     "w": "competence",
+     "zh": "能力；胜任；本领"
+    },
+    {
+     "w": "competent",
+     "zh": "有能力的；称职"
+    },
+    {
+     "w": "envoy",
+     "zh": "使者；使节；代表"
+    },
+    {
+     "w": "cooperate",
+     "zh": "合作， 协作"
+    },
+    {
+     "w": "angle",
+     "zh": "角；角度；立场"
+    },
+    {
+     "w": "outlook",
+     "zh": "前景；可能性；观点"
+    },
+    {
+     "w": "belt",
+     "zh": "腰带；地带"
+    },
+    {
+     "w": "initiative",
+     "zh": "倡议；新方案"
+    },
+    {
+     "w": "sincerely",
+     "zh": "真诚地；诚实地"
+    },
+    {
+     "w": "budget",
+     "zh": "预算"
+    },
+    {
+     "w": "side with",
+     "zh": "支持；站在⋯一边"
+    },
+    {
+     "w": "logical",
+     "zh": "逻辑的"
+    },
+    {
+     "w": "as far as I know",
+     "zh": "据我所知"
+    },
+    {
+     "w": "as far as",
+     "zh": "就我而言；依我看来"
+    },
+    {
+     "w": "in Summary",
+     "zh": "总的来说；总之"
+    },
+    {
+     "w": "generally speaking",
+     "zh": "一般来说"
+    },
+    {
+     "w": "outcome",
+     "zh": "结果；效果"
+    },
+    {
+     "w": "rome",
+     "zh": "罗马（意大利首都）；（史）罗马城：罗马帝国"
+    }
+   ]
+  },
+  {
+   "n": "Unit 3",
+   "t": "",
+   "words": [
+    {
+     "w": "cuisine",
+     "zh": "菜肴；风味；烹饪"
+    },
+    {
+     "w": "prior",
+     "zh": "先前的；优先的"
+    },
+    {
+     "w": "prior to",
+     "zh": "在⋯⋯之前"
+    },
+    {
+     "w": "consist",
+     "zh": "由…组成"
+    },
+    {
+     "w": "consist of",
+     "zh": "由⋯⋯组成"
+    },
+    {
+     "w": "pepper",
+     "zh": "甜椒；灯発椒；胡椒粉"
+    },
+    {
+     "w": "recipe",
+     "zh": "烹饪法；食谱"
+    },
+    {
+     "w": "bold",
+     "zh": "大胆自信的；敢于冒险的"
+    },
+    {
+     "w": "chef",
+     "zh": "厨师；主厨"
+    },
+    {
+     "w": "peppercorn",
+     "zh": "胡椒粒"
+    },
+    {
+     "w": "vinegar",
+     "zh": "醋"
+    },
+    {
+     "w": "stuff",
+     "zh": "填满；把……塞进n. 东西；物品"
+    },
+    {
+     "w": "slice",
+     "zh": "薄片"
+    },
+    {
+     "w": "slice... off",
+     "zh": "切下"
+    },
+    {
+     "w": "onion",
+     "zh": "洋葱；葱头"
+    },
+    {
+     "w": "lamb",
+     "zh": "羊羔肉；羔羊"
+    },
+    {
+     "w": "Lamb kebab",
+     "zh": "烤羊肉串"
+    },
+    {
+     "w": "elegant",
+     "zh": "精美的；讲究的；文雅的"
+    },
+    {
+     "w": "dim sum",
+     "zh": "点心"
+    },
+    {
+     "w": "exceptional",
+     "zh": "例外的"
+    },
+    {
+     "w": "minimum",
+     "zh": "最小值；最少量adj. 最低（限度）；最小"
+    },
+    {
+     "w": "consume",
+     "zh": "吃；喝；饮；消耗"
+    },
+    {
+     "w": "temper",
+     "zh": "脾气；火气"
+    },
+    {
+     "w": "vegetarian",
+     "zh": "素食者"
+    },
+    {
+     "w": "junk",
+     "zh": "无用的东西"
+    },
+    {
+     "w": "junk food",
+     "zh": "垃圾食品"
+    },
+    {
+     "w": "garlic",
+     "zh": "蒜"
+    },
+    {
+     "w": "bacon",
+     "zh": "熏猪肉；咸肉"
+    },
+    {
+     "w": "ham",
+     "zh": "火腿"
+    },
+    {
+     "w": "sausage",
+     "zh": "香肠；腊肠"
+    },
+    {
+     "w": "cabbage",
+     "zh": "甘蓝；卷心菜；洋白菜"
+    },
+    {
+     "w": "bean curd",
+     "zh": "（=tofu /'toufu:/）豆腐"
+    },
+    {
+     "w": "brand",
+     "zh": "品牌"
+    },
+    {
+     "w": "olive",
+     "zh": "油橄榄；橄榄树"
+    },
+    {
+     "w": "fig",
+     "zh": "无花果"
+    },
+    {
+     "w": "ingredient",
+     "zh": "组成部分， 成分"
+    },
+    {
+     "w": "dessert",
+     "zh": "甜点"
+    },
+    {
+     "w": "dough",
+     "zh": "生面团"
+    },
+    {
+     "w": "stable",
+     "zh": "稳定的；稳重"
+    },
+    {
+     "w": "haggis",
+     "zh": "羊杂碎肚"
+    },
+    {
+     "w": "canteen",
+     "zh": "食堂；䬸厅"
+    },
+    {
+     "w": "cafeteria",
+     "zh": "自助餈厅；自助食堂"
+    },
+    {
+     "w": "bun",
+     "zh": "圆面包；小圆甜饼"
+    },
+    {
+     "w": "chilli",
+     "zh": "辣椒"
+    },
+    {
+     "w": "pork",
+     "zh": "猪肉"
+    },
+    {
+     "w": "red braised",
+     "zh": "红烧肉"
+    },
+    {
+     "w": "pearl",
+     "zh": "珍珠"
+    },
+    {
+     "w": "somewhat",
+     "zh": "有点；稍微"
+    },
+    {
+     "w": "madam",
+     "zh": "夫人；女士"
+    },
+    {
+     "w": "calorie",
+     "zh": "卡路里"
+    },
+    {
+     "w": "association",
+     "zh": "协会；关联"
+    },
+    {
+     "w": "regardless",
+     "zh": "不顾；不加理会"
+    },
+    {
+     "w": "regardless of",
+     "zh": "不管；不顾"
+    },
+    {
+     "w": "category",
+     "zh": "类别；种类"
+    },
+    {
+     "w": "vitamin",
+     "zh": "维生素"
+    },
+    {
+     "w": "fibre",
+     "zh": "纤维；纤维制品"
+    },
+    {
+     "w": "quantity",
+     "zh": "数量；数额"
+    },
+    {
+     "w": "dairy",
+     "zh": "奶制的；乳品n. 乳制品；乳品店；牛奶厂"
+    },
+    {
+     "w": "moderation",
+     "zh": "适度；合理"
+    },
+    {
+     "w": "ideal",
+     "zh": "理想；完美的人（或事物）"
+    },
+    {
+     "w": "fundamental",
+     "zh": "基本规律；根本法则"
+    },
+    {
+     "w": "chew",
+     "zh": "咀嚼；嚼碎n. 咀嚼"
+    },
+    {
+     "w": "consistent",
+     "zh": "一致的；连续"
+    },
+    {
+     "w": "modest",
+     "zh": "些许的；谦虚的；不素的"
+    },
+    {
+     "w": "trick",
+     "zh": "诀窍；计谋；把戏"
+    },
+    {
+     "w": "overall",
+     "zh": "总体上；大致上"
+    },
+    {
+     "w": "jean",
+     "zh": "琼（女名）"
+    },
+    {
+     "w": "brillat-savarin",
+     "zh": "让•安泰尔姆•布里亚-萨瓦兰（法国美食家）"
+    }
+   ]
+  },
+  {
+   "n": "Unit 4",
+   "t": "",
+   "words": [
+    {
+     "w": "airline",
+     "zh": "航空公司"
+    },
+    {
+     "w": "bay",
+     "zh": "湾"
+    },
+    {
+     "w": "craft",
+     "zh": "手艺；工艺；技艺"
+    },
+    {
+     "w": "antique",
+     "zh": "古物；古董"
+    },
+    {
+     "w": "pleasant",
+     "zh": "令人愉快的；友好的"
+    },
+    {
+     "w": "arise",
+     "zh": "(过去式"
+    },
+    {
+     "w": "massive",
+     "zh": "巨大的；非常严重"
+    },
+    {
+     "w": "literally",
+     "zh": "字面上；真正地"
+    },
+    {
+     "w": "breath",
+     "zh": "呼吸的空气"
+    },
+    {
+     "w": "take sb's breath away",
+     "zh": "令人惊叹"
+    },
+    {
+     "w": "bound",
+     "zh": "跳跃"
+    },
+    {
+     "w": "scenery",
+     "zh": "风景；景色"
+    },
+    {
+     "w": "awesome",
+     "zh": "令人惊叹"
+    },
+    {
+     "w": "spectacular",
+     "zh": "壮丽的场面；精彩的表演"
+    },
+    {
+     "w": "peak",
+     "zh": "顶峰；山峰；尖形"
+    },
+    {
+     "w": "highlight",
+     "zh": "最好或最精彩部分"
+    },
+    {
+     "w": "goat",
+     "zh": "山羊"
+    },
+    {
+     "w": "grizzly bear",
+     "zh": "灰熊"
+    },
+    {
+     "w": "drill",
+     "zh": "钻 ；打n. 钻（头）；训练；演习"
+    },
+    {
+     "w": "freezing",
+     "zh": "极冷；冰冻"
+    },
+    {
+     "w": "freezing cold",
+     "zh": "极冷；冻僵"
+    },
+    {
+     "w": "freeze",
+     "zh": "（froze, frozen）结冰；（使）冻住"
+    },
+    {
+     "w": "mall",
+     "zh": "购物商场；购物广场"
+    },
+    {
+     "w": "prairie",
+     "zh": "北美草原"
+    },
+    {
+     "w": "anticipate",
+     "zh": "预料；预见；期望"
+    },
+    {
+     "w": "bunch",
+     "zh": "束；串；捆"
+    },
+    {
+     "w": "a bunch of",
+     "zh": "一束；一串；一群；大量"
+    },
+    {
+     "w": "thunder",
+     "zh": "雷声；轰隆声"
+    },
+    {
+     "w": "frost",
+     "zh": "霜；严寒天气；霜冻"
+    },
+    {
+     "w": "curtain",
+     "zh": "窗帘"
+    },
+    {
+     "w": "border",
+     "zh": "国界；边界"
+    },
+    {
+     "w": "duration",
+     "zh": "持续时间；期间"
+    },
+    {
+     "w": "harbour",
+     "zh": "(harbor)海港"
+    },
+    {
+     "w": "enrol",
+     "zh": "登记，注册，入学"
+    },
+    {
+     "w": "quarry",
+     "zh": "采石场"
+    },
+    {
+     "w": "idiom",
+     "zh": "习语；成语"
+    },
+    {
+     "w": "contrary",
+     "zh": "相反的；相对立的n. 相反的事实（或事情）"
+    },
+    {
+     "w": "contrary to",
+     "zh": "相反；相对立"
+    },
+    {
+     "w": "anyhow",
+     "zh": "无论如何"
+    },
+    {
+     "w": "alongside",
+     "zh": "在旁边"
+    },
+    {
+     "w": "proceed",
+     "zh": "行进；继续做"
+    },
+    {
+     "w": "proceed to sth",
+     "zh": "进而做"
+    },
+    {
+     "w": "shore",
+     "zh": "岸；滨"
+    },
+    {
+     "w": "astonish",
+     "zh": "使十分惊讶；使吃惊"
+    },
+    {
+     "w": "misty",
+     "zh": "多雾的；模糊"
+    },
+    {
+     "w": "mist",
+     "zh": "薄雾；水汽"
+    },
+    {
+     "w": "steel",
+     "zh": "钢；钢铁工业"
+    },
+    {
+     "w": "dusk",
+     "zh": "黄昏；傍晚"
+    },
+    {
+     "w": "advertisement",
+     "zh": "（informal ad）广告；启事"
+    },
+    {
+     "w": "accent",
+     "zh": "口音"
+    },
+    {
+     "w": "photographer",
+     "zh": "撮影师；拍照者"
+    },
+    {
+     "w": "owe",
+     "zh": "欠"
+    },
+    {
+     "w": "owe sth to sb",
+     "zh": "欠 ；把……归功于某人"
+    },
+    {
+     "w": "toast",
+     "zh": "烤面包片；吐司；干杯vt. & vi.烤（尤指面包）"
+    },
+    {
+     "w": "cobblestone",
+     "zh": "铺有鹅卵石的"
+    },
+    {
+     "w": "coherent",
+     "zh": "黏在一起的"
+    },
+    {
+     "w": "halifax",
+     "zh": "哈利法克斯"
+    },
+    {
+     "w": "vancouver",
+     "zh": "温哥华"
+    },
+    {
+     "w": "toronto",
+     "zh": "多伦多"
+    },
+    {
+     "w": "edmonton",
+     "zh": "埃德蒙顿"
+    },
+    {
+     "w": "niagara",
+     "zh": "尼亚加拉瀑布"
+    },
+    {
+     "w": "jean-philippe",
+     "zh": "让-菲利普"
+    }
+   ]
+  },
+  {
+   "n": "Unit 5",
+   "t": "",
+   "words": [
+    {
+     "w": "technique",
+     "zh": "技能；技术；技艺"
+    },
+    {
+     "w": "leaflet",
+     "zh": "散页印刷品；传单；小册子"
+    },
+    {
+     "w": "organ",
+     "zh": "器官"
+    },
+    {
+     "w": "toxin",
+     "zh": "毒素（尤指细菌产生致病物质）"
+    },
+    {
+     "w": "ray",
+     "zh": "光线；光束； 射线"
+    },
+    {
+     "w": "Sense of touch",
+     "zh": "触觉"
+    },
+    {
+     "w": "radiation",
+     "zh": "辐射；放射线"
+    },
+    {
+     "w": "acid",
+     "zh": "酸 adj.酸的；酸性的"
+    },
+    {
+     "w": "millimetre",
+     "zh": "毫米；千分之一米"
+    },
+    {
+     "w": "minor",
+     "zh": "辅修"
+    },
+    {
+     "w": "layer",
+     "zh": "层；表层；层次"
+    },
+    {
+     "w": "electric",
+     "zh": "用电的"
+    },
+    {
+     "w": "electric Shock",
+     "zh": "触电；电击"
+    },
+    {
+     "w": "victim",
+     "zh": "受害者；患者"
+    },
+    {
+     "w": "swollen",
+     "zh": "肿胀的，浮肿的"
+    },
+    {
+     "w": "swell",
+     "zh": "膨胀；肿胀"
+    },
+    {
+     "w": "blister",
+     "zh": "水疱；（金属等表面）气泡、水泡"
+    },
+    {
+     "w": "underneath",
+     "zh": "在下面，在底下"
+    },
+    {
+     "w": "nerve",
+     "zh": "神经"
+    },
+    {
+     "w": "fabric",
+     "zh": "织物；布料；（社会、机构等）结构"
+    },
+    {
+     "w": "loose",
+     "zh": "松的；未系祭；宽松"
+    },
+    {
+     "w": "urgent",
+     "zh": "紧急的；急迫的；急切的"
+    },
+    {
+     "w": "ease",
+     "zh": "宽慰；减轻；缓解n. 容易；舒适；自在"
+    },
+    {
+     "w": "paramedic",
+     "zh": "急救医生；护理人员"
+    },
+    {
+     "w": "swallow",
+     "zh": "吞下；咽下"
+    },
+    {
+     "w": "wrap",
+     "zh": "包、裏； 围住"
+    },
+    {
+     "w": "bathtub",
+     "zh": "浴缸；浴盆"
+    },
+    {
+     "w": "bath",
+     "zh": "洗澡；（BrE=bathtub）浴缸；浴盆"
+    },
+    {
+     "w": "slip",
+     "zh": "滑倒；滑落；溜走"
+    },
+    {
+     "w": "mosquito",
+     "zh": "蚊子"
+    },
+    {
+     "w": "elderly",
+     "zh": "年纪较大的；上了年纪的"
+    },
+    {
+     "w": "carpet",
+     "zh": "地毯"
+    },
+    {
+     "w": "operator",
+     "zh": "电话接线员；操作员"
+    },
+    {
+     "w": "ambulance",
+     "zh": "救护车"
+    },
+    {
+     "w": "delay",
+     "zh": "推迟；延期vt. 耽误；耽搁n. 延误；耽搁（时间）；推迟"
+    },
+    {
+     "w": "needle",
+     "zh": "针；缝衣针；注射针；指针"
+    },
+    {
+     "w": "id needle",
+     "zh": "静脉注射针"
+    },
+    {
+     "w": "vital sign",
+     "zh": "生命体征"
+    },
+    {
+     "w": "ward",
+     "zh": "病房"
+    },
+    {
+     "w": "drown",
+     "zh": "溺死"
+    },
+    {
+     "w": "sprain",
+     "zh": "扭伤 n.扭伤"
+    },
+    {
+     "w": "ankle",
+     "zh": "踝；踝关节"
+    },
+    {
+     "w": "bleeding",
+     "zh": "流血；失血"
+    },
+    {
+     "w": "bleed",
+     "zh": "流血；失血"
+    },
+    {
+     "w": "panic",
+     "zh": "惊慌n. 惊恐；恐慌"
+    },
+    {
+     "w": "interrupt",
+     "zh": "打断；打扰vt. 使暂停；使中断"
+    },
+    {
+     "w": "scream",
+     "zh": "尖叫"
+    },
+    {
+     "w": "fellow",
+     "zh": "同伴"
+    },
+    {
+     "w": "diner",
+     "zh": "就餮者"
+    },
+    {
+     "w": "choke",
+     "zh": "窒息； 哽咽"
+    },
+    {
+     "w": "steak",
+     "zh": "牛排；肉排"
+    },
+    {
+     "w": "throat",
+     "zh": "咽喉；喉咙"
+    },
+    {
+     "w": "desperate",
+     "zh": "绝望拼死的"
+    },
+    {
+     "w": "slap",
+     "zh": "打、拍"
+    },
+    {
+     "w": "help sb to one's feet",
+     "zh": "帮助某人站起身来"
+    },
+    {
+     "w": "practical",
+     "zh": "务实的"
+    },
+    {
+     "w": "obstruction",
+     "zh": "阻碍；堵塞；阻塞物"
+    },
+    {
+     "w": "fist",
+     "zh": "拳；拳头"
+    },
+    {
+     "w": "grab",
+     "zh": "抓住；攫取n. 抓取；抢夺"
+    },
+    {
+     "w": "tightly",
+     "zh": "紧紧地；牢固地；紧密地"
+    },
+    {
+     "w": "tight",
+     "zh": "紧的"
+    },
+    {
+     "w": "motion",
+     "zh": "运动；移动"
+    },
+    {
+     "w": "face up",
+     "zh": "面朝上"
+    },
+    {
+     "w": "justify",
+     "zh": "证明…是正当的"
+    },
+    {
+     "w": "welfare",
+     "zh": "幸福；福祉；安康；福利"
+    },
+    {
+     "w": "collapse",
+     "zh": "倒坍"
+    },
+    {
+     "w": "manual",
+     "zh": "使用手册；说明书"
+    },
+    {
+     "w": "sleep in",
+     "zh": "迟起；睡过头；睡懒觉"
+    },
+    {
+     "w": "out of shape",
+     "zh": "健康状况不好"
+    },
+    {
+     "w": "foggy",
+     "zh": "有雾"
+    },
+    {
+     "w": "suburb",
+     "zh": "郊区；城外"
+    },
+    {
+     "w": "membership",
+     "zh": "会员身份；全体会员；会员人数"
+    },
+    {
+     "w": "taylor",
+     "zh": "泰勒"
+    },
+    {
+     "w": "car",
+     "zh": "心肺复苏（包括人工呼吸和体外心脏按压）"
+    },
+    {
+     "w": "mouth-to-mouth rescue breathing",
+     "zh": "口对口人工呼吸"
+    },
+    {
+     "w": "Heimlich manoeuvre",
+     "zh": "海姆利希急救法"
+    }
+   ]
+  }
+ ]
+}

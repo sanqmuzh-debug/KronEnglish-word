@@ -1,0 +1,519 @@
+{
+ "pub": "译林",
+ "stage": "小学",
+ "grade": "六年级",
+ "vol": "下册",
+ "id": "2b63b996-3f8c-439a-bb0c-3f127c9507af",
+ "title": "义务教育教科书·英语（三年级起点）六年级下册",
+ "created": "2022-09-29",
+ "units": [
+  {
+   "n": "Unit 1",
+   "t": "",
+   "words": [
+    {
+     "w": "mouse",
+     "zh": "老最"
+    },
+    {
+     "w": "large",
+     "zh": "大"
+    },
+    {
+     "w": "strong",
+     "zh": "强大，强壮"
+    },
+    {
+     "w": "walk by",
+     "zh": "走过，路过"
+    },
+    {
+     "w": "wake... up",
+     "zh": "吵醒，叫醒"
+    },
+    {
+     "w": "some day",
+     "zh": "某一天"
+    },
+    {
+     "w": "quietly",
+     "zh": "小声地，安静地"
+    },
+    {
+     "w": "weak",
+     "zh": "弱的，软弱"
+    },
+    {
+     "w": "loudly",
+     "zh": "大声地"
+    },
+    {
+     "w": "let... go",
+     "zh": "释放，放开"
+    },
+    {
+     "w": "the next day",
+     "zh": "第二天"
+    },
+    {
+     "w": "net",
+     "zh": "网"
+    },
+    {
+     "w": "bite",
+     "zh": "咬"
+    },
+    {
+     "w": "sharp",
+     "zh": "锋利的，尖"
+    },
+    {
+     "w": "sadly",
+     "zh": "难过地，伤心地"
+    },
+    {
+     "w": "just then",
+     "zh": "就在那时"
+    },
+    {
+     "w": "soon",
+     "zh": "不久，很快"
+    },
+    {
+     "w": "happily",
+     "zh": "开心地，高兴地"
+    },
+    {
+     "w": "from then on",
+     "zh": "从那时起"
+    },
+    {
+     "w": "cheer",
+     "zh": "欢呼"
+    },
+    {
+     "w": "hit",
+     "zh": "打，击深"
+    },
+    {
+     "w": "deep",
+     "zh": "够得着"
+    },
+    {
+     "w": "reach",
+     "zh": "迅速地，快地"
+    },
+    {
+     "w": "quickly",
+     "zh": "（I）"
+    },
+    {
+     "w": "pour... into",
+     "zh": "把⋯•⋯倒入"
+    }
+   ]
+  },
+  {
+   "n": "Unit 2",
+   "t": "",
+   "words": [
+    {
+     "w": "habit",
+     "zh": "习惯"
+    },
+    {
+     "w": "never",
+     "zh": "从不"
+    },
+    {
+     "w": "late",
+     "zh": "迟，晚"
+    },
+    {
+     "w": "put... in order",
+     "zh": "把⋯⋯整理得井井有条"
+    },
+    {
+     "w": "finish",
+     "zh": "完成"
+    },
+    {
+     "w": "tidy",
+     "zh": "干净的，整齐"
+    },
+    {
+     "w": "bad",
+     "zh": "不好的，坏"
+    },
+    {
+     "w": "sleepy",
+     "zh": "困的，困倦"
+    },
+    {
+     "w": "last night",
+     "zh": "昨夜"
+    },
+    {
+     "w": "fast",
+     "zh": "快地"
+    },
+    {
+     "w": "go into",
+     "zh": "走进，走入"
+    },
+    {
+     "w": "slowly",
+     "zh": "慢速地"
+    },
+    {
+     "w": "badly",
+     "zh": "差地，不好"
+    }
+   ]
+  },
+  {
+   "n": "Unit 3",
+   "t": "",
+   "words": [
+    {
+     "w": "healthy",
+     "zh": "健康"
+    },
+    {
+     "w": "diet",
+     "zh": "饮食"
+    },
+    {
+     "w": "a little",
+     "zh": "一点"
+    },
+    {
+     "w": "a few",
+     "zh": "几个"
+    },
+    {
+     "w": "at a time",
+     "zh": "一次"
+    },
+    {
+     "w": "cola",
+     "zh": "可乐"
+    },
+    {
+     "w": "need",
+     "zh": "需要"
+    }
+   ]
+  },
+  {
+   "n": "Unit 4",
+   "t": "",
+   "words": [
+    {
+     "w": "road",
+     "zh": "马路，公路"
+    },
+    {
+     "w": "safety",
+     "zh": "安全"
+    },
+    {
+     "w": "cross",
+     "zh": "穿过，芽行"
+    },
+    {
+     "w": "safely",
+     "zh": "安全地"
+    },
+    {
+     "w": "must",
+     "zh": "必须"
+    },
+    {
+     "w": "zebra crossing",
+     "zh": "斑马线"
+    },
+    {
+     "w": "safe",
+     "zh": "安全"
+    },
+    {
+     "w": "pavement",
+     "zh": "人行道"
+    },
+    {
+     "w": "look out for",
+     "zh": "当心，提防"
+    },
+    {
+     "w": "easily",
+     "zh": "容易地"
+    },
+    {
+     "w": "follow",
+     "zh": "遵守"
+    },
+    {
+     "w": "rule",
+     "zh": "规则"
+    },
+    {
+     "w": "stay",
+     "zh": "保持"
+    },
+    {
+     "w": "light",
+     "zh": "灯"
+    }
+   ]
+  },
+  {
+   "n": "Unit 5",
+   "t": "",
+   "words": [
+    {
+     "w": "children's Day",
+     "zh": "儿童节"
+    },
+    {
+     "w": "clown",
+     "zh": "小丑"
+    },
+    {
+     "w": "appear",
+     "zh": "出现"
+    },
+    {
+     "w": "balloon",
+     "zh": "气球"
+    },
+    {
+     "w": "begin",
+     "zh": "开始"
+    },
+    {
+     "w": "put on",
+     "zh": "上演，表演"
+    },
+    {
+     "w": "end",
+     "zh": "结束"
+    }
+   ]
+  },
+  {
+   "n": "Unit 6",
+   "t": "",
+   "words": [
+    {
+     "w": "country",
+     "zh": "国家"
+    },
+    {
+     "w": "will",
+     "zh": "将，将要"
+    },
+    {
+     "w": "learn",
+     "zh": "学习"
+    },
+    {
+     "w": "australia",
+     "zh": "澳大利亚"
+    },
+    {
+     "w": "find out",
+     "zh": "发现"
+    },
+    {
+     "w": "magazine",
+     "zh": "杂志"
+    },
+    {
+     "w": "kangaroo",
+     "zh": "袋蟲"
+    },
+    {
+     "w": "koala",
+     "zh": "考拉"
+    },
+    {
+     "w": "sport-lover",
+     "zh": "运动爱好者澳式橄榄球"
+    },
+    {
+     "w": "australian football",
+     "zh": ""
+    },
+    {
+     "w": "exciting",
+     "zh": "令人激动的，令人兴奋（澳大利亚城市）悉尼"
+    },
+    {
+     "w": "sydney",
+     "zh": "欢迎"
+    },
+    {
+     "w": "welcome",
+     "zh": "欢迎"
+    },
+    {
+     "w": "visitor",
+     "zh": "游人，游客"
+    },
+    {
+     "w": "for example",
+     "zh": "例如"
+    },
+    {
+     "w": "london",
+     "zh": "伦敦"
+    },
+    {
+     "w": "like",
+     "zh": "如（伦敦）大本钟"
+    },
+    {
+     "w": "big Ben",
+     "zh": ""
+    },
+    {
+     "w": "london Eye",
+     "zh": "（伦敦的摩天轮）伦敦眼（伦敦）塔桥"
+    },
+    {
+     "w": "tower Bridge",
+     "zh": ""
+    },
+    {
+     "w": "What do you think",
+     "zh": "你觉得呢？"
+    },
+    {
+     "w": "month",
+     "zh": "月"
+    }
+   ]
+  },
+  {
+   "n": "Unit 7",
+   "t": "",
+   "words": [
+    {
+     "w": "summer holiday",
+     "zh": "暑假"
+    },
+    {
+     "w": "go back to",
+     "zh": "回去"
+    },
+    {
+     "w": "how long",
+     "zh": "多久"
+    },
+    {
+     "w": "sound",
+     "zh": "听起来，听上去迪士尼乐园"
+    },
+    {
+     "w": "ocean Park",
+     "zh": ""
+    },
+    {
+     "w": "taipei",
+     "zh": "台北"
+    },
+    {
+     "w": "photo",
+     "zh": "照片"
+    },
+    {
+     "w": "travel",
+     "zh": "旅游"
+    },
+    {
+     "w": "traveller",
+     "zh": "旅行者"
+    },
+    {
+     "w": "travel around the world",
+     "zh": "环游世界"
+    },
+    {
+     "w": "different",
+     "zh": "不同的"
+    }
+   ]
+  },
+  {
+   "n": "Unit 8",
+   "t": "",
+   "words": [
+    {
+     "w": "dream",
+     "zh": "梦想"
+    },
+    {
+     "w": "future",
+     "zh": "将来，未来"
+    },
+    {
+     "w": "care about",
+     "zh": "关心，在乎"
+    },
+    {
+     "w": "tooth",
+     "zh": "牙齿"
+    },
+    {
+     "w": "astronaut",
+     "zh": "宇航员"
+    },
+    {
+     "w": "spaceship",
+     "zh": "宇宙飞船"
+    },
+    {
+     "w": "football player",
+     "zh": "足球运动员"
+    },
+    {
+     "w": "world Cup",
+     "zh": "世界杯舞蹈家"
+    },
+    {
+     "w": "dancer",
+     "zh": "舞蹈演员"
+    },
+    {
+     "w": "pianist",
+     "zh": "钢琴演奏家"
+    },
+    {
+     "w": "come true",
+     "zh": "实现，成真"
+    },
+    {
+     "w": "take care of",
+     "zh": "爱护；照顾"
+    },
+    {
+     "w": "scientist",
+     "zh": "科学家勇敢"
+    },
+    {
+     "w": "brave",
+     "zh": "勇敢的"
+    },
+    {
+     "w": "artist",
+     "zh": "艺术家"
+    },
+    {
+     "w": "paint",
+     "zh": "画画"
+    }
+   ]
+  }
+ ]
+}

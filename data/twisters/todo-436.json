@@ -1,0 +1,122 @@
+[
+{
+"w": "break the news",
+"syl": "break·the·news",
+"zh": "（率先）透露重大消息",
+"lvl": "think"
+},
+{
+"w": "retweet",
+"syl": "re·tweet",
+"zh": "转发推文",
+"lvl": "think"
+},
+{
+"w": "drop someone a line",
+"syl": "drop·some·one·a·line",
+"zh": "给某人写封便信",
+"lvl": "think"
+},
+{
+"w": "give someone a call",
+"syl": "give·some·one·a·call",
+"zh": "给某人打个电话",
+"lvl": "think"
+},
+{
+"w": "in a way",
+"syl": "in·a·way",
+"zh": "在某种程度上",
+"lvl": "think"
+},
+{
+"w": "have it both ways",
+"syl": "have·it·both·ways",
+"zh": "兼得鱼和熊掌",
+"lvl": "think"
+},
+{
+"w": "one way or another",
+"syl": "one·way·or·a·noth·er",
+"zh": "不管怎样",
+"lvl": "think"
+},
+{
+"w": "no way",
+"syl": "no·way",
+"zh": "绝不可能",
+"lvl": "think"
+},
+{
+"w": "all the way",
+"syl": "all·the·way",
+"zh": "一路到底",
+"lvl": "think"
+},
+{
+"w": "way too",
+"syl": "way·too",
+"zh": "实在太…",
+"lvl": "think"
+},
+{
+"w": "it's not rocket science",
+"syl": "its·not·rock·et·sci·ence",
+"zh": "这又不是什么造火箭的高深学问",
+"lvl": "think"
+},
+{
+"w": "once in a blue moon",
+"syl": "once·in·a·blue·moon",
+"zh": "千载难逢",
+"lvl": "think"
+},
+{
+"w": "starry-eyed",
+"syl": "star·ry·eyed",
+"zh": "满眼星光憧憬的",
+"lvl": "think"
+},
+{
+"w": "over the moon",
+"syl": "o·ver·the·moon",
+"zh": "欣喜若狂",
+"lvl": "think"
+},
+{
+"w": "down to earth",
+"syl": "down·to·earth",
+"zh": "脚踏实地的",
+"lvl": "think"
+},
+{
+"w": "action-packed",
+"syl": "ac·tion·packed",
+"zh": "动作戏拉满的",
+"lvl": "think"
+},
+{
+"w": "far-fetched",
+"syl": "far·fetched",
+"zh": "牵强附会的",
+"lvl": "think"
+},
+{
+"w": "thrilling",
+"syl": "thrill·ing",
+"zh": "惊险万分的",
+"lvl": "think"
+},
+{
+"w": "collaboration",
+"syl": "col·lab·o·ra·tion",
+"zh": "跨国通力协作",
+"lvl": "think"
+},
+{
+"w": "in operation",
+"syl": "in·op·e·ra·tion",
+"zh": "正在运转投用中",
+"lvl": "think"
+}
+]

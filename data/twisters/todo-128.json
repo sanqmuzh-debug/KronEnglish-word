@@ -1,0 +1,122 @@
+[
+{
+"w": "rhythm",
+"syl": "rhythm",
+"zh": "节奏",
+"lvl": "pep"
+},
+{
+"w": "folk",
+"syl": "folk",
+"zh": "民间",
+"lvl": "pep"
+},
+{
+"w": "classical",
+"syl": "clas·si·cal",
+"zh": "古典的",
+"lvl": "pep"
+},
+{
+"w": "jazz",
+"syl": "jazz",
+"zh": "爵士乐",
+"lvl": "pep"
+},
+{
+"w": "rap",
+"syl": "rap",
+"zh": "说唱乐 V.表演说唱乐",
+"lvl": "pep"
+},
+{
+"w": "traditional",
+"syl": "tra·di·tio·nal",
+"zh": "传统的",
+"lvl": "pep"
+},
+{
+"w": "dance to",
+"syl": "dance·to",
+"zh": "随着跳舞",
+"lvl": "pep"
+},
+{
+"w": "sing along to",
+"syl": "sing·a·long·to",
+"zh": "随着唱",
+"lvl": "pep"
+},
+{
+"w": "lyric",
+"syl": "ly·ric",
+"zh": "歌词 抒情",
+"lvl": "pep"
+},
+{
+"w": "electric",
+"syl": "e·lec·tric",
+"zh": "用电的",
+"lvl": "pep"
+},
+{
+"w": "electric guitar",
+"syl": "e·lec·tric·gui·tar",
+"zh": "电吉他",
+"lvl": "pep"
+},
+{
+"w": "keyboard",
+"syl": "key·board",
+"zh": "电子琴",
+"lvl": "pep"
+},
+{
+"w": "trumpet",
+"syl": "trum·pet",
+"zh": "小号",
+"lvl": "pep"
+},
+{
+"w": "style",
+"syl": "style",
+"zh": "风格",
+"lvl": "pep"
+},
+{
+"w": "golden",
+"syl": "gol·den",
+"zh": "金色",
+"lvl": "pep"
+},
+{
+"w": "lover",
+"syl": "lov·er",
+"zh": "情人",
+"lvl": "pep"
+},
+{
+"w": "romantic",
+"syl": "ro·man·tic",
+"zh": "爱情的",
+"lvl": "pep"
+},
+{
+"w": "performer",
+"syl": "per·for·mer",
+"zh": "表演者，演出者",
+"lvl": "pep"
+},
+{
+"w": "gifted",
+"syl": "gif·ted",
+"zh": "有天赋",
+"lvl": "pep"
+},
+{
+"w": "poet",
+"syl": "po·et",
+"zh": "诗人",
+"lvl": "pep"
+}
+]

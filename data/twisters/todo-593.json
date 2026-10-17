@@ -1,0 +1,122 @@
+[
+{
+"w": "brow",
+"syl": "brow",
+"zh": "额， 眉， 眉毛",
+"lvl": "exam"
+},
+{
+"w": "collaborative",
+"syl": "col·lab·o·ra·tive",
+"zh": "合作的",
+"lvl": "exam"
+},
+{
+"w": "cop",
+"syl": "cop",
+"zh": "警察",
+"lvl": "exam"
+},
+{
+"w": "detection",
+"syl": "de·tec·tion",
+"zh": "察觉， 发觉",
+"lvl": "exam"
+},
+{
+"w": "donation",
+"syl": "do·na·tion",
+"zh": "捐款， 捐赠物",
+"lvl": "exam"
+},
+{
+"w": "enquire",
+"syl": "en·qui·re",
+"zh": "询问",
+"lvl": "exam"
+},
+{
+"w": "fearful",
+"syl": "fear·ful",
+"zh": "害怕的， 可怕的",
+"lvl": "exam"
+},
+{
+"w": "hesitant",
+"syl": "hes·i·tant",
+"zh": "犹豫的",
+"lvl": "exam"
+},
+{
+"w": "honourable",
+"syl": "hon·ou·ra·ble",
+"zh": "光荣的",
+"lvl": "exam"
+},
+{
+"w": "horsepower",
+"syl": "horse·pow·er",
+"zh": "马力",
+"lvl": "exam"
+},
+{
+"w": "hospitalize",
+"syl": "hos·pit·a·lize",
+"zh": "就医",
+"lvl": "exam"
+},
+{
+"w": "increasingly",
+"syl": "in·crea·sing·ly",
+"zh": "日益",
+"lvl": "exam"
+},
+{
+"w": "industrialize",
+"syl": "in·dus·tri·a·lize",
+"zh": "工业化",
+"lvl": "exam"
+},
+{
+"w": "injection",
+"syl": "in·jec·tion",
+"zh": "注射， 注入",
+"lvl": "exam"
+},
+{
+"w": "integration",
+"syl": "in·te·gra·tion",
+"zh": "综合",
+"lvl": "exam"
+},
+{
+"w": "layout",
+"syl": "lay·out",
+"zh": "布局",
+"lvl": "exam"
+},
+{
+"w": "learning",
+"syl": "learn·ing",
+"zh": "学习",
+"lvl": "exam"
+},
+{
+"w": "marvelous",
+"syl": "mar·ve·lous",
+"zh": "奇迹般的",
+"lvl": "exam"
+},
+{
+"w": "marxist",
+"syl": "marx·ist",
+"zh": "马克思主义的",
+"lvl": "exam"
+},
+{
+"w": "modernization",
+"syl": "mod·er·ni·za·tion",
+"zh": "现代化",
+"lvl": "exam"
+}
+]

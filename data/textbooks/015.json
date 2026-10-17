@@ -1,0 +1,1717 @@
+{
+ "pub": "人教",
+ "stage": "高中",
+ "grade": "必修 第三册",
+ "vol": "",
+ "id": "bf54b36f-4c75-4c91-8b9c-53ce15e4f903",
+ "title": "普通高中教科书·英语必修 第三册",
+ "created": "2022-09-29",
+ "units": [
+  {
+   "n": "Unit 1",
+   "t": "",
+   "words": [
+    {
+     "w": "lantern",
+     "zh": "灯笼；提灯"
+    },
+    {
+     "w": "carnival",
+     "zh": "狂欢节；嘉年华"
+    },
+    {
+     "w": "costume",
+     "zh": "（某地或某历史时期）服装；戏装"
+    },
+    {
+     "w": "dress sb up",
+     "zh": "穿上盛装；装扮"
+    },
+    {
+     "w": "march",
+     "zh": "行进；前进；示威游行"
+    },
+    {
+     "w": "congratulation",
+     "zh": "祝贺；恭喜"
+    },
+    {
+     "w": "congratulate",
+     "zh": "祝贺， 向…道喜"
+    },
+    {
+     "w": "riddle",
+     "zh": "谜语；神秘事件"
+    },
+    {
+     "w": "ceremony",
+     "zh": "典礼；仪式"
+    },
+    {
+     "w": "samba",
+     "zh": "桑巴舞；桑巴舞曲"
+    },
+    {
+     "w": "make-up",
+     "zh": "化妆品；性格；构成方式"
+    },
+    {
+     "w": "after all",
+     "zh": "毕竟；别忘了"
+    },
+    {
+     "w": "range",
+     "zh": "一系列；范围、界限vi. 包括；（在一定范围内）变化"
+    },
+    {
+     "w": "range from... to",
+     "zh": "包括从……到……之间"
+    },
+    {
+     "w": "origin",
+     "zh": "起源；起因；出身"
+    },
+    {
+     "w": "religion",
+     "zh": "宗教；宗教信仰"
+    },
+    {
+     "w": "religious",
+     "zh": "宗教的；笃信宗教的"
+    },
+    {
+     "w": "figure",
+     "zh": "人物；数字；身材"
+    },
+    {
+     "w": "charm",
+     "zh": "魅力；迷人的特征；咒语"
+    },
+    {
+     "w": "joy",
+     "zh": "高兴；喜悦"
+    },
+    {
+     "w": "joyful",
+     "zh": "高兴的；快乐的"
+    },
+    {
+     "w": "gratitude",
+     "zh": "感激之情；感谢"
+    },
+    {
+     "w": "harvest",
+     "zh": "收割"
+    },
+    {
+     "w": "agricultural",
+     "zh": "农业的"
+    },
+    {
+     "w": "agriculture",
+     "zh": "农业；农艺"
+    },
+    {
+     "w": "crop",
+     "zh": "庄稼；作物；一季收成"
+    },
+    {
+     "w": "gather",
+     "zh": "聚集；集合vt. 聚集；搜集；收割"
+    },
+    {
+     "w": "grateful",
+     "zh": "感激的；表示感谢的"
+    },
+    {
+     "w": "feature",
+     "zh": "以.•为特色n. 特色；特征；特点"
+    },
+    {
+     "w": "decorate",
+     "zh": "装饰；装潢"
+    },
+    {
+     "w": "church",
+     "zh": "教堂；礼拜堂"
+    },
+    {
+     "w": "significant",
+     "zh": "有重大意义；显著"
+    },
+    {
+     "w": "fade",
+     "zh": "逐渐消失； 祖色；（身体）变得虚弱"
+    },
+    {
+     "w": "fade away",
+     "zh": "逐渐消失； 变得虚弱"
+    },
+    {
+     "w": "typical",
+     "zh": "典型的；有代表性的；平常"
+    },
+    {
+     "w": "firecracker",
+     "zh": "鞭炮；爆竹"
+    },
+    {
+     "w": "evil",
+     "zh": "邪恶；有害的；罪恶"
+    },
+    {
+     "w": "in spite",
+     "zh": "不管；尽管"
+    },
+    {
+     "w": "commercial",
+     "zh": "商业的"
+    },
+    {
+     "w": "commercialize",
+     "zh": "/ka m:jalarz/ vt. 使商业化；利用⋯⋯牟利"
+    },
+    {
+     "w": "commercialization",
+     "zh": "/ko,ms:falar'zerjn/n. 商业化"
+    },
+    {
+     "w": "take advantage of",
+     "zh": "利用；欺骗；占⋯便宜"
+    },
+    {
+     "w": "medium",
+     "zh": "（pl.media/mi:dio/）媒介；手段；方法"
+    },
+    {
+     "w": "the media",
+     "zh": "大众传播媒介"
+    },
+    {
+     "w": "reflect",
+     "zh": "显示；反映；反射"
+    },
+    {
+     "w": "belief",
+     "zh": "信仰；信心；信任"
+    },
+    {
+     "w": "faith",
+     "zh": "宗教信仰；信任；相信"
+    },
+    {
+     "w": "occasion",
+     "zh": "场合，时刻"
+    },
+    {
+     "w": "have sth in common",
+     "zh": "（兴趣、想法等方面）相同；有相同特征"
+    },
+    {
+     "w": "atmosphere",
+     "zh": "气氛"
+    },
+    {
+     "w": "lunar",
+     "zh": "阴历的；月球的；月亮的"
+    },
+    {
+     "w": "eve",
+     "zh": "前夜"
+    },
+    {
+     "w": "envelope",
+     "zh": "信封；塑料封套"
+    },
+    {
+     "w": "christmas carol",
+     "zh": "圣诞颂歌"
+    },
+    {
+     "w": "merry",
+     "zh": "愉快；高兴"
+    },
+    {
+     "w": "merry Christmas",
+     "zh": "圣诞快乐！"
+    },
+    {
+     "w": "pumpkin",
+     "zh": "南瓜"
+    },
+    {
+     "w": "pudding",
+     "zh": "布丁； 甜食"
+    },
+    {
+     "w": "mashed",
+     "zh": "土豆泥"
+    },
+    {
+     "w": "roast",
+     "zh": "烤；焙"
+    },
+    {
+     "w": "turkey",
+     "zh": "火鸡；火鸡肉"
+    },
+    {
+     "w": "roast turkey",
+     "zh": "烤火鸡肉"
+    },
+    {
+     "w": "please",
+     "zh": "高兴的；满意"
+    },
+    {
+     "w": "firework",
+     "zh": "烟火；烟花；Lpl.」烟花表演"
+    },
+    {
+     "w": "frank",
+     "zh": "坦率；直率的"
+    },
+    {
+     "w": "to be frank",
+     "zh": "坦白说；坦率地说"
+    },
+    {
+     "w": "go off",
+     "zh": "爆炸；走火；离开"
+    },
+    {
+     "w": "except for",
+     "zh": "除⋯・・⋯之外"
+    },
+    {
+     "w": "inner",
+     "zh": "内部的；里面的；内心"
+    },
+    {
+     "w": "autonomous",
+     "zh": "自治的；有自治权"
+    },
+    {
+     "w": "region",
+     "zh": "地区；区域；地带"
+    },
+    {
+     "w": "represent",
+     "zh": "象征；代表；相当于"
+    },
+    {
+     "w": "wrestling",
+     "zh": "摔跤运动"
+    },
+    {
+     "w": "wrestle",
+     "zh": "摔跤；奋力对付"
+    },
+    {
+     "w": "wrestler",
+     "zh": "摔跤运动员"
+    },
+    {
+     "w": "archery",
+     "zh": "射箭术；射箭运动"
+    },
+    {
+     "w": "set off",
+     "zh": "出发；动身；启程"
+    },
+    {
+     "w": "fancy",
+     "zh": "花哨；精致的；昂贵的"
+    },
+    {
+     "w": "robe",
+     "zh": "袍服；礼袍"
+    },
+    {
+     "w": "eagle",
+     "zh": "雕"
+    },
+    {
+     "w": "grace",
+     "zh": "优美；优雅；高雅"
+    },
+    {
+     "w": "absolutely",
+     "zh": "绝对地；完全地"
+    },
+    {
+     "w": "moment",
+     "zh": "片刻；瞬间"
+    },
+    {
+     "w": "tent",
+     "zh": "帐篷"
+    },
+    {
+     "w": "pot",
+     "zh": "罐；壶；锅"
+    },
+    {
+     "w": "brief",
+     "zh": "简洁的；简单的；短暂"
+    },
+    {
+     "w": "branch",
+     "zh": "枘枝；分支；支流"
+    },
+    {
+     "w": "wearing",
+     "zh": "婚礼；结婚庆典"
+    },
+    {
+     "w": "clap",
+     "zh": "鼓掌；拍手；击掌"
+    },
+    {
+     "w": "respect",
+     "zh": "尊敬；尊重"
+    },
+    {
+     "w": "horrible",
+     "zh": "糟糕透顶的"
+    },
+    {
+     "w": "coming-of-age Day",
+     "zh": "成人节"
+    },
+    {
+     "w": "carla",
+     "zh": "卡拉"
+    },
+    {
+     "w": "halloween",
+     "zh": "万圣节前夕"
+    },
+    {
+     "w": "thanksgiving",
+     "zh": "感恩节"
+    },
+    {
+     "w": "the",
+     "zh": "那达慕”大会"
+    },
+    {
+     "w": "inner Mongolia",
+     "zh": ""
+    },
+    {
+     "w": "mongolian",
+     "zh": "蒙古语；蒙古人"
+    }
+   ]
+  },
+  {
+   "n": "Unit 2",
+   "t": "",
+   "words": [
+    {
+     "w": "moral",
+     "zh": "道德的；道义上的n. 品行；道德；寓意"
+    },
+    {
+     "w": "virtue",
+     "zh": "高尚的道德；美德；优秀品质"
+    },
+    {
+     "w": "dilemma",
+     "zh": "进退两难的境地；困境"
+    },
+    {
+     "w": "moral dilemma",
+     "zh": "道德困境"
+    },
+    {
+     "w": "faint",
+     "zh": "昏倒；晕厥"
+    },
+    {
+     "w": "illustrate",
+     "zh": "说明"
+    },
+    {
+     "w": "precious",
+     "zh": "珍稀的；宝贵的"
+    },
+    {
+     "w": "entrust",
+     "zh": "委托；交付"
+    },
+    {
+     "w": "carry sb through sth",
+     "zh": "帮助某人渡过难关"
+    },
+    {
+     "w": "marriage",
+     "zh": "结婚；婚姻"
+    },
+    {
+     "w": "majority",
+     "zh": "大部分；大多数"
+    },
+    {
+     "w": "complain",
+     "zh": "抱怨；发牢骚"
+    },
+    {
+     "w": "tuition",
+     "zh": "教学；讲课"
+    },
+    {
+     "w": "fee",
+     "zh": "专业服务费；报酬"
+    },
+    {
+     "w": "tuition fees",
+     "zh": "学费"
+    },
+    {
+     "w": "respond",
+     "zh": "回答；回复vi. 做出反应；回应"
+    },
+    {
+     "w": "response",
+     "zh": "反应；回答；回复"
+    },
+    {
+     "w": "union",
+     "zh": "协会；联合会；工会"
+    },
+    {
+     "w": "scholarship",
+     "zh": "奖学金"
+    },
+    {
+     "w": "hire",
+     "zh": "聘任；雇用；租用n. 租借；租用"
+    },
+    {
+     "w": "physician",
+     "zh": "医师； 内科医生"
+    },
+    {
+     "w": "resident physician",
+     "zh": "住院医师"
+    },
+    {
+     "w": "colleague",
+     "zh": "同事；同僚"
+    },
+    {
+     "w": "reject",
+     "zh": "拒绝接受；不录用"
+    },
+    {
+     "w": "rejection",
+     "zh": "拒绝接受；否决"
+    },
+    {
+     "w": "appoint",
+     "zh": "任命；委派"
+    },
+    {
+     "w": "clinic",
+     "zh": "诊所；门诊部"
+    },
+    {
+     "w": "faraway",
+     "zh": "遥远"
+    },
+    {
+     "w": "elect",
+     "zh": "选举；推选"
+    },
+    {
+     "w": "election",
+     "zh": "选举；推选；当选"
+    },
+    {
+     "w": "decade",
+     "zh": "十年；十年期"
+    },
+    {
+     "w": "elsewhere",
+     "zh": "在别处；去别处"
+    },
+    {
+     "w": "tend",
+     "zh": "照顾；照料 vi.倾向；趋于"
+    },
+    {
+     "w": "tend to do sth",
+     "zh": "易于做某事；往往会发生某事"
+    },
+    {
+     "w": "publish",
+     "zh": "发表 ；出版"
+    },
+    {
+     "w": "staff",
+     "zh": "员工；全体职员"
+    },
+    {
+     "w": "retire",
+     "zh": "退休；退职；退出"
+    },
+    {
+     "w": "saving",
+     "zh": "节省物；节省；节约；［pl.］储蓄金；存款"
+    },
+    {
+     "w": "kindergarten",
+     "zh": "学前班：幼儿园"
+    },
+    {
+     "w": "principle",
+     "zh": "道德原则；法则；原则"
+    },
+    {
+     "w": "passive",
+     "zh": "被动的；顺从"
+    },
+    {
+     "w": "scared",
+     "zh": "害怕的；对……感到惊慌或恐惧"
+    },
+    {
+     "w": "scare",
+     "zh": "惊吓；使害怕vi. 受惊吓"
+    },
+    {
+     "w": "sharp",
+     "zh": "急剧的；锋利；明显"
+    },
+    {
+     "w": "insurance",
+     "zh": "保险；保险业"
+    },
+    {
+     "w": "energetic",
+     "zh": "精力充沛的；充满活力的"
+    },
+    {
+     "w": "replace",
+     "zh": "接替；取代；更换"
+    },
+    {
+     "w": "accident",
+     "zh": "事故；车祸；失事"
+    },
+    {
+     "w": "operation",
+     "zh": "手术；企业；经营"
+    },
+    {
+     "w": "whisper",
+     "zh": "耳语"
+    },
+    {
+     "w": "midnight",
+     "zh": "子夜；午夜"
+    },
+    {
+     "w": "import",
+     "zh": "进口；进口商品/mpo:t/ vt.进口；输入；引进"
+    },
+    {
+     "w": "export",
+     "zh": "出口；出口商品/ik spo:t/ vt. 出口；输出；传播"
+    },
+    {
+     "w": "pole",
+     "zh": "极；地极"
+    },
+    {
+     "w": "lap",
+     "zh": "大腿部； 一圈"
+    },
+    {
+     "w": "bite",
+     "zh": "咬；叮；蜇"
+    },
+    {
+     "w": "lip",
+     "zh": "嘴唇"
+    },
+    {
+     "w": "assist",
+     "zh": "帮助；援助"
+    },
+    {
+     "w": "first aid",
+     "zh": "急救"
+    },
+    {
+     "w": "pass away",
+     "zh": "去世"
+    },
+    {
+     "w": "chairman",
+     "zh": "主席；主持人；董事长"
+    },
+    {
+     "w": "memory",
+     "zh": "记忆力；回忆"
+    },
+    {
+     "w": "in memory of",
+     "zh": "作为对⋯的纪念"
+    },
+    {
+     "w": "chain",
+     "zh": "一连串 ；链子；链条"
+    },
+    {
+     "w": "cafe",
+     "zh": "咖啡馆；小冬馆"
+    },
+    {
+     "w": "waitress",
+     "zh": "女服务员；女侍者"
+    },
+    {
+     "w": "pregnant",
+     "zh": "怀孕的；好娠"
+    },
+    {
+     "w": "disguise",
+     "zh": "装扮；假扮；掩盖n. 伪装；化装用具"
+    },
+    {
+     "w": "maple",
+     "zh": "枫树；械树"
+    },
+    {
+     "w": "cart",
+     "zh": "手推车；运货马车"
+    },
+    {
+     "w": "spill",
+     "zh": "（使）酒出；（使）溢出"
+    },
+    {
+     "w": "trip over",
+     "zh": "被⋯绊倒"
+    },
+    {
+     "w": "limp",
+     "zh": "跛行；一瘸一拐地走"
+    },
+    {
+     "w": "tear",
+     "zh": "眼泪；泪水"
+    },
+    {
+     "w": "in tears",
+     "zh": "流着泪；含着泪"
+    },
+    {
+     "w": "despair",
+     "zh": "绝望vi. 绝望；感到无望"
+    },
+    {
+     "w": "in despair",
+     "zh": "处于绝望中"
+    },
+    {
+     "w": "harm",
+     "zh": "伤害；损害"
+    },
+    {
+     "w": "might",
+     "zh": "力量；威力"
+    },
+    {
+     "w": "a great deal",
+     "zh": "大量"
+    },
+    {
+     "w": "fable",
+     "zh": "寓言；寓言故事"
+    },
+    {
+     "w": "court",
+     "zh": "球场；法院；法庭"
+    },
+    {
+     "w": "flexible",
+     "zh": "灵活的；可变通的"
+    },
+    {
+     "w": "income",
+     "zh": "收入；收益"
+    },
+    {
+     "w": "per",
+     "zh": "每；每一"
+    },
+    {
+     "w": "therefore",
+     "zh": "因此；所以"
+    },
+    {
+     "w": "tension",
+     "zh": "紧张关系；紧张；焦虑"
+    },
+    {
+     "w": "the Wenhai Scholarship",
+     "zh": "文海”奖学金"
+    },
+    {
+     "w": "the OB-GYN department",
+     "zh": "全称"
+    },
+    {
+     "w": "Obstetrics and",
+     "zh": "妇产科"
+    },
+    {
+     "w": "the People's Republic of China",
+     "zh": "中华人民共和国"
+    },
+    {
+     "w": "the National People's Congress",
+     "zh": "全国人民代表大会"
+    },
+    {
+     "w": "the North",
+     "zh": "北极／南极"
+    }
+   ]
+  },
+  {
+   "n": "Unit 3",
+   "t": "",
+   "words": [
+    {
+     "w": "diverse",
+     "zh": "不同的；多种多样的"
+    },
+    {
+     "w": "diversity",
+     "zh": "差异（性）；不同（点）；多样性"
+    },
+    {
+     "w": "fortune",
+     "zh": "机会；运气"
+    },
+    {
+     "w": "fortune cookie",
+     "zh": "幸运曲奇"
+    },
+    {
+     "w": "gumbo",
+     "zh": "秋葵汤（用秋葵英做的浓鸡汤或海鲜汤）"
+    },
+    {
+     "w": "nachos",
+     "zh": "墨西哥玉米片"
+    },
+    {
+     "w": "chip",
+     "zh": "屑片， 碎片"
+    },
+    {
+     "w": "cheese",
+     "zh": "干酪；奶酪"
+    },
+    {
+     "w": "spicy",
+     "zh": "加有香料；辛辣"
+    },
+    {
+     "w": "ethnic",
+     "zh": "异国风情的"
+    },
+    {
+     "w": "admit",
+     "zh": "承认vt. 准许进入（或加入）"
+    },
+    {
+     "w": "definitely",
+     "zh": "肯定；确实"
+    },
+    {
+     "w": "occur",
+     "zh": "发生；出现"
+    },
+    {
+     "w": "downtown",
+     "zh": "在市中心；往市中心"
+    },
+    {
+     "w": "mission",
+     "zh": "传教 ；重要任务；使命"
+    },
+    {
+     "w": "district",
+     "zh": "地区；区域"
+    },
+    {
+     "w": "graffiti",
+     "zh": "涂鸦；胡写乱画"
+    },
+    {
+     "w": "comic",
+     "zh": "连环画杂志；漫画杂志；喜剧演员adj. 滑稽的；使人发笑"
+    },
+    {
+     "w": "afterwards",
+     "zh": "（NAmE usually afterward） adv.以后；后来"
+    },
+    {
+     "w": "head to",
+     "zh": "前进； 去"
+    },
+    {
+     "w": "historical",
+     "zh": "历史的"
+    },
+    {
+     "w": "seek",
+     "zh": "寻找；寻求；争取；（向人）请求"
+    },
+    {
+     "w": "seek one's fortune",
+     "zh": "寻找成功致富之路；闯世界"
+    },
+    {
+     "w": "earn",
+     "zh": "挣得；赚得；赢得；博得"
+    },
+    {
+     "w": "earn a Living",
+     "zh": "谋生"
+    },
+    {
+     "w": "immigrant",
+     "zh": "移民；外侨"
+    },
+    {
+     "w": "select",
+     "zh": "选择；挑选；选拔"
+    },
+    {
+     "w": "china",
+     "zh": "瓷；瓷器"
+    },
+    {
+     "w": "jazz",
+     "zh": "爵士乐"
+    },
+    {
+     "w": "bar",
+     "zh": "酒吧；小吃店；小馆子"
+    },
+    {
+     "w": "diagram",
+     "zh": "简图；图解；图表；示意图"
+    },
+    {
+     "w": "journal",
+     "zh": "日志；日记；报纸；刊物"
+    },
+    {
+     "w": "bring about",
+     "zh": "导致；引起"
+    },
+    {
+     "w": "claim",
+     "zh": "夺取 ；宣称；断言"
+    },
+    {
+     "w": "series",
+     "zh": "一系列；连续；接连"
+    },
+    {
+     "w": "series of",
+     "zh": "系列或一连串"
+    },
+    {
+     "w": "apart from",
+     "zh": "除了⋯⋯⋯外（还）；此外"
+    },
+    {
+     "w": "minority",
+     "zh": "少数民族；少数派；少数人"
+    },
+    {
+     "w": "escape",
+     "zh": "逃走；逃脱；避开"
+    },
+    {
+     "w": "atlantic",
+     "zh": "大西洋"
+    },
+    {
+     "w": "financial",
+     "zh": "财政；财务的；金融"
+    },
+    {
+     "w": "poetry",
+     "zh": "诗集；诗歌；诗作"
+    },
+    {
+     "w": "jeans",
+     "zh": "牛仔裤"
+    },
+    {
+     "w": "boot",
+     "zh": "靴子"
+    },
+    {
+     "w": "mushroom",
+     "zh": "蘑菇；覃"
+    },
+    {
+     "w": "poisonous",
+     "zh": "有毒的"
+    },
+    {
+     "w": "poison",
+     "zh": "毒物；毒药；毒素vt. 毒死；毒害"
+    },
+    {
+     "w": "fold",
+     "zh": "包；裹；折叠"
+    },
+    {
+     "w": "super",
+     "zh": "特级品，特大号"
+    },
+    {
+     "w": "collection",
+     "zh": "作品集；收集物；收藏品"
+    },
+    {
+     "w": "accessory",
+     "zh": "配饰；附件；配件"
+    },
+    {
+     "w": "souvenir",
+     "zh": "纪念物；纪念品"
+    },
+    {
+     "w": "percentage",
+     "zh": "百分率；百分比"
+    },
+    {
+     "w": "climate",
+     "zh": "气候"
+    },
+    {
+     "w": "mild",
+     "zh": "温和的；和善的；轻微"
+    },
+    {
+     "w": "settle",
+     "zh": "定居；结束 ；解决"
+    },
+    {
+     "w": "construction",
+     "zh": "建造，建筑"
+    },
+    {
+     "w": "material",
+     "zh": "材料；布料；素材"
+    },
+    {
+     "w": "to name but a few",
+     "zh": "仅举几例"
+    },
+    {
+     "w": "tai chi",
+     "zh": "太极拳"
+    },
+    {
+     "w": "clothing",
+     "zh": "衣服；服装"
+    },
+    {
+     "w": "herbal",
+     "zh": "药草的；香草的"
+    },
+    {
+     "w": "suit",
+     "zh": "适合；满足⋯••需要；相配；合身（at） first hand 第一手；亲自"
+    },
+    {
+     "w": "item",
+     "zh": "项目；一件商品 ；一条"
+    },
+    {
+     "w": "contain",
+     "zh": "包含；含有；容纳"
+    },
+    {
+     "w": "neat",
+     "zh": "极好的；整洁；整齐"
+    },
+    {
+     "w": "the Mission District",
+     "zh": "教会区"
+    },
+    {
+     "w": "mexico",
+     "zh": "墨西哥"
+    },
+    {
+     "w": "california",
+     "zh": "加利福尼亚"
+    },
+    {
+     "w": "cantonese",
+     "zh": "广东的；粤语的n. 粤语；广东人"
+    },
+    {
+     "w": "Huangguoshu Waterfall",
+     "zh": "黄果树瀑布"
+    }
+   ]
+  },
+  {
+   "n": "Unit 4",
+   "t": "",
+   "words": [
+    {
+     "w": "astronaut",
+     "zh": "宇航员；太空人"
+    },
+    {
+     "w": "procedure",
+     "zh": "程序；步骤；手续"
+    },
+    {
+     "w": "mental",
+     "zh": "精神的；思想"
+    },
+    {
+     "w": "cm",
+     "zh": "找不到解释"
+    },
+    {
+     "w": "intelligent",
+     "zh": "聪颖智慧的"
+    },
+    {
+     "w": "rocket",
+     "zh": "火箭；火箭弹"
+    },
+    {
+     "w": "gravity",
+     "zh": "重力；引力"
+    },
+    {
+     "w": "frontier",
+     "zh": "边境；国界；边远地区"
+    },
+    {
+     "w": "vehicle",
+     "zh": "交通工具；车辆"
+    },
+    {
+     "w": "universe",
+     "zh": "宇宙；天地万物"
+    },
+    {
+     "w": "determined",
+     "zh": "坚决的"
+    },
+    {
+     "w": "determine",
+     "zh": "查明；确定；决定"
+    },
+    {
+     "w": "satellite",
+     "zh": "人造卫星；卫星"
+    },
+    {
+     "w": "launch",
+     "zh": "发射；发起；上市"
+    },
+    {
+     "w": "orbit",
+     "zh": "（环绕地球、太阳等运行）轨道；势力范围"
+    },
+    {
+     "w": "giant",
+     "zh": "巨大的；伟大的n. 巨人；巨兽；伟人"
+    },
+    {
+     "w": "leap",
+     "zh": "跳跃；剧增；剧变（leapt, leapt /lept/ or leaped, leaped）"
+    },
+    {
+     "w": "mankind",
+     "zh": "人类"
+    },
+    {
+     "w": "agency",
+     "zh": "经办， 代理"
+    },
+    {
+     "w": "transmit",
+     "zh": "传输；发送"
+    },
+    {
+     "w": "data",
+     "zh": "资料；数据"
+    },
+    {
+     "w": "disappointed",
+     "zh": "失望的；沮丧"
+    },
+    {
+     "w": "desire",
+     "zh": "渴望；欲望vt. 渴望；期望"
+    },
+    {
+     "w": "carry on",
+     "zh": "继续做，坚持干"
+    },
+    {
+     "w": "ongoing",
+     "zh": "正在持续发生的未结的"
+    },
+    {
+     "w": "on board",
+     "zh": "在宇宙飞船上；在船上；在飞机上"
+    },
+    {
+     "w": "independently",
+     "zh": "独立地，自主地"
+    },
+    {
+     "w": "independent",
+     "zh": "独立自主的"
+    },
+    {
+     "w": "spacecraft",
+     "zh": "航天器；宇宙飞船"
+    },
+    {
+     "w": "spacewalk",
+     "zh": "太空行走；太空行走时间"
+    },
+    {
+     "w": "jade",
+     "zh": "玉；翡翠；玉器"
+    },
+    {
+     "w": "dock",
+     "zh": "对接； ……进港n. 码头；船坞"
+    },
+    {
+     "w": "signal",
+     "zh": "标志着；标明；发信号n. 信号；标志"
+    },
+    {
+     "w": "so as to do sth",
+     "zh": "为了；以便"
+    },
+    {
+     "w": "recycle",
+     "zh": "回收利用；再利用"
+    },
+    {
+     "w": "muscle",
+     "zh": "肌肉；实力；影响力"
+    },
+    {
+     "w": "lack",
+     "zh": "缺乏；短缺 vt.没有；缺乏"
+    },
+    {
+     "w": "float",
+     "zh": "浮动；漂流；漂浮vt. 使浮动；使漂流"
+    },
+    {
+     "w": "otherwise",
+     "zh": "否则；要不然"
+    },
+    {
+     "w": "beyond",
+     "zh": "在更远处；超出"
+    },
+    {
+     "w": "solar",
+     "zh": "太阳的；太阳能的"
+    },
+    {
+     "w": "solar system",
+     "zh": "太阳系；类太阳系"
+    },
+    {
+     "w": "current",
+     "zh": "当前的；现在的n. 水流；电流；思潮"
+    },
+    {
+     "w": "figure out",
+     "zh": "弄懂；弄清楚；弄明白"
+    },
+    {
+     "w": "sufficient",
+     "zh": "足够的；充足的"
+    },
+    {
+     "w": "soap",
+     "zh": "肥皂"
+    },
+    {
+     "w": "towel",
+     "zh": "毛巾；抹布"
+    },
+    {
+     "w": "microwave",
+     "zh": "（also microwave oven）微波炉"
+    },
+    {
+     "w": "tissue",
+     "zh": "纸巾；组织"
+    },
+    {
+     "w": "facility",
+     "zh": "设施；设备"
+    },
+    {
+     "w": "keen",
+     "zh": "热衷；渴望"
+    },
+    {
+     "w": "globe",
+     "zh": "地球；世界；地球仪"
+    },
+    {
+     "w": "argue",
+     "zh": "论证；争辩；争论"
+    },
+    {
+     "w": "argument",
+     "zh": "争论；争吵；论点"
+    },
+    {
+     "w": "fatal",
+     "zh": "致命的；灾难性"
+    },
+    {
+     "w": "shallow",
+     "zh": "肤浅的；浅的"
+    },
+    {
+     "w": "result in",
+     "zh": "导致；造成"
+    },
+    {
+     "w": "pattern",
+     "zh": "模式；图案；模范"
+    },
+    {
+     "w": "analysis",
+     "zh": "（对事物）分析；分析结果"
+    },
+    {
+     "w": "as a result",
+     "zh": "所以；结果"
+    },
+    {
+     "w": "high-end",
+     "zh": "高端"
+    },
+    {
+     "w": "monitor",
+     "zh": "监视器；监测仪vt. 监视；监测；监控"
+    },
+    {
+     "w": "regularly",
+     "zh": "经常；定期地"
+    },
+    {
+     "w": "regular",
+     "zh": "定期的；经常的；正常"
+    },
+    {
+     "w": "foam",
+     "zh": "泡沫橡胶；泡沫"
+    },
+    {
+     "w": "pillow",
+     "zh": "枕头"
+    },
+    {
+     "w": "smartphone",
+     "zh": "智能手机"
+    },
+    {
+     "w": "resource",
+     "zh": "资源；财力；物力"
+    },
+    {
+     "w": "limited",
+     "zh": "有限的"
+    },
+    {
+     "w": "provide for sb",
+     "zh": "提供生活所需"
+    },
+    {
+     "w": "closing",
+     "zh": "结尾的；结束n. 停业；关闭；倒闲"
+    },
+    {
+     "w": "in closing",
+     "zh": "最后"
+    },
+    {
+     "w": "mystery",
+     "zh": "神秘事物；谜"
+    },
+    {
+     "w": "run out",
+     "zh": "用完；耗尽"
+    },
+    {
+     "w": "attach",
+     "zh": "系；绑；贴"
+    },
+    {
+     "w": "oxygen",
+     "zh": "氧；氧气"
+    },
+    {
+     "w": "NASA",
+     "zh": "美国国家航空和宇宙航行局（National Aeronautics and Space Administration）"
+    },
+    {
+     "w": "administration",
+     "zh": "国家航空与航天局"
+    },
+    {
+     "w": "the International Space Station",
+     "zh": "国际空间站"
+    },
+    {
+     "w": "jade Rabbit",
+     "zh": "玉兔”月球车"
+    },
+    {
+     "w": "mars",
+     "zh": "火星"
+    },
+    {
+     "w": "jupiter",
+     "zh": "木星"
+    }
+   ]
+  },
+  {
+   "n": "Unit 5",
+   "t": "",
+   "words": [
+    {
+     "w": "basis",
+     "zh": "基础；根据；基点"
+    },
+    {
+     "w": "on the basis of",
+     "zh": "在某事的基础上；根据某事"
+    },
+    {
+     "w": "loan",
+     "zh": "贷款；借款"
+    },
+    {
+     "w": "take out a loan",
+     "zh": "取得贷款"
+    },
+    {
+     "w": "plastic",
+     "zh": "塑料"
+    },
+    {
+     "w": "apologise",
+     "zh": "郑重道歉"
+    },
+    {
+     "w": "ignore",
+     "zh": "忽视；对⋯不予理会"
+    },
+    {
+     "w": "in return",
+     "zh": "作为回报；作为回应"
+    },
+    {
+     "w": "judge",
+     "zh": "评价；评判；判断n. 法官；审判员；裁判员"
+    },
+    {
+     "w": "scene",
+     "zh": "（戏剧"
+    },
+    {
+     "w": "narrator",
+     "zh": "节目中）幕后解说员"
+    },
+    {
+     "w": "narration",
+     "zh": "叙述；讲述；解说"
+    },
+    {
+     "w": "bet",
+     "zh": "打赌；赌注（bet, bet） vi.& vt. 下赌注；用⋯⋯打赌vt. 敢说"
+    },
+    {
+     "w": "make a bet",
+     "zh": "打个赌"
+    },
+    {
+     "w": "servant",
+     "zh": "仆人；用人"
+    },
+    {
+     "w": "as a matter of fact",
+     "zh": "事实上；其实；说真的"
+    },
+    {
+     "w": "by accident",
+     "zh": "偶然地；意外地"
+    },
+    {
+     "w": "sail",
+     "zh": "帆，篷"
+    },
+    {
+     "w": "spot",
+     "zh": "看见；注意到；发现n. 地点；处所；斑点；污迹"
+    },
+    {
+     "w": "consulate",
+     "zh": "领事馆"
+    },
+    {
+     "w": "dare",
+     "zh": "胆敢；敢于"
+    },
+    {
+     "w": "sort",
+     "zh": "种类；类别"
+    },
+    {
+     "w": "mining",
+     "zh": "果矿；采矿业"
+    },
+    {
+     "w": "patience",
+     "zh": "耐心；忍耐力；毅力"
+    },
+    {
+     "w": "to be honest",
+     "zh": "说实话；坦率地说"
+    },
+    {
+     "w": "ought",
+     "zh": "应该；应当"
+    },
+    {
+     "w": "be about to do",
+     "zh": "即将或正要"
+    },
+    {
+     "w": "indicate",
+     "zh": "表明；显示"
+    },
+    {
+     "w": "beneath",
+     "zh": "在下方， 在底下"
+    },
+    {
+     "w": "postpone",
+     "zh": "延迟；延期；延缓"
+    },
+    {
+     "w": "odd",
+     "zh": "奇怪；怪异的；反常"
+    },
+    {
+     "w": "obligation",
+     "zh": "义务；职责；责任"
+    },
+    {
+     "w": "intention",
+     "zh": "打算；计划；意图；目的"
+    },
+    {
+     "w": "nowhere",
+     "zh": "无处；哪里都不"
+    },
+    {
+     "w": "in case",
+     "zh": "以防；以防万一"
+    },
+    {
+     "w": "extent",
+     "zh": "程度；限度；大小；范围"
+    },
+    {
+     "w": "to... extent",
+     "zh": "到⋯程度；在⋯••程度上"
+    },
+    {
+     "w": "opera",
+     "zh": "歌剧"
+    },
+    {
+     "w": "musical",
+     "zh": "音乐剧 adj.音乐的"
+    },
+    {
+     "w": "dinosaur",
+     "zh": "恐龙"
+    },
+    {
+     "w": "hug",
+     "zh": "拥抱；抱紧"
+    },
+    {
+     "w": "pursue",
+     "zh": "追求；致力于"
+    },
+    {
+     "w": "duty",
+     "zh": "责任；义务；职贡；值班"
+    },
+    {
+     "w": "on duty",
+     "zh": "值班；值勤"
+    },
+    {
+     "w": "hesitate",
+     "zh": "犹豫；迟疑；顾虑"
+    },
+    {
+     "w": "sequence",
+     "zh": "按顺序排列n.顺序；一系列"
+    },
+    {
+     "w": "eventually",
+     "zh": "最后；终于"
+    },
+    {
+     "w": "tailor",
+     "zh": "裁缝vt. 专门制作；定做"
+    },
+    {
+     "w": "clerk",
+     "zh": "职员；文书；店员"
+    },
+    {
+     "w": "manner",
+     "zh": "方式"
+    },
+    {
+     "w": "in a... manner",
+     "zh": "以一种⋯⋯的方式；带着一⋯⋯样子"
+    },
+    {
+     "w": "downstairs",
+     "zh": "楼下"
+    },
+    {
+     "w": "stair",
+     "zh": "楼样；様级"
+    },
+    {
+     "w": "aside",
+     "zh": "到旁边；在旁边；留；存"
+    },
+    {
+     "w": "brown",
+     "zh": "皱眉"
+    },
+    {
+     "w": "in that case",
+     "zh": "既然那样；假使那样的话"
+    },
+    {
+     "w": "option",
+     "zh": "可选择的事物；选择；选择权"
+    },
+    {
+     "w": "broad",
+     "zh": "宽阔；广阔；广汶"
+    },
+    {
+     "w": "indeed",
+     "zh": "其实；实际上；当然；确实"
+    },
+    {
+     "w": "normal",
+     "zh": "常态；通常标准；一般水平"
+    },
+    {
+     "w": "willing",
+     "zh": "愿意；乐意"
+    },
+    {
+     "w": "be willing to",
+     "zh": "愿意或乐意做某事"
+    },
+    {
+     "w": "element",
+     "zh": "要素；基本部分"
+    },
+    {
+     "w": "plot",
+     "zh": "故事情节；布局；阴谋"
+    },
+    {
+     "w": "ambassador",
+     "zh": "大使"
+    },
+    {
+     "w": "upper-class",
+     "zh": "上流社会的；上等阶层"
+    },
+    {
+     "w": "upper",
+     "zh": "上面的；上层的；靠上部的"
+    },
+    {
+     "w": "the upper Class",
+     "zh": "上流社会；上等阶层"
+    },
+    {
+     "w": "maintain",
+     "zh": "保持，维持"
+    },
+    {
+     "w": "permission",
+     "zh": "允许"
+    },
+    {
+     "w": "permit",
+     "zh": "允许；准许；使有可能"
+    },
+    {
+     "w": "saying",
+     "zh": "谚语；格言；警句"
+    },
+    {
+     "w": "external",
+     "zh": "外部的；外面的；外来"
+    },
+    {
+     "w": "roderick",
+     "zh": "罗德里克"
+    },
+    {
+     "w": "oliver",
+     "zh": "奥利弗"
+    }
+   ]
+  }
+ ]
+}

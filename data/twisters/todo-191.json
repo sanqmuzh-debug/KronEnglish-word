@@ -1,0 +1,122 @@
+[
+{
+"w": "pure",
+"syl": "pure",
+"zh": "干净的",
+"lvl": "pep"
+},
+{
+"w": "substantial",
+"syl": "subs·tan·tial",
+"zh": "可观的， 大量的",
+"lvl": "pep"
+},
+{
+"w": "decrease",
+"syl": "de·crease",
+"zh": "「di:kris",
+"lvl": "pep"
+},
+{
+"w": "statistic",
+"syl": "sta·tis·tic",
+"zh": "统计数值",
+"lvl": "pep"
+},
+{
+"w": "transform",
+"syl": "trans·form",
+"zh": "使改观",
+"lvl": "pep"
+},
+{
+"w": "epidemiology",
+"syl": "ep·i·dem·i·ol·o·gy",
+"zh": "流行病学",
+"lvl": "pep"
+},
+{
+"w": "microscope",
+"syl": "mi·cros·cope",
+"zh": "显微镜",
+"lvl": "pep"
+},
+{
+"w": "thinking",
+"syl": "think·ing",
+"zh": "思想",
+"lvl": "pep"
+},
+{
+"w": "protein",
+"syl": "pro·tein",
+"zh": "蛋白质",
+"lvl": "pep"
+},
+{
+"w": "cell",
+"syl": "cell",
+"zh": "细胞",
+"lvl": "pep"
+},
+{
+"w": "virus",
+"syl": "vi·rus",
+"zh": "病毒",
+"lvl": "pep"
+},
+{
+"w": "finding",
+"syl": "find·ing",
+"zh": "发现",
+"lvl": "pep"
+},
+{
+"w": "initial",
+"syl": "in·i·tial",
+"zh": "最初的",
+"lvl": "pep"
+},
+{
+"w": "vaccine",
+"syl": "vac·cine",
+"zh": "疫苗",
+"lvl": "pep"
+},
+{
+"w": "framework",
+"syl": "frame·work",
+"zh": "框架",
+"lvl": "pep"
+},
+{
+"w": "theoretical framework",
+"syl": "the·o·ret·i·cal·frame·work",
+"zh": "理论框架",
+"lvl": "pep"
+},
+{
+"w": "solid",
+"syl": "sol·id",
+"zh": "可靠的",
+"lvl": "pep"
+},
+{
+"w": "cast",
+"syl": "cast",
+"zh": "投射",
+"lvl": "pep"
+},
+{
+"w": "concrete",
+"syl": "con·crete",
+"zh": "混凝土",
+"lvl": "pep"
+},
+{
+"w": "plasma",
+"syl": "plas·ma",
+"zh": "血浆",
+"lvl": "pep"
+}
+]

@@ -1,0 +1,1541 @@
+{
+ "pub": "人教",
+ "stage": "高中",
+ "grade": "必修 第二册",
+ "vol": "",
+ "id": "144425f4-87a0-4a3a-82b7-ea7be112856c",
+ "title": "普通高中教科书·英语必修 第二册",
+ "created": "2022-09-29",
+ "units": [
+  {
+   "n": "Unit 1",
+   "t": "",
+   "words": [
+    {
+     "w": "heritage",
+     "zh": "遗产（指国家或社会长期形成历史、传统和特色）"
+    },
+    {
+     "w": "creatively",
+     "zh": "创造性地，有创造力地"
+    },
+    {
+     "w": "creative",
+     "zh": "有创意的"
+    },
+    {
+     "w": "temple",
+     "zh": "庙；寺"
+    },
+    {
+     "w": "relic",
+     "zh": "遗物；遗迹"
+    },
+    {
+     "w": "mount",
+     "zh": "山峰"
+    },
+    {
+     "w": "former",
+     "zh": "以前的"
+    },
+    {
+     "w": "clue",
+     "zh": "线索；提示"
+    },
+    {
+     "w": "preserve",
+     "zh": "保存；保护；维持n. 保护区"
+    },
+    {
+     "w": "promote",
+     "zh": "促进"
+    },
+    {
+     "w": "cypress",
+     "zh": "柏树"
+    },
+    {
+     "w": "app",
+     "zh": "应用程序；应用软件（application 的缩略形式）"
+    },
+    {
+     "w": "application",
+     "zh": "申请 ；用途；运用；应用（程序）"
+    },
+    {
+     "w": "take part in",
+     "zh": "参与 ；参加"
+    },
+    {
+     "w": "give way to",
+     "zh": "让步；屈服"
+    },
+    {
+     "w": "balance",
+     "zh": "平衡；均勻vt. 使平衡"
+    },
+    {
+     "w": "keep balance",
+     "zh": "保持平衡"
+    },
+    {
+     "w": "lead to",
+     "zh": "导致"
+    },
+    {
+     "w": "am",
+     "zh": "水坝；拦河坝"
+    },
+    {
+     "w": "proposal",
+     "zh": "提议；建议"
+    },
+    {
+     "w": "make a proposal",
+     "zh": "提出建议"
+    },
+    {
+     "w": "protest",
+     "zh": "抗议/pro test/ vi.& vt.（公开）反对；抗议"
+    },
+    {
+     "w": "likely",
+     "zh": "可能地"
+    },
+    {
+     "w": "turn to",
+     "zh": "向⋯・・求助"
+    },
+    {
+     "w": "committee",
+     "zh": "委员会"
+    },
+    {
+     "w": "establish",
+     "zh": "建立；创立"
+    },
+    {
+     "w": "limit",
+     "zh": "限度；限制vt. 限制；限定"
+    },
+    {
+     "w": "prevent",
+     "zh": "阻止；阻碍；阻挠"
+    },
+    {
+     "w": "prevent... from",
+     "zh": "阻止；不准"
+    },
+    {
+     "w": "loss",
+     "zh": "丧失；损失"
+    },
+    {
+     "w": "contribution",
+     "zh": "捐款；贡献；捐赠"
+    },
+    {
+     "w": "contribute",
+     "zh": "捐献；捐助"
+    },
+    {
+     "w": "department",
+     "zh": "部；司；科"
+    },
+    {
+     "w": "fund",
+     "zh": "基金；专款"
+    },
+    {
+     "w": "within",
+     "zh": "在（某段时间、距离或范围）之内"
+    },
+    {
+     "w": "investigate",
+     "zh": "调查；研究"
+    },
+    {
+     "w": "issue",
+     "zh": "重要议题；争论的问题vt. 宣布；公布"
+    },
+    {
+     "w": "conduct",
+     "zh": "行为；举止；管理方法/kon'dAkt/ vt.组织；安排；带领"
+    },
+    {
+     "w": "document",
+     "zh": "文件；公文；（计算机）文档vt. 记录；记载（详情）"
+    },
+    {
+     "w": "donate",
+     "zh": "捐赠"
+    },
+    {
+     "w": "donate... to",
+     "zh": "向⋯⋯捐赠⋯⋯"
+    },
+    {
+     "w": "disappear",
+     "zh": "消失；灭绝；消亡"
+    },
+    {
+     "w": "attempt",
+     "zh": "企图；试图；尝试"
+    },
+    {
+     "w": "make sure",
+     "zh": "确保；设法保证"
+    },
+    {
+     "w": "worthwhile",
+     "zh": "值得付出的"
+    },
+    {
+     "w": "download",
+     "zh": "下载n. 下载；已下载的数据资料"
+    },
+    {
+     "w": "republic",
+     "zh": "共和国"
+    },
+    {
+     "w": "professional",
+     "zh": "专业的；职业n. 专业人员；职业选手"
+    },
+    {
+     "w": "archaeologist",
+     "zh": "考古学家"
+    },
+    {
+     "w": "entrance",
+     "zh": "入口；进入"
+    },
+    {
+     "w": "pyramid",
+     "zh": "金字塔；棱锥体"
+    },
+    {
+     "w": "process",
+     "zh": "过程；进程；步骤"
+    },
+    {
+     "w": "overseas",
+     "zh": "海外的adv. 在海外"
+    },
+    {
+     "w": "exit",
+     "zh": "出口；通道"
+    },
+    {
+     "w": "sheet",
+     "zh": "一张 ；床单；被单"
+    },
+    {
+     "w": "parade",
+     "zh": "游行；检阅"
+    },
+    {
+     "w": "mirror",
+     "zh": "镜子"
+    },
+    {
+     "w": "roof",
+     "zh": "顶部；屋顶"
+    },
+    {
+     "w": "dragon",
+     "zh": "龙"
+    },
+    {
+     "w": "forgive",
+     "zh": "（forgave,forgiven）原谅；宽恕"
+    },
+    {
+     "w": "digital",
+     "zh": "数码的；数字显示"
+    },
+    {
+     "w": "image",
+     "zh": "形象；印象"
+    },
+    {
+     "w": "cave",
+     "zh": "山洞；洞穴"
+    },
+    {
+     "w": "throughout",
+     "zh": "各处；遍及；自始至终"
+    },
+    {
+     "w": "quality",
+     "zh": "质量；品质；素质；特征"
+    },
+    {
+     "w": "all over the world",
+     "zh": "在世界各地"
+    },
+    {
+     "w": "tradition",
+     "zh": "传统；传统的信仰或风俗"
+    },
+    {
+     "w": "further",
+     "zh": "更远；进一步"
+    },
+    {
+     "w": "historic",
+     "zh": "历史上著名的"
+    },
+    {
+     "w": "opinion",
+     "zh": "意见；想法；看法"
+    },
+    {
+     "w": "quote",
+     "zh": "引用"
+    },
+    {
+     "w": "paraphrase",
+     "zh": "解释， 释义"
+    },
+    {
+     "w": "comparison",
+     "zh": "比较；相比"
+    },
+    {
+     "w": "contrast",
+     "zh": "对比；对照/kon tra:st/ vt.对比；对照"
+    },
+    {
+     "w": "identify",
+     "zh": "确认；认出；找到"
+    },
+    {
+     "w": "forever",
+     "zh": "永远；长久地"
+    },
+    {
+     "w": "aswan",
+     "zh": "阿斯旺大坝"
+    },
+    {
+     "w": "the Nile",
+     "zh": "尼罗河"
+    },
+    {
+     "w": "egypt",
+     "zh": "埃及"
+    },
+    {
+     "w": "egyptian",
+     "zh": "埃及"
+    },
+    {
+     "w": "cairo",
+     "zh": "开罗"
+    },
+    {
+     "w": "tanzania",
+     "zh": "坦桑尼亚"
+    },
+    {
+     "w": "the Kremlin",
+     "zh": "克里姆林"
+    },
+    {
+     "w": "moscow",
+     "zh": "莫斯科"
+    },
+    {
+     "w": "Saint basis cathedral",
+     "zh": "圣瓦西里大教堂"
+    },
+    {
+     "w": "the Forbidden",
+     "zh": "紫禁城"
+    },
+    {
+     "w": "Los Angeles",
+     "zh": "洛杉矶"
+    }
+   ]
+  },
+  {
+   "n": "Unit 2",
+   "t": "",
+   "words": [
+    {
+     "w": "poster",
+     "zh": "海报"
+    },
+    {
+     "w": "illegal",
+     "zh": "不合法的；非法的"
+    },
+    {
+     "w": "illegally",
+     "zh": "不合法地；非法地"
+    },
+    {
+     "w": "hunt",
+     "zh": "打猎；搜寻；追捕"
+    },
+    {
+     "w": "hunter",
+     "zh": "猎人"
+    },
+    {
+     "w": "immediately",
+     "zh": "立刻"
+    },
+    {
+     "w": "species",
+     "zh": "物种"
+    },
+    {
+     "w": "shark",
+     "zh": "鲨鱼"
+    },
+    {
+     "w": "fin",
+     "zh": "鳍"
+    },
+    {
+     "w": "on earth",
+     "zh": "究竟；到底"
+    },
+    {
+     "w": "die out",
+     "zh": "灭亡；逐渐消失"
+    },
+    {
+     "w": "alarming",
+     "zh": "惊人的；使人惊恐"
+    },
+    {
+     "w": "alarm",
+     "zh": "使惊恐；使害怕；使担心n. 恐慌；警报；警报器"
+    },
+    {
+     "w": "rate",
+     "zh": "速度； 率vt. 划分等级"
+    },
+    {
+     "w": "rating",
+     "zh": "等级；级别"
+    },
+    {
+     "w": "extinct",
+     "zh": "已灭绝"
+    },
+    {
+     "w": "extinction",
+     "zh": "火绝"
+    },
+    {
+     "w": "mass",
+     "zh": "大量的；广泛n. 大量；堆；群"
+    },
+    {
+     "w": "habitat",
+     "zh": "生活环境；栖息地"
+    },
+    {
+     "w": "aware",
+     "zh": "知道；发觉；有……意识的"
+    },
+    {
+     "w": "aware of",
+     "zh": "意识到；知道"
+    },
+    {
+     "w": "endanger",
+     "zh": "使遭受危险；危害"
+    },
+    {
+     "w": "average",
+     "zh": "半均数；平均水平"
+    },
+    {
+     "w": "on average",
+     "zh": "平均"
+    },
+    {
+     "w": "prince",
+     "zh": "王子；王孙；亲王"
+    },
+    {
+     "w": "make progress",
+     "zh": "取得进步"
+    },
+    {
+     "w": "concern",
+     "zh": "涉及；让⋯…担忧"
+    },
+    {
+     "w": "concerned",
+     "zh": "担心；关切的"
+    },
+    {
+     "w": "concerned about",
+     "zh": "对⋯⋯关切的；为⋯…担忧"
+    },
+    {
+     "w": "living",
+     "zh": "居住的；活；在用n. 生活；生计"
+    },
+    {
+     "w": "adapt",
+     "zh": "适应"
+    },
+    {
+     "w": "adapt to",
+     "zh": "适应"
+    },
+    {
+     "w": "measure",
+     "zh": "措施；方法"
+    },
+    {
+     "w": "authority",
+     "zh": "官方；当权；权威"
+    },
+    {
+     "w": "pressure",
+     "zh": "压力；要求"
+    },
+    {
+     "w": "under pressure",
+     "zh": "在压力下；承受压力"
+    },
+    {
+     "w": "whale",
+     "zh": "鲸"
+    },
+    {
+     "w": "antelope",
+     "zh": "羚；羚类动物"
+    },
+    {
+     "w": "tibetan antelope",
+     "zh": "藏羚羊"
+    },
+    {
+     "w": "reserve",
+     "zh": "保护区；储藏"
+    },
+    {
+     "w": "plain",
+     "zh": "平原"
+    },
+    {
+     "w": "make out",
+     "zh": "看清；听清；分清"
+    },
+    {
+     "w": "herd",
+     "zh": "牧群；兽群"
+    },
+    {
+     "w": "observe",
+     "zh": "观察 ；注视；遵守"
+    },
+    {
+     "w": "beauty",
+     "zh": "美；美人；美好东西"
+    },
+    {
+     "w": "remind",
+     "zh": "提醒；使想起"
+    },
+    {
+     "w": "remind so of sb",
+     "zh": "使某人想起（类似的人或物）"
+    },
+    {
+     "w": "fur",
+     "zh": "毛 ；毛皮衣服"
+    },
+    {
+     "w": "sacred",
+     "zh": "神圣的；受尊敬"
+    },
+    {
+     "w": "shoot",
+     "zh": "（shot, shot）射杀；射伤；发射"
+    },
+    {
+     "w": "profit",
+     "zh": "利润；利益"
+    },
+    {
+     "w": "watch over",
+     "zh": "保护；照管；监督"
+    },
+    {
+     "w": "day and night",
+     "zh": "日日夜夜；夜以继日"
+    },
+    {
+     "w": "attack",
+     "zh": "攻击；拌击"
+    },
+    {
+     "w": "effective",
+     "zh": "有效的；生效"
+    },
+    {
+     "w": "recover",
+     "zh": "恢复；康复"
+    },
+    {
+     "w": "remove",
+     "zh": "去除；移开；脱去"
+    },
+    {
+     "w": "intend",
+     "zh": "打算；计划；想要"
+    },
+    {
+     "w": "threat",
+     "zh": "威胁"
+    },
+    {
+     "w": "threaten",
+     "zh": "威胁；危及"
+    },
+    {
+     "w": "exist",
+     "zh": "存在；生存"
+    },
+    {
+     "w": "harmony",
+     "zh": "和谐；融洽"
+    },
+    {
+     "w": "goods",
+     "zh": "商品；货物"
+    },
+    {
+     "w": "creature",
+     "zh": "生物；动物"
+    },
+    {
+     "w": "deer",
+     "zh": "鹿"
+    },
+    {
+     "w": "kangaroo",
+     "zh": "袋鼠"
+    },
+    {
+     "w": "reduce",
+     "zh": "减少"
+    },
+    {
+     "w": "due",
+     "zh": "由于；因为"
+    },
+    {
+     "w": "due to",
+     "zh": "由于；因为"
+    },
+    {
+     "w": "insect",
+     "zh": "昆虫"
+    },
+    {
+     "w": "net",
+     "zh": "网"
+    },
+    {
+     "w": "neighbourhood",
+     "zh": "临近的地方；街区"
+    },
+    {
+     "w": "binoculars",
+     "zh": "双筒望远镜"
+    },
+    {
+     "w": "bird fred guide",
+     "zh": "马类图釜"
+    },
+    {
+     "w": "search for",
+     "zh": "搜索；查找"
+    },
+    {
+     "w": "dolphin",
+     "zh": "海豚"
+    },
+    {
+     "w": "koala",
+     "zh": "树袋熊；考拉"
+    },
+    {
+     "w": "stir",
+     "zh": "激发；搅动"
+    },
+    {
+     "w": "stir up",
+     "zh": "激起"
+    },
+    {
+     "w": "emotion",
+     "zh": "感情；情感；情绪"
+    },
+    {
+     "w": "skin",
+     "zh": "皮；皮肤"
+    },
+    {
+     "w": "unusual",
+     "zh": "特别的；不寻常的"
+    },
+    {
+     "w": "tibetan",
+     "zh": "西藏人；藏族人；藏语"
+    },
+    {
+     "w": "tibet",
+     "zh": "西藏"
+    }
+   ]
+  },
+  {
+   "n": "Unit 3",
+   "t": "",
+   "words": [
+    {
+     "w": "blog",
+     "zh": "博客"
+    },
+    {
+     "w": "blog post",
+     "zh": "博文；博客帖子"
+    },
+    {
+     "w": "blogger",
+     "zh": "博客作者；博主"
+    },
+    {
+     "w": "engine",
+     "zh": "引擎；发动机；火车头"
+    },
+    {
+     "w": "search engine",
+     "zh": "搜索引擎"
+    },
+    {
+     "w": "chat",
+     "zh": "聊天；闲聊"
+    },
+    {
+     "w": "stream",
+     "zh": "流动"
+    },
+    {
+     "w": "identity",
+     "zh": "身份；个性"
+    },
+    {
+     "w": "identity card",
+     "zh": "身份证"
+    },
+    {
+     "w": "convenient",
+     "zh": "方便的；近便的"
+    },
+    {
+     "w": "cash",
+     "zh": "现金；金钱"
+    },
+    {
+     "w": "update",
+     "zh": "更新；向…提供最新信息/'Apdert/ n. 更新；最新消息"
+    },
+    {
+     "w": "database",
+     "zh": "数据库；资料库"
+    },
+    {
+     "w": "software",
+     "zh": "软件"
+    },
+    {
+     "w": "network",
+     "zh": "（互联）网络；网状系统；人际网vi. 建立工作关系"
+    },
+    {
+     "w": "stuck",
+     "zh": "卡住；陷 ；困"
+    },
+    {
+     "w": "Keep so company",
+     "zh": "陪伴某人"
+    },
+    {
+     "w": "surf",
+     "zh": "浏览；冲浪"
+    },
+    {
+     "w": "benefit",
+     "zh": "益处vt. 使受益"
+    },
+    {
+     "w": "distance",
+     "zh": "距离"
+    },
+    {
+     "w": "inspire",
+     "zh": "鼓舞；激励；启发思考"
+    },
+    {
+     "w": "now that",
+     "zh": "既然；由于"
+    },
+    {
+     "w": "access",
+     "zh": "进入；使用；获取"
+    },
+    {
+     "w": "charity",
+     "zh": "慈善；慈善机构"
+    },
+    {
+     "w": "go through",
+     "zh": "经历；度过；通读"
+    },
+    {
+     "w": "tough",
+     "zh": "艰难的；严厉的"
+    },
+    {
+     "w": "province",
+     "zh": "省"
+    },
+    {
+     "w": "conference",
+     "zh": "会议， 讨论会"
+    },
+    {
+     "w": "resident",
+     "zh": "居民； 住院医生"
+    },
+    {
+     "w": "plus",
+     "zh": "而且；此外n. 加号；优势"
+    },
+    {
+     "w": "function",
+     "zh": "功能；作用；机能"
+    },
+    {
+     "w": "battery",
+     "zh": "电池"
+    },
+    {
+     "w": "confirm",
+     "zh": "确认；使确信"
+    },
+    {
+     "w": "wi-fi",
+     "zh": "无线保真（用无线电波而非网线在计算机网络传输数据系统）"
+    },
+    {
+     "w": "press",
+     "zh": "按，压；敦促"
+    },
+    {
+     "w": "button",
+     "zh": "按钮；纽扣"
+    },
+    {
+     "w": "file",
+     "zh": "文件；文件夹；档案"
+    },
+    {
+     "w": "in shape",
+     "zh": "状况良好"
+    },
+    {
+     "w": "keep track of",
+     "zh": "掌握⋯⋯的最新消息；了解⋯⋯的动态"
+    },
+    {
+     "w": "discount",
+     "zh": "折扣/dis'kaont/ vt. 打折"
+    },
+    {
+     "w": "account",
+     "zh": "账户；描述"
+    },
+    {
+     "w": "click",
+     "zh": "点击"
+    },
+    {
+     "w": "privacy",
+     "zh": "隐私；私密"
+    },
+    {
+     "w": "theft",
+     "zh": "偷 ；盗窃罪"
+    },
+    {
+     "w": "rude",
+     "zh": "粗鲁的；无礼"
+    },
+    {
+     "w": "target",
+     "zh": "目标；对象；靶子"
+    },
+    {
+     "w": "troll",
+     "zh": "发挑衅帖子的人；恶意挑衅帖子"
+    },
+    {
+     "w": "cyberbully",
+     "zh": "网霸"
+    },
+    {
+     "w": "false",
+     "zh": "假的；错误的"
+    },
+    {
+     "w": "particular",
+     "zh": "特定的，特别的"
+    },
+    {
+     "w": "embarrassing",
+     "zh": "使人尴尬的"
+    },
+    {
+     "w": "make fun of",
+     "zh": "取笑；戏弄"
+    },
+    {
+     "w": "upset",
+     "zh": "（upset, upset）使烦恼；使生气：搅乱"
+    },
+    {
+     "w": "guideline",
+     "zh": "准则；指导原则"
+    },
+    {
+     "w": "author",
+     "zh": "作者；作家"
+    },
+    {
+     "w": "tip",
+     "zh": "忠告；诀窍；实用的提示"
+    },
+    {
+     "w": "familiar",
+     "zh": "熟悉；熟知"
+    },
+    {
+     "w": "keep... in mind",
+     "zh": "牢记"
+    },
+    {
+     "w": "define",
+     "zh": "给⋯⋯下定义；界定；解释"
+    },
+    {
+     "w": "case",
+     "zh": "盒；箱；情况；案件"
+    }
+   ]
+  },
+  {
+   "n": "Unit 4",
+   "t": "",
+   "words": [
+    {
+     "w": "confucius",
+     "zh": "孔子"
+    },
+    {
+     "w": "mansion",
+     "zh": "公馆；宅第"
+    },
+    {
+     "w": "cemetery",
+     "zh": "墓地；公墓"
+    },
+    {
+     "w": "philosophy",
+     "zh": "哲学"
+    },
+    {
+     "w": "descendant",
+     "zh": "后裔；后代；子孙"
+    },
+    {
+     "w": "individual",
+     "zh": "单独的；个别的n. 个人"
+    },
+    {
+     "w": "heel",
+     "zh": "足跟； 后跟"
+    },
+    {
+     "w": "Achilles' heel",
+     "zh": "阿喀琉斯脚跟，致命弱点"
+    },
+    {
+     "w": "kingdom",
+     "zh": "王国；领域"
+    },
+    {
+     "w": "chief",
+     "zh": "最重要；最高级别的"
+    },
+    {
+     "w": "puzzle",
+     "zh": "谜；智力游戏；疑问vt. 迷惑；使困惑"
+    },
+    {
+     "w": "nearby",
+     "zh": "附近的；邻近的adv. 在附近"
+    },
+    {
+     "w": "join.. to",
+     "zh": "把……和……连接或联结起来"
+    },
+    {
+     "w": "break away from",
+     "zh": "脱离；背叛；逃脱"
+    },
+    {
+     "w": "belong",
+     "zh": "应在 ；适应"
+    },
+    {
+     "w": "belong to",
+     "zh": "属于"
+    },
+    {
+     "w": "as well as",
+     "zh": "同 ；和；还"
+    },
+    {
+     "w": "currency",
+     "zh": "通货；货币"
+    },
+    {
+     "w": "military",
+     "zh": "军事的；军用的"
+    },
+    {
+     "w": "defence",
+     "zh": "防御；保卫"
+    },
+    {
+     "w": "legal",
+     "zh": "法律的；合法"
+    },
+    {
+     "w": "surround",
+     "zh": "围绕；包围"
+    },
+    {
+     "w": "evidence",
+     "zh": "证据；证明"
+    },
+    {
+     "w": "achievement",
+     "zh": "成就；成绩；达到"
+    },
+    {
+     "w": "location",
+     "zh": "地方；地点；位置"
+    },
+    {
+     "w": "conquer",
+     "zh": "占领；征服；控制"
+    },
+    {
+     "w": "battle",
+     "zh": "战役；搏斗"
+    },
+    {
+     "w": "port",
+     "zh": "港口"
+    },
+    {
+     "w": "fascinating",
+     "zh": "极有吸引力的；迷人"
+    },
+    {
+     "w": "Keep your eyes open for",
+     "zh": "留心；留意"
+    },
+    {
+     "w": "charge",
+     "zh": "收费；指控；主管"
+    },
+    {
+     "w": "announce",
+     "zh": "宣布；通知；声称"
+    },
+    {
+     "w": "amount",
+     "zh": "金额；数量"
+    },
+    {
+     "w": "gallery",
+     "zh": "美术陈列室"
+    },
+    {
+     "w": "approach",
+     "zh": "方法；途径；接近vi. 靠近"
+    },
+    {
+     "w": "ensure",
+     "zh": "保让；确保；担保"
+    },
+    {
+     "w": "landscape",
+     "zh": "（陆上，尤指乡村）风景"
+    },
+    {
+     "w": "generous",
+     "zh": "慷慨大方的"
+    },
+    {
+     "w": "butter",
+     "zh": "黄油；奶油vt. 涂黄油于"
+    },
+    {
+     "w": "honey",
+     "zh": "蜂蜜"
+    },
+    {
+     "w": "ancestor",
+     "zh": "祖宗；祖先"
+    },
+    {
+     "w": "position",
+     "zh": "位置；姿态；职位vt. 安装；安置"
+    },
+    {
+     "w": "courtyard",
+     "zh": "庭院；院子"
+    },
+    {
+     "w": "snack",
+     "zh": "点心；小吃"
+    },
+    {
+     "w": "eager",
+     "zh": "热切的；渴望的"
+    },
+    {
+     "w": "poet",
+     "zh": "诗人"
+    },
+    {
+     "w": "county",
+     "zh": "郡， 县"
+    },
+    {
+     "w": "feast",
+     "zh": "盛宴；宴会；节日"
+    },
+    {
+     "w": "roll",
+     "zh": "翻滚； 滚动"
+    },
+    {
+     "w": "dot",
+     "zh": "点；小 点 vt.加点；遍布"
+    },
+    {
+     "w": "cattle",
+     "zh": "牛"
+    },
+    {
+     "w": "roar",
+     "zh": "吼叫；咆哮"
+    },
+    {
+     "w": "ocean",
+     "zh": "大海；海洋"
+    },
+    {
+     "w": "scent",
+     "zh": "气味；气息"
+    },
+    {
+     "w": "greet",
+     "zh": "问候；迎接"
+    },
+    {
+     "w": "pub",
+     "zh": "酒吧；酒馆"
+    },
+    {
+     "w": "wine",
+     "zh": "葡萄酒；果酒"
+    },
+    {
+     "w": "beer",
+     "zh": "啤酒"
+    },
+    {
+     "w": "stew",
+     "zh": "炖菜"
+    },
+    {
+     "w": "custom",
+     "zh": "风俗；习俗；习惯"
+    },
+    {
+     "w": "sensory",
+     "zh": "感觉的；感官"
+    },
+    {
+     "w": "striking",
+     "zh": "引"
+    },
+    {
+     "w": "transition",
+     "zh": "过渡"
+    },
+    {
+     "w": "crowd",
+     "zh": "人群；一群人；民众vt. 挤满；使…⋯拥挤"
+    },
+    {
+     "w": "wales",
+     "zh": "威尔士"
+    },
+    {
+     "w": "scotland",
+     "zh": "苏格兰"
+    },
+    {
+     "w": "northern Ireland",
+     "zh": "北爱尔兰（英国）"
+    },
+    {
+     "w": "anglo-saxon",
+     "zh": "盎格鲁一撒克逊人"
+    },
+    {
+     "w": "viking",
+     "zh": "维京人；北欢海盗"
+    },
+    {
+     "w": "the norman",
+     "zh": "诺曼人"
+    },
+    {
+     "w": "roman",
+     "zh": "古罗马的；罗马的n. 古罗马人；罗马市民"
+    },
+    {
+     "w": "van Gogh",
+     "zh": "梵高"
+    },
+    {
+     "w": "the Emerald Isle",
+     "zh": "绿宝石岛（爱尔兰别称）"
+    },
+    {
+     "w": "irish",
+     "zh": "爱尔兰的；爱尔兰人n. 爱尔兰语"
+    }
+   ]
+  },
+  {
+   "n": "Unit 5",
+   "t": "",
+   "words": [
+    {
+     "w": "classical",
+     "zh": "古典的；经典"
+    },
+    {
+     "w": "hip-hop",
+     "zh": "嘻哈音乐；嘻哈文化"
+    },
+    {
+     "w": "techno",
+     "zh": "泰克诺音乐(一种节奏快、通常无歌声相伴的音乐)"
+    },
+    {
+     "w": "energy",
+     "zh": "能源；能量；精力"
+    },
+    {
+     "w": "soul",
+     "zh": "灵魂；心灵"
+    },
+    {
+     "w": "bagpipes",
+     "zh": "风笛"
+    },
+    {
+     "w": "stringed",
+     "zh": "有弦的"
+    },
+    {
+     "w": "stringed instrument",
+     "zh": "弦乐骼"
+    },
+    {
+     "w": "virtual",
+     "zh": "很接近的；事实上的；虚拟的"
+    },
+    {
+     "w": "virtual choir",
+     "zh": "虚拟合唱团"
+    },
+    {
+     "w": "composition",
+     "zh": "作文"
+    },
+    {
+     "w": "opportunity",
+     "zh": "机会；时机"
+    },
+    {
+     "w": "perform",
+     "zh": "表演；履行；执行"
+    },
+    {
+     "w": "performance",
+     "zh": "表演；演技；表现"
+    },
+    {
+     "w": "performer",
+     "zh": "表演者；演员"
+    },
+    {
+     "w": "onto",
+     "zh": "向"
+    },
+    {
+     "w": "studio",
+     "zh": "演播室；（音乐）录音棚；工作室"
+    },
+    {
+     "w": "ordinary",
+     "zh": "普通的；平凡"
+    },
+    {
+     "w": "enable",
+     "zh": "使能够；使可能"
+    },
+    {
+     "w": "prove",
+     "zh": "证明；展现"
+    },
+    {
+     "w": "award",
+     "zh": "授予n. 奖品"
+    },
+    {
+     "w": "composer",
+     "zh": "作曲者；作曲家"
+    },
+    {
+     "w": "conductor",
+     "zh": "（乐队、合唱团等）指挥；（公共汽车）售票员"
+    },
+    {
+     "w": "fall in love with",
+     "zh": "爱上"
+    },
+    {
+     "w": "original",
+     "zh": "原来的；独创的；原作n. 原件；原作"
+    },
+    {
+     "w": "phenomenon",
+     "zh": "（pl. phenomena /-™na/）n. 现象"
+    },
+    {
+     "w": "stage",
+     "zh": "时期；阶段；（多指剧场中）舞台"
+    },
+    {
+     "w": "altogether",
+     "zh": "总共"
+    },
+    {
+     "w": "thus",
+     "zh": "如此；因此"
+    },
+    {
+     "w": "band",
+     "zh": "乐队；带子"
+    },
+    {
+     "w": "rap",
+     "zh": "快速敲击；说唱音乐"
+    },
+    {
+     "w": "nowadays",
+     "zh": "现在；目前"
+    },
+    {
+     "w": "gradual",
+     "zh": "逐渐；渐进"
+    },
+    {
+     "w": "capable",
+     "zh": "有能力的；有才能"
+    },
+    {
+     "w": "relief",
+     "zh": "减轻或消除；（不快过后的）宽慰、轻松或解脱"
+    },
+    {
+     "w": "cure",
+     "zh": "治愈；治好（疾病）；解决（问题）n. 药物；治疗；（解决问题、改善糟糕情况）措施"
+    },
+    {
+     "w": "absorbed",
+     "zh": "被…⋯吸引住；专心致志"
+    },
+    {
+     "w": "previous",
+     "zh": "先前的；以往的"
+    },
+    {
+     "w": "unemployed",
+     "zh": "失业的；待业"
+    },
+    {
+     "w": "romantic",
+     "zh": "浪漫n. 浪漫的人"
+    },
+    {
+     "w": "album",
+     "zh": "相册；集邮簿；音乐专辑"
+    },
+    {
+     "w": "impact",
+     "zh": "巨大影响；强大作用；冲击力"
+    },
+    {
+     "w": "aim",
+     "zh": "目的；目标vt. 目的是；旨在"
+    },
+    {
+     "w": "set sth up",
+     "zh": "安装好"
+    },
+    {
+     "w": "equipment",
+     "zh": "设备；装备"
+    },
+    {
+     "w": "try out",
+     "zh": "参加⋯选拔"
+    },
+    {
+     "w": "talent",
+     "zh": "天才；天资；天赋"
+    },
+    {
+     "w": "piano",
+     "zh": "钢琴"
+    },
+    {
+     "w": "assume",
+     "zh": "以为；假设"
+    },
+    {
+     "w": "addition",
+     "zh": "添加；加法；增加物"
+    },
+    {
+     "w": "disease",
+     "zh": "病"
+    },
+    {
+     "w": "ache leif",
+     "zh": "疼痛"
+    },
+    {
+     "w": "treatment",
+     "zh": "治疗；对待；处理"
+    },
+    {
+     "w": "from on",
+     "zh": "从 时起"
+    },
+    {
+     "w": "lean",
+     "zh": "（leant/leaned, leant/leaned）依靠；倾斜"
+    },
+    {
+     "w": "get through",
+     "zh": "处理；完成"
+    },
+    {
+     "w": "moreover",
+     "zh": "而且；此外"
+    },
+    {
+     "w": "satisfaction",
+     "zh": "满足；满意；欣慰"
+    },
+    {
+     "w": "being",
+     "zh": "身心；存在；生物"
+    },
+    {
+     "w": "various",
+     "zh": "各种不同的；各种各样"
+    },
+    {
+     "w": "somehow",
+     "zh": "由于某种原因"
+    },
+    {
+     "w": "rhetorical",
+     "zh": "修評的"
+    },
+    {
+     "w": "metaphor",
+     "zh": "暗喻；隐喻"
+    },
+    {
+     "w": "personification",
+     "zh": "拟人；人格化；化身"
+    },
+    {
+     "w": "repetition",
+     "zh": "重复；重做"
+    },
+    {
+     "w": "simile",
+     "zh": "明喻"
+    },
+    {
+     "w": "outline",
+     "zh": "概述；概要"
+    },
+    {
+     "w": "reaction",
+     "zh": "反应；回应"
+    },
+    {
+     "w": "mozart",
+     "zh": "莫扎特"
+    },
+    {
+     "w": "UNICEF",
+     "zh": "abbr.United Nations Children’s Fund联合国儿童基金会"
+    }
+   ]
+  }
+ ]
+}

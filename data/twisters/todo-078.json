@@ -1,0 +1,122 @@
+[
+{
+"w": "freshly",
+"syl": "fresh·ly",
+"zh": "刚刚",
+"lvl": "pep"
+},
+{
+"w": "apartment",
+"syl": "a·part·ment",
+"zh": "房间",
+"lvl": "pep"
+},
+{
+"w": "block",
+"syl": "block",
+"zh": "大楼",
+"lvl": "pep"
+},
+{
+"w": "decorate",
+"syl": "dec·o·rate",
+"zh": "装饰",
+"lvl": "pep"
+},
+{
+"w": "cover",
+"syl": "cov·er",
+"zh": "遮盖",
+"lvl": "pep"
+},
+{
+"w": "poster",
+"syl": "pos·ter",
+"zh": "海报",
+"lvl": "pep"
+},
+{
+"w": "scissors",
+"syl": "scis·sors",
+"zh": "剪刀",
+"lvl": "pep"
+},
+{
+"w": "glue",
+"syl": "glue",
+"zh": "胶水 .粘贴",
+"lvl": "pep"
+},
+{
+"w": "paper-cut",
+"syl": "pa·per·cut",
+"zh": "剪纸",
+"lvl": "pep"
+},
+{
+"w": "compare",
+"syl": "com·pare",
+"zh": "比较",
+"lvl": "pep"
+},
+{
+"w": "lazy",
+"syl": "la·zy",
+"zh": "懒惰的",
+"lvl": "pep"
+},
+{
+"w": "outgoing",
+"syl": "out·go·ing",
+"zh": "外向",
+"lvl": "pep"
+},
+{
+"w": "perform",
+"syl": "per·form",
+"zh": "表演",
+"lvl": "pep"
+},
+{
+"w": "alone",
+"syl": "a·lone",
+"zh": "独自",
+"lvl": "pep"
+},
+{
+"w": "solve",
+"syl": "solve",
+"zh": "解决",
+"lvl": "pep"
+},
+{
+"w": "flute",
+"syl": "flute",
+"zh": "长笛",
+"lvl": "pep"
+},
+{
+"w": "congratulation",
+"syl": "con·grat·u·la·tion",
+"zh": "贺词",
+"lvl": "pep"
+},
+{
+"w": "congratulations",
+"syl": "con·grat·u·la·tions",
+"zh": "（対⋯⋯•表示）祝贺！",
+"lvl": "pep"
+},
+{
+"w": "prize",
+"syl": "prize",
+"zh": "奖",
+"lvl": "pep"
+},
+{
+"w": "attend",
+"syl": "at·tend",
+"zh": "参加",
+"lvl": "pep"
+}
+]

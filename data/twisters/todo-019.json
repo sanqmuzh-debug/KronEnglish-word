@@ -1,0 +1,122 @@
+[
+{
+"w": "sheep",
+"syl": "sheep",
+"zh": "羊",
+"lvl": "pep"
+},
+{
+"w": "hen",
+"syl": "hen",
+"zh": "母鸡",
+"lvl": "pep"
+},
+{
+"w": "yum",
+"syl": "yum",
+"zh": "味道好",
+"lvl": "pep"
+},
+{
+"w": "those",
+"syl": "those",
+"zh": "那些",
+"lvl": "pep"
+},
+{
+"w": "goat",
+"syl": "goat",
+"zh": "山手",
+"lvl": "pep"
+},
+{
+"w": "clothes",
+"syl": "clothes",
+"zh": "衣服",
+"lvl": "pep"
+},
+{
+"w": "pants",
+"syl": "pants",
+"zh": "裤子",
+"lvl": "pep"
+},
+{
+"w": "hat",
+"syl": "hat",
+"zh": "帽子",
+"lvl": "pep"
+},
+{
+"w": "skirt",
+"syl": "skirt",
+"zh": "女裙",
+"lvl": "pep"
+},
+{
+"w": "shorts",
+"syl": "shorts",
+"zh": "短裤",
+"lvl": "pep"
+},
+{
+"w": "jacket",
+"syl": "jack·et",
+"zh": "夹克衫",
+"lvl": "pep"
+},
+{
+"w": "yours",
+"syl": "yours",
+"zh": "你",
+"lvl": "pep"
+},
+{
+"w": "pack",
+"syl": "pack",
+"zh": "收拾",
+"lvl": "pep"
+},
+{
+"w": "wait",
+"syl": "wait",
+"zh": "等待",
+"lvl": "pep"
+},
+{
+"w": "scarf",
+"syl": "scarf",
+"zh": "国巾",
+"lvl": "pep"
+},
+{
+"w": "sunglasses",
+"syl": "sun·glas·ses",
+"zh": "太阳镜",
+"lvl": "pep"
+},
+{
+"w": "pretty",
+"syl": "pret·ty",
+"zh": "漂亮的，美丽的",
+"lvl": "pep"
+},
+{
+"w": "expensive",
+"syl": "ex·pen·sive",
+"zh": "昂贵",
+"lvl": "pep"
+},
+{
+"w": "cheap",
+"syl": "cheap",
+"zh": "花钱少",
+"lvl": "pep"
+},
+{
+"w": "try on",
+"syl": "try·on",
+"zh": "试穿",
+"lvl": "pep"
+}
+]

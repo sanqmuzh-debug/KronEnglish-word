@@ -1,0 +1,110 @@
+[
+ {
+  "w": "hair dryer",
+  "syl": "hair·dry·er",
+  "zh": "电吹风机",
+  "lvl": "think"
+ },
+ {
+  "w": "looks like",
+  "syl": "looks·like",
+  "zh": "看起来像",
+  "lvl": "think"
+ },
+ {
+  "w": "sounds like",
+  "syl": "sounds·like",
+  "zh": "听起来像",
+  "lvl": "think"
+ },
+ {
+  "w": "like what?",
+  "syl": "like·what",
+  "zh": "比如什么？",
+  "lvl": "think"
+ },
+ {
+  "w": "vacuum the floor",
+  "syl": "vac·uum·the·floor",
+  "zh": "用吸尘器清洁吸地板",
+  "lvl": "think"
+ },
+ {
+  "w": "tidy up",
+  "syl": "ti·dy·up",
+  "zh": "收拾整理干净房间",
+  "lvl": "think"
+ },
+ {
+  "w": "do the ironing",
+  "syl": "do·the·ir·on·ing",
+  "zh": "熨烫衣物",
+  "lvl": "think"
+ },
+ {
+  "w": "do the shopping",
+  "syl": "do·the·shop·ping",
+  "zh": "采购日常食材用品",
+  "lvl": "think"
+ },
+ {
+  "w": "set/ clear the table",
+  "syl": "set·clear·the·ta·ble",
+  "zh": "摆放餐具",
+  "lvl": "think"
+ },
+ {
+  "w": "do the washing-up (wash up)",
+  "syl": "do·the·wash·ing·up",
+  "zh": "洗刷碗筷盘子",
+  "lvl": "think"
+ },
+ {
+  "w": "make the beds",
+  "syl": "make·the·beds",
+  "zh": "整理床铺被褥",
+  "lvl": "think"
+ },
+ {
+  "w": "do the cooking",
+  "syl": "do·the·cook·ing",
+  "zh": "下厨做饭烧菜",
+  "lvl": "think"
+ },
+ {
+  "w": "do the washing",
+  "syl": "do·the·wash·ing",
+  "zh": "洗衣服床单",
+  "lvl": "think"
+ },
+ {
+  "w": "load/ empty the dishwasher",
+  "syl": "load·emp·ty·the·dish·wa·sher",
+  "zh": "往洗碗机装入",
+  "lvl": "think"
+ },
+ {
+  "w": "diving",
+  "syl": "di·ving",
+  "zh": "水下潜水",
+  "lvl": "think"
+ },
+ {
+  "w": "rock climbing",
+  "syl": "rock·climb·ing",
+  "zh": "攀岩运动",
+  "lvl": "think"
+ },
+ {
+  "w": "snowboarding",
+  "syl": "snow·board·ing",
+  "zh": "单板滑雪",
+  "lvl": "think"
+ },
+ {
+  "w": "windsurfing",
+  "syl": "wind·surf·ing",
+  "zh": "风帆冲浪",
+  "lvl": "think"
+ }
+]

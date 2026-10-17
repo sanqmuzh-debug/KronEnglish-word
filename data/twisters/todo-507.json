@@ -1,0 +1,98 @@
+[
+ {
+  "w": "mid-autumn",
+  "syl": "mid·au·tumn",
+  "zh": "中秋【连字符】",
+  "lvl": "exam"
+ },
+ {
+  "w": "miniskirt",
+  "syl": "min·i·skirt",
+  "zh": "超短裙",
+  "lvl": "exam"
+ },
+ {
+  "w": "moslem",
+  "syl": "mos·lem",
+  "zh": "伊斯兰教徒",
+  "lvl": "exam"
+ },
+ {
+  "w": "night-club",
+  "syl": "night·club",
+  "zh": "夜总会【连字符】",
+  "lvl": "exam"
+ },
+ {
+  "w": "non-stop",
+  "syl": "non·stop",
+  "zh": "a.& ad.不停的",
+  "lvl": "exam"
+ },
+ {
+  "w": "northwards",
+  "syl": "nor·thwards",
+  "zh": "ad. 向北",
+  "lvl": "exam"
+ },
+ {
+  "w": "nursing",
+  "syl": "nur·sing",
+  "zh": "(职业性的）保育",
+  "lvl": "exam"
+ },
+ {
+  "w": "oceania",
+  "syl": "oceania",
+  "zh": "大洋洲",
+  "lvl": "exam"
+ },
+ {
+  "w": "oilfield",
+  "syl": "oil·field",
+  "zh": "油田",
+  "lvl": "exam"
+ },
+ {
+  "w": "ottawa",
+  "syl": "ot·ta·wa",
+  "zh": "渥太华",
+  "lvl": "exam"
+ },
+ {
+  "w": "ouch",
+  "syl": "ouch",
+  "zh": "int（突然受痛时叫声）哎哟",
+  "lvl": "exam"
+ },
+ {
+  "w": "p.c.",
+  "syl": "p·c",
+  "zh": "个人电脑(缩) =personal computer",
+  "lvl": "exam"
+ },
+ {
+  "w": "p.e.",
+  "syl": "p·e",
+  "zh": "体育(缩) =physical education",
+  "lvl": "exam"
+ },
+ {
+  "w": "paris",
+  "syl": "pa·ris",
+  "zh": "巴黎",
+  "lvl": "exam"
+ },
+ {
+  "w": "passer-by",
+  "syl": "pas·ser·by",
+  "zh": "过客，过路人",
+  "lvl": "exam"
+ },
+ {
+  "w": "pen-friend",
+  "syl": "pen·friend",
+  "zh": "笔友【连字符】",
+  "lvl": "exam"
+ }
+]

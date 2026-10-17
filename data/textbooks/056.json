@@ -1,0 +1,1487 @@
+{
+ "pub": "外研",
+ "stage": "高中",
+ "grade": "选择性必修 第二册",
+ "vol": "",
+ "id": "e1d9499b-2d8e-49c0-986a-8434ec95c8b7",
+ "title": "普通高中教科书·英语选择性必修 第二册",
+ "created": "2022-09-29",
+ "units": [
+  {
+   "n": "Unit 1",
+   "t": "",
+   "words": [
+    {
+     "w": "self-critical",
+     "zh": "自我批评的，自我批判"
+    },
+    {
+     "w": "freckle",
+     "zh": "雀斑，斑点"
+    },
+    {
+     "w": "enlarge",
+     "zh": "增大，扩大"
+    },
+    {
+     "w": "jawline",
+     "zh": "下巴钓形状"
+    },
+    {
+     "w": "boost",
+     "zh": "促进，推动"
+    },
+    {
+     "w": "boost one's confidence",
+     "zh": "增加某人钓信心"
+    },
+    {
+     "w": "narcissist",
+     "zh": "自我陶醉者"
+    },
+    {
+     "w": "obsessive",
+     "zh": "痴迷的，迷恋的；过度钓（含贬义）"
+    },
+    {
+     "w": "pretend",
+     "zh": "假装，装作"
+    },
+    {
+     "w": "misjudge",
+     "zh": "对 判断错误"
+    },
+    {
+     "w": "lipstick",
+     "zh": "唇膏，口红"
+    },
+    {
+     "w": "identical",
+     "zh": "完全相同；非常相似的"
+    },
+    {
+     "w": "dormitory",
+     "zh": "寝室"
+    },
+    {
+     "w": "roommate",
+     "zh": "室友"
+    },
+    {
+     "w": "bizarre",
+     "zh": "古怪的；奇异"
+    },
+    {
+     "w": "from head to toe",
+     "zh": "从头到脚"
+    },
+    {
+     "w": "makeover",
+     "zh": "以新衣服、新发型等进行时）打扮，装扮"
+    },
+    {
+     "w": "overlook",
+     "zh": "忽视，忽略"
+    },
+    {
+     "w": "bother",
+     "zh": "苦恼"
+    },
+    {
+     "w": "pill",
+     "zh": "药丸，药片"
+    },
+    {
+     "w": "stereotype",
+     "zh": "模式化思想"
+    },
+    {
+     "w": "skinny",
+     "zh": "极瘦的，皮包"
+    },
+    {
+     "w": "acknowledge",
+     "zh": "某情祝存在）"
+    },
+    {
+     "w": "assumption",
+     "zh": "假定，假设"
+    },
+    {
+     "w": "saving",
+     "zh": "积音"
+    },
+    {
+     "w": "welfare",
+     "zh": "帮助；福利"
+    },
+    {
+     "w": "psychology",
+     "zh": "心理，心理过程"
+    },
+    {
+     "w": "finding",
+     "zh": "研究的结果；发现"
+    },
+    {
+     "w": "frightful",
+     "zh": "可怕的"
+    },
+    {
+     "w": "monstrous",
+     "zh": "丑陋的；骇人"
+    },
+    {
+     "w": "righteous",
+     "zh": "正派，正直时"
+    },
+    {
+     "w": "outward",
+     "zh": "外表的，表面"
+    },
+    {
+     "w": "beast",
+     "zh": "野兽"
+    },
+    {
+     "w": "timid",
+     "zh": "胆小的，胆怯"
+    },
+    {
+     "w": "coward",
+     "zh": "胆小鬼；懦夫"
+    },
+    {
+     "w": "bookish",
+     "zh": "好读书的，书呆子气"
+    },
+    {
+     "w": "loyal",
+     "zh": "忠贞前，忠实的，忠诚前"
+    },
+    {
+     "w": "novelist",
+     "zh": "小说家"
+    },
+    {
+     "w": "kidnap",
+     "zh": "绑架；劫持"
+    },
+    {
+     "w": "torture",
+     "zh": "拷打，拷问"
+    },
+    {
+     "w": "execution",
+     "zh": "处死"
+    },
+    {
+     "w": "predicament",
+     "zh": "尴尬钓处境"
+    },
+    {
+     "w": "graceful",
+     "zh": "优美，优雅"
+    },
+    {
+     "w": "repulsive",
+     "zh": "令人厌恶"
+    },
+    {
+     "w": "defect",
+     "zh": "缺点，缺陷，毛病"
+    },
+    {
+     "w": "hunched",
+     "zh": "马身，马背时"
+    },
+    {
+     "w": "comprehension",
+     "zh": "理解"
+    },
+    {
+     "w": "melancholy",
+     "zh": "忧郁，无名的伤感"
+    },
+    {
+     "w": "wretch",
+     "zh": "可怜人"
+    },
+    {
+     "w": "exclaim",
+     "zh": "呼喊，惊叫"
+    },
+    {
+     "w": "expression",
+     "zh": "表情；神色"
+    },
+    {
+     "w": "heartfelt",
+     "zh": "衷心的，诚挚"
+    },
+    {
+     "w": "compassion",
+     "zh": "怜悯；同情"
+    },
+    {
+     "w": "exquisite",
+     "zh": "精美的，精致"
+    },
+    {
+     "w": "accent",
+     "zh": "口音"
+    },
+    {
+     "w": "utter",
+     "zh": "发出"
+    },
+    {
+     "w": "syllable",
+     "zh": "音节"
+    },
+    {
+     "w": "immense",
+     "zh": "巨大的"
+    },
+    {
+     "w": "monster",
+     "zh": "怪物"
+    },
+    {
+     "w": "resemble",
+     "zh": "像；与⋯⋯类似，与⋯・・・相似"
+    },
+    {
+     "w": "savage",
+     "zh": "野蛮"
+    },
+    {
+     "w": "dew",
+     "zh": "簬水"
+    },
+    {
+     "w": "whilst",
+     "zh": "而（用于强调两种情况、活动等之钓差别）"
+    },
+    {
+     "w": "coarse",
+     "zh": "粗，粗糙前"
+    },
+    {
+     "w": "downtrodden",
+     "zh": "被践踏的，受压迫的，遭蹂躏"
+    },
+    {
+     "w": "pebble",
+     "zh": "卵石，小圆石，砾石"
+    },
+    {
+     "w": "heartbreaking",
+     "zh": "令人悲伤"
+    },
+    {
+     "w": "intently",
+     "zh": "专心地；一心一意地"
+    },
+    {
+     "w": "repay",
+     "zh": "报答"
+    },
+    {
+     "w": "profound",
+     "zh": "强烈的，深切的"
+    },
+    {
+     "w": "tenderness",
+     "zh": "柔情"
+    },
+    {
+     "w": "motive",
+     "zh": "动机，原因，目"
+    }
+   ]
+  },
+  {
+   "n": "Unit 2",
+   "t": "",
+   "words": [
+    {
+     "w": "lens",
+     "zh": "镜头"
+    },
+    {
+     "w": "pose",
+     "zh": "摆好姿势"
+    },
+    {
+     "w": "grocery",
+     "zh": "食品杂货店"
+    },
+    {
+     "w": "grocery store",
+     "zh": "超级市场"
+    },
+    {
+     "w": "fascination",
+     "zh": "着迷，迷恋"
+    },
+    {
+     "w": "fashion",
+     "zh": "时尚"
+    },
+    {
+     "w": "uncomplicated",
+     "zh": "不复杂的，简单的；单纯"
+    },
+    {
+     "w": "faraway",
+     "zh": "遙远的"
+    },
+    {
+     "w": "celebrity",
+     "zh": "名人，明星"
+    },
+    {
+     "w": "craft",
+     "zh": "技能"
+    },
+    {
+     "w": "anthropologist",
+     "zh": "人类学家"
+    },
+    {
+     "w": "trial",
+     "zh": "试验"
+    },
+    {
+     "w": "by trial and error",
+     "zh": "反复试验"
+    },
+    {
+     "w": "craftsmanship",
+     "zh": "手艺；工艺；技艺"
+    },
+    {
+     "w": "atomic",
+     "zh": "原子能前；核能"
+    },
+    {
+     "w": "back down",
+     "zh": "退让；认输"
+    },
+    {
+     "w": "the cutting edge",
+     "zh": "尖端，最前沿"
+    },
+    {
+     "w": "think outside the box",
+     "zh": "不拘一格地思考，跳出框框思考"
+    },
+    {
+     "w": "break new ground",
+     "zh": "开辟新的领域；有新发现"
+    },
+    {
+     "w": "hydrogen",
+     "zh": "氢"
+    },
+    {
+     "w": "propulsion",
+     "zh": "推进力"
+    },
+    {
+     "w": "jet propulsion",
+     "zh": "喷气推进"
+    },
+    {
+     "w": "acclaim",
+     "zh": "表扬，赞赏"
+    },
+    {
+     "w": "shun",
+     "zh": "避开，躲开"
+    },
+    {
+     "w": "spotlight",
+     "zh": "聚光灯；媒体关注"
+    },
+    {
+     "w": "harsh",
+     "zh": "恶劣的，艰苦的，严峻"
+    },
+    {
+     "w": "prosperous",
+     "zh": "富裕前，繁荣的，兴旺，发达前"
+    },
+    {
+     "w": "courtyard",
+     "zh": "庭院，院子"
+    },
+    {
+     "w": "precious",
+     "zh": "珍稀的；贵重的"
+    },
+    {
+     "w": "antique",
+     "zh": "古董，古玩，古物"
+    },
+    {
+     "w": "restoration",
+     "zh": "旧建筑或旧家具等的）修复，整修"
+    },
+    {
+     "w": "crimson",
+     "zh": "深红色"
+    },
+    {
+     "w": "workplace",
+     "zh": "工作场所"
+    },
+    {
+     "w": "timepiece",
+     "zh": "计时器；钟；表"
+    },
+    {
+     "w": "envoy",
+     "zh": "便者，使节"
+    },
+    {
+     "w": "intricate",
+     "zh": "错综复杂"
+    },
+    {
+     "w": "maximum",
+     "zh": "最大量，最大值"
+    },
+    {
+     "w": "painstaking",
+     "zh": "小心；费尽心思的；精心"
+    },
+    {
+     "w": "workshop",
+     "zh": "车间，工场"
+    },
+    {
+     "w": "melody",
+     "zh": "歌曲；曲调"
+    },
+    {
+     "w": "polish",
+     "zh": "擦亮，擦光"
+    },
+    {
+     "w": "gigantic",
+     "zh": "巨大的，庞大"
+    },
+    {
+     "w": "bark",
+     "zh": "吠叫"
+    },
+    {
+     "w": "flap",
+     "zh": "振 ，扑动"
+    },
+    {
+     "w": "spin",
+     "zh": "将 纺成 ，纺（线）"
+    },
+    {
+     "w": "exaggeration",
+     "zh": "夸大，夸张"
+    },
+    {
+     "w": "metaphor",
+     "zh": "隐喻，暗喻"
+    },
+    {
+     "w": "nonetheless",
+     "zh": "然而，但是；尽管如此，虽然如此"
+    },
+    {
+     "w": "artisan",
+     "zh": "工匠，手艺人"
+    },
+    {
+     "w": "preserve",
+     "zh": "维护，保护；保存"
+    },
+    {
+     "w": "apt",
+     "zh": "适当的，恰当"
+    },
+    {
+     "w": "timeless",
+     "zh": "永恒，恒久；水不过时时"
+    },
+    {
+     "w": "sedately",
+     "zh": "安静地；慢悠悠地"
+    },
+    {
+     "w": "modest",
+     "zh": "谦虚的，谦逊时"
+    },
+    {
+     "w": "essay",
+     "zh": "短文，论说文"
+    },
+    {
+     "w": "dominate",
+     "zh": "支配，控制，主宰"
+    },
+    {
+     "w": "architecture",
+     "zh": "建筑风格，建筑设计"
+    },
+    {
+     "w": "ambitious",
+     "zh": "宏大，艰巨"
+    },
+    {
+     "w": "associate",
+     "zh": "与⋯⋯有关"
+    },
+    {
+     "w": "analysis",
+     "zh": "分析"
+    },
+    {
+     "w": "comprise",
+     "zh": "包括，由⋯•构成"
+    }
+   ]
+  },
+  {
+   "n": "Unit 3",
+   "t": "",
+   "words": [
+    {
+     "w": "violent",
+     "zh": "狂暴，凶暴时"
+    },
+    {
+     "w": "landing",
+     "zh": "登陆"
+    },
+    {
+     "w": "allied",
+     "zh": "同盟国"
+    },
+    {
+     "w": "troop",
+     "zh": "部队；军队"
+    },
+    {
+     "w": "code-name",
+     "zh": "起代号为"
+    },
+    {
+     "w": "tide",
+     "zh": "潮水"
+    },
+    {
+     "w": "supreme",
+     "zh": "最高时"
+    },
+    {
+     "w": "commander",
+     "zh": "指挥官，长官"
+    },
+    {
+     "w": "parachute",
+     "zh": "降落伞"
+    },
+    {
+     "w": "objective",
+     "zh": "目的，目标"
+    },
+    {
+     "w": "coastline",
+     "zh": "海岸线"
+    },
+    {
+     "w": "violence",
+     "zh": "暴力"
+    },
+    {
+     "w": "horror",
+     "zh": "惊恐"
+    },
+    {
+     "w": "drown",
+     "zh": "淹死"
+    },
+    {
+     "w": "gunfire",
+     "zh": "炮火"
+    },
+    {
+     "w": "amongst",
+     "zh": "在⋯•当中（=among）"
+    },
+    {
+     "w": "tank",
+     "zh": "坦克"
+    },
+    {
+     "w": "recall",
+     "zh": "回想，回忆起"
+    },
+    {
+     "w": "barely",
+     "zh": "勉强才能"
+    },
+    {
+     "w": "liberate",
+     "zh": "解放"
+    },
+    {
+     "w": "memorial",
+     "zh": "纪念的，追悼"
+    },
+    {
+     "w": "solemn",
+     "zh": "严肃的，庄重时"
+    },
+    {
+     "w": "weary",
+     "zh": "非常疲倦"
+    },
+    {
+     "w": "condemn",
+     "zh": "迫便 处于不幸境地"
+    },
+    {
+     "w": "outstanding",
+     "zh": "杰出的，优秀"
+    },
+    {
+     "w": "uniform",
+     "zh": "制服"
+    },
+    {
+     "w": "bomb",
+     "zh": "轰炸"
+    },
+    {
+     "w": "peacekeeping",
+     "zh": "维持和平（行动）"
+    },
+    {
+     "w": "peacekeeper",
+     "zh": "维和人员"
+    },
+    {
+     "w": "friction",
+     "zh": "冲突，摩擦"
+    },
+    {
+     "w": "disarm",
+     "zh": "解除武装"
+    },
+    {
+     "w": "combatant",
+     "zh": "战斗人员"
+    },
+    {
+     "w": "weapon",
+     "zh": "武备，兵备"
+    },
+    {
+     "w": "ammunition",
+     "zh": "弹药"
+    },
+    {
+     "w": "stability",
+     "zh": "稳固，稳定"
+    },
+    {
+     "w": "on standby",
+     "zh": "待命"
+    },
+    {
+     "w": "professionalism",
+     "zh": "专业性，专业素养"
+    },
+    {
+     "w": "academic",
+     "zh": "学术"
+    },
+    {
+     "w": "aggression",
+     "zh": "侵略"
+    },
+    {
+     "w": "intellectual",
+     "zh": "智力的，脑力的"
+    },
+    {
+     "w": "associated",
+     "zh": "联合"
+    },
+    {
+     "w": "rough",
+     "zh": "简单的；粗糙"
+    },
+    {
+     "w": "sardine",
+     "zh": "沙丁鱼"
+    },
+    {
+     "w": "dire",
+     "zh": "极其严重"
+    },
+    {
+     "w": "disrupt",
+     "zh": "抗乱"
+    },
+    {
+     "w": "daunting",
+     "zh": "吓人时，使人气馁时"
+    },
+    {
+     "w": "fortify",
+     "zh": "激励，加强"
+    },
+    {
+     "w": "emerge",
+     "zh": "出现"
+    },
+    {
+     "w": "shirk",
+     "zh": "逃避"
+    },
+    {
+     "w": "invader",
+     "zh": "侵略者，侵略军"
+    },
+    {
+     "w": "depict",
+     "zh": "描述，描写"
+    },
+    {
+     "w": "peer",
+     "zh": "同龄人；同辈"
+    },
+    {
+     "w": "misty",
+     "zh": "多雾的"
+    },
+    {
+     "w": "breeze",
+     "zh": "微风"
+    },
+    {
+     "w": "crowning",
+     "zh": "使圆满的，使完美"
+    },
+    {
+     "w": "glory",
+     "zh": "辉煌成就；荣耀事"
+    },
+    {
+     "w": "prominent",
+     "zh": "著名的，杰出的"
+    },
+    {
+     "w": "dedication",
+     "zh": "奉献"
+    },
+    {
+     "w": "representative",
+     "zh": "代表"
+    },
+    {
+     "w": "commemorate",
+     "zh": "庆祝，为⋯••举行纪念活动"
+    },
+    {
+     "w": "anniversary",
+     "zh": "周年纪念日"
+    },
+    {
+     "w": "reaffirm",
+     "zh": "重甲，再次确定"
+    },
+    {
+     "w": "collective",
+     "zh": "集体；共同"
+    },
+    {
+     "w": "blueprint",
+     "zh": "蓝图"
+    },
+    {
+     "w": "sum",
+     "zh": "金额，款项"
+    },
+    {
+     "w": "grain",
+     "zh": "谷物，粮食"
+    },
+    {
+     "w": "relevant",
+     "zh": "有关，切题"
+    }
+   ]
+  },
+  {
+   "n": "Unit 4",
+   "t": "",
+   "words": [
+    {
+     "w": "artificial",
+     "zh": "人造时，人工时"
+    },
+    {
+     "w": "artificial intelligence",
+     "zh": "人工智能"
+    },
+    {
+     "w": "humanity",
+     "zh": "人类"
+    },
+    {
+     "w": "assistant",
+     "zh": "助手，助理"
+    },
+    {
+     "w": "susceptible",
+     "zh": "易受影响"
+    },
+    {
+     "w": "victim",
+     "zh": "受害者"
+    },
+    {
+     "w": "potentially",
+     "zh": "潜在地"
+    },
+    {
+     "w": "automation",
+     "zh": "自动化"
+    },
+    {
+     "w": "capacity",
+     "zh": "能力，才能"
+    },
+    {
+     "w": "analyse",
+     "zh": "分析"
+    },
+    {
+     "w": "leap",
+     "zh": "剧变"
+    },
+    {
+     "w": "regulate",
+     "zh": "控制，管理"
+    },
+    {
+     "w": "illegal",
+     "zh": "非法的，违法"
+    },
+    {
+     "w": "immoral",
+     "zh": "不道德的，道德败坏"
+    },
+    {
+     "w": "client",
+     "zh": "客户，客人，顾客"
+    },
+    {
+     "w": "cite",
+     "zh": "引用，引达"
+    },
+    {
+     "w": "assess",
+     "zh": "对估价"
+    },
+    {
+     "w": "bank on",
+     "zh": "依靠，指望"
+    },
+    {
+     "w": "horizon",
+     "zh": "地平线"
+    },
+    {
+     "w": "on the horizon",
+     "zh": "将要发生"
+    },
+    {
+     "w": "reckon",
+     "zh": "认为，以为"
+    },
+    {
+     "w": "cell",
+     "zh": "细胞"
+    },
+    {
+     "w": "bound",
+     "zh": "可能"
+    },
+    {
+     "w": "be bound to",
+     "zh": "很有可能，肯定会"
+    },
+    {
+     "w": "cycle",
+     "zh": "自行车"
+    },
+    {
+     "w": "demand",
+     "zh": "需要，需求"
+    },
+    {
+     "w": "crater",
+     "zh": "物体坠落、炸弹爆炸等在地上造成时）坑"
+    },
+    {
+     "w": "agile",
+     "zh": "敏捷的，灵活"
+    },
+    {
+     "w": "slope",
+     "zh": "倾斜，成斜坡"
+    },
+    {
+     "w": "hop",
+     "zh": "跳跃"
+    },
+    {
+     "w": "squeak",
+     "zh": "发出吱吱声"
+    },
+    {
+     "w": "tendon",
+     "zh": "腱"
+    },
+    {
+     "w": "wavelength",
+     "zh": "波长"
+    },
+    {
+     "w": "mechanical",
+     "zh": "机械的"
+    },
+    {
+     "w": "imitation",
+     "zh": "仿制品"
+    },
+    {
+     "w": "mutt",
+     "zh": "杂种狗"
+    },
+    {
+     "w": "frown",
+     "zh": "皱眉"
+    },
+    {
+     "w": "positronic",
+     "zh": "正电子"
+    },
+    {
+     "w": "tightly",
+     "zh": "紧紧地"
+    },
+    {
+     "w": "desperate",
+     "zh": "拼命的，绝望"
+    },
+    {
+     "w": "clue",
+     "zh": "线索，提示"
+    },
+    {
+     "w": "faulty",
+     "zh": "有故障的，有缺陷的"
+    },
+    {
+     "w": "consistent",
+     "zh": "一贯的，一致前"
+    }
+   ]
+  },
+  {
+   "n": "Unit 5",
+   "t": "",
+   "words": [
+    {
+     "w": "lotus",
+     "zh": "莲花，荷花"
+    },
+    {
+     "w": "termite",
+     "zh": "白蚁"
+    },
+    {
+     "w": "mound",
+     "zh": "土堆，土丘"
+    },
+    {
+     "w": "algae",
+     "zh": "藻类"
+    },
+    {
+     "w": "take... for granted",
+     "zh": "认为⋯理所当然"
+    },
+    {
+     "w": "pine cone",
+     "zh": "松果，松球"
+    },
+    {
+     "w": "tile",
+     "zh": "瓦片"
+    },
+    {
+     "w": "architect",
+     "zh": "建筑师"
+    },
+    {
+     "w": "mimic",
+     "zh": "模仿"
+    },
+    {
+     "w": "waterfront",
+     "zh": "滨水地区"
+    },
+    {
+     "w": "promenade",
+     "zh": "滨海步行道"
+    },
+    {
+     "w": "plumbing",
+     "zh": "管道系统"
+    },
+    {
+     "w": "superb",
+     "zh": "极好前，出色"
+    },
+    {
+     "w": "biomimicry",
+     "zh": "伤生学"
+    },
+    {
+     "w": "dioxide",
+     "zh": "二氧化物"
+    },
+    {
+     "w": "convert",
+     "zh": "使转变；使转换"
+    },
+    {
+     "w": "frontier",
+     "zh": "知识前洽"
+    },
+    {
+     "w": "pond",
+     "zh": "池塘"
+    },
+    {
+     "w": "sow",
+     "zh": "播"
+    },
+    {
+     "w": "wisdom",
+     "zh": "智慧"
+    },
+    {
+     "w": "seek solutions to",
+     "zh": "寻求解决方法"
+    },
+    {
+     "w": "take inspiration from",
+     "zh": "从…・中获取灵感"
+    },
+    {
+     "w": "employ",
+     "zh": "使用，运用"
+    },
+    {
+     "w": "bat",
+     "zh": "蝙蝠"
+    },
+    {
+     "w": "echo-location",
+     "zh": "回声定位"
+    },
+    {
+     "w": "radar",
+     "zh": "雷达"
+    },
+    {
+     "w": "swimsuit",
+     "zh": "游泳衣"
+    },
+    {
+     "w": "dragonfly",
+     "zh": "蜻蜓"
+    },
+    {
+     "w": "drone",
+     "zh": "无人驾驶飞机"
+    },
+    {
+     "w": "spider",
+     "zh": "蜘蛛"
+    },
+    {
+     "w": "physician",
+     "zh": "医生"
+    },
+    {
+     "w": "superficially",
+     "zh": "表面 地"
+    },
+    {
+     "w": "bow",
+     "zh": "鞠躬"
+    },
+    {
+     "w": "rural",
+     "zh": "农村的，乡村的"
+    },
+    {
+     "w": "decent",
+     "zh": "可接受的，相当好的"
+    },
+    {
+     "w": "cottage",
+     "zh": "乡村小屋"
+    },
+    {
+     "w": "deliberately",
+     "zh": "不慌不忙地，从容不追地"
+    },
+    {
+     "w": "withdraw",
+     "zh": "退出"
+    },
+    {
+     "w": "domestic",
+     "zh": "驯养的；家养"
+    },
+    {
+     "w": "depressive",
+     "zh": "抑郁"
+    },
+    {
+     "w": "reluctant",
+     "zh": "不情愿；勉强的"
+    },
+    {
+     "w": "depart",
+     "zh": "离开"
+    },
+    {
+     "w": "lane",
+     "zh": "小路"
+    },
+    {
+     "w": "atop",
+     "zh": "在…⋯顶上"
+    },
+    {
+     "w": "mulberry",
+     "zh": "桑葚；桑柄"
+    },
+    {
+     "w": "purity",
+     "zh": "纯洁；清净"
+    },
+    {
+     "w": "resign",
+     "zh": "使自己顺从于 某事；安于"
+    },
+    {
+     "w": "botanical",
+     "zh": "植物 的"
+    },
+    {
+     "w": "reject",
+     "zh": "拒绝接受"
+    },
+    {
+     "w": "ease",
+     "zh": "舒适，悠闲"
+    },
+    {
+     "w": "at ease with",
+     "zh": "不拘束，放松"
+    },
+    {
+     "w": "attain",
+     "zh": "得到，获得"
+    },
+    {
+     "w": "fulfilment",
+     "zh": "满足"
+    },
+    {
+     "w": "evaluate",
+     "zh": "评估，评价"
+    }
+   ]
+  },
+  {
+   "n": "Unit 6",
+   "t": "",
+   "words": [
+    {
+     "w": "weekly",
+     "zh": "一周一次的，每周时"
+    },
+    {
+     "w": "inspector",
+     "zh": "检查员，巡视员"
+    },
+    {
+     "w": "insist",
+     "zh": "坚称，坚决认为"
+    },
+    {
+     "w": "secrecy",
+     "zh": "保密，秘密状态"
+    },
+    {
+     "w": "shaving",
+     "zh": "刮胡子"
+    },
+    {
+     "w": "flush",
+     "zh": "发红"
+    },
+    {
+     "w": "plum",
+     "zh": "李子；梅子"
+    },
+    {
+     "w": "faintly",
+     "zh": "微弱地；模糊地"
+    },
+    {
+     "w": "dispose",
+     "zh": "排列，布置"
+    },
+    {
+     "w": "sparkle",
+     "zh": "因耀，闪光"
+    },
+    {
+     "w": "prospect",
+     "zh": "开阔的景观，景色"
+    },
+    {
+     "w": "redden",
+     "zh": "变红"
+    },
+    {
+     "w": "glare",
+     "zh": "刺眼前强光"
+    },
+    {
+     "w": "flake",
+     "zh": "小薄片"
+    },
+    {
+     "w": "bend",
+     "zh": "变弯曲"
+    },
+    {
+     "w": "weathercock",
+     "zh": "风标"
+    },
+    {
+     "w": "church",
+     "zh": "教堂"
+    },
+    {
+     "w": "rhyme",
+     "zh": "儿歌，童谣"
+    },
+    {
+     "w": "alabaster",
+     "zh": "雪花石膏"
+    },
+    {
+     "w": "goose",
+     "zh": "鹅"
+    },
+    {
+     "w": "feather",
+     "zh": "羽毛"
+    },
+    {
+     "w": "innocent",
+     "zh": "天真无邪的"
+    },
+    {
+     "w": "enhance",
+     "zh": "改进；增强"
+    },
+    {
+     "w": "bloom",
+     "zh": "开花"
+    },
+    {
+     "w": "charm",
+     "zh": "魅力，魔力"
+    },
+    {
+     "w": "bleak",
+     "zh": "阴冷时；阴郁时"
+    },
+    {
+     "w": "fade",
+     "zh": "逐渐消失；褪色"
+    },
+    {
+     "w": "orchard",
+     "zh": "果园"
+    },
+    {
+     "w": "cluster",
+     "zh": "串，丛，簇"
+    },
+    {
+     "w": "wheat",
+     "zh": "小麦"
+    },
+    {
+     "w": "pile",
+     "zh": "堆放，摞起"
+    },
+    {
+     "w": "gentle",
+     "zh": "轻柔的；温和的"
+    },
+    {
+     "w": "sweep",
+     "zh": "吹过，掠过"
+    },
+    {
+     "w": "tinge",
+     "zh": "看淡色于⋯•"
+    },
+    {
+     "w": "wagon",
+     "zh": "四轮运货车"
+    },
+    {
+     "w": "reap",
+     "zh": "收割"
+    },
+    {
+     "w": "ban",
+     "zh": "禁止，取缔"
+    },
+    {
+     "w": "puzzled",
+     "zh": "困惑的，无法理解前"
+    },
+    {
+     "w": "backyard",
+     "zh": "后院"
+    },
+    {
+     "w": "moribund",
+     "zh": "垂死，奄奄一息时"
+    },
+    {
+     "w": "tremble",
+     "zh": "颤抖，发抖"
+    },
+    {
+     "w": "throb",
+     "zh": "生机勒勃；热闹"
+    },
+    {
+     "w": "chorus",
+     "zh": "合唱曲"
+    },
+    {
+     "w": "robin",
+     "zh": "知更马"
+    },
+    {
+     "w": "catbird",
+     "zh": "猫鹊"
+    },
+    {
+     "w": "dove",
+     "zh": "鸽子"
+    },
+    {
+     "w": "jay",
+     "zh": "松鸦"
+    },
+    {
+     "w": "wren",
+     "zh": "鹪鹩"
+    },
+    {
+     "w": "marsh",
+     "zh": "沼泽，湿地"
+    },
+    {
+     "w": "fable",
+     "zh": "寓言"
+    },
+    {
+     "w": "alert",
+     "zh": "提醒，使 意识到"
+    },
+    {
+     "w": "knowingly",
+     "zh": "故意地"
+    },
+    {
+     "w": "gypsy moth",
+     "zh": "舞毒蛾"
+    },
+    {
+     "w": "dozen",
+     "zh": "一打；许多"
+    },
+    {
+     "w": "thorough",
+     "zh": "仔细的；缜密时"
+    },
+    {
+     "w": "precise",
+     "zh": "精确的；一丝不苟"
+    },
+    {
+     "w": "launch",
+     "zh": "推出，发起"
+    },
+    {
+     "w": "posthumous",
+     "zh": "死后获得"
+    },
+    {
+     "w": "marine",
+     "zh": "海洋的"
+    },
+    {
+     "w": "reputation",
+     "zh": "名誉，名望"
+    },
+    {
+     "w": "elegance",
+     "zh": "优美；简清"
+    },
+    {
+     "w": "passionate",
+     "zh": "具有强烈信念"
+    },
+    {
+     "w": "diamond",
+     "zh": "钻石"
+    }
+   ]
+  }
+ ]
+}

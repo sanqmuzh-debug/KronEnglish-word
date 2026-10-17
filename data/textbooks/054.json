@@ -1,0 +1,1159 @@
+{
+ "pub": "外研",
+ "stage": "高中",
+ "grade": "必修 第三册",
+ "vol": "",
+ "id": "889eca45-d327-4e23-9b7d-81ab9ec5eb5d",
+ "title": "普通高中教科书·英语必修 第三册",
+ "created": "2022-09-29",
+ "units": [
+  {
+   "n": "Unit 1",
+   "t": "",
+   "words": [
+    {
+     "w": "agony",
+     "zh": "痛楚，苦难"
+    },
+    {
+     "w": "agony aunt",
+     "zh": "知心阿姨"
+    },
+    {
+     "w": "help out",
+     "zh": "帮一把"
+    },
+    {
+     "w": "let down",
+     "zh": "使失望，辜负"
+    },
+    {
+     "w": "steam",
+     "zh": "蒸汽，水蒸气"
+    },
+    {
+     "w": "let off steam",
+     "zh": "发泄怒火，宣泄情绪"
+    },
+    {
+     "w": "loose",
+     "zh": "控制不严"
+    },
+    {
+     "w": "lip",
+     "zh": "唇"
+    },
+    {
+     "w": "sink",
+     "zh": "使（船）沉没"
+    },
+    {
+     "w": "loose lips sink ships",
+     "zh": "祸从口出"
+    },
+    {
+     "w": "fault",
+     "zh": "责任，过错"
+    },
+    {
+     "w": "resolve",
+     "zh": "解決"
+    },
+    {
+     "w": "strategy",
+     "zh": "计谋，策略；行动计划"
+    },
+    {
+     "w": "signal",
+     "zh": "信号；暗号"
+    },
+    {
+     "w": "breath",
+     "zh": "一日气"
+    },
+    {
+     "w": "take a breath",
+     "zh": "吸一口气"
+    },
+    {
+     "w": "pull one's weight",
+     "zh": "做好分内事，尽责"
+    },
+    {
+     "w": "concern",
+     "zh": "忧虑，担心"
+    },
+    {
+     "w": "annoyed",
+     "zh": "恼怒的，烦恼的"
+    },
+    {
+     "w": "adjust",
+     "zh": "适应， 习惯"
+    },
+    {
+     "w": "duty",
+     "zh": "职责，义务；责任"
+    },
+    {
+     "w": "accident",
+     "zh": "意外事件，偶然因素"
+    },
+    {
+     "w": "by accident",
+     "zh": "偶然，意外地"
+    },
+    {
+     "w": "core",
+     "zh": "核心的（课程、团体等）"
+    },
+    {
+     "w": "ensure",
+     "zh": "确保，保证"
+    },
+    {
+     "w": "complexity n",
+     "zh": "复杂性，错综复杂"
+    },
+    {
+     "w": "forgive",
+     "zh": "原涼，宽恕"
+    },
+    {
+     "w": "criticise",
+     "zh": "批评，指责"
+    },
+    {
+     "w": "embarrassment m",
+     "zh": "尴尬，难为情"
+    },
+    {
+     "w": "boxing",
+     "zh": "拳击"
+    },
+    {
+     "w": "tangled",
+     "zh": "纠结的；复杂"
+    },
+    {
+     "w": "web",
+     "zh": "蚴蛛网；错综复杂事物"
+    },
+    {
+     "w": "weave",
+     "zh": "编，织"
+    },
+    {
+     "w": "deceive",
+     "zh": "欺骗"
+    },
+    {
+     "w": "justify",
+     "zh": "证明有道理；为……辩护"
+    },
+    {
+     "w": "frank",
+     "zh": "坦率的，坦诚的，直言不讳"
+    },
+    {
+     "w": "tear",
+     "zh": "眼泪，泪水"
+    },
+    {
+     "w": "latter",
+     "zh": "后者"
+    },
+    {
+     "w": "moreover",
+     "zh": "此外，而且"
+    },
+    {
+     "w": "independent",
+     "zh": "独立"
+    },
+    {
+     "w": "apart",
+     "zh": "分离，分开"
+    },
+    {
+     "w": "fence",
+     "zh": "栅栏，围栏，篱笆"
+    }
+   ]
+  },
+  {
+   "n": "Unit 2",
+   "t": "",
+   "words": [
+    {
+     "w": "contribution",
+     "zh": "贡献"
+    },
+    {
+     "w": "relief",
+     "zh": "减轻，缓解"
+    },
+    {
+     "w": "shortage",
+     "zh": "短缺，不足，缺乏"
+    },
+    {
+     "w": "internal",
+     "zh": "内部的"
+    },
+    {
+     "w": "effective",
+     "zh": "有效的，产生预期效果"
+    },
+    {
+     "w": "fund",
+     "zh": "为••••提供资金，资助"
+    },
+    {
+     "w": "recycle",
+     "zh": "再利用，回收利用"
+    },
+    {
+     "w": "fountain",
+     "zh": "喷水池"
+    },
+    {
+     "w": "earn",
+     "zh": "掙"
+    },
+    {
+     "w": "donate",
+     "zh": "捐赠，捐献"
+    },
+    {
+     "w": "break into a smile",
+     "zh": "突然笑起来"
+    },
+    {
+     "w": "foundation",
+     "zh": "基金会"
+    },
+    {
+     "w": "insight",
+     "zh": "顿悟，猛醒"
+    },
+    {
+     "w": "perseverance",
+     "zh": "不屈不挠，坚持不懈"
+    },
+    {
+     "w": "reality",
+     "zh": "真实，现实"
+    },
+    {
+     "w": "extend",
+     "zh": "持续；延伸"
+    },
+    {
+     "w": "mission",
+     "zh": "职责；使命"
+    },
+    {
+     "w": "disease",
+     "zh": "疾病，病"
+    },
+    {
+     "w": "disability n",
+     "zh": "残疾，残障"
+    },
+    {
+     "w": "territory",
+     "zh": "地区，地方"
+    },
+    {
+     "w": "sensitive",
+     "zh": "敏感的，容易生气"
+    },
+    {
+     "w": "generous",
+     "zh": "慷慨，大方"
+    },
+    {
+     "w": "hesitate",
+     "zh": "迟疑，犹豫"
+    },
+    {
+     "w": "cancer",
+     "zh": "癌症"
+    },
+    {
+     "w": "royal",
+     "zh": "王室的，皇家"
+    },
+    {
+     "w": "institution",
+     "zh": "机构，团体"
+    },
+    {
+     "w": "assistance",
+     "zh": "帮助，援助"
+    },
+    {
+     "w": "registration",
+     "zh": "登记，注册"
+    },
+    {
+     "w": "confirmation",
+     "zh": "证实，证明"
+    },
+    {
+     "w": "nazi",
+     "zh": "纳粹党员，纳粹分子"
+    },
+    {
+     "w": "jewish",
+     "zh": "犹太人，犹太教"
+    },
+    {
+     "w": "aid",
+     "zh": "帮助，援助"
+    },
+    {
+     "w": "temporary",
+     "zh": "短期的，短暂；临时的"
+    },
+    {
+     "w": "military",
+     "zh": "年队"
+    },
+    {
+     "w": "rise to one's feet",
+     "zh": "站起身来"
+    },
+    {
+     "w": "achievement",
+     "zh": "成绩，成就"
+    },
+    {
+     "w": "knighthood",
+     "zh": "爵士封号或头衔"
+    },
+    {
+     "w": "chief",
+     "zh": "最高级别，首席的"
+    },
+    {
+     "w": "major",
+     "zh": "重要的，主要的"
+    },
+    {
+     "w": "treatment",
+     "zh": "治疗；疗法"
+    },
+    {
+     "w": "obtain",
+     "zh": "获得，得到"
+    },
+    {
+     "w": "drug",
+     "zh": "葯物，葯材"
+    },
+    {
+     "w": "certificate",
+     "zh": "证明书，证书"
+    },
+    {
+     "w": "ministry",
+     "zh": "鄙"
+    },
+    {
+     "w": "further",
+     "zh": "更多，附加前"
+    }
+   ]
+  },
+  {
+   "n": "Unit 3",
+   "t": "",
+   "words": [
+    {
+     "w": "press",
+     "zh": "按"
+    },
+    {
+     "w": "shoot",
+     "zh": "射出 ，放射"
+    },
+    {
+     "w": "gunpowder",
+     "zh": "火药"
+    },
+    {
+     "w": "compass",
+     "zh": "指南针，罗盘"
+    },
+    {
+     "w": "virtual",
+     "zh": "虚拟，模拟前"
+    },
+    {
+     "w": "virtual reality",
+     "zh": "虚拟现实"
+    },
+    {
+     "w": "wearable tech",
+     "zh": "可穿戴技术"
+    },
+    {
+     "w": "flexible",
+     "zh": "易弯曲的，柔韧的"
+    },
+    {
+     "w": "battery",
+     "zh": "电池"
+    },
+    {
+     "w": "in addition",
+     "zh": "除此之外，另外"
+    },
+    {
+     "w": "compute",
+     "zh": "计算"
+    },
+    {
+     "w": "capable",
+     "zh": "有能力"
+    },
+    {
+     "w": "stuff",
+     "zh": "东西，物品"
+    },
+    {
+     "w": "desire",
+     "zh": "渴望，欲望"
+    },
+    {
+     "w": "never say never",
+     "zh": "别轻易说决不"
+    },
+    {
+     "w": "passive",
+     "zh": "被动"
+    },
+    {
+     "w": "beyond",
+     "zh": "无法⋯⋯"
+    },
+    {
+     "w": "instance",
+     "zh": "例子，实例"
+    },
+    {
+     "w": "significant",
+     "zh": "重要的，影响深远的"
+    },
+    {
+     "w": "injure",
+     "zh": "使受伤，弄伤"
+    },
+    {
+     "w": "chemist",
+     "zh": "化学家"
+    },
+    {
+     "w": "astronomer",
+     "zh": "天文学家"
+    },
+    {
+     "w": "biologist",
+     "zh": "生物学家"
+    },
+    {
+     "w": "accurate",
+     "zh": "精确"
+    },
+    {
+     "w": "Gregorian calendar",
+     "zh": "公历，阳历（自年起在西方使用历法）"
+    },
+    {
+     "w": "minor",
+     "zh": "小的"
+    },
+    {
+     "w": "origin",
+     "zh": "起源，起因"
+    },
+    {
+     "w": "species",
+     "zh": "物种"
+    },
+    {
+     "w": "natural selection",
+     "zh": "自然选择"
+    },
+    {
+     "w": "field research",
+     "zh": "实地研究，实地调研"
+    },
+    {
+     "w": "stream",
+     "zh": "小河，小溪"
+    },
+    {
+     "w": "extraordinary",
+     "zh": "非凡的，出色的"
+    },
+    {
+     "w": "brilliant",
+     "zh": "聪颖的，才华横溢"
+    },
+    {
+     "w": "radium",
+     "zh": "镭"
+    },
+    {
+     "w": "theory",
+     "zh": "学说，理论"
+    },
+    {
+     "w": "mental",
+     "zh": "精神的；精神健康"
+    },
+    {
+     "w": "cure",
+     "zh": "药剂；疗法"
+    },
+    {
+     "w": "draft",
+     "zh": "起草，草拟"
+    },
+    {
+     "w": "declaration",
+     "zh": "声明，宣告"
+    },
+    {
+     "w": "experiment",
+     "zh": "实验"
+    },
+    {
+     "w": "lightning",
+     "zh": "闪电"
+    },
+    {
+     "w": "fiction",
+     "zh": "虚构事，想象事"
+    },
+    {
+     "w": "metal",
+     "zh": "金属"
+    },
+    {
+     "w": "attach",
+     "zh": "系，绑；贴"
+    },
+    {
+     "w": "flash",
+     "zh": "闪光"
+    },
+    {
+     "w": "conduct",
+     "zh": "传导"
+    },
+    {
+     "w": "scientific",
+     "zh": "科学"
+    },
+    {
+     "w": "entirely",
+     "zh": "完全地，彻底地"
+    },
+    {
+     "w": "gravity",
+     "zh": "重力，引力"
+    },
+    {
+     "w": "account",
+     "zh": "记达，描达"
+    },
+    {
+     "w": "proof",
+     "zh": "证明，证据"
+    },
+    {
+     "w": "procedure",
+     "zh": "程序，步骤，手续"
+    }
+   ]
+  },
+  {
+   "n": "Unit 4",
+   "t": "",
+   "words": [
+    {
+     "w": "broadcast",
+     "zh": "广播节目，电视节目"
+    },
+    {
+     "w": "stair",
+     "zh": "楼棉"
+    },
+    {
+     "w": "load",
+     "zh": "某物量"
+    },
+    {
+     "w": "get a load of",
+     "zh": "注意，仔细看（常用于表示惊讶或羡慕）"
+    },
+    {
+     "w": "battle",
+     "zh": "战斗，战役"
+    },
+    {
+     "w": "fold",
+     "zh": "折起"
+    },
+    {
+     "w": "sculptor",
+     "zh": "雕刻家，雕塑家"
+    },
+    {
+     "w": "portrait",
+     "zh": "人物照片；肖像"
+    },
+    {
+     "w": "selfie",
+     "zh": "自拍照"
+    },
+    {
+     "w": "exhibition",
+     "zh": "展出，展览"
+    },
+    {
+     "w": "neighbourhood",
+     "zh": "社区，街坊"
+    },
+    {
+     "w": "embroidery",
+     "zh": "刺绣图案，刺绣品"
+    },
+    {
+     "w": "seal",
+     "zh": "印章，图章"
+    },
+    {
+     "w": "seal cutting",
+     "zh": "篆刻"
+    },
+    {
+     "w": "calligraphy",
+     "zh": "书法"
+    },
+    {
+     "w": "porcelain",
+     "zh": "瓷器"
+    },
+    {
+     "w": "demonstrate",
+     "zh": "示范，演示"
+    },
+    {
+     "w": "vividly",
+     "zh": "生动地"
+    },
+    {
+     "w": "needle",
+     "zh": "缝衣针"
+    },
+    {
+     "w": "elegant",
+     "zh": "高雅的，优美"
+    },
+    {
+     "w": "carve",
+     "zh": "刻"
+    },
+    {
+     "w": "contemporary",
+     "zh": "当代"
+    },
+    {
+     "w": "cigarette",
+     "zh": "香烟"
+    },
+    {
+     "w": "lack",
+     "zh": "没有，缺乏"
+    },
+    {
+     "w": "stimulate",
+     "zh": "刺激，促便，促进"
+    },
+    {
+     "w": "magnificent",
+     "zh": "宏伟的，壮丽的"
+    },
+    {
+     "w": "bare",
+     "zh": "使暴露，簬出"
+    },
+    {
+     "w": "hoof",
+     "zh": "蹄"
+    },
+    {
+     "w": "wine",
+     "zh": "葡萄酒"
+    },
+    {
+     "w": "dirt",
+     "zh": "灰生，尘土"
+    },
+    {
+     "w": "sponsor",
+     "zh": "资助"
+    },
+    {
+     "w": "emperor",
+     "zh": "皇帝"
+    },
+    {
+     "w": "fond",
+     "zh": "喜爱"
+    },
+    {
+     "w": "be fond of",
+     "zh": "喜欢⋯⋯"
+    },
+    {
+     "w": "frequent",
+     "zh": "经常发生的，频繁"
+    },
+    {
+     "w": "majesty",
+     "zh": "陛下"
+    },
+    {
+     "w": "gallop",
+     "zh": "飞奔，疾驰"
+    },
+    {
+     "w": "vase",
+     "zh": "花瓶"
+    },
+    {
+     "w": "mostly",
+     "zh": "大部分；主要地"
+    },
+    {
+     "w": "shade",
+     "zh": "（色彩）浓淡，深浅，色度"
+    }
+   ]
+  },
+  {
+   "n": "Unit 5",
+   "t": "",
+   "words": [
+    {
+     "w": "initial",
+     "zh": "开始的，最初"
+    },
+    {
+     "w": "thus",
+     "zh": "因此，从而"
+    },
+    {
+     "w": "zone",
+     "zh": "地区，地带"
+    },
+    {
+     "w": "oxygen",
+     "zh": "氧气"
+    },
+    {
+     "w": "border",
+     "zh": "国界，边界"
+    },
+    {
+     "w": "confirm",
+     "zh": "证实，证明"
+    },
+    {
+     "w": "crowd",
+     "zh": "人群"
+    },
+    {
+     "w": "sheer",
+     "zh": "纯粹，十足"
+    },
+    {
+     "w": "bring... into focus",
+     "zh": "使⋯⋯成为焦点"
+    },
+    {
+     "w": "attempt",
+     "zh": "努力，尝试"
+    },
+    {
+     "w": "failure",
+     "zh": "失败"
+    },
+    {
+     "w": "psychologist",
+     "zh": "心理学家"
+    },
+    {
+     "w": "thrill",
+     "zh": "惊险，刺激"
+    },
+    {
+     "w": "port",
+     "zh": "港，港口"
+    },
+    {
+     "w": "unaware",
+     "zh": "未觉察到，未意识到"
+    },
+    {
+     "w": "alcohol",
+     "zh": "酒精"
+    },
+    {
+     "w": "bandage",
+     "zh": "绷帯"
+    },
+    {
+     "w": "plaster",
+     "zh": "创可贴"
+    },
+    {
+     "w": "thermometer",
+     "zh": "体温计"
+    },
+    {
+     "w": "rubber",
+     "zh": "橡胶，合成橡胶"
+    },
+    {
+     "w": "cotton",
+     "zh": "棉布，棉纱"
+    },
+    {
+     "w": "wool",
+     "zh": "羊毛，毛织物"
+    },
+    {
+     "w": "cotton wool",
+     "zh": "药棉，脱脂棉"
+    },
+    {
+     "w": "guideline",
+     "zh": "指导方针，指导原则"
+    },
+    {
+     "w": "cloth",
+     "zh": "布"
+    },
+    {
+     "w": "bleeding",
+     "zh": "流血，失血"
+    },
+    {
+     "w": "liquid",
+     "zh": "液体，液态物"
+    },
+    {
+     "w": "injury",
+     "zh": "伤，损害"
+    },
+    {
+     "w": "stretch",
+     "zh": "延伸，绵延"
+    },
+    {
+     "w": "league",
+     "zh": "里格（旧时长度单位，相当于英里或海里）"
+    },
+    {
+     "w": "servant",
+     "zh": "仆人，佣人"
+    },
+    {
+     "w": "submarine",
+     "zh": "潜 艇"
+    },
+    {
+     "w": "charge",
+     "zh": "主管，负责"
+    },
+    {
+     "w": "captain",
+     "zh": "船长"
+    },
+    {
+     "w": "ahead",
+     "zh": "在前面"
+    },
+    {
+     "w": "permit",
+     "zh": "允许，准许，许可"
+    },
+    {
+     "w": "fascinated",
+     "zh": "被迷住的，被吸引住"
+    },
+    {
+     "w": "chapter",
+     "zh": "章节"
+    },
+    {
+     "w": "relate",
+     "zh": "相联系，有关联；讲述"
+    },
+    {
+     "w": "helmet",
+     "zh": "头盃，钢盗"
+    },
+    {
+     "w": "nut",
+     "zh": "坚果"
+    },
+    {
+     "w": "astonish",
+     "zh": "使吃惊，使惊讶"
+    },
+    {
+     "w": "ray",
+     "zh": "光线，光束"
+    },
+    {
+     "w": "consume",
+     "zh": "消耗"
+    },
+    {
+     "w": "distinguish",
+     "zh": "看清；认出"
+    },
+    {
+     "w": "gradually",
+     "zh": "逐渐地，逐步地"
+    },
+    {
+     "w": "surround",
+     "zh": "环绕，围绕"
+    },
+    {
+     "w": "wrinkled",
+     "zh": "有皱褶"
+    },
+    {
+     "w": "shore",
+     "zh": "岸，滨"
+    },
+    {
+     "w": "carpet",
+     "zh": "地毯"
+    },
+    {
+     "w": "intensity",
+     "zh": "强度"
+    },
+    {
+     "w": "vibration",
+     "zh": "怎颤，震动"
+    },
+    {
+     "w": "atom",
+     "zh": "原子"
+    },
+    {
+     "w": "depth",
+     "zh": "深，深度"
+    },
+    {
+     "w": "broad",
+     "zh": "宽的，阔"
+    },
+    {
+     "w": "in broad daylight",
+     "zh": "在大白天"
+    },
+    {
+     "w": "beneath",
+     "zh": "在…⋯之下，在……正下方"
+    },
+    {
+     "w": "resident",
+     "zh": "居民，住户"
+    },
+    {
+     "w": "male",
+     "zh": "雄性动物"
+    }
+   ]
+  },
+  {
+   "n": "Unit 6",
+   "t": "",
+   "words": [
+    {
+     "w": "disaster",
+     "zh": "灾难，灾祸"
+    },
+    {
+     "w": "tube",
+     "zh": "管子"
+    },
+    {
+     "w": "the Tube",
+     "zh": "地下铁道，地铁"
+    },
+    {
+     "w": "plus",
+     "zh": "多，余"
+    },
+    {
+     "w": "erupt",
+     "zh": "爆发，喷发"
+    },
+    {
+     "w": "immediately",
+     "zh": "即刻，马上"
+    },
+    {
+     "w": "hurricane",
+     "zh": "飓风"
+    },
+    {
+     "w": "landslide",
+     "zh": "山崩，滑坡"
+    },
+    {
+     "w": "occur",
+     "zh": "发生"
+    },
+    {
+     "w": "announcement",
+     "zh": "通告，公告"
+    },
+    {
+     "w": "forecast",
+     "zh": "预测，预报°grab /grab/v.攫取，抓住"
+    },
+    {
+     "w": "tsunami",
+     "zh": "海啸"
+    },
+    {
+     "w": "reliable",
+     "zh": "可信赖的，可靠的"
+    },
+    {
+     "w": "rescue",
+     "zh": "营救，解救"
+    },
+    {
+     "w": "emergency",
+     "zh": "紧急情况，不测事件"
+    },
+    {
+     "w": "typhoon",
+     "zh": "台风"
+    },
+    {
+     "w": "blizzard",
+     "zh": "暴风雪"
+    },
+    {
+     "w": "avalanche",
+     "zh": "雪崩"
+    },
+    {
+     "w": "exceptionally",
+     "zh": "极其，非常"
+    },
+    {
+     "w": "claim",
+     "zh": "（战争、事故等）夺去（生命）"
+    },
+    {
+     "w": "crisis",
+     "zh": "危机"
+    },
+    {
+     "w": "threaten",
+     "zh": "威胁到，危及"
+    },
+    {
+     "w": "satellite",
+     "zh": "人造卫星"
+    },
+    {
+     "w": "precisely",
+     "zh": "精确地，准确地"
+    },
+    {
+     "w": "billion",
+     "zh": "十亿"
+    },
+    {
+     "w": "lap",
+     "zh": "大腿部"
+    },
+    {
+     "w": "nowhere",
+     "zh": "什么地方都不，无处"
+    },
+    {
+     "w": "otherwise",
+     "zh": "否则，要不然"
+    },
+    {
+     "w": "helicopter",
+     "zh": "直升机"
+    },
+    {
+     "w": "mosquito",
+     "zh": "蚊子"
+    },
+    {
+     "w": "midnight",
+     "zh": "子夜，午夜"
+    },
+    {
+     "w": "the Big Dipper",
+     "zh": "北斗七星"
+    },
+    {
+     "w": "the Little Dipper",
+     "zh": "小北斗七星"
+    },
+    {
+     "w": "the milky Way",
+     "zh": "银河"
+    },
+    {
+     "w": "county",
+     "zh": "县；（英国）都"
+    },
+    {
+     "w": "have yet to",
+     "zh": "还没有"
+    },
+    {
+     "w": "threat",
+     "zh": "威胁，可能会带来危险时人（事）"
+    },
+    {
+     "w": "property",
+     "zh": "所有物，资产，财产"
+    },
+    {
+     "w": "sufficient",
+     "zh": "足够的，充足"
+    },
+    {
+     "w": "shelter",
+     "zh": "庇护，掩蔽"
+    }
+   ]
+  }
+ ]
+}
