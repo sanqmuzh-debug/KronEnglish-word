@@ -7,7 +7,7 @@
   python3 scripts/make_fish_audio.py --voice <声音的 reference_id> [--model s2.1-pro-free] [--only 20] [--out demo/audio-fish]
 已经生成过的文件会跳过，断了可以接着跑。跑完用 scripts/trim_audio.sh 剪掉开头空白。
 """
-import argparse, json, os, re, ssl, subprocess, sys, time, urllib.request, urllib.error
+import argparse, http.client, json, os, re, ssl, subprocess, sys, time, urllib.request, urllib.error
 
 API = 'https://api.fish.audio/v1/tts'
 
@@ -53,13 +53,13 @@ def tts(text, ring, voice, model, speed):
             with urllib.request.urlopen(req, timeout=60, context=tls()) as r:
                 return r.read()
         except urllib.error.HTTPError as e:
-            if e.code in (401, 402, 403):
-                ring.next(); continue
+            if e.code in (401, 402, 403):  # 密钥失效或额度用完：整批停下来，让人看
+                raise SystemExit(f'Fish 返回 {e.code}，停下来检查密钥')
             if e.code in (429, 500, 502, 503, 504) and attempt < 3:
                 attempt += 1; time.sleep(2 ** attempt * 2); continue
             raise SystemExit(f'Fish 返回 {e.code}: {e.read()[:300]!r}')
-        except urllib.error.URLError:
-            if attempt < 3:
+        except (urllib.error.URLError, http.client.HTTPException, OSError):  # 断网、超时、读到一半断开
+            if attempt < 5:
                 attempt += 1; time.sleep(2 ** attempt * 2); continue
             raise
 
