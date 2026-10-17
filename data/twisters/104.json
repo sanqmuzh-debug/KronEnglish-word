@@ -1,164 +1,124 @@
 [
  {
   "w": "asleep",
-  "meme": "m01",
   "tw": "Kron is asleep on a sheep, and the sheep leaps over a deep stream.",
   "twc": "Kron 趴在羊背上睡着了，羊一跃跳过了深深的小河。",
-  "hint": "睡着了，照样过河。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron lies fast asleep on the woolly back of a big white sheep, wearing a tiny striped nightcap, while the sheep is caught in mid-leap over a deep rushing stream, all four legs stretched out.\nThe composition follows the \"this is fine\" meme: Kron sleeps on with a peaceful smile, totally calm, while the wild jump happens under him.\nThe scene is a green hill pasture split by a deep rocky stream, with other sheep watching from the far bank.\nShot from the stream bank with a 70 mm lens at a fast shutter, Kron and the leaping sheep sharp, water spray frozen, the far bank soft, medium depth of field.\nBright spring morning sun from the side with sparkling water, fresh green and white colour grade.\nA real-photography 4:3 landscape film still, photoreal wool, water and plush, a clean frame with no lettering."
+  "hint": "睡着了，照样过河。"
  },
  {
   "w": "fall asleep",
-  "meme": "m11",
   "tw": "Kron and a tall doll fall asleep in the hall while the wall clock beeps.",
   "twc": "Kron 和高高的娃娃在大厅里睡着了，墙上的钟嘀嘀直响。",
-  "hint": "钟响破天，照样入梦。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron and a tall old porcelain doll in a lace dress have slumped together on a velvet bench, both fast asleep, while a big wall clock above them rings and beeps with its hands spinning.\nThe composition follows the \"totally drained\" meme: Kron sprawls flat with his arms hanging and mouth open, completely gone, the doll leaning on him just as limp.\nThe scene is a long, quiet museum hall at night with marble floors, glass cases and a velvet rope.\nShot down the length of the hall with a 28 mm lens, Kron and the doll sharp, the hall stretching into soft darkness, deep depth of field.\nCool moonlight through tall windows mixed with one warm security lamp, quiet blue-green colour grade.\nA real-photography 4:3 landscape film still, photoreal porcelain, lace, marble and plush, a clean frame with a blank clock face and no lettering."
+  "hint": "钟响破天，照样入梦。"
  },
  {
   "w": "die down",
-  "meme": "m10",
   "tw": "When the winds die down, Kron's high kite drops on a brown clown's crown.",
   "twc": "风渐渐停了，Kron 高飞的风筝落在一个棕衣小丑的头顶上。",
-  "hint": "风一弱，风筝就找头落。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron holds a slack kite string that leads down to a red diamond kite now sitting neatly on the head of a clown in a brown suit, who stands still and frowns up at it.\nThe composition follows the \"confused stare\" meme: Kron stares at the kite on the clown's head with a blank question-mark face, string drooping from his paw.\nThe scene is a seaside promenade with flags hanging limp on their poles, a candy-floss cart and calm grey sea.\nShot at Kron's height with a 50 mm lens, Kron and the clown sharp, the limp flags and sea soft, shallow depth of field.\nStill, hazy late-afternoon light with no shadows to speak of, soft faded pastel colour grade.\nA real-photography 4:3 landscape film still, photoreal fabric, kite nylon and plush, a clean frame with no lettering."
+  "hint": "风一弱，风筝就找头落。"
  },
  {
   "w": "fallen",
-  "meme": "m07",
   "tw": "Kron's fallen off the balcony right onto his pal's melon salad.",
   "twc": "Kron 从阳台上掉下来，正好落进朋友的蜜瓜沙拉里。",
-  "hint": "倒下也要倒得帅。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron has just dropped from the balcony above and lands in the middle of a huge bowl of melon salad, melon balls bouncing out, while his friend, a young man with a salad fork, jerks back from the table.\nThe composition follows the \"superhero landing\" meme: Kron lands on one knee with one fist down in the salad, head bowed, in heroic slow motion.\nThe scene is a sunny apartment courtyard with a garden table under a balcony draped with plants.\nShot low at table height with a 35 mm lens at a fast shutter, Kron and the flying melon balls sharp, the friend slightly soft, medium depth of field.\nHard midday sun with a burst of backlit juice droplets, juicy orange and green colour grade.\nA real-photography 4:3 landscape film still, photoreal fruit, glass and plush, a clean frame with no lettering."
+  "hint": "倒下也要倒得帅。"
  },
  {
   "w": "apart",
-  "meme": "m13",
   "tw": "Kron takes a toy car apart in the park to find his lost dart.",
   "twc": "Kron 在公园把一辆玩具车拆开，就为了找回他丢的飞镖。",
-  "hint": "拆开了，才找到。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron, in tiny blue overalls with a spanner in one paw, stands among the scattered wheels, seats and panels of a children's red pedal car he has taken completely apart, holding up a small dart he found inside.\nThe composition follows the \"proud hands on hips\" meme: Kron plants his other paw on his hip and lifts his chin, very pleased, the dart raised like a prize.\nThe scene is a city park lawn with a bench, a tree and a puzzled small boy watching.\nShot from a low angle with a 24 mm lens, Kron and the parts sharp, the boy and trees softer, deep depth of field.\nBright clear afternoon light with crisp shadows on the grass, cheerful primary colour grade.\nA real-photography 4:3 landscape film still, photoreal plastic, metal and plush, a clean frame with no lettering."
+  "hint": "拆开了，才找到。"
  },
  {
   "w": "have look",
   "say": "have a look",
-  "meme": "m09",
   "tw": "Kron, have a look: the cook took your book and cooks it like noodles.",
   "twc": "Kron 你看一看：厨师拿走你的书，像面条一样煮了。",
-  "hint": "看一眼，书成了面。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron stands on the steel counter beside a wok where a chef in a white hat is stirring torn-up blank book pages like noodles, lifting them high with chopsticks.\nThe composition follows the \"leaning back in shock\" meme: Kron leans far back in shock, paws up, as he looks into the wok.\nThe scene is a busy restaurant kitchen with flames under the wok, steam and hanging ladles.\nShot across the counter with a 40 mm lens, Kron and the wok sharp, the chef's face soft behind the steam, shallow depth of field.\nOrange wok flame light from below mixed with cold overhead kitchen tubes, gritty teal and orange colour grade.\nA real-photography 4:3 landscape film still, photoreal steel, paper, steam and plush, a clean frame with blank pages and no lettering."
+  "hint": "看一眼，书成了面。"
  },
  {
   "w": "icy",
-  "meme": "m15",
   "tw": "Kron slides down the icy hill with a nice slice of spicy pie.",
   "twc": "Kron 端着一块香辣派，从结冰的山坡上滑下来。",
-  "hint": "冰滑，派不能掉。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron, in a woolly bobble hat and scarf, glides down an icy slope standing on a tea tray, calmly holding a slice of red spicy pie on a plate, while behind him a pile of sledges and tumbling kids crash into a snowbank.\nThe composition follows the \"cool guys don't look at explosions\" meme: Kron slides toward the camera cool and unbothered, the crash exploding in snow behind him.\nThe scene is a frozen village hill with glittering ice, pine trees and wooden houses at the bottom.\nShot from the bottom of the slope with a 135 mm lens, Kron sharp, the crash behind blurred and compressed, shallow depth of field.\nLow winter sun behind the hill making the snow spray glow, icy blue with warm highlights colour grade.\nA real-photography 4:3 landscape film still, photoreal ice, snow, pastry and plush, a clean frame with no lettering."
+  "hint": "冰滑，派不能掉。"
  },
  {
   "w": "make one's way",
   "say": "make their way",
-  "meme": "m08",
   "tw": "Kron and a snake make their way through the cake on a tray.",
   "twc": "Kron 和一条蛇在托盘上从蛋糕里一路钻了过去。",
-  "hint": "前往的路，是吃出来的。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron and a green garden snake peek out of a tunnel they have eaten straight through a tall white cream cake on a silver tray, crumbs on Kron's face, the snake's head poking out beside him.\nThe composition follows the \"all according to plan\" meme: Kron presses his paw tips together with a sly grin, the snake just as smug.\nThe scene is a bakery back room with cooling racks, flour sacks and more cakes waiting on shelves.\nShot close at tray level with a 60 mm macro lens, Kron, the snake and the cake tunnel sharp, the shelves soft, very shallow depth of field.\nWarm tungsten light with a soft glow on the cream, sweet buttery colour grade.\nA real-photography 4:3 landscape film still, photoreal cream, snake scales and plush, a clean frame with no lettering."
+  "hint": "前往的路，是吃出来的。"
  },
  {
   "w": "passage",
-  "meme": "m03",
   "tw": "Kron reads a passage to the class, and a sausage dog passes him a glass.",
   "twc": "Kron 给全班读一段课文，一只腊肠狗给他递来一杯水。",
-  "hint": "读完一段，先润润嗓。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron stands on the teacher's desk holding an open book with blank pages, reading aloud, while a sausage dog stretches up beside him with a glass of water balanced on its nose.\nThe composition follows the \"side-eye\" meme: Kron keeps his face on the book but slowly side-eyes the dog and its glass.\nThe scene is a primary school classroom with rows of children at desks, a blank chalkboard and paper planets on strings.\nShot from the front row with a 50 mm lens, Kron and the dog sharp, the children behind soft, shallow depth of field.\nSoft morning light through big classroom windows, gentle chalky warm colour grade.\nA real-photography 4:3 landscape film still, photoreal dog fur, glass and plush, a clean frame with blank pages, a blank board and no lettering."
+  "hint": "读完一段，先润润嗓。"
  },
  {
   "w": "pupil",
-  "meme": "m16",
   "tw": "Kron teaches music to his pupil, a cute huge mule who plays it better.",
   "twc": "Kron 教学生大骡子弹琴，骡子弹得比他还好。",
-  "hint": "学生出师，老师傻眼。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron, in a tiny tweed teacher's jacket and round glasses, holds a baton beside an upright piano where a big grey mule plays with its hooves, while Kron's own little toy piano lies ignored.\nThe composition follows the \"tables turned\" meme: the teacher becomes the one being taught, the mule glancing at Kron while Kron's jaw drops.\nThe scene is a farmhouse barn turned into a music room, with hay bales, a music stand with blank sheets and a lantern on a hook.\nShot from the side with a 35 mm lens, Kron and the mule sharp, the barn soft, medium depth of field.\nDusty sunbeams through the barn planks, warm hay-gold colour grade.\nA real-photography 4:3 landscape film still, photoreal mule hair, wood and plush, a clean frame with blank sheet music and no lettering."
+  "hint": "学生出师，老师傻眼。"
  },
  {
   "w": "completely",
-  "meme": "m12",
   "tw": "Kron comes home completely covered in sweet green sheets of seaweed.",
   "twc": "Kron 回到家，全身都裹满了甜甜的绿海苔。",
-  "hint": "彻底到连脸都包上。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron stands in the doorway wrapped from head to toe in shiny green sheets of seaweed, only his eyes and nose showing, dripping a little on the floor.\nThe composition follows the \"everyone staring\" meme: the whole family at the dinner table has turned around and stares at Kron in silence, Kron in the middle.\nThe scene is a cosy family dining room with a set table, a pot of soup and a cat on a chair.\nShot from behind the table with a 35 mm lens, Kron sharp in the doorway, the family's heads softly framing him, medium depth of field.\nWarm pendant lamp over the table and cool blue dusk behind Kron, homely amber colour grade.\nA real-photography 4:3 landscape film still, photoreal seaweed, cloth and plush, a clean frame with no lettering."
+  "hint": "彻底到连脸都包上。"
  },
  {
   "w": "shocked",
-  "meme": "m04",
   "tw": "Kron is shocked: his socks are locked in a box on a rock.",
   "twc": "Kron 惊呆了：他的袜子被锁进了石头上的一个箱子里。",
-  "hint": "袜子坐牢了，他惊了。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron, bare-footed, stands beside a big rock in the sea where a little wooden box with a heavy padlock sits, a pair of his striped socks peeking through the gap in the lid.\nThe composition follows the \"shocked face\" meme: a big close-up of Kron's face, eyes huge and mouth wide open, the locked box beside him.\nThe scene is a rocky beach at low tide with seaweed and rock pools.\nShot close with an 85 mm lens, Kron's face sharp, the box sharp, the sea melting into soft blur, very shallow depth of field.\nGrey overcast light with sea mist, cool slate colour grade.\nA real-photography 4:3 landscape film still, photoreal rock, wood, metal and plush, a clean frame with no lettering."
+  "hint": "袜子坐牢了，他惊了。"
  },
  {
   "w": "silence",
-  "meme": "m13",
   "tw": "Kron yells \"Silence!\" and a shy lion stops playing his violin.",
   "twc": "Kron 大喊“安静！”，一头害羞的狮子停下了小提琴。",
-  "hint": "一声安静，狮子都收声。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron, in a little conductor's tailcoat, has just yelled, while a big shy lion in front of him freezes with a violin under its chin and the bow lifted, ears down.\nThe composition follows the \"proud hands on hips\" meme: Kron stands with both paws on hips, chin up, very satisfied with the quiet.\nThe scene is a grand empty concert hall stage with red seats, music stands with blank sheets and a dusty piano.\nShot from the first row with a 50 mm lens, Kron and the lion sharp, the dark hall soft, shallow depth of field.\nOne hard spotlight from above with deep black around it, rich red and gold colour grade.\nA real-photography 4:3 landscape film still, photoreal lion mane, varnished wood and plush, a clean frame with blank sheets and no lettering."
+  "hint": "一声安静，狮子都收声。"
  },
  {
   "w": "in silence",
-  "meme": "m01",
   "tw": "Kron and a thin fish spin in silence in a tiny tin.",
   "twc": "Kron 和一条瘦鱼在小铁罐里默默地转圈。",
-  "hint": "转晕了，也不吭声。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron sits inside a round open cookie tin next to a thin silver fish in a puddle of water, and the tin is spinning on a record player turntable, both of them sitting very still and straight.\nThe composition follows the \"this is fine\" meme: Kron keeps a calm, quiet face as the tin goes round and round.\nThe scene is a retro living room with a wooden record player, a stack of records in blank sleeves and a lava lamp.\nShot from above at an angle with a 35 mm lens and a slow shutter, Kron and the fish sharp, the tin's rim streaked with motion, medium depth of field.\nWarm lamp light with a purple glow from the lava lamp, groovy seventies colour grade.\nA real-photography 4:3 landscape film still, photoreal tin, vinyl, fish scales and plush, a clean frame with blank record sleeves and no lettering."
+  "hint": "转晕了，也不吭声。"
  },
  {
   "w": "recently",
-  "meme": "m03",
   "tw": "Recently Kron reads at the beach while three seals eat his peaches.",
   "twc": "最近 Kron 在海边看书，三只海豹偷吃他的桃子。",
-  "hint": "最近的书，海豹最懂。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron lies on a beach towel in sunglasses reading a book with a blank cover, while three grey seals lie beside him munching peaches out of his picnic basket, juice on their whiskers.\nThe composition follows the \"side-eye\" meme: Kron lowers his sunglasses a little and side-eyes the seals without moving his head.\nThe scene is a sunny sandy beach with a striped umbrella, a cool box and waves rolling in.\nShot low on the sand with a 50 mm lens, Kron and the nearest seal sharp, the other seals and sea soft, shallow depth of field.\nBright summer sun with glare on the water, sunny peach-toned colour grade.\nA real-photography 4:3 landscape film still, photoreal sand, seal skin, fruit and plush, a clean frame with a blank book cover and no lettering."
+  "hint": "最近的书，海豹最懂。"
  },
  {
   "w": "take down",
-  "meme": "m09",
   "tw": "Kron helps take down the brown tent by the lake, and a snake shakes out.",
   "twc": "Kron 帮忙在湖边拆那顶棕色帐篷，抖出来一条蛇。",
-  "hint": "帐篷拆了，蛇也拆出来了。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron, in a tiny camping hat, holds one corner of a brown tent he has pulled down and is shaking out, and a long striped snake slides out of the fabric toward his feet.\nThe composition follows the \"leaning back in shock\" meme: Kron leans back hard, still gripping the tent corner, eyes wide.\nThe scene is a lakeside campsite with a canoe on the shore, a cold campfire and tent poles on the grass.\nShot at ground level with a 24 mm wide lens, Kron and the snake sharp, the lake and hills soft, deep depth of field.\nCool early-morning light with mist on the lake, fresh blue-green colour grade.\nA real-photography 4:3 landscape film still, photoreal canvas, snake scales and plush, a clean frame with no lettering."
+  "hint": "帐篷拆了，蛇也拆出来了。"
  },
  {
   "w": "terrorist",
-  "meme": "m07",
   "tw": "In the play, Kron stops Terry the terrorist parrot from stealing every cherry.",
   "twc": "在话剧里，Kron 阻止了“坏蛋”鹦鹉泰瑞偷走所有樱桃。",
-  "hint": "台上的恐怖分子，只偷樱桃。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron, dressed as a hero in a cardboard helmet and red cape, lands on the stage in front of a green parrot wearing a tiny black villain mask and hugging a bowl of cherries.\nThe composition follows the \"superhero landing\" meme: Kron lands on one knee, one fist on the stage boards, cape still flying.\nThe scene is a school play on a small stage with painted cardboard buildings, paper clouds and parents in folding chairs.\nShot from the audience with a 70 mm lens, Kron and the parrot sharp, the cardboard set soft, shallow depth of field.\nWarm stage spotlights with coloured gels, playful theatre colour grade.\nA real-photography 4:3 landscape film still, photoreal feathers, cardboard, fruit and plush, a clean frame with no lettering."
+  "hint": "台上的恐怖分子，只偷樱桃。"
  },
  {
   "w": "allen",
-  "meme": "m10",
   "tw": "Allen, Kron's pal, balances lemons on his bald head in the alley.",
   "twc": "Kron 的朋友艾伦在小巷里，把柠檬一个个顶在光头上。",
-  "hint": "艾伦的头，是柠檬架。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron sits on a crate holding a bag of lemons, while his friend Allen, a bald man in a vest, stands very still with a tall wobbly tower of lemons balanced on his shiny head.\nThe composition follows the \"confused stare\" meme: Kron stares up at the lemon tower with a lost, puzzled face.\nThe scene is a narrow brick back alley with fire escapes, washing lines and a cat on a bin.\nShot from Kron's height looking up with a 28 mm lens, Kron and Allen sharp, the alley soft at the end, medium depth of field.\nA shaft of hard sunlight down the alley with deep shade around it, sharp yellow and brick-red colour grade.\nA real-photography 4:3 landscape film still, photoreal lemons, brick and plush, a clean frame with no lettering."
+  "hint": "艾伦的头，是柠檬架。"
  },
  {
   "w": "martin",
-  "meme": "m02",
   "tw": "Martin plays guitar for Kron in a tin car under the stars.",
   "twc": "马丁在星空下的铁皮车里给 Kron 弹吉他。",
-  "hint": "马丁一弹，约会就黄了。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron sits in the seat of an old tin toy car beside a fluffy white cat who brought him flowers, but Kron turns right around to gaze at Martin, a young man with curly hair playing guitar on the bonnet.\nThe composition follows the \"distracted boyfriend\" meme: Kron looks back over his shoulder at Martin, the cat beside him glaring at Kron.\nThe scene is a quiet field at night with an old tin car, a picnic blanket and fireflies.\nShot from the front with a 35 mm lens, Kron, the cat and Martin all sharp, the dark field soft, medium depth of field.\nStarry night sky with a warm camping lantern on the bonnet, deep navy and lantern-gold colour grade.\nA real-photography 4:3 landscape film still, photoreal metal, cat fur and plush, a clean frame with no lettering."
+  "hint": "马丁一弹，约会就黄了。"
  },
  {
   "w": "alabama",
-  "meme": "m06",
   "tw": "In Alabama, Kron and a lamb in pajamas skip the ham and grab jam.",
   "twc": "在亚拉巴马，Kron 和一只穿睡衣的小羊不要火腿要果酱。",
-  "hint": "到了亚拉巴马，只爱果酱。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron and a little lamb, both in matching striped pajamas, sit at a breakfast table; on one side Kron pushes away a plate of ham with a sour face, on the other he hugs a big jar of strawberry jam with a huge grin, the lamb copying him.\nThe composition follows the \"reject vs approve\" meme: two halves of the frame, Kron disgusted at the ham on the left, delighted with the jam on the right.\nThe scene is a southern farmhouse porch with a rocking chair, a screen door and cotton fields beyond.\nShot straight on with a 40 mm lens, Kron and the lamb sharp, the fields soft, medium depth of field.\nWarm humid morning sun through the porch screen, soft sweet-tea colour grade.\nA real-photography 4:3 landscape film still, photoreal wool, glass, food and plush, a clean frame with a label-free jar and no lettering."
+  "hint": "到了亚拉巴马，只爱果酱。"
  }
 ]

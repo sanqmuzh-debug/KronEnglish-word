@@ -1,102 +1,122 @@
 [
- {"w": "cricket", "meme": "m12",
+ {
+  "w": "cricket",
   "tw": "A cricket in a thicket picks up Kron's ticket and kicks it back.",
   "twc": "灌木丛里的蟋蟀捡起 Kron 的票，一脚又踢了回来。",
-  "hint": "蟋蟀检票，Kron 没过关。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron, in a little cap with popcorn under his arm, holds out his ticket at a tiny twig ticket booth, and the cricket at the gate has just kicked the ticket straight back into his face.\nThe composition follows the \"everyone staring\" meme: a long queue of crickets on the leaves behind all turning to stare at Kron.\nThe scene is a thicket of brambles at ground level with a tiny booth made of twigs and an acorn-cap lamp.\nShot as a ground-level macro with a 100 mm lens, Kron and the cricket sharp, the queue soft, very shallow depth of field.\nWarm evening light glowing through the leaves with a tiny lamp in the booth, cosy amber colour grade.\nA real-photography 4:3 landscape film still, photoreal insect legs, twigs, leaves and plush fur, a clean frame with a blank ticket and no lettering."},
- {"w": "cultivation", "meme": "m13",
+  "hint": "蟋蟀检票，Kron 没过关。"
+ },
+ {
+  "w": "cultivation",
   "tw": "Kron's cultivation of cool, tiny vines grows a whole salad station on his hat.",
   "twc": "Kron 精心栽培清爽的小藤蔓，草帽上长出了一整个沙拉站。",
-  "hint": "种地种到帽子上。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron wears a wide straw hat that has become a tiny farm, with climbing vines, cherry tomatoes, lettuce and cucumbers growing all over its brim, and he holds a tiny watering can over it.\nThe composition follows the \"proud hands on hips\" meme: Kron with one hand on his hip and chin up, showing off his hat garden.\nThe scene is a sunny vegetable garden with neat rows, bamboo canes and a wheelbarrow.\nShot slightly from above with a 50 mm lens, Kron and the hat garden sharp, the rows soft, shallow depth of field.\nWarm late-morning sun with bright greens, fresh garden colour grade.\nA real-photography 4:3 landscape film still, photoreal straw, leaves, tomatoes, water drops and plush fur, a clean frame with no lettering."},
- {"w": "custody", "meme": "m16",
+  "hint": "种地种到帽子上。"
+ },
+ {
+  "w": "custody",
   "tw": "Kron gets custody of Custard the puppy, and Custard gets custody of the sofa.",
   "twc": "Kron 拿到小狗卡斯特的抚养权，小狗拿下了整张沙发。",
-  "hint": "他养狗，狗占沙发。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nA fluffy yellow puppy called Custard is stretched out across the whole sofa with every cushion, while Kron, holding the puppy's lead and food bowl, is squeezed onto the floor with his face pressed against the sofa arm.\nThe composition follows the \"tables turned\" meme: the new owner gets owned, Kron squashed in the middle, the puppy smug on top.\nThe scene is a cosy living room with a big sofa, a rug and dog toys everywhere.\nShot from floor level with a 28 mm lens, Kron and the puppy sharp, the room soft, medium depth of field.\nSoft lamp light with warm window glow, homey colour grade.\nA real-photography 4:3 landscape film still, photoreal puppy fur, cushions and plush fur, a clean frame with no lettering."},
- {"w": "dimensional", "meme": "m10",
+  "hint": "他养狗，狗占沙发。"
+ },
+ {
+  "w": "dimensional",
   "tw": "Kron builds three-dimensional dime men, and they dive into a dim tunnel.",
   "twc": "Kron 用硬币搭出立体小人，小人们一头扎进昏暗的隧道。",
-  "hint": "立体小人，自己跑了。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron kneels on a workbench beside a pile of coins, and a line of little men made of stacked coins marches away from him and dives into a dark model railway tunnel.\nThe composition follows the \"confused stare\" meme: Kron with an empty hand still raised, staring with a question-mark face.\nThe scene is a hobby workbench with a model railway, a magnifying lamp and tools.\nShot low along the bench with a 60 mm macro lens, the coin men sharp, Kron slightly soft, very shallow depth of field.\nCool magnifying lamp light against a dark tunnel mouth, silver and teal colour grade.\nA real-photography 4:3 landscape film still, photoreal metal coins, model scenery and plush fur, a clean frame with no lettering."},
- {"w": "dissatisfaction", "meme": "m14",
+  "hint": "立体小人，自己跑了。"
+ },
+ {
+  "w": "dissatisfaction",
   "tw": "Kron's dissatisfaction grows: his dish is a sad fish with a fat fraction missing.",
   "twc": "Kron 越看越不满：盘里是条可怜的鱼，还少了一大块。",
-  "hint": "菜单上的鱼，比盘里大。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nIn the first panel Kron, napkin tied on, waits with knife and fork for a grand fish; in the second the waiter has served a small sad flat fish with a big chunk already bitten out, and Kron frowns down at it.\nThe composition follows the \"expectation vs reality\" two-panel meme: left panel a beaming Kron, right panel the disappointing plate.\nThe scene is a fancy seafood restaurant with white tablecloths and a lobster tank.\nShot across the table with a 50 mm lens, Kron and the plate sharp, the restaurant soft, shallow depth of field.\nSoft overhead restaurant light with a cool tank glow, crisp seafood blue colour grade.\nA real-photography 4:3 landscape film still, photoreal fish skin, porcelain, linen and plush fur, a clean frame with no lettering."},
- {"w": "distil", "meme": "m11",
+  "hint": "菜单上的鱼，比盘里大。"
+ },
+ {
+  "w": "distil",
   "tw": "Kron distils dew in a still and fills a tiny dish, drop by drop until noon.",
   "twc": "Kron 用蒸馏器蒸露水，一滴一滴，到中午才装满小碟。",
-  "hint": "蒸了一上午，就一碟。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron, in lab goggles, lies flat on his back beside a gleaming copper still, completely exhausted, while a single drop falls from its spout into a tiny dish that is only just full.\nThe composition follows the \"totally drained\" meme: Kron sprawled limp, soul gone, the still dripping slowly.\nThe scene is a flower garden at the edge of a greenhouse with dewy petals, glass jars and a sundial.\nShot low with a 35 mm lens, Kron, the still and the drop sharp, the greenhouse soft, medium depth of field.\nHigh noon sun with hot reflections on the copper, warm copper-gold colour grade.\nA real-photography 4:3 landscape film still, photoreal copper, glass, water drops and plush fur, a clean frame with no lettering."},
- {"w": "electronics", "meme": "m09",
+  "hint": "蒸了一上午，就一碟。"
+ },
+ {
+  "w": "electronics",
   "tw": "Kron fixes an elk's electronics, and the elk's radio kicks out trombone tricks.",
   "twc": "Kron 帮麋鹿修电器，麋鹿的收音机突然吹出一段长号。",
-  "hint": "修好了，就是音乐不对。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron, with a screwdriver and a magnifying visor, has just closed the back of an old radio, and it suddenly blasts trombone music so loud that he is thrown backwards while the elk beside him nods to the beat.\nThe composition follows the \"leaning back in shock\" meme: Kron tipping back off his stool, the radio booming in front of him.\nThe scene is a cluttered repair workshop with shelves of old radios, wires and a soldering iron.\nShot from beside the radio with a 35 mm lens, Kron and the radio sharp, the elk slightly soft, medium depth of field.\nGreen-white fluorescent workshop light with an orange glow from the radio dial, retro colour grade.\nA real-photography 4:3 landscape film still, photoreal wood casing, wires, elk fur and plush fur, a clean frame with a blank dial and no lettering."},
- {"w": "encyclopedia", "meme": "m15",
+  "hint": "修好了，就是音乐不对。"
+ },
+ {
+  "w": "encyclopedia",
   "tw": "Kron builds a bicycle from his encyclopedia and pedals it to the end of the pier.",
   "twc": "Kron 用百科全书拼了辆自行车，一路蹬到码头尽头。",
-  "hint": "知识，就是轮子。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron rides toward the camera on a bicycle built from thick encyclopedia volumes, with two round open books as wheels, while loose pages blow out behind him and seagulls scatter.\nThe composition follows the \"cool guys don't look at explosions\" meme: Kron calm in front, a storm of flying pages behind.\nThe scene is a long wooden seaside pier with railings, lamp posts and the sea on both sides.\nShot from the end of the pier with a 70 mm lens, Kron sharp, the flying pages and pier behind soft, shallow depth of field.\nBright breezy afternoon sun with sparkling sea, fresh blue and cream colour grade.\nA real-photography 4:3 landscape film still, photoreal paper, leather binding, wood and plush fur, a clean frame with blank pages and no lettering."},
- {"w": "equally", "meme": "m13",
+  "hint": "知识，就是轮子。"
+ },
+ {
+  "w": "equally",
   "tw": "Kron shares the quilts equally, so each squeaky quail gets one quilt, neatly.",
   "twc": "Kron 把被子平均分好，每只吱吱叫的鹌鹑都有一床。",
-  "hint": "平均分，鹌鹑都满意。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron, in striped pyjamas, has tucked a row of five plump quails into five matching tiny patchwork quilts on a big bed, each quail's head on its own little pillow.\nThe composition follows the \"proud hands on hips\" meme: Kron at the end of the bed with hands on hips, pleased with his fair work.\nThe scene is a farmhouse bedroom with a wooden bed, a patchwork wall hanging and a night light.\nShot from the foot of the bed with a 40 mm lens, Kron and the quails sharp, the room soft, medium depth of field.\nWarm bedside lamp with a blue night glow from the window, cosy patchwork colour grade.\nA real-photography 4:3 landscape film still, photoreal feathers, cotton quilts and plush fur, a clean frame with no lettering."},
- {"w": "feverish", "meme": "m11",
+  "hint": "平均分，鹌鹑都满意。"
+ },
+ {
+  "w": "feverish",
   "tw": "Feverish Kron wears a feather fez while a beaver feeds him fish soup.",
   "twc": "发烧的 Kron 戴着羽毛毡帽，一只河狸喂他喝鱼汤。",
-  "hint": "发烧了，河狸来当护士。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron lies limp in bed with a thermometer in his mouth, an ice bag on his head and a red feather fez perched on top, while a beaver in a nurse's cap spoons fish soup toward him.\nThe composition follows the \"totally drained\" meme: Kron sunk into the pillows, too weak to move.\nThe scene is a small log cabin bedroom with a wooden bedside table, a soup bowl and tissues.\nShot from beside the bed with a 50 mm lens, Kron and the beaver sharp, the cabin soft, shallow depth of field.\nPale feverish morning light through thin curtains, washed-out warm colour grade.\nA real-photography 4:3 landscape film still, photoreal beaver fur, feathers, soup and plush fur, a clean frame with no lettering."},
- {"w": "fiber", "meme": "m03",
+  "hint": "发烧了，河狸来当护士。"
+ },
+ {
+  "w": "fiber",
   "tw": "Kron and a tiger fight over five fiber bars by the river.",
   "twc": "Kron 和一只老虎在河边为五根纤维棒打了起来。",
-  "hint": "粗粮也有人抢。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron, in a jogging headband, grips one end of a long cereal fiber bar while a big tiger bites the other end, four more bars lying on the picnic cloth between them.\nThe composition follows the \"side-eye\" meme: Kron pulling hard while giving the tiger a sharp side-eye.\nThe scene is a jungle riverbank with smooth rocks, ferns and a picnic cloth.\nShot from across the river with a 135 mm lens, Kron and the tiger sharp, the jungle soft, very shallow depth of field.\nHumid hazy light with sun breaking through the canopy, deep green and orange colour grade.\nA real-photography 4:3 landscape film still, photoreal tiger fur, oat bars, wet rock and plush fur, a clean frame with no lettering."},
- {"w": "flagship", "meme": "m07",
+  "hint": "粗粮也有人抢。"
+ },
+ {
+  "w": "flagship",
   "tw": "Kron's flagship flaps a flag shaped like a ship with a sheep on it.",
   "twc": "Kron 的旗舰上飘着一面船形旗，旗上还画着一只羊。",
-  "hint": "旗舰的旗，比舰还抢眼。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron, in an admiral's hat and coat, lands on the deck of a big old sailing ship, while above him a huge flag cut in the shape of a ship, with a woolly sheep picture on it, flaps in the wind.\nThe composition follows the \"superhero landing\" meme: Kron on one knee on the deck, fist down, the sheep flag rippling behind.\nThe scene is the deck of a tall wooden warship with ropes, cannons and full sails.\nShot low on the deck with a 24 mm lens, Kron sharp, the flag and rigging soft, medium depth of field.\nBright sea sunlight with flying spray, bold navy and gold colour grade.\nA real-photography 4:3 landscape film still, photoreal canvas, ropes, wet wood and plush fur, a clean frame with no lettering."},
- {"w": "fore", "meme": "m04",
+  "hint": "旗舰的旗，比舰还抢眼。"
+ },
+ {
+  "w": "fore",
   "tw": "Kron yells \"Fore!\" and four golf balls hit the door of a store.",
   "twc": "Kron 大喊“看球！”，四个高尔夫球砸中了商店的门。",
-  "hint": "喊得再早，门也没躲开。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron, in a golf cap and argyle sweater, stands in the middle of a village street with his club still raised after a swing, mouth wide open as four golf balls bounce off the glass door of a shop.\nThe composition follows the \"shocked face\" meme: Kron's stunned face large in the centre, the balls hitting the door behind.\nThe scene is a quiet village high street with a small shop and a flower stand.\nShot close with a 50 mm lens, Kron's face sharp, the shop door slightly soft, shallow depth of field.\nCrisp morning sun with clean shadows, fresh preppy green colour grade.\nA real-photography 4:3 landscape film still, photoreal knitwear, glass, golf balls and plush fur, a clean frame with a blank shop sign and no lettering."},
- {"w": "geographic", "meme": "m10",
+  "hint": "喊得再早，门也没躲开。"
+ },
+ {
+  "w": "geographic",
   "tw": "Kron spins a geographic globe, and a giraffe grabs it to pick a picnic spot.",
   "twc": "Kron 转着地球仪，一只长颈鹿抢过去挑野餐地点。",
-  "hint": "地理没学好，先找吃的。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron sits at a study desk with a big globe, and a giraffe has pushed its long neck through the open window and pressed its nose on the globe while holding a picnic basket in its mouth.\nThe composition follows the \"confused stare\" meme: Kron staring up at the giraffe with a blank question-mark face.\nThe scene is an old explorer's study with maps on the walls, a brass telescope and a tall open window.\nShot from behind the globe with a 35 mm lens, Kron and the giraffe's head sharp, the study soft, medium depth of field.\nWarm afternoon sun pouring through the window, vintage map-brown colour grade.\nA real-photography 4:3 landscape film still, photoreal giraffe hide, brass, wicker and plush fur, a clean frame with label-free maps and no lettering."},
- {"w": "glamour", "meme": "m06",
+  "hint": "地理没学好，先找吃的。"
+ },
+ {
+  "w": "glamour",
   "tw": "Kron's glamour is all from a clam in armour that hands him a pearl.",
   "twc": "Kron 的魅力全靠一只披铠甲的蛤蜊，是它递来的珍珠。",
-  "hint": "魅力，原来是借的。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron, in sunglasses and a feather boa, pushes away a plain paper hat with a sniff, then glows with joy as a giant clam in shiny silver armour opens and offers him a huge pearl necklace.\nThe composition follows the \"reject vs approve\" two-panel meme: left panel Kron rejecting the hat, right panel Kron wearing the pearl and posing.\nThe scene is a red carpet on a beach at night with velvet ropes and photographers' flashes.\nShot at eye level with an 85 mm lens, Kron and the clam sharp, the flashes as soft bokeh behind, shallow depth of field.\nPopping camera flashes over a dark blue night, glossy glamour colour grade.\nA real-photography 4:3 landscape film still, photoreal shell, polished metal, pearls, feathers and plush fur, a clean frame with no lettering."},
- {"w": "heroin", "meme": "m06",
+  "hint": "魅力，原来是借的。"
+ },
+ {
+  "w": "heroin",
   "tw": "Kron the hero says heroin makes heroes into zeros, so he runs home.",
   "twc": "英雄 Kron 说：海洛因会让英雄变成零，他转身就跑回家。",
-  "hint": "远离毒品，英雄才是英雄。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron, in a superhero cape and mask, holds up a firm palm to refuse a shady figure in a hoodie holding out a small blank paper packet, then, at home, happily hugs a big glass of milk.\nThe composition follows the \"reject vs approve\" two-panel meme: left panel Kron turning away in disgust, right panel Kron beaming with the milk.\nThe scene is a dark alley under a streetlight in the left panel and a bright warm kitchen in the right panel.\nShot at Kron's eye level with a 50 mm lens, Kron sharp in both panels, the shady figure and the kitchen soft, shallow depth of field.\nCold blue streetlight on the left against warm sunny kitchen light on the right, high-contrast colour grade.\nA real-photography 4:3 landscape film still, photoreal fabric, glass, brick and plush fur, a clean frame with a blank packet and no lettering."},
- {"w": "hijack", "meme": "m09",
+  "hint": "远离毒品，英雄才是英雄。"
+ },
+ {
+  "w": "hijack",
   "tw": "Jack the yak hijacks Kron's high kite and won't give it back.",
   "twc": "牦牛杰克劫走了 Kron 高高的风筝，死活不还。",
-  "hint": "风筝被劫，劫匪是牦牛。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron holds an empty kite reel, while a shaggy yak called Jack dangles from his big red kite high in the air, holding the string in its teeth and floating away.\nThe composition follows the \"leaning back in shock\" meme: Kron tipping backwards, staring up at the flying yak.\nThe scene is a windy mountain meadow with prayer flags, rocks and snowy peaks.\nShot from low behind Kron with a 24 mm lens, Kron sharp, the yak and kite slightly soft against the sky, deep depth of field.\nHigh-altitude bright sun with a deep blue sky, crisp mountain colour grade.\nA real-photography 4:3 landscape film still, photoreal yak hair, kite nylon, grass and plush fur, a clean frame with blank flags and no lettering."},
- {"w": "hindrance", "meme": "m03",
+  "hint": "风筝被劫，劫匪是牦牛。"
+ },
+ {
+  "w": "hindrance",
   "tw": "In France, Kron's hen is a hindrance, sitting on his feet during every dance.",
   "twc": "在法国，Kron 的母鸡太碍事，每支舞都坐在他脚上。",
-  "hint": "舞伴没来，母鸡先占脚。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron, in a beret and a striped shirt, tries to waltz with a lady goose, but a fat brown hen sits firmly on both of his feet so he cannot move.\nThe composition follows the \"side-eye\" meme: Kron frozen mid-step, glaring down sideways at the hen.\nThe scene is a riverside dance floor in Paris with string lights, an accordion player and an iron bridge.\nShot at hip height with a 35 mm lens, Kron and the hen sharp, the dancers soft, medium depth of field.\nWarm string lights against a deep blue dusk, romantic Parisian colour grade.\nA real-photography 4:3 landscape film still, photoreal feathers, cotton, iron and plush fur, a clean frame with no lettering."},
- {"w": "holder", "meme": "m01",
+  "hint": "舞伴没来，母鸡先占脚。"
+ },
+ {
+  "w": "holder",
   "tw": "Kron, the world record holder, holds ten bowls on one old shoulder.",
   "twc": "世界纪录保持者 Kron 用一边肩膀扛着十只碗。",
-  "hint": "纪录是扛出来的。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron, in a sports vest with a winner's sash, balances a wobbly tower of ten soup bowls on one shoulder, the top bowls tilting, while he smiles calmly and a judge with a blank clipboard watches nervously.\nThe composition follows the \"this is fine\" meme: the tower about to topple, Kron perfectly relaxed.\nThe scene is a school gym with a small stage, bunting and rows of folding chairs.\nShot from a low angle with a 28 mm lens, Kron and the bowls sharp, the gym soft, medium depth of field.\nHard gym ceiling lights with a soft stage spotlight, bright sporty colour grade.\nA real-photography 4:3 landscape film still, photoreal ceramic, satin and plush fur, a clean frame with a blank sash and no lettering."},
- {"w": "ideological", "meme": "m08",
+  "hint": "纪录是扛出来的。"
+ },
+ {
+  "w": "ideological",
   "tw": "Kron has an ideological idea: a deer on a log is logical.",
   "twc": "Kron 有个意识形态式的想法：站在木头上的鹿最有道理。",
-  "hint": "站得高的鹿，说啥都对。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron, in a little professor's jacket, has placed a puzzled deer on top of a big fallen log like a leader on a stage, and the forest animals gathered below are starting to bow to it.\nThe composition follows the \"all according to plan\" meme: Kron in front with fingers steepled and a sly smile.\nThe scene is a forest clearing with a fallen log, mushrooms and rabbits, squirrels and badgers seated in rows.\nShot from among the animals with a 50 mm lens, Kron and the deer sharp, the animals in front soft, shallow depth of field.\nGolden morning light breaking through the trees in beams, warm storybook colour grade.\nA real-photography 4:3 landscape film still, photoreal deer hide, bark, moss and plush fur, a clean frame with no lettering."}
+  "hint": "站得高的鹿，说啥都对。"
+ }
 ]

@@ -1,163 +1,123 @@
 [
  {
   "w": "aegean",
-  "meme": "m01",
   "tw": "On the Aegean, Kron drives a jeep on the sea, and gee, it floats.",
   "twc": "在爱琴海上，Kron 把吉普车开进海里，嘿，它居然浮着。",
-  "hint": "吉普当船开。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron sits at the wheel of a small open jeep floating on the blue sea, wearing a sailor's cap and sunglasses, water lapping at the doors.\nThe composition follows the \"this is fine\" meme: the jeep half sunk and bobbing, Kron calm and smiling as if driving on a road.\nThe scene is the Aegean coast with white houses with blue roofs on a cliff.\nShot from water level with a 35 mm lens, Kron and the jeep sharp, the island soft, medium depth of field.\nBright Mediterranean sun with sparkling water, deep blue and white colour grade.\nA real-photography 4:3 landscape film still, photoreal sea water, painted metal and plush fur, a clean frame with no lettering."
+  "hint": "吉普当船开。"
  },
  {
   "w": "albany",
-  "meme": "m03",
   "tw": "In Albany, Kron's pal Al, a bunny, pays a penny for honey.",
   "twc": "在奥尔巴尼，Kron 的兔子朋友阿尔只付一分钱买蜂蜜。",
-  "hint": "一分钱，想买一罐蜜。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron stands behind a shop counter in a shopkeeper's apron with a big jar of honey, while Al, a brown rabbit, places a single copper penny on the counter.\nThe composition follows the \"side-eye\" meme: Kron keeps his head still and slowly side-eyes the lone penny.\nThe scene is a small Albany corner shop with wooden shelves of jars and a brass bell.\nShot across the counter with a 50 mm lens, Kron and the rabbit sharp, the shelves soft, shallow depth of field.\nWarm window light with honey glowing amber, cosy colour grade.\nA real-photography 4:3 landscape film still, photoreal honey, glass, rabbit fur and plush, a clean frame with label-free jars and no lettering."
+  "hint": "一分钱，想买一罐蜜。"
  },
  {
   "w": "alpine",
-  "meme": "m10",
   "tw": "On an alpine pine, Kron's pal Al the goat eats nine pine cones.",
   "twc": "在高山松树上，Kron 的山羊朋友阿尔吃了九个松果。",
-  "hint": "松果没了，只剩山羊。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron sits on a branch of a pine tree in a knitted alpine hat with an empty basket, while Al, a white mountain goat, stands on the next branch chewing the last of nine pine cones.\nThe composition follows the \"confused stare\" meme: Kron stares into his empty basket with a puzzled question-mark face.\nThe scene is a snowy alpine slope with a crooked pine tree and peaks behind.\nShot at branch level with a 70 mm lens, Kron and the goat sharp, the peaks soft, shallow depth of field.\nCrisp high-altitude sun with blue shadows on snow, cool clean colour grade.\nA real-photography 4:3 landscape film still, photoreal pine bark, goat hair, snow and plush, a clean frame with no lettering."
+  "hint": "松果没了，只剩山羊。"
  },
  {
   "w": "apollo",
-  "meme": "m02",
   "tw": "Kron plays polo as Apollo, but his pony follows a hollow log.",
   "twc": "Kron 扮成阿波罗打马球，他的小马却跟着一根空心木头跑了。",
-  "hint": "太阳神的马，跑去追木头。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron, dressed as Apollo in a golden laurel wreath and a white toga, rides a pony with a polo mallet, but the pony has turned its head toward a hollow log rolling by.\nThe composition follows the \"distracted boyfriend\" meme: the pony turns its head to gawk at the log while Kron glares down at it, annoyed.\nThe scene is a green polo field with white goalposts and a ball lying ignored.\nShot at pony height with a 70 mm lens, Kron and the pony sharp, the field soft, shallow depth of field.\nGolden afternoon light with a warm rim on the toga, classical warm colour grade.\nA real-photography 4:3 landscape film still, photoreal pony coat, linen toga, wood and plush fur, a clean frame with no lettering."
+  "hint": "太阳神的马，跑去追木头。"
  },
  {
   "w": "atonce",
-  "meme": "m09",
   "tw": "Kron says, 'Just one bun!' and at once, one ton of buns falls on him.",
   "twc": "Kron 说“就一个面包！”，一吨面包立刻砸了下来。",
   "hint": "只要一个，来了一吨。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron stands at a bakery counter in a little chef's hat, one finger raised to order a single bun, as an avalanche of buns tumbles off the shelf above him.\nThe composition follows the \"leaning back in shock\" meme: Kron leans back hard in shock, arms flung out, buns bouncing off his head.\nThe scene is a busy bakery with tall shelves, baskets of bread and a flour-dusted counter.\nShot at counter height with a 35 mm lens, Kron sharp, the falling buns frozen mid-air, medium depth of field.\nWarm oven light with flour dust glowing, golden bakery colour grade.\nA real-photography 4:3 landscape film still, photoreal bread crust, flour and plush fur, a clean frame with no lettering.",
   "say": "at once"
  },
  {
   "w": "bahmad",
-  "meme": "m03",
   "tw": "Mr Bahmad the barber gets mad, mad, mad at Kron's bad hat.",
   "twc": "理发师巴姆德先生对 Kron 的丑帽子气坏了。",
-  "hint": "帽子太丑，理发师抓狂。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron sits in a barber's chair under a white cape wearing a huge lopsided purple hat, while Mr Bahmad, a moustached barber, waves his scissors in fury beside him.\nThe composition follows the \"side-eye\" meme: Kron keeps his head still and slowly side-eyes the furious barber.\nThe scene is an old-fashioned barbershop with a striped pole, mirrors and combs in blue liquid.\nShot into the mirror with a 50 mm lens, Kron and the barber sharp, the shop soft, shallow depth of field.\nWarm tungsten light with chrome reflections, vintage colour grade.\nA real-photography 4:3 landscape film still, photoreal felt, steel scissors, cape cotton and plush fur, a clean frame with no lettering."
+  "hint": "帽子太丑，理发师抓狂。"
  },
  {
   "w": "baleen",
-  "meme": "m01",
   "tw": "A whale's baleen cleans Kron clean, like a big green machine.",
   "twc": "鲸须把 Kron 刷得干干净净，像台大绿色洗车机。",
-  "hint": "鲸鱼嘴里免费洗澡。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron in a swimming cap and goggles stands inside the open mouth of a huge whale while its long baleen plates brush him from head to toe like a car wash.\nThe composition follows the \"this is fine\" meme: water and bristles everywhere, Kron calm with his eyes closed, enjoying it.\nThe scene is the open sea at the surface, the whale's jaw framing the shot.\nShot from inside the mouth with a 24 mm wide lens, Kron and the baleen sharp, the sea beyond soft, medium depth of field.\nBright daylight pouring in through the jaw with water spray, cool green-blue colour grade.\nA real-photography 4:3 landscape film still, photoreal baleen bristles, whale skin, water and plush, a clean frame with no lettering."
+  "hint": "鲸鱼嘴里免费洗澡。"
  },
  {
   "w": "baltic",
-  "meme": "m14",
   "tw": "In the Baltic, Kron holds a tall salt stick on a ticking ball.",
   "twc": "在波罗的海，Kron 站在滴答响的球上，鼻尖顶着高高的盐棒。",
-  "hint": "想象很稳，现实落水。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron, in a striped circus leotard and swimming goggles pushed up on his head, stands on a big striped ball floating in the shallows, arms spread wide, balancing a pretzel stick as tall as himself on the tip of his nose while the ball ticks like a clock under his feet.\nThe composition follows the \"expectation vs reality\" meme: two panels side by side, the left Kron poised and perfect, the right the ball rolling away and Kron falling into the sea.\nThe scene is a grey Baltic beach with dunes, a wooden pier and cold waves.\nShot from the shore with a 70 mm lens, Kron and the ball sharp, the pier soft, shallow depth of field.\nPale northern daylight with a silvery sea, muted Nordic colour grade.\nA real-photography 4:3 landscape film still, photoreal sea water, pretzel salt, rubber and plush, a clean frame with no lettering."
+  "hint": "想象很稳，现实落水。"
  },
  {
   "w": "became",
-  "meme": "m04",
   "tw": "Kron became a cake at the game, and the bees came to claim him.",
   "twc": "Kron 在球赛上扮成蛋糕，蜜蜂全来认领他。",
-  "hint": "扮成蛋糕，蜜蜂当真了。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron sits in the stands wearing a big round strawberry cake costume with three foam candles on his head and a team scarf, holding a foam finger, while a buzzing swarm of bees settles all over the icing and two bees land right on his nose.\nThe composition follows the \"shocked face\" meme: a tight close-up of Kron's face poking out of the cake, eyes wide and mouth open.\nThe scene is a sunny stadium stand with fans, flags and a pitch below.\nShot close with an 85 mm lens, Kron's face and the bees sharp, the crowd soft, very shallow depth of field.\nBright summer stadium light, sweet saturated colour grade.\nA real-photography 4:3 landscape film still, photoreal frosting, bees, foam costume and plush fur, a clean frame with no lettering."
+  "hint": "扮成蛋糕，蜜蜂当真了。"
  },
  {
   "w": "bering",
-  "meme": "m06",
   "tw": "In the Bering Sea, a bear brings Kron a ring on a herring.",
   "twc": "在白令海，一只熊叼着鲱鱼给 Kron 送来一枚戒指。",
-  "hint": "求婚戒指，套在鲱鱼上。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron, bundled in a puffy red parka, earmuffs and mittens, stands on a small ice floe as a huge polar bear leans down and holds out a dripping herring in its jaws, a shiny gold ring slipped around the fish's tail.\nThe composition follows the \"reject vs approve\" meme: two panels side by side, the left Kron recoiling in disgust from the smelly herring, the right Kron delighted as he spots the ring.\nThe scene is the icy Bering Sea with floating ice and grey water.\nShot at eye level with a 50 mm lens, Kron and the bear sharp, the ice soft, shallow depth of field.\nCold overcast Arctic light with a blue cast, crisp cold colour grade.\nA real-photography 4:3 landscape film still, photoreal polar bear fur, fish scales, gold and plush, a clean frame with no lettering."
+  "hint": "求婚戒指，套在鲱鱼上。"
  },
  {
   "w": "bogged",
-  "meme": "m11",
   "tw": "Kron jogged to the bog with his dog, and both got bogged in the fog.",
   "twc": "Kron 带狗跑步到沼泽，结果一起陷在雾里的泥里。",
-  "hint": "晨跑跑成泥塑。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron, in a sweatband, a running vest and tiny trainers, is stuck in black mud up to his chest beside his scruffy terrier, both with their heads flopped back in defeat and mud splashed up to their ears, a dropped water bottle floating between them.\nThe composition follows the \"totally drained\" meme: Kron totally drained, slumped with eyes half closed, the dog equally limp.\nThe scene is a misty moor bog with reeds, dark mud and a wooden signpost.\nShot low near the mud with a 50 mm lens, Kron and the dog sharp, the fog soft, shallow depth of field.\nSoft foggy dawn light, desaturated grey-green colour grade.\nA real-photography 4:3 landscape film still, photoreal mud, reeds, dog fur and plush, a clean frame with a blank signpost and no lettering."
+  "hint": "晨跑跑成泥塑。"
  },
  {
   "w": "boldly",
-  "meme": "m07",
   "tw": "Kron boldly jumps off an old, cold gold mine roof and lands lightly.",
   "twc": "Kron 大胆地从冰冷的旧金矿屋顶跳下，轻轻落地。",
-  "hint": "大胆一跳，落得轻巧。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron, in a miner's helmet with a lamp and a little cape, has just leapt from the roof of an old gold mine hut and lands lightly in the snow.\nThe composition follows the \"superhero landing\" meme: Kron lands in slow motion on one knee, one paw on the ground, snow puffing up.\nThe scene is a snowy old gold mine with a wooden hut, rails and a mine cart.\nShot low with a 24 mm wide lens, Kron sharp, the hut behind slightly soft, medium depth of field.\nCold blue winter light with a warm lamp glow from his helmet, cinematic colour grade.\nA real-photography 4:3 landscape film still, photoreal snow, old timber, metal and plush fur, a clean frame with no lettering."
+  "hint": "大胆一跳，落得轻巧。"
  },
  {
   "w": "bombay",
-  "meme": "m12",
   "tw": "In old Bombay, Kron and Tom play on a tray in the bay all day.",
   "twc": "在老孟买，Kron 和汤姆坐在托盘上在海湾玩了一整天。",
-  "hint": "托盘当船，一玩一天。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron, in a straw hat and a striped vest, kneels on a big round silver serving tray floating in the bay and paddles with a long serving spoon, while Tom, a small grey monkey, sits behind him holding a paper umbrella over them both.\nThe composition follows the \"everyone staring\" meme: a crowd on the seafront promenade stops and stares at Kron on the tray.\nThe scene is the Bombay seafront with old stone buildings, a promenade and boats.\nShot from the promenade with a 70 mm lens, Kron and the monkey sharp, the crowd soft in the foreground, shallow depth of field.\nHazy warm afternoon light, sun-faded colour grade.\nA real-photography 4:3 landscape film still, photoreal silver tray, water, monkey fur and plush, a clean frame with no lettering."
+  "hint": "托盘当船，一玩一天。"
  },
  {
   "w": "bomber",
-  "meme": "m15",
   "tw": "Kron bombs the pool in his bomber jacket, and Tom's calm mom is wetter.",
   "twc": "Kron 穿着飞行员夹克炸进泳池，汤姆淡定的妈妈被浇得更湿。",
-  "hint": "跳水像炸弹，岸上全湿。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron walks away from the pool toward the camera in a dripping green bomber jacket and sunglasses, water streaming off his quills, while behind him a giant wall of splash crashes over a calm mother on a sun lounger, who still holds her book and her teacup.\nThe composition follows the \"cool guys don't look at explosions\" meme: Kron cool and unbothered in front, the giant splash behind.\nThe scene is a hotel pool with blue tiles, loungers and towels.\nShot at Kron's eye level with a 50 mm lens, Kron sharp, the splash frozen behind, medium depth of field.\nBright summer sun with sparkling water drops, punchy colour grade.\nA real-photography 4:3 landscape film still, photoreal water, nylon jacket and plush fur, a clean frame with no lettering."
+  "hint": "跳水像炸弹，岸上全湿。"
  },
  {
   "w": "boston",
-  "meme": "m10",
   "tw": "In Boston, Kron's boss tosses a ton of buns at him in the frost.",
   "twc": "在波士顿的寒霜里，Kron 的老板朝他扔了一吨小面包。",
-  "hint": "老板发福利，用扔的。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron, in a red scarf, a tie and an office shirt, stands on a frosty pavement with his arms full of a wobbling tower of buns, while his boss, a tall man in a grey suit and overcoat, keeps tossing more buns at him from a big flour sack.\nThe composition follows the \"confused stare\" meme: Kron stares at the boss with a puzzled question-mark face, buns piling up.\nThe scene is a snowy Boston brick street with gas lamps and steps.\nShot at Kron's eye level with a 50 mm lens, Kron and the boss sharp, the street soft, shallow depth of field.\nCold winter morning light with a warm lamp glow, frosty colour grade.\nA real-photography 4:3 landscape film still, photoreal bread, frost, wool and plush, a clean frame with no lettering."
+  "hint": "老板发福利，用扔的。"
  },
  {
   "w": "breezy",
-  "meme": "m09",
   "tw": "On a breezy hill, the breeze blows cheese at Kron, and he sneezes.",
   "twc": "在有风的山坡上，风把奶酪吹向 Kron，他打了个喷嚏。",
-  "hint": "风一来，奶酪满脸飞。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron, in a knitted scarf and a floppy picnic hat, sits on a checked blanket as slices of cheese whip out of the open basket on a gust of wind and slap against his face, and he lets out a huge sneeze that blows his hat off.\nThe composition follows the \"leaning back in shock\" meme: Kron leans back hard mid-sneeze, arms flung out, cheese flying.\nThe scene is a windy green hilltop with a picnic basket and a kite.\nShot low on the hill with a 35 mm lens, Kron sharp, the flying cheese motion-blurred, medium depth of field.\nBright breezy spring sun with fast clouds, fresh colour grade.\nA real-photography 4:3 landscape film still, photoreal cheese, grass, linen and plush, a clean frame with no lettering."
+  "hint": "风一来，奶酪满脸飞。"
  },
  {
   "w": "buford",
-  "meme": "m11",
   "tw": "Buford the cute mule fords a ford with Kron and four huge boxes.",
   "twc": "骡子布福德驮着 Kron 和四个大箱子涉水过河。",
-  "hint": "过河的是骡子，累的是 Kron。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron, in a straw hat and a sweaty neckerchief, lies flat and limp across four huge cardboard boxes strapped to the back of Buford, a cheerful grey mule calmly wading knee-deep through a shallow river.\nThe composition follows the \"totally drained\" meme: Kron totally drained, limp across the boxes, his paw trailing in the water.\nThe scene is a shallow rocky river ford with green banks.\nShot from the water's edge with a 50 mm lens, Kron and the mule sharp, the bank soft, medium depth of field.\nWarm afternoon light with sparkling water, earthy colour grade.\nA real-photography 4:3 landscape film still, photoreal mule hair, cardboard, water and plush, a clean frame with no lettering."
+  "hint": "过河的是骡子，累的是 Kron。"
  },
  {
   "w": "burgle",
-  "meme": "m16",
   "tw": "A purple bird burgles Kron's burger and gargles it with a gurgle.",
   "twc": "一只紫色的鸟偷了 Kron 的汉堡，咕噜咕噜吞了。",
-  "hint": "刚要咬，汉堡飞了。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron, in a baseball cap with a paper napkin tucked under his chin, holds his paws up empty with his mouth wide open for a bite, just as a big purple bird flaps away with his double burger in its beak, lettuce and a pickle falling.\nThe composition follows the \"tables turned\" meme: the trickster gets tricked, Kron frozen with his mouth open, the bird flapping off with the burger.\nThe scene is an outdoor burger stand with red picnic tables, ketchup bottles and a striped awning.\nShot at table level with an 85 mm lens, Kron and the bird sharp, the stand soft, shallow depth of field.\nBright midday sun, saturated diner colour grade.\nA real-photography 4:3 landscape film still, photoreal burger bun, feathers and plush, a clean frame with no lettering."
+  "hint": "刚要咬，汉堡飞了。"
  },
  {
   "w": "busman",
-  "meme": "m05",
   "tw": "The busman lets Kron drive, and the man must fuss on the bus.",
   "twc": "公交司机让 Kron 来开车，自己在车上坐立不安。",
-  "hint": "司机变乘客，急死了。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron wears a bus driver's cap and sits at a huge steering wheel, sweating over two big buttons on the dashboard, while the busman in uniform fusses behind him.\nThe composition follows the \"two buttons\" meme: Kron hesitates between two big buttons, sweating nervously.\nThe scene is the inside of a city bus with startled passengers holding the handles and a long road ahead through the windscreen.\nShot from behind the driver's seat with a 35 mm lens, Kron and the buttons sharp, the bus soft, medium depth of field.\nBright daylight through the windscreen, cool city colour grade.\nA real-photography 4:3 landscape film still, photoreal vinyl, metal and plush, a clean frame with blank buttons and no lettering."
+  "hint": "司机变乘客，急死了。"
  },
  {
   "w": "calais",
-  "meme": "m12",
   "tw": "In Calais, Kron's pal Cal, a calf, plays ballet all day.",
   "twc": "在加来，Kron 的小牛朋友卡尔整天跳芭蕾。",
-  "hint": "小牛跳芭蕾，全场傻眼。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron, in a pink tutu and ballet slippers, rises on tiptoe with his arms in a perfect circle above his head, while Cal, a brown-and-white calf in a matching pink tutu, does a wobbly leap beside him on the seafront.\nThe composition follows the \"everyone staring\" meme: everyone on the promenade stops and stares at Kron and the calf.\nThe scene is the Calais seafront promenade with a lighthouse, white ferries in the harbour and strolling people.\nShot at eye level with a 50 mm lens, Kron and the calf sharp, the crowd soft, shallow depth of field.\nSoft grey sea light, pastel colour grade.\nA real-photography 4:3 landscape film still, photoreal tulle, calf hair and plush, a clean frame with no lettering."
+  "hint": "小牛跳芭蕾，全场傻眼。"
  }
 ]

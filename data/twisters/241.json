@@ -1,163 +1,123 @@
 [
  {
   "w": "patient",
-  "meme": "m01",
   "tw": "Patient Kron waits all day as a lazy snail paints his face.",
   "twc": "有耐心的 Kron 等一整天，让一只懒蜗牛给他画脸。",
-  "hint": "耐心到能当画布。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron sits perfectly still on a stool in an artist's smock while a slow snail with a tiny brush crawls across his cheek, leaving a trail of paint, the sun already setting.\nThe composition follows the \"this is fine\" meme: Kron stays serene and smiling while paint drips and the day disappears around him.\nThe scene is an artist's attic studio with easels, paint jars and a skylight.\nShot close with a 90 mm lens, Kron's face and the snail sharp, the easels soft.\nFading orange sunset through the skylight, painterly warm colour grade.\nA real-photography 4:3 landscape film still, photoreal wet paint, snail shell and plush, a clean frame with no lettering."
+  "hint": "耐心到能当画布。"
  },
  {
   "w": "model",
-  "meme": "m13",
   "tw": "Kron builds a model ship in a bottle, and the bottle starts to wobble.",
   "twc": "Kron 在瓶子里搭了个船模，瓶子开始摇摇晃晃。",
-  "hint": "船还没下水，瓶子先晕了。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron, in a captain's hat and magnifying goggles, has just finished a model sailing ship inside a big glass bottle, and the bottle is rocking on the desk like a stormy sea.\nThe composition follows the \"proud hands on hips\" meme: Kron stands proud with paws on hips and chin up beside the wobbling bottle.\nThe scene is a hobby desk with glue, tweezers, rope and a desk lamp.\nShot at desk height with a 60 mm macro lens, Kron and the bottle sharp, the tools soft.\nA single warm desk lamp in a dark room, rich nautical colour grade.\nA real-photography 4:3 landscape film still, photoreal glass, wood, rope and plush, a clean frame with no lettering."
+  "hint": "船还没下水，瓶子先晕了。"
  },
  {
   "w": "cleaning",
-  "meme": "m03",
   "tw": "Kron is cleaning the queen's green jeans, and the queen keeps singing.",
   "twc": "Kron 在清洗女王的绿色牛仔裤，女王一直在唱歌。",
-  "hint": "边洗边唱，裤子还穿着呢。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron scrubs the green jeans with a brush and bucket while a grand queen is still wearing them, standing tall and singing opera with her arms wide.\nThe composition follows the \"side-eye\" meme: Kron side-eyes up at the singing queen, brush frozen mid-scrub.\nThe scene is a palace hallway with marble floors, portraits with blank frames and a red rug.\nShot low from the floor with a 35 mm lens, Kron and the jeans sharp, the queen slightly soft above.\nCool marble daylight from tall windows, elegant royal colour grade.\nA real-photography 4:3 landscape film still, photoreal denim, soap suds, marble and plush, a clean frame with no lettering."
+  "hint": "边洗边唱，裤子还穿着呢。"
  },
  {
   "w": "do the cleaning",
-  "meme": "m11",
   "tw": "Kron and two moose do the cleaning, and they lick the whole ceiling clean.",
   "twc": "Kron 和两头驼鹿一起打扫，驼鹿把天花板舔干净了。",
-  "hint": "扫除靠舌头，天花板最亮。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nTwo huge moose stretch up and lick the ceiling of a small living room spotless, while Kron, in rubber gloves and a headscarf, lies collapsed on the sofa with an unused feather duster.\nThe composition follows the \"totally drained\" meme: Kron is totally drained, flat on his back, eyes empty, a faint ghost of himself rising.\nThe scene is a cramped cottage living room with a low ceiling, a lamp and a bucket.\nShot from a low corner with a 16 mm wide lens, Kron and the moose sharp, the room edges bending.\nSoft daylight through lace curtains, faded homely colour grade.\nA real-photography 4:3 landscape film still, photoreal moose fur, rubber gloves and plush, a clean frame with no lettering."
+  "hint": "扫除靠舌头，天花板最亮。"
  },
  {
   "w": "tidy",
-  "meme": "m12",
   "tw": "Every Friday, Kron ties a tiny tie on each fly to keep the flies tidy.",
   "twc": "每周五，Kron 给每只苍蝇系上小领带，让它们整整齐齐。",
-  "hint": "苍蝇也得穿得整齐。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron, wearing a neat bow tie and spectacles, sits at a tiny desk tying miniature neckties onto a row of flies lined up like office workers.\nThe composition follows the \"everyone staring\" meme: every fly in its little tie turns to stare at Kron, Kron in the middle.\nThe scene is a neat office desk with a pencil cup, a stapler and a blank notepad.\nShot with a 100 mm macro lens at desk height, Kron and the nearest flies sharp, the far flies soft.\nFlat white office light with a cool fluorescent tint, tidy corporate colour grade.\nA real-photography 4:3 landscape film still, photoreal silk ties, fly wings and plush, a clean frame with no lettering."
+  "hint": "苍蝇也得穿得整齐。"
  },
  {
   "w": "it. d",
-  "meme": "m15",
   "tw": "It takes Kron ten tins of paint to paint it. Dad takes one look and faints.",
   "twc": "Kron 用了十桶漆才刷完，爸爸看一眼就晕了。",
   "hint": "十桶漆换爸爸一晕。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron, in paint-splattered overalls, walks toward the camera with a paint roller over his shoulder and ten empty tins behind him, while the family car behind him is now bright pink and Dad has fainted on the driveway.\nThe composition follows the \"cool guys don't look at explosions\" meme: Kron walks cool and unbothered, the pink car and fainted Dad behind him.\nThe scene is a suburban driveway with a garage, a lawn and the dripping pink car.\nShot at Kron's eye level with an 85 mm lens, Kron sharp, the car and Dad slightly soft.\nBright Saturday morning sun, candy-pink pop colour grade.\nA real-photography 4:3 landscape film still, photoreal wet paint, car metal and plush, a clean frame with no lettering.",
   "say": "it takes"
  },
  {
   "w": "be good at",
-  "meme": "m07",
   "tw": "Kron wants to be good at football, so he wears a wooden foot and a hood.",
   "twc": "Kron 想踢好足球，就装了只木头脚，戴上兜帽。",
-  "hint": "球技不够，木脚来凑。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron, in a football kit and a hoodie with the hood up, has a big wooden foot strapped to one leg and has just kicked the ball into the net.\nThe composition follows the \"superhero landing\" meme: Kron drops into a slow-motion superhero landing after the kick, wooden foot forward.\nThe scene is a muddy school football pitch with a goal and cones.\nShot low at grass level with a 24 mm lens, Kron and the wooden foot sharp, the goal soft.\nRainy grey afternoon with stadium floodlights, gritty sports colour grade.\nA real-photography 4:3 landscape film still, photoreal wood, mud, grass and plush, a clean frame with no lettering."
+  "hint": "球技不够，木脚来凑。"
  },
  {
   "w": "pleased",
-  "meme": "m14",
   "tw": "Kron is pleased with his cheese, until ten bees sneeze on his knees.",
   "twc": "Kron 对他的奶酪很满意，直到十只蜜蜂在他膝盖上打喷嚏。",
-  "hint": "开心不过三秒，蜜蜂打喷嚏。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nLeft panel: Kron sits on a bench holding a big wheel of cheese, beaming. Right panel: ten bees on his knees sneezing all over the cheese, Kron's face falling.\nThe composition follows the \"expectation vs reality\" meme: two side-by-side panels, the pleased expectation on the left and the sneezy reality on the right.\nThe scene is a sunny cheese market with wooden crates and flowers.\nShot at bench height with a 50 mm lens in both panels, Kron and the cheese sharp, the market soft.\nWarm Mediterranean sun, golden colour grade.\nA real-photography 4:3 landscape film still, photoreal cheese rind, bee fuzz and plush, a clean frame with no lettering."
+  "hint": "开心不过三秒，蜜蜂打喷嚏。"
  },
  {
   "w": "have a good time",
-  "meme": "m16",
   "tw": "\"Have a good time,\" says Kron, as nine mice slide down his spine.",
   "twc": "“玩得开心！”Kron 说，九只老鼠顺他背上滑下去。",
-  "hint": "祝别人玩开心，自己当滑梯。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron lies on his tummy on a playground slide, waving, while nine excited mice slide down his back one after another.\nThe composition follows the \"tables turned\" meme: the host becomes the ride, Kron squashed in the middle, the mice whooshing past on the right.\nThe scene is a children's playground with a slide, sandpit and swings.\nShot from the bottom of the slide with a 35 mm lens, Kron and the mice sharp, the playground soft.\nBright late morning sun, cheerful saturated colour grade.\nA real-photography 4:3 landscape film still, photoreal mouse fur, plastic slide and plush, a clean frame with no lettering."
+  "hint": "祝别人玩开心，自己当滑梯。"
  },
  {
   "w": "Physics",
-  "meme": "m04",
   "tw": "Kron mixes fizzy drinks for Physics class, and six cans lift him up.",
   "twc": "Kron 为物理课调汽水，六罐汽水把他顶上了天。",
-  "hint": "物理实验，人先起飞。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron, in a lab coat and safety goggles, rises off the classroom floor on six fizzing soda cans spraying like rockets beneath him.\nThe composition follows the \"shocked face\" meme: an extreme close-up of Kron's shocked face, mouth open, cheeks flapping.\nThe scene is a school Physics classroom with a blank blackboard, desks and a pulley set.\nShot from below with a 24 mm lens, Kron and the cans sharp, the classroom soft.\nBright classroom light with foam spray backlit, fizzy colour grade.\nA real-photography 4:3 landscape film still, photoreal foam spray, aluminium and plush, a clean frame with no lettering."
+  "hint": "物理实验，人先起飞。"
  },
  {
   "w": "after-school",
-  "meme": "m10",
   "tw": "At the after-school club, Kron laughs as a calf in cool shades rules the class.",
   "twc": "课后班上，Kron 笑看一头戴墨镜的酷小牛当班长。",
-  "hint": "课后班长是一头牛。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron sits at a small desk while a calf in cool sunglasses stands at the front with a ruler, and all the children obey it.\nThe composition follows the \"confused stare\" meme: Kron stares at the camera with a confused question-mark face, laughing nervously.\nThe scene is an after-school club room with beanbags, crayons and a blank whiteboard.\nShot from the back with a 50 mm lens, Kron and the calf sharp, the children soft.\nWarm late afternoon light through blinds, cosy colour grade.\nA real-photography 4:3 landscape film still, photoreal calf hide, crayons and plush, a clean frame with no lettering."
+  "hint": "课后班长是一头牛。"
  },
  {
   "w": "preparation",
-  "meme": "m08",
   "tw": "In preparation for the race, Kron preps ten peppers on a tray.",
   "twc": "为了赛跑做准备，Kron 在盘子里备好十个辣椒。",
-  "hint": "备赛秘方：辣到起飞。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron, in a racing suit and helmet, sits at the starting line with a tray of ten red peppers, while the other racers stretch nervously.\nThe composition follows the \"all according to plan\" meme: Kron steeples his fingers with a sly grin over the peppers.\nThe scene is a running track with lane lines and a starting block.\nShot low at the starting line with a 35 mm lens, Kron and the tray sharp, the runners soft.\nHot sunny noon with heat haze, fiery colour grade.\nA real-photography 4:3 landscape film still, photoreal peppers, metal tray and plush, a clean frame with no lettering."
+  "hint": "备赛秘方：辣到起飞。"
  },
  {
   "w": "lab",
-  "meme": "m09",
   "tw": "In the lab, Kron grabs a crab, and the crab grabs his lab coat back.",
   "twc": "Kron 在实验室抓了只螃蟹，螃蟹反手抓住他的白大褂。",
-  "hint": "抓螃蟹，被螃蟹抓。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron, in an oversized lab coat, reaches for a red crab on the bench, and the crab clamps onto his coat sleeve and pulls.\nThe composition follows the \"leaning back in shock\" meme: Kron leans back in shock as the crab yanks his coat.\nThe scene is a science lab with test tubes, beakers and a sink.\nShot at bench height with a 50 mm lens, Kron and the crab sharp, the glassware soft.\nCool clinical light with green liquid glows, sterile colour grade.\nA real-photography 4:3 landscape film still, photoreal glass, crab shell and plush, a clean frame with no lettering."
+  "hint": "抓螃蟹，被螃蟹抓。"
  },
  {
   "w": "playing field",
-  "meme": "m06",
   "tw": "Kron plays all day on the playing field, using a shield for a goal.",
   "twc": "Kron 在运动场玩了一整天，拿盾牌当球门。",
-  "hint": "当门将，带盾上场。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nLeft panel: Kron frowns at an empty football net. Right panel: Kron happily holding up a big round shield as balls bounce off it.\nThe composition follows the \"reject vs approve\" meme: two stacked panels, rejection on the left and approval on the right.\nThe scene is a wide school playing field with white lines and goals.\nShot at grass level with a 70 mm lens, Kron sharp, the field soft.\nClear afternoon sun with crisp shadows, fresh green colour grade.\nA real-photography 4:3 landscape film still, photoreal metal shield, grass and plush, a clean frame with no lettering."
+  "hint": "当门将，带盾上场。"
  },
  {
   "w": "how many",
-  "meme": "m12",
   "tw": "\"How many cows?\" asks Kron, and many, many cows bow to him now.",
   "twc": "“有多少头牛？”Kron 问，好多好多牛冲他鞠躬。",
-  "hint": "数牛数到被牛拜。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron stands on a fence post with a clipboard and blank paper, and a huge herd of cows all bow their heads to him.\nThe composition follows the \"everyone staring\" meme: every cow stares at Kron with their heads bowed, Kron in the middle.\nThe scene is a green hillside pasture with a gate and a barn.\nShot from behind the herd with a 135 mm lens, Kron sharp, the cows slightly soft.\nSoft golden evening light, pastoral colour grade.\nA real-photography 4:3 landscape film still, photoreal cow hide, wood and plush, a clean frame with no lettering."
+  "hint": "数牛数到被牛拜。"
  },
  {
   "w": "washing machine",
-  "meme": "m04",
   "tw": "Kron puts his posh squash in the washing machine, and it spins out green and mean.",
   "twc": "Kron 把高级南瓜扔进洗衣机，转出来又绿又凶。",
-  "hint": "洗衣机把南瓜洗凶了。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron opens a washing machine door, and a green squash with angry painted eyebrows rolls out snarling.\nThe composition follows the \"shocked face\" meme: a close-up of Kron's shocked face, eyes wide.\nThe scene is a laundry room with a washing machine, a dryer and baskets.\nShot at machine height with a 28 mm lens, Kron and the squash sharp, the room soft.\nFlat fluorescent light with a green tint, quirky colour grade.\nA real-photography 4:3 landscape film still, photoreal squash skin, metal and plush, a clean frame with no lettering."
+  "hint": "洗衣机把南瓜洗凶了。"
  },
  {
   "w": "fridge",
-  "meme": "m10",
   "tw": "Kron opens the fridge, and a tiny bridge of ice leads to a cold ridge.",
   "twc": "Kron 打开冰箱，里面一座冰桥通向冰冷的山脊。",
-  "hint": "冰箱里藏着一座雪山。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron, in a parka, opens the fridge door and sees inside a tiny ice bridge leading to a snowy mountain ridge.\nThe composition follows the \"confused stare\" meme: Kron stares at the camera with a confused question-mark face.\nThe scene is a dark kitchen at night with the fridge light glowing.\nShot from inside the fridge looking out with a 24 mm lens, Kron sharp, the kitchen soft.\nCold blue fridge light in a dark room, icy colour grade.\nA real-photography 4:3 landscape film still, photoreal ice, snow, metal and plush, a clean frame with no lettering."
+  "hint": "冰箱里藏着一座雪山。"
  },
  {
   "w": "cooker",
-  "meme": "m14",
   "tw": "Kron cooks a book on the cooker, and the book turns into a cookie.",
   "twc": "Kron 把菜谱放在炉灶上煮，菜谱变成了一块饼干。",
-  "hint": "照着菜谱做，做成了菜谱饼。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nLeft panel: Kron in a chef's hat reads a cookbook beside the cooker. Right panel: the cookbook sizzling in the pan, turned into a giant cookie.\nThe composition follows the \"expectation vs reality\" meme: two side-by-side panels, expectation on the left and reality on the right.\nThe scene is a busy kitchen with a cooker, pans and spices.\nShot at counter height with a 50 mm lens, Kron sharp, the kitchen soft.\nWarm stove light and steam, appetising colour grade.\nA real-photography 4:3 landscape film still, photoreal cookie dough, paper and plush, a clean frame with no lettering."
+  "hint": "照着菜谱做，做成了菜谱饼。"
  },
  {
   "w": "sofa",
-  "meme": "m11",
   "tw": "Kron sits on a slow sofa that goes so low it rolls into the snow.",
   "twc": "Kron 坐的沙发又慢又矮，慢慢滑进了雪里。",
-  "hint": "躺平躺到雪地里。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron slumps on a low sofa with wheels as it rolls slowly down a snowy hill.\nThe composition follows the \"totally drained\" meme: Kron is totally drained, slumped on the sofa, a faint ghost of himself floating up.\nThe scene is a snowy hillside with pine trees and a cabin.\nShot from the side with a 50 mm lens, Kron and the sofa sharp, the hill soft.\nSoft winter light with falling snow, calm cool colour grade.\nA real-photography 4:3 landscape film still, photoreal sofa fabric, snow and plush, a clean frame with no lettering."
+  "hint": "躺平躺到雪地里。"
  },
  {
   "w": "all kinds of",
-  "meme": "m01",
   "tw": "Kron finds all kinds of balls behind the tall wall, and they all fall on him.",
   "twc": "Kron 在高墙后找到各种各样的球，球全砸在他身上。",
-  "hint": "各种球，一起来。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron stands behind a tall wall as all kinds of balls — footballs, tennis balls, beach balls — rain down on him.\nThe composition follows the \"this is fine\" meme: Kron stays calm with a cup of tea as balls bounce off him.\nThe scene is a back alley with a tall brick wall and bins.\nShot from above with a 35 mm lens, Kron sharp, the balls frozen mid-air.\nBright afternoon light, playful colour grade.\nA real-photography 4:3 landscape film still, photoreal rubber balls, brick and plush, a clean frame with no lettering."
+  "hint": "各种球，一起来。"
  }
 ]

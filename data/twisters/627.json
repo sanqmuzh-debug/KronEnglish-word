@@ -1,102 +1,122 @@
 [
- {"w": "vanity", "meme": "m02",
+ {
+  "w": "vanity",
   "tw": "Kron's vanity van is all mirrors, so he misses the pretty city.",
   "twc": "Kron 的臭美面包车贴满了镜子，他错过了整座漂亮的城市。",
-  "hint": "光顾照镜子，城市白来了。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron, in heart-shaped sunglasses, sits at the wheel of a small camper van whose every window is covered with mirrors, and he turns to admire himself in one of them while a pigeon in the passenger seat points furiously at the city view he is missing.\nThe composition follows the \"distracted boyfriend\" meme: Kron turning to gaze at his own reflection, the pigeon beside him glaring in outrage.\nThe scene is a hilltop lookout road above a pretty old city with domes and bridges.\nShot through the open side door with a 35 mm lens, Kron, the mirror and the pigeon sharp, the city behind soft, shallow depth of field.\nWarm sunset glow bouncing off the mirrors in flares, golden-pink colour grade.\nA real-photography 4:3 landscape film still, photoreal glass, chrome, feathers and plush fur, a clean frame with no lettering."},
- {"w": "wholesale", "meme": "m09",
+  "hint": "光顾照镜子，城市白来了。"
+ },
+ {
+  "w": "wholesale",
   "tw": "Kron buys a whole sail at a wholesale sale and holds it in a gale.",
   "twc": "Kron 在批发大甩卖买了一整面帆，在大风里死死抱住。",
-  "hint": "批发买帆，顺便起飞。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron grips the corner of a huge white sail he has just bought, and a gust of wind fills it so hard that his feet leave the ground as he is blown backwards, eyes wide.\nThe composition follows the \"leaning back in shock\" meme: Kron tipped far back by the wind, the sail billowing over him.\nThe scene is a seaside warehouse market with stacked crates, coils of rope and rolls of canvas, the open doors facing a grey sea.\nShot from a low angle with a 28 mm lens, Kron and the sail sharp, the market soft, medium depth of field.\nStormy backlight through the big doors with flying sea spray, cold steel-blue colour grade.\nA real-photography 4:3 landscape film still, photoreal canvas, rope, wet wood and plush fur, a clean frame with no lettering."},
- {"w": "adverb", "meme": "m12",
+  "hint": "批发买帆，顺便起飞。"
+ },
+ {
+  "w": "adverb",
   "tw": "Kron adds an adverb: he dances badly, very badly, in a bad herb bed.",
   "twc": "Kron 加了个副词：他跳得很糟，在香草地里跳得非常糟。",
-  "hint": "副词一加，糟得更彻底。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron, in tap shoes and a straw hat, dances wildly and clumsily in the middle of a herb bed, flattening the basil and mint, one leg kicked high and arms flailing.\nThe composition follows the \"everyone staring\" meme: gardeners leaning on their spades all around the plot, every eye on Kron.\nThe scene is a village allotment with herb beds, a garden shed and watering cans.\nShot at knee height with a 50 mm lens, Kron sharp, the watching gardeners soft around him, medium depth of field.\nBright midday sun with crisp shadows, fresh green summer colour grade.\nA real-photography 4:3 landscape film still, photoreal leaves, soil, straw and plush fur, a clean frame with no lettering."},
- {"w": "analogue", "meme": "m10",
+  "hint": "副词一加，糟得更彻底。"
+ },
+ {
+  "w": "analogue",
   "tw": "Kron's analogue clock is a log, and an ant on the log tells the time.",
   "twc": "Kron 的老式钟是根木头，木头上的蚂蚁负责报时。",
-  "hint": "指针是蚂蚁，慢点很正常。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron sits on a stump beside a cut log whose round end is marked like a clock face with small pebbles, and a single ant walks slowly around it as the clock hand while Kron checks a pocket watch against it.\nThe composition follows the \"confused stare\" meme: Kron looking from the ant to his watch with a puzzled question-mark face.\nThe scene is a mossy forest clearing with ferns and mushrooms.\nShot as a close macro with a 90 mm lens, the ant and the log face sharp, Kron just behind slightly soft, very shallow depth of field.\nSoft green light filtering through the trees, earthy forest colour grade.\nA real-photography 4:3 landscape film still, photoreal bark, moss, pebbles and plush fur, a clean frame with no numbers and no lettering."},
- {"w": "appall", "meme": "m04",
+  "hint": "指针是蚂蚁，慢点很正常。"
+ },
+ {
+  "w": "appall",
   "tw": "Kron's apple falls in Paul's paint pail, and Paul is appalled.",
   "twc": "Kron 的苹果掉进保罗的油漆桶，保罗吓呆了。",
-  "hint": "一颗苹果，毁了一桶漆。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron stands beside a bulldog named Paul who is painting a fence, and Kron's red apple has just splashed into Paul's pail of white paint, splattering them both, as they stare with eyes and mouths wide open.\nThe composition follows the \"shocked face\" meme: a big close-up of the two stunned faces, Kron in the centre.\nThe scene is a half-painted garden fence with a paint pail, a brush and drop cloths.\nShot close with an 85 mm lens, both faces sharp, the fence soft, shallow depth of field.\nBright clear morning sun with clean white bounce from the paint, crisp fresh colour grade.\nA real-photography 4:3 landscape film still, photoreal wet paint, dog fur and plush fur, a clean frame with no lettering."},
- {"w": "aristocratic", "meme": "m13",
+  "hint": "一颗苹果，毁了一桶漆。"
+ },
+ {
+  "w": "aristocratic",
   "tw": "Aristocratic Kron waves his wrist from a crate pulled by two fat rats.",
   "twc": "贵族范儿的 Kron 坐在两只胖老鼠拉的木箱里，优雅挥手。",
-  "hint": "马车不够，老鼠来凑。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron, in a powdered wig and a frilly lace collar, sits upright in a wooden fruit crate on little wheels, pulled by two fat brown rats in tiny harnesses, giving a slow royal wave of the wrist.\nThe composition follows the \"proud hands on hips\" meme: Kron with one hand on his hip, chin raised high, the other hand waving.\nThe scene is a cobbled old-town street with stone houses and flower boxes.\nShot low from the cobbles with a 35 mm lens, Kron and the rats sharp, the street soft behind, medium depth of field.\nSoft overcast pearly light, elegant muted pastel colour grade.\nA real-photography 4:3 landscape film still, photoreal lace, wood, rat fur and plush fur, a clean frame with no lettering."},
- {"w": "ashore", "meme": "m14",
+  "hint": "马车不够，老鼠来凑。"
+ },
+ {
+  "w": "ashore",
   "tw": "A shark brings Kron ashore, and Kron shares his shortcake with the shark.",
   "twc": "一条鲨鱼把 Kron 送上岸，Kron 把酥饼分给了鲨鱼。",
-  "hint": "本以为被吃，结果请客。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nIn the first panel Kron, in a life ring, screams as a shark fin rises behind him; in the second the shark has carried him ashore on its nose and they sit side by side in the shallows sharing a strawberry shortcake.\nThe composition follows the \"expectation vs reality\" two-panel meme: left panel the scary shark, right panel the friendly cake break.\nThe scene is a tropical beach with white sand, clear shallow water and palm trees.\nShot at water level with a 24 mm lens, Kron and the shark sharp, the beach soft, medium depth of field.\nBright tropical sun with sparkling water reflections, turquoise holiday colour grade.\nA real-photography 4:3 landscape film still, photoreal wet sand, shark skin, cream and plush fur, a clean frame with no lettering."},
- {"w": "axe", "meme": "m03",
+  "hint": "本以为被吃，结果请客。"
+ },
+ {
+  "w": "axe",
   "tw": "Kron asks Max for an axe, and Max hands him a sax.",
   "twc": "Kron 向马克斯要一把斧头，马克斯递给他一支萨克斯。",
-  "hint": "想砍树，结果要吹树。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron, in a plaid shirt and lumberjack cap, stands at a pine tree holding a shiny saxophone instead of an axe, while Max the beaver beside him looks very pleased with himself.\nThe composition follows the \"side-eye\" meme: Kron holding the sax and slowly side-eyeing Max.\nThe scene is a snowy pine forest with a pile of logs and a chopping block.\nShot at eye level with a 50 mm lens, Kron and Max sharp, the trees soft, shallow depth of field.\nCrisp low winter sun with blue shadows on the snow, clean cold colour grade.\nA real-photography 4:3 landscape film still, photoreal brass, snow, flannel, beaver fur and plush fur, a clean frame with no lettering."},
- {"w": "bail", "meme": "m08",
+  "hint": "想砍树，结果要吹树。"
+ },
+ {
+  "w": "bail",
   "tw": "Kron pays his pal's bail with a pail of snails, and the jail guard wails.",
   "twc": "Kron 用一桶蜗牛给朋友交保释金，看守哭嚎起来。",
-  "hint": "保释金是蜗牛，慢慢付。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron tips a tin pail of snails onto the sheriff's counter, snails crawling everywhere, while a goose in a striped shirt waits behind the bars and the bulldog guard throws up his paws and wails.\nThe composition follows the \"all according to plan\" meme: Kron with fingers steepled and a sly smile beside the snail pile.\nThe scene is an old western sheriff's office with a wooden counter, a jail cell and a hat stand.\nShot across the counter with a 35 mm lens, Kron and the snails sharp, the cell soft behind, medium depth of field.\nDusty sunlight through window blinds in hard slats, warm sepia colour grade.\nA real-photography 4:3 landscape film still, photoreal snail shells, tin, iron bars and plush fur, a clean frame with no lettering."},
- {"w": "beware", "meme": "m09",
+  "hint": "保释金是蜗牛，慢慢付。"
+ },
+ {
+  "w": "beware",
   "tw": "Kron, beware: a bear in bee underwear is sitting on your stairs.",
   "twc": "Kron，小心：一只穿蜜蜂内裤的熊正坐在你家楼梯上。",
-  "hint": "熊不可怕，内裤才吓人。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron has just opened his front door with a bag of shopping and finds a big brown bear in yellow and black striped bee underwear sitting on his stairs eating honey, and Kron drops the bag in alarm.\nThe composition follows the \"leaning back in shock\" meme: Kron leaning far back in the doorway, the bear calm on the stairs.\nThe scene is a narrow cottage hallway with wooden stairs, a coat rack and a honey jar.\nShot from inside the hall with a 24 mm lens, Kron and the bear sharp, the hall edges soft, deep depth of field.\nBright daylight from the open door against a dim hall, warm honey colour grade.\nA real-photography 4:3 landscape film still, photoreal bear fur, honey, wood and plush fur, a clean frame with a label-free jar and no lettering."},
- {"w": "bodily", "meme": "m12",
+  "hint": "熊不可怕，内裤才吓人。"
+ },
+ {
+  "w": "bodily",
   "tw": "Kron bodily lifts Bobby, a giant dog, out of a pond full of lilies.",
   "twc": "Kron 把巨型大狗波比整个从睡莲池里抱了出来。",
-  "hint": "小个子，徒手搬大狗。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron stands knee-deep in a lily pond and lifts a huge dripping wet dog high above his head, lily pads hanging off the dog's ears, Kron straining with a determined face.\nThe composition follows the \"everyone staring\" meme: ducks and park visitors around the pond all staring at Kron.\nThe scene is a city park pond with lily pads, a stone edge and benches.\nShot from the pond edge with a 70 mm lens, Kron and the dog sharp, the watchers soft, shallow depth of field.\nAfternoon backlight catching the falling water drops, lush green colour grade.\nA real-photography 4:3 landscape film still, photoreal wet dog fur, water and plush fur, a clean frame with no lettering."},
- {"w": "brandy", "meme": "m03",
+  "hint": "小个子，徒手搬大狗。"
+ },
+ {
+  "w": "brandy",
   "tw": "Grand Randy hands Kron brandy candy from a sandy can.",
   "twc": "老爷爷兰迪从沙乎乎的罐子里掏出白兰地糖递给 Kron。",
-  "hint": "白兰地糖，沙子味的。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron sits on the sand next to an old badger in a deckchair called Randy, who hands him a brown sweet from a tin can full of sand, and Kron holds the gritty sweet between two fingers.\nThe composition follows the \"side-eye\" meme: Kron holding the sandy sweet and side-eyeing Randy.\nThe scene is a breezy beach with striped deckchairs, a windbreak and buckets.\nShot from the side with a 50 mm lens, Kron and Randy sharp, the sea soft, shallow depth of field.\nHazy seaside sun with soft glare, faded warm colour grade.\nA real-photography 4:3 landscape film still, photoreal sand, tin, badger fur and plush fur, a clean frame with a label-free tin and no lettering."},
- {"w": "broker", "meme": "m16",
+  "hint": "白兰地糖，沙子味的。"
+ },
+ {
+  "w": "broker",
   "tw": "Kron the broker trades a broken poker for a smoking toaster.",
   "twc": "经纪人 Kron 用一根断火钳换来一台冒烟的烤面包机。",
-  "hint": "中介做成了，自己被坑了。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron, in a pinstripe suit, has just handed a broken iron poker to a grinning goat stallholder and taken a toaster, which now pops two burnt slices and puffs black smoke into Kron's face.\nThe composition follows the \"tables turned\" meme: the dealer gets dealt with, Kron sooty in the middle, the goat smug at the side.\nThe scene is a flea market stall with old lamps, clocks and boxes of junk.\nShot at stall height with a 35 mm lens, Kron and the toaster sharp, the market soft behind, medium depth of field.\nFlat overcast light with warm light through an orange tarp, gritty colour grade.\nA real-photography 4:3 landscape film still, photoreal chrome, smoke, goat hair and plush fur, a clean frame with no lettering."},
- {"w": "browse", "meme": "m01",
+  "hint": "中介做成了，自己被坑了。"
+ },
+ {
+  "w": "browse",
   "tw": "Kron browses brown books while a brown cow browses on his brows.",
   "twc": "Kron 翻着棕色的书，一头棕色的牛在啃他的眉毛。",
-  "hint": "他翻书，牛翻他。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron sits on a crate reading a brown book, calmly turning a page, while a brown cow leans over his head and licks and nibbles at his brow.\nThe composition follows the \"this is fine\" meme: Kron reading on calmly as the cow chews on his face.\nThe scene is an outdoor book stall in a meadow with crates of brown books and a wooden fence.\nShot at eye level with an 85 mm lens, Kron and the cow's nose sharp, the meadow melting away, shallow depth of field.\nLow golden-hour sun from behind, warm brown and honey colour grade.\nA real-photography 4:3 landscape film still, photoreal cow hide, old paper and plush fur, a clean frame with blank covers and no lettering."},
- {"w": "canoe", "meme": "m01",
+  "hint": "他翻书，牛翻他。"
+ },
+ {
+  "w": "canoe",
   "tw": "Kron and a kangaroo canoe into a canyon, and the kangaroo cries \"Nooo!\"",
   "twc": "Kron 和袋鼠划独木舟冲进峡谷，袋鼠大喊：“不——！”",
-  "hint": "袋鼠会跳，不会划。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron, in a life jacket, paddles calmly at the front of a red canoe rushing down white-water rapids, while the kangaroo behind him grips both sides and screams with its mouth wide open.\nThe composition follows the \"this is fine\" meme: wild water all around, Kron paddling as if it were a pond.\nThe scene is a red-rock canyon river with spray, boulders and steep cliffs.\nShot from a rock just ahead of the canoe with a 24 mm lens, Kron and the kangaroo sharp, the cliffs soft, medium depth of field.\nHarsh sun with spray glittering, saturated red and turquoise colour grade.\nA real-photography 4:3 landscape film still, photoreal water spray, wet kangaroo fur and plush fur, a clean frame with no lettering."},
- {"w": "chancellor", "meme": "m04",
+  "hint": "袋鼠会跳，不会划。"
+ },
+ {
+  "w": "chancellor",
   "tw": "Chancellor Kron chants at the cellar door, and a cello answers.",
   "twc": "大臣 Kron 在地窖门口念咒，一把大提琴回答了他。",
-  "hint": "大臣下令，乐器应声。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron, in a long official robe and gold chain, holds a candle at an old cellar door, and a cello leans out of the dark doorway playing itself, its bow moving on its own, as Kron's eyes pop wide.\nThe composition follows the \"shocked face\" meme: a close-up of Kron's stunned face with the cello looming in the doorway.\nThe scene is a stone castle cellar with barrels, cobwebs and stone steps.\nShot close with a 50 mm lens, Kron's face sharp, the cello slightly soft, shallow depth of field.\nFlickering candle and torchlight with deep shadows, moody chiaroscuro colour grade.\nA real-photography 4:3 landscape film still, photoreal velvet, varnished wood, stone and plush fur, a clean frame with no lettering."},
- {"w": "claimant", "meme": "m07",
+  "hint": "大臣下令，乐器应声。"
+ },
+ {
+  "w": "claimant",
   "tw": "Kron the claimant claims the clay man's mint, but the clay man claims it back.",
   "twc": "索赔人 Kron 抢走泥人的薄荷糖，泥人又抢了回去。",
-  "hint": "抢到手的，泥人也要讨回。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron has leapt onto the potter's table and landed beside a life-size clay man, grabbing one end of a big green mint while the clay man's wet clay hand grips the other end.\nThe composition follows the \"superhero landing\" meme: Kron on one knee on the table, one fist down, the other hand on the mint.\nThe scene is a pottery studio with a spinning wheel, shelves of pots and splashes of grey clay.\nShot low across the table with a 28 mm lens, Kron and the clay man sharp, the shelves soft, medium depth of field.\nSoft north-facing skylight with a warm work lamp, earthy clay colour grade.\nA real-photography 4:3 landscape film still, photoreal wet clay, candy gloss and plush fur, a clean frame with no lettering."},
- {"w": "colonel", "meme": "m15",
+  "hint": "抢到手的，泥人也要讨回。"
+ },
+ {
+  "w": "colonel",
   "tw": "Colonel Kron marches past the corn kettle, and every kernel pops behind him.",
   "twc": "上校 Kron 走过玉米锅，身后的玉米粒全炸成了爆米花。",
-  "hint": "上校不回头，爆米花敬礼。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron, in a colonel's uniform with medals and a peaked cap, marches calmly toward the camera, while behind him a huge kettle of corn bursts and a storm of popcorn sprays into the air.\nThe composition follows the \"cool guys don't look at explosions\" meme: Kron unbothered in front, popcorn exploding behind.\nThe scene is an army camp mess tent with long tables, metal trays and a big black kettle.\nShot at Kron's eye level with a 35 mm lens, Kron sharp, the popcorn burst slightly blurred with motion.\nWarm tent light with the popcorn backlit like sparks, khaki and gold colour grade.\nA real-photography 4:3 landscape film still, photoreal popcorn, canvas, brass medals and plush fur, a clean frame with no lettering."},
- {"w": "confrontation", "meme": "m12",
+  "hint": "上校不回头，爆米花敬礼。"
+ },
+ {
+  "w": "confrontation",
   "tw": "Kron's confrontation with a frog on a front pontoon turns into a staring contest.",
   "twc": "Kron 和一只青蛙在浮桥头对峙，变成了一场瞪眼比赛。",
-  "hint": "谁先眨眼谁就输。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron lies on his belly at the end of a wooden pontoon, nose to nose with a fat green frog, both glaring without blinking, Kron's eyes watering.\nThe composition follows the \"everyone staring\" meme: a crowd of ducks and frogs gathered around, all eyes on the contest.\nThe scene is a misty lake pontoon with reeds, water lilies and a small rowing boat.\nShot from water level with a 100 mm lens, Kron and the frog in sharp profile, the watching crowd soft, very shallow depth of field.\nCool early morning mist with soft side light, muted green-grey colour grade.\nA real-photography 4:3 landscape film still, photoreal frog skin, wet wood, feathers and plush fur, a clean frame with no lettering."},
- {"w": "congressional", "meme": "m13",
+  "hint": "谁先眨眼谁就输。"
+ },
+ {
+  "w": "congressional",
   "tw": "Kron gives a congressional speech on the grass, and a congress of geese nods along.",
   "twc": "Kron 在草地上做国会演讲，一群大鹅跟着点头。",
-  "hint": "议员全是鹅，表决靠嘎。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron, in a dark suit and red tie, stands on a wooden soapbox giving a speech, while rows of white geese sit on the lawn in front of him nodding along together.\nThe composition follows the \"proud hands on hips\" meme: Kron with hands on hips and chin up, pleased with his audience.\nThe scene is a wide lawn in front of a white domed government building with flags on poles.\nShot from behind the last row of geese with a 35 mm lens, Kron sharp, the geese and the building soft, medium depth of field.\nBright spring daylight with a clear blue sky, clean civic colour grade.\nA real-photography 4:3 landscape film still, photoreal feathers, grass, wool suit and plush fur, a clean frame with blank flags and no lettering."}
+  "hint": "议员全是鹅，表决靠嘎。"
+ }
 ]

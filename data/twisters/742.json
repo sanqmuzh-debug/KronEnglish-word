@@ -1,102 +1,122 @@
 [
- {"w": "infiltrate", "meme": "m12",
+ {
+  "w": "infiltrate",
   "tw": "Kron infiltrates the rats' film night with a tray of fake cheese treats.",
   "twc": "Kron 端着一盘假奶酪零食，混进老鼠们的电影之夜。",
-  "hint": "伪装满分，就是太大。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron, wearing paper rat ears and a stuck-on string tail, sits in the middle row of a tiny cinema full of real rats, holding a tray of yellow sponge pretending to be cheese, trying to look casual.\nThe composition follows the \"everyone staring\" meme: every rat in the rows has turned around to stare at the oversized fake rat in their middle.\nThe scene is a miniature cinema built in a cellar, with matchbox seats and a glowing blank screen.\nShot from the front of the seats with a 35 mm lens, Kron and the nearest rats sharp, the back rows soft, medium depth of field.\nDark room lit only by the cool flicker of the screen, moody cinema colour grade.\nA real-photography 4:3 landscape film still, photoreal rat fur, sponge and plush fur, a clean frame with a blank screen and no lettering."},
- {"w": "infirm", "meme": "m01",
+  "hint": "伪装满分，就是太大。"
+ },
+ {
+  "w": "infirm",
   "tw": "Infirm old Kron, in a firm fur cap, lets a worm push his chair.",
   "twc": "虚弱的老 Kron 戴着硬邦邦的皮帽，让一条蚯蚓推他的轮椅。",
-  "hint": "老了，只能靠虫推。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron, dressed as a frail old man with round glasses, a shawl and a stiff fur cap, sits in a tiny wheelchair, and a long pink earthworm strains with all its body to push the chair uphill.\nThe composition follows the \"this is fine\" meme: the worm struggling and the chair sliding back, Kron calmly reading a blank newspaper.\nThe scene is a garden path in a retirement home with flower beds and a bench.\nShot from the side with a 50 mm lens, Kron and the worm sharp, the garden behind softly blurred, shallow depth of field.\nGentle soft afternoon light with a warm haze, faded vintage colour grade.\nA real-photography 4:3 landscape film still, photoreal worm skin, wool shawl and plush fur, a clean frame with a blank newspaper and no lettering."},
- {"w": "inflame", "meme": "m09",
+  "hint": "老了，只能靠虫推。"
+ },
+ {
+  "w": "inflame",
   "tw": "Kron blames the flamingo, and that inflames the flamingo into a flaming dance.",
   "twc": "Kron 怪罪火烈鸟，火烈鸟被激得跳起火辣辣的怒舞。",
-  "hint": "一句怪罪，火上浇油。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron points an accusing finger at a pink flamingo next to a knocked-over bucket, and the flamingo explodes with rage, feathers puffed, stomping and flapping in a wild furious dance.\nThe composition follows the \"leaning back in shock\" meme: Kron leaning far back from the furious flamingo, finger still pointing.\nThe scene is a shallow salt lagoon with pink water and other flamingos standing on one leg.\nShot at Kron's height with a 70 mm lens, Kron and the flamingo sharp, the flock behind blurred, shallow depth of field.\nBlazing hot late sun with pink reflections from the water, vivid coral colour grade.\nA real-photography 4:3 landscape film still, photoreal flamingo feathers, water spray and plush fur, a clean frame with no lettering."},
- {"w": "inflammation", "meme": "m04",
+  "hint": "一句怪罪，火上浇油。"
+ },
+ {
+  "w": "inflammation",
   "tw": "For Kron's toe inflammation, Mama Llama rubs on lotion in slow motion.",
   "twc": "Kron 的脚趾发炎了，羊驼妈妈慢动作给他抹药膏。",
-  "hint": "抹得比发炎还慢。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron sits with one foot up on a cushion, his big toe swollen bright red, while a llama in a nurse's cap leans in and very, very slowly dabs white lotion on it with a cotton ball.\nThe composition follows the \"shocked face\" meme: a close-up of Kron's face, eyes bulging and mouth wide as the lotion touches the toe.\nThe scene is a small clinic room with a paper-covered bed, a jar of cotton balls and a blank eye chart.\nShot close with a 60 mm macro lens, Kron's face and the red toe sharp, the llama slightly soft, very shallow depth of field.\nCool clean clinic light with a soft window glow, clinical pastel colour grade.\nA real-photography 4:3 landscape film still, photoreal llama wool, lotion and plush fur, a clean frame with a blank chart and no lettering."},
- {"w": "inflict", "meme": "m08",
+  "hint": "抹得比发炎还慢。"
+ },
+ {
+  "w": "inflict",
   "tw": "With one flick, Kron inflicts a sticky lick of jam on the strict chick.",
   "twc": "Kron 手指一弹，把一坨黏果酱甩在严厉的小鸡身上。",
-  "hint": "一弹，严厉小鸡开花。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron, sitting at a small school desk, has just flicked a spoonful of red jam, and it splats across the face of a stern little chick wearing tiny glasses and holding a ruler at the blackboard.\nThe composition follows the \"all according to plan\" meme: Kron in front, fingers pressed together, smiling slyly while the jam-covered chick fumes.\nThe scene is a tiny old-fashioned classroom with wooden desks, chalk and a blank blackboard.\nShot from behind Kron's desk with a 40 mm lens, Kron sharp, the chick slightly soft, shallow depth of field.\nWarm morning sun slanting through tall windows with chalk dust in the air, nostalgic colour grade.\nA real-photography 4:3 landscape film still, photoreal chick fluff, glossy jam and plush fur, a clean frame with a blank blackboard and no lettering."},
- {"w": "infrared", "meme": "m10",
+  "hint": "一弹，严厉小鸡开花。"
+ },
+ {
+  "w": "infrared",
   "tw": "In infrared goggles, Kron finds Fred the frog in bed, glowing red.",
   "twc": "Kron 戴上红外眼镜，发现青蛙弗雷德在床上发着红光。",
-  "hint": "红外一照，床上藏蛙。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron, wearing chunky night-vision goggles pushed up on his forehead, stands by his own bed in the dark, where a frog is tucked under the blanket, glowing warm red like a heat map.\nThe composition follows the \"confused stare\" meme: Kron turns toward the camera with a blank, baffled stare, the glowing frog behind him.\nThe scene is a dark child's bedroom with a nightstand, a toy box and moonlit curtains.\nShot at bed height with a 35 mm lens, Kron and the frog sharp, the room fading into darkness, medium depth of field.\nDeep blue darkness with the frog's red glow lighting Kron's face from below, infrared-inspired colour grade.\nA real-photography 4:3 landscape film still, photoreal frog skin, cotton blanket and plush fur, a clean frame with no lettering."},
- {"w": "infuriate", "meme": "m15",
+  "hint": "红外一照，床上藏蛙。"
+ },
+ {
+  "w": "infuriate",
   "tw": "Kron ate eight of the furry cat's fish, and that infuriates the cat.",
   "twc": "Kron 吃了毛茸茸的猫的八条鱼，把猫气炸了。",
-  "hint": "八条鱼，换一只炸毛猫。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron walks calmly toward the camera licking his lips, a fish tail sticking out of his mouth, while behind him a fluffy grey cat with every hair standing on end screams in fury over an empty plate of fish bones.\nThe composition follows the \"cool guys don't look at explosions\" meme: Kron cool in front, the furious cat exploding behind.\nThe scene is a sunny fish market alley with crates of ice and hanging nets.\nShot at Kron's level with a 85 mm lens, Kron sharp, the cat sharp enough to read its rage, background blurred, shallow depth of field.\nHard bright sunlight with wet reflections on the stones, punchy colour grade.\nA real-photography 4:3 landscape film still, photoreal cat fur, fish and plush fur, a clean frame with no lettering."},
- {"w": "ingratiating", "meme": "m03",
+  "hint": "八条鱼，换一只炸毛猫。"
+ },
+ {
+  "w": "ingratiating",
   "tw": "Ingratiating Kron grates cheese for a great grey granny, tea in hand, waiting for cake.",
   "twc": "Kron 讨好地给灰发奶奶刨奶酪、递茶，就等着分蛋糕。",
-  "hint": "嘴甜手勤，只为蛋糕。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron, in a little waistcoat, grates cheese over a grey-haired granny's plate with a huge sweet grin while balancing a cup of tea for her, and a big chocolate cake sits just beside her elbow.\nThe composition follows the \"side-eye\" meme: Kron smiling at the granny but sliding his eyes hard toward the cake.\nThe scene is a cosy grandmother's kitchen with a floral tablecloth, a teapot and a cuckoo clock.\nShot across the table with a 50 mm lens, Kron and the cake sharp, the granny slightly soft, shallow depth of field.\nWarm lamplight with soft window fill, homely golden colour grade.\nA real-photography 4:3 landscape film still, photoreal cheese, chocolate cake and plush fur, a clean frame with no lettering."},
- {"w": "inimitable", "meme": "m13",
+  "hint": "嘴甜手勤，只为蛋糕。"
+ },
+ {
+  "w": "inimitable",
   "tw": "Kron does an inimitable imitation of a bull, and the bull can't imitate it back.",
   "twc": "Kron 模仿公牛无人能及，连公牛都学不回来。",
-  "hint": "学得比牛还像牛。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron, wearing a headband with two foam horns, paws the dirt and snorts with steam from his nose, while a real black bull beside him tries to copy the pose and just looks lost.\nThe composition follows the \"proud hands on hips\" meme: Kron finishing with hands on hips and chin up, the bull baffled next to him.\nThe scene is a sandy bullring with red wooden barriers and empty stands.\nShot from low in the sand with a 28 mm lens, Kron and the bull sharp, the stands soft, medium depth of field.\nHot dusty afternoon sun with long shadows, sun-baked ochre colour grade.\nA real-photography 4:3 landscape film still, photoreal bull hide, sand and plush fur, a clean frame with no lettering."},
- {"w": "inkling", "meme": "m03",
+  "hint": "学得比牛还像牛。"
+ },
+ {
+  "w": "inkling",
   "tw": "Kron has an inkling: the king winks, and his tongue is ink blue.",
   "twc": "Kron 隐约察觉：国王一眨眼，舌头是墨水蓝的。",
-  "hint": "舌头一蓝，真相大白。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron stands beside his empty, tipped-over ink pot next to a jolly king on a throne, who winks innocently while his stuck-out tongue is clearly stained deep blue.\nThe composition follows the \"side-eye\" meme: Kron holding the empty ink pot and giving the king a long, suspicious side-eye.\nThe scene is a royal study with a writing desk, quill pens and a velvet throne.\nShot at Kron's eye level with a 85 mm lens, Kron and the king's tongue sharp, the study softly blurred, shallow depth of field.\nWarm candlelight with a cool blue window light from behind, rich royal colour grade.\nA real-photography 4:3 landscape film still, photoreal ink, velvet and plush fur, a clean frame with no lettering."},
- {"w": "inmate", "meme": "m08",
+  "hint": "舌头一蓝，真相大白。"
+ },
+ {
+  "w": "inmate",
   "tw": "Kron and his inmate mate bake eight cakes in the jail at eight.",
   "twc": "Kron 和狱友晚上八点在牢里烤了八个蛋糕。",
-  "hint": "蛋糕里，藏着锉刀。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron, in a black-and-white striped prison outfit, and his big gorilla cellmate pull eight cakes from a tiny toy oven, and the handle of a metal file pokes out of the top cake.\nThe composition follows the \"all according to plan\" meme: Kron in the middle, fingers pressed together, grinning slyly at the camera.\nThe scene is a small prison cell with bars, a bunk bed and a clock showing eight.\nShot through the bars with a 50 mm lens, Kron and the cakes sharp, the bars in front blurred, shallow depth of field.\nCold blue night light from the corridor mixed with the warm orange oven glow, gritty colour grade.\nA real-photography 4:3 landscape film still, photoreal gorilla fur, cake sponge and plush fur, a clean frame with no lettering."},
- {"w": "inoculate", "meme": "m16",
+  "hint": "蛋糕里，藏着锉刀。"
+ },
+ {
+  "w": "inoculate",
   "tw": "Kron inoculates an ox in a sock, then the ox locks Kron in a crate.",
   "twc": "Kron 给穿袜子的牛打预防针，牛反手把他锁进木箱。",
-  "hint": "打完针，牛记仇。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron, in a white vet coat, holds a giant syringe after giving a jab to an ox wearing one striped sock, and the ox has already pushed Kron into a wooden crate and is turning the key with its mouth.\nThe composition follows the \"tables turned\" meme: the doctor gets locked up, Kron peering out between the crate slats, the smug ox on the right.\nThe scene is a farm vet station with a weighing scale, straw and medicine boxes.\nShot from a low side angle with a 35 mm lens, Kron and the ox sharp, the barn soft, medium depth of field.\nSoft barn daylight with dusty sunbeams, warm rural colour grade.\nA real-photography 4:3 landscape film still, photoreal ox hide, wooden crate and plush fur, a clean frame with no lettering."},
- {"w": "inscribe", "meme": "m14",
+  "hint": "打完针，牛记仇。"
+ },
+ {
+  "w": "inscribe",
   "tw": "Kron inscribes a tiny crib with a scribble, and the baby crab inside grabs the pen.",
   "twc": "Kron 在小婴儿床上题字，床里的小螃蟹一把抢走了笔。",
-  "hint": "题字题一半，被蟹截胡。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron leans over a small wooden crib holding a carving pen to write on its headboard, but a baby crab lying inside snatches the pen in its claw, leaving only a messy scratch.\nThe composition follows the \"expectation vs reality\" meme: two panels, on the left Kron imagines an elegant engraved crib, on the right the crab holding the pen and a wobbly scribble.\nThe scene is a sunny nursery with a mobile of shells, a rug and a basket of toys.\nShot close with a 60 mm lens, Kron, the crab and the pen sharp, the nursery soft, shallow depth of field.\nSoft morning light through gauze curtains, gentle pastel colour grade.\nA real-photography 4:3 landscape film still, photoreal wood grain, crab shell and plush fur, a clean frame with no lettering."},
- {"w": "insignificant", "meme": "m11",
+  "hint": "题字题一半，被蟹截胡。"
+ },
+ {
+  "w": "insignificant",
   "tw": "Kron, an insignificant speck next to the big knife, sniffs it but can't lift it.",
   "twc": "Kron 在大刀旁边渺小如尘，闻了闻，却举不起来。",
-  "hint": "在大刀面前，他算啥。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron lies flat and exhausted beside a gigantic butter knife on a huge wooden table, after trying to lift it, a single crumb of bread nearby that he clearly wanted to butter.\nThe composition follows the \"totally drained\" meme: Kron sprawled on his back, arms out, soul leaving his body next to the knife.\nThe scene is an enormous kitchen table seen at toy scale, with a giant butter dish and a loaf of bread like a mountain.\nShot from table level with a 24 mm lens, Kron sharp, the giant knife running into the distance, deep depth of field.\nSoft overhead kitchen light with a warm window glow, quiet humorous colour grade.\nA real-photography 4:3 landscape film still, photoreal steel, butter and plush fur, a clean frame with no lettering."},
- {"w": "insuperable", "meme": "m10",
+  "hint": "在大刀面前，他算啥。"
+ },
+ {
+  "w": "insuperable",
   "tw": "Kron faces an insuperable problem: a super bulldog sits on his soup bowl.",
   "twc": "Kron 遇上难以克服的难题：一只超级斗牛犬坐在他的汤碗上。",
-  "hint": "汤就在那，喝不到。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron holds a spoon and a napkin tucked under his chin, staring at a big wrinkly bulldog in a little superhero cape who sits firmly on top of his soup bowl, refusing to move.\nThe composition follows the \"confused stare\" meme: Kron looks at the camera with a blank question-mark face, spoon frozen in the air.\nThe scene is a small diner booth with a checkered table, a salt shaker and a bread basket.\nShot across the table with a 40 mm lens, Kron and the bulldog sharp, the diner soft, shallow depth of field.\nWarm neon-tinted diner light with a cool window glow, retro Americana colour grade.\nA real-photography 4:3 landscape film still, photoreal dog wrinkles, ceramic bowl and plush fur, a clean frame with no lettering."},
- {"w": "insurgent", "meme": "m07",
+  "hint": "汤就在那，喝不到。"
+ },
+ {
+  "w": "insurgent",
   "tw": "Insurgent Kron surfs in on a surge of gentle gerbils, and the gent surrenders.",
   "twc": "叛军 Kron 踩着一大波温顺沙鼠冲过来，绅士当场投降。",
-  "hint": "沙鼠大军，绅士投降。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron, in a rebel bandana with a tiny plain flag on his back, lands at the front of a huge rolling wave of fluffy gerbils, and a gentleman in a top hat raises a white handkerchief in surrender.\nThe composition follows the \"superhero landing\" meme: Kron dropping into a slow-motion one-knee landing as the gerbil wave crashes behind him.\nThe scene is the lawn of a grand country house with hedges and a stone fountain.\nShot low with a 20 mm wide lens, Kron and the front gerbils sharp, the gent and the house slightly soft, deep depth of field.\nDramatic stormy sky with a shaft of sunlight on Kron, epic cinematic colour grade.\nA real-photography 4:3 landscape film still, photoreal gerbil fur, grass and plush fur, a clean frame with a blank flag and no lettering."},
- {"w": "interlock", "meme": "m02",
+  "hint": "沙鼠大军，绅士投降。"
+ },
+ {
+  "w": "interlock",
   "tw": "Kron interlocks his arm with the turtle's at the rink, and they lock into a spin.",
   "twc": "Kron 在冰场和乌龟手挽手，两人锁成一个陀螺转不停。",
-  "hint": "挽得太紧，停不下来。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron, in ice skates and a woolly scarf, has his arm hooked tightly with a turtle on skates, and the two of them are locked in a fast spin, while Kron's head turns away to stare at a hot chocolate stand.\nThe composition follows the \"distracted boyfriend\" meme: Kron looking back over his shoulder at the hot chocolate, the turtle glaring at him.\nThe scene is an outdoor ice rink with fairy lights, a hot chocolate stall and snowy trees.\nShot at rink level with a 35 mm lens and a slow shutter, Kron and the turtle sharp, the rink lights swirling, medium depth of field.\nCold blue winter evening with warm golden fairy lights, festive colour grade.\nA real-photography 4:3 landscape film still, photoreal ice, turtle shell and plush fur, a clean frame with no lettering."},
- {"w": "interloper", "meme": "m12",
+  "hint": "挽得太紧，停不下来。"
+ },
+ {
+  "w": "interloper",
   "tw": "Kron the interloper lopes into the otters' photo with a loaf on paper.",
   "twc": "闯入者 Kron 抱着纸托面包，大步跑进水獭一家的合影。",
-  "hint": "合影里，多了一个他。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nA family of otters poses neatly on a rock for a group photo, and Kron bounds right into the middle of the shot holding a long loaf of bread on a sheet of baking paper, grinning.\nThe composition follows the \"everyone staring\" meme: every otter turns its head to stare at Kron instead of the camera.\nThe scene is a river bank with smooth rocks, ferns and a camera on a tripod in the foreground.\nShot from just behind the tripod with a 50 mm lens, Kron and the otters sharp, the river soft, medium depth of field.\nBright dappled forest sunlight sparkling on the water, fresh green colour grade.\nA real-photography 4:3 landscape film still, photoreal otter fur, crusty bread and plush fur, a clean frame with no lettering."},
- {"w": "interlude", "meme": "m06",
+  "hint": "合影里，多了一个他。"
+ },
+ {
+  "w": "interlude",
   "tw": "In the interlude, Kron, in a tutu, plays a lute for a rude newt.",
   "twc": "中场休息时，穿芭蕾裙的 Kron 给没礼貌的蝾螈弹琴。",
-  "hint": "幕间加演，观众不领情。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron, wearing a pink tutu, stands before the closed curtain playing a little lute during the interval, while an orange newt in the front row yawns and pokes out its tongue.\nThe composition follows the \"reject vs approve\" meme: two panels, on the left the newt turns away from the lute music, on the right the newt claps happily when Kron does a twirl in the tutu.\nThe scene is a small velvet theatre with gold balconies and an empty orchestra pit.\nShot from the front row with a 50 mm lens, Kron sharp, the newt in the foreground slightly soft, shallow depth of field.\nA warm spotlight on Kron against the deep red curtain, classic theatre colour grade.\nA real-photography 4:3 landscape film still, photoreal tulle, newt skin and plush fur, a clean frame with no lettering."},
- {"w": "interminable", "meme": "m11",
+  "hint": "幕间加演，观众不领情。"
+ },
+ {
+  "w": "interminable",
   "tw": "Kron waits for the interminable termite to nibble his table, bit by tiny bit.",
   "twc": "Kron 等着那只白蚁把他的桌子一点点啃完，没完没了。",
-  "hint": "等到胡子都长了。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron, wearing a long fake grey beard to show how much time has passed, slumps in a chair beside a wooden table with one single termite nibbling a tiny notch in its leg.\nThe composition follows the \"totally drained\" meme: Kron melted into the chair, eyes empty, cobwebs on his shoulder.\nThe scene is a dusty attic with a round window, old trunks and a stopped clock.\nShot close at table-leg height with a 100 mm macro lens, the termite and Kron's slumped face sharp, the attic soft, very shallow depth of field.\nOne slow beam of dusty afternoon light through the round window, sepia colour grade.\nA real-photography 4:3 landscape film still, photoreal wood grain, insect and plush fur, a clean frame with no lettering."}
+  "hint": "等到胡子都长了。"
+ }
 ]

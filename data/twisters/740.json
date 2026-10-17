@@ -1,102 +1,122 @@
 [
- {"w": "heartrending", "meme": "m04",
+ {
+  "w": "heartrending",
   "tw": "Kron hears a heartrending hen: her trendy tent is ending, rent right down the middle.",
   "twc": "Kron 听见母鸡哭得心碎：她的潮流帐篷从中间裂成两半。",
-  "hint": "帐篷一裂，鸡心也碎。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nA plump brown hen sobs dramatically beside her bright, trendy pop-up tent, which has just split from top to bottom into two flapping halves, while Kron, wearing a tiny camping cap, stares at the ripped tent with his mouth wide open and a tear rolling down his cheek.\nThe composition follows the \"shocked face\" meme: a tight close-up of Kron's stunned face in the middle, the torn tent and crying hen just behind his shoulder.\nThe scene is a grassy campsite with a folding chair, a tin mug and a small campfire ring.\nShot close at Kron's eye level with a 60 mm macro lens, Kron's wet eyes sharp, the hen and tent soft, very shallow depth of field.\nGolden late-afternoon sun glowing through the torn tent fabric, warm nostalgic colour grade.\nA real-photography 4:3 landscape film still, photoreal feathers, nylon tent fabric and plush fur, a clean frame with no lettering."},
- {"w": "heckle", "meme": "m16",
+  "hint": "帐篷一裂，鸡心也碎。"
+ },
+ {
+  "w": "heckle",
   "tw": "Kron heckles a speckled duck, and the duck pecks a freckle on Kron's neck.",
   "twc": "Kron 冲一只花斑鸭起哄，鸭子在他脖子上啄出一颗雀斑。",
-  "hint": "起哄的人，被啄了。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron stands at the edge of a small stage cupping his hands and booing at a speckled duck who is trying to perform, but the duck has hopped down and is pecking a little dot onto Kron's neck while Kron freezes mid-shout, eyes squeezed shut.\nThe composition follows the \"tables turned\" meme: the heckler gets heckled, Kron in the centre, the determined duck leaning in from the left.\nThe scene is a tiny village talent show with a wooden stage, a red curtain and a row of empty folding chairs.\nShot slightly from below with a 35 mm lens, Kron and the duck sharp, the stage curtain gently blurred, medium depth of field.\nWarm tungsten spotlight from above with a soft fill from the side, punchy theatre colour grade.\nA real-photography 4:3 landscape film still, photoreal duck feathers, velvet curtain and plush fur, a clean frame with no lettering."},
- {"w": "heinous", "meme": "m06",
+  "hint": "起哄的人，被啄了。"
+ },
+ {
+  "w": "heinous",
   "tw": "\"Hey, heinous hay hat!\" neighs the horse, then eats the hay as a bonus.",
   "twc": "马嘶叫：“喂，难看死的干草帽！”然后顺嘴把干草吃了。",
-  "hint": "嫌它丑，吃得倒香。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron proudly wears a huge, messy hat woven from hay, and a tall chestnut horse first pulls a disgusted face at it, then happily chomps a big mouthful of the hat right off Kron's head while Kron's smile fades.\nThe composition follows the \"reject vs approve\" meme: two panels, on the left the horse turns its head away in disgust from the hay hat, on the right the horse munches the hat with delight.\nThe scene is a sunny stable yard with a wooden fence, a water trough and scattered straw.\nShot at Kron's height with a 28 mm lens, Kron and the horse's muzzle sharp, the stable soft, medium depth of field.\nBright midday sun with dusty light beams, warm farmyard colour grade.\nA real-photography 4:3 landscape film still, photoreal hay, horse hair and plush fur, a clean frame with no lettering."},
- {"w": "heresy", "meme": "m12",
+  "hint": "嫌它丑，吃得倒香。"
+ },
+ {
+  "w": "heresy",
   "tw": "\"Heresy!\" cries the hairy chef as Kron puts a very big cherry on the sea pizza.",
   "twc": "“异端！”大胡子厨师大叫，Kron 往海鲜披萨上放了颗大樱桃。",
-  "hint": "海鲜配樱桃，犯了天条。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron, in a small white chef's hat, calmly places one giant shiny cherry in the middle of a seafood pizza covered in shrimp and squid, while a very hairy, bearded chef throws his hands up and shouts in horror.\nThe composition follows the \"everyone staring\" meme: every cook in the kitchen freezes and stares at Kron and the cherry.\nThe scene is a busy Italian restaurant kitchen with a glowing brick pizza oven, flour on the counter and copper pans hanging.\nShot from across the counter with a 40 mm lens, Kron and the pizza sharp, the staring cooks slightly soft, medium depth of field.\nOrange fire glow from the oven mixed with cool overhead kitchen light, rich cinematic colour grade.\nA real-photography 4:3 landscape film still, photoreal pizza dough, seafood and plush fur, a clean frame with no lettering."},
- {"w": "hermetic", "meme": "m10",
+  "hint": "海鲜配樱桃，犯了天条。"
+ },
+ {
+  "w": "hermetic",
   "tw": "A hermit crab hands Kron a hermetic metal tick-tick box no one can open.",
   "twc": "寄居蟹递给 Kron 一个深奥的滴答铁盒，谁也打不开。",
-  "hint": "太深奥，连盖都打不开。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nA hermit crab poking out of its shell holds up a small sealed metal box covered in strange swirls and dials that ticks loudly, and Kron holds the other side, turning it around with a totally puzzled face, one eyebrow up.\nThe composition follows the \"confused stare\" meme: Kron looks straight into the camera with a blank, baffled stare, the ticking box between him and the crab.\nThe scene is a rock pool at low tide with seaweed, small shells and a stranded starfish.\nShot low at water level with a 50 mm lens, Kron, the crab and the box sharp, the far rocks blurred, shallow depth of field.\nSoft overcast seaside light with silvery reflections off the wet rocks, cool muted colour grade.\nA real-photography 4:3 landscape film still, photoreal crab shell, brushed metal and plush fur, a clean frame with no lettering."},
- {"w": "hew", "meme": "m03",
+  "hint": "太深奥，连盖都打不开。"
+ },
+ {
+  "w": "hew",
   "tw": "Kron hews to the queue rules, and a huge emu queues behind him with a new shoe.",
   "twc": "Kron 严守排队规矩，一只大鸸鹋穿着新鞋排在他身后。",
-  "hint": "规矩一守，鸸鹋也守。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron stands perfectly straight on a painted queue line holding a small ticket, and right behind him a huge emu wearing one shiny new sneaker leans its long neck over his head to see the front of the line.\nThe composition follows the \"side-eye\" meme: Kron keeps facing forward but slides his eyes up hard at the emu's head hovering above him.\nThe scene is a post office with a rope barrier, a numbered ticket machine and a blank sign over the counter.\nShot straight on with a 70 mm lens, Kron and the emu sharp, the counter behind softly blurred, shallow depth of field.\nFlat cool fluorescent office light with a slight green tint, dry deadpan colour grade.\nA real-photography 4:3 landscape film still, photoreal emu feathers, sneaker leather and plush fur, a clean frame with blank signs and no lettering."},
- {"w": "hierarchy", "meme": "m13",
+  "hint": "规矩一守，鸸鹋也守。"
+ },
+ {
+  "w": "hierarchy",
   "tw": "Kron climbs the high hierarchy of cats and finds a rare key on the top cat.",
   "twc": "Kron 爬上高高的猫咪等级塔，在头号猫身上找到稀有钥匙。",
-  "hint": "爬到顶，钥匙在老大身上。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron stands on the very top of a tall tower of cats stacked from big fat cats at the bottom to one smug fluffy cat at the top, and he holds up a shiny golden key he has just pulled from that top cat's collar.\nThe composition follows the \"proud hands on hips\" meme: Kron on the summit with one hand on his hip, chin raised, the key held high.\nThe scene is a cosy living room with a tall cat tree, a rug and toy mice scattered on the floor.\nShot from low on the floor looking up with a 24 mm lens, the whole cat tower and Kron sharp, deep depth of field.\nWarm window light from the side with dust glowing in the air, cheerful home colour grade.\nA real-photography 4:3 landscape film still, photoreal cat fur, brass key and plush fur, a clean frame with no lettering."},
- {"w": "histrionic", "meme": "m09",
+  "hint": "爬到顶，钥匙在老大身上。"
+ },
+ {
+  "w": "histrionic",
   "tw": "When a twig lands on his tricycle, Kron gives a histrionic hiss and faints on his trike.",
   "twc": "一根小树枝落在三轮车上，Kron 夸张地嘶一声，晕倒在车上。",
-  "hint": "一根树枝，演成车祸。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nA single tiny twig has fallen onto the handlebar of Kron's little red tricycle, and Kron flings himself backwards across the seat with one paw on his forehead, mouth open in a theatrical hiss, as if hit by a meteor.\nThe composition follows the \"leaning back in shock\" meme: Kron thrown back dramatically, the tiny twig the only thing in focus beside him.\nThe scene is a quiet tree-lined park path with fallen leaves and a bench.\nShot at tricycle height with a 85 mm lens, Kron and the twig sharp, the trees melting into soft bokeh, shallow depth of field.\nSoft autumn morning light filtering through leaves, warm amber colour grade.\nA real-photography 4:3 landscape film still, photoreal painted metal, bark and plush fur, a clean frame with no lettering."},
- {"w": "hitch", "meme": "m14",
+  "hint": "一根树枝，演成车祸。"
+ },
+ {
+  "w": "hitch",
   "tw": "One hitch: the witch's broom is itchy, so Kron twitches and kicks the witch.",
   "twc": "唯一的故障：女巫的扫帚很痒，Kron 一抽搐把女巫踢下去了。",
-  "hint": "小毛病，大事故。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron, wearing a little pointed hat, rides on the back of a witch's broom; the bristly broom makes him itch so badly that he twitches wildly and his foot kicks the witch clean off the front.\nThe composition follows the \"expectation vs reality\" meme: two panels, on the left Kron and the witch glide calmly past the full moon, on the right Kron scratches and kicks while the witch tumbles away.\nThe scene is the night sky above a crooked village of rooftops and chimneys.\nShot from a slight angle with a 35 mm lens, Kron and the broom sharp, the rooftops below soft, medium depth of field.\nCool blue moonlight with a warm rim of light from the village windows, moody fairy-tale colour grade.\nA real-photography 4:3 landscape film still, photoreal straw bristles, cloth and plush fur, a clean frame with no lettering."},
- {"w": "hoax", "meme": "m08",
+  "hint": "小毛病，大事故。"
+ },
+ {
+  "w": "hoax",
   "tw": "Kron's ghost is a hoax, just a cloak on an oak, and the folks poke it.",
   "twc": "Kron 的鬼是骗局：橡树上挂件斗篷，大伙拿棍去戳。",
-  "hint": "吓人的鬼，是件斗篷。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nA white sheet-like cloak with two eye holes hangs from an old oak branch like a ghost, and a few nervous villagers with lanterns poke it with long sticks, while Kron hides behind the trunk holding the string that makes it wave.\nThe composition follows the \"all according to plan\" meme: Kron peeking from behind the oak, fingers pressed together, grinning slyly.\nThe scene is a foggy village green at dusk with a wooden fence and a stone well.\nShot from behind Kron's shoulder with a 50 mm lens, Kron sharp, the cloak and villagers slightly soft, shallow depth of field.\nBlue dusk fog lit by warm lantern glow, eerie but playful colour grade.\nA real-photography 4:3 landscape film still, photoreal cotton cloth, oak bark and plush fur, a clean frame with no lettering."},
- {"w": "hobble", "meme": "m10",
+  "hint": "吓人的鬼，是件斗篷。"
+ },
+ {
+  "w": "hobble",
   "tw": "A wobbly cobble hobbles Kron's robot, so it bobbles and gobbles the cobble.",
   "twc": "一块晃动的鹅卵石绊住了 Kron 的机器人，它干脆把石头吞了。",
-  "hint": "绊脚石，被吃掉了。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron's small tin robot has tripped on a loose cobblestone and, wobbling, now stuffs the stone into its square mouth, while Kron holds the remote control and stares at it in disbelief.\nThe composition follows the \"confused stare\" meme: Kron turns to the camera with a blank question-mark face, the robot munching beside him.\nThe scene is an old cobbled street with a lamppost, a flower box and a bakery window.\nShot from ground level with a 21 mm wide lens, the cobbles in front, the robot and Kron sharp, deep depth of field.\nCrisp morning sun raking across the stones, slightly faded European colour grade.\nA real-photography 4:3 landscape film still, photoreal tin metal, stone and plush fur, a clean frame with no lettering."},
- {"w": "homely", "meme": "m13",
+  "hint": "绊脚石，被吃掉了。"
+ },
+ {
+  "w": "homely",
   "tw": "Kron's homely home has only one lonely gnome with a holey nose.",
   "twc": "Kron 那难看的小屋里，只有一个鼻子破洞的孤单小矮人。",
-  "hint": "房子丑，矮人更丑。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron stands in front of a lopsided little shack patched with mismatched boards, showing it off proudly, while a single chipped garden gnome with a hole in its nose stands lonely by the door.\nThe composition follows the \"proud hands on hips\" meme: Kron with both hands on his hips, chin up, as if presenting a palace.\nThe scene is a weedy front yard with a crooked mailbox and a broken flower pot.\nShot straight on from a few metres back with a 50 mm lens, Kron, the gnome and the shack all sharp, deep depth of field.\nFlat grey drizzle light with a little sun breaking through, dry humorous colour grade.\nA real-photography 4:3 landscape film still, photoreal weathered wood, ceramic and plush fur, a clean frame with no lettering."},
- {"w": "hoodwink", "meme": "m08",
+  "hint": "房子丑，矮人更丑。"
+ },
+ {
+  "w": "hoodwink",
   "tw": "In a red hood, Kron winks and hoodwinks the good wolf into drinking pink ink.",
   "twc": "Kron 戴上红兜帽一眨眼，骗那只好狼喝下粉红墨水。",
-  "hint": "小红帽，反过来骗狼。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron, wearing a little red riding hood cape, gives a big wink as a polite grey wolf happily sips from a teacup of bright pink ink, its lips and tongue already stained pink.\nThe composition follows the \"all according to plan\" meme: Kron in the middle, fingers pressed together under his chin, one eye winking with a sly smile.\nThe scene is a picnic blanket in a deep forest with a wicker basket and a bottle of pink ink.\nShot at picnic height with a 85 mm lens, Kron's face sharp, the wolf slightly soft, the trees in creamy bokeh, shallow depth of field.\nDappled green forest light with a warm sunbeam on Kron, storybook colour grade.\nA real-photography 4:3 landscape film still, photoreal wolf fur, cotton cape and plush fur, a clean frame with no lettering."},
- {"w": "hostility", "meme": "m09",
+  "hint": "小红帽，反过来骗狼。"
+ },
+ {
+  "w": "hostility",
   "tw": "Hostility at the hostel: the horse at the till spills it, tea and all, on Kron.",
   "twc": "旅馆里满是敌意：收银台的马把茶全泼在 Kron 身上。",
-  "hint": "住个店，马先翻脸。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nA grumpy horse working behind the hostel's front desk till flips a full teapot over Kron, and the tea splashes in a frozen arc while Kron, holding his little suitcase, jerks backwards.\nThe composition follows the \"leaning back in shock\" meme: Kron recoiling backwards with arms flung out, the arc of tea mid-air.\nThe scene is a cramped backpacker hostel lobby with a key board, bunk beds visible through a doorway and a blank notice board.\nShot from the side with a 35 mm lens at a fast shutter, the tea droplets, Kron and the horse sharp, medium depth of field.\nWarm desk lamp against cool window light, slightly gritty indie colour grade.\nA real-photography 4:3 landscape film still, photoreal horse hair, splashing tea and plush fur, a clean frame with a blank notice board and no lettering."},
- {"w": "hue", "meme": "m14",
+  "hint": "住个店，马先翻脸。"
+ },
+ {
+  "w": "hue",
   "tw": "Kron paints a huge ewe a new hue of blue, and the ewe says boo.",
   "twc": "Kron 把一只大母羊刷成新颜色：蓝色，母羊冲他喝倒彩。",
-  "hint": "新颜色，羊不买账。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron holds a dripping paint roller after painting a huge woolly ewe bright blue from head to tail, and the ewe glares at him with its mouth open in a loud angry bleat.\nThe composition follows the \"expectation vs reality\" meme: two panels, on the left Kron imagines a beautiful blue ewe smiling, on the right the real blue ewe booing at him with paint everywhere.\nThe scene is a green hillside meadow with a stone wall and paint buckets in the grass.\nShot at sheep height with a 50 mm lens, Kron and the ewe sharp, the hills behind softly blurred, medium depth of field.\nFresh bright spring sunlight with soft cloud shadows, vivid saturated colour grade.\nA real-photography 4:3 landscape film still, photoreal wet paint, wool and plush fur, a clean frame with no lettering."},
- {"w": "hymn", "meme": "m12",
+  "hint": "新颜色，羊不买账。"
+ },
+ {
+  "w": "hymn",
   "tw": "Kron hums a hymn in the pool, and slim frogs on the rim hum with him.",
   "twc": "Kron 在泳池里哼赞美诗，池边一排瘦青蛙跟着他哼。",
-  "hint": "一开唱，青蛙成唱诗班。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron floats on his back in a rubber ring with his eyes closed and hands folded, humming a hymn, while a neat row of slim green frogs sits along the pool edge with throats puffed, humming along like a choir.\nThe composition follows the \"everyone staring\" meme: swimmers and a lifeguard all stop and stare at Kron and his frog choir.\nThe scene is an indoor public swimming pool with lane ropes, a high lifeguard chair and tiled walls.\nShot from the pool edge with a 28 mm lens, Kron and the frogs sharp, the staring swimmers slightly soft, medium depth of field.\nBright cool light from high windows with rippling water reflections on the walls, aqua colour grade.\nA real-photography 4:3 landscape film still, photoreal water, frog skin and plush fur, a clean frame with no lettering."},
- {"w": "hypnotic", "meme": "m11",
+  "hint": "一开唱，青蛙成唱诗班。"
+ },
+ {
+  "w": "hypnotic",
   "tw": "Kron swings a hypnotic ticking watch, and he and the hippo both nod off.",
   "twc": "Kron 晃着催眠怀表滴答响，他和河马一起睡着了。",
-  "hint": "催眠别人，先倒自己。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron, dressed as a stage magician with a tiny cape, has been swinging a gold pocket watch in front of a hippo, and now both of them are slumped asleep, the hippo snoring on its back and Kron sprawled across its belly with the watch still dangling from his paw.\nThe composition follows the \"totally drained\" meme: Kron lying flat and limp, mouth open, soul-gone sleepy face.\nThe scene is a small circus ring with sawdust, a striped tent wall and a little star-painted podium.\nShot from slightly above with a 35 mm lens, Kron, the watch and the hippo sharp, the tent behind soft, medium depth of field.\nA single warm spotlight in a dark tent with a gentle purple haze, dreamy colour grade.\nA real-photography 4:3 landscape film still, photoreal hippo skin, gold metal and plush fur, a clean frame with no lettering."},
- {"w": "idiosyncrasy", "meme": "m01",
+  "hint": "催眠别人，先倒自己。"
+ },
+ {
+  "w": "idiosyncrasy",
   "tw": "Kron's idiosyncrasy: he sings \"E-I-O\" to a crazy crab in his kid-sized sink.",
   "twc": "Kron 的怪癖：对着小水槽里的疯螃蟹唱“咿呀哦”。",
-  "hint": "唱歌给螃蟹，就是怪。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron stands on a stool at a small sink, singing with his eyes shut and one hand raised like an opera star, while a red crab in the sink snaps its claws wildly, splashing soap bubbles everywhere.\nThe composition follows the \"this is fine\" meme: bubbles and water flying all around, Kron serenely singing as if nothing is wrong.\nThe scene is a tiny bathroom with a little sink, a rubber duck, a toothbrush cup and steamed-up tiles.\nShot over the sink with a 40 mm lens, Kron and the crab sharp, the tiles softly blurred, shallow depth of field.\nSoft steamy window light with a warm bulb over the mirror, pastel colour grade.\nA real-photography 4:3 landscape film still, photoreal crab shell, soap bubbles and plush fur, a clean frame with no lettering."},
- {"w": "ignominy", "meme": "m06",
+  "hint": "唱歌给螃蟹，就是怪。"
+ },
+ {
+  "w": "ignominy",
   "tw": "Ignominy! A big pig says \"No!\" to Kron's mini pie, then eats a minnow.",
   "twc": "奇耻大辱！大肥猪对 Kron 的迷你派说“不”，转头吃了条小鱼。",
-  "hint": "派输给了一条小鱼。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron, wearing a baker's apron, holds out a perfect little golden pie on a plate, but a big pink pig turns up its snout at it and instead gulps down a tiny silver minnow from a bucket, leaving Kron crushed.\nThe composition follows the \"reject vs approve\" meme: two panels, on the left the pig turns away from Kron's mini pie, on the right the pig grins with the minnow tail in its mouth.\nThe scene is a muddy farm pen beside a pond with a wooden bucket and a straw bale.\nShot at pig level with a 50 mm lens, Kron, the pie and the pig sharp, the pond behind blurred, shallow depth of field.\nSoft hazy morning light over the pond, earthy warm colour grade.\nA real-photography 4:3 landscape film still, photoreal pig skin, pastry and plush fur, a clean frame with no lettering."},
- {"w": "illicit", "meme": "m16",
+  "hint": "派输给了一条小鱼。"
+ },
+ {
+  "w": "illicit",
   "tw": "Kron sneaks an illicit lick of the ill lion's licorice, and it licks him back.",
   "twc": "Kron 偷舔了一口生病狮子的甘草糖，狮子反舔了他一口。",
-  "hint": "偷舔一口，被舔回来。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nA sniffly lion wrapped in a blanket with a thermometer in its mouth holds a long black licorice stick, Kron tiptoes in and licks the end of it, and the lion turns and gives Kron one huge lick that flattens his face.\nThe composition follows the \"tables turned\" meme: the sneaky licker gets licked, Kron in the centre, the lion's giant tongue coming from the right.\nThe scene is a cosy zoo infirmary with a hay bed, a hot water bottle and a medicine shelf.\nShot close with a 50 mm lens, Kron, the tongue and the licorice sharp, the shelves soft, shallow depth of field.\nWarm heat-lamp glow with a cool clinical light from the door, comic warm colour grade.\nA real-photography 4:3 landscape film still, photoreal lion fur, licorice and plush fur, a clean frame with no lettering."}
+  "hint": "偷舔一口，被舔回来。"
+ }
 ]
