@@ -1,164 +1,124 @@
 [
  {
   "w": "youthful",
-  "meme": "m14",
   "tw": "Kron sips youthful fruit juice until his huge grandpa suit is too loose.",
   "twc": "Kron 猛喝青春果汁，喝到爷爷装都松垮垮的。",
-  "hint": "喝太多，返老还童了。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nIn the left panel Kron wears a grandpa cardigan, glasses and a walking stick, about to sip a glass of fruit juice; in the right panel he has shrunk into a baby-faced Kron swimming inside the huge cardigan.\nThe composition follows the \"expectation vs reality\" meme: two side-by-side panels, old Kron with juice on the left and tiny young Kron lost in the clothes on the right.\nThe scene is a sunny juice bar counter with blenders, fresh fruit and tall glasses.\nShot straight on with a 50 mm lens, Kron and the glass sharp, the bar soft, shallow depth of field.\nBright fresh sunlight with fruity reflections, juicy pop colour grade.\nA real-photography 4:3 landscape film still, photoreal juice, knit wool and plush, a clean frame with no lettering."
+  "hint": "喝太多，返老还童了。"
  },
  {
   "w": "daily lite",
-  "meme": "m01",
   "tw": "Kron's daily life is a lazy ride to work on a daisy-covered tiger.",
   "twc": "Kron 的日常：每天骑着开满雏菊的老虎慢悠悠去上班。",
   "hint": "日常通勤，靠老虎。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron, in an office shirt and tie with a briefcase, rides a calm tiger covered in daisies through a rush-hour street, sipping coffee, while drivers and cyclists panic around them.\nThe composition follows the \"this is fine\" meme: Kron sips his coffee totally calm while the street around him is in chaos.\nThe scene is a busy city street at rush hour with taxis, a bus stop and crossing lines.\nShot from across the road with a 135 mm lens, Kron and the tiger sharp, the traffic blurred, shallow depth of field.\nEarly morning sun through city haze, cool urban colour grade.\nA real-photography 4:3 landscape film still, photoreal tiger fur, daisies and plush, a clean frame with blank signs and no lettering.",
   "say": "daily life"
  },
  {
   "w": "couch potato",
-  "meme": "m04",
   "tw": "Couch potato Kron shouts \"Ouch!\" as a real potato and a tomato sit on him.",
   "twc": "沙发土豆 Kron 大叫“哎哟”，一个真土豆和西红柿坐到他身上。",
-  "hint": "真土豆来抢沙发。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron, in a onesie with a bag of chips, lies on a saggy couch in front of a blank TV, while a giant real potato and a big tomato plop down on top of him.\nThe composition follows the \"shocked face\" meme: a big close-up of Kron's face, eyes wide and mouth open in a shocked ouch.\nThe scene is a messy living room with a saggy couch, a blank glowing TV and snack wrappers.\nShot close at couch height with a 35 mm lens, Kron's face and the vegetables sharp, the room soft, shallow depth of field.\nBlue TV glow on Kron with a dim warm lamp behind, lazy evening colour grade.\nA real-photography 4:3 landscape film still, photoreal potato skin, tomato gloss and plush, a clean frame with a blank TV screen and no lettering."
+  "hint": "真土豆来抢沙发。"
  },
  {
   "w": "be deaf to",
-  "meme": "m15",
   "tw": "Kron chooses to be deaf to the chef, so he wears ten red earmuffs.",
   "twc": "Kron 决定不听厨师唠叨，一口气戴了十个红耳罩。",
-  "hint": "不想听，就戴十层。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron walks out of a restaurant kitchen wearing a tower of ten red earmuffs stacked on his head, while behind him the chef shouts and waves a ladle and pots fly.\nThe composition follows the \"cool guys don't look at explosions\" meme: Kron strolls coolly toward the camera, not looking back at the shouting chef behind him.\nThe scene is a restaurant kitchen doorway with swinging doors, steam and pans on hooks.\nShot at Kron's eye level with a 50 mm lens, Kron sharp, the chef blurred behind, shallow depth of field.\nWarm kitchen light behind and cooler dining-room light on Kron, dramatic contrast colour grade.\nA real-photography 4:3 landscape film still, photoreal fluffy earmuffs, steel and plush, a clean frame with no lettering."
+  "hint": "不想听，就戴十层。"
  },
  {
   "w": "tide",
-  "meme": "m03",
   "tw": "Kron rides the tide on a wide white slide, and a crab hides inside.",
   "twc": "Kron 坐着白滑梯随潮水漂，一只螃蟹躲在滑梯里。",
-  "hint": "涨潮了，滑梯变成了船。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron, in a sailor's hat, sits on top of a wide white playground slide floating out on the rising tide, while a crab peeks out of the slide's tube.\nThe composition follows the \"side-eye\" meme: Kron keeps facing the sea but side-eyes the crab hiding beside him.\nThe scene is a flooded beach playground at high tide with a swing set half under water.\nShot from the water with a 50 mm lens, Kron and the crab sharp, the swings soft, shallow depth of field.\nPink evening light reflecting on the water, soft seaside colour grade.\nA real-photography 4:3 landscape film still, photoreal plastic, crab shell, water and plush, a clean frame with no lettering."
+  "hint": "涨潮了，滑梯变成了船。"
  },
  {
   "w": "lungfish",
-  "meme": "m16",
   "tw": "Kron lunges at a lungfish in the mud, but it slips off with his lunch dish.",
   "twc": "Kron 在泥里扑向一条肺鱼，肺鱼叼着他的午饭盘溜了。",
-  "hint": "抓鱼不成，饭也丢了。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron, in waders and a fishing hat, dives face-first into the mud to grab a lungfish, but the lungfish wriggles away carrying Kron's lunch dish of sandwiches in its mouth.\nThe composition follows the \"tables turned\" meme: the hunter gets robbed: Kron flat in the mud in the middle, the fish escaping to the right with his lunch.\nThe scene is a muddy swamp bank with reeds, a bucket and a picnic cloth.\nShot at mud level with a 35 mm lens, Kron and the fish sharp, the reeds soft, medium depth of field.\nHazy humid sunlight with mud splashes lit from behind, earthy green colour grade.\nA real-photography 4:3 landscape film still, photoreal mud, fish skin and plush, a clean frame with no lettering."
+  "hint": "抓鱼不成，饭也丢了。"
  },
  {
   "w": "surface",
-  "meme": "m07",
   "tw": "Kron races a nervous bird across the surface of a frozen lake, face first.",
   "twc": "Kron 和一只紧张的鸟在冰湖面上赛跑，脸先着地。",
-  "hint": "冰面太滑，脸先到。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron, wearing a racing bib and ice skates, slides across a frozen lake beside a nervous little bird, and slams down onto the ice in a dramatic landing.\nThe composition follows the \"superhero landing\" meme: Kron lands in slow motion on one knee with a fist on the ice, ice chips flying, the bird skidding past.\nThe scene is a frozen mountain lake with smooth clear ice, snowy pines and a finish flag pole.\nShot at ice level with a 24 mm lens, Kron and the bird sharp, the pines soft, medium depth of field.\nBright cold sunlight with glittering ice spray, crisp blue-white colour grade.\nA real-photography 4:3 landscape film still, photoreal ice, feathers and plush, a clean frame with no lettering."
+  "hint": "冰面太滑，脸先到。"
  },
  {
   "w": "level",
-  "meme": "m10",
   "tw": "Kron checks seven jellies are at one level, but every jelly wobbles.",
   "twc": "Kron 想把七个果冻摆在同一高度，可每个都在抖。",
-  "hint": "果冻永远摆不平。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron, in a builder's hard hat, holds a spirit level against a row of seven colourful jellies on a shelf, all of them wobbling at different heights.\nThe composition follows the \"confused stare\" meme: Kron stares at the wobbling jellies with a confused question-mark face.\nThe scene is a kitchen shelf with seven jellies on plates, a toolbox and a measuring tape.\nShot straight on at shelf height with a 90 mm lens, Kron and the jellies sharp, the wall soft, shallow depth of field.\nBright side light glowing through the jellies, candy-bright colour grade.\nA real-photography 4:3 landscape film still, photoreal jelly, metal tools and plush, a clean frame with no lettering."
+  "hint": "果冻永远摆不平。"
  },
  {
   "w": "mouthful",
-  "meme": "m09",
   "tw": "A mouse takes a mouthful of Kron's cloud cake and floats south.",
   "twc": "一只老鼠咬了一大口 Kron 的云朵蛋糕，飘向南方。",
-  "hint": "一口蛋糕，飘走了。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron holds a fluffy white cloud-shaped cake, and a mouse who has just taken a huge mouthful of it lifts off into the air and floats away.\nThe composition follows the \"leaning back in shock\" meme: Kron leans back in shock, cake in his paws, as the mouse floats up past him.\nThe scene is a hilltop picnic with a blanket, a teapot and a wide sky.\nShot from low with a 28 mm lens, Kron and the floating mouse sharp, the sky deep blue, deep depth of field.\nSoft spring sunshine with fluffy clouds, light airy colour grade.\nA real-photography 4:3 landscape film still, photoreal cream, mouse fur and plush, a clean frame with no lettering."
+  "hint": "一口蛋糕，飘走了。"
  },
  {
   "w": "surprisingly",
-  "meme": "m04",
   "tw": "Kron opens a tiny box, and surprisingly, a singing lion with a prize pops out.",
   "twc": "Kron 打开一个小盒子，没想到跳出一头拿奖杯唱歌的狮子。",
-  "hint": "小盒子，大狮子。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron lifts the lid of a tiny gift box, and a full-size lion holding a gold trophy bursts out singing at the top of its voice.\nThe composition follows the \"shocked face\" meme: a big close-up of Kron's face, eyes wide and mouth open in shock in front of the lion.\nThe scene is a quiet post office counter with parcels, string and a scale.\nShot close with a 35 mm lens, Kron's face and the lion sharp, the counter soft, shallow depth of field.\nWarm overhead lamp with a sudden golden glow from the box, bold dramatic colour grade.\nA real-photography 4:3 landscape film still, photoreal lion mane, cardboard and plush, a clean frame with blank parcels and no lettering."
+  "hint": "小盒子，大狮子。"
  },
  {
   "w": "places of interest",
-  "meme": "m11",
   "tw": "Kron races to nine places of interest in one day, then rests in a suitcase.",
   "twc": "Kron 一天跑了九个名胜，最后累倒在行李箱里。",
-  "hint": "名胜打卡，人先打烊。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron, in a tourist hat with a camera around his neck and a pile of blank postcards, lies flopped inside an open suitcase at the end of the day, tongue out.\nThe composition follows the \"totally drained\" meme: Kron lies flat and limp in the suitcase, eyes empty, soul leaving his body.\nThe scene is a hotel room with a window view of famous old towers and bridges far away.\nShot from above with a 35 mm lens, Kron and the suitcase sharp, the window view soft, medium depth of field.\nGolden sunset light pouring through the window, warm tired colour grade.\nA real-photography 4:3 landscape film still, photoreal leather, fabric and plush, a clean frame with blank postcards and no lettering."
+  "hint": "名胜打卡，人先打烊。"
  },
  {
   "w": "unexplored",
-  "meme": "m03",
   "tw": "Kron rows to an unexplored shore, where a bored boar snores on the floor.",
   "twc": "Kron 划船到一片没人探索过的海岸，一头无聊的野猪在打呼。",
-  "hint": "没人来过，只有猪。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron, dressed as an explorer with a pith helmet and flag, steps off a rowing boat onto a wild beach, and finds a big wild boar already snoring on the sand.\nThe composition follows the \"side-eye\" meme: Kron holds his flag still and slowly side-eyes the snoring boar.\nThe scene is a wild jungle shore with black rocks, thick trees and a rowing boat on the sand.\nShot from behind the boar with a 50 mm lens, Kron sharp, the boar's back slightly soft, shallow depth of field.\nMisty morning light breaking through the jungle, mysterious green colour grade.\nA real-photography 4:3 landscape film still, photoreal sand, boar bristles and plush, a clean frame with a blank flag and no lettering."
+  "hint": "没人来过，只有猪。"
  },
  {
   "w": "geographical",
-  "meme": "m10",
   "tw": "Kron spreads a geographical map, and a giraffe calf eats half the graph.",
   "twc": "Kron 摊开一张地理地图，一只小长颈鹿吃掉了一半。",
-  "hint": "地图被吃掉一半。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron, wearing a geography teacher's sweater, holds up a big map with coloured lines, but a baby giraffe has bent down and eaten half of it.\nThe composition follows the \"confused stare\" meme: Kron stares at the half-eaten map with a confused question-mark face.\nThe scene is a savanna safari camp with a jeep, a folding table and acacia trees.\nShot at Kron's eye level with a 85 mm lens, Kron and the giraffe calf sharp, the savanna soft, shallow depth of field.\nHot golden afternoon sun with dusty air, warm safari colour grade.\nA real-photography 4:3 landscape film still, photoreal paper, giraffe hide and plush, a clean frame with a blank map and no lettering."
+  "hint": "地图被吃掉一半。"
  },
  {
   "w": "birthmark",
-  "meme": "m13",
   "tw": "Kron's birthmark looks like a bird, so a park bird parks on it.",
   "twc": "Kron 的胎记长得像只鸟，公园里的鸟真落在上面了。",
-  "hint": "鸟把胎记当老乡。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron, in a swimsuit, shows off a bird-shaped birthmark on his tummy, and a small sparrow from the park lands right on top of it.\nThe composition follows the \"proud hands on hips\" meme: Kron stands chin up with paws on hips, proud of his birthmark and his new guest.\nThe scene is a city park with a pond, a bench and a lawn full of sparrows.\nShot at Kron's eye level with a 100 mm lens, Kron and the sparrow sharp, the park soft, shallow depth of field.\nSoft summer daylight with leaf-dappled shade, fresh green colour grade.\nA real-photography 4:3 landscape film still, photoreal feathers, grass and plush, a clean frame with no lettering."
+  "hint": "鸟把胎记当老乡。"
  },
  {
   "w": "yet feet",
-  "meme": "m05",
   "tw": "Kron's cement isn't set yet, but his pet steps in with wet feet.",
   "twc": "Kron 的水泥还没干，宠物狗就踩着湿脚走了进去。",
   "hint": "还没干，先留脚印。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron, in a builder's vest, has just smoothed a square of wet cement, and his pet puppy is walking straight across it, leaving paw prints.\nThe composition follows the \"two buttons\" meme: Kron sweats between two choices, smoothing the cement or grabbing the puppy, trowel in one paw.\nThe scene is a garden path being laid, with a cement bucket, a trowel and wooden boards.\nShot from above with a 35 mm lens, Kron, the puppy and the prints sharp, the garden soft, medium depth of field.\nWarm late-afternoon sun with long shadows on the cement, homely warm colour grade.\nA real-photography 4:3 landscape film still, photoreal wet cement, puppy fur and plush, a clean frame with no lettering.",
   "say": "yet"
  },
  {
   "w": "wizard",
-  "meme": "m15",
   "tw": "Kron the wizard waves his wand, and the lizard becomes a blizzard.",
   "twc": "巫师 Kron 一挥魔杖，蜥蜴变成了一场暴风雪。",
-  "hint": "魔法失手，变出暴风雪。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron, in a starry wizard robe and pointed hat, walks away with his wand, while behind him a swirling blizzard bursts from the spot where a lizard just sat.\nThe composition follows the \"cool guys don't look at explosions\" meme: Kron strolls coolly toward the camera, not looking at the blizzard exploding behind him.\nThe scene is an old stone tower room with spell books, candles and a glass tank.\nShot at Kron's eye level with a 35 mm lens, Kron sharp, the blizzard blurred behind, shallow depth of field.\nBlue-white blizzard glow behind and warm candlelight on Kron, magical colour grade.\nA real-photography 4:3 landscape film still, photoreal velvet, snow and plush, a clean frame with blank book covers and no lettering."
+  "hint": "魔法失手，变出暴风雪。"
  },
  {
   "w": "the silver screen",
-  "meme": "m12",
   "tw": "On the silver screen, silly Kron licks a giant green ice cream.",
   "twc": "大银幕上，傻乎乎的 Kron 在舔一个巨大的绿冰淇淋。",
-  "hint": "当上明星，只为舔冰淇淋。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron, dressed in an old movie star's tuxedo, sits in the front row of a cinema licking a huge green ice cream, while his own giant face fills the blank-lit screen behind him.\nThe composition follows the \"everyone staring\" meme: the whole audience turns away from the screen to stare at Kron in the front row.\nThe scene is an old cinema with red velvet seats and a glowing screen.\nShot from the side aisle with a 50 mm lens, Kron and the ice cream sharp, the crowd soft, shallow depth of field.\nSilver projector beam with deep red shadows, classic film colour grade.\nA real-photography 4:3 landscape film still, photoreal velvet, ice cream and plush, a clean frame with no lettering."
+  "hint": "当上明星，只为舔冰淇淋。"
  },
  {
   "w": "risky",
-  "meme": "m01",
   "tw": "Kron tries a risky trick, whisking eggs while skiing down a frisky hill.",
   "twc": "Kron 玩了个危险动作：边滑雪边打鸡蛋。",
-  "hint": "危险的不是雪，是蛋。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron, in ski goggles and a puffy jacket, skis fast down a bumpy slope while whisking eggs in a bowl, and a small avalanche tumbles behind him.\nThe composition follows the \"this is fine\" meme: Kron keeps whisking with a calm smile while snow and chaos crash all around.\nThe scene is a steep snowy mountain slope with flags, pines and a ski lift.\nShot from the side with a 200 mm telephoto lens, Kron sharp, the avalanche soft, shallow depth of field.\nBright alpine sun with sparkling snow, crisp high-contrast colour grade.\nA real-photography 4:3 landscape film still, photoreal snow, egg and plush, a clean frame with no lettering."
+  "hint": "危险的不是雪，是蛋。"
  },
  {
   "w": "olympics",
-  "meme": "m13",
   "tw": "At the Olympics, a limping Kron picks six lemons and wins gold.",
   "twc": "奥运会上，一瘸一拐的 Kron 摘了六个柠檬，拿了金牌。",
-  "hint": "摘柠檬也能拿金牌。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron, in a sports kit with a bandaged foot, stands on the top step of a winners' podium holding a basket of six lemons, a gold medal round his neck.\nThe composition follows the \"proud hands on hips\" meme: Kron stands chin up with paws on hips on the podium, very proud.\nThe scene is a big sports stadium with a podium, a lemon tree beside it and crowds in the stands.\nShot low in front of the podium with a 70 mm lens, Kron and the lemons sharp, the crowd soft, shallow depth of field.\nBright stadium floodlights with confetti backlit, bold victory colour grade.\nA real-photography 4:3 landscape film still, photoreal lemons, metal medal and plush, a clean frame with no lettering."
+  "hint": "摘柠檬也能拿金牌。"
  },
  {
   "w": "youngster",
-  "meme": "m09",
   "tw": "A youngster in a monster mask sticks out his tongue at Kron.",
   "twc": "一个戴怪兽面具的年轻人冲 Kron 吐舌头。",
-  "hint": "年轻人的见面礼。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nA teenage boy in a green monster mask leaps out from behind a shop corner sticking out a long tongue, and Kron, in a little shopping hat with a bag of oranges, gets a fright.\nThe composition follows the \"leaning back in shock\" meme: Kron leans back hard in shock, oranges flying from his bag.\nThe scene is a small town street corner with a fruit shop, crates of oranges and a bike.\nShot at Kron's eye level with a 35 mm lens, Kron and the masked boy sharp, the street soft, medium depth of field.\nBright afternoon sun with orange reflections, playful warm colour grade.\nA real-photography 4:3 landscape film still, photoreal rubber mask, oranges and plush, a clean frame with no lettering."
+  "hint": "年轻人的见面礼。"
  }
 ]

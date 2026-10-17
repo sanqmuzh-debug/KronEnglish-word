@@ -1,156 +1,118 @@
 [
  {
   "w": "half past...",
-  "meme": "m04",
   "tw": "At half past three, a laughing calf jumps into Kron's bath, fast.",
   "twc": "三点半，一头大笑的小牛猛地跳进 Kron 的浴缸。",
-  "hint": "三点半，浴缸被牛占了。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron sits in a little tin bath full of bubbles with a rubber duck, and a laughing brown calf has just leapt into the bath with him, a huge splash of water and foam flying up.\nThe composition follows the \"shocked face\" meme: a big close-up of Kron, eyes popping and mouth wide open, the calf's grinning face right beside him.\nThe scene is a farmhouse yard with the tin bath on the cobbles, a wall clock with a blank face showing half past three, and a barn door.\nShot close with a 50 mm lens at bath-rim height, Kron and the calf sharp, the splash frozen, the barn soft, shallow depth of field.\nBright afternoon sun backlighting the flying water drops, sparkling warm colour grade.\nA real-photography 4:3 landscape film still, photoreal water, foam, calf hide, tin and plush, a clean frame with a blank clock face and no lettering."
+  "hint": "三点半，浴缸被牛占了。"
  },
  {
   "w": "have breakfast",
-  "meme": "m06",
   "tw": "No steak, yes cake! Kron likes to have breakfast fast on a lake.",
   "twc": "不要牛排要蛋糕！Kron 爱在湖上飞快吃早餐。",
-  "hint": "早餐只认蛋糕。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron sits in a small rowing boat on a calm lake with a napkin tucked under his chin, pushing away a plate of steak with one paw and hugging a big strawberry cake with the other, crumbs on his cheeks.\nThe composition follows the \"reject vs approve\" meme: two panels, Kron turning away in disgust from the steak on the left, beaming at the cake on the right.\nThe scene is a misty lake at breakfast time with a wooden boat, a teapot and reeds at the edge.\nShot from the water at boat height with an 85 mm lens, Kron and the plates sharp, the misty shore soft, shallow depth of field.\nSoft early-morning sunrise light through mist, gentle peach colour grade.\nA real-photography 4:3 landscape film still, photoreal cake, steak, wet wood and plush, a clean frame with no lettering."
+  "hint": "早餐只认蛋糕。"
  },
  {
   "w": "wash... face",
-  "meme": "m09",
   "tw": "Gosh! Kron tries to wash his face in a vase, but a fish takes his place.",
   "twc": "天哪！Kron 想在花瓶里洗脸，一条鱼抢了他的位置。",
-  "hint": "洗脸池里住着条鱼。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron, a towel round his neck, bends over a tall glass vase of water to wash his face, but a goldfish pops its head up out of the water right at his nose, wearing a tiny shower cap.\nThe composition follows the \"leaning back in shock\" meme: Kron jerks back hard, arms flung out, water dripping from his face.\nThe scene is a sunny bathroom windowsill with a toothbrush cup, a sponge and pot plants.\nShot at windowsill level with a 100 mm macro lens, Kron and the goldfish sharp, the bathroom soft, very shallow depth of field.\nBright morning window light with sparkling caustics through the glass vase, clean fresh aqua colour grade.\nA real-photography 4:3 landscape film still, photoreal glass, water, fish scales and plush, a clean frame with no lettering."
+  "hint": "洗脸池里住着条鱼。"
  },
  {
   "w": "every year",
-  "meme": "m03",
   "tw": "Every year, a very merry deer eats Kron's cherry pie and grins ear to ear.",
   "twc": "每年都有一只快乐的鹿来吃 Kron 的樱桃派，笑得合不拢嘴。",
-  "hint": "年年烤派，年年喂鹿。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron holds an empty pie dish in his oven gloves while a deer wearing a party hat munches the cherry pie, cherry juice all over its grinning face.\nThe composition follows the \"side-eye\" meme: Kron holds still and slowly side-eyes the merry deer.\nThe scene is a cottage kitchen doorway opening onto a meadow, with a cooling rack and a bowl of cherries.\nShot at Kron's eye level with a 35 mm lens, Kron and the deer sharp, the meadow soft, medium depth of field.\nWarm golden early-autumn light through the doorway, nostalgic film colour grade.\nA real-photography 4:3 landscape film still, photoreal pastry, cherries, deer fur and plush, a clean frame with no lettering."
+  "hint": "年年烤派，年年喂鹿。"
  },
  {
   "w": "have a party",
-  "meme": "m01",
   "tw": "Kron and Marty the shark have a party in the dark park with tarts.",
   "twc": "Kron 和鲨鱼马蒂在漆黑的公园开派对，吃小馅饼。",
-  "hint": "嘉宾自带一排牙。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron in a party hat sits calmly on a picnic blanket eating a jam tart, while a smiling cartoonish shark in a rolling glass tank of water wears a party hat beside him and the other guests run off screaming and laughing.\nThe composition follows the \"this is fine\" meme: chaos around, Kron calm in the middle, nibbling his tart.\nThe scene is a city park at night with fairy lights in the trees, a picnic blanket, a plate of tarts and balloons.\nShot at blanket level with a 35 mm lens, Kron and the shark tank sharp, the running guests soft, medium depth of field.\nDark night lit by warm fairy lights and blue tank glow, moody party colour grade.\nA real-photography 4:3 landscape film still, photoreal glass, water, shark skin, pastry and plush, a clean frame with no lettering."
+  "hint": "嘉宾自带一排牙。"
  },
  {
   "w": "taxi river",
   "say": "taxi driver",
-  "meme": "m03",
   "tw": "Kron the taxi driver drives five foxes, and the foxes relax in the back.",
   "twc": "出租车司机 Kron 载着五只狐狸，狐狸们在后座躺着享受。",
-  "hint": "司机最挤，乘客最爽。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron wears a flat driver's cap and grips the steering wheel of a small taxi, squashed against the door, while five foxes lounge across the back seat in sunglasses with their paws behind their heads.\nThe composition follows the \"side-eye\" meme: Kron keeps his eyes on the road but side-eyes the foxes in the mirror.\nThe scene is the inside of a city taxi with a blank roof sign, a dashboard and a rainy street outside.\nShot from the passenger side with a 24 mm wide lens, Kron and the foxes sharp, the street outside soft, medium depth of field.\nRainy evening with neon reflections streaking the windows and warm dashboard glow, moody cinematic colour grade.\nA real-photography 4:3 landscape film still, photoreal fox fur, leather seats, raindrops and plush, a clean frame with a blank sign and no lettering."
+  "hint": "司机最挤，乘客最爽。"
  },
  {
   "w": "lifeguard",
-  "meme": "m13",
   "tw": "Lifeguard Kron dives hard to save a nice ice cube in the backyard pool.",
   "twc": "救生员 Kron 拼命跳进后院泳池，救起一块冰块。",
-  "hint": "救上来，也快化了。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron in red swim shorts, a whistle and a tiny float stands dripping at the edge of a paddling pool, holding up a rescued ice cube that is already melting in his paws.\nThe composition follows the \"proud hands on hips\" meme: Kron with one paw on his hip, chin raised, the ice cube held high.\nThe scene is a sunny backyard with an inflatable paddling pool, a lifeguard chair made of a stool and a beach towel.\nShot from the grass looking up with a 28 mm lens, Kron and the ice cube sharp, the yard soft, medium depth of field.\nHot summer afternoon sun with glittering pool water, bright saturated colour grade.\nA real-photography 4:3 landscape film still, photoreal water, ice, vinyl and wet plush, a clean frame with no lettering."
+  "hint": "救上来，也快化了。"
  },
  {
   "w": "mis",
   "say": "miss",
-  "meme": "m12",
   "tw": "Kron says, \"Yes, Miss!\" to his fish teacher, Miss Swish, in a big dish.",
   "twc": "Kron 对大盘子里的鱼老师说：“是的，老师！”",
-  "hint": "老师游在盘子里。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron sits at a little school desk with his paw raised high, answering a goldfish teacher wearing round glasses who swims in a big glass dish on the teacher's table.\nThe composition follows the \"everyone staring\" meme: the whole class of other animal pupils turns to stare at Kron, Kron in the middle.\nThe scene is a small classroom with wooden desks, a blank blackboard and an apple on the teacher's table.\nShot from the back of the class with a 50 mm lens, Kron and the fish dish sharp, the pupils softer, medium depth of field.\nSoft morning daylight from tall windows with dust in the air, warm school colour grade.\nA real-photography 4:3 landscape film still, photoreal glass, water, wood and plush, a clean frame with a blank blackboard and no lettering."
+  "hint": "老师游在盘子里。"
  },
  {
   "w": "make phone calls",
-  "meme": "m10",
   "tw": "Kron likes to make phone calls on a cone, till cream falls on his toes.",
   "twc": "Kron 爱拿冰淇淋甜筒打电话，打到奶油掉在脚趾上。",
-  "hint": "电话没通，冰淇淋化了。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron holds an ice cream cone to his ear like a phone, talking into it, while the melting cream slides down and drops in blobs onto his toes.\nThe composition follows the \"confused stare\" meme: Kron looks at the camera with a puzzled question-mark face, wondering why nobody answers.\nThe scene is an old red phone box by a seaside promenade, with an ice cream cart parked beside it.\nShot at Kron's height with a 70 mm lens, Kron and the cone sharp, the promenade soft, shallow depth of field.\nHot hazy beach sunlight with soft pastel sky, creamy pastel colour grade.\nA real-photography 4:3 landscape film still, photoreal ice cream, wafer, painted metal and plush, a clean frame with no lettering."
+  "hint": "电话没通，冰淇淋化了。"
  },
  {
   "w": "model plane",
-  "meme": "m04",
   "tw": "Molly the doll pilots Kron's model plane in the rain and lands on Kron's train.",
   "twc": "布娃娃莫莉冒雨开着 Kron 的飞机模型，降落在他的火车上。",
-  "hint": "飞机模型找错了跑道。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron wears a yellow raincoat and kneels by his toy train set on a wet patio, and a rag doll in a pilot's cap flies his model plane down and lands right on top of the train carriages.\nThe composition follows the \"shocked face\" meme: a big close-up of Kron, eyes popping and mouth wide open, the plane skidding in beside him.\nThe scene is a rainy patio with puddles, a toy train track and a garden umbrella.\nShot low at train level with a 35 mm lens, Kron, the plane and the doll sharp, raindrops blurred, medium depth of field.\nGrey rainy daylight with shiny wet reflections, cool silver colour grade with the yellow raincoat popping.\nA real-photography 4:3 landscape film still, photoreal rain, painted balsa wood, rag doll cloth and plush, a clean frame with no lettering."
+  "hint": "飞机模型找错了跑道。"
  },
  {
   "w": "on holiday",
-  "meme": "m11",
   "tw": "On holiday, Kron and a jolly collie lick lollies all day in the hay.",
   "twc": "度假时，Kron 和快乐的牧羊犬在干草堆里舔了一天棒棒糖。",
-  "hint": "度假就是躺平舔糖。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron in sunglasses and a Hawaiian shirt lies flat on a haystack next to a collie dog, both holding big swirly lollies, sticky and sleepy, wrappers all around.\nThe composition follows the \"totally drained\" meme: Kron sprawled out, completely relaxed and limp, soul floating away in bliss.\nThe scene is a farm field in summer with round hay bales, a red barn and a blue sky.\nShot from directly above with a 24 mm lens, Kron and the collie sharp, the hay texture all around, deep depth of field.\nLazy late-afternoon sun with warm long shadows, sun-faded holiday colour grade.\nA real-photography 4:3 landscape film still, photoreal hay, candy, dog fur and plush, a clean frame with no lettering."
+  "hint": "度假就是躺平舔糖。"
  },
  {
   "w": "at the top of",
-  "meme": "m07",
   "tw": "Kron lands at the top of a pancake pile, and the pile goes flop.",
   "twc": "Kron 落在一摞松饼的顶上，整摞松饼“噗”地塌了。",
-  "hint": "登顶的瞬间顶没了。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron in a little superhero cape lands on top of a towering stack of pancakes, and the stack squashes and slumps under him, syrup splashing out.\nThe composition follows the \"superhero landing\" meme: Kron drops in slow motion onto one knee, one fist down, cape flying.\nThe scene is a diner breakfast counter with a syrup jug, butter and a plate of berries.\nShot low at counter level with a 40 mm lens, Kron and the pancake stack sharp, the diner soft, shallow depth of field.\nWarm diner morning light from big windows with glossy syrup highlights, retro warm colour grade.\nA real-photography 4:3 landscape film still, photoreal pancakes, syrup, butter and plush, a clean frame with no lettering."
+  "hint": "登顶的瞬间顶没了。"
  },
  {
   "w": "flower shop",
-  "meme": "m15",
   "tw": "In the flower shop, Kron's flower tower gets taller, then drops on the shop dog.",
   "twc": "在花店里，Kron 的花塔越堆越高，然后砸在店里的狗身上。",
-  "hint": "花店的狗被花埋了。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron in a florist's apron walks calmly toward the camera carrying one single rose, while behind him a tall tower of flower pots topples over onto a fluffy shop dog who is buried in petals.\nThe composition follows the \"cool guys don't look at explosions\" meme: Kron unbothered in front, the flower avalanche behind.\nThe scene is a small flower shop with buckets of tulips, a wooden counter and a blank chalkboard.\nShot at Kron's eye level with a 50 mm lens, Kron sharp, the falling flowers blurred with motion, shallow depth of field.\nSoft spring light through the shop window with petals backlit in the air, fresh pink and green colour grade.\nA real-photography 4:3 landscape film still, photoreal petals, clay pots, dog fur and plush, a clean frame with a blank chalkboard and no lettering."
+  "hint": "花店的狗被花埋了。"
  },
  {
   "w": "toy shop",
-  "meme": "m16",
   "tw": "In the toy shop, Roy the robot stops, hops, and picks Kron as his toy.",
   "twc": "在玩具店里，机器人罗伊停下、一蹦，把 Kron 挑走当玩具。",
-  "hint": "来买玩具，被当玩具。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron reaches toward a shelf of toys, but a big tin robot hops down and scoops Kron up in its claws, holding him like a new doll, Kron's legs dangling.\nThe composition follows the \"tables turned\" meme: the shopper gets picked, Kron in the middle held by the happy robot.\nThe scene is an old toy shop with shelves of teddy bears, spinning tops, wooden trains and a blank price tag.\nShot at shelf level with a 35 mm lens, Kron and the robot sharp, the shelves soft, medium depth of field.\nWarm tungsten shop lighting with glinting tin, nostalgic toy-box colour grade.\nA real-photography 4:3 landscape film still, photoreal tin, painted toys and plush, a clean frame with blank tags and no lettering."
+  "hint": "来买玩具，被当玩具。"
  },
  {
   "w": "softly",
-  "meme": "m08",
   "tw": "Kron softly puts a soft sock on a sleepy fly in the loft.",
   "twc": "Kron 在阁楼上轻轻给一只困苍蝇套上软袜子。",
-  "hint": "轻到苍蝇都没醒。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron tiptoes on a dusty attic beam and gently slips a tiny knitted sock onto a fat sleepy fly that is snoozing on an old trunk.\nThe composition follows the \"all according to plan\" meme: Kron grins slyly, paws close together, eyes half closed, the plan going perfectly.\nThe scene is a cosy loft with old suitcases, a rocking horse and cobwebs in the rafters.\nShot very close with a 100 mm macro lens, Kron's paws and the fly sharp, the loft soft, very shallow depth of field.\nA single soft beam of light from a round attic window with floating dust, hushed sepia colour grade.\nA real-photography 4:3 landscape film still, photoreal knitted wool, insect wings, old wood and plush, a clean frame with no lettering."
+  "hint": "轻到苍蝇都没醒。"
  },
  {
   "w": "strongly",
-  "meme": "m09",
   "tw": "Kron hits the gong strongly, and a long song comes out all wrong.",
   "twc": "Kron 用力敲锣，结果蹦出一首又长又走调的歌。",
-  "hint": "敲得太猛，锣唱歌了。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron swings a big padded mallet into a huge bronze gong, and a blast of air and sound ripples out, flinging his quills and blowing a stack of music sheets into the air.\nThe composition follows the \"leaning back in shock\" meme: Kron leans far back, arms flung out, from the force of his own hit.\nThe scene is a temple courtyard with a wooden gong frame, stone lanterns and a cherry tree.\nShot from the side with a 24 mm wide lens, Kron and the gong sharp, the courtyard soft, medium depth of field.\nGolden dawn light glancing off the bronze with blowing blossom, rich warm colour grade.\nA real-photography 4:3 landscape film still, photoreal bronze, wood, paper and plush, a clean frame with blank sheets and no lettering."
+  "hint": "敲得太猛，锣唱歌了。"
  },
  {
   "w": "windmill",
-  "meme": "m12",
   "tw": "Kron spins on a windmill on the hill, and Bill the goat stands still.",
   "twc": "Kron 挂在山上的风车上转圈，山羊比尔站着一动不动。",
-  "hint": "风车转，只有羊淡定。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron clings to the tip of a turning windmill sail, whirling round high above the ground, while a goat called Bill and a few cows stand still below and stare up at him.\nThe composition follows the \"everyone staring\" meme: every animal in the field stares up at Kron, Kron in the middle.\nThe scene is a green hill with a white Dutch windmill, tulip fields and a wooden fence.\nShot from the ground looking up with an 18 mm wide lens, Kron sharp with a slight motion blur on the sails, the hill and sky deep in focus.\nBlustery bright day with fast-moving clouds, clean crisp colour grade.\nA real-photography 4:3 landscape film still, photoreal canvas sails, timber, goat hair and plush, a clean frame with no lettering."
+  "hint": "风车转，只有羊淡定。"
  },
  {
   "w": "wind-bell",
-  "meme": "m11",
   "tw": "The wind spins Kron's big wind-bell, and Kron, sitting inside, rings it well.",
   "twc": "风吹转 Kron 的大风铃，坐在里面的他把铃撞得直响。",
-  "hint": "风一吹，Kron 当了铃舌。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nKron sits inside a big glass wind-bell hanging from a porch beam, swinging to and fro in the wind and bonking the sides like a clapper, dizzy with spiral eyes.\nThe composition follows the \"totally drained\" meme: Kron limp and dizzy, soul floating out, swaying with the bell.\nThe scene is a wooden veranda of a summer house with a paper lantern, a fan and potted morning glories.\nShot from below the porch with an 85 mm lens, Kron and the wind-bell sharp, the garden soft, shallow depth of field.\nHot breezy summer evening with low sun shining through the glass, cool turquoise and gold colour grade.\nA real-photography 4:3 landscape film still, photoreal glass, string, wood and plush, a clean frame with no lettering."
+  "hint": "风一吹，Kron 当了铃舌。"
  },
  {
   "w": "grow crops",
-  "meme": "m14",
   "tw": "Kron tries to grow crops in a row, but a crow hops off with the tops.",
   "twc": "Kron 想种一排庄稼，一只乌鸦蹦着把顶上的全叼走了。",
-  "hint": "种的是庄稼，收的是乌鸦。",
-  "prompt": "Using the attached character sheet, keep Kron exactly as designed: same proportions, colours, face and quills, as a 25 cm plush toy.\nIn the left panel Kron in overalls and a straw hat proudly stands by a tall neat row of golden wheat; in the right panel the same row is only short stalks, and a crow hops away with all the tops in its beak.\nThe composition follows the \"expectation vs reality\" meme: two side-by-side panels, the dream harvest on the left, the bald row on the right.\nThe scene is a farm field with tilled soil rows, a scarecrow and a wooden cart.\nShot at crop height with a 35 mm lens, Kron and the crow sharp, the field soft, medium depth of field.\nLate-summer evening light with golden haze over the field, warm harvest colour grade.\nA real-photography 4:3 landscape film still, photoreal wheat, soil, feathers and plush, a clean frame with no lettering."
+  "hint": "种的是庄稼，收的是乌鸦。"
  }
 ]
