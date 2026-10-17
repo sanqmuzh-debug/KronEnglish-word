@@ -55,7 +55,7 @@ def tts(text, ring, voice, model, speed):
         except urllib.error.HTTPError as e:
             if e.code in (401, 402, 403):
                 ring.next(); continue
-            if e.code in (429, 500, 502, 503) and attempt < 3:
+            if e.code in (429, 500, 502, 503, 504) and attempt < 3:
                 attempt += 1; time.sleep(2 ** attempt * 2); continue
             raise SystemExit(f'Fish 返回 {e.code}: {e.read()[:300]!r}')
         except urllib.error.URLError:
