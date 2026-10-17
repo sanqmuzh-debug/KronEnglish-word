@@ -1,5 +1,4 @@
 <!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
-<script>if(/[#&]g=\w/.test(location.hash))document.documentElement.classList.add('solo')</script>
 <title>Kron Arcade</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,7 +31,7 @@
 html,body{height:100%}
 body{background:var(--bg);color:var(--ink);font:500 16px/1.5 var(--f-body);
   padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));-webkit-tap-highlight-color:transparent}
-.wrap{max-width:1040px;margin:0 auto;padding-block:20px 48px}
+.wrap{max-width:1040px;margin:0 auto;padding-block:12px 48px}
 h1,h2,h3{font-family:var(--f-display);line-height:1.05;margin:0;text-wrap:balance}
 button{font:inherit;color:inherit;cursor:pointer}
 button:focus-visible,input:focus-visible{outline:3px solid var(--kron);outline-offset:2px}
@@ -393,46 +392,13 @@ button:focus-visible,input:focus-visible{outline:3px solid var(--kron);outline-o
   .xp .pill:first-child{display:none}
 }
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
-.solo #hub{display:none}.solo .top{display:none}.solo .wrap{padding-top:12px}
 .say-btn{border:0;font:inherit;color:inherit;text-align:left;cursor:pointer}
 </style>
 
 <div class="wrap">
-  <header class="top">
-    <span id="logoKron"></span>
-    <div class="brand"><b>Kron Arcade</b><span>快学英语 · 游戏练词</span></div>
-    <div class="xp"><span class="pill" id="playsPill">0 局</span><span class="pill" id="xpPill">0 XP</span></div>
-  </header>
-
-  <main id="hub">
-    <section class="hero">
-      <h1>十个小游戏，<em>一局一分钟</em></h1>
-      <p>每个玩法都对标一款口碑最好的游戏化学英语产品，换上 Kron 的词库和手感。点开任意一张卡就能玩，声音在第一次点击后开启。</p>
-    </section>
-    <h2 class="sec">第一批 · 词汇快练<span>认词、拼写、分类、造句、抢答</span></h2>
-    <section class="grid" id="grid1"></section>
-    <h2 class="sec">第二批 · 闯关对战<span>有压力、有对手、有收集</span></h2>
-    <section class="grid" id="grid2"></section>
-    <h2 class="sec">第三批 · 益智与运气<span>翻牌、找词、猜词、开宝箱</span></h2>
-    <section class="grid" id="grid3"></section>
-    <h2 class="sec">第四批 · 动作与对战<span>塔防、贪吃蛇、跳跃、双人 PK</span></h2>
-    <section class="grid four" id="grid4"></section>
-    <section class="notes">
-      <h3>从对标产品里借来的手法</h3>
-      <div><b>秒级反馈</b><p>Duolingo 和 Quizlet 每一次点击都有声音和动效，对错在 0.3 秒内知道。</p></div>
-      <div><b>速度即分数</b><p>Kahoot! 按答题剩余时间给分，Quizlet Match 比最佳用时，制造“再来一局”的冲动。</p></div>
-      <div><b>连击加成</b><p>Blooket 和 Gimkit 的连对倍率，让孩子愿意专注地连续答下去。</p></div>
-      <div><b>生存压力</b><p>Gimkit 的 The Floor is Lava 让岩浆一直上涨，答题变成唯一的活路。</p></div>
-      <div><b>看得见的对手</b><p>Blooket Racing 把进度画成赛道，落后一个车身就想多答一题。</p></div>
-      <div><b>运气和选择</b><p>Blooket Gold Quest 答对才能开宝箱，开出来可能翻倍也可能被偷，排名一直在变。</p></div>
-      <div><b>收集与稀有度</b><p>Blooket Fishing Frenzy 的鱼有重量和稀有金鱼，每一竿都有点期待。</p></div>
-      <div><b>产出而不只是识别</b><p>Gravity 要求打出拼写，Duolingo 词块要求排出语序，比选择题记得更牢。</p></div>
-    </section>
-  </main>
-
-  <main id="game" class="game" hidden>
+  <main id="game" class="game">
     <div class="gbar">
-      <button class="back" id="backBtn" aria-label="返回大厅">←</button>
+      <button class="back" id="backBtn" aria-label="返回">←</button>
       <div class="gtitle"><b id="gName"></b></div>
       <div id="hud"></div>
     </div>
@@ -529,32 +495,25 @@ addEventListener('pointermove',e=>{for(const svg of $$('svg.kron')){const r=svg.
 let cleanup=null,current=null;
 const hud=h=>{$('#hud').innerHTML=h};
 const P=(t)=>`<span class="pill">${t}</span>`;
-function renderTotals(){$('#xpPill').textContent=store.get('xp',0)+' XP';$('#playsPill').textContent=store.get('plays',0)+' 局'}
-$('#logoKron').innerHTML=kronSVG();
-const cardHTML=m=>`<button class="card" data-id="${m.id}" style="--c:${m.c}"><div class="card-in"><span class="tag">${m.bench}</span><div class="prev">${m.prev}</div><h2>${m.name}<small>${m.en}</small></h2><p>${m.desc}</p><div class="meta"><span>${m.skill}</span><span class="go">开始</span></div></div></button>`;
-$('#grid1').innerHTML=META.filter(m=>(m.batch||1)===1).map(cardHTML).join('');
-$('#grid2').innerHTML=META.filter(m=>m.batch===2).map(cardHTML).join('');
-$('#grid3').innerHTML=META.filter(m=>m.batch===3).map(cardHTML).join('');
-$('#grid4').innerHTML=META.filter(m=>m.batch===4).map(cardHTML).join('');
-$('#hub').addEventListener('click',e=>{const c=e.target.closest('.card');if(c){ac();openGame(c.dataset.id)}});
-$('#backBtn').addEventListener('click',()=>showHub());
+$('#backBtn').addEventListener('click',()=>closeArcade());
 
 function openGame(id){
   stopGame();current=id;const m=META.find(x=>x.id===id);
-  $('#hub').hidden=true;$('#result').hidden=true;$('#game').hidden=false;
+  $('#result').hidden=true;
   $('#game').style.setProperty('--g',m.c);$('#gName').textContent=m.name;
   hud('');scrollTo(0,0);cleanup=GAMES[id]($('#stage'))||null;
 }
 function stopGame(){if(cleanup){cleanup();cleanup=null}$('#stage').innerHTML='';const s=$('.sheet');if(s)s.remove()}
-function showHub(){if(parent!==window){parent.postMessage({kronArcade:'close'},'*');return}stopGame();current=null;$('#game').hidden=true;$('#result').hidden=true;$('#hub').hidden=false;renderTotals()}
+function randomGame(){return META[Math.floor(Math.random()*META.length)].id}
+function closeArcade(){if(parent!==window)parent.postMessage({kronArcade:'close'},'*');else openGame(randomGame())}
 function finish({score,stars,title,lines}){
   if(cleanup){cleanup();cleanup=null}
-  store.set('xp',store.get('xp',0)+Math.round(score/10));store.set('plays',store.get('plays',0)+1);renderTotals();
+  store.set('xp',store.get('xp',0)+Math.round(score/10));store.set('plays',store.get('plays',0)+1);
   sfx.win();const m=META.find(x=>x.id===current);
   const r=$('#result');r.style.setProperty('--g',m.c);
   r.innerHTML=`<div class="result-in">${kronSVG(m.c)}<div class="stars">${[1,2,3].map(i=>`<span class="${i<=stars?'':'off'}">★</span>`).join('')}</div><h2>${title}</h2><div class="big">${score}</div>${lines.map(l=>`<p>${l}</p>`).join('')}<p>+${Math.round(score/10)} XP</p><div class="row"><button class="btn ghost" id="rHub">回去</button><button class="btn" id="rAgain">再来一局</button></div></div>`;
   r.hidden=false;burst($('.stars',r),30);
-  $('#rAgain').onclick=()=>openGame(current);$('#rHub').onclick=showHub;$('#rAgain').focus();
+  $('#rAgain').onclick=()=>openGame(current);$('#rHub').onclick=closeArcade;$('#rAgain').focus();
 }
 
 /* ---------- games ---------- */
@@ -1097,9 +1056,7 @@ GAMES.duel=st=>{
   return()=>{alive=false;clearTimeout(tm);removeEventListener('keydown',kd)};
 };
 
-renderTotals();
-
-(function(){const m=location.hash.match(/[#&]g=(\w+)/);if(m&&GAMES[m[1]]){document.documentElement.classList.add('solo');openGame(m[1])}else document.documentElement.classList.remove('solo')})();
+(function(){const m=location.hash.match(/[#&]g=(\w+)/);openGame(m&&GAMES[m[1]]?m[1]:randomGame())})();
 </script>
 
 </body></html>
